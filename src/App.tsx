@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { YearSelector } from './components/YearSelector';
 import { Timeline } from './components/Timeline';
 import { MapView } from './components/MapView';
