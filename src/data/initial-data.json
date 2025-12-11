@@ -729,6 +729,138 @@
       "keyQuotes": []
     },
     {
+      "id": "eusebius-caesarea",
+      "name": "Eusebius of Caesarea",
+      "birthYear": 260,
+      "deathYear": 339,
+      "feastDay": null,
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "historian"],
+      "orthodoxyStatus": "orthodox",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "caesarea-maritima",
+          "description": "Bishop of Caesarea"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Eusebius",
+      "newAdventUrl": "https://www.newadvent.org/cathen/05617b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Eusebius_of_Caesarea_Rabbula_Gospels_Icon.jpg",
+      "summary": "Eusebius of Caesarea was a bishop, historian, and biblical scholar known as the 'Father of Church History.' His 'Ecclesiastical History' is the primary source for early Church history from the apostolic age to his own time. He attended the Council of Nicaea and wrote extensively on theology, chronology, and geography.",
+      "keyQuotes": []
+    },
+    {
+      "id": "anthony-great",
+      "name": "St. Anthony the Great",
+      "birthYear": 251,
+      "deathYear": 356,
+      "feastDay": "January 17",
+      "primaryTradition": "Greek",
+      "roles": ["monk", "hermit"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "alexandria",
+          "description": "Desert Father in Egypt"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Anthony_the_Great",
+      "newAdventUrl": "https://www.newadvent.org/cathen/01553d.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Saint_Anthony_%28Damaskinos%29.png/330px-Saint_Anthony_%28Damaskinos%29.png",
+      "summary": "Anthony the Great, also known as Anthony of Egypt, was a Christian monk and hermit who is considered the founder of Christian monasticism. He spent most of his life in the Egyptian desert, and his life, written by Athanasius, became a model for monasticism. He is venerated as a saint in both Eastern and Western Christianity.",
+      "keyQuotes": []
+    },
+    {
+      "id": "pachomius",
+      "name": "St. Pachomius the Great",
+      "birthYear": 292,
+      "deathYear": 348,
+      "feastDay": "May 15",
+      "primaryTradition": "Greek",
+      "roles": ["monk"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "alexandria",
+          "description": "Founder of cenobitic monasticism in Egypt"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pachomius_the_Great",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11383a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/StPakhom.jpg",
+      "summary": "Pachomius was an Egyptian monk who founded cenobitic (communal) monasticism. While Anthony the Great established eremitic (hermit) monasticism, Pachomius organized monks into communities with shared rules and common life. His monastic rule influenced later monasticism throughout the Christian world.",
+      "keyQuotes": []
+    },
+    {
+      "id": "macarius-egypt",
+      "name": "St. Macarius of Egypt",
+      "birthYear": 300,
+      "deathYear": 390,
+      "feastDay": "January 15",
+      "primaryTradition": "Greek",
+      "roles": ["monk", "Desert Father"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "alexandria",
+          "description": "Desert Father in Egypt"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Macarius_of_Egypt",
+      "newAdventUrl": "https://www.newadvent.org/cathen/09482a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Saint_Macarius_the_Egyptian.jpg",
+      "summary": "Macarius of Egypt was one of the most famous Desert Fathers and a disciple of Anthony the Great. He spent most of his life in the Egyptian desert and was known for his asceticism, wisdom, and miracles. Many sayings and stories are attributed to him in the collections of Desert Father literature.",
+      "keyQuotes": []
+    },
+    {
+      "id": "hilary-poitiers",
+      "name": "St. Hilary of Poitiers",
+      "birthYear": 310,
+      "deathYear": 367,
+      "feastDay": "January 13",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "poitiers",
+          "description": "Bishop of Poitiers"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Hilary_of_Poitiers",
+      "newAdventUrl": "https://www.newadvent.org/cathen/07349b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Hilaryofpoitiers.jpg/330px-Hilaryofpoitiers.jpg",
+      "summary": "Hilary of Poitiers was a bishop and theologian known as the 'Hammer of the Arians' for his vigorous defense of Nicene orthodoxy. He wrote extensively against Arianism and was exiled for his faith. His works on the Trinity were influential in the West, and he is considered a Doctor of the Church.",
+      "keyQuotes": []
+    },
+    {
+      "id": "ephrem-syrian",
+      "name": "St. Ephrem the Syrian",
+      "birthYear": 306,
+      "deathYear": 373,
+      "feastDay": "June 9",
+      "primaryTradition": "Syriac",
+      "roles": ["deacon", "hymnographer", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "edessa",
+          "description": "Deacon and teacher in Edessa"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ephrem_the_Syrian",
+      "newAdventUrl": "https://www.newadvent.org/cathen/05498a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ephrem_the_Syrian_%28mosaic_in_Nea_Moni%29.jpg/330px-Ephrem_the_Syrian_%28mosaic_in_Nea_Moni%29.jpg",
+      "summary": "Ephrem the Syrian was a deacon, hymnographer, and theologian who wrote extensively in Syriac. He is known for his hymns, which were used to teach orthodox doctrine and combat heresy. He is the only Syriac-speaking Doctor of the Church and is venerated in both Eastern and Western Christianity.",
+      "keyQuotes": []
+    },
+    {
       "id": "athanasius",
       "name": "St. Athanasius",
       "birthYear": 296,
@@ -778,6 +910,52 @@
       ]
     },
     {
+      "id": "macrina-younger",
+      "name": "St. Macrina the Younger",
+      "birthYear": 327,
+      "deathYear": 379,
+      "feastDay": "July 19",
+      "primaryTradition": "Greek",
+      "roles": ["nun"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "caesarea-cappadocia",
+          "description": "Nun in Cappadocia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Macrina_the_Younger",
+      "newAdventUrl": "https://www.newadvent.org/cathen/09500a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Macrina_the_Younger.jpg/320px-Macrina_the_Younger.jpg",
+      "summary": "Macrina the Younger was the sister of Basil the Great and Gregory of Nyssa, and the granddaughter of Macrina the Elder. She established a monastic community for women and was a significant influence on her brothers' theological development. Gregory of Nyssa wrote a biography of her life.",
+      "keyQuotes": []
+    },
+    {
+      "id": "gregory-nyssa",
+      "name": "St. Gregory of Nyssa",
+      "birthYear": 335,
+      "deathYear": 395,
+      "feastDay": "January 10",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "nyssa",
+          "description": "Bishop of Nyssa"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Gregory_of_Nyssa",
+      "newAdventUrl": "https://www.newadvent.org/cathen/07016a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gregory_of_Nyssa.jpg/330px-Gregory_of_Nyssa.jpg",
+      "summary": "Gregory of Nyssa was a bishop and theologian, and the younger brother of Basil the Great. Together with Basil and Gregory of Nazianzus, he is known as one of the Cappadocian Fathers. He wrote extensively on theology, mysticism, and spirituality, and is considered a Doctor of the Church.",
+      "keyQuotes": [
+        "The goal of a virtuous life is to become like God."
+      ]
+    },
+    {
       "id": "gregory-nazianzen",
       "name": "St. Gregory of Nazianzus",
       "birthYear": 329,
@@ -802,6 +980,50 @@
       ]
     },
     {
+      "id": "martin-tours",
+      "name": "St. Martin of Tours",
+      "birthYear": 316,
+      "deathYear": 397,
+      "feastDay": "November 11",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "monk"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "tours",
+          "description": "Bishop of Tours"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Martin_of_Tours",
+      "newAdventUrl": "https://www.newadvent.org/cathen/09732c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Simone_Martini_040.jpg/330px-Simone_Martini_040.jpg",
+      "summary": "Martin of Tours was a bishop and monk who is credited with bringing monasticism to Gaul. He founded the first monastery in Gaul and is known for his charity and asceticism. The story of him sharing his cloak with a beggar became one of the most famous hagiographical accounts in the Middle Ages.",
+      "keyQuotes": []
+    },
+    {
+      "id": "monica",
+      "name": "St. Monica",
+      "birthYear": 331,
+      "deathYear": 387,
+      "feastDay": "August 27",
+      "primaryTradition": "Latin",
+      "roles": [],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "hippo",
+          "description": "Mother of St. Augustine"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Monica",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10482a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Monica_of_Hippo_by_Gozzoli.jpg/330px-Monica_of_Hippo_by_Gozzoli.jpg",
+      "summary": "Monica was the mother of St. Augustine of Hippo. She is known for her persistent prayers for her son's conversion, which were eventually answered. Augustine wrote extensively about her in his 'Confessions,' describing her as a model of Christian motherhood and piety.",
+      "keyQuotes": []
+    },
+    {
       "id": "ambrose",
       "name": "St. Ambrose",
       "birthYear": 340,
@@ -823,6 +1045,30 @@
       "summary": "Ambrose was a bishop of Milan who became one of the most influential ecclesiastical figures of the 4th century. He is counted as one of the four original doctors of the Church.",
       "keyQuotes": [
         "When in Rome, do as the Romans do."
+      ]
+    },
+    {
+      "id": "jerome",
+      "name": "St. Jerome",
+      "birthYear": 347,
+      "deathYear": 420,
+      "feastDay": "September 30",
+      "primaryTradition": "Latin",
+      "roles": ["priest", "Doctor of the Church", "biblical scholar"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "bethlehem",
+          "description": "Monk and biblical scholar in Bethlehem"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jerome",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08341a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/MatthiasStom-SaintJerome-Nantes.jpg/330px-MatthiasStom-SaintJerome-Nantes.jpg",
+      "summary": "Jerome was a priest, biblical scholar, and translator who produced the Vulgate, the Latin translation of the Bible that became the standard version in the Western Church for over a millennium. He wrote extensively on Scripture, theology, and Christian life, and is considered one of the four original Doctors of the Church.",
+      "keyQuotes": [
+        "Ignorance of Scripture is ignorance of Christ."
       ]
     },
     {
@@ -1132,6 +1378,76 @@
       ]
     },
     {
+      "id": "constantine-conversion",
+      "name": "Constantine's Conversion",
+      "startYear": 312,
+      "endYear": 312,
+      "type": "other",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Constantine_the_Great_and_Christianity",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04295c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/BnF_MS_Gr510_folio_440_recto_-_detail_-_Constantine%27s_Vision_and_the_Battle_of_the_Milvian_Bridge.jpg/330px-BnF_MS_Gr510_folio_440_recto_-_detail_-_Constantine%27s_Vision_and_the_Battle_of_the_Milvian_Bridge.jpg",
+      "summary": "Constantine the Great's conversion to Christianity, traditionally dated to 312 AD at the Battle of the Milvian Bridge, marked a turning point in Church history. According to tradition, Constantine saw a vision of a cross in the sky with the words 'In this sign, you will conquer.' His subsequent victory and eventual legalization of Christianity transformed the Church's relationship with the Roman state.",
+      "keyDocuments": []
+    },
+    {
+      "id": "edict-milan",
+      "name": "Edict of Milan",
+      "startYear": 313,
+      "endYear": 313,
+      "type": "other",
+      "locationId": "milan",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Edict_of_Milan",
+      "newAdventUrl": "https://www.newadvent.org/cathen/05330a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Constantine_Chiaramonti_Inv1749.jpg/330px-Constantine_Chiaramonti_Inv1749.jpg",
+      "summary": "The Edict of Milan, issued by Emperors Constantine and Licinius in 313 AD, legalized Christianity throughout the Roman Empire and granted religious tolerance to all faiths. This edict ended the persecution of Christians and marked the beginning of Christianity's transformation from a persecuted minority to the dominant religion of the Roman Empire.",
+      "keyDocuments": [
+        "Edict of Milan"
+      ]
+    },
+    {
+      "id": "arian-controversy",
+      "name": "Arian Controversy",
+      "startYear": 318,
+      "endYear": 381,
+      "type": "other",
+      "locationId": "alexandria",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Arian_controversy",
+      "newAdventUrl": "https://www.newadvent.org/cathen/01707c.htm",
+      "summary": "The Arian controversy was a major theological dispute in the 4th century over the nature of Christ's relationship to God the Father. Arius, a priest of Alexandria, taught that the Son was created and subordinate to the Father. This was opposed by Athanasius and others, leading to the First Council of Nicaea (325) and the First Council of Constantinople (381), which established the orthodox doctrine of the Trinity.",
+      "keyDocuments": [
+        "Nicene Creed",
+        "Niceno-Constantinopolitan Creed"
+      ]
+    },
+    {
+      "id": "council-sardica",
+      "name": "Council of Sardica",
+      "startYear": 343,
+      "endYear": 343,
+      "type": "council",
+      "locationId": "sardica",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Sardica",
+      "newAdventUrl": "https://www.newadvent.org/cathen/13479a.htm",
+      "summary": "The Council of Sardica was convened in 343 AD to address the Arian controversy and the case of Athanasius, who had been deposed from his see. The council reaffirmed the Nicene Creed and established procedures for appealing to Rome, though the Eastern bishops left early, creating a schism. The council's canons became important for the development of papal authority.",
+      "keyDocuments": [
+        "Canons of Sardica"
+      ]
+    },
+    {
+      "id": "donatism",
+      "name": "Donatism",
+      "startYear": 311,
+      "endYear": 411,
+      "type": "schism",
+      "locationId": "carthage",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Donatism",
+      "newAdventUrl": "https://www.newadvent.org/cathen/05121a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Augustine_and_donatists.jpg/330px-Augustine_and_donatists.jpg",
+      "summary": "Donatism was a schismatic movement in North Africa that began in the early 4th century. The Donatists held that the validity of sacraments depended on the moral purity of the minister, and they refused to accept bishops who had lapsed during persecution. The movement was vigorously opposed by Augustine of Hippo and was eventually suppressed, though it persisted in some areas for centuries.",
+      "keyDocuments": []
+    },
+    {
       "id": "nicaea-i",
       "name": "First Council of Nicaea",
       "startYear": 325,
@@ -1411,6 +1727,46 @@
       "lng": 8.70,
       "region": "Africa",
       "modernCountry": "Tunisia"
+    },
+    {
+      "id": "poitiers",
+      "name": "Poitiers",
+      "lat": 46.58,
+      "lng": 0.34,
+      "region": "Gaul",
+      "modernCountry": "France"
+    },
+    {
+      "id": "nyssa",
+      "name": "Nyssa",
+      "lat": 38.30,
+      "lng": 34.70,
+      "region": "Cappadocia",
+      "modernCountry": "Turkey"
+    },
+    {
+      "id": "tours",
+      "name": "Tours",
+      "lat": 47.39,
+      "lng": 0.69,
+      "region": "Gaul",
+      "modernCountry": "France"
+    },
+    {
+      "id": "bethlehem",
+      "name": "Bethlehem",
+      "lat": 31.70,
+      "lng": 35.20,
+      "region": "Judea",
+      "modernCountry": "Palestine"
+    },
+    {
+      "id": "sardica",
+      "name": "Sardica",
+      "lat": 42.70,
+      "lng": 23.32,
+      "region": "Thrace",
+      "modernCountry": "Bulgaria"
     }
   ]
 }
