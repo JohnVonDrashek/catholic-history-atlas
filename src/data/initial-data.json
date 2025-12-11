@@ -27,6 +27,16 @@
       "keyQuotes": [
         "You are the Christ, the Son of the living God.",
         "Lord, to whom shall we go? You have the words of eternal life."
+      ],
+      "writings": [
+        {
+          "title": "First Letter of Peter",
+          "url": "https://bible.usccb.org/bible/1peter/0"
+        },
+        {
+          "title": "Second Letter of Peter",
+          "url": "https://bible.usccb.org/bible/2peter/0"
+        }
       ]
     },
     {
@@ -76,6 +86,60 @@
       "keyQuotes": [
         "I have been crucified with Christ. It is no longer I who live, but Christ who lives in me.",
         "For I am convinced that neither death nor life... will be able to separate us from the love of God."
+      ],
+      "writings": [
+        {
+          "title": "Letter to the Romans",
+          "url": "https://bible.usccb.org/bible/romans/0"
+        },
+        {
+          "title": "First Letter to the Corinthians",
+          "url": "https://bible.usccb.org/bible/1corinthians/0"
+        },
+        {
+          "title": "Second Letter to the Corinthians",
+          "url": "https://bible.usccb.org/bible/2corinthians/0"
+        },
+        {
+          "title": "Letter to the Galatians",
+          "url": "https://bible.usccb.org/bible/galatians/0"
+        },
+        {
+          "title": "Letter to the Ephesians",
+          "url": "https://bible.usccb.org/bible/ephesians/0"
+        },
+        {
+          "title": "Letter to the Philippians",
+          "url": "https://bible.usccb.org/bible/philippians/0"
+        },
+        {
+          "title": "Letter to the Colossians",
+          "url": "https://bible.usccb.org/bible/colossians/0"
+        },
+        {
+          "title": "First Letter to the Thessalonians",
+          "url": "https://bible.usccb.org/bible/1thessalonians/0"
+        },
+        {
+          "title": "Second Letter to the Thessalonians",
+          "url": "https://bible.usccb.org/bible/2thessalonians/0"
+        },
+        {
+          "title": "First Letter to Timothy",
+          "url": "https://bible.usccb.org/bible/1timothy/0"
+        },
+        {
+          "title": "Second Letter to Timothy",
+          "url": "https://bible.usccb.org/bible/2timothy/0"
+        },
+        {
+          "title": "Letter to Titus",
+          "url": "https://bible.usccb.org/bible/titus/0"
+        },
+        {
+          "title": "Letter to Philemon",
+          "url": "https://bible.usccb.org/bible/philemon/0"
+        }
       ]
     },
     {
@@ -145,7 +209,13 @@
       "newAdventUrl": "https://www.newadvent.org/cathen/09672c.htm",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Frans_Hals_085.jpg/330px-Frans_Hals_085.jpg",
       "summary": "Mark the Evangelist is traditionally credited with writing the Gospel of Mark, the earliest of the four canonical gospels. He is also considered the founder of the Church of Alexandria and its first bishop. According to tradition, he was martyred in Alexandria.",
-      "keyQuotes": []
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "Gospel According to Mark",
+          "url": "https://bible.usccb.org/bible/mark/0"
+        }
+      ]
     },
     {
       "id": "barnabas",
@@ -193,7 +263,17 @@
       "newAdventUrl": "https://www.newadvent.org/cathen/09420a.htm",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Luke_by_roslin.jpg",
       "summary": "Luke the Evangelist is traditionally credited with writing the Gospel of Luke and the Acts of the Apostles. He was a physician and a companion of Paul the Apostle on his missionary journeys. His gospel emphasizes the universal nature of Christ's mission and includes many details about women and the poor.",
-      "keyQuotes": []
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "Gospel According to Luke",
+          "url": "https://bible.usccb.org/bible/luke/0"
+        },
+        {
+          "title": "Acts of the Apostles",
+          "url": "https://bible.usccb.org/bible/acts/0"
+        }
+      ]
     },
     {
       "id": "john-evangelist",
@@ -218,7 +298,251 @@
       "keyQuotes": [
         "In the beginning was the Word, and the Word was with God, and the Word was God.",
         "God is love, and whoever abides in love abides in God, and God abides in him."
+      ],
+      "writings": [
+        {
+          "title": "Gospel According to John",
+          "url": "https://bible.usccb.org/bible/john/0"
+        },
+        {
+          "title": "First Letter of John",
+          "url": "https://bible.usccb.org/bible/1john/0"
+        },
+        {
+          "title": "Second Letter of John",
+          "url": "https://bible.usccb.org/bible/2john/0"
+        },
+        {
+          "title": "Third Letter of John",
+          "url": "https://bible.usccb.org/bible/3john/0"
+        },
+        {
+          "title": "Book of Revelation",
+          "url": "https://bible.usccb.org/bible/revelation/0"
+        }
       ]
+    },
+    {
+      "id": "andrew",
+      "name": "St. Andrew",
+      "birthYear": null,
+      "deathYear": 60,
+      "feastDay": "November 30",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "patras",
+          "description": "Martyred in Patras"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Andrew_the_Apostle",
+      "newAdventUrl": "https://www.newadvent.org/cathen/01471a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Rubens_apostel_andreas_grt.jpg",
+      "summary": "Andrew was one of the Twelve Apostles and the brother of Simon Peter. He was the first disciple called by Jesus and is known for bringing his brother Peter to Christ. According to tradition, he was martyred by crucifixion on an X-shaped cross (St. Andrew's Cross) in Patras, Greece. He is the patron saint of Scotland, Russia, and Greece.",
+      "keyQuotes": [
+        "We have found the Messiah."
+      ]
+    },
+    {
+      "id": "philip",
+      "name": "St. Philip",
+      "birthYear": null,
+      "deathYear": 80,
+      "feastDay": "May 3",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "hierapolis",
+          "description": "Martyred in Hierapolis"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Philip_the_Apostle",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11797a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Rubens_apostel_philippus.jpg",
+      "summary": "Philip was one of the Twelve Apostles. He is mentioned in the Gospel of John as bringing Nathanael (Bartholomew) to Jesus. According to tradition, he preached in Asia Minor and was martyred by crucifixion in Hierapolis. He is often depicted with a cross or loaves of bread, referencing his question to Jesus about feeding the five thousand.",
+      "keyQuotes": [
+        "Lord, show us the Father, and it is enough for us."
+      ]
+    },
+    {
+      "id": "bartholomew",
+      "name": "St. Bartholomew",
+      "birthYear": null,
+      "deathYear": 70,
+      "feastDay": "August 24",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "armenia",
+          "description": "Martyred in Armenia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bartholomew_the_Apostle",
+      "newAdventUrl": "https://www.newadvent.org/cathen/02313c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Rubens_apostel_bartolomeus_grt.jpg",
+      "summary": "Bartholomew, also known as Nathanael, was one of the Twelve Apostles. He is identified in the Gospel of John as Nathanael, whom Philip brought to Jesus. According to tradition, he preached in India and Armenia, where he was martyred by being flayed alive and then beheaded. He is the patron saint of tanners and is often depicted holding a knife or his own skin.",
+      "keyQuotes": [
+        "Can anything good come out of Nazareth?"
+      ]
+    },
+    {
+      "id": "thomas",
+      "name": "St. Thomas",
+      "birthYear": null,
+      "deathYear": 72,
+      "feastDay": "July 3",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "india",
+          "description": "Martyred in India"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_the_Apostle",
+      "newAdventUrl": "https://www.newadvent.org/cathen/14698a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Rubens_apostel_thomas.jpg",
+      "summary": "Thomas, also known as Didymus (the Twin), was one of the Twelve Apostles. He is best known for doubting the Resurrection until he saw and touched the wounds of the risen Christ, earning him the nickname 'Doubting Thomas.' According to tradition, he preached the Gospel in India, where he was martyred by being speared to death. The ancient Christian communities of India trace their origins to his mission.",
+      "keyQuotes": [
+        "My Lord and my God!"
+      ]
+    },
+    {
+      "id": "matthew",
+      "name": "St. Matthew",
+      "birthYear": null,
+      "deathYear": 90,
+      "feastDay": "September 21",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "evangelist", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "ethiopia",
+          "description": "Martyred in Ethiopia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Matthew_the_Apostle",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10057b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Rubens_apostel_mattheus_grt.jpg",
+      "summary": "Matthew, also known as Levi, was a tax collector before becoming one of the Twelve Apostles. He is traditionally credited with writing the Gospel of Matthew, which emphasizes Jesus' fulfillment of Old Testament prophecies. According to tradition, he preached in Ethiopia and was martyred there. He is often depicted with a money bag or writing implements, symbolizing his former profession and his role as an evangelist.",
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "Gospel According to Matthew",
+          "url": "https://bible.usccb.org/bible/matthew/0"
+        }
+      ]
+    },
+    {
+      "id": "james-less",
+      "name": "St. James the Less",
+      "birthYear": null,
+      "deathYear": 62,
+      "feastDay": "May 3",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "bishop", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "jerusalem",
+          "description": "Bishop of Jerusalem, martyred there"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/James%2C_son_of_Alphaeus",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08280b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Rubens_apostel_jakobus_mindere_grt.jpg",
+      "summary": "James the Less, also known as James the son of Alphaeus, was one of the Twelve Apostles. He is sometimes identified with James, the brother of the Lord, who became the first bishop of Jerusalem. According to tradition, he was martyred by being thrown from the pinnacle of the Temple in Jerusalem and then stoned to death. He is often depicted with a fuller's club, the instrument of his martyrdom.",
+      "keyQuotes": []
+    },
+    {
+      "id": "jude-thaddeus",
+      "name": "St. Jude Thaddeus",
+      "birthYear": null,
+      "deathYear": 65,
+      "feastDay": "October 28",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "persia",
+          "description": "Martyred in Persia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Jude_the_Apostle",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08539a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Anthonis_van_Dyck%2C_Kunsthistorisches_Museum_Wien%2C_Gem%C3%A4ldegalerie_-_Apostel_Judas_Thadd%C3%A4us_-_GG_6809_-_Kunsthistorisches_Museum.jpg",
+      "summary": "Jude, also known as Thaddeus or Lebbaeus, was one of the Twelve Apostles. He is the author of the Epistle of Jude in the New Testament. He is often confused with Judas Iscariot, which may explain why he became the patron saint of lost causes and desperate situations. According to tradition, he preached in Mesopotamia and Persia, where he was martyred. He is the patron saint of hospitals and desperate cases.",
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "Letter of Jude",
+          "url": "https://bible.usccb.org/bible/jude/0"
+        }
+      ]
+    },
+    {
+      "id": "simon-zealot",
+      "name": "St. Simon the Zealot",
+      "birthYear": null,
+      "deathYear": 107,
+      "feastDay": "October 28",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "persia",
+          "description": "Martyred in Persia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Simon_the_Zealot",
+      "newAdventUrl": "https://www.newadvent.org/cathen/13796a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Rubens_apostel_simon.jpg",
+      "summary": "Simon the Zealot, also known as Simon the Cananaean, was one of the Twelve Apostles. The title 'Zealot' may refer to his membership in the Jewish Zealot party, or it may simply mean 'zealous.' According to tradition, he preached in Egypt and Persia, where he was martyred, possibly by being sawn in half. He is often depicted with a saw, the instrument of his martyrdom.",
+      "keyQuotes": []
+    },
+    {
+      "id": "matthias",
+      "name": "St. Matthias",
+      "birthYear": null,
+      "deathYear": 80,
+      "feastDay": "May 14",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "jerusalem",
+          "description": "Chosen as apostle in Jerusalem"
+        },
+        {
+          "placeId": "ethiopia",
+          "description": "Martyred in Ethiopia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Matthias",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10052a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Rubens_apostle_Matthias_grt.jpg",
+      "summary": "Matthias was chosen by lot to replace Judas Iscariot as one of the Twelve Apostles, as recorded in the Acts of the Apostles. He had been a follower of Jesus from the beginning of his ministry. According to tradition, he preached in Judea and then in Ethiopia, where he was martyred. He is the patron saint of carpenters and tailors.",
+      "keyQuotes": []
     },
     {
       "id": "clement-rome",
@@ -2270,6 +2594,46 @@
       "lng": 12.20,
       "region": "Italy",
       "modernCountry": "Italy"
+    },
+    {
+      "id": "patras",
+      "name": "Patras",
+      "lat": 38.25,
+      "lng": 21.73,
+      "region": "Greece",
+      "modernCountry": "Greece"
+    },
+    {
+      "id": "armenia",
+      "name": "Armenia",
+      "lat": 40.18,
+      "lng": 44.51,
+      "region": "Armenia",
+      "modernCountry": "Armenia"
+    },
+    {
+      "id": "india",
+      "name": "India",
+      "lat": 20.59,
+      "lng": 78.96,
+      "region": "India",
+      "modernCountry": "India"
+    },
+    {
+      "id": "ethiopia",
+      "name": "Ethiopia",
+      "lat": 9.15,
+      "lng": 38.75,
+      "region": "Ethiopia",
+      "modernCountry": "Ethiopia"
+    },
+    {
+      "id": "persia",
+      "name": "Persia",
+      "lat": 32.43,
+      "lng": 53.69,
+      "region": "Persia",
+      "modernCountry": "Iran"
     }
   ]
 }

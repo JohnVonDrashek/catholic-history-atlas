@@ -102,7 +102,7 @@ function PersonDetails({ person }: { person: Person }) {
       <div style={{ marginBottom: '2rem' }}>
         <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', marginBottom: '1rem' }}>
           {person.imageUrl && (
-            <div style={{ flexShrink: 0 }}>
+            <div style={{ flexShrink: 0, maxWidth: '300px', maxHeight: '400px' }}>
               <FigurePortrait
                 name={person.name}
                 imageUrl={person.imageUrl}
@@ -383,16 +383,18 @@ function EventDetails({ event }: { event: Event }) {
       <div style={{ marginBottom: '2rem' }}>
         <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', marginBottom: '1rem' }}>
           {event.imageUrl && (
-            <div style={{ flexShrink: 0 }}>
+            <div style={{ flexShrink: 0, maxWidth: '300px', maxHeight: '400px' }}>
               <img
                 src={event.imageUrl}
                 alt={event.name}
                 style={{
-                  width: '200px',
+                  width: '100%',
+                  maxWidth: '300px',
+                  maxHeight: '400px',
                   height: 'auto',
                   borderRadius: '8px',
                   boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
-                  objectFit: 'cover',
+                  objectFit: 'contain',
                 }}
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
