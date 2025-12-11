@@ -1,6 +1,250 @@
 {
   "people": [
     {
+      "id": "peter",
+      "name": "St. Peter",
+      "birthYear": null,
+      "deathYear": 64,
+      "feastDay": "June 29",
+      "primaryTradition": "Latin",
+      "roles": ["apostle", "pope", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "jerusalem",
+          "description": "Apostle in Jerusalem"
+        },
+        {
+          "placeId": "rome",
+          "description": "First Bishop of Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Peter",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11744a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Saint_Peter-Sinai_%286th_Century%29_Crop.jpg/330px-Saint_Peter-Sinai_%286th_Century%29_Crop.jpg",
+      "summary": "Simon Peter, also known as Cephas, was one of the Twelve Apostles of Jesus Christ and the first Bishop of Rome (Pope). He is traditionally considered the leader of the apostles and the foundation of the Church. According to tradition, he was martyred in Rome by crucifixion, upside down at his own request.",
+      "keyQuotes": [
+        "You are the Christ, the Son of the living God.",
+        "Lord, to whom shall we go? You have the words of eternal life."
+      ]
+    },
+    {
+      "id": "paul",
+      "name": "St. Paul",
+      "birthYear": 5,
+      "deathYear": 67,
+      "feastDay": "June 29",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "damascus",
+          "description": "Conversion on the road to Damascus"
+        },
+        {
+          "placeId": "jerusalem",
+          "description": "Apostle in Jerusalem"
+        },
+        {
+          "placeId": "corinth",
+          "description": "Founded church in Corinth"
+        },
+        {
+          "placeId": "thessalonica",
+          "description": "Founded church in Thessalonica"
+        },
+        {
+          "placeId": "philippi",
+          "description": "Founded church in Philippi"
+        },
+        {
+          "placeId": "ephesus",
+          "description": "Ministered in Ephesus"
+        },
+        {
+          "placeId": "rome",
+          "description": "Martyred in Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Paul_the_Apostle",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11567b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Fresco_of_Saint_Paul_at_Ephesus.jpg/330px-Fresco_of_Saint_Paul_at_Ephesus.jpg",
+      "summary": "Paul the Apostle, originally known as Saul of Tarsus, was a major figure in the spread of Christianity throughout the Roman Empire. After his dramatic conversion on the road to Damascus, he became the 'Apostle to the Gentiles' and wrote many of the New Testament epistles. He was martyred in Rome by beheading.",
+      "keyQuotes": [
+        "I have been crucified with Christ. It is no longer I who live, but Christ who lives in me.",
+        "For I am convinced that neither death nor life... will be able to separate us from the love of God."
+      ]
+    },
+    {
+      "id": "stephen",
+      "name": "St. Stephen",
+      "birthYear": null,
+      "deathYear": 34,
+      "feastDay": "December 26",
+      "primaryTradition": "Greek",
+      "roles": ["deacon", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "jerusalem",
+          "description": "First Christian martyr in Jerusalem"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Stephen",
+      "newAdventUrl": "https://www.newadvent.org/cathen/14286b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/St-stephen.jpg/330px-St-stephen.jpg",
+      "summary": "Stephen was one of the first seven deacons chosen by the apostles to serve the early Christian community in Jerusalem. He is venerated as the first Christian martyr, stoned to death for his faith. His martyrdom is recorded in the Acts of the Apostles, and his dying words echo those of Christ on the cross.",
+      "keyQuotes": [
+        "Lord Jesus, receive my spirit.",
+        "Lord, do not hold this sin against them."
+      ]
+    },
+    {
+      "id": "james-great",
+      "name": "St. James the Great",
+      "birthYear": null,
+      "deathYear": 44,
+      "feastDay": "July 25",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "jerusalem",
+          "description": "Apostle, martyred in Jerusalem"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/James_the_Great",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08279b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Peter_Paul_Rubens_-_St_James_the_Apostle_-_WGA20192.jpg/330px-Peter_Paul_Rubens_-_St_James_the_Apostle_-_WGA20192.jpg",
+      "summary": "James, son of Zebedee, was one of the Twelve Apostles and the brother of John the Evangelist. He was the first apostle to be martyred, beheaded by King Herod Agrippa I in Jerusalem around 44 AD. He is the patron saint of Spain, where his remains are said to be enshrined in Santiago de Compostela.",
+      "keyQuotes": []
+    },
+    {
+      "id": "mark-evangelist",
+      "name": "St. Mark the Evangelist",
+      "birthYear": null,
+      "deathYear": 68,
+      "feastDay": "April 25",
+      "primaryTradition": "Greek",
+      "roles": ["evangelist", "bishop"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "alexandria",
+          "description": "Founder and first Bishop of Alexandria"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Mark_the_Evangelist",
+      "newAdventUrl": "https://www.newadvent.org/cathen/09672c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Frans_Hals_085.jpg/330px-Frans_Hals_085.jpg",
+      "summary": "Mark the Evangelist is traditionally credited with writing the Gospel of Mark, the earliest of the four canonical gospels. He is also considered the founder of the Church of Alexandria and its first bishop. According to tradition, he was martyred in Alexandria.",
+      "keyQuotes": []
+    },
+    {
+      "id": "barnabas",
+      "name": "St. Barnabas",
+      "birthYear": null,
+      "deathYear": 61,
+      "feastDay": "June 11",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "antioch",
+          "description": "Missionary in Antioch"
+        },
+        {
+          "placeId": "cyprus",
+          "description": "Martyred in Cyprus"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Barnabas",
+      "newAdventUrl": "https://www.newadvent.org/cathen/02300a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Galer%C3%ADa_Uffizi%2C_Florencia%2C_Italia%2C_2022_09_18%2C_DD_42_%281%29_%28cropped%29.jpg/330px-Galer%C3%ADa_Uffizi%2C_Florencia%2C_Italia%2C_2022_09_18%2C_DD_42_%281%29_%28cropped%29.jpg",
+      "summary": "Barnabas was an early Christian disciple and missionary companion of Paul the Apostle. He was instrumental in introducing Paul to the apostles in Jerusalem and later accompanied him on missionary journeys. He is considered an apostle and is traditionally said to have been martyred in Cyprus.",
+      "keyQuotes": []
+    },
+    {
+      "id": "luke-evangelist",
+      "name": "St. Luke the Evangelist",
+      "birthYear": null,
+      "deathYear": 84,
+      "feastDay": "October 18",
+      "primaryTradition": "Greek",
+      "roles": ["evangelist", "physician"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "antioch",
+          "description": "Born in Antioch"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Luke_the_Evangelist",
+      "newAdventUrl": "https://www.newadvent.org/cathen/09420a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Luke_by_roslin.jpg",
+      "summary": "Luke the Evangelist is traditionally credited with writing the Gospel of Luke and the Acts of the Apostles. He was a physician and a companion of Paul the Apostle on his missionary journeys. His gospel emphasizes the universal nature of Christ's mission and includes many details about women and the poor.",
+      "keyQuotes": []
+    },
+    {
+      "id": "john-evangelist",
+      "name": "St. John the Evangelist",
+      "birthYear": 6,
+      "deathYear": 100,
+      "feastDay": "December 27",
+      "primaryTradition": "Greek",
+      "roles": ["apostle", "evangelist"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "ephesus",
+          "description": "Apostle and bishop in Ephesus"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/John_the_Apostle",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08492a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Rubens_apostel_johannes_grt.jpg/330px-Rubens_apostel_johannes_grt.jpg",
+      "summary": "John the Evangelist, also known as John the Beloved Disciple, was one of the Twelve Apostles and the author of the Gospel of John, three epistles, and the Book of Revelation. He was the only apostle not to be martyred, living to an old age in Ephesus. He is traditionally identified as the 'disciple whom Jesus loved.'",
+      "keyQuotes": [
+        "In the beginning was the Word, and the Word was with God, and the Word was God.",
+        "God is love, and whoever abides in love abides in God, and God abides in him."
+      ]
+    },
+    {
+      "id": "clement-rome",
+      "name": "St. Clement of Rome",
+      "birthYear": null,
+      "deathYear": 99,
+      "feastDay": "November 23",
+      "primaryTradition": "Latin",
+      "roles": ["pope", "Apostolic Father", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "rome",
+          "description": "Third or fourth Bishop of Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Clement_of_Rome",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04012c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clemens_Romanus.jpg/330px-Clemens_Romanus.jpg",
+      "summary": "Clement of Rome, also known as Pope Clement I, was one of the Apostolic Fathers and an early bishop of Rome. He is best known for his First Epistle to the Corinthians, one of the earliest Christian documents outside the New Testament. According to tradition, he was martyred by being tied to an anchor and thrown into the sea.",
+      "keyQuotes": [
+        "Let us be humble, therefore, brethren, laying aside all arrogance and conceit and folly and anger."
+      ]
+    },
+    {
       "id": "ignatius-antioch",
       "name": "St. Ignatius of Antioch",
       "birthYear": null,
@@ -245,6 +489,82 @@
   ],
   "events": [
     {
+      "id": "council-jerusalem",
+      "name": "Council of Jerusalem",
+      "startYear": 50,
+      "endYear": 50,
+      "type": "council",
+      "locationId": "jerusalem",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Jerusalem",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08355a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Saint_James_the_Just.jpg/319px-Saint_James_the_Just.jpg",
+      "summary": "The Council of Jerusalem was the first Christian council, held around 50 AD to address the question of whether Gentile converts to Christianity needed to follow Jewish law, particularly circumcision. The council, led by James the Just and attended by Peter and Paul, decided that Gentile converts did not need to be circumcised, establishing the universal nature of the Christian mission.",
+      "keyDocuments": [
+        "Apostolic Decree"
+      ]
+    },
+    {
+      "id": "martyrdom-stephen",
+      "name": "Martyrdom of St. Stephen",
+      "startYear": 34,
+      "endYear": 34,
+      "type": "persecution",
+      "locationId": "jerusalem",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Stephen",
+      "newAdventUrl": "https://www.newadvent.org/cathen/14286b.htm",
+      "summary": "St. Stephen became the first Christian martyr when he was stoned to death in Jerusalem around 34 AD. His martyrdom marked the beginning of the first persecution of Christians and led to the scattering of believers throughout Judea and Samaria, which paradoxically helped spread the faith.",
+      "keyDocuments": []
+    },
+    {
+      "id": "martyrdom-james-great",
+      "name": "Martyrdom of St. James the Great",
+      "startYear": 44,
+      "endYear": 44,
+      "type": "persecution",
+      "locationId": "jerusalem",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/James_the_Great",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08279b.htm",
+      "summary": "St. James the Great, one of the Twelve Apostles and brother of John the Evangelist, became the first apostle to be martyred when he was beheaded by King Herod Agrippa I in Jerusalem around 44 AD. This marked the beginning of a new wave of persecution against the early Church.",
+      "keyDocuments": []
+    },
+    {
+      "id": "nero-persecution",
+      "name": "Nero's Persecution of Christians",
+      "startYear": 64,
+      "endYear": 68,
+      "type": "persecution",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nero",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10755a.htm",
+      "summary": "Following the Great Fire of Rome in 64 AD, Emperor Nero blamed Christians for the disaster and initiated the first systematic persecution of Christians in the Roman Empire. This persecution resulted in the martyrdoms of St. Peter and St. Paul, among many others. Christians were tortured, crucified, and burned alive as human torches.",
+      "keyDocuments": []
+    },
+    {
+      "id": "martyrdom-peter-paul",
+      "name": "Martyrdom of St. Peter and St. Paul",
+      "startYear": 64,
+      "endYear": 67,
+      "type": "persecution",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Peter",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11744a.htm",
+      "summary": "St. Peter and St. Paul were both martyred in Rome during Nero's persecution. According to tradition, Peter was crucified upside down at his own request around 64 AD, while Paul was beheaded around 67 AD. Their martyrdoms marked a turning point in early Church history, establishing Rome as a center of Christian martyrdom and authority.",
+      "keyDocuments": []
+    },
+    {
+      "id": "destruction-jerusalem",
+      "name": "Destruction of Jerusalem",
+      "startYear": 70,
+      "endYear": 70,
+      "type": "other",
+      "locationId": "jerusalem",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08355a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%28Venice%29_La_distruzione_del_tempio_di_Gerusalemme_-Francesco_Hayez_-_gallerie_Accademia_Venice.jpg/330px-%28Venice%29_La_distruzione_del_tempio_di_Gerusalemme_-Francesco_Hayez_-_gallerie_Accademia_Venice.jpg",
+      "summary": "In 70 AD, the Roman general Titus besieged and destroyed Jerusalem, including the Second Temple, in response to the First Jewish-Roman War. This event fulfilled Jesus' prophecy about the destruction of the Temple and marked the end of the Jewish-Christian center in Jerusalem, forcing the Church to spread throughout the Roman Empire.",
+      "keyDocuments": []
+    },
+    {
       "id": "nicaea-i",
       "name": "First Council of Nicaea",
       "startYear": 325,
@@ -396,6 +716,70 @@
       "lng": 29.02,
       "region": "Bithynia",
       "modernCountry": "Turkey"
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "lat": 31.77,
+      "lng": 35.23,
+      "region": "Judea",
+      "modernCountry": "Israel"
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "lat": 41.90,
+      "lng": 12.50,
+      "region": "Italia",
+      "modernCountry": "Italy"
+    },
+    {
+      "id": "corinth",
+      "name": "Corinth",
+      "lat": 37.94,
+      "lng": 22.93,
+      "region": "Achaia",
+      "modernCountry": "Greece"
+    },
+    {
+      "id": "philippi",
+      "name": "Philippi",
+      "lat": 41.01,
+      "lng": 24.29,
+      "region": "Macedonia",
+      "modernCountry": "Greece"
+    },
+    {
+      "id": "thessalonica",
+      "name": "Thessalonica",
+      "lat": 40.64,
+      "lng": 22.94,
+      "region": "Macedonia",
+      "modernCountry": "Greece"
+    },
+    {
+      "id": "damascus",
+      "name": "Damascus",
+      "lat": 33.51,
+      "lng": 36.29,
+      "region": "Syria",
+      "modernCountry": "Syria"
+    },
+    {
+      "id": "caesarea-maritima",
+      "name": "Caesarea Maritima",
+      "lat": 32.50,
+      "lng": 34.90,
+      "region": "Judea",
+      "modernCountry": "Israel"
+    },
+    {
+      "id": "cyprus",
+      "name": "Cyprus",
+      "lat": 35.17,
+      "lng": 33.37,
+      "region": "Mediterranean",
+      "modernCountry": "Cyprus"
     }
   ]
 }
