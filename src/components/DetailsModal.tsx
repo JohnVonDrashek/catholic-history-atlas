@@ -30,12 +30,13 @@ export function DetailsModal({ item, onClose }: DetailsModalProps) {
       <div
         style={{
           backgroundColor: '#1a1a1a',
-          padding: '2rem',
-          borderRadius: '8px',
-          maxWidth: '600px',
-          maxHeight: '80vh',
+          padding: '2.5rem',
+          borderRadius: '12px',
+          maxWidth: '700px',
+          maxHeight: '85vh',
           overflow: 'auto',
           position: 'relative',
+          boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)',
         }}
         onClick={(e) => e.stopPropagation()}
       >
@@ -70,65 +71,246 @@ function PersonDetails({ person }: { person: Person }) {
     ? `c. ${person.birthYear}–${person.deathYear}`
     : `d. ${person.deathYear}`;
 
+  // Build subtitle from roles and primary location
+  const primaryLocation = person.locations[0]?.description;
+  const rolesText = person.roles?.filter(r => r !== 'Apostolic Father').join(', ') || '';
+  const subtitle = [primaryLocation, rolesText].filter(Boolean).join(' – ');
+
+  // Get magisterial weight (Doctor of the Church, etc.)
+  const isDoctor = person.roles?.includes('doctor of the Church');
+  const isApostolicFather = person.roles?.includes('Apostolic Father');
+
+  // Generate spiritual reflection based on person's life
+  const getSpiritualReflection = () => {
+    if (person.isMartyr) {
+      return `How does ${person.name.split(' ').pop()}'s witness of martyrdom inspire us to remain faithful even in the face of persecution?`;
+    }
+    if (isDoctor) {
+      return `What can we learn from ${person.name.split(' ').pop()}'s theological insights and how might they deepen our understanding of the faith?`;
+    }
+    if (person.orthodoxyStatus === 'heresiarch') {
+      return null; // Don't add spiritual reflection for heresiarchs
+    }
+    return `How might ${person.name.split(' ').pop()}'s example of faithfulness and service to the Church guide us in our own Christian journey?`;
+  };
+
+  const spiritualReflection = getSpiritualReflection();
+
   return (
     <div>
-      <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem' }}>
-        {person.imageUrl && (
-          <FigurePortrait
-            name={person.name}
-            imageUrl={person.imageUrl}
-            orthodoxyStatus={person.orthodoxyStatus}
-            isMartyr={person.isMartyr}
-            size="large"
-          />
-        )}
-        <div>
-          <h2 style={{ margin: 0, marginBottom: '0.5rem' }}>{person.name}</h2>
-          <p style={{ margin: 0, color: '#aaa' }}>{years}</p>
-          {person.roles && person.roles.length > 0 && (
-            <p style={{ margin: '0.5rem 0', color: '#aaa' }}>
-              {person.roles.join(', ')}
-            </p>
+      {/* Header Section */}
+      <div style={{ marginBottom: '2rem' }}>
+        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', marginBottom: '1rem' }}>
+          {person.imageUrl && (
+            <div style={{ flexShrink: 0 }}>
+              <FigurePortrait
+                name={person.name}
+                imageUrl={person.imageUrl}
+                orthodoxyStatus={person.orthodoxyStatus}
+                isMartyr={person.isMartyr}
+                size="large"
+              />
+            </div>
           )}
+          <div style={{ flex: 1 }}>
+            <h2 style={{ 
+              margin: 0, 
+              marginBottom: '0.5rem',
+              fontSize: '1.75rem',
+              color: '#fff',
+              lineHeight: '1.2',
+            }}>
+              {person.name}
+            </h2>
+            <p style={{ 
+              margin: 0, 
+              color: '#aaa',
+              fontSize: '0.95rem',
+              marginBottom: '0.5rem',
+            }}>
+              {years}
+            </p>
+            {subtitle && (
+              <p style={{ 
+                margin: 0, 
+                color: '#4a9eff',
+                fontSize: '1rem',
+                fontWeight: 500,
+                marginBottom: '0.5rem',
+              }}>
+                {subtitle}
+              </p>
+            )}
+            {(isDoctor || isApostolicFather) && (
+              <div style={{ 
+                marginTop: '0.5rem',
+                display: 'flex',
+                gap: '0.5rem',
+                flexWrap: 'wrap',
+              }}>
+                {isDoctor && (
+                  <span style={{
+                    backgroundColor: '#d4af37',
+                    color: '#000',
+                    padding: '0.25rem 0.75rem',
+                    borderRadius: '12px',
+                    fontSize: '0.85rem',
+                    fontWeight: 'bold',
+                  }}>
+                    Doctor of the Church
+                  </span>
+                )}
+                {isApostolicFather && (
+                  <span style={{
+                    backgroundColor: '#4a9eff',
+                    color: '#fff',
+                    padding: '0.25rem 0.75rem',
+                    borderRadius: '12px',
+                    fontSize: '0.85rem',
+                    fontWeight: 'bold',
+                  }}>
+                    Apostolic Father
+                  </span>
+                )}
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
-      <div style={{ marginBottom: '1rem' }}>
-        <p>{person.summary}</p>
+      {/* Summary Section */}
+      <div style={{ 
+        marginBottom: '2rem',
+        paddingBottom: '1.5rem',
+        borderBottom: '1px solid #333',
+      }}>
+        <p style={{ 
+          margin: 0,
+          lineHeight: '1.7',
+          color: '#ddd',
+          fontSize: '1rem',
+        }}>
+          {person.summary}
+        </p>
       </div>
 
+      {/* Highlights Section */}
       {person.keyQuotes && person.keyQuotes.length > 0 && (
-        <div style={{ marginBottom: '1rem' }}>
-          <h3>Key Themes</h3>
-          <ul>
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{ 
+            margin: 0,
+            marginBottom: '1rem',
+            fontSize: '1.25rem',
+            color: '#fff',
+            fontWeight: 600,
+          }}>
+            Key Contributions & Themes
+          </h3>
+          <ul style={{ 
+            margin: 0,
+            paddingLeft: '1.5rem',
+            listStyle: 'none',
+          }}>
             {person.keyQuotes.map((quote, idx) => (
-              <li key={idx}>{quote}</li>
+              <li key={idx} style={{
+                marginBottom: '0.75rem',
+                paddingLeft: '1rem',
+                position: 'relative',
+                color: '#ddd',
+                lineHeight: '1.6',
+              }}>
+                <span style={{
+                  position: 'absolute',
+                  left: 0,
+                  color: '#4a9eff',
+                  fontWeight: 'bold',
+                }}>•</span>
+                {quote}
+              </li>
             ))}
           </ul>
         </div>
       )}
 
-      <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem' }}>
-        {person.newAdventUrl && (
-          <a
-            href={person.newAdventUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: '#4a9eff' }}
-          >
-            New Advent →
-          </a>
-        )}
-        {person.wikipediaUrl && (
-          <a
-            href={person.wikipediaUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: '#4a9eff' }}
-          >
-            Wikipedia →
-          </a>
-        )}
+      {/* Spiritual Reflection Section */}
+      {spiritualReflection && (
+        <div style={{ 
+          marginBottom: '2rem',
+          padding: '1rem',
+          backgroundColor: 'rgba(74, 158, 255, 0.1)',
+          borderRadius: '8px',
+          borderLeft: '3px solid #4a9eff',
+        }}>
+          <p style={{
+            margin: 0,
+            fontStyle: 'italic',
+            color: '#bbb',
+            lineHeight: '1.6',
+          }}>
+            <strong style={{ color: '#4a9eff' }}>Reflection:</strong> {spiritualReflection}
+          </p>
+        </div>
+      )}
+
+      {/* Sources Section */}
+      <div style={{ 
+        marginTop: '2rem',
+        paddingTop: '1.5rem',
+        borderTop: '1px solid #333',
+      }}>
+        <h4 style={{
+          margin: 0,
+          marginBottom: '0.75rem',
+          fontSize: '0.95rem',
+          color: '#aaa',
+          fontWeight: 600,
+          textTransform: 'uppercase',
+          letterSpacing: '0.5px',
+        }}>
+          Sources
+        </h4>
+        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
+          {person.newAdventUrl && (
+            <a
+              href={person.newAdventUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                color: '#4a9eff',
+                textDecoration: 'none',
+                fontSize: '0.95rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+              onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
+            >
+              New Advent
+              <span style={{ fontSize: '0.85rem' }}>→</span>
+            </a>
+          )}
+          {person.wikipediaUrl && (
+            <a
+              href={person.wikipediaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                color: '#4a9eff',
+                textDecoration: 'none',
+                fontSize: '0.95rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+              onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
+            >
+              Wikipedia
+              <span style={{ fontSize: '0.85rem' }}>→</span>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -139,49 +321,161 @@ function EventDetails({ event }: { event: Event }) {
     ? `${event.startYear}–${event.endYear}`
     : event.startYear.toString();
 
+  const typeLabel = event.type.charAt(0).toUpperCase() + event.type.slice(1);
+
   return (
     <div>
-      <h2 style={{ margin: 0, marginBottom: '0.5rem' }}>{event.name}</h2>
-      <p style={{ margin: 0, color: '#aaa', marginBottom: '1rem' }}>
-        {years} • {event.type}
-      </p>
-
-      <div style={{ marginBottom: '1rem' }}>
-        <p>{event.summary}</p>
+      {/* Header Section */}
+      <div style={{ marginBottom: '2rem' }}>
+        <h2 style={{ 
+          margin: 0, 
+          marginBottom: '0.5rem',
+          fontSize: '1.75rem',
+          color: '#fff',
+          lineHeight: '1.2',
+        }}>
+          {event.name}
+        </h2>
+        <div style={{ 
+          display: 'flex',
+          gap: '1rem',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          marginBottom: '0.5rem',
+        }}>
+          <p style={{ 
+            margin: 0, 
+            color: '#aaa',
+            fontSize: '0.95rem',
+          }}>
+            {years}
+          </p>
+          <span style={{
+            backgroundColor: event.type === 'council' ? '#ffd700' : '#ff6b6b',
+            color: event.type === 'council' ? '#000' : '#fff',
+            padding: '0.25rem 0.75rem',
+            borderRadius: '12px',
+            fontSize: '0.85rem',
+            fontWeight: 'bold',
+          }}>
+            {typeLabel}
+          </span>
+        </div>
       </div>
 
+      {/* Summary Section */}
+      <div style={{ 
+        marginBottom: '2rem',
+        paddingBottom: '1.5rem',
+        borderBottom: '1px solid #333',
+      }}>
+        <p style={{ 
+          margin: 0,
+          lineHeight: '1.7',
+          color: '#ddd',
+          fontSize: '1rem',
+        }}>
+          {event.summary}
+        </p>
+      </div>
+
+      {/* Key Documents Section */}
       {event.keyDocuments && event.keyDocuments.length > 0 && (
-        <div style={{ marginBottom: '1rem' }}>
-          <h3>Key Documents</h3>
-          <ul>
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{ 
+            margin: 0,
+            marginBottom: '1rem',
+            fontSize: '1.25rem',
+            color: '#fff',
+            fontWeight: 600,
+          }}>
+            Key Documents
+          </h3>
+          <ul style={{ 
+            margin: 0,
+            paddingLeft: '1.5rem',
+            listStyle: 'none',
+          }}>
             {event.keyDocuments.map((doc, idx) => (
-              <li key={idx}>{doc}</li>
+              <li key={idx} style={{
+                marginBottom: '0.75rem',
+                paddingLeft: '1rem',
+                position: 'relative',
+                color: '#ddd',
+                lineHeight: '1.6',
+              }}>
+                <span style={{
+                  position: 'absolute',
+                  left: 0,
+                  color: '#4a9eff',
+                  fontWeight: 'bold',
+                }}>•</span>
+                {doc}
+              </li>
             ))}
           </ul>
         </div>
       )}
 
-      <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem' }}>
-        {event.newAdventUrl && (
-          <a
-            href={event.newAdventUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: '#4a9eff' }}
-          >
-            New Advent →
-          </a>
-        )}
-        {event.wikipediaUrl && (
-          <a
-            href={event.wikipediaUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: '#4a9eff' }}
-          >
-            Wikipedia →
-          </a>
-        )}
+      {/* Sources Section */}
+      <div style={{ 
+        marginTop: '2rem',
+        paddingTop: '1.5rem',
+        borderTop: '1px solid #333',
+      }}>
+        <h4 style={{
+          margin: 0,
+          marginBottom: '0.75rem',
+          fontSize: '0.95rem',
+          color: '#aaa',
+          fontWeight: 600,
+          textTransform: 'uppercase',
+          letterSpacing: '0.5px',
+        }}>
+          Sources
+        </h4>
+        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
+          {event.newAdventUrl && (
+            <a
+              href={event.newAdventUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                color: '#4a9eff',
+                textDecoration: 'none',
+                fontSize: '0.95rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+              onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
+            >
+              New Advent
+              <span style={{ fontSize: '0.85rem' }}>→</span>
+            </a>
+          )}
+          {event.wikipediaUrl && (
+            <a
+              href={event.wikipediaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                color: '#4a9eff',
+                textDecoration: 'none',
+                fontSize: '0.95rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+              onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
+            >
+              Wikipedia
+              <span style={{ fontSize: '0.85rem' }}>→</span>
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

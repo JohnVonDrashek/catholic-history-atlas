@@ -1,6 +1,6 @@
 # Catholic History Atlas
 
-An interactive Catholic history atlas that allows you to explore the Christian world through time, with timeline and map views showing saints, councils, and major events.
+An interactive Catholic history atlas that allows you to explore the Christian world through time, with timeline and map views showing saints, councils, and major events. Navigate through centuries to discover how the Church spread across the Mediterranean and beyond, from the early Church fathers to the modern era. Visualize the geographical distribution of saints and events, explore detailed biographies with images from Wikipedia, and trace the development of Christian doctrine through councils and key historical moments.
 
 ## Features
 

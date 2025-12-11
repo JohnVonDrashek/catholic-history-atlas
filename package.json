@@ -1,5 +1,6 @@
 {
   "name": "catholic-history-atlas",
+  "description": "An interactive Catholic history atlas exploring the Christian world through time with timeline and map views, featuring saints, councils, and major events from the early Church to modern times",
   "private": true,
   "version": "0.1.0",
   "type": "module",
