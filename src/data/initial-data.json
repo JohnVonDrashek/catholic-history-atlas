@@ -592,7 +592,7 @@
       ],
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Dionysius_of_Alexandria",
       "newAdventUrl": "https://www.newadvent.org/cathen/05009a.htm",
-      "imageUrl": null,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Dionisii_alek.jpg/330px-Dionisii_alek.jpg",
       "summary": "Dionysius was a bishop of Alexandria and a student of Origen. He played an important role in the theological controversies of his time, particularly regarding the Trinity and the treatment of those who lapsed during persecution. He was known for his moderation and pastoral care.",
       "keyQuotes": []
     },
@@ -1072,6 +1072,168 @@
       ]
     },
     {
+      "id": "cyril-alexandria",
+      "name": "St. Cyril of Alexandria",
+      "birthYear": 376,
+      "deathYear": 444,
+      "feastDay": "June 27",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "alexandria",
+          "description": "Bishop of Alexandria"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cyril_of_Alexandria",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04592b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Chora-Kirche_2013-03-21zh_%28cropped%29.jpg/330px-Chora-Kirche_2013-03-21zh_%28cropped%29.jpg",
+      "summary": "Cyril of Alexandria was a bishop and theologian who played a central role in the Council of Ephesus (431), where he defended the title 'Theotokos' (God-bearer) for the Virgin Mary and opposed Nestorianism. He is considered a Doctor of the Church and is known for his extensive theological writings.",
+      "keyQuotes": [
+        "I have been accustomed to pay reverence to the holy Fathers, and to follow them in all things."
+      ]
+    },
+    {
+      "id": "leo-great",
+      "name": "St. Leo the Great",
+      "birthYear": 400,
+      "deathYear": 461,
+      "feastDay": "November 10",
+      "primaryTradition": "Latin",
+      "roles": ["pope", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "rome",
+          "description": "Pope of Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_I",
+      "newAdventUrl": "https://www.newadvent.org/cathen/09154b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Herrera_mozo_San_Le%C3%B3n_magno_Lienzo._%C3%93valo._164_x_105_cm._Museo_del_Prado.png/330px-Herrera_mozo_San_Le%C3%B3n_magno_Lienzo._%C3%93valo._164_x_105_cm._Museo_del_Prado.png",
+      "summary": "Leo the Great was Pope from 440 to 461 and is one of the most important popes in Church history. He is best known for his 'Tome of Leo,' which was instrumental in the Council of Chalcedon (451) in defining the two natures of Christ. He also famously met Attila the Hun and persuaded him not to sack Rome.",
+      "keyQuotes": [
+        "Christian, recognize your dignity."
+      ]
+    },
+    {
+      "id": "patrick",
+      "name": "St. Patrick",
+      "birthYear": 385,
+      "deathYear": 461,
+      "feastDay": "March 17",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "missionary"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "ireland",
+          "description": "Apostle of Ireland"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Patrick",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11554a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Saint_Patrick_Catholic_Church_%28Junction_City%2C_Ohio%29_-_stained_glass%2C_Saint_Patrick_-_detail.jpg/330px-Saint_Patrick_Catholic_Church_%28Junction_City%2C_Ohio%29_-_stained_glass%2C_Saint_Patrick_-_detail.jpg",
+      "summary": "Patrick was a Romano-British Christian missionary and bishop who is credited with bringing Christianity to Ireland. He is the patron saint of Ireland and is celebrated on March 17. His 'Confessio' provides valuable insight into his life and mission.",
+      "keyQuotes": [
+        "I am Patrick, a sinner, most unlearned, the least of all the faithful, and utterly despised by many."
+      ]
+    },
+    {
+      "id": "vincent-lerins",
+      "name": "St. Vincent of Lérins",
+      "birthYear": null,
+      "deathYear": 445,
+      "feastDay": "May 24",
+      "primaryTradition": "Latin",
+      "roles": ["monk", "theologian"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "lerins",
+          "description": "Monk at Lérins Abbey"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Vincent_of_Lérins",
+      "newAdventUrl": "https://www.newadvent.org/cathen/15434a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Icon_of_St_Vincent_of_Lerins_by_Bojan_Teodosijevi%C4%87.jpg/330px-Icon_of_St_Vincent_of_Lerins_by_Bojan_Teodosijevi%C4%87.jpg",
+      "summary": "Vincent of Lérins was a monk and theologian known for his 'Commonitorium,' in which he formulated the famous principle: 'What has been believed everywhere, always, and by all' (quod ubique, quod semper, quod ab omnibus). This became a key criterion for orthodoxy.",
+      "keyQuotes": [
+        "We hold that which has been believed everywhere, always, and by all."
+      ]
+    },
+    {
+      "id": "prosper-aquitaine",
+      "name": "St. Prosper of Aquitaine",
+      "birthYear": 390,
+      "deathYear": 455,
+      "feastDay": "June 25",
+      "primaryTradition": "Latin",
+      "roles": ["theologian", "writer"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "rome",
+          "description": "Theologian and writer in Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Prosper_of_Aquitaine",
+      "newAdventUrl": "https://www.newadvent.org/cathen/12495a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Aquit%C3%A1niai_Szent_Prosper.jpg/330px-Aquit%C3%A1niai_Szent_Prosper.jpg",
+      "summary": "Prosper of Aquitaine was a theologian and writer who defended Augustine's teachings on grace and predestination. He worked closely with Pope Leo I and wrote extensively against Pelagianism and Semi-Pelagianism.",
+      "keyQuotes": []
+    },
+    {
+      "id": "peter-chrysologus",
+      "name": "St. Peter Chrysologus",
+      "birthYear": 380,
+      "deathYear": 450,
+      "feastDay": "July 30",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "ravenna",
+          "description": "Bishop of Ravenna"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Chrysologus",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11766a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pedro_crisologo01.jpg/330px-Pedro_crisologo01.jpg",
+      "summary": "Peter Chrysologus was Bishop of Ravenna and is known as the 'Golden Worded' for his eloquent sermons. He is considered a Doctor of the Church and was a strong supporter of Pope Leo I's teachings on the two natures of Christ.",
+      "keyQuotes": []
+    },
+    {
+      "id": "simeon-stylites",
+      "name": "St. Simeon Stylites",
+      "birthYear": 390,
+      "deathYear": 459,
+      "feastDay": "January 5",
+      "primaryTradition": "Syriac",
+      "roles": ["monk", "hermit"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "antioch",
+          "description": "Stylite monk near Antioch"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Simeon_Stylites",
+      "newAdventUrl": "https://www.newadvent.org/cathen/13795a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Plaque_de_Saint-Simeon_%28Louvre%2C_Bj_2180%29_%28cropped%29.jpg/330px-Plaque_de_Saint-Simeon_%28Louvre%2C_Bj_2180%29_%28cropped%29.jpg",
+      "summary": "Simeon Stylites was a Syriac ascetic who lived for 37 years on a small platform on top of a pillar near Antioch. He is the first and most famous of the stylite saints, and his example influenced many later ascetics.",
+      "keyQuotes": []
+    },
+    {
       "id": "john-chrysostom",
       "name": "St. John Chrysostom",
       "birthYear": 349,
@@ -1448,6 +1610,61 @@
       "keyDocuments": []
     },
     {
+      "id": "sack-rome-410",
+      "name": "Sack of Rome (410)",
+      "startYear": 410,
+      "endYear": 410,
+      "type": "other",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)",
+      "newAdventUrl": "https://www.newadvent.org/cathen/13146a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Visigoths_sack_Rome.jpg/330px-Visigoths_sack_Rome.jpg",
+      "summary": "The Sack of Rome by the Visigoths under Alaric I in 410 AD was a pivotal event that shocked the Roman world. It was the first time in nearly 800 years that Rome had been captured by a foreign enemy. This event had profound psychological and theological implications, leading Augustine to write 'The City of God' in response to claims that Christianity had weakened Rome.",
+      "keyDocuments": []
+    },
+    {
+      "id": "nestorianism",
+      "name": "Nestorian Controversy",
+      "startYear": 428,
+      "endYear": 451,
+      "type": "other",
+      "locationId": "constantinople",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Nestorianism",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10755a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/EcumenicalCouncil_3rd_09-07.jpg/330px-EcumenicalCouncil_3rd_09-07.jpg",
+      "summary": "The Nestorian controversy was a major theological dispute in the 5th century over the nature of Christ. Nestorius, Patriarch of Constantinople, objected to calling Mary 'Theotokos' (God-bearer), preferring 'Christotokos' (Christ-bearer). This was condemned at the Council of Ephesus (431), leading to a schism with the Church of the East.",
+      "keyDocuments": [
+        "Council of Ephesus (431)"
+      ]
+    },
+    {
+      "id": "monophysitism",
+      "name": "Monophysite Controversy",
+      "startYear": 444,
+      "endYear": 680,
+      "type": "other",
+      "locationId": "alexandria",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Monophysitism",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10489b.htm",
+      "summary": "Monophysitism was a Christological heresy that held that Christ has only one nature (divine), rather than two natures (divine and human) in one person. This was condemned at the Council of Chalcedon (451), which affirmed the orthodox doctrine of the hypostatic union. The controversy led to schisms with several Eastern churches.",
+      "keyDocuments": [
+        "Council of Chalcedon (451)"
+      ]
+    },
+    {
+      "id": "fall-western-empire",
+      "name": "Fall of the Western Roman Empire",
+      "startYear": 476,
+      "endYear": 476,
+      "type": "other",
+      "locationId": "ravenna",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+      "newAdventUrl": "https://www.newadvent.org/cathen/13146a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Roman_Republic_Empire_map.gif/330px-Roman_Republic_Empire_map.gif",
+      "summary": "The fall of the Western Roman Empire in 476 AD, when the last Western Roman Emperor Romulus Augustulus was deposed by Odoacer, marked the end of ancient Rome and the beginning of the Middle Ages. This event had profound consequences for the Church, which would become the primary institution preserving Roman culture and civilization in the West.",
+      "keyDocuments": []
+    },
+    {
       "id": "nicaea-i",
       "name": "First Council of Nicaea",
       "startYear": 325,
@@ -1488,7 +1705,7 @@
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Ephesus",
       "newAdventUrl": "https://www.newadvent.org/cathen/05491a.htm",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Concile-Ephese-Fourviere-detail.jpg/330px-Concile-Ephese-Fourviere-detail.jpg",
-      "summary": "The Council of Ephesus was a council of Christian bishops convened in Ephesus in AD 431 by the Roman Emperor Theodosius II. This third ecumenical council, an effort to attain consensus in the church, confirmed the original Nicene Creed, and condemned the teachings of Nestorius.",
+      "summary": "The Council of Ephesus was the third ecumenical council, convened in 431 AD by Emperor Theodosius II. It condemned Nestorianism and affirmed that Mary is 'Theotokos' (God-bearer), confirming the unity of Christ's person. The council was presided over by Cyril of Alexandria and played a crucial role in defining orthodox Christology.",
       "keyDocuments": [
         "Condemnation of Nestorianism",
         "Definition of Theotokos"
@@ -1504,7 +1721,7 @@
       "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Chalcedon",
       "newAdventUrl": "https://www.newadvent.org/cathen/03555a.htm",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Fourth_ecumenical_council_of_chalcedon_-_1876.jpg/330px-Fourth_ecumenical_council_of_chalcedon_-_1876.jpg",
-      "summary": "The Council of Chalcedon was a church council held from 8 October to 1 November 451, at Chalcedon, a town of Bithynia in Asia Minor. The council was attended by over 520 bishops or their representatives, making it the largest and best-documented of the first seven ecumenical councils.",
+      "summary": "The Council of Chalcedon was the fourth ecumenical council, held in 451 AD. It defined the orthodox doctrine of the two natures of Christ (divine and human) in one person, using Pope Leo I's 'Tome of Leo' as a key document. The council condemned both Nestorianism and Monophysitism, establishing the Chalcedonian Definition that remains the standard of orthodoxy. Over 520 bishops attended, making it the largest and best-documented of the first seven ecumenical councils.",
       "keyDocuments": [
         "Chalcedonian Definition",
         "Tome of Leo"
@@ -1767,6 +1984,30 @@
       "lng": 23.32,
       "region": "Thrace",
       "modernCountry": "Bulgaria"
+    },
+    {
+      "id": "ireland",
+      "name": "Ireland",
+      "lat": 53.41,
+      "lng": -8.24,
+      "region": "Britannia",
+      "modernCountry": "Ireland"
+    },
+    {
+      "id": "lerins",
+      "name": "Lérins",
+      "lat": 43.50,
+      "lng": 7.05,
+      "region": "Gaul",
+      "modernCountry": "France"
+    },
+    {
+      "id": "ravenna",
+      "name": "Ravenna",
+      "lat": 44.42,
+      "lng": 12.20,
+      "region": "Italy",
+      "modernCountry": "Italy"
     }
   ]
 }
