@@ -1,0 +1,397 @@
+{
+  "people": [
+    {
+      "id": "ignatius-antioch",
+      "name": "St. Ignatius of Antioch",
+      "birthYear": null,
+      "deathYear": 108,
+      "feastDay": "October 17",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "martyr", "Apostolic Father"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "antioch",
+          "description": "Bishop of Antioch"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ignatius_of_Antioch",
+      "newAdventUrl": "https://www.newadvent.org/cathen/07644a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Ignatius_of_Antioch.jpg/200px-Ignatius_of_Antioch.jpg",
+      "summary": "Ignatius of Antioch was an early Christian writer and bishop of Antioch. He was martyred in Rome, and on his way there, he wrote seven letters to various churches. These letters are among the earliest Christian documents outside the New Testament.",
+      "keyQuotes": [
+        "Where the bishop is, there let the multitude of believers be; even as where Jesus is, there is the Catholic Church.",
+        "I am God's wheat, and I shall be ground by the teeth of wild beasts, that I may be found the pure bread of Christ."
+      ]
+    },
+    {
+      "id": "polycarp",
+      "name": "St. Polycarp",
+      "birthYear": 69,
+      "deathYear": 155,
+      "feastDay": "February 23",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "martyr", "Apostolic Father"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "smyrna",
+          "description": "Bishop of Smyrna"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Polycarp",
+      "newAdventUrl": "https://www.newadvent.org/cathen/12219b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Polycarp.jpg/200px-Polycarp.jpg",
+      "summary": "Polycarp was a 2nd-century Christian bishop of Smyrna. According to the Martyrdom of Polycarp, he was martyred by being stabbed after an attempt to burn him at the stake proved unsuccessful.",
+      "keyQuotes": [
+        "Eighty and six years have I served Christ, and He never did me any injury: how then can I blaspheme my King and my Saviour?"
+      ]
+    },
+    {
+      "id": "irenaeus",
+      "name": "St. Irenaeus",
+      "birthYear": 130,
+      "deathYear": 202,
+      "feastDay": "June 28",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "lyons",
+          "description": "Bishop of Lyons"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Irenaeus",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08130b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Irenaeus.jpg/200px-Irenaeus.jpg",
+      "summary": "Irenaeus was a Greek bishop noted for his role in guiding and expanding Christian communities in the southern regions of present-day France and, more widely, for the development of Christian theology by combating heresy and defining orthodoxy.",
+      "keyQuotes": [
+        "The glory of God is man fully alive, and the life of man is the vision of God."
+      ]
+    },
+    {
+      "id": "athanasius",
+      "name": "St. Athanasius",
+      "birthYear": 296,
+      "deathYear": 373,
+      "feastDay": "May 2",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "alexandria",
+          "description": "Bishop of Alexandria"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Athanasius_of_Alexandria",
+      "newAdventUrl": "https://www.newadvent.org/cathen/02035a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Athanasius_of_Alexandria.jpg/200px-Athanasius_of_Alexandria.jpg",
+      "summary": "Athanasius was a Christian theologian, bishop of Alexandria, and a noted Egyptian leader of the fourth century. He is best known for his role in the conflict with Arius and Arianism. At the First Council of Nicaea, Athanasius argued against the Arians and was a key defender of the doctrine of the Trinity.",
+      "keyQuotes": [
+        "For the Son of God became man so that we might become God.",
+        "He, indeed, assumed humanity that we might become God."
+      ]
+    },
+    {
+      "id": "basil-great",
+      "name": "St. Basil the Great",
+      "birthYear": 329,
+      "deathYear": 379,
+      "feastDay": "January 2",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "caesarea-cappadocia",
+          "description": "Bishop of Caesarea"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Basil_of_Caesarea",
+      "newAdventUrl": "https://www.newadvent.org/cathen/02330b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Basil_of_Caesarea.jpg/200px-Basil_of_Caesarea.jpg",
+      "summary": "Basil of Caesarea, also called Saint Basil the Great, was a bishop of Caesarea Mazaca in Cappadocia, Asia Minor. He was an influential theologian who supported the Nicene Creed and opposed the heresies of the early Christian church.",
+      "keyQuotes": [
+        "The bread which you do not use is the bread of the hungry; the garment hanging in your wardrobe is the garment of him who is naked."
+      ]
+    },
+    {
+      "id": "gregory-nazianzen",
+      "name": "St. Gregory of Nazianzus",
+      "birthYear": 329,
+      "deathYear": 390,
+      "feastDay": "January 2",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "constantinople",
+          "description": "Bishop of Constantinople"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Gregory_of_Nazianzus",
+      "newAdventUrl": "https://www.newadvent.org/cathen/07010b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Gregory_of_Nazianzus.jpg/200px-Gregory_of_Nazianzus.jpg",
+      "summary": "Gregory of Nazianzus, also known as Gregory the Theologian or Gregory Nazianzen, was a 4th-century Archbishop of Constantinople, and theologian. He is widely considered the most accomplished rhetorical stylist of the patristic age.",
+      "keyQuotes": [
+        "What is not assumed is not healed."
+      ]
+    },
+    {
+      "id": "ambrose",
+      "name": "St. Ambrose",
+      "birthYear": 340,
+      "deathYear": 397,
+      "feastDay": "December 7",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "milan",
+          "description": "Bishop of Milan"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ambrose",
+      "newAdventUrl": "https://www.newadvent.org/cathen/01383c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ambrose.jpg/200px-Ambrose.jpg",
+      "summary": "Ambrose was a bishop of Milan who became one of the most influential ecclesiastical figures of the 4th century. He is counted as one of the four original doctors of the Church.",
+      "keyQuotes": [
+        "When in Rome, do as the Romans do."
+      ]
+    },
+    {
+      "id": "john-chrysostom",
+      "name": "St. John Chrysostom",
+      "birthYear": 349,
+      "deathYear": 407,
+      "feastDay": "September 13",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "constantinople",
+          "description": "Bishop of Constantinople"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Chrysostom",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08452b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/John_Chrysostom.jpg/200px-John_Chrysostom.jpg",
+      "summary": "John Chrysostom was an important Early Church Father who served as archbishop of Constantinople. He is known for his preaching and public speaking, his denunciation of abuse of authority by both ecclesiastical and political leaders, and his Divine Liturgy.",
+      "keyQuotes": [
+        "The rich man is not one who is in possession of much, but one who gives much."
+      ]
+    },
+    {
+      "id": "augustine",
+      "name": "St. Augustine of Hippo",
+      "birthYear": 354,
+      "deathYear": 430,
+      "feastDay": "August 28",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "hippo",
+          "description": "Bishop of Hippo"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
+      "newAdventUrl": "https://www.newadvent.org/cathen/02084a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Saint_Augustine_by_Philippe_de_Champaigne.jpg/200px-Saint_Augustine_by_Philippe_de_Champaigne.jpg",
+      "summary": "Augustine of Hippo, also known as Saint Augustine, was a theologian and philosopher of Berber origin and the bishop of Hippo Regius in Numidia, Roman North Africa. His writings influenced the development of Western philosophy and Western Christianity.",
+      "keyQuotes": [
+        "You have made us for yourself, O Lord, and our hearts are restless until they rest in you.",
+        "Late have I loved you, O Beauty ever ancient, ever new, late have I loved you!"
+      ]
+    },
+    {
+      "id": "arius",
+      "name": "Arius",
+      "birthYear": 256,
+      "deathYear": 336,
+      "primaryTradition": "Greek",
+      "roles": ["priest"],
+      "orthodoxyStatus": "heresiarch",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "alexandria",
+          "description": "Priest of Alexandria"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Arius",
+      "newAdventUrl": "https://www.newadvent.org/cathen/01707c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Arius.jpg/200px-Arius.jpg",
+      "summary": "Arius was a Cyrenaic presbyter, ascetic, and priest in Alexandria, Egypt. His teachings about the nature of the Godhead, which emphasized the Father's divinity over the Son, and his opposition to what would become the Nicene Creed, made him a primary topic of the First Council of Nicaea.",
+      "keyQuotes": [
+        "There was a time when the Son was not."
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "nicaea-i",
+      "name": "First Council of Nicaea",
+      "startYear": 325,
+      "endYear": 325,
+      "type": "council",
+      "locationId": "nicaea",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11044a.htm",
+      "summary": "The First Council of Nicaea was a council of Christian bishops convened in the Bithynian city of Nicaea by the Roman Emperor Constantine I in AD 325. This ecumenical council was the first effort to attain consensus in the church through an assembly representing all of Christendom.",
+      "keyDocuments": [
+        "Nicene Creed",
+        "Canons of Nicaea"
+      ]
+    },
+    {
+      "id": "constantinople-i",
+      "name": "First Council of Constantinople",
+      "startYear": 381,
+      "endYear": 381,
+      "type": "council",
+      "locationId": "constantinople",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Council_of_Constantinople",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04308a.htm",
+      "summary": "The First Council of Constantinople was a council of Christian bishops convened in Constantinople in AD 381 by the Roman Emperor Theodosius I. This second ecumenical council, a continuation of the First Council of Nicaea, was intended to complete the Nicene Creed.",
+      "keyDocuments": [
+        "Niceno-Constantinopolitan Creed"
+      ]
+    },
+    {
+      "id": "ephesus",
+      "name": "Council of Ephesus",
+      "startYear": 431,
+      "endYear": 431,
+      "type": "council",
+      "locationId": "ephesus",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Ephesus",
+      "newAdventUrl": "https://www.newadvent.org/cathen/05491a.htm",
+      "summary": "The Council of Ephesus was a council of Christian bishops convened in Ephesus in AD 431 by the Roman Emperor Theodosius II. This third ecumenical council, an effort to attain consensus in the church, confirmed the original Nicene Creed, and condemned the teachings of Nestorius.",
+      "keyDocuments": [
+        "Condemnation of Nestorianism",
+        "Definition of Theotokos"
+      ]
+    },
+    {
+      "id": "chalcedon",
+      "name": "Council of Chalcedon",
+      "startYear": 451,
+      "endYear": 451,
+      "type": "council",
+      "locationId": "chalcedon",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Chalcedon",
+      "newAdventUrl": "https://www.newadvent.org/cathen/03555a.htm",
+      "summary": "The Council of Chalcedon was a church council held from 8 October to 1 November 451, at Chalcedon, a town of Bithynia in Asia Minor. The council was attended by over 520 bishops or their representatives, making it the largest and best-documented of the first seven ecumenical councils.",
+      "keyDocuments": [
+        "Chalcedonian Definition",
+        "Tome of Leo"
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "antioch",
+      "name": "Antioch",
+      "lat": 36.2,
+      "lng": 36.15,
+      "region": "Syria",
+      "modernCountry": "Turkey"
+    },
+    {
+      "id": "smyrna",
+      "name": "Smyrna",
+      "lat": 38.42,
+      "lng": 27.14,
+      "region": "Asia Minor",
+      "modernCountry": "Turkey"
+    },
+    {
+      "id": "lyons",
+      "name": "Lugdunum (Lyons)",
+      "lat": 45.76,
+      "lng": 4.84,
+      "region": "Gaul",
+      "modernCountry": "France"
+    },
+    {
+      "id": "alexandria",
+      "name": "Alexandria",
+      "lat": 31.2,
+      "lng": 29.92,
+      "region": "Egypt",
+      "modernCountry": "Egypt"
+    },
+    {
+      "id": "caesarea-cappadocia",
+      "name": "Caesarea (Cappadocia)",
+      "lat": 38.72,
+      "lng": 35.48,
+      "region": "Asia Minor",
+      "modernCountry": "Turkey"
+    },
+    {
+      "id": "constantinople",
+      "name": "Constantinople",
+      "lat": 41.01,
+      "lng": 28.98,
+      "region": "Thrace",
+      "modernCountry": "Turkey"
+    },
+    {
+      "id": "milan",
+      "name": "Mediolanum (Milan)",
+      "lat": 45.46,
+      "lng": 9.19,
+      "region": "Italia",
+      "modernCountry": "Italy"
+    },
+    {
+      "id": "hippo",
+      "name": "Hippo Regius",
+      "lat": 36.88,
+      "lng": 7.75,
+      "region": "Africa",
+      "modernCountry": "Algeria"
+    },
+    {
+      "id": "nicaea",
+      "name": "Nicaea",
+      "lat": 40.43,
+      "lng": 29.72,
+      "region": "Bithynia",
+      "modernCountry": "Turkey"
+    },
+    {
+      "id": "ephesus",
+      "name": "Ephesus",
+      "lat": 37.94,
+      "lng": 27.34,
+      "region": "Asia Minor",
+      "modernCountry": "Turkey"
+    },
+    {
+      "id": "chalcedon",
+      "name": "Chalcedon",
+      "lat": 40.98,
+      "lng": 29.02,
+      "region": "Bithynia",
+      "modernCountry": "Turkey"
+    }
+  ]
+}

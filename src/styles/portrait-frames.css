@@ -1,0 +1,73 @@
+.portrait-frame {
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.portrait-frame__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* A. Canonized saint: solid gold */
+.portrait-frame--saint {
+  border: 3px solid #d4af37; /* gold */
+  box-shadow: 0 0 6px rgba(212, 175, 55, 0.6);
+}
+
+/* B. Martyr: gold + red stripes */
+.portrait-frame--martyr {
+  border: 3px solid transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #d4af37,
+    #d4af37 6px,
+    #a11b1b 6px,
+    #a11b1b 12px
+  );
+}
+
+/* Optional: inner white to keep image clean */
+.portrait-frame--martyr .portrait-frame__image {
+  border-radius: 3px;
+  border: 2px solid #fff;
+}
+
+/* C. Blessed: softer gold / silver */
+.portrait-frame--blessed {
+  border: 2px solid #c0c0c0;
+  box-shadow: 0 0 4px rgba(192, 192, 192, 0.6);
+}
+
+/* D. Orthodox-but-not-saint: stone/gray */
+.portrait-frame--orthodox {
+  border: 2px solid #777;
+  background: #f7f7f7;
+}
+
+/* E. Schismatic: split border effect */
+.portrait-frame--schismatic {
+  border: 3px solid transparent;
+  background-image: linear-gradient(
+    to right,
+    #777 0%,
+    #777 50%,
+    #b03a2e 50%,
+    #b03a2e 100%
+  );
+}
+
+/* F. Heresiarch: dark, sharp */
+.portrait-frame--heresiarch {
+  border: 3px solid #5b1a1a;
+  box-shadow: 0 0 4px rgba(91, 26, 26, 0.8);
+}
+
+/* G. Secular: thin neutral border */
+.portrait-frame--secular {
+  border: 1px solid #bbb;
+}
