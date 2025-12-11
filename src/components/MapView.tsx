@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { useEffect, useState } from 'react';
-import type { Person, Event, Place } from '../types';
+import type { Person, Event, Place, OrthodoxyStatus } from '../types';
 import { getActivePeople, getActiveEvents } from '../utils/filters';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -61,10 +61,96 @@ function calculateOffsetPosition(
   return [baseLat + latOffset, baseLng + lngOffset];
 }
 
-// Create custom icons with images
-const createPersonIcon = (imageUrl?: string) => {
+// Get border style based on orthodoxy status and martyr status
+// Matches the portrait frame system
+function getPersonBorderStyle(orthodoxyStatus: OrthodoxyStatus, isMartyr?: boolean): {
+  border: string;
+  borderWidth: string;
+  boxShadow: string;
+  background?: string;
+} {
+  if (isMartyr && (orthodoxyStatus === 'canonized' || orthodoxyStatus === 'blessed')) {
+    // Martyr: gold + red stripes
+    return {
+      border: '3px solid transparent',
+      borderWidth: '3px',
+      boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
+      background: `repeating-linear-gradient(45deg, #d4af37, #d4af37 4px, #a11b1b 4px, #a11b1b 8px)`,
+    };
+  }
+
+  switch (orthodoxyStatus) {
+    case 'canonized':
+      // Canonized saint: solid gold
+      return {
+        border: '3px solid #d4af37',
+        borderWidth: '3px',
+        boxShadow: '0 0 6px rgba(212, 175, 55, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
+      };
+    case 'blessed':
+      // Blessed: softer gold / silver
+      return {
+        border: '2px solid #c0c0c0',
+        borderWidth: '2px',
+        boxShadow: '0 0 4px rgba(192, 192, 192, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
+      };
+    case 'orthodox':
+      // Orthodox-but-not-saint: stone/gray
+      return {
+        border: '2px solid #777',
+        borderWidth: '2px',
+        boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
+        background: '#f7f7f7',
+      };
+    case 'schismatic':
+      // Schismatic: split border effect (gray + red)
+      return {
+        border: '3px solid transparent',
+        borderWidth: '3px',
+        boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
+        background: `linear-gradient(to right, #777 0%, #777 50%, #b03a2e 50%, #b03a2e 100%)`,
+      };
+    case 'heresiarch':
+      // Heresiarch: dark, sharp
+      return {
+        border: '3px solid #5b1a1a',
+        borderWidth: '3px',
+        boxShadow: '0 0 4px rgba(91, 26, 26, 0.8), 0 2px 6px rgba(0,0,0,0.4)',
+      };
+    case 'secular':
+    default:
+      // Secular: thin neutral border
+      return {
+        border: '1px solid #bbb',
+        borderWidth: '1px',
+        boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
+      };
+  }
+}
+
+// Create custom icons with images and frame colors matching portrait frames
+const createPersonIcon = (
+  imageUrl?: string,
+  orthodoxyStatus?: OrthodoxyStatus,
+  isMartyr?: boolean
+) => {
   const size = 36;
-  const fallbackHtml = '<div style="background-color: #4a9eff; width: ' + size + 'px; height: ' + size + 'px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>';
+  const borderStyle = orthodoxyStatus
+    ? getPersonBorderStyle(orthodoxyStatus, isMartyr)
+    : {
+        border: '2px solid #4a9eff',
+        borderWidth: '2px',
+        boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
+      };
+
+  const fallbackColor = orthodoxyStatus === 'canonized' ? '#d4af37' :
+                        orthodoxyStatus === 'blessed' ? '#c0c0c0' :
+                        orthodoxyStatus === 'orthodox' ? '#777' :
+                        orthodoxyStatus === 'schismatic' ? '#777' :
+                        orthodoxyStatus === 'heresiarch' ? '#5b1a1a' :
+                        '#4a9eff';
+
+  const fallbackHtml = `<div style="background-color: ${fallbackColor}; width: ${size}px; height: ${size}px; border-radius: 50%; ${borderStyle.border}; box-shadow: ${borderStyle.boxShadow};"></div>`;
   
   if (!imageUrl) {
     return L.divIcon({
@@ -75,6 +161,38 @@ const createPersonIcon = (imageUrl?: string) => {
     });
   }
 
+  // For striped backgrounds (martyrs), we need a layered approach
+  if (borderStyle.background) {
+    return L.divIcon({
+      className: 'custom-marker',
+      html: `
+        <div style="
+          position: relative;
+          width: ${size}px;
+          height: ${size}px;
+          border-radius: 50%;
+          ${borderStyle.border};
+          background: ${borderStyle.background};
+          box-shadow: ${borderStyle.boxShadow};
+          padding: 2px;
+        ">
+          <div style="
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-image: url('${imageUrl}');
+            background-size: cover;
+            background-position: center;
+            border: 2px solid white;
+          "></div>
+        </div>
+      `,
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+    });
+  }
+
+  // For solid borders
   return L.divIcon({
     className: 'custom-marker',
     html: `
@@ -82,10 +200,10 @@ const createPersonIcon = (imageUrl?: string) => {
         width: ${size}px;
         height: ${size}px;
         border-radius: 50%;
-        border: 2px solid white;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        ${borderStyle.border};
+        box-shadow: ${borderStyle.boxShadow};
         overflow: hidden;
-        background-color: #4a9eff;
+        background-color: ${fallbackColor};
         background-image: url('${imageUrl}');
         background-size: cover;
         background-position: center;
@@ -257,7 +375,7 @@ function ZoomAwareMarkers({
             if (event.type === 'council') {
               icon = createCouncilIcon(imageUrl);
             } else {
-              // Other events use person icon style
+              // Other events use person icon style (no frame colors for events)
               icon = createPersonIcon(imageUrl);
             }
           } else {
@@ -269,7 +387,8 @@ function ZoomAwareMarkers({
             if (isImportantSee) {
               icon = createImportantSeeIcon(imageUrl);
             } else {
-              icon = createPersonIcon(imageUrl);
+              // Use frame colors based on orthodoxy status and martyr status
+              icon = createPersonIcon(imageUrl, person.orthodoxyStatus, person.isMartyr);
             }
           }
 
@@ -367,66 +486,158 @@ export function MapView({ people, events, places, currentYear, onItemClick }: Ma
         boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
       }}>
         <div style={{ fontWeight: 'bold', marginBottom: '0.75rem', fontSize: '16px' }}>Map Legend</div>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <div style={{
-              backgroundColor: '#ffd700',
-              width: '20px',
-              height: '20px',
-              borderRadius: '0',
-              transform: 'rotate(45deg)',
-              border: '2px solid white',
-              boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
-              position: 'relative',
-            }}>
-              <div style={{
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%) rotate(-45deg)',
-                color: 'white',
-                fontSize: '12px',
-                fontWeight: 'bold',
-              }}>★</div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+          {/* Event Types */}
+          <div>
+            <div style={{ fontSize: '12px', color: '#aaa', marginBottom: '0.5rem', fontWeight: 'bold' }}>Events</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{
+                  backgroundColor: '#ffd700',
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '0',
+                  transform: 'rotate(45deg)',
+                  border: '2px solid white',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
+                  position: 'relative',
+                }}>
+                  <div style={{
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%) rotate(-45deg)',
+                    color: 'white',
+                    fontSize: '12px',
+                    fontWeight: 'bold',
+                  }}>★</div>
+                </div>
+                <span style={{ fontSize: '13px' }}>Council</span>
+              </div>
             </div>
-            <span>Council</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <div style={{
-              position: 'relative',
-            }}>
-              <div style={{
-                backgroundColor: '#d4af37',
-                width: '24px',
-                height: '24px',
-                borderRadius: '50%',
-                border: '3px solid white',
-                boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
-              }}></div>
-              <div style={{
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                width: '16px',
-                height: '16px',
-                borderRadius: '50%',
-                border: '2px solid white',
-                backgroundColor: 'transparent',
-              }}></div>
+
+          {/* Special Locations */}
+          <div>
+            <div style={{ fontSize: '12px', color: '#aaa', marginBottom: '0.5rem', fontWeight: 'bold' }}>Locations</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{
+                  position: 'relative',
+                }}>
+                  <div style={{
+                    backgroundColor: '#d4af37',
+                    width: '24px',
+                    height: '24px',
+                    borderRadius: '50%',
+                    border: '3px solid white',
+                    boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
+                  }}></div>
+                  <div style={{
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    width: '16px',
+                    height: '16px',
+                    borderRadius: '50%',
+                    border: '2px solid white',
+                    backgroundColor: 'transparent',
+                  }}></div>
+                </div>
+                <span style={{ fontSize: '13px' }}>Important See</span>
+              </div>
             </div>
-            <span>Important See</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <div style={{
-              backgroundColor: '#4a9eff',
-              width: '20px',
-              height: '20px',
-              borderRadius: '50%',
-              border: '2px solid white',
-              boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
-            }}></div>
-            <span>Person</span>
+
+          {/* People Frame Types */}
+          <div>
+            <div style={{ fontSize: '12px', color: '#aaa', marginBottom: '0.5rem', fontWeight: 'bold' }}>People</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '50%',
+                  border: '3px solid #d4af37',
+                  boxShadow: '0 0 6px rgba(212, 175, 55, 0.6)',
+                  backgroundColor: '#333',
+                }}></div>
+                <span style={{ fontSize: '13px' }}>Canonized Saint</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '50%',
+                  border: '3px solid transparent',
+                  background: 'repeating-linear-gradient(45deg, #d4af37, #d4af37 3px, #a11b1b 3px, #a11b1b 6px)',
+                  padding: '2px',
+                }}>
+                  <div style={{
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '50%',
+                    backgroundColor: '#333',
+                    border: '1px solid white',
+                  }}></div>
+                </div>
+                <span style={{ fontSize: '13px' }}>Martyr</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '50%',
+                  border: '2px solid #c0c0c0',
+                  boxShadow: '0 0 4px rgba(192, 192, 192, 0.6)',
+                  backgroundColor: '#333',
+                }}></div>
+                <span style={{ fontSize: '13px' }}>Blessed</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '50%',
+                  border: '2px solid #777',
+                  backgroundColor: '#f7f7f7',
+                }}></div>
+                <span style={{ fontSize: '13px' }}>Orthodox Figure</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '50%',
+                  border: '3px solid transparent',
+                  background: 'linear-gradient(to right, #777 0%, #777 50%, #b03a2e 50%, #b03a2e 100%)',
+                  backgroundColor: '#333',
+                }}></div>
+                <span style={{ fontSize: '13px' }}>Schismatic</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '50%',
+                  border: '3px solid #5b1a1a',
+                  boxShadow: '0 0 4px rgba(91, 26, 26, 0.8)',
+                  backgroundColor: '#333',
+                }}></div>
+                <span style={{ fontSize: '13px' }}>Heresiarch</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '50%',
+                  border: '1px solid #bbb',
+                  backgroundColor: '#333',
+                }}></div>
+                <span style={{ fontSize: '13px' }}>Secular Figure</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
