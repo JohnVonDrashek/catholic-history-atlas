@@ -14,6 +14,7 @@ export interface Event {
   locationId?: string;
   wikipediaUrl?: string;
   newAdventUrl?: string;
+  imageUrl?: string;
   summary: string;
   keyDocuments?: string[]; // e.g., "Nicaea I – Nicene Creed"
 }

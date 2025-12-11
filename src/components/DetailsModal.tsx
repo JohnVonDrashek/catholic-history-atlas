@@ -327,39 +327,62 @@ function EventDetails({ event }: { event: Event }) {
     <div>
       {/* Header Section */}
       <div style={{ marginBottom: '2rem' }}>
-        <h2 style={{ 
-          margin: 0, 
-          marginBottom: '0.5rem',
-          fontSize: '1.75rem',
-          color: '#fff',
-          lineHeight: '1.2',
-        }}>
-          {event.name}
-        </h2>
-        <div style={{ 
-          display: 'flex',
-          gap: '1rem',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          marginBottom: '0.5rem',
-        }}>
-          <p style={{ 
-            margin: 0, 
-            color: '#aaa',
-            fontSize: '0.95rem',
-          }}>
-            {years}
-          </p>
-          <span style={{
-            backgroundColor: event.type === 'council' ? '#ffd700' : '#ff6b6b',
-            color: event.type === 'council' ? '#000' : '#fff',
-            padding: '0.25rem 0.75rem',
-            borderRadius: '12px',
-            fontSize: '0.85rem',
-            fontWeight: 'bold',
-          }}>
-            {typeLabel}
-          </span>
+        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'flex-start', marginBottom: '1rem' }}>
+          {event.imageUrl && (
+            <div style={{ flexShrink: 0 }}>
+              <img
+                src={event.imageUrl}
+                alt={event.name}
+                style={{
+                  width: '200px',
+                  height: 'auto',
+                  borderRadius: '8px',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
+                  objectFit: 'cover',
+                }}
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                }}
+              />
+            </div>
+          )}
+          <div style={{ flex: 1 }}>
+            <h2 style={{ 
+              margin: 0, 
+              marginBottom: '0.5rem',
+              fontSize: '1.75rem',
+              color: '#fff',
+              lineHeight: '1.2',
+            }}>
+              {event.name}
+            </h2>
+            <div style={{ 
+              display: 'flex',
+              gap: '1rem',
+              alignItems: 'center',
+              flexWrap: 'wrap',
+              marginBottom: '0.5rem',
+            }}>
+              <p style={{ 
+                margin: 0, 
+                color: '#aaa',
+                fontSize: '0.95rem',
+              }}>
+                {years}
+              </p>
+              <span style={{
+                backgroundColor: event.type === 'council' ? '#ffd700' : '#ff6b6b',
+                color: event.type === 'council' ? '#000' : '#fff',
+                padding: '0.25rem 0.75rem',
+                borderRadius: '12px',
+                fontSize: '0.85rem',
+                fontWeight: 'bold',
+              }}>
+                {typeLabel}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
