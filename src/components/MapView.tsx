@@ -19,31 +19,133 @@ const IMPORTANT_SEES = new Set([
   'constantinople',
 ]);
 
-// Create custom icons
-const createPersonIcon = () => {
+// Create custom icons with images
+const createPersonIcon = (imageUrl?: string) => {
+  const size = 36;
+  const fallbackHtml = '<div style="background-color: #4a9eff; width: ' + size + 'px; height: ' + size + 'px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>';
+  
+  if (!imageUrl) {
+    return L.divIcon({
+      className: 'custom-marker',
+      html: fallbackHtml,
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+    });
+  }
+
   return L.divIcon({
     className: 'custom-marker',
-    html: '<div style="background-color: #4a9eff; width: 20px; height: 20px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>',
-    iconSize: [20, 20],
-    iconAnchor: [10, 10],
+    html: `
+      <div style="
+        width: ${size}px;
+        height: ${size}px;
+        border-radius: 50%;
+        border: 2px solid white;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        overflow: hidden;
+        background-color: #4a9eff;
+        background-image: url('${imageUrl}');
+        background-size: cover;
+        background-position: center;
+      "></div>
+    `,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
   });
 };
 
-const createCouncilIcon = () => {
+const createCouncilIcon = (imageUrl?: string) => {
+  const size = 40;
+  const fallbackHtml = '<div style="background-color: #ffd700; width: ' + size + 'px; height: ' + size + 'px; border-radius: 0; transform: rotate(45deg); border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); position: relative;"><div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg); color: white; font-size: 16px; font-weight: bold;">★</div></div>';
+  
+  if (!imageUrl) {
+    return L.divIcon({
+      className: 'custom-marker',
+      html: fallbackHtml,
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+    });
+  }
+
   return L.divIcon({
     className: 'custom-marker',
-    html: '<div style="background-color: #ffd700; width: 24px; height: 24px; border-radius: 0; transform: rotate(45deg); border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); position: relative;"><div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg); color: white; font-size: 14px; font-weight: bold;">★</div></div>',
-    iconSize: [24, 24],
-    iconAnchor: [12, 12],
+    html: `
+      <div style="
+        position: relative;
+        width: ${size}px;
+        height: ${size}px;
+        border-radius: 0;
+        transform: rotate(45deg);
+        border: 3px solid #ffd700;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        overflow: hidden;
+        background-color: #ffd700;
+        background-image: url('${imageUrl}');
+        background-size: cover;
+        background-position: center;
+      ">
+        <div style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          text-shadow: 0 0 4px rgba(0,0,0,0.8);
+        ">★</div>
+      </div>
+    `,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
   });
 };
 
-const createImportantSeeIcon = () => {
+const createImportantSeeIcon = (imageUrl?: string) => {
+  const size = 44;
+  const fallbackHtml = '<div style="position: relative;"><div style="background-color: #d4af37; width: ' + size + 'px; height: ' + size + 'px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div><div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: ' + (size - 10) + 'px; height: ' + (size - 10) + 'px; border-radius: 50%; border: 2px solid white; background-color: transparent;"></div></div>';
+  
+  if (!imageUrl) {
+    return L.divIcon({
+      className: 'custom-marker',
+      html: fallbackHtml,
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+    });
+  }
+
   return L.divIcon({
     className: 'custom-marker',
-    html: '<div style="position: relative;"><div style="background-color: #d4af37; width: 28px; height: 28px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div><div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 18px; height: 18px; border-radius: 50%; border: 2px solid white; background-color: transparent;"></div></div>',
-    iconSize: [28, 28],
-    iconAnchor: [14, 14],
+    html: `
+      <div style="position: relative;">
+        <div style="
+          width: ${size}px;
+          height: ${size}px;
+          border-radius: 50%;
+          border: 3px solid #d4af37;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+          overflow: hidden;
+          background-color: #d4af37;
+          background-image: url('${imageUrl}');
+          background-size: cover;
+          background-position: center;
+        "></div>
+        <div style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: ${size - 10}px;
+          height: ${size - 10}px;
+          border-radius: 50%;
+          border: 2px solid white;
+          background-color: transparent;
+          pointer-events: none;
+        "></div>
+      </div>
+    `,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
   });
 };
 
@@ -173,13 +275,21 @@ export function MapView({ people, events, places, currentYear, onItemClick }: Ma
           const hasCouncil = placeEvents.some(e => e.type === 'council');
           const isImportantSee = IMPORTANT_SEES.has(place.id.toLowerCase());
           
+          // Get image URL - prefer first person's image, then first event's image
+          let imageUrl: string | undefined;
+          if (placePeople.length > 0 && placePeople[0].imageUrl) {
+            imageUrl = placePeople[0].imageUrl;
+          } else if (placeEvents.length > 0 && placeEvents[0].imageUrl) {
+            imageUrl = placeEvents[0].imageUrl;
+          }
+          
           let icon;
           if (hasCouncil) {
-            icon = createCouncilIcon();
+            icon = createCouncilIcon(imageUrl);
           } else if (isImportantSee) {
-            icon = createImportantSeeIcon();
+            icon = createImportantSeeIcon(imageUrl);
           } else {
-            icon = createPersonIcon();
+            icon = createPersonIcon(imageUrl);
           }
 
           return (
