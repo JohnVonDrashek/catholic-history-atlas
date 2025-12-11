@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useRef } from 'react';
 import { Person, Event } from '../types';
 import type { OrthodoxyStatus } from '../types/person';
 
@@ -23,6 +23,9 @@ interface TimelineItem {
 export function Timeline({ people, events, currentYear, onItemClick, onYearChange }: TimelineProps) {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [imageAspectRatios, setImageAspectRatios] = useState<Map<string, number>>(new Map());
+  const [zoomLevel, setZoomLevel] = useState(0); // 0 = full range, higher = more zoomed in
+  const [viewCenter, setViewCenter] = useState<number | null>(null); // Center year of the view
+  const svgRef = useRef<SVGSVGElement>(null);
 
   // Calculate the time range for the timeline
   const { minYear, maxYear, items } = useMemo(() => {
@@ -107,16 +110,150 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     }
   };
 
+  // Calculate visible year range based on zoom level
+  const visibleRange = useMemo(() => {
+    const fullRange = maxYear - minYear;
+    if (fullRange === 0) return { start: minYear, end: maxYear };
+    
+    // Zoom factor: 1 = full range, 0.5 = half range, 0.25 = quarter range, etc.
+    const zoomFactor = Math.pow(0.5, zoomLevel);
+    const visibleSpan = fullRange * zoomFactor;
+    
+    // Center the view on current year or viewCenter, defaulting to currentYear
+    const center = viewCenter ?? currentYear;
+    const start = Math.max(minYear, center - visibleSpan / 2);
+    const end = Math.min(maxYear, start + visibleSpan);
+    
+    // Adjust start if we hit the max boundary
+    const adjustedStart = Math.max(minYear, end - visibleSpan);
+    
+    return { start: adjustedStart, end };
+  }, [minYear, maxYear, zoomLevel, viewCenter, currentYear]);
+
   const getXPosition = (year: number) => {
-    const range = maxYear - minYear;
+    const range = visibleRange.end - visibleRange.start;
     if (range === 0) return padding;
-    return padding + ((year - minYear) / range) * (timelineWidth - 2 * padding);
+    const relativeYear = year - visibleRange.start;
+    return padding + (relativeYear / range) * (timelineWidth - 2 * padding);
   };
 
   const getYearFromX = (x: number) => {
-    const range = maxYear - minYear;
+    const range = visibleRange.end - visibleRange.start;
     const relativeX = x - padding;
-    return Math.round(minYear + (relativeX / (timelineWidth - 2 * padding)) * range);
+    return Math.round(visibleRange.start + (relativeX / (timelineWidth - 2 * padding)) * range);
+  };
+
+  const handleZoomIn = () => {
+    const newZoom = Math.min(zoomLevel + 1, 5); // Max zoom level
+    setZoomLevel(newZoom);
+    if (viewCenter === null) {
+      setViewCenter(currentYear);
+    }
+  };
+
+  const handleZoomOut = () => {
+    const newZoom = Math.max(zoomLevel - 1, 0);
+    setZoomLevel(newZoom);
+    if (newZoom === 0) {
+      setViewCenter(null); // Reset to full range
+    }
+  };
+
+  const handleZoomReset = () => {
+    setZoomLevel(0);
+    setViewCenter(null);
+  };
+
+  const handlePanLeft = () => {
+    if (zoomLevel === 0) return;
+    const visibleSpan = visibleRange.end - visibleRange.start;
+    const panAmount = visibleSpan * 0.3; // Pan by 30% of visible range
+    const newCenter = Math.max(
+      minYear + visibleSpan / 2,
+      Math.min(maxYear - visibleSpan / 2, (viewCenter ?? currentYear) - panAmount)
+    );
+    setViewCenter(newCenter);
+  };
+
+  const handlePanRight = () => {
+    if (zoomLevel === 0) return;
+    const visibleSpan = visibleRange.end - visibleRange.start;
+    const panAmount = visibleSpan * 0.3; // Pan by 30% of visible range
+    const newCenter = Math.max(
+      minYear + visibleSpan / 2,
+      Math.min(maxYear - visibleSpan / 2, (viewCenter ?? currentYear) + panAmount)
+    );
+    setViewCenter(newCenter);
+  };
+
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState<{ x: number; year: number } | null>(null);
+  const [hasDragged, setHasDragged] = useState(false);
+
+  const handleMouseDown = (e: React.MouseEvent<SVGSVGElement>) => {
+    if (e.button !== 0) return; // Only left mouse button
+    if (zoomLevel === 0) {
+      // When not zoomed, allow normal clicking
+      setHasDragged(false);
+      return;
+    }
+    // When zoomed, start drag tracking
+    setIsDragging(true);
+    setHasDragged(false);
+    const year = getYearFromX(e.nativeEvent.offsetX);
+    setDragStart({ x: e.nativeEvent.offsetX, year });
+    e.preventDefault(); // Prevent text selection
+  };
+
+  const handleMouseMove = (e: React.MouseEvent<SVGSVGElement>) => {
+    if (!isDragging || !dragStart || zoomLevel === 0) return;
+    
+    const deltaX = Math.abs(e.nativeEvent.offsetX - dragStart.x);
+    // Only consider it a drag if mouse moved more than 5 pixels
+    if (deltaX > 5) {
+      setHasDragged(true);
+      const deltaYears = ((e.nativeEvent.offsetX - dragStart.x) / (timelineWidth - 2 * padding)) * (visibleRange.end - visibleRange.start);
+      const newYear = dragStart.year - deltaYears;
+      const visibleSpan = visibleRange.end - visibleRange.start;
+      const newCenter = Math.max(
+        minYear + visibleSpan / 2,
+        Math.min(maxYear - visibleSpan / 2, newYear)
+      );
+      setViewCenter(newCenter);
+    }
+  };
+
+  const handleMouseUp = (e: React.MouseEvent<SVGSVGElement>) => {
+    const wasDragging = isDragging;
+    setIsDragging(false);
+    setDragStart(null);
+    
+    // If we were dragging, prevent the click handler from firing
+    if (wasDragging && hasDragged) {
+      e.preventDefault();
+      e.stopPropagation();
+      setHasDragged(false);
+    }
+  };
+
+  const handleWheel = (e: React.WheelEvent<SVGSVGElement>) => {
+    e.preventDefault();
+    const delta = e.deltaY > 0 ? -0.2 : 0.2;
+    const newZoom = Math.max(0, Math.min(5, zoomLevel + delta));
+    setZoomLevel(newZoom);
+    if (viewCenter === null && newZoom > 0) {
+      // Center zoom on the clicked position or current year
+      const rect = e.currentTarget.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const year = getYearFromX(x);
+      setViewCenter(year);
+    } else if (viewCenter !== null) {
+      // Adjust view center based on mouse position when zooming
+      const rect = e.currentTarget.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const year = getYearFromX(x);
+      setViewCenter(year);
+    }
   };
 
   const handleItemClick = (item: TimelineItem) => {
@@ -127,6 +264,10 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
   };
 
   const handleTimelineClick = (e: React.MouseEvent<SVGSVGElement>) => {
+    // Don't handle click if we just finished dragging
+    if (hasDragged) {
+      return;
+    }
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const year = getYearFromX(x);
@@ -135,7 +276,114 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
 
   return (
     <div style={{ padding: '2rem', backgroundColor: '#1a1a1a', minHeight: '100%' }}>
-      <h2 style={{ marginBottom: '2rem', color: '#fff' }}>Timeline View</h2>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+        <h2 style={{ margin: 0, color: '#fff' }}>Timeline View</h2>
+        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+          {/* Pan controls (only visible when zoomed) */}
+          {zoomLevel > 0 && (
+            <>
+              <button
+                onClick={handlePanLeft}
+                style={{
+                  padding: '0.5rem 1rem',
+                  backgroundColor: '#4a9eff',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  fontSize: '14px',
+                }}
+                title="Pan left (earlier)"
+              >
+                ←
+              </button>
+              <button
+                onClick={handlePanRight}
+                style={{
+                  padding: '0.5rem 1rem',
+                  backgroundColor: '#4a9eff',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  fontSize: '14px',
+                }}
+                title="Pan right (later)"
+              >
+                →
+              </button>
+              <div style={{ width: '1px', height: '20px', backgroundColor: '#666', margin: '0 0.25rem' }}></div>
+            </>
+          )}
+          <button
+            onClick={handleZoomOut}
+            disabled={zoomLevel === 0}
+            style={{
+              padding: '0.5rem 1rem',
+              backgroundColor: zoomLevel === 0 ? '#444' : '#4a9eff',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '4px',
+              cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
+              fontSize: '14px',
+            }}
+            title="Zoom out"
+          >
+            −
+          </button>
+          <span style={{ color: '#aaa', fontSize: '14px', minWidth: '60px', textAlign: 'center' }}>
+            {zoomLevel === 0 ? 'Full' : `${Math.round(Math.pow(2, zoomLevel) * 100)}%`}
+          </span>
+          <button
+            onClick={handleZoomIn}
+            disabled={zoomLevel >= 5}
+            style={{
+              padding: '0.5rem 1rem',
+              backgroundColor: zoomLevel >= 5 ? '#444' : '#4a9eff',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '4px',
+              cursor: zoomLevel >= 5 ? 'not-allowed' : 'pointer',
+              fontSize: '14px',
+            }}
+            title="Zoom in"
+          >
+            +
+          </button>
+          {zoomLevel > 0 && (
+            <button
+              onClick={handleZoomReset}
+              style={{
+                padding: '0.5rem 1rem',
+                backgroundColor: '#666',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '12px',
+                marginLeft: '0.5rem',
+              }}
+              title="Reset zoom"
+            >
+              Reset
+            </button>
+          )}
+        </div>
+      </div>
+      
+      {zoomLevel > 0 && (
+        <div style={{ 
+          marginBottom: '1rem', 
+          padding: '0.75rem', 
+          backgroundColor: '#2a2a2a', 
+          borderRadius: '4px',
+          color: '#aaa',
+          fontSize: '14px',
+        }}>
+          Viewing: {Math.round(visibleRange.start)} – {Math.round(visibleRange.end)} 
+          ({Math.round(visibleRange.end - visibleRange.start)} years)
+        </div>
+      )}
       
       <div style={{ 
         backgroundColor: '#2a2a2a', 
@@ -144,10 +392,19 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
         overflowX: 'auto',
       }}>
         <svg
+          ref={svgRef}
           width={timelineWidth}
           height={timelineHeight}
           onClick={handleTimelineClick}
-          style={{ cursor: 'pointer' }}
+          onWheel={handleWheel}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={(e) => {
+            handleMouseUp(e);
+            setHasDragged(false);
+          }}
+          style={{ cursor: isDragging ? 'grabbing' : zoomLevel > 0 ? 'grab' : 'pointer' }}
         >
           {/* Definitions for patterns and gradients */}
           <defs>
@@ -204,9 +461,13 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
           {/* Year markers */}
           {(() => {
             const markers = [];
-            const step = Math.max(50, Math.ceil((maxYear - minYear) / 10));
-            for (let year = minYear; year <= maxYear; year += step) {
+            const visibleSpan = visibleRange.end - visibleRange.start;
+            // Adjust step based on visible range - more markers when zoomed in
+            const step = Math.max(1, Math.ceil(visibleSpan / 20));
+            const startYear = Math.floor(visibleRange.start / step) * step;
+            for (let year = startYear; year <= visibleRange.end; year += step) {
               const x = getXPosition(year);
+              if (x < padding || x > timelineWidth - padding) continue;
               markers.push(
                 <g key={year}>
                   <line
@@ -296,7 +557,12 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
               itemPositions.set(item.id, bestY);
             });
 
-            return sortedItems.map((item) => {
+            // Filter items to only show those in the visible range
+            const visibleItems = sortedItems.filter(item => {
+              return !(item.endYear < visibleRange.start || item.startYear > visibleRange.end);
+            });
+
+            return visibleItems.map((item) => {
               const startX = getXPosition(item.startYear);
               const endX = getXPosition(item.endYear);
               const centerX = (startX + endX) / 2;
