@@ -252,6 +252,60 @@ function PersonDetails({ person }: { person: Person }) {
         </div>
       )}
 
+      {/* Writings Section */}
+      {person.writings && person.writings.length > 0 && (
+        <div style={{ 
+          marginTop: '2rem',
+          paddingTop: '1.5rem',
+          borderTop: '1px solid #333',
+        }}>
+          <h4 style={{
+            margin: 0,
+            marginBottom: '0.75rem',
+            fontSize: '0.95rem',
+            color: '#aaa',
+            fontWeight: 600,
+            textTransform: 'uppercase',
+            letterSpacing: '0.5px',
+          }}>
+            Extant Writings
+          </h4>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {person.writings.map((writing, idx) => (
+              <a
+                key={idx}
+                href={writing.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ 
+                  color: '#d4af37',
+                  textDecoration: 'none',
+                  fontSize: '0.95rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  padding: '0.5rem',
+                  borderRadius: '4px',
+                  backgroundColor: 'rgba(212, 175, 55, 0.1)',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.textDecoration = 'underline';
+                  e.currentTarget.style.backgroundColor = 'rgba(212, 175, 55, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.textDecoration = 'none';
+                  e.currentTarget.style.backgroundColor = 'rgba(212, 175, 55, 0.1)';
+                }}
+              >
+                <span style={{ fontSize: '1rem' }}>📜</span>
+                {writing.title}
+                <span style={{ fontSize: '0.85rem', marginLeft: 'auto' }}>→</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Sources Section */}
       <div style={{ 
         marginTop: '2rem',

@@ -504,8 +504,23 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
 
             // Calculate vertical positions to avoid overlaps
             const itemPositions = new Map<string, number>();
+            
+            // Separate councils from other items
+            const councils = sortedItems.filter(item => 
+              item.type === 'event' && (item.data as Event).type === 'council'
+            );
+            const nonCouncils = sortedItems.filter(item => 
+              !(item.type === 'event' && (item.data as Event).type === 'council')
+            );
+            
+            // Place all councils on the same line (slightly above the timeline)
+            const councilY = timelineHeight / 2 - 60; // Fixed position for all councils
+            councils.forEach((item) => {
+              itemPositions.set(item.id, councilY);
+            });
 
-            sortedItems.forEach((item) => {
+            // Position non-council items, avoiding the council line
+            nonCouncils.forEach((item) => {
               const startX = getXPosition(item.startYear);
               const endX = getXPosition(item.endYear);
               
@@ -518,6 +533,9 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                 // Try both above and below
                 for (const direction of [-1, 1]) {
                   const testY = timelineHeight / 2 + (offset * direction);
+                  
+                  // Skip positions too close to the council line
+                  if (Math.abs(testY - councilY) < 50) continue;
                   
                   // Check for overlaps with nearby items
                   let overlapCount = 0;
@@ -549,9 +567,13 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
 
               // If still overlapping, try alternating pattern
               if (minOverlap > 0) {
-                const itemIndex = sortedItems.findIndex(i => i.id === item.id);
+                const itemIndex = nonCouncils.findIndex(i => i.id === item.id);
                 const alternatingOffset = ((itemIndex % 4) - 1.5) * 50;
-                bestY = timelineHeight / 2 + alternatingOffset;
+                const candidateY = timelineHeight / 2 + alternatingOffset;
+                // Make sure it's not too close to council line
+                if (Math.abs(candidateY - councilY) >= 50) {
+                  bestY = candidateY;
+                }
               }
 
               itemPositions.set(item.id, bestY);
@@ -570,8 +592,177 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
               const y = itemPositions.get(item.id) || timelineHeight / 2;
 
             if (item.type === 'event') {
-              // Render event as a bar
               const event = item.data as Event;
+              
+              // Render councils with images like people
+              if (event.type === 'council' && event.imageUrl) {
+                const baseImageSize = isActive ? portraitSize + 4 : portraitSize;
+                const aspectRatio = imageAspectRatios.get(item.id) || 1;
+                
+                // Calculate image dimensions based on aspect ratio
+                let imageWidth = baseImageSize;
+                let imageHeight = baseImageSize;
+                if (aspectRatio > 1) {
+                  imageHeight = baseImageSize / aspectRatio;
+                } else if (aspectRatio < 1) {
+                  imageWidth = baseImageSize * aspectRatio;
+                }
+                
+                const framePadding = 6;
+                const frameWidth = imageWidth + framePadding * 2;
+                const frameHeight = imageHeight + framePadding * 2;
+                
+                return (
+                  <g key={item.id}>
+                    {/* Line connecting to timeline */}
+                    <line
+                      x1={centerX}
+                      y1={timelineHeight / 2}
+                      x2={centerX}
+                      y2={y}
+                      stroke={isActive ? '#4a9eff' : '#666'}
+                      strokeWidth={isActive ? 2 : 1}
+                      strokeDasharray={isActive ? '0' : '3,3'}
+                    />
+                    
+                    {/* Council portrait with frame */}
+                    <g
+                      transform={`translate(${centerX}, ${y})`}
+                      onClick={() => handleItemClick(item)}
+                      onMouseEnter={() => setHoveredItem(item.id)}
+                      onMouseLeave={() => setHoveredItem(null)}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      {/* Define clip path for this item */}
+                      <defs>
+                        <clipPath id={`clip-event-${item.id}`}>
+                          <rect
+                            x={-imageWidth / 2}
+                            y={-imageHeight / 2}
+                            width={imageWidth}
+                            height={imageHeight}
+                            rx="4"
+                          />
+                        </clipPath>
+                      </defs>
+                      
+                      {/* Frame border - gold for councils */}
+                      <rect
+                        x={-frameWidth / 2}
+                        y={-frameHeight / 2}
+                        width={frameWidth}
+                        height={frameHeight}
+                        rx="8"
+                        fill="none"
+                        stroke="#ffd700"
+                        strokeWidth="3"
+                        style={{ filter: 'drop-shadow(0 0 6px rgba(255, 215, 0, 0.6))' }}
+                      />
+                      
+                      {/* Council image with clipping */}
+                      <g clipPath={`url(#clip-event-${item.id})`}>
+                        <image
+                          href={event.imageUrl}
+                          x={-imageWidth / 2}
+                          y={-imageHeight / 2}
+                          width={imageWidth}
+                          height={imageHeight}
+                          onLoad={() => {
+                            // Calculate aspect ratio when image loads
+                            const tempImg = new Image();
+                            tempImg.onload = () => {
+                              const ratio = tempImg.naturalWidth / tempImg.naturalHeight;
+                              setImageAspectRatios(prev => {
+                                const newMap = new Map(prev);
+                                newMap.set(item.id, ratio);
+                                return newMap;
+                              });
+                            };
+                            tempImg.src = event.imageUrl || '';
+                          }}
+                          onError={(e) => {
+                            // Fallback to placeholder if image fails
+                            const target = e.target as SVGImageElement;
+                            const initials = event.name
+                              .split(' ')
+                              .map(n => n[0])
+                              .filter(Boolean)
+                              .slice(-2)
+                              .join('');
+                            target.href.baseVal = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="${baseImageSize}" height="${baseImageSize}"><rect width="${baseImageSize}" height="${baseImageSize}" fill="#ffd700"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#000" font-family="Arial" font-size="${baseImageSize / 2}">${initials}</text></svg>`)}`;
+                          }}
+                        />
+                      </g>
+                      
+                      {/* Star overlay for council */}
+                      <text
+                        x="0"
+                        y="0"
+                        textAnchor="middle"
+                        dominantBaseline="middle"
+                        fill="#fff"
+                        fontSize={frameWidth / 2}
+                        fontWeight="bold"
+                        style={{ 
+                          textShadow: '0 0 4px rgba(0,0,0,0.8)',
+                          pointerEvents: 'none',
+                        }}
+                      >
+                        ★
+                      </text>
+                      
+                      {/* Active indicator - use ellipse for non-square frames */}
+                      {isActive && (
+                        <ellipse
+                          cx="0"
+                          cy="0"
+                          rx={frameWidth / 2 + 2}
+                          ry={frameHeight / 2 + 2}
+                          fill="none"
+                          stroke="#4a9eff"
+                          strokeWidth="2"
+                          opacity="0.6"
+                        />
+                      )}
+                    </g>
+                    
+                    {hoveredItem === item.id && (
+                      <g>
+                        <rect
+                          x={centerX - 80}
+                          y={y - 50}
+                          width="160"
+                          height="35"
+                          fill="#000"
+                          fillOpacity="0.9"
+                          rx="4"
+                        />
+                        <text
+                          x={centerX}
+                          y={y - 30}
+                          textAnchor="middle"
+                          fill="#fff"
+                          fontSize="12"
+                          fontWeight="bold"
+                        >
+                          {item.name}
+                        </text>
+                        <text
+                          x={centerX}
+                          y={y - 15}
+                          textAnchor="middle"
+                          fill="#aaa"
+                          fontSize="11"
+                        >
+                          {item.startYear}–{item.endYear}
+                        </text>
+                      </g>
+                    )}
+                  </g>
+                );
+              }
+              
+              // Render other events as bars
               const width = Math.max(20, endX - startX);
               
               return (
@@ -757,6 +948,35 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                         strokeWidth="2"
                         opacity="0.6"
                       />
+                    )}
+                    
+                    {/* Scroll icon for saints with writings */}
+                    {person.writings && person.writings.length > 0 && (
+                      <g transform={`translate(${frameWidth / 2 - 10}, ${-frameHeight / 2 + 10})`}>
+                        {/* Scroll icon background circle */}
+                        <circle
+                          cx="0"
+                          cy="0"
+                          r="8"
+                          fill="#fff"
+                          stroke="#333"
+                          strokeWidth="1.5"
+                          opacity="0.95"
+                        />
+                        {/* Scroll icon using text/emoji */}
+                        <text
+                          x="0"
+                          y="0"
+                          textAnchor="middle"
+                          dominantBaseline="middle"
+                          fill="#333"
+                          fontSize="10"
+                          fontWeight="bold"
+                          style={{ pointerEvents: 'none' }}
+                        >
+                          📜
+                        </text>
+                      </g>
                     )}
                   </g>
                   

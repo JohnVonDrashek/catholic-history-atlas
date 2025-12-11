@@ -22,6 +22,10 @@ export interface Person {
   imageUrl?: string; // From Wikipedia/Wikidata
   summary: string; // Curated text
   keyQuotes?: string[]; // Short quotations or paraphrases
+  writings?: Array<{
+    title: string;
+    url: string;
+  }>; // Links to extant writings
 }
 
 export interface PersonLocation {

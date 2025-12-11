@@ -242,6 +242,12 @@
       "summary": "Clement of Rome, also known as Pope Clement I, was one of the Apostolic Fathers and an early bishop of Rome. He is best known for his First Epistle to the Corinthians, one of the earliest Christian documents outside the New Testament. According to tradition, he was martyred by being tied to an anchor and thrown into the sea.",
       "keyQuotes": [
         "Let us be humble, therefore, brethren, laying aside all arrogance and conceit and folly and anger."
+      ],
+      "writings": [
+        {
+          "title": "First Epistle to the Corinthians",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.ii.ii.html"
+        }
       ]
     },
     {
@@ -267,6 +273,36 @@
       "keyQuotes": [
         "Where the bishop is, there let the multitude of believers be; even as where Jesus is, there is the Catholic Church.",
         "I am God's wheat, and I shall be ground by the teeth of wild beasts, that I may be found the pure bread of Christ."
+      ],
+      "writings": [
+        {
+          "title": "Epistle to the Ephesians",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.iv.ii.html"
+        },
+        {
+          "title": "Epistle to the Magnesians",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.iv.iii.html"
+        },
+        {
+          "title": "Epistle to the Trallians",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.iv.iv.html"
+        },
+        {
+          "title": "Epistle to the Romans",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.iv.v.html"
+        },
+        {
+          "title": "Epistle to the Philadelphians",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.iv.vi.html"
+        },
+        {
+          "title": "Epistle to the Smyrnaeans",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.iv.vii.html"
+        },
+        {
+          "title": "Epistle to Polycarp",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.iv.viii.html"
+        }
       ]
     },
     {
@@ -291,6 +327,12 @@
       "summary": "Polycarp was a 2nd-century Christian bishop of Smyrna. According to the Martyrdom of Polycarp, he was martyred by being stabbed after an attempt to burn him at the stake proved unsuccessful.",
       "keyQuotes": [
         "Eighty and six years have I served Christ, and He never did me any injury: how then can I blaspheme my King and my Saviour?"
+      ],
+      "writings": [
+        {
+          "title": "Epistle to the Philippians",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.iv.ix.html"
+        }
       ]
     },
     {
@@ -357,7 +399,13 @@
       "newAdventUrl": "https://www.newadvent.org/cathen/07263a.htm",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canon_Muratori.png/330px-Canon_Muratori.png",
       "summary": "Hermas was a Christian writer of the 2nd century and the author of 'The Shepherd of Hermas,' one of the most popular Christian works of the early Church. The work, written in Rome, contains visions, commandments, and parables, and was considered canonical by some early Christian communities.",
-      "keyQuotes": []
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "The Shepherd of Hermas",
+          "url": "https://www.ccel.org/ccel/schaff/anf02.iv.ii.html"
+        }
+      ]
     },
     {
       "id": "justin-martyr",
@@ -381,6 +429,20 @@
       "summary": "Justin Martyr was an early Christian apologist and philosopher who converted to Christianity after studying various philosophical schools. He wrote two major apologies defending Christianity and was martyred in Rome along with six companions. He is considered one of the most important early Christian apologists.",
       "keyQuotes": [
         "We have been taught that Christ is the first-begotten of God, and we have declared above that He is the Word of whom every race of men were partakers."
+      ],
+      "writings": [
+        {
+          "title": "First Apology",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.viii.ii.html"
+        },
+        {
+          "title": "Second Apology",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.viii.iii.html"
+        },
+        {
+          "title": "Dialogue with Trypho",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.viii.iv.html"
+        }
       ]
     },
     {
@@ -425,7 +487,13 @@
       "newAdventUrl": "https://www.newadvent.org/cathen/14625a.htm",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Theophilus_Antiochenus.png/330px-Theophilus_Antiochenus.png",
       "summary": "Theophilus was a bishop of Antioch in the late 2nd century and an important early Christian apologist. He wrote 'To Autolycus,' a three-volume apology that defends Christianity against pagan objections and provides one of the earliest uses of the term 'Trinity' in Christian literature.",
-      "keyQuotes": []
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "To Autolycus",
+          "url": "https://www.ccel.org/ccel/schaff/anf02.iv.iv.html"
+        }
+      ]
     },
     {
       "id": "irenaeus",
@@ -449,6 +517,16 @@
       "summary": "Irenaeus was a Greek bishop noted for his role in guiding and expanding Christian communities in the southern regions of present-day France and, more widely, for the development of Christian theology by combating heresy and defining orthodoxy.",
       "keyQuotes": [
         "The glory of God is man fully alive, and the life of man is the vision of God."
+      ],
+      "writings": [
+        {
+          "title": "Against Heresies",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.ix.i.html"
+        },
+        {
+          "title": "The Demonstration of the Apostolic Preaching",
+          "url": "https://www.ccel.org/ccel/schaff/anf01.ix.ii.html"
+        }
       ]
     },
     {
@@ -473,6 +551,12 @@
       "summary": "Perpetua and Felicity were Christian martyrs who died in Carthage during the persecution of Septimius Severus. Perpetua, a noblewoman, kept a diary of her imprisonment that is one of the earliest surviving Christian texts written by a woman. They were thrown to wild beasts in the arena and are among the most venerated early Christian martyrs.",
       "keyQuotes": [
         "I am a Christian, and I cannot call myself anything else."
+      ],
+      "writings": [
+        {
+          "title": "The Passion of Perpetua and Felicity",
+          "url": "https://www.ccel.org/ccel/schaff/anf03.iv.iv.html"
+        }
       ]
     },
     {
@@ -497,6 +581,20 @@
       "summary": "Clement of Alexandria was a Christian theologian and teacher who headed the Catechetical School of Alexandria. He sought to reconcile Christian faith with Greek philosophy and wrote extensively on Christian ethics, education, and the relationship between faith and reason. His works influenced later Christian thinkers including Origen.",
       "keyQuotes": [
         "The Word of God became man, that you may learn from man how man may become God."
+      ],
+      "writings": [
+        {
+          "title": "The Instructor (Paedagogus)",
+          "url": "https://www.ccel.org/ccel/schaff/anf02.vi.ii.html"
+        },
+        {
+          "title": "The Stromata (Miscellanies)",
+          "url": "https://www.ccel.org/ccel/schaff/anf02.vi.iii.html"
+        },
+        {
+          "title": "Who is the Rich Man That Shall Be Saved?",
+          "url": "https://www.ccel.org/ccel/schaff/anf02.vi.iv.html"
+        }
       ]
     },
     {
@@ -519,7 +617,17 @@
       "newAdventUrl": "https://www.newadvent.org/cathen/07360c.htm",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Statue_of_Saint_.Hippolytus_%28cropped%29.jpg/330px-Statue_of_Saint_.Hippolytus_%28cropped%29.jpg",
       "summary": "Hippolytus was a 3rd-century theologian and the first antipope in Church history. He opposed Popes Zephyrinus and Callixtus I over doctrinal issues, but was later reconciled and martyred alongside Pope Pontian. He wrote extensively on theology, liturgy, and church order, including the 'Apostolic Tradition,' which provides valuable insights into early Christian worship.",
-      "keyQuotes": []
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "The Apostolic Tradition",
+          "url": "https://www.ccel.org/ccel/schaff/anf05.iv.ii.html"
+        },
+        {
+          "title": "Refutation of All Heresies",
+          "url": "https://www.ccel.org/ccel/schaff/anf05.iv.iii.html"
+        }
+      ]
     },
     {
       "id": "origen",
@@ -547,6 +655,20 @@
       "summary": "Origen was one of the most influential early Christian theologians and biblical scholars. He headed the Catechetical School of Alexandria and wrote extensively on Scripture, theology, and philosophy. While some of his speculative teachings were later condemned, his contributions to biblical exegesis, theology, and Christian philosophy were foundational for later Church Fathers.",
       "keyQuotes": [
         "The end of the world and the consummation will take place when everyone shall be subjected to punishment."
+      ],
+      "writings": [
+        {
+          "title": "On First Principles",
+          "url": "https://www.ccel.org/ccel/schaff/anf04.iv.iv.html"
+        },
+        {
+          "title": "Against Celsus",
+          "url": "https://www.ccel.org/ccel/schaff/anf04.iv.v.html"
+        },
+        {
+          "title": "Commentary on the Gospel of John",
+          "url": "https://www.ccel.org/ccel/origen/john.html"
+        }
       ]
     },
     {
@@ -572,6 +694,20 @@
       "keyQuotes": [
         "He can no longer have God for his Father who has not the Church for his mother.",
         "Outside the Church there is no salvation."
+      ],
+      "writings": [
+        {
+          "title": "On the Unity of the Church",
+          "url": "https://www.ccel.org/ccel/schaff/anf05.iv.iv.iv.html"
+        },
+        {
+          "title": "On the Lapsed",
+          "url": "https://www.ccel.org/ccel/schaff/anf05.iv.iv.v.html"
+        },
+        {
+          "title": "Letters",
+          "url": "https://www.ccel.org/ccel/schaff/anf05.iv.iv.vi.html"
+        }
       ]
     },
     {
@@ -836,7 +972,17 @@
       "newAdventUrl": "https://www.newadvent.org/cathen/07349b.htm",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Hilaryofpoitiers.jpg/330px-Hilaryofpoitiers.jpg",
       "summary": "Hilary of Poitiers was a bishop and theologian known as the 'Hammer of the Arians' for his vigorous defense of Nicene orthodoxy. He wrote extensively against Arianism and was exiled for his faith. His works on the Trinity were influential in the West, and he is considered a Doctor of the Church.",
-      "keyQuotes": []
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "On the Trinity",
+          "url": "https://www.ccel.org/ccel/schaff/npnf209.iii.html"
+        },
+        {
+          "title": "Commentary on Matthew",
+          "url": "https://www.ccel.org/ccel/schaff/npnf209.iv.html"
+        }
+      ]
     },
     {
       "id": "ephrem-syrian",
@@ -883,6 +1029,20 @@
       "keyQuotes": [
         "For the Son of God became man so that we might become God.",
         "He, indeed, assumed humanity that we might become God."
+      ],
+      "writings": [
+        {
+          "title": "On the Incarnation",
+          "url": "https://www.ccel.org/ccel/schaff/npnf204.iv.iii.html"
+        },
+        {
+          "title": "Life of St. Antony",
+          "url": "https://www.ccel.org/ccel/schaff/npnf204.iv.iv.html"
+        },
+        {
+          "title": "Against the Arians",
+          "url": "https://www.ccel.org/ccel/schaff/npnf204.iv.v.html"
+        }
       ]
     },
     {
@@ -907,6 +1067,20 @@
       "summary": "Basil of Caesarea, also called Saint Basil the Great, was a bishop of Caesarea Mazaca in Cappadocia, Asia Minor. He was an influential theologian who supported the Nicene Creed and opposed the heresies of the early Christian church.",
       "keyQuotes": [
         "The bread which you do not use is the bread of the hungry; the garment hanging in your wardrobe is the garment of him who is naked."
+      ],
+      "writings": [
+        {
+          "title": "On the Holy Spirit",
+          "url": "https://www.ccel.org/ccel/schaff/npnf208.viii.html"
+        },
+        {
+          "title": "Hexaemeron (On the Six Days of Creation)",
+          "url": "https://www.ccel.org/ccel/schaff/npnf208.vii.html"
+        },
+        {
+          "title": "The Long Rules",
+          "url": "https://www.ccel.org/ccel/schaff/npnf208.ix.html"
+        }
       ]
     },
     {
@@ -1045,6 +1219,20 @@
       "summary": "Ambrose was a bishop of Milan who became one of the most influential ecclesiastical figures of the 4th century. He is counted as one of the four original doctors of the Church.",
       "keyQuotes": [
         "When in Rome, do as the Romans do."
+      ],
+      "writings": [
+        {
+          "title": "On the Duties of the Clergy",
+          "url": "https://www.ccel.org/ccel/schaff/npnf210.iv.html"
+        },
+        {
+          "title": "On the Holy Spirit",
+          "url": "https://www.ccel.org/ccel/schaff/npnf210.v.html"
+        },
+        {
+          "title": "Concerning Virgins",
+          "url": "https://www.ccel.org/ccel/schaff/npnf210.vi.html"
+        }
       ]
     },
     {
@@ -1069,6 +1257,20 @@
       "summary": "Jerome was a priest, biblical scholar, and translator who produced the Vulgate, the Latin translation of the Bible that became the standard version in the Western Church for over a millennium. He wrote extensively on Scripture, theology, and Christian life, and is considered one of the four original Doctors of the Church.",
       "keyQuotes": [
         "Ignorance of Scripture is ignorance of Christ."
+      ],
+      "writings": [
+        {
+          "title": "The Vulgate (Latin Bible)",
+          "url": "https://www.biblegateway.com/versions/Vulgate-Latin-Bible/"
+        },
+        {
+          "title": "Commentary on Matthew",
+          "url": "https://www.ccel.org/ccel/schaff/npnf206.vi.html"
+        },
+        {
+          "title": "Letters",
+          "url": "https://www.ccel.org/ccel/schaff/npnf206.v.html"
+        }
       ]
     },
     {
@@ -1093,6 +1295,20 @@
       "summary": "Cyril of Alexandria was a bishop and theologian who played a central role in the Council of Ephesus (431), where he defended the title 'Theotokos' (God-bearer) for the Virgin Mary and opposed Nestorianism. He is considered a Doctor of the Church and is known for his extensive theological writings.",
       "keyQuotes": [
         "I have been accustomed to pay reverence to the holy Fathers, and to follow them in all things."
+      ],
+      "writings": [
+        {
+          "title": "Commentary on the Gospel of John",
+          "url": "https://www.ccel.org/ccel/schaff/npnf207.ii.html"
+        },
+        {
+          "title": "Twelve Chapters Against Nestorius",
+          "url": "https://www.ccel.org/ccel/schaff/npnf214.ix.html"
+        },
+        {
+          "title": "Letters",
+          "url": "https://www.ccel.org/ccel/schaff/npnf214.viii.html"
+        }
       ]
     },
     {
@@ -1117,6 +1333,20 @@
       "summary": "Leo the Great was Pope from 440 to 461 and is one of the most important popes in Church history. He is best known for his 'Tome of Leo,' which was instrumental in the Council of Chalcedon (451) in defining the two natures of Christ. He also famously met Attila the Hun and persuaded him not to sack Rome.",
       "keyQuotes": [
         "Christian, recognize your dignity."
+      ],
+      "writings": [
+        {
+          "title": "The Tome of Leo",
+          "url": "https://www.ccel.org/ccel/schaff/npnf212.iii.iv.html"
+        },
+        {
+          "title": "Letters",
+          "url": "https://www.ccel.org/ccel/schaff/npnf212.iii.ii.html"
+        },
+        {
+          "title": "Sermons",
+          "url": "https://www.ccel.org/ccel/schaff/npnf212.iii.iii.html"
+        }
       ]
     },
     {
@@ -1255,6 +1485,20 @@
       "summary": "John Chrysostom was an important Early Church Father who served as archbishop of Constantinople. He is known for his preaching and public speaking, his denunciation of abuse of authority by both ecclesiastical and political leaders, and his Divine Liturgy.",
       "keyQuotes": [
         "The rich man is not one who is in possession of much, but one who gives much."
+      ],
+      "writings": [
+        {
+          "title": "Homilies on the Gospel of Matthew",
+          "url": "https://www.ccel.org/ccel/schaff/npnf210.html"
+        },
+        {
+          "title": "Homilies on the Acts of the Apostles",
+          "url": "https://www.ccel.org/ccel/schaff/npnf211.html"
+        },
+        {
+          "title": "On the Priesthood",
+          "url": "https://www.ccel.org/ccel/schaff/npnf209.iii.html"
+        }
       ]
     },
     {
@@ -1280,6 +1524,24 @@
       "keyQuotes": [
         "You have made us for yourself, O Lord, and our hearts are restless until they rest in you.",
         "Late have I loved you, O Beauty ever ancient, ever new, late have I loved you!"
+      ],
+      "writings": [
+        {
+          "title": "Confessions",
+          "url": "https://www.ccel.org/ccel/schaff/npnf101.html"
+        },
+        {
+          "title": "The City of God",
+          "url": "https://www.ccel.org/ccel/schaff/npnf102.html"
+        },
+        {
+          "title": "On the Trinity",
+          "url": "https://www.ccel.org/ccel/schaff/npnf103.html"
+        },
+        {
+          "title": "On Christian Doctrine",
+          "url": "https://www.ccel.org/ccel/schaff/npnf102.iv.html"
+        }
       ]
     },
     {
