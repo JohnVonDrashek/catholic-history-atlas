@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Person, Event } from '../types';
+import type { OrthodoxyStatus } from '../types/person';
 
 interface TimelineProps {
   people: Person[];
@@ -21,6 +22,7 @@ interface TimelineItem {
 
 export function Timeline({ people, events, currentYear, onItemClick, onYearChange }: TimelineProps) {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const [imageAspectRatios, setImageAspectRatios] = useState<Map<string, number>>(new Map());
 
   // Calculate the time range for the timeline
   const { minYear, maxYear, items } = useMemo(() => {
@@ -73,8 +75,37 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
   }, [people, events]);
 
   const timelineWidth = 1000; // Fixed width for the timeline
-  const timelineHeight = 400;
+  const timelineHeight = 600; // Increased height for more vertical space
   const padding = 60;
+  const maxVerticalOffset = 200; // Maximum distance above/below timeline
+  const portraitSize = 40; // Size of portrait images on timeline
+
+  // Get frame style for portrait based on orthodoxy status
+  const getFrameStyle = (orthodoxyStatus: OrthodoxyStatus, isMartyr?: boolean) => {
+    if (isMartyr && (orthodoxyStatus === 'canonized' || orthodoxyStatus === 'blessed')) {
+      return {
+        stroke: 'none',
+        fill: 'url(#martyrPattern)',
+        strokeWidth: 0,
+      };
+    }
+
+    switch (orthodoxyStatus) {
+      case 'canonized':
+        return { stroke: '#d4af37', strokeWidth: 3, fill: 'none' };
+      case 'blessed':
+        return { stroke: '#c0c0c0', strokeWidth: 2, fill: 'none' };
+      case 'orthodox':
+        return { stroke: '#777', strokeWidth: 2, fill: '#f7f7f7' };
+      case 'schismatic':
+        return { stroke: 'url(#schismaticGradient)', strokeWidth: 3, fill: 'none' };
+      case 'heresiarch':
+        return { stroke: '#5b1a1a', strokeWidth: 3, fill: 'none' };
+      case 'secular':
+      default:
+        return { stroke: '#bbb', strokeWidth: 1, fill: 'none' };
+    }
+  };
 
   const getXPosition = (year: number) => {
     const range = maxYear - minYear;
@@ -118,6 +149,22 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
           onClick={handleTimelineClick}
           style={{ cursor: 'pointer' }}
         >
+          {/* Definitions for patterns and gradients */}
+          <defs>
+            {/* Martyr pattern: gold and red diagonal stripes */}
+            <pattern id="martyrPattern" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(45)">
+              <rect width="6" height="12" fill="#d4af37" />
+              <rect x="6" width="6" height="12" fill="#a11b1b" />
+            </pattern>
+            {/* Schismatic gradient: gray to red split */}
+            <linearGradient id="schismaticGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#777" />
+              <stop offset="50%" stopColor="#777" />
+              <stop offset="50%" stopColor="#b03a2e" />
+              <stop offset="100%" stopColor="#b03a2e" />
+            </linearGradient>
+          </defs>
+
           {/* Timeline line */}
           <line
             x1={padding}
@@ -186,21 +233,75 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
           })()}
 
           {/* Render items */}
-          {items.map((item) => {
-            const startX = getXPosition(item.startYear);
-            const endX = getXPosition(item.endYear);
-            const centerX = (startX + endX) / 2;
-            const isActive = currentYear >= item.startYear && currentYear <= item.endYear;
-            
-            // Calculate vertical position to avoid overlap
-            const yearGroup = Math.floor((item.startYear + item.endYear) / 2);
-            const itemsInGroup = items.filter(i => {
-              const iYearGroup = Math.floor((i.startYear + i.endYear) / 2);
-              return iYearGroup === yearGroup;
+          {(() => {
+            // Improved vertical positioning algorithm
+            // Sort items by start year, then by end year for consistent ordering
+            const sortedItems = [...items].sort((a, b) => {
+              if (a.startYear !== b.startYear) return a.startYear - b.startYear;
+              return a.endYear - b.endYear;
             });
-            const itemIndex = itemsInGroup.findIndex(i => i.id === item.id);
-            const verticalOffset = (itemIndex - itemsInGroup.length / 2) * 40;
-            const y = timelineHeight / 2 + verticalOffset;
+
+            // Calculate vertical positions to avoid overlaps
+            const itemPositions = new Map<string, number>();
+
+            sortedItems.forEach((item) => {
+              const startX = getXPosition(item.startYear);
+              const endX = getXPosition(item.endYear);
+              
+              // Find a vertical position that doesn't overlap with nearby items
+              let bestY = timelineHeight / 2;
+              let minOverlap = Infinity;
+
+              // Try different vertical offsets
+              for (let offset = 0; offset <= maxVerticalOffset; offset += 30) {
+                // Try both above and below
+                for (const direction of [-1, 1]) {
+                  const testY = timelineHeight / 2 + (offset * direction);
+                  
+                  // Check for overlaps with nearby items
+                  let overlapCount = 0;
+                  sortedItems.forEach((otherItem) => {
+                    if (otherItem.id === item.id || !itemPositions.has(otherItem.id)) return;
+                    
+                    const otherY = itemPositions.get(otherItem.id)!;
+                    const otherStartX = getXPosition(otherItem.startYear);
+                    const otherEndX = getXPosition(otherItem.endYear);
+                    
+                    // Check if items overlap horizontally
+                    const horizontalOverlap = !(endX < otherStartX || startX > otherEndX);
+                    
+                    // Check if items are too close vertically
+                    const verticalDistance = Math.abs(testY - otherY);
+                    const minVerticalDistance = 35; // Minimum spacing between items
+                    
+                    if (horizontalOverlap && verticalDistance < minVerticalDistance) {
+                      overlapCount++;
+                    }
+                  });
+                  
+                  if (overlapCount < minOverlap) {
+                    minOverlap = overlapCount;
+                    bestY = testY;
+                  }
+                }
+              }
+
+              // If still overlapping, try alternating pattern
+              if (minOverlap > 0) {
+                const itemIndex = sortedItems.findIndex(i => i.id === item.id);
+                const alternatingOffset = ((itemIndex % 4) - 1.5) * 50;
+                bestY = timelineHeight / 2 + alternatingOffset;
+              }
+
+              itemPositions.set(item.id, bestY);
+            });
+
+            return sortedItems.map((item) => {
+              const startX = getXPosition(item.startYear);
+              const endX = getXPosition(item.endYear);
+              const centerX = (startX + endX) / 2;
+              const isActive = currentYear >= item.startYear && currentYear <= item.endYear;
+              const y = itemPositions.get(item.id) || timelineHeight / 2;
 
             if (item.type === 'event') {
               // Render event as a bar
@@ -248,8 +349,29 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                 </g>
               );
             } else {
-              // Render person as icon
-              const iconSize = isActive ? 24 : 20;
+              // Render person as portrait with frame
+              const person = item.data as Person;
+              const baseImageSize = isActive ? portraitSize + 4 : portraitSize;
+              
+              // Get aspect ratio for this image (default to 1:1 if not loaded yet)
+              const aspectRatio = imageAspectRatios.get(item.id) || 1;
+              
+              // Calculate image dimensions based on aspect ratio
+              // Keep the larger dimension at baseImageSize
+              let imageWidth = baseImageSize;
+              let imageHeight = baseImageSize;
+              if (aspectRatio > 1) {
+                // Wider than tall
+                imageHeight = baseImageSize / aspectRatio;
+              } else if (aspectRatio < 1) {
+                // Taller than wide
+                imageWidth = baseImageSize * aspectRatio;
+              }
+              
+              const framePadding = 6;
+              const frameWidth = imageWidth + framePadding * 2;
+              const frameHeight = imageHeight + framePadding * 2;
+              const frameStyle = getFrameStyle(person.orthodoxyStatus, person.isMartyr);
               
               return (
                 <g key={item.id}>
@@ -264,119 +386,113 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                     strokeDasharray={isActive ? '0' : '3,3'}
                   />
                   
-                  {/* Icon based on type */}
-                  {item.icon === 'martyr' && (
-                    <g
-                      transform={`translate(${centerX}, ${y})`}
-                      onClick={() => handleItemClick(item)}
-                      onMouseEnter={() => setHoveredItem(item.id)}
-                      onMouseLeave={() => setHoveredItem(null)}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      <circle
+                  {/* Portrait with frame */}
+                  <g
+                    transform={`translate(${centerX}, ${y})`}
+                    onClick={() => handleItemClick(item)}
+                    onMouseEnter={() => setHoveredItem(item.id)}
+                    onMouseLeave={() => setHoveredItem(null)}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    {/* Define clip path for this item */}
+                    <defs>
+                      <clipPath id={`clip-${item.id}`}>
+                        <rect
+                          x={-imageWidth / 2}
+                          y={-imageHeight / 2}
+                          width={imageWidth}
+                          height={imageHeight}
+                          rx="4"
+                        />
+                      </clipPath>
+                    </defs>
+                    
+                    {/* Frame border/background */}
+                    <rect
+                      x={-frameWidth / 2}
+                      y={-frameHeight / 2}
+                      width={frameWidth}
+                      height={frameHeight}
+                      rx="8"
+                      {...frameStyle}
+                    />
+                    
+                    {/* White inner border for martyrs */}
+                    {(person.isMartyr && (person.orthodoxyStatus === 'canonized' || person.orthodoxyStatus === 'blessed')) && (
+                      <rect
+                        x={-imageWidth / 2 - 2}
+                        y={-imageHeight / 2 - 2}
+                        width={imageWidth + 4}
+                        height={imageHeight + 4}
+                        rx="6"
+                        fill="none"
+                        stroke="white"
+                        strokeWidth="2"
+                      />
+                    )}
+                    
+                    {/* Person image with clipping */}
+                    <g clipPath={`url(#clip-${item.id})`}>
+                      {person.imageUrl ? (
+                        <image
+                          href={person.imageUrl}
+                          x={-imageWidth / 2}
+                          y={-imageHeight / 2}
+                          width={imageWidth}
+                          height={imageHeight}
+                          onLoad={() => {
+                            // Calculate aspect ratio when image loads
+                            // Use a temporary HTML image to get natural dimensions
+                            const tempImg = new Image();
+                            tempImg.onload = () => {
+                              const ratio = tempImg.naturalWidth / tempImg.naturalHeight;
+                              setImageAspectRatios(prev => {
+                                const newMap = new Map(prev);
+                                newMap.set(item.id, ratio);
+                                return newMap;
+                              });
+                            };
+                            tempImg.src = person.imageUrl || '';
+                          }}
+                          onError={(e) => {
+                            // Fallback to placeholder if image fails
+                            const target = e.target as SVGImageElement;
+                            const initials = person.name
+                              .split(' ')
+                              .map(n => n[0])
+                              .filter(Boolean)
+                              .slice(-2)
+                              .join('');
+                            target.href.baseVal = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="${baseImageSize}" height="${baseImageSize}"><rect width="${baseImageSize}" height="${baseImageSize}" fill="#333"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ccc" font-family="Arial" font-size="${baseImageSize / 2}">${initials}</text></svg>`)}`;
+                          }}
+                        />
+                      ) : (
+                        // Fallback placeholder
+                        <rect
+                          x={-imageWidth / 2}
+                          y={-imageHeight / 2}
+                          width={imageWidth}
+                          height={imageHeight}
+                          rx="4"
+                          fill="#333"
+                        />
+                      )}
+                    </g>
+                    
+                    {/* Active indicator - use ellipse for non-square frames */}
+                    {isActive && (
+                      <ellipse
                         cx="0"
                         cy="0"
-                        r={iconSize / 2}
-                        fill="#a11b1b"
-                        stroke={isActive ? '#4a9eff' : '#fff'}
-                        strokeWidth={isActive ? 3 : 2}
+                        rx={frameWidth / 2 + 2}
+                        ry={frameHeight / 2 + 2}
+                        fill="none"
+                        stroke="#4a9eff"
+                        strokeWidth="2"
+                        opacity="0.6"
                       />
-                      <text
-                        x="0"
-                        y="5"
-                        textAnchor="middle"
-                        fill="#fff"
-                        fontSize={iconSize - 8}
-                        fontWeight="bold"
-                      >
-                        ✝
-                      </text>
-                    </g>
-                  )}
-                  
-                  {item.icon === 'doctor' && (
-                    <g
-                      transform={`translate(${centerX}, ${y})`}
-                      onClick={() => handleItemClick(item)}
-                      onMouseEnter={() => setHoveredItem(item.id)}
-                      onMouseLeave={() => setHoveredItem(null)}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      <circle
-                        cx="0"
-                        cy="0"
-                        r={iconSize / 2}
-                        fill="#d4af37"
-                        stroke={isActive ? '#4a9eff' : '#fff'}
-                        strokeWidth={isActive ? 3 : 2}
-                      />
-                      <text
-                        x="0"
-                        y="5"
-                        textAnchor="middle"
-                        fill="#fff"
-                        fontSize={iconSize - 10}
-                      >
-                        📖
-                      </text>
-                    </g>
-                  )}
-                  
-                  {item.icon === 'bishop' && (
-                    <g
-                      transform={`translate(${centerX}, ${y})`}
-                      onClick={() => handleItemClick(item)}
-                      onMouseEnter={() => setHoveredItem(item.id)}
-                      onMouseLeave={() => setHoveredItem(null)}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      <circle
-                        cx="0"
-                        cy="0"
-                        r={iconSize / 2}
-                        fill="#4a9eff"
-                        stroke={isActive ? '#fff' : '#333'}
-                        strokeWidth={isActive ? 3 : 2}
-                      />
-                      <text
-                        x="0"
-                        y="5"
-                        textAnchor="middle"
-                        fill="#fff"
-                        fontSize={iconSize - 10}
-                      >
-                        ⛪
-                      </text>
-                    </g>
-                  )}
-                  
-                  {(!item.icon || item.icon === 'person' || item.icon === 'monk') && (
-                    <g
-                      transform={`translate(${centerX}, ${y})`}
-                      onClick={() => handleItemClick(item)}
-                      onMouseEnter={() => setHoveredItem(item.id)}
-                      onMouseLeave={() => setHoveredItem(null)}
-                      style={{ cursor: 'pointer' }}
-                    >
-                      <circle
-                        cx="0"
-                        cy="0"
-                        r={iconSize / 2}
-                        fill="#888"
-                        stroke={isActive ? '#4a9eff' : '#fff'}
-                        strokeWidth={isActive ? 3 : 2}
-                      />
-                      <text
-                        x="0"
-                        y="5"
-                        textAnchor="middle"
-                        fill="#fff"
-                        fontSize={iconSize - 10}
-                      >
-                        {item.icon === 'monk' ? '⛪' : '👤'}
-                      </text>
-                    </g>
-                  )}
+                    )}
+                  </g>
                   
                   {hoveredItem === item.id && (
                     <g>
@@ -413,7 +529,8 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                 </g>
               );
             }
-          })}
+            });
+          })()}
         </svg>
       </div>
 
