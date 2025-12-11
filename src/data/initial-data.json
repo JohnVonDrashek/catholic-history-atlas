@@ -294,6 +294,140 @@
       ]
     },
     {
+      "id": "papias",
+      "name": "St. Papias of Hierapolis",
+      "birthYear": 60,
+      "deathYear": 130,
+      "feastDay": "February 22",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "Apostolic Father"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "hierapolis",
+          "description": "Bishop of Hierapolis"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Papias_of_Hierapolis",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11457b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Papias.png",
+      "summary": "Papias was an early Christian bishop of Hierapolis and an Apostolic Father. He is known for his five-volume work 'Exposition of the Sayings of the Lord,' which preserved early oral traditions about the apostles and the origins of the Gospels. His writings are among the earliest testimonies to the authorship of the Gospels.",
+      "keyQuotes": []
+    },
+    {
+      "id": "quadratus",
+      "name": "St. Quadratus of Athens",
+      "birthYear": null,
+      "deathYear": 129,
+      "feastDay": "September 26",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "apologist"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "athens",
+          "description": "Bishop of Athens"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Quadratus_of_Athens",
+      "newAdventUrl": "https://www.newadvent.org/cathen/12592a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Quadratus_of_Athens_%28Menologion_of_Basil_II%29.jpg/330px-Quadratus_of_Athens_%28Menologion_of_Basil_II%29.jpg",
+      "summary": "Quadratus was an early Christian apologist and bishop of Athens. He is known for presenting an apology for Christianity to Emperor Hadrian around 125 AD, making him one of the earliest Christian apologists. His work is now lost except for a brief fragment preserved by Eusebius.",
+      "keyQuotes": []
+    },
+    {
+      "id": "hermas",
+      "name": "St. Hermas",
+      "birthYear": null,
+      "deathYear": 150,
+      "feastDay": "May 9",
+      "primaryTradition": "Latin",
+      "roles": ["prophet"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "rome",
+          "description": "Author in Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Hermas_(freedman)",
+      "newAdventUrl": "https://www.newadvent.org/cathen/07263a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canon_Muratori.png/330px-Canon_Muratori.png",
+      "summary": "Hermas was a Christian writer of the 2nd century and the author of 'The Shepherd of Hermas,' one of the most popular Christian works of the early Church. The work, written in Rome, contains visions, commandments, and parables, and was considered canonical by some early Christian communities.",
+      "keyQuotes": []
+    },
+    {
+      "id": "justin-martyr",
+      "name": "St. Justin Martyr",
+      "birthYear": 100,
+      "deathYear": 165,
+      "feastDay": "June 1",
+      "primaryTradition": "Greek",
+      "roles": ["apologist", "martyr", "philosopher"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "rome",
+          "description": "Martyred in Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Justin_Martyr",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08580c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Saint_Justin_Martyr_by_Theophanes_the_Cretan.jpg/330px-Saint_Justin_Martyr_by_Theophanes_the_Cretan.jpg",
+      "summary": "Justin Martyr was an early Christian apologist and philosopher who converted to Christianity after studying various philosophical schools. He wrote two major apologies defending Christianity and was martyred in Rome along with six companions. He is considered one of the most important early Christian apologists.",
+      "keyQuotes": [
+        "We have been taught that Christ is the first-begotten of God, and we have declared above that He is the Word of whom every race of men were partakers."
+      ]
+    },
+    {
+      "id": "melito-sardis",
+      "name": "St. Melito of Sardis",
+      "birthYear": null,
+      "deathYear": 180,
+      "feastDay": "April 1",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "apologist"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "sardis",
+          "description": "Bishop of Sardis"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Melito_of_Sardis",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10162a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/%D0%9C%D0%B5%D0%BB%D0%B8%D1%82%D0%BE%D0%BD_%D0%A1%D0%B0%D1%80%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9.jpg",
+      "summary": "Melito was a bishop of Sardis in the 2nd century and an important early Christian apologist. He wrote an apology to Emperor Marcus Aurelius and is known for his work 'On the Passover,' which provides important insights into early Christian liturgical practices and theology.",
+      "keyQuotes": []
+    },
+    {
+      "id": "theophilus-antioch",
+      "name": "St. Theophilus of Antioch",
+      "birthYear": null,
+      "deathYear": 183,
+      "feastDay": "October 13",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "apologist"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "antioch",
+          "description": "Bishop of Antioch"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Theophilus_of_Antioch",
+      "newAdventUrl": "https://www.newadvent.org/cathen/14625a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Theophilus_Antiochenus.png/330px-Theophilus_Antiochenus.png",
+      "summary": "Theophilus was a bishop of Antioch in the late 2nd century and an important early Christian apologist. He wrote 'To Autolycus,' a three-volume apology that defends Christianity against pagan objections and provides one of the earliest uses of the term 'Trinity' in Christian literature.",
+      "keyQuotes": []
+    },
+    {
       "id": "irenaeus",
       "name": "St. Irenaeus",
       "birthYear": 130,
@@ -316,6 +450,76 @@
       "keyQuotes": [
         "The glory of God is man fully alive, and the life of man is the vision of God."
       ]
+    },
+    {
+      "id": "perpetua-felicity",
+      "name": "Sts. Perpetua and Felicity",
+      "birthYear": null,
+      "deathYear": 203,
+      "feastDay": "March 7",
+      "primaryTradition": "Latin",
+      "roles": ["martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "carthage",
+          "description": "Martyred in Carthage"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Perpetua_and_Felicity",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11687c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Perpetua%2C_Felicitas%2C_Revocatus%2C_Saturninus_and_Secundulus_%28Menologion_of_Basil_II%29.jpg/330px-Perpetua%2C_Felicitas%2C_Revocatus%2C_Saturninus_and_Secundulus_%28Menologion_of_Basil_II%29.jpg",
+      "summary": "Perpetua and Felicity were Christian martyrs who died in Carthage during the persecution of Septimius Severus. Perpetua, a noblewoman, kept a diary of her imprisonment that is one of the earliest surviving Christian texts written by a woman. They were thrown to wild beasts in the arena and are among the most venerated early Christian martyrs.",
+      "keyQuotes": [
+        "I am a Christian, and I cannot call myself anything else."
+      ]
+    },
+    {
+      "id": "clement-alexandria",
+      "name": "St. Clement of Alexandria",
+      "birthYear": 150,
+      "deathYear": 215,
+      "feastDay": "December 5",
+      "primaryTradition": "Greek",
+      "roles": ["theologian", "teacher"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "alexandria",
+          "description": "Teacher and theologian in Alexandria"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Clement_of_Alexandria",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04045a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Clement_alexandrin.jpg/330px-Clement_alexandrin.jpg",
+      "summary": "Clement of Alexandria was a Christian theologian and teacher who headed the Catechetical School of Alexandria. He sought to reconcile Christian faith with Greek philosophy and wrote extensively on Christian ethics, education, and the relationship between faith and reason. His works influenced later Christian thinkers including Origen.",
+      "keyQuotes": [
+        "The Word of God became man, that you may learn from man how man may become God."
+      ]
+    },
+    {
+      "id": "hippolytus-rome",
+      "name": "St. Hippolytus of Rome",
+      "birthYear": 170,
+      "deathYear": 235,
+      "feastDay": "August 13",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "martyr", "theologian"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "rome",
+          "description": "Antipope, then reconciled, martyred in Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Hippolytus_of_Rome",
+      "newAdventUrl": "https://www.newadvent.org/cathen/07360c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Statue_of_Saint_.Hippolytus_%28cropped%29.jpg/330px-Statue_of_Saint_.Hippolytus_%28cropped%29.jpg",
+      "summary": "Hippolytus was a 3rd-century theologian and the first antipope in Church history. He opposed Popes Zephyrinus and Callixtus I over doctrinal issues, but was later reconciled and martyred alongside Pope Pontian. He wrote extensively on theology, liturgy, and church order, including the 'Apostolic Tradition,' which provides valuable insights into early Christian worship.",
+      "keyQuotes": []
     },
     {
       "id": "athanasius",
@@ -565,6 +769,107 @@
       "keyDocuments": []
     },
     {
+      "id": "trajan-persecution",
+      "name": "Persecution under Trajan",
+      "startYear": 98,
+      "endYear": 117,
+      "type": "persecution",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+      "summary": "During the reign of Emperor Trajan (98-117 AD), Christians faced systematic persecution throughout the Roman Empire. Trajan's policy, outlined in his correspondence with Pliny the Younger, established that Christians should not be sought out but should be punished if denounced and refused to recant. This period saw the martyrdom of Ignatius of Antioch and others.",
+      "keyDocuments": [
+        "Pliny-Trajan Correspondence"
+      ]
+    },
+    {
+      "id": "marcionism",
+      "name": "Marcionism",
+      "startYear": 144,
+      "endYear": 144,
+      "type": "other",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Marcionism",
+      "newAdventUrl": "https://www.newadvent.org/cathen/09645c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/M.Sander_-_Marcion_%C3%B5petamas.jpg/330px-M.Sander_-_Marcion_%C3%B5petamas.jpg",
+      "summary": "Marcionism was a major heretical movement founded by Marcion of Sinope around 144 AD. Marcion rejected the Old Testament and most of the New Testament, accepting only an edited version of Luke's Gospel and ten of Paul's letters. His dualistic theology, which posited two separate gods (the creator God of the Old Testament and the loving God of the New), was vigorously opposed by the early Church and led to the development of the New Testament canon.",
+      "keyDocuments": [
+        "Marcion's Canon"
+      ]
+    },
+    {
+      "id": "montanism",
+      "name": "Montanism",
+      "startYear": 165,
+      "endYear": 165,
+      "type": "other",
+      "locationId": "hierapolis",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Montanism",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10521a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Acts-2.jpg/330px-Acts-2.jpg",
+      "summary": "Montanism, also known as the New Prophecy, was an early Christian movement founded by Montanus in Phrygia around 165 AD. It emphasized prophetic revelation, ecstatic utterances, and strict asceticism. The movement was eventually condemned as heretical, but it influenced Christian thinking about prophecy, the Holy Spirit, and eschatology.",
+      "keyDocuments": []
+    },
+    {
+      "id": "marcus-aurelius-persecution",
+      "name": "Persecution under Marcus Aurelius",
+      "startYear": 177,
+      "endYear": 180,
+      "type": "persecution",
+      "locationId": "lyons",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+      "summary": "During the reign of Marcus Aurelius (161-180 AD), Christians faced severe persecution, particularly in Gaul. The most notable episode was the persecution in Lyons and Vienne in 177 AD, which resulted in the martyrdom of many Christians including the elderly bishop Pothinus and the slave Blandina. This persecution is documented in the 'Letter of the Churches of Lyons and Vienne.'",
+      "keyDocuments": [
+        "Letter of the Churches of Lyons and Vienne"
+      ]
+    },
+    {
+      "id": "muratorian-canon",
+      "name": "Muratorian Canon",
+      "startYear": 170,
+      "endYear": 200,
+      "type": "other",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Muratorian_fragment",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10629a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canon_Muratori.png/330px-Canon_Muratori.png",
+      "summary": "The Muratorian Canon, dating from around 170-200 AD, is the earliest known list of New Testament books. Discovered in the 18th century, it provides crucial evidence for the early formation of the biblical canon, listing most of the books now accepted as canonical and excluding others. It demonstrates that the core of the New Testament was already established by the late 2nd century.",
+      "keyDocuments": [
+        "Muratorian Fragment"
+      ]
+    },
+    {
+      "id": "septimius-severus-persecution",
+      "name": "Persecution under Septimius Severus",
+      "startYear": 202,
+      "endYear": 211,
+      "type": "persecution",
+      "locationId": "carthage",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+      "summary": "Emperor Septimius Severus issued an edict in 202 AD prohibiting conversion to Judaism or Christianity. This led to widespread persecution, particularly in North Africa and Egypt. The most famous martyrs of this period were Perpetua and Felicity in Carthage, whose detailed account of their imprisonment and martyrdom is one of the earliest Christian texts written by a woman.",
+      "keyDocuments": [
+        "Passion of Perpetua and Felicity"
+      ]
+    },
+    {
+      "id": "gnosticism",
+      "name": "Rise of Gnosticism",
+      "startYear": 100,
+      "endYear": 200,
+      "type": "other",
+      "locationId": "alexandria",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Gnosticism",
+      "newAdventUrl": "https://www.newadvent.org/cathen/06592a.htm",
+      "summary": "Gnosticism was a diverse set of religious movements that emerged in the 2nd century, teaching that salvation comes through secret knowledge (gnosis) rather than faith. Gnostics typically held that the material world was created by an inferior deity and that the true God was completely transcendent. Major Gnostic teachers included Valentinus, Basilides, and Marcion. The Church Fathers, especially Irenaeus, wrote extensively against Gnosticism.",
+      "keyDocuments": [
+        "Against Heresies (Irenaeus)",
+        "Gospel of Thomas",
+        "Gospel of Judas"
+      ]
+    },
+    {
       "id": "nicaea-i",
       "name": "First Council of Nicaea",
       "startYear": 325,
@@ -780,6 +1085,46 @@
       "lng": 33.37,
       "region": "Mediterranean",
       "modernCountry": "Cyprus"
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "lat": 37.98,
+      "lng": 23.73,
+      "region": "Achaia",
+      "modernCountry": "Greece"
+    },
+    {
+      "id": "sardis",
+      "name": "Sardis",
+      "lat": 38.49,
+      "lng": 28.04,
+      "region": "Lydia",
+      "modernCountry": "Turkey"
+    },
+    {
+      "id": "hierapolis",
+      "name": "Hierapolis",
+      "lat": 37.93,
+      "lng": 29.12,
+      "region": "Phrygia",
+      "modernCountry": "Turkey"
+    },
+    {
+      "id": "carthage",
+      "name": "Carthage",
+      "lat": 36.85,
+      "lng": 10.33,
+      "region": "Africa",
+      "modernCountry": "Tunisia"
+    },
+    {
+      "id": "edessa",
+      "name": "Edessa",
+      "lat": 37.15,
+      "lng": 38.80,
+      "region": "Osroene",
+      "modernCountry": "Turkey"
     }
   ]
 }
