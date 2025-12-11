@@ -390,11 +390,18 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
         padding: '2rem', 
         borderRadius: '8px',
         overflowX: 'auto',
+        width: '100%',
       }}>
         <svg
           ref={svgRef}
-          width={timelineWidth}
-          height={timelineHeight}
+          width="100%"
+          viewBox={`0 0 ${timelineWidth} ${timelineHeight}`}
+          preserveAspectRatio="xMidYMid meet"
+          style={{ 
+            display: 'block', 
+            minWidth: `${timelineWidth}px`,
+            cursor: isDragging ? 'grabbing' : zoomLevel > 0 ? 'grab' : 'pointer'
+          }}
           onClick={handleTimelineClick}
           onWheel={handleWheel}
           onMouseDown={handleMouseDown}
@@ -404,7 +411,6 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             handleMouseUp(e);
             setHasDragged(false);
           }}
-          style={{ cursor: isDragging ? 'grabbing' : zoomLevel > 0 ? 'grab' : 'pointer' }}
         >
           {/* Definitions for patterns and gradients */}
           <defs>
@@ -424,9 +430,9 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
 
           {/* Timeline line */}
           <line
-            x1={padding}
+            x1={0}
             y1={timelineHeight / 2}
-            x2={timelineWidth - padding}
+            x2={timelineWidth}
             y2={timelineHeight / 2}
             stroke="#666"
             strokeWidth="2"
