@@ -1890,6 +1890,230 @@
       "keyQuotes": [
         "There was a time when the Son was not."
       ]
+    },
+    {
+      "id": "benedict-nursia",
+      "name": "St. Benedict of Nursia",
+      "birthYear": 480,
+      "deathYear": 547,
+      "feastDay": "July 11",
+      "primaryTradition": "Latin",
+      "roles": ["monk", "abbot"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "monte-cassino",
+          "description": "Founder and abbot of Monte Cassino"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Benedict_of_Nursia",
+      "newAdventUrl": "https://www.newadvent.org/cathen/02467a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Memling%2C_Trittico_di_Benedetto_Portinari%2C_San_Benedetto.jpg",
+      "summary": "Benedict of Nursia is known as the father of Western monasticism. He founded the monastery at Monte Cassino and wrote the Rule of St. Benedict, which became the foundation for monastic life in the West. His rule emphasized prayer, work, and community life, and has influenced countless religious communities for over 1,500 years. He is the patron saint of Europe.",
+      "keyQuotes": [
+        "Pray and work.",
+        "Listen carefully, my son, to the master's instructions, and attend to them with the ear of your heart."
+      ],
+      "writings": [
+        {
+          "title": "Rule of St. Benedict",
+          "url": "https://www.ccel.org/ccel/benedict/rule.html"
+        }
+      ]
+    },
+    {
+      "id": "scholastica",
+      "name": "St. Scholastica",
+      "birthYear": 480,
+      "deathYear": 547,
+      "feastDay": "February 10",
+      "primaryTradition": "Latin",
+      "roles": ["nun", "abbess"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "monte-cassino",
+          "description": "Nun near Monte Cassino"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Scholastica",
+      "newAdventUrl": "https://www.newadvent.org/cathen/13548a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Jean_Baptiste_de_Champaigne_%281631-1681%29_%28attributed_to%29_-_Saint_Benedict_and_Saint_Scholastica_and_Two_Companions_in_a_Landscape_-_290251_-_National_Trust.jpg",
+      "summary": "Scholastica was the twin sister of St. Benedict of Nursia. She founded a convent near Monte Cassino and is considered the first Benedictine nun. According to tradition, she and her brother met once a year to discuss spiritual matters. She is venerated as the patroness of Benedictine nuns and is remembered for her deep prayer life and devotion.",
+      "keyQuotes": []
+    },
+    {
+      "id": "gregory-great",
+      "name": "St. Gregory the Great",
+      "birthYear": 540,
+      "deathYear": 604,
+      "feastDay": "September 3",
+      "primaryTradition": "Latin",
+      "roles": ["pope", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "rome",
+          "description": "Pope of Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_I",
+      "newAdventUrl": "https://www.newadvent.org/cathen/06780a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Gregory_the_Great_with_the_Holy_Spirit.jpg",
+      "summary": "Gregory the Great was Pope from 590 to 604 and is one of the four original Doctors of the Church. He is known for his extensive writings, including the Dialogues, which contain the Life of St. Benedict, and his Pastoral Rule. He reformed the liturgy (Gregorian Chant is named after him), sent missionaries to England, and strengthened papal authority. He is considered one of the most important popes in Church history.",
+      "keyQuotes": [
+        "The proof of love is in the works. Where love exists, it works great things."
+      ],
+      "writings": [
+        {
+          "title": "Dialogues",
+          "url": "https://www.ccel.org/ccel/schaff/npnf212.iv.html"
+        },
+        {
+          "title": "Pastoral Rule",
+          "url": "https://www.ccel.org/ccel/schaff/npnf212.v.html"
+        },
+        {
+          "title": "Moralia on Job",
+          "url": "https://www.ccel.org/ccel/schaff/npnf212.vi.html"
+        }
+      ]
+    },
+    {
+      "id": "columba",
+      "name": "St. Columba",
+      "birthYear": 521,
+      "deathYear": 597,
+      "feastDay": "June 9",
+      "primaryTradition": "Latin",
+      "roles": ["monk", "missionary", "abbot"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "iona",
+          "description": "Founder and abbot of Iona"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Columba",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04136a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Columba_at_Bridei%27s_fort.jpg",
+      "summary": "Columba was an Irish abbot and missionary who founded the monastery of Iona in Scotland. He is credited with spreading Christianity throughout Scotland and northern England. He is one of the three patron saints of Ireland along with Patrick and Brigid. His monastery at Iona became a center of learning and missionary activity throughout the British Isles.",
+      "keyQuotes": []
+    },
+    {
+      "id": "columbanus",
+      "name": "St. Columbanus",
+      "birthYear": 543,
+      "deathYear": 615,
+      "feastDay": "November 23",
+      "primaryTradition": "Latin",
+      "roles": ["monk", "missionary", "abbot"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "luxeuil",
+          "description": "Founder of Luxeuil Abbey"
+        },
+        {
+          "placeId": "bobbio",
+          "description": "Founder of Bobbio Abbey"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Columbanus",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04136b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/San_Colombano.jpg",
+      "summary": "Columbanus was an Irish missionary who founded several monasteries in continental Europe, including Luxeuil in France and Bobbio in Italy. He introduced the Irish penitential system to the continent and wrote a monastic rule. His missionary work helped spread Irish monasticism throughout Europe and influenced the development of Western monasticism.",
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "Rule of St. Columbanus",
+          "url": "https://www.ccel.org/ccel/columbanus/rule.html"
+        }
+      ]
+    },
+    {
+      "id": "caesarius-arles",
+      "name": "St. Caesarius of Arles",
+      "birthYear": 470,
+      "deathYear": 542,
+      "feastDay": "August 27",
+      "primaryTradition": "Latin",
+      "roles": ["bishop"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "arles",
+          "description": "Bishop of Arles"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Caesarius_of_Arles",
+      "newAdventUrl": "https://www.newadvent.org/cathen/03135a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Arles%2CSt_C%C3%A9saire27%2Cchoeur7%2CSt_C%C3%A9saire_%28cropped%29.jpg",
+      "summary": "Caesarius of Arles was a bishop who played an important role in the Church in Gaul during the 6th century. He presided over several councils, wrote sermons and a rule for nuns, and worked to reform the clergy. He is known for his efforts to combat Arianism and for establishing monasteries for both men and women.",
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "Sermons",
+          "url": "https://www.ccel.org/ccel/schaff/npnf211.iv.html"
+        }
+      ]
+    },
+    {
+      "id": "radegund",
+      "name": "St. Radegund",
+      "birthYear": 520,
+      "deathYear": 587,
+      "feastDay": "August 13",
+      "primaryTradition": "Latin",
+      "roles": ["queen", "nun"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "poitiers",
+          "description": "Queen, then nun in Poitiers"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Radegund",
+      "newAdventUrl": "https://www.newadvent.org/cathen/12610a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Sainte_Radegonde.JPG",
+      "summary": "Radegund was a Frankish queen who left her royal life to become a nun. She founded the monastery of the Holy Cross in Poitiers and became known for her asceticism, charity, and devotion. She is one of the few early medieval queens to be canonized and is remembered for her example of renouncing worldly power for religious life.",
+      "keyQuotes": []
+    },
+    {
+      "id": "boethius",
+      "name": "Boethius",
+      "birthYear": 477,
+      "deathYear": 524,
+      "primaryTradition": "Latin",
+      "roles": ["philosopher", "theologian"],
+      "orthodoxyStatus": "orthodox",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "ravenna",
+          "description": "Philosopher and statesman, martyred in Ravenna"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Boethius",
+      "newAdventUrl": "https://www.newadvent.org/cathen/02610b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Boethius.jpeg",
+      "summary": "Boethius was a Roman philosopher, theologian, and statesman who served as consul under Theodoric the Great. He is best known for his work 'The Consolation of Philosophy,' written while imprisoned before his execution. His translations of Aristotle and other Greek works helped preserve classical learning in the West, and his theological works influenced medieval scholasticism.",
+      "keyQuotes": [
+        "In all adversity of fortune, the worst sort of misery is to have been happy."
+      ],
+      "writings": [
+        {
+          "title": "The Consolation of Philosophy",
+          "url": "https://www.ccel.org/ccel/boethius/consolation.html"
+        }
+      ]
     }
   ],
   "events": [
@@ -2312,6 +2536,51 @@
         "Chalcedonian Definition",
         "Tome of Leo"
       ]
+    },
+    {
+      "id": "justinian-code",
+      "name": "Justinian's Code",
+      "startYear": 529,
+      "endYear": 534,
+      "type": "other",
+      "locationId": "constantinople",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Corpus_Juris_Civilis",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04397a.htm",
+      "summary": "The Corpus Juris Civilis, also known as Justinian's Code, was a comprehensive compilation of Roman law commissioned by Emperor Justinian I. It consisted of four parts: the Codex (imperial laws), the Digest (legal opinions), the Institutes (textbook), and the Novellae (new laws). This codification preserved Roman legal tradition and influenced legal systems throughout Europe for centuries.",
+      "keyDocuments": [
+        "Corpus Juris Civilis",
+        "Codex Justinianus",
+        "Digest",
+        "Institutes"
+      ]
+    },
+    {
+      "id": "plague-justinian",
+      "name": "Plague of Justinian",
+      "startYear": 541,
+      "endYear": 549,
+      "type": "other",
+      "locationId": "constantinople",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Plague_of_Justinian",
+      "newAdventUrl": "https://www.newadvent.org/cathen/12165a.htm",
+      "summary": "The Plague of Justinian was a pandemic that afflicted the Byzantine Empire and surrounding regions, killing millions of people. It is considered the first recorded pandemic in history and was caused by the bubonic plague. The plague had devastating effects on the population, economy, and military of the Byzantine Empire, contributing to its decline and the end of Justinian's efforts to restore the Roman Empire.",
+      "keyDocuments": []
+    },
+    {
+      "id": "council-constantinople-ii",
+      "name": "Second Council of Constantinople",
+      "startYear": 553,
+      "endYear": 553,
+      "type": "council",
+      "locationId": "constantinople",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Second_Council_of_Constantinople",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04308a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/EcumenicalCouncil_5th_11-22.jpg",
+      "summary": "The Second Council of Constantinople was the fifth ecumenical council, convened by Emperor Justinian I in 553 AD. The council condemned the 'Three Chapters' (writings of Theodore of Mopsuestia, Theodoret of Cyrrhus, and Ibas of Edessa) in an attempt to reconcile the Monophysites. It also affirmed the Christological definitions of the previous councils and clarified the relationship between the divine and human natures of Christ.",
+      "keyDocuments": [
+        "Canons of the Second Council of Constantinople",
+        "Condemnation of the Three Chapters"
+      ]
     }
   ],
   "places": [
@@ -2634,6 +2903,46 @@
       "lng": 53.69,
       "region": "Persia",
       "modernCountry": "Iran"
+    },
+    {
+      "id": "monte-cassino",
+      "name": "Monte Cassino",
+      "lat": 41.49,
+      "lng": 13.81,
+      "region": "Italia",
+      "modernCountry": "Italy"
+    },
+    {
+      "id": "iona",
+      "name": "Iona",
+      "lat": 56.33,
+      "lng": -6.41,
+      "region": "Scotland",
+      "modernCountry": "United Kingdom"
+    },
+    {
+      "id": "luxeuil",
+      "name": "Luxeuil-les-Bains",
+      "lat": 47.82,
+      "lng": 6.38,
+      "region": "Gaul",
+      "modernCountry": "France"
+    },
+    {
+      "id": "bobbio",
+      "name": "Bobbio",
+      "lat": 44.77,
+      "lng": 9.39,
+      "region": "Italia",
+      "modernCountry": "Italy"
+    },
+    {
+      "id": "arles",
+      "name": "Arles",
+      "lat": 43.68,
+      "lng": 4.63,
+      "region": "Gaul",
+      "modernCountry": "France"
     }
   ]
 }

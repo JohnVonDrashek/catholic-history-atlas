@@ -825,7 +825,8 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                 imageWidth = baseImageSize * aspectRatio;
               }
               
-              const framePadding = 6;
+              // Use tighter padding for canonized saints (non-martyrs) to make gold border fit closer
+              const framePadding = (person.orthodoxyStatus === 'canonized' && !person.isMartyr) ? 2 : 6;
               const frameWidth = imageWidth + framePadding * 2;
               const frameHeight = imageHeight + framePadding * 2;
               const frameStyle = getFrameStyle(person.orthodoxyStatus, person.isMartyr);
@@ -874,7 +875,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                       {...frameStyle}
                     />
                     
-                    {/* White inner border for martyrs */}
+                    {/* White inner border for martyrs only */}
                     {(person.isMartyr && (person.orthodoxyStatus === 'canonized' || person.orthodoxyStatus === 'blessed')) && (
                       <rect
                         x={-imageWidth / 2 - 2}

@@ -20,6 +20,14 @@
 .portrait-frame--saint {
   border: 3px solid #d4af37; /* gold */
   box-shadow: 0 0 6px rgba(212, 175, 55, 0.6);
+  padding: 0;
+}
+
+/* Inner white border to keep image tightly bound */
+.portrait-frame--saint .portrait-frame__image {
+  border-radius: 0;
+  border: 2px solid #fff;
+  display: block;
 }
 
 /* B. Martyr: gold + red stripes */
