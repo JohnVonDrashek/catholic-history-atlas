@@ -522,6 +522,213 @@
       "keyQuotes": []
     },
     {
+      "id": "origen",
+      "name": "Origen",
+      "birthYear": 185,
+      "deathYear": 254,
+      "feastDay": null,
+      "primaryTradition": "Greek",
+      "roles": ["theologian", "teacher", "biblical scholar"],
+      "orthodoxyStatus": "orthodox",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "alexandria",
+          "description": "Head of Catechetical School of Alexandria"
+        },
+        {
+          "placeId": "caesarea-maritima",
+          "description": "Established school in Caesarea"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Origen",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11306a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Origen.jpg/330px-Origen.jpg",
+      "summary": "Origen was one of the most influential early Christian theologians and biblical scholars. He headed the Catechetical School of Alexandria and wrote extensively on Scripture, theology, and philosophy. While some of his speculative teachings were later condemned, his contributions to biblical exegesis, theology, and Christian philosophy were foundational for later Church Fathers.",
+      "keyQuotes": [
+        "The end of the world and the consummation will take place when everyone shall be subjected to punishment."
+      ]
+    },
+    {
+      "id": "cyprian",
+      "name": "St. Cyprian of Carthage",
+      "birthYear": 200,
+      "deathYear": 258,
+      "feastDay": "September 16",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "carthage",
+          "description": "Bishop of Carthage"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cyprian",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04583b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Cyprian_von_Karthago2.jpg",
+      "summary": "Cyprian was a bishop of Carthage and an important early Church Father. He wrote extensively on church unity, the role of bishops, and the treatment of those who lapsed during persecution. His principle 'Outside the Church there is no salvation' became foundational for ecclesiology. He was martyred during the Valerian persecution.",
+      "keyQuotes": [
+        "He can no longer have God for his Father who has not the Church for his mother.",
+        "Outside the Church there is no salvation."
+      ]
+    },
+    {
+      "id": "dionysius-alexandria",
+      "name": "St. Dionysius of Alexandria",
+      "birthYear": 190,
+      "deathYear": 264,
+      "feastDay": "November 17",
+      "primaryTradition": "Greek",
+      "roles": ["bishop"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "alexandria",
+          "description": "Bishop of Alexandria"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Dionysius_of_Alexandria",
+      "newAdventUrl": "https://www.newadvent.org/cathen/05009a.htm",
+      "imageUrl": null,
+      "summary": "Dionysius was a bishop of Alexandria and a student of Origen. He played an important role in the theological controversies of his time, particularly regarding the Trinity and the treatment of those who lapsed during persecution. He was known for his moderation and pastoral care.",
+      "keyQuotes": []
+    },
+    {
+      "id": "gregory-thaumaturgus",
+      "name": "St. Gregory Thaumaturgus",
+      "birthYear": 213,
+      "deathYear": 270,
+      "feastDay": "November 17",
+      "primaryTradition": "Greek",
+      "roles": ["bishop"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "neocaesarea",
+          "description": "Bishop of Neocaesarea"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Gregory_Thaumaturgus",
+      "newAdventUrl": "https://www.newadvent.org/cathen/07018a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Grigorii_chudotvoretz.jpg",
+      "summary": "Gregory Thaumaturgus (the Wonderworker) was a bishop of Neocaesarea and a student of Origen. He is credited with converting most of his diocese to Christianity and is known for numerous miracles. His 'Address to Origen' provides valuable insights into Origen's teaching methods.",
+      "keyQuotes": []
+    },
+    {
+      "id": "methodius-olympus",
+      "name": "St. Methodius of Olympus",
+      "birthYear": null,
+      "deathYear": 311,
+      "feastDay": "June 20",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "olympus",
+          "description": "Bishop of Olympus"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Methodius_of_Olympus",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10240a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Methodius_of_Olympus.jpg/330px-Methodius_of_Olympus.jpg",
+      "summary": "Methodius was a bishop and theologian who wrote extensively against Origen's speculative teachings while maintaining respect for his biblical scholarship. He is best known for his 'Symposium' or 'Banquet of the Ten Virgins,' an important early Christian work on virginity and asceticism. He was martyred during the Diocletianic persecution.",
+      "keyQuotes": []
+    },
+    {
+      "id": "lucian-antioch",
+      "name": "St. Lucian of Antioch",
+      "birthYear": 240,
+      "deathYear": 312,
+      "feastDay": "January 7",
+      "primaryTradition": "Greek",
+      "roles": ["priest", "martyr", "biblical scholar"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "antioch",
+          "description": "Priest and biblical scholar in Antioch"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lucian_of_Antioch",
+      "newAdventUrl": "https://www.newadvent.org/cathen/09410a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Lucian_of_Antioch_%28Menologion_of_Basil_II%29.jpg/330px-Lucian_of_Antioch_%28Menologion_of_Basil_II%29.jpg",
+      "summary": "Lucian was a priest and biblical scholar in Antioch who produced a critical edition of the Greek Bible known as the 'Lucianic recension.' He was martyred during the Diocletianic persecution. His biblical text was influential in the Eastern Church, and he is considered a forerunner of Arianism by some scholars.",
+      "keyQuotes": []
+    },
+    {
+      "id": "pamphilus",
+      "name": "St. Pamphilus of Caesarea",
+      "birthYear": 240,
+      "deathYear": 309,
+      "feastDay": "February 16",
+      "primaryTradition": "Greek",
+      "roles": ["priest", "martyr", "biblical scholar"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "caesarea-maritima",
+          "description": "Priest and biblical scholar in Caesarea"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pamphilus_of_Caesarea",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11440a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pamphilus_of_Caesarea.jpg/330px-Pamphilus_of_Caesarea.jpg",
+      "summary": "Pamphilus was a priest and biblical scholar who established a library and scriptorium in Caesarea. He was a student of Pierius and worked on producing accurate copies of the Scriptures. He was martyred during the Diocletianic persecution. His student Eusebius of Caesarea wrote a biography of him.",
+      "keyQuotes": []
+    },
+    {
+      "id": "lactantius",
+      "name": "Lactantius",
+      "birthYear": 250,
+      "deathYear": 325,
+      "feastDay": null,
+      "primaryTradition": "Latin",
+      "roles": ["apologist", "teacher"],
+      "orthodoxyStatus": "orthodox",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "rome",
+          "description": "Teacher in Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Lactantius",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08741a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Lactantius.jpg/330px-Lactantius.jpg",
+      "summary": "Lactantius was a Christian apologist and teacher who served as tutor to Constantine's son Crispus. He wrote 'The Divine Institutes,' a comprehensive defense of Christianity, and 'On the Deaths of the Persecutors,' which describes the fates of those who persecuted Christians. His elegant Latin style earned him the title 'Christian Cicero.'",
+      "keyQuotes": []
+    },
+    {
+      "id": "arnobius",
+      "name": "Arnobius",
+      "birthYear": null,
+      "deathYear": 330,
+      "feastDay": null,
+      "primaryTradition": "Latin",
+      "roles": ["apologist", "teacher"],
+      "orthodoxyStatus": "orthodox",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "sicca",
+          "description": "Teacher in Sicca"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Arnobius",
+      "newAdventUrl": "https://www.newadvent.org/cathen/01746a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/%D0%90%D1%80%D0%BD%D0%BE%D0%B1%D0%B8%D0%B9_%D0%A1%D1%82%D0%B0%D1%80%D1%88%D0%B8%D0%B9_-Arnobius_of_Sicca.jpg/318px-%D0%90%D1%80%D0%BD%D0%BE%D0%B1%D0%B8%D0%B9_%D0%A1%D1%82%D0%B0%D1%80%D1%88%D0%B8%D0%B9_-Arnobius_of_Sicca.jpg",
+      "summary": "Arnobius was a Christian apologist and teacher who wrote 'Against the Pagans' (Adversus Nationes), a seven-volume work defending Christianity against pagan accusations. He converted to Christianity late in life and wrote his apology to prove his sincerity to his bishop.",
+      "keyQuotes": []
+    },
+    {
       "id": "athanasius",
       "name": "St. Athanasius",
       "birthYear": 296,
@@ -870,6 +1077,61 @@
       ]
     },
     {
+      "id": "decian-persecution",
+      "name": "Decian Persecution",
+      "startYear": 250,
+      "endYear": 251,
+      "type": "persecution",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Decian_persecution",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Byzantine_icon_St-Mercurius_1295.jpg/330px-Byzantine_icon_St-Mercurius_1295.jpg",
+      "summary": "The Decian persecution (250-251 AD) was the first empire-wide, systematic persecution of Christians in the Roman Empire. Emperor Decius issued an edict requiring all citizens to perform a sacrifice to the Roman gods and obtain a certificate (libellus) proving their compliance. Many Christians refused and were martyred, while others lapsed and later sought readmission to the Church, leading to debates about penance and reconciliation.",
+      "keyDocuments": [
+        "Libelli (sacrifice certificates)"
+      ]
+    },
+    {
+      "id": "novatian-schism",
+      "name": "Novatian Schism",
+      "startYear": 251,
+      "endYear": 251,
+      "type": "schism",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Novatianism",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11138a.htm",
+      "summary": "The Novatian Schism began in 251 AD when Novatian, a Roman presbyter, was consecrated as an antipope in opposition to Pope Cornelius. Novatian and his followers, known as Novatianists, held that those who had lapsed during persecution could not be readmitted to the Church, even after penance. The schism lasted for several centuries and was eventually condemned by the Church.",
+      "keyDocuments": []
+    },
+    {
+      "id": "valerian-persecution",
+      "name": "Valerian Persecution",
+      "startYear": 257,
+      "endYear": 260,
+      "type": "persecution",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+      "summary": "The Valerian persecution (257-260 AD) was a systematic persecution of Christians under Emperor Valerian. Initially targeting clergy and church property, it later extended to all Christians. Notable martyrs included Pope Sixtus II, St. Lawrence, and St. Cyprian of Carthage. The persecution ended when Valerian was captured by the Persians in 260 AD.",
+      "keyDocuments": []
+    },
+    {
+      "id": "diocletianic-persecution",
+      "name": "Diocletianic Persecution",
+      "startYear": 303,
+      "endYear": 311,
+      "type": "persecution",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Diocletianic_Persecution",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Flagellation_St_Erasmus_Crypta_Balbi.jpg/330px-Flagellation_St_Erasmus_Crypta_Balbi.jpg",
+      "summary": "The Diocletianic Persecution, also known as the Great Persecution, was the last and most severe persecution of Christians in the Roman Empire. Beginning in 303 AD, it involved the destruction of churches, burning of Scriptures, imprisonment and torture of clergy, and execution of those who refused to sacrifice. The persecution ended in 311 AD with the Edict of Serdica, and was followed by the Edict of Milan in 313, which legalized Christianity.",
+      "keyDocuments": [
+        "Edict of Serdica (311)",
+        "Edict of Milan (313)"
+      ]
+    },
+    {
       "id": "nicaea-i",
       "name": "First Council of Nicaea",
       "startYear": 325,
@@ -1125,6 +1387,30 @@
       "lng": 38.80,
       "region": "Osroene",
       "modernCountry": "Turkey"
+    },
+    {
+      "id": "neocaesarea",
+      "name": "Neocaesarea",
+      "lat": 40.28,
+      "lng": 36.93,
+      "region": "Pontus",
+      "modernCountry": "Turkey"
+    },
+    {
+      "id": "olympus",
+      "name": "Olympus (Lycia)",
+      "lat": 36.40,
+      "lng": 30.47,
+      "region": "Lycia",
+      "modernCountry": "Turkey"
+    },
+    {
+      "id": "sicca",
+      "name": "Sicca Veneria",
+      "lat": 36.18,
+      "lng": 8.70,
+      "region": "Africa",
+      "modernCountry": "Tunisia"
     }
   ]
 }
