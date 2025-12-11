@@ -66,6 +66,7 @@ function App() {
               events={data.events}
               currentYear={currentYear}
               onItemClick={setSelectedItem}
+              onYearChange={setCurrentYear}
             />
           ) : (
             <MapView
