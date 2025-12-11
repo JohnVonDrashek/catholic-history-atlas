@@ -4,6 +4,7 @@ import { YearSelector } from './components/YearSelector';
 import { Timeline } from './components/Timeline';
 import { MapView } from './components/MapView';
 import { DetailsModal } from './components/DetailsModal';
+import { FrameLegend } from './components/FrameLegend';
 import type { Person, Event } from './types';
 import initialData from './data/initial-data.json';
 import './styles/main.css';
@@ -83,6 +84,8 @@ function App() {
           item={selectedItem}
           onClose={() => setSelectedItem(null)}
         />
+
+        <FrameLegend />
       </div>
     </HashRouter>
   );
