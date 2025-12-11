@@ -1,4 +1,5 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { useEffect, useState } from 'react';
 import type { Person, Event, Place } from '../types';
 import { getActivePeople, getActiveEvents } from '../utils/filters';
 import 'leaflet/dist/leaflet.css';
@@ -18,6 +19,47 @@ const IMPORTANT_SEES = new Set([
   'alexandria',
   'constantinople',
 ]);
+
+// Calculate offset position for markers at the same location
+// Arranges markers in a circle around the base position
+// Zoom-aware: larger offsets at lower zoom levels to prevent overlap
+function calculateOffsetPosition(
+  baseLat: number,
+  baseLng: number,
+  index: number,
+  totalCount: number,
+  zoom: number
+): [number, number] {
+  if (totalCount === 1) {
+    return [baseLat, baseLng];
+  }
+
+  // Base radius in degrees - scales inversely with zoom
+  // Much larger offsets at lower zoom levels to prevent overlap
+  // At zoom 2: ~1.2 degrees (~133km)
+  // At zoom 4: ~0.5 degrees (~55km)
+  // At zoom 6: ~0.2 degrees (~22km)
+  // At zoom 8: ~0.08 degrees (~8.8km)
+  // At zoom 10: ~0.032 degrees (~3.5km)
+  // At zoom 12: ~0.013 degrees (~1.4km)
+  // Formula: baseRadius decreases exponentially as zoom increases
+  const baseRadius = 0.5 / Math.pow(1.4, zoom - 4);
+  
+  // Scale radius based on total count to prevent overlap
+  // More aggressive scaling for larger groups
+  const radius = baseRadius * Math.min(1 + totalCount * 0.3, 3.5);
+
+  // Calculate angle in radians
+  const angle = (index * 2 * Math.PI) / totalCount;
+
+  // Calculate offset (latitude and longitude)
+  // For latitude: 1 degree ≈ 111 km
+  // For longitude: depends on latitude, but we'll use a simple approximation
+  const latOffset = radius * Math.cos(angle);
+  const lngOffset = radius * Math.sin(angle) / Math.cos(baseLat * Math.PI / 180);
+
+  return [baseLat + latOffset, baseLng + lngOffset];
+}
 
 // Create custom icons with images
 const createPersonIcon = (imageUrl?: string) => {
@@ -157,20 +199,153 @@ interface MapViewProps {
   onItemClick: (item: Person | Event) => void;
 }
 
+// Component to track zoom level and render markers
+function ZoomAwareMarkers({
+  itemsByPlace,
+  placeMap,
+  onItemClick,
+}: {
+  itemsByPlace: Map<string, Array<{ type: 'person'; data: Person } | { type: 'event'; data: Event }>>;
+  placeMap: Map<string, Place>;
+  onItemClick: (item: Person | Event) => void;
+}) {
+  const map = useMap();
+  const [zoom, setZoom] = useState(map.getZoom());
+
+  useEffect(() => {
+    const updateZoom = () => {
+      setZoom(map.getZoom());
+    };
+
+    map.on('zoomend', updateZoom);
+    updateZoom(); // Initial zoom
+
+    return () => {
+      map.off('zoomend', updateZoom);
+    };
+  }, [map]);
+
+  return (
+    <>
+      {Array.from(itemsByPlace.entries()).map(([placeId, items]) => {
+        const place = placeMap.get(placeId);
+        if (!place) return null;
+
+        const isImportantSee = IMPORTANT_SEES.has(place.id.toLowerCase());
+
+        return items.map((item, index) => {
+          // Calculate offset position for this item with current zoom
+          const [lat, lng] = calculateOffsetPosition(
+            place.lat,
+            place.lng,
+            index,
+            items.length,
+            zoom
+          );
+
+          // Determine icon type and image URL
+          let icon;
+          let imageUrl: string | undefined;
+          let itemName: string;
+
+          if (item.type === 'event') {
+            const event = item.data;
+            itemName = event.name;
+            imageUrl = event.imageUrl;
+
+            // Councils get special icon
+            if (event.type === 'council') {
+              icon = createCouncilIcon(imageUrl);
+            } else {
+              // Other events use person icon style
+              icon = createPersonIcon(imageUrl);
+            }
+          } else {
+            const person = item.data;
+            itemName = person.name;
+            imageUrl = person.imageUrl;
+
+            // People at important sees get special icon
+            if (isImportantSee) {
+              icon = createImportantSeeIcon(imageUrl);
+            } else {
+              icon = createPersonIcon(imageUrl);
+            }
+          }
+
+          // Create unique key combining place, type, and item id
+          const markerKey = `${placeId}-${item.type}-${item.data.id}-${index}`;
+
+          return (
+            <Marker key={markerKey} position={[lat, lng]} icon={icon}>
+              <Popup>
+                <div>
+                  <div
+                    onClick={() => onItemClick(item.data)}
+                    style={{
+                      cursor: 'pointer',
+                      color: '#4a9eff',
+                      fontWeight: 'bold',
+                      fontSize: '14px',
+                      marginBottom: '0.25rem',
+                    }}
+                  >
+                    {itemName}
+                  </div>
+                  <div style={{ fontSize: '12px', color: '#888', marginBottom: '0.25rem' }}>
+                    {place.name}
+                  </div>
+                  {item.type === 'event' && item.data.type === 'council' && (
+                    <div style={{ fontSize: '11px', color: '#aaa', fontStyle: 'italic' }}>
+                      Council
+                    </div>
+                  )}
+                  {isImportantSee && item.type === 'person' && (
+                    <div style={{ fontSize: '11px', color: '#aaa', fontStyle: 'italic' }}>
+                      Important See
+                    </div>
+                  )}
+                </div>
+              </Popup>
+            </Marker>
+          );
+        });
+      }).flat().filter(Boolean)}
+    </>
+  );
+}
+
 export function MapView({ people, events, places, currentYear, onItemClick }: MapViewProps) {
   const activePeople = getActivePeople(people, currentYear);
   const activeEvents = getActiveEvents(events, currentYear);
 
-  // Get places for active people and events
-  const activePlaceIds = new Set<string>();
+  // Create a map of placeId -> items at that place for offset calculation
+  type MapItem = { type: 'person'; data: Person } | { type: 'event'; data: Event };
+  const itemsByPlace = new Map<string, MapItem[]>();
+
+  // Group people by place
   activePeople.forEach(person => {
-    person.locations.forEach(loc => activePlaceIds.add(loc.placeId));
-  });
-  activeEvents.forEach(event => {
-    if (event.locationId) activePlaceIds.add(event.locationId);
+    person.locations.forEach(loc => {
+      if (!itemsByPlace.has(loc.placeId)) {
+        itemsByPlace.set(loc.placeId, []);
+      }
+      itemsByPlace.get(loc.placeId)!.push({ type: 'person', data: person });
+    });
   });
 
-  const activePlaces = places.filter(p => activePlaceIds.has(p.id));
+  // Group events by place
+  activeEvents.forEach(event => {
+    if (event.locationId) {
+      if (!itemsByPlace.has(event.locationId)) {
+        itemsByPlace.set(event.locationId, []);
+      }
+      itemsByPlace.get(event.locationId)!.push({ type: 'event', data: event });
+    }
+  });
+
+  // Create a lookup map for places
+  const placeMap = new Map<string, Place>();
+  places.forEach(place => placeMap.set(place.id, place));
 
   // Default to Mediterranean view for early centuries
   const center: [number, number] = currentYear < 1000 ? [38, 20] : [50, 10];
@@ -265,80 +440,11 @@ export function MapView({ people, events, places, currentYear, onItemClick }: Ma
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {activePlaces.map((place) => {
-          const placePeople = activePeople.filter(p =>
-            p.locations.some(loc => loc.placeId === place.id)
-          );
-          const placeEvents = activeEvents.filter(e => e.locationId === place.id);
-          
-          // Determine which icon to use (priority: council > important see > person)
-          const hasCouncil = placeEvents.some(e => e.type === 'council');
-          const isImportantSee = IMPORTANT_SEES.has(place.id.toLowerCase());
-          
-          // Get image URL - prefer first person's image, then first event's image
-          let imageUrl: string | undefined;
-          if (placePeople.length > 0 && placePeople[0].imageUrl) {
-            imageUrl = placePeople[0].imageUrl;
-          } else if (placeEvents.length > 0 && placeEvents[0].imageUrl) {
-            imageUrl = placeEvents[0].imageUrl;
-          }
-          
-          let icon;
-          if (hasCouncil) {
-            icon = createCouncilIcon(imageUrl);
-          } else if (isImportantSee) {
-            icon = createImportantSeeIcon(imageUrl);
-          } else {
-            icon = createPersonIcon(imageUrl);
-          }
-
-          return (
-            <Marker key={place.id} position={[place.lat, place.lng]} icon={icon}>
-              <Popup>
-                <div>
-                  <strong>{place.name}</strong>
-                  {isImportantSee && (
-                    <div style={{ fontSize: '12px', color: '#888', marginBottom: '0.5rem' }}>
-                      Important See
-                    </div>
-                  )}
-                  {placePeople.length > 0 && (
-                    <div>
-                      <p style={{ margin: '0.5rem 0 0.25rem 0', fontWeight: 'bold' }}>People:</p>
-                      <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                        {placePeople.map(person => (
-                          <li
-                            key={person.id}
-                            onClick={() => onItemClick(person)}
-                            style={{ cursor: 'pointer', color: '#4a9eff', marginBottom: '0.25rem' }}
-                          >
-                            {person.name}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                  {placeEvents.length > 0 && (
-                    <div>
-                      <p style={{ margin: '0.5rem 0 0.25rem 0', fontWeight: 'bold' }}>Events:</p>
-                      <ul style={{ margin: 0, paddingLeft: '1.25rem' }}>
-                        {placeEvents.map(event => (
-                          <li
-                            key={event.id}
-                            onClick={() => onItemClick(event)}
-                            style={{ cursor: 'pointer', color: '#4a9eff', marginBottom: '0.25rem' }}
-                          >
-                            {event.name}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              </Popup>
-            </Marker>
-          );
-        })}
+        <ZoomAwareMarkers
+          itemsByPlace={itemsByPlace}
+          placeMap={placeMap}
+          onItemClick={onItemClick}
+        />
       </MapContainer>
     </div>
   );
