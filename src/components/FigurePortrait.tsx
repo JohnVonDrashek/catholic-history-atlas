@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { OrthodoxyStatus } from '../types/person';
 import '../styles/portrait-frames.css';
 
@@ -16,6 +17,9 @@ export function FigurePortrait({
   isMartyr = false,
   size = 'medium',
 }: FigurePortraitProps) {
+  const [imgError, setImgError] = useState(false);
+  const [imgSrc, setImgSrc] = useState(imageUrl);
+
   const baseClass = 'portrait-frame';
 
   const statusClass = (() => {
@@ -63,13 +67,32 @@ export function FigurePortrait({
 
   const sizeClass = `portrait-frame--${size}`;
 
+  const handleImageError = () => {
+    if (!imgError) {
+      setImgError(true);
+      // Use a placeholder with the person's name
+      const initials = name
+        .split(' ')
+        .map(n => n[0])
+        .filter(Boolean)
+        .slice(-2)
+        .join('');
+      setImgSrc(`data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="#333"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ccc" font-family="Arial" font-size="48">${initials}</text></svg>`)}`);
+    }
+  };
+
   return (
     <div
       className={`${baseClass} ${statusClass} ${sizeClass}`}
       aria-label={tooltip}
       title={tooltip}
     >
-      <img src={imageUrl} alt={name} className="portrait-frame__image" />
+      <img 
+        src={imgSrc} 
+        alt={name} 
+        className="portrait-frame__image"
+        onError={handleImageError}
+      />
     </div>
   );
 }
