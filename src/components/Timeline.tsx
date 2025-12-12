@@ -250,6 +250,40 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     return Math.round(visibleRange.start + (relativeX / (timelineWidth - 2 * padding)) * range);
   };
 
+  // Set up non-passive wheel event listener to allow preventDefault
+  useEffect(() => {
+    const svgElement = svgRef.current;
+    if (!svgElement) return;
+
+    const handleWheelNative = (e: WheelEvent) => {
+      e.preventDefault();
+      const delta = e.deltaY > 0 ? -0.2 : 0.2;
+      const newZoom = Math.max(0, Math.min(5, zoomLevel + delta));
+      setZoomLevel(newZoom);
+      
+      // Calculate year from mouse position
+      const rect = svgElement.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const range = visibleRange.end - visibleRange.start;
+      const relativeX = x - padding;
+      const year = Math.round(visibleRange.start + (relativeX / (timelineWidth - 2 * padding)) * range);
+      
+      if (viewCenter === null && newZoom > 0) {
+        // Center zoom on the mouse position
+        setViewCenter(year);
+      } else if (viewCenter !== null) {
+        // Adjust view center based on mouse position when zooming
+        setViewCenter(year);
+      }
+    };
+
+    svgElement.addEventListener('wheel', handleWheelNative, { passive: false });
+
+    return () => {
+      svgElement.removeEventListener('wheel', handleWheelNative);
+    };
+  }, [zoomLevel, viewCenter, visibleRange, timelineWidth, padding]);
+
   const handleZoomIn = () => {
     const newZoom = Math.min(zoomLevel + 1, 5); // Max zoom level
     setZoomLevel(newZoom);
@@ -343,24 +377,11 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     }
   };
 
-  const handleWheel = (e: React.WheelEvent<SVGSVGElement>) => {
-    e.preventDefault();
-    const delta = e.deltaY > 0 ? -0.2 : 0.2;
-    const newZoom = Math.max(0, Math.min(5, zoomLevel + delta));
-    setZoomLevel(newZoom);
-    if (viewCenter === null && newZoom > 0) {
-      // Center zoom on the clicked position or current year
-      const rect = e.currentTarget.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const year = getYearFromX(x);
-      setViewCenter(year);
-    } else if (viewCenter !== null) {
-      // Adjust view center based on mouse position when zooming
-      const rect = e.currentTarget.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const year = getYearFromX(x);
-      setViewCenter(year);
-    }
+  // handleWheel is now handled by native event listener with { passive: false }
+  // This function is kept for compatibility but won't be called
+  const handleWheel = () => {
+    // This should not be called since we use native listener with { passive: false }
+    // The native listener handles preventDefault correctly
   };
 
   const handleItemClick = (item: TimelineItem) => {
