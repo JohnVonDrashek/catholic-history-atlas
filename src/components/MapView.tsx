@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import type { Person, Event, Place, OrthodoxyStatus } from '../types';
 import { getActivePeople, getActiveEvents } from '../utils/filters';
 import 'leaflet/dist/leaflet.css';
@@ -129,12 +129,14 @@ function getPersonBorderStyle(orthodoxyStatus: OrthodoxyStatus, isMartyr?: boole
 }
 
 // Create custom icons with images and frame colors matching portrait frames
+// Now supports aspect ratio for rectangular images
 const createPersonIcon = (
   imageUrl?: string,
   orthodoxyStatus?: OrthodoxyStatus,
-  isMartyr?: boolean
+  isMartyr?: boolean,
+  aspectRatio: number = 1
 ) => {
-  const size = 36;
+  const maxSize = 40; // Max width or height
   const borderStyle = orthodoxyStatus
     ? getPersonBorderStyle(orthodoxyStatus, isMartyr)
     : {
@@ -150,14 +152,30 @@ const createPersonIcon = (
                         orthodoxyStatus === 'heresiarch' ? '#5b1a1a' :
                         '#4a9eff';
 
-  const fallbackHtml = `<div style="background-color: ${fallbackColor}; width: ${size}px; height: ${size}px; border-radius: 50%; ${borderStyle.border}; box-shadow: ${borderStyle.boxShadow};"></div>`;
+  // Calculate dimensions based on aspect ratio
+  let width = maxSize;
+  let height = maxSize;
+  if (aspectRatio > 1) {
+    // Wider than tall
+    height = maxSize / aspectRatio;
+  } else if (aspectRatio < 1) {
+    // Taller than wide
+    width = maxSize * aspectRatio;
+  }
+
+  const borderRadius = 4; // Small rounded corners instead of circle
+  const framePadding = (orthodoxyStatus === 'canonized' && !isMartyr) ? 2 : 4;
+  const frameWidth = width + framePadding * 2;
+  const frameHeight = height + framePadding * 2;
+
+  const fallbackHtml = `<div style="background-color: ${fallbackColor}; width: ${frameWidth}px; height: ${frameHeight}px; border-radius: ${borderRadius}px; ${borderStyle.border}; box-shadow: ${borderStyle.boxShadow};"></div>`;
   
   if (!imageUrl) {
     return L.divIcon({
       className: 'custom-marker',
       html: fallbackHtml,
-      iconSize: [size, size],
-      iconAnchor: [size / 2, size / 2],
+      iconSize: [frameWidth, frameHeight],
+      iconAnchor: [frameWidth / 2, frameHeight / 2],
     });
   }
 
@@ -168,18 +186,18 @@ const createPersonIcon = (
       html: `
         <div style="
           position: relative;
-          width: ${size}px;
-          height: ${size}px;
-          border-radius: 50%;
+          width: ${frameWidth}px;
+          height: ${frameHeight}px;
+          border-radius: ${borderRadius}px;
           ${borderStyle.border};
           background: ${borderStyle.background};
           box-shadow: ${borderStyle.boxShadow};
-          padding: 2px;
+          padding: ${framePadding}px;
         ">
           <div style="
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
+            width: ${width}px;
+            height: ${height}px;
+            border-radius: ${borderRadius - 2}px;
             background-image: url('${imageUrl}');
             background-size: cover;
             background-position: center;
@@ -187,8 +205,8 @@ const createPersonIcon = (
           "></div>
         </div>
       `,
-      iconSize: [size, size],
-      iconAnchor: [size / 2, size / 2],
+      iconSize: [frameWidth, frameHeight],
+      iconAnchor: [frameWidth / 2, frameHeight / 2],
     });
   }
 
@@ -197,20 +215,28 @@ const createPersonIcon = (
     className: 'custom-marker',
     html: `
       <div style="
-        width: ${size}px;
-        height: ${size}px;
-        border-radius: 50%;
+        width: ${frameWidth}px;
+        height: ${frameHeight}px;
+        border-radius: ${borderRadius}px;
         ${borderStyle.border};
         box-shadow: ${borderStyle.boxShadow};
         overflow: hidden;
         background-color: ${fallbackColor};
-        background-image: url('${imageUrl}');
-        background-size: cover;
-        background-position: center;
-      "></div>
+        padding: ${framePadding}px;
+        box-sizing: border-box;
+      ">
+        <div style="
+          width: ${width}px;
+          height: ${height}px;
+          border-radius: ${borderRadius - 2}px;
+          background-image: url('${imageUrl}');
+          background-size: cover;
+          background-position: center;
+        "></div>
+      </div>
     `,
-    iconSize: [size, size],
-    iconAnchor: [size / 2, size / 2],
+    iconSize: [frameWidth, frameHeight],
+    iconAnchor: [frameWidth / 2, frameHeight / 2],
   });
 };
 
@@ -329,6 +355,7 @@ function ZoomAwareMarkers({
 }) {
   const map = useMap();
   const [zoom, setZoom] = useState(map.getZoom());
+  const [imageAspectRatios, setImageAspectRatios] = useState<Map<string, number>>(new Map());
 
   useEffect(() => {
     const updateZoom = () => {
@@ -342,6 +369,56 @@ function ZoomAwareMarkers({
       map.off('zoomend', updateZoom);
     };
   }, [map]);
+
+  // Load images and calculate aspect ratios
+  useEffect(() => {
+    const loadImageAspectRatios = async () => {
+      const newRatios = new Map<string, number>();
+      const promises: Promise<void>[] = [];
+
+      // Collect all unique image URLs
+      const imageUrls = new Set<string>();
+      Array.from(itemsByPlace.values()).flat().forEach(item => {
+        if (item.data.imageUrl) {
+          imageUrls.add(item.data.imageUrl);
+        }
+      });
+
+      // Load aspect ratios for images we don't have yet
+      imageUrls.forEach(imageUrl => {
+        if (!imageAspectRatios.has(imageUrl)) {
+          const promise = new Promise<void>((resolve) => {
+            const img = new Image();
+            img.onload = () => {
+              const ratio = img.naturalWidth / img.naturalHeight;
+              newRatios.set(imageUrl, ratio);
+              resolve();
+            };
+            img.onerror = () => {
+              // Default to 1:1 if image fails to load
+              newRatios.set(imageUrl, 1);
+              resolve();
+            };
+            img.src = imageUrl;
+          });
+          promises.push(promise);
+        }
+      });
+
+      await Promise.all(promises);
+      
+      if (newRatios.size > 0) {
+        setImageAspectRatios(prev => {
+          const merged = new Map(prev);
+          newRatios.forEach((ratio, url) => merged.set(url, ratio));
+          return merged;
+        });
+      }
+    };
+
+    loadImageAspectRatios();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [itemsByPlace]);
 
   return (
     <>
@@ -365,30 +442,37 @@ function ZoomAwareMarkers({
           let icon;
           let imageUrl: string | undefined;
           let itemName: string;
+          let aspectRatio = 1; // Default to square
 
           if (item.type === 'event') {
             const event = item.data;
             itemName = event.name;
             imageUrl = event.imageUrl;
+            if (imageUrl) {
+              aspectRatio = imageAspectRatios.get(imageUrl) || 1;
+            }
 
             // Councils get special icon
             if (event.type === 'council') {
               icon = createCouncilIcon(imageUrl);
             } else {
               // Other events use person icon style (no frame colors for events)
-              icon = createPersonIcon(imageUrl);
+              icon = createPersonIcon(imageUrl, undefined, undefined, aspectRatio);
             }
           } else {
             const person = item.data;
             itemName = person.name;
             imageUrl = person.imageUrl;
+            if (imageUrl) {
+              aspectRatio = imageAspectRatios.get(imageUrl) || 1;
+            }
 
-            // People at important sees get special icon
+            // People at important sees get special icon (keep circular for now)
             if (isImportantSee) {
               icon = createImportantSeeIcon(imageUrl);
             } else {
               // Use frame colors based on orthodoxy status and martyr status
-              icon = createPersonIcon(imageUrl, person.orthodoxyStatus, person.isMartyr);
+              icon = createPersonIcon(imageUrl, person.orthodoxyStatus, person.isMartyr, aspectRatio);
             }
           }
 
