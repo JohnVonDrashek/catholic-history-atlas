@@ -1,0 +1,50 @@
+[
+  {
+    "id": "foundation-cluny",
+    "name": "Foundation of Cluny Abbey",
+    "startYear": 910,
+    "endYear": 910,
+    "type": "other",
+    "locationId": "cluny",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cluny_Abbey",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04070a.htm",
+    "summary": "Cluny Abbey was founded in 910 by William I, Duke of Aquitaine. The abbey was established with a charter that granted it independence from local feudal control, placing it directly under papal authority. This foundation marked the beginning of the Cluniac Reforms, a movement that would transform Western monasticism and strengthen the Church's independence from secular powers. Cluny became one of the most influential monasteries in medieval Europe.",
+    "keyDocuments": []
+  },
+  {
+    "id": "cluniac-reforms",
+    "name": "Cluniac Reforms",
+    "startYear": 910,
+    "endYear": 1150,
+    "type": "other",
+    "locationId": "cluny",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cluniac_Reforms",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04070a.htm",
+    "summary": "The Cluniac Reforms were a series of changes within Western monasticism focused on restoring the observance of the Rule of St. Benedict. The reforms emphasized liturgical prayer, strict adherence to monastic discipline, and independence from secular control. The movement spread throughout Europe, with hundreds of monasteries joining the Cluniac congregation. The reforms helped strengthen the Church and contributed to the Gregorian Reforms of the 11th century.",
+    "keyDocuments": []
+  },
+  {
+    "id": "battle-lechfeld",
+    "name": "Battle of Lechfeld",
+    "startYear": 955,
+    "endYear": 955,
+    "type": "other",
+    "locationId": "augsburg",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Battle_of_Lechfeld",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09095a.htm",
+    "summary": "The Battle of Lechfeld was a decisive victory for Otto I, King of Germany, over the Magyar (Hungarian) forces in 955. This battle ended the Magyar raids into Western Europe and secured Otto's position as the dominant ruler in Central Europe. The victory paved the way for Otto's coronation as Holy Roman Emperor in 962 and marked the beginning of the Holy Roman Empire's dominance in medieval Europe.",
+    "keyDocuments": []
+  },
+  {
+    "id": "christianization-kievan-rus",
+    "name": "Christianization of Kievan Rus",
+    "startYear": 988,
+    "endYear": 988,
+    "type": "other",
+    "locationId": "kiev",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Christianization_of_Kievan_Rus%27",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08651a.htm",
+    "summary": "The Christianization of Kievan Rus' began in 988 when Grand Prince Vladimir the Great was baptized and ordered the baptism of his people. This event marked the conversion of the Eastern Slavic peoples to Christianity and established the foundation for the Russian Orthodox Church. The conversion had profound political, cultural, and religious consequences, connecting Kievan Rus' to the Byzantine Empire and Western Christendom.",
+    "keyDocuments": []
+  }
+]

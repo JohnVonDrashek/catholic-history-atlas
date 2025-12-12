@@ -1,0 +1,698 @@
+[
+  {
+    "id": "antioch",
+    "name": "Antioch",
+    "lat": 36.2,
+    "lng": 36.15,
+    "region": "Syria",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "smyrna",
+    "name": "Smyrna",
+    "lat": 38.42,
+    "lng": 27.14,
+    "region": "Asia Minor",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "lyons",
+    "name": "Lugdunum (Lyons)",
+    "lat": 45.76,
+    "lng": 4.84,
+    "region": "Gaul",
+    "modernCountry": "France"
+  },
+  {
+    "id": "alexandria",
+    "name": "Alexandria",
+    "lat": 31.2,
+    "lng": 29.92,
+    "region": "Egypt",
+    "modernCountry": "Egypt"
+  },
+  {
+    "id": "caesarea-cappadocia",
+    "name": "Caesarea (Cappadocia)",
+    "lat": 38.72,
+    "lng": 35.48,
+    "region": "Asia Minor",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "constantinople",
+    "name": "Constantinople",
+    "lat": 41.01,
+    "lng": 28.98,
+    "region": "Thrace",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "milan",
+    "name": "Mediolanum (Milan)",
+    "lat": 45.46,
+    "lng": 9.19,
+    "region": "Italia",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "hippo",
+    "name": "Hippo Regius",
+    "lat": 36.88,
+    "lng": 7.75,
+    "region": "Africa",
+    "modernCountry": "Algeria"
+  },
+  {
+    "id": "nicaea",
+    "name": "Nicaea",
+    "lat": 40.43,
+    "lng": 29.72,
+    "region": "Bithynia",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "ephesus",
+    "name": "Ephesus",
+    "lat": 37.94,
+    "lng": 27.34,
+    "region": "Asia Minor",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "chalcedon",
+    "name": "Chalcedon",
+    "lat": 40.98,
+    "lng": 29.02,
+    "region": "Bithynia",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "jerusalem",
+    "name": "Jerusalem",
+    "lat": 31.77,
+    "lng": 35.23,
+    "region": "Judea",
+    "modernCountry": "Israel"
+  },
+  {
+    "id": "rome",
+    "name": "Rome",
+    "lat": 41.9,
+    "lng": 12.5,
+    "region": "Italia",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "corinth",
+    "name": "Corinth",
+    "lat": 37.94,
+    "lng": 22.93,
+    "region": "Achaia",
+    "modernCountry": "Greece"
+  },
+  {
+    "id": "philippi",
+    "name": "Philippi",
+    "lat": 41.01,
+    "lng": 24.29,
+    "region": "Macedonia",
+    "modernCountry": "Greece"
+  },
+  {
+    "id": "thessalonica",
+    "name": "Thessalonica",
+    "lat": 40.64,
+    "lng": 22.94,
+    "region": "Macedonia",
+    "modernCountry": "Greece"
+  },
+  {
+    "id": "damascus",
+    "name": "Damascus",
+    "lat": 33.51,
+    "lng": 36.29,
+    "region": "Syria",
+    "modernCountry": "Syria"
+  },
+  {
+    "id": "caesarea-maritima",
+    "name": "Caesarea Maritima",
+    "lat": 32.5,
+    "lng": 34.9,
+    "region": "Judea",
+    "modernCountry": "Israel"
+  },
+  {
+    "id": "cyprus",
+    "name": "Cyprus",
+    "lat": 35.17,
+    "lng": 33.37,
+    "region": "Mediterranean",
+    "modernCountry": "Cyprus"
+  },
+  {
+    "id": "athens",
+    "name": "Athens",
+    "lat": 37.98,
+    "lng": 23.73,
+    "region": "Achaia",
+    "modernCountry": "Greece"
+  },
+  {
+    "id": "sardis",
+    "name": "Sardis",
+    "lat": 38.49,
+    "lng": 28.04,
+    "region": "Lydia",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "hierapolis",
+    "name": "Hierapolis",
+    "lat": 37.93,
+    "lng": 29.12,
+    "region": "Phrygia",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "carthage",
+    "name": "Carthage",
+    "lat": 36.85,
+    "lng": 10.33,
+    "region": "Africa",
+    "modernCountry": "Tunisia"
+  },
+  {
+    "id": "edessa",
+    "name": "Edessa",
+    "lat": 37.15,
+    "lng": 38.8,
+    "region": "Osroene",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "neocaesarea",
+    "name": "Neocaesarea",
+    "lat": 40.28,
+    "lng": 36.93,
+    "region": "Pontus",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "olympus",
+    "name": "Olympus (Lycia)",
+    "lat": 36.4,
+    "lng": 30.47,
+    "region": "Lycia",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "sicca",
+    "name": "Sicca Veneria",
+    "lat": 36.18,
+    "lng": 8.7,
+    "region": "Africa",
+    "modernCountry": "Tunisia"
+  },
+  {
+    "id": "poitiers",
+    "name": "Poitiers",
+    "lat": 46.58,
+    "lng": 0.34,
+    "region": "Gaul",
+    "modernCountry": "France"
+  },
+  {
+    "id": "nyssa",
+    "name": "Nyssa",
+    "lat": 38.3,
+    "lng": 34.7,
+    "region": "Cappadocia",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "tours",
+    "name": "Tours",
+    "lat": 47.39,
+    "lng": 0.69,
+    "region": "Gaul",
+    "modernCountry": "France"
+  },
+  {
+    "id": "bethlehem",
+    "name": "Bethlehem",
+    "lat": 31.7,
+    "lng": 35.2,
+    "region": "Judea",
+    "modernCountry": "Palestine"
+  },
+  {
+    "id": "sardica",
+    "name": "Sardica",
+    "lat": 42.7,
+    "lng": 23.32,
+    "region": "Thrace",
+    "modernCountry": "Bulgaria"
+  },
+  {
+    "id": "ireland",
+    "name": "Ireland",
+    "lat": 53.41,
+    "lng": -8.24,
+    "region": "Britannia",
+    "modernCountry": "Ireland"
+  },
+  {
+    "id": "lerins",
+    "name": "Lérins",
+    "lat": 43.5,
+    "lng": 7.05,
+    "region": "Gaul",
+    "modernCountry": "France"
+  },
+  {
+    "id": "ravenna",
+    "name": "Ravenna",
+    "lat": 44.42,
+    "lng": 12.2,
+    "region": "Italy",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "patras",
+    "name": "Patras",
+    "lat": 38.25,
+    "lng": 21.73,
+    "region": "Greece",
+    "modernCountry": "Greece"
+  },
+  {
+    "id": "armenia",
+    "name": "Armenia",
+    "lat": 40.18,
+    "lng": 44.51,
+    "region": "Armenia",
+    "modernCountry": "Armenia"
+  },
+  {
+    "id": "india",
+    "name": "India",
+    "lat": 20.59,
+    "lng": 78.96,
+    "region": "India",
+    "modernCountry": "India"
+  },
+  {
+    "id": "ethiopia",
+    "name": "Ethiopia",
+    "lat": 9.15,
+    "lng": 38.75,
+    "region": "Ethiopia",
+    "modernCountry": "Ethiopia"
+  },
+  {
+    "id": "persia",
+    "name": "Persia",
+    "lat": 32.43,
+    "lng": 53.69,
+    "region": "Persia",
+    "modernCountry": "Iran"
+  },
+  {
+    "id": "seville",
+    "name": "Seville",
+    "lat": 37.39,
+    "lng": -5.99,
+    "region": "Hispania",
+    "modernCountry": "Spain"
+  },
+  {
+    "id": "lindisfarne",
+    "name": "Lindisfarne",
+    "lat": 55.68,
+    "lng": -1.8,
+    "region": "Northumbria",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "whitby",
+    "name": "Whitby",
+    "lat": 54.49,
+    "lng": -0.61,
+    "region": "Northumbria",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "canterbury",
+    "name": "Canterbury",
+    "lat": 51.28,
+    "lng": 1.08,
+    "region": "Kent",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "york",
+    "name": "York",
+    "lat": 53.96,
+    "lng": -1.08,
+    "region": "Northumbria",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "noyon",
+    "name": "Noyon",
+    "lat": 49.58,
+    "lng": 3,
+    "region": "Gaul",
+    "modernCountry": "France"
+  },
+  {
+    "id": "mecca",
+    "name": "Mecca",
+    "lat": 21.39,
+    "lng": 39.86,
+    "region": "Arabia",
+    "modernCountry": "Saudi Arabia"
+  },
+  {
+    "id": "jarrow",
+    "name": "Jarrow",
+    "lat": 54.98,
+    "lng": -1.47,
+    "region": "Northumbria",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "fulda",
+    "name": "Fulda",
+    "lat": 50.55,
+    "lng": 9.68,
+    "region": "Germany",
+    "modernCountry": "Germany"
+  },
+  {
+    "id": "utrecht",
+    "name": "Utrecht",
+    "lat": 52.09,
+    "lng": 5.12,
+    "region": "Frisia",
+    "modernCountry": "Netherlands"
+  },
+  {
+    "id": "aachen",
+    "name": "Aachen",
+    "lat": 50.78,
+    "lng": 6.08,
+    "region": "Francia",
+    "modernCountry": "Germany"
+  },
+  {
+    "id": "moravia",
+    "name": "Moravia",
+    "lat": 49.2,
+    "lng": 17.67,
+    "region": "Moravia",
+    "modernCountry": "Czech Republic"
+  },
+  {
+    "id": "hamburg",
+    "name": "Hamburg",
+    "lat": 53.55,
+    "lng": 10,
+    "region": "Saxony",
+    "modernCountry": "Germany"
+  },
+  {
+    "id": "cluny",
+    "name": "Cluny",
+    "lat": 46.43,
+    "lng": 4.66,
+    "region": "Burgundy",
+    "modernCountry": "France"
+  },
+  {
+    "id": "prague",
+    "name": "Prague",
+    "lat": 50.08,
+    "lng": 14.42,
+    "region": "Bohemia",
+    "modernCountry": "Czech Republic"
+  },
+  {
+    "id": "kiev",
+    "name": "Kiev",
+    "lat": 50.45,
+    "lng": 30.52,
+    "region": "Kievan Rus",
+    "modernCountry": "Ukraine"
+  },
+  {
+    "id": "augsburg",
+    "name": "Augsburg",
+    "lat": 48.37,
+    "lng": 10.9,
+    "region": "Bavaria",
+    "modernCountry": "Germany"
+  },
+  {
+    "id": "chartreuse",
+    "name": "Grande Chartreuse",
+    "lat": 45.36,
+    "lng": 5.78,
+    "region": "Dauphiné",
+    "modernCountry": "France"
+  },
+  {
+    "id": "ostia",
+    "name": "Ostia",
+    "lat": 41.76,
+    "lng": 12.28,
+    "region": "Latium",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "edinburgh",
+    "name": "Edinburgh",
+    "lat": 55.95,
+    "lng": -3.19,
+    "region": "Scotland",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "canossa",
+    "name": "Canossa",
+    "lat": 44.58,
+    "lng": 10.45,
+    "region": "Emilia-Romagna",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "clermont",
+    "name": "Clermont",
+    "lat": 45.78,
+    "lng": 3.09,
+    "region": "Auvergne",
+    "modernCountry": "France"
+  },
+  {
+    "id": "jerusalem",
+    "name": "Jerusalem",
+    "lat": 31.77,
+    "lng": 35.22,
+    "region": "Judea",
+    "modernCountry": "Israel"
+  },
+  {
+    "id": "monte-cassino",
+    "name": "Monte Cassino",
+    "lat": 41.49,
+    "lng": 13.81,
+    "region": "Italia",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "iona",
+    "name": "Iona",
+    "lat": 56.33,
+    "lng": -6.41,
+    "region": "Scotland",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "luxeuil",
+    "name": "Luxeuil-les-Bains",
+    "lat": 47.82,
+    "lng": 6.38,
+    "region": "Gaul",
+    "modernCountry": "France"
+  },
+  {
+    "id": "bobbio",
+    "name": "Bobbio",
+    "lat": 44.77,
+    "lng": 9.39,
+    "region": "Italia",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "arles",
+    "name": "Arles",
+    "lat": 43.68,
+    "lng": 4.63,
+    "region": "Gaul",
+    "modernCountry": "France"
+  },
+  {
+    "id": "assisi",
+    "name": "Assisi",
+    "lat": 43.07,
+    "lng": 12.62,
+    "region": "Umbria",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "caleruega",
+    "name": "Caleruega",
+    "lat": 41.83,
+    "lng": -3.48,
+    "region": "Castile",
+    "modernCountry": "Spain"
+  },
+  {
+    "id": "aquino",
+    "name": "Aquino",
+    "lat": 41.50,
+    "lng": 13.70,
+    "region": "Latium",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "albano",
+    "name": "Albano Laziale",
+    "lat": 41.73,
+    "lng": 12.66,
+    "region": "Latium",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "padua",
+    "name": "Padua",
+    "lat": 45.41,
+    "lng": 11.88,
+    "region": "Veneto",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "marburg",
+    "name": "Marburg",
+    "lat": 50.81,
+    "lng": 8.77,
+    "region": "Hesse",
+    "modernCountry": "Germany"
+  },
+  {
+    "id": "toulouse",
+    "name": "Toulouse",
+    "lat": 43.60,
+    "lng": 1.44,
+    "region": "Languedoc",
+    "modernCountry": "France"
+  },
+  {
+    "id": "cologne",
+    "name": "Cologne",
+    "lat": 50.94,
+    "lng": 6.96,
+    "region": "Rhineland",
+    "modernCountry": "Germany"
+  },
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "lat": 30.04,
+    "lng": 31.24,
+    "region": "Egypt",
+    "modernCountry": "Egypt"
+  },
+  {
+    "id": "wittenberg",
+    "name": "Wittenberg",
+    "lat": 51.87,
+    "lng": 12.65,
+    "region": "Saxony",
+    "modernCountry": "Germany"
+  },
+  {
+    "id": "trent",
+    "name": "Trent",
+    "lat": 46.07,
+    "lng": 11.12,
+    "region": "Trentino",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "london",
+    "name": "London",
+    "lat": 51.51,
+    "lng": -0.13,
+    "region": "England",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "paris",
+    "name": "Paris",
+    "lat": 48.86,
+    "lng": 2.35,
+    "region": "Île-de-France",
+    "modernCountry": "France"
+  },
+  {
+    "id": "goa",
+    "name": "Goa",
+    "lat": 15.50,
+    "lng": 73.83,
+    "region": "India",
+    "modernCountry": "India"
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "lat": 36.20,
+    "lng": 138.25,
+    "region": "Japan",
+    "modernCountry": "Japan"
+  },
+  {
+    "id": "nagasaki",
+    "name": "Nagasaki",
+    "lat": 32.75,
+    "lng": 129.88,
+    "region": "Kyushu",
+    "modernCountry": "Japan"
+  },
+  {
+    "id": "malacca",
+    "name": "Malacca",
+    "lat": 2.19,
+    "lng": 102.25,
+    "region": "Malay Peninsula",
+    "modernCountry": "Malaysia"
+  },
+  {
+    "id": "avila",
+    "name": "Ávila",
+    "lat": 40.66,
+    "lng": -4.70,
+    "region": "Castile",
+    "modernCountry": "Spain"
+  },
+  {
+    "id": "vienna",
+    "name": "Vienna",
+    "lat": 48.21,
+    "lng": 16.37,
+    "region": "Austria",
+    "modernCountry": "Austria"
+  }
+]

@@ -1,0 +1,355 @@
+[
+  {
+    "id": "pius-ix",
+    "name": "Pope Pius IX",
+    "birthYear": 1792,
+    "deathYear": 1878,
+    "feastDay": "February 7",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope (1846-1878)"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Pius_IX",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12134b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Pope_Pius_IX.jpg",
+    "summary": "Pope Pius IX had the longest pontificate in papal history (1846-1878), spanning 31 years. He defined the dogma of the Immaculate Conception, convoked the First Vatican Council which defined papal infallibility, and witnessed the end of the Papal States with the capture of Rome in 1870. He was a staunch defender of papal authority and traditional Catholic teaching against modernism and liberalism.",
+    "keyQuotes": [
+      "I am tradition."
+    ],
+    "writings": [
+      {
+        "title": "Ineffabilis Deus",
+        "url": "https://www.papalencyclicals.net/pius09/p9ineff.htm"
+      },
+      {
+        "title": "Quanta Cura",
+        "url": "https://www.papalencyclicals.net/pius09/p9quanta.htm"
+      },
+      {
+        "title": "Syllabus of Errors",
+        "url": "https://www.papalencyclicals.net/pius09/p9syll.htm"
+      }
+    ]
+  },
+  {
+    "id": "leo-xiii",
+    "name": "Pope Leo XIII",
+    "birthYear": 1810,
+    "deathYear": 1903,
+    "feastDay": "July 3",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope (1878-1903)"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_XIII",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09169a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Leo_XIII.jpg",
+    "summary": "Pope Leo XIII was pope from 1878 to 1903, the second-longest pontificate after Pius IX. He is known for his extensive social teaching, particularly the encyclical 'Rerum Novarum' (1891), which addressed the condition of the working classes and established the foundation of modern Catholic social teaching. He also promoted Thomistic philosophy, opened the Vatican archives to scholars, and worked to improve relations with various nations.",
+    "keyQuotes": [
+      "The condition of the working classes is the question of the hour."
+    ],
+    "writings": [
+      {
+        "title": "Rerum Novarum",
+        "url": "https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html"
+      },
+      {
+        "title": "Aeterni Patris",
+        "url": "https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_04081879_aeterni-patris.html"
+      }
+    ]
+  },
+  {
+    "id": "john-bosco",
+    "name": "St. John Bosco",
+    "birthYear": 1815,
+    "deathYear": 1888,
+    "feastDay": "January 31",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "founder",
+      "educator"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "milan",
+        "description": "Founder of the Salesians"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Bosco",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02689d.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Don_Bosco_%40_Torino%2C_1880_%28original%29.jpg",
+    "summary": "John Bosco, also known as Don Bosco, was an Italian priest and educator who founded the Salesian Society and the Daughters of Mary Help of Christians. He dedicated his life to the education and care of poor and abandoned youth, developing a preventive system of education based on reason, religion, and loving kindness. He is the patron saint of apprentices, editors, and young people.",
+    "keyQuotes": [
+      "It is not enough to love the young; they must know that they are loved."
+    ],
+    "writings": [
+      {
+        "title": "Memoirs of the Oratory",
+        "url": "https://www.salesianresources.org/books/memoirs-of-the-oratory"
+      }
+    ]
+  },
+  {
+    "id": "therese-lisieux",
+    "name": "St. Thérèse of Lisieux",
+    "birthYear": 1873,
+    "deathYear": 1897,
+    "feastDay": "October 1",
+    "primaryTradition": "Latin",
+    "roles": [
+      "nun",
+      "doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "paris",
+        "description": "Carmelite nun in Lisieux"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Th%C3%A9r%C3%A8se_of_Lisieux",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14710b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Teresa-de-Lisieux.jpg",
+    "summary": "Thérèse of Lisieux, also known as 'The Little Flower,' was a French Discalced Carmelite nun who died at the age of 24. Her autobiography 'Story of a Soul' describes her 'little way' of spiritual childhood—finding holiness in small, everyday acts done with great love. She is one of only four women to be declared a Doctor of the Church and is one of the most popular saints in Catholicism.",
+    "keyQuotes": [
+      "I will spend my heaven doing good on earth.",
+      "The smallest act of pure love is of more value to God than all other works together."
+    ],
+    "writings": [
+      {
+        "title": "Story of a Soul",
+        "url": "https://www.ccel.org/ccel/therese/story_of_a_soul.html"
+      }
+    ]
+  },
+  {
+    "id": "bernadette-soubirous",
+    "name": "St. Bernadette Soubirous",
+    "birthYear": 1844,
+    "deathYear": 1879,
+    "feastDay": "April 16",
+    "primaryTradition": "Latin",
+    "roles": [
+      "nun",
+      "visionary"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "paris",
+        "description": "Visionary of Lourdes"
+      },
+      {
+        "placeId": "paris",
+        "description": "Sister of Charity in Nevers"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Bernadette_Soubirous",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02504b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Bernadette_Soubirous.jpg",
+    "summary": "Bernadette Soubirous was a French peasant girl who, at the age of 14, witnessed 18 apparitions of the Blessed Virgin Mary in a grotto near Lourdes in 1858. The apparition identified herself as 'the Immaculate Conception' and revealed a spring with healing properties. Bernadette later became a nun with the Sisters of Charity of Nevers and lived a life of humility and suffering. Lourdes became one of the world's most important pilgrimage sites.",
+    "keyQuotes": [
+      "I am the Immaculate Conception."
+    ]
+  },
+  {
+    "id": "john-vianney",
+    "name": "St. John Vianney",
+    "birthYear": 1786,
+    "deathYear": 1859,
+    "feastDay": "August 4",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "confessor"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "lyons",
+        "description": "Curé of Ars"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Vianney",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01693a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Jean-Marie_Vianney.jpg",
+    "summary": "John Vianney, also known as the Curé of Ars, was a French parish priest who became famous for his dedication to the sacrament of confession, spending up to 16 hours a day hearing confessions. Despite initial struggles with his studies, he transformed the small village of Ars into a place of pilgrimage. He is the patron saint of parish priests and is known for his simplicity, humility, and devotion to the Eucharist.",
+    "keyQuotes": [
+      "The priesthood is the love of the heart of Jesus."
+    ]
+  },
+  {
+    "id": "elizabeth-ann-seton",
+    "name": "St. Elizabeth Ann Seton",
+    "birthYear": 1774,
+    "deathYear": 1821,
+    "feastDay": "January 4",
+    "primaryTradition": "Latin",
+    "roles": [
+      "nun",
+      "founder",
+      "educator"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "london",
+        "description": "Founder of the Sisters of Charity"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Elizabeth_Ann_Seton",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13726a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Elizabeth_Ann_Seton_portrait_by_Amabilia_Filicchi.jpg",
+    "summary": "Elizabeth Ann Seton was the first native-born citizen of the United States to be canonized as a saint. A convert to Catholicism, she founded the Sisters of Charity of St. Joseph, the first religious community for women in the United States, and established the first Catholic school and orphanage in the country. She is considered the founder of the Catholic parochial school system in America.",
+    "keyQuotes": []
+  },
+  {
+    "id": "catherine-laboure",
+    "name": "St. Catherine Labouré",
+    "birthYear": 1806,
+    "deathYear": 1876,
+    "feastDay": "November 28",
+    "primaryTradition": "Latin",
+    "roles": [
+      "nun",
+      "visionary"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "paris",
+        "description": "Sister of Charity in Paris"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_Labour%C3%A9",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09033a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Catherine_Laboure.jpg",
+    "summary": "Catherine Labouré was a French member of the Daughters of Charity of Saint Vincent de Paul who reported visions of the Blessed Virgin Mary. In 1830, Mary appeared to her and asked her to have a medal struck—the Miraculous Medal, which became one of the most popular Catholic devotional items. She lived a hidden life of service and only revealed her visions shortly before her death.",
+    "keyQuotes": []
+  },
+  {
+    "id": "john-neumann",
+    "name": "St. John Neumann",
+    "birthYear": 1811,
+    "deathYear": 1860,
+    "feastDay": "January 5",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "missionary"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "philadelphia",
+        "description": "Bishop of Philadelphia"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Neumann",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10758a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Johannes_Nepomuk_Neumann.jpg",
+    "summary": "John Neumann was a Bohemian-born American Redemptorist priest who became the fourth Bishop of Philadelphia. He was the first male American citizen to be canonized. He established the first diocesan school system in the United States, built many churches and schools, and was known for his pastoral care of immigrants, particularly German and Irish Catholics.",
+    "keyQuotes": []
+  },
+  {
+    "id": "damien-molokai",
+    "name": "St. Damien of Molokai",
+    "birthYear": 1840,
+    "deathYear": 1889,
+    "feastDay": "May 10",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "missionary"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "japan",
+        "description": "Missionary to lepers on Molokai"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Father_Damien",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04615a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Father_Damien%2C_photograph_by_William_Brigham.jpg",
+    "summary": "Damien of Molokai was a Belgian priest and member of the Congregation of the Sacred Hearts of Jesus and Mary who volunteered to serve the leper colony on the Hawaiian island of Molokai. He spent 16 years caring for the physical and spiritual needs of the lepers, eventually contracting the disease himself and dying from it. He is the patron saint of lepers and outcasts.",
+    "keyQuotes": [
+      "I am a leper among lepers."
+    ]
+  },
+  {
+    "id": "newman",
+    "name": "Bl. John Henry Newman",
+    "birthYear": 1801,
+    "deathYear": 1890,
+    "feastDay": "October 9",
+    "primaryTradition": "Latin",
+    "roles": [
+      "cardinal",
+      "theologian",
+      "convert"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "london",
+        "description": "Cardinal and Oratorian in Birmingham"
+      },
+      {
+        "placeId": "london",
+        "description": "Anglican priest and Oxford Movement leader"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Henry_Newman",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10794a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/John_Henry_Newman.jpg",
+    "summary": "John Henry Newman was an English theologian, poet, and cardinal who converted from Anglicanism to Catholicism in 1845. He was a leading figure in the Oxford Movement, which sought to restore Catholic elements to Anglicanism. After his conversion, he became a Catholic priest and later a cardinal. He founded the Oratory of St. Philip Neri in England and wrote extensively on faith, reason, and education. He was beatified in 2010 and canonized in 2019. (Note: Canonized after his death in the 20th century, but his life and work were primarily in the 19th century.)",
+    "keyQuotes": [
+      "To be deep in history is to cease to be Protestant.",
+      "Lead, kindly Light, amid the encircling gloom."
+    ],
+    "writings": [
+      {
+        "title": "Apologia Pro Vita Sua",
+        "url": "https://www.newmanreader.org/works/apologia/index.html"
+      },
+      {
+        "title": "Essay on the Development of Christian Doctrine",
+        "url": "https://www.newmanreader.org/works/development/index.html"
+      },
+      {
+        "title": "The Idea of a University",
+        "url": "https://www.newmanreader.org/works/idea/index.html"
+      }
+    ]
+  }
+]
+

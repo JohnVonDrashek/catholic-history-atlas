@@ -1,0 +1,47 @@
+[
+  {
+    "id": "justinian-code",
+    "name": "Justinian's Code",
+    "startYear": 529,
+    "endYear": 534,
+    "type": "other",
+    "locationId": "constantinople",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Corpus_Juris_Civilis",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04397a.htm",
+    "summary": "The Corpus Juris Civilis, also known as Justinian's Code, was a comprehensive compilation of Roman law commissioned by Emperor Justinian I. It consisted of four parts: the Codex (imperial laws), the Digest (legal opinions), the Institutes (textbook), and the Novellae (new laws). This codification preserved Roman legal tradition and influenced legal systems throughout Europe for centuries.",
+    "keyDocuments": [
+      "Corpus Juris Civilis",
+      "Codex Justinianus",
+      "Digest",
+      "Institutes"
+    ]
+  },
+  {
+    "id": "plague-justinian",
+    "name": "Plague of Justinian",
+    "startYear": 541,
+    "endYear": 549,
+    "type": "other",
+    "locationId": "constantinople",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Plague_of_Justinian",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12165a.htm",
+    "summary": "The Plague of Justinian was a pandemic that afflicted the Byzantine Empire and surrounding regions, killing millions of people. It is considered the first recorded pandemic in history and was caused by the bubonic plague. The plague had devastating effects on the population, economy, and military of the Byzantine Empire, contributing to its decline and the end of Justinian's efforts to restore the Roman Empire.",
+    "keyDocuments": []
+  },
+  {
+    "id": "council-constantinople-ii",
+    "name": "Second Council of Constantinople",
+    "startYear": 553,
+    "endYear": 553,
+    "type": "council",
+    "locationId": "constantinople",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Second_Council_of_Constantinople",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04308a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/EcumenicalCouncil_5th_11-22.jpg",
+    "summary": "The Second Council of Constantinople was the fifth ecumenical council, convened by Emperor Justinian I in 553 AD. The council condemned the 'Three Chapters' (writings of Theodore of Mopsuestia, Theodoret of Cyrrhus, and Ibas of Edessa) in an attempt to reconcile the Monophysites. It also affirmed the Christological definitions of the previous councils and clarified the relationship between the divine and human natures of Christ.",
+    "keyDocuments": [
+      "Canons of the Second Council of Constantinople",
+      "Condemnation of the Three Chapters"
+    ]
+  }
+]

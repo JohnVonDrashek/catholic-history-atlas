@@ -10,7 +10,7 @@ export function YearSelector({
   year,
   onYearChange,
   minYear = 30,
-  maxYear = 2000,
+  maxYear = 2100,
   step = 10,
 }: YearSelectorProps) {
   const handleDecrement = () => {

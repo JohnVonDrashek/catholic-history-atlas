@@ -1,0 +1,108 @@
+[
+  {
+    "id": "council-jerusalem",
+    "name": "Council of Jerusalem",
+    "startYear": 50,
+    "endYear": 50,
+    "type": "council",
+    "locationId": "jerusalem",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Jerusalem",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08355a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Saint_James_the_Just.jpg/319px-Saint_James_the_Just.jpg",
+    "summary": "The Council of Jerusalem was the first Christian council, held around 50 AD to address the question of whether Gentile converts to Christianity needed to follow Jewish law, particularly circumcision. The council, led by James the Just and attended by Peter and Paul, decided that Gentile converts did not need to be circumcised, establishing the universal nature of the Christian mission.",
+    "keyDocuments": [
+      "Apostolic Decree"
+    ]
+  },
+  {
+    "id": "martyrdom-stephen",
+    "name": "Martyrdom of St. Stephen",
+    "startYear": 34,
+    "endYear": 34,
+    "type": "persecution",
+    "locationId": "jerusalem",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Stephen",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14286b.htm",
+    "summary": "St. Stephen became the first Christian martyr when he was stoned to death in Jerusalem around 34 AD. His martyrdom marked the beginning of the first persecution of Christians and led to the scattering of believers throughout Judea and Samaria, which paradoxically helped spread the faith.",
+    "keyDocuments": []
+  },
+  {
+    "id": "martyrdom-james-great",
+    "name": "Martyrdom of St. James the Great",
+    "startYear": 44,
+    "endYear": 44,
+    "type": "persecution",
+    "locationId": "jerusalem",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/James_the_Great",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08279b.htm",
+    "summary": "St. James the Great, one of the Twelve Apostles and brother of John the Evangelist, became the first apostle to be martyred when he was beheaded by King Herod Agrippa I in Jerusalem around 44 AD. This marked the beginning of a new wave of persecution against the early Church.",
+    "keyDocuments": []
+  },
+  {
+    "id": "nero-persecution",
+    "name": "Nero's Persecution of Christians",
+    "startYear": 64,
+    "endYear": 68,
+    "type": "persecution",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Nero",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10755a.htm",
+    "summary": "Following the Great Fire of Rome in 64 AD, Emperor Nero blamed Christians for the disaster and initiated the first systematic persecution of Christians in the Roman Empire. This persecution resulted in the martyrdoms of St. Peter and St. Paul, among many others. Christians were tortured, crucified, and burned alive as human torches.",
+    "keyDocuments": []
+  },
+  {
+    "id": "martyrdom-peter-paul",
+    "name": "Martyrdom of St. Peter and St. Paul",
+    "startYear": 64,
+    "endYear": 67,
+    "type": "persecution",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Peter",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11744a.htm",
+    "summary": "St. Peter and St. Paul were both martyred in Rome during Nero's persecution. According to tradition, Peter was crucified upside down at his own request around 64 AD, while Paul was beheaded around 67 AD. Their martyrdoms marked a turning point in early Church history, establishing Rome as a center of Christian martyrdom and authority.",
+    "keyDocuments": []
+  },
+  {
+    "id": "destruction-jerusalem",
+    "name": "Destruction of Jerusalem",
+    "startYear": 70,
+    "endYear": 70,
+    "type": "other",
+    "locationId": "jerusalem",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08355a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%28Venice%29_La_distruzione_del_tempio_di_Gerusalemme_-Francesco_Hayez_-_gallerie_Accademia_Venice.jpg/330px-%28Venice%29_La_distruzione_del_tempio_di_Gerusalemme_-Francesco_Hayez_-_gallerie_Accademia_Venice.jpg",
+    "summary": "In 70 AD, the Roman general Titus besieged and destroyed Jerusalem, including the Second Temple, in response to the First Jewish-Roman War. This event fulfilled Jesus' prophecy about the destruction of the Temple and marked the end of the Jewish-Christian center in Jerusalem, forcing the Church to spread throughout the Roman Empire.",
+    "keyDocuments": []
+  },
+  {
+    "id": "trajan-persecution",
+    "name": "Persecution under Trajan",
+    "startYear": 98,
+    "endYear": 117,
+    "type": "persecution",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+    "summary": "During the reign of Emperor Trajan (98-117 AD), Christians faced systematic persecution throughout the Roman Empire. Trajan's policy, outlined in his correspondence with Pliny the Younger, established that Christians should not be sought out but should be punished if denounced and refused to recant. This period saw the martyrdom of Ignatius of Antioch and others.",
+    "keyDocuments": [
+      "Pliny-Trajan Correspondence"
+    ]
+  },
+  {
+    "id": "gnosticism",
+    "name": "Rise of Gnosticism",
+    "startYear": 100,
+    "endYear": 200,
+    "type": "other",
+    "locationId": "alexandria",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Gnosticism",
+    "newAdventUrl": "https://www.newadvent.org/cathen/06592a.htm",
+    "summary": "Gnosticism was a diverse set of religious movements that emerged in the 2nd century, teaching that salvation comes through secret knowledge (gnosis) rather than faith. Gnostics typically held that the material world was created by an inferior deity and that the true God was completely transcendent. Major Gnostic teachers included Valentinus, Basilides, and Marcion. The Church Fathers, especially Irenaeus, wrote extensively against Gnosticism.",
+    "keyDocuments": [
+      "Against Heresies (Irenaeus)",
+      "Gospel of Thomas",
+      "Gospel of Judas"
+    ]
+  }
+]

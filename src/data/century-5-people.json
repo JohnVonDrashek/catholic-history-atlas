@@ -1,0 +1,390 @@
+[
+  {
+    "id": "jerome",
+    "name": "St. Jerome",
+    "birthYear": 347,
+    "deathYear": 420,
+    "feastDay": "September 30",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "Doctor of the Church",
+      "biblical scholar"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "bethlehem",
+        "description": "Monk and biblical scholar in Bethlehem"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Jerome",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08341a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/MatthiasStom-SaintJerome-Nantes.jpg/330px-MatthiasStom-SaintJerome-Nantes.jpg",
+    "summary": "Jerome was a priest, biblical scholar, and translator who produced the Vulgate, the Latin translation of the Bible that became the standard version in the Western Church for over a millennium. He wrote extensively on Scripture, theology, and Christian life, and is considered one of the four original Doctors of the Church.",
+    "keyQuotes": [
+      "Ignorance of Scripture is ignorance of Christ."
+    ],
+    "writings": [
+      {
+        "title": "The Vulgate (Latin Bible)",
+        "url": "https://www.biblegateway.com/versions/Vulgate-Latin-Bible/"
+      },
+      {
+        "title": "Commentary on Matthew",
+        "url": "https://www.ccel.org/ccel/schaff/npnf206.vi.html"
+      },
+      {
+        "title": "Letters",
+        "url": "https://www.ccel.org/ccel/schaff/npnf206.v.html"
+      }
+    ]
+  },
+  {
+    "id": "cyril-alexandria",
+    "name": "St. Cyril of Alexandria",
+    "birthYear": 376,
+    "deathYear": 444,
+    "feastDay": "June 27",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "alexandria",
+        "description": "Bishop of Alexandria"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cyril_of_Alexandria",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04592b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Chora-Kirche_2013-03-21zh_%28cropped%29.jpg/330px-Chora-Kirche_2013-03-21zh_%28cropped%29.jpg",
+    "summary": "Cyril of Alexandria was a bishop and theologian who played a central role in the Council of Ephesus (431), where he defended the title 'Theotokos' (God-bearer) for the Virgin Mary and opposed Nestorianism. He is considered a Doctor of the Church and is known for his extensive theological writings.",
+    "keyQuotes": [
+      "I have been accustomed to pay reverence to the holy Fathers, and to follow them in all things."
+    ],
+    "writings": [
+      {
+        "title": "Commentary on the Gospel of John",
+        "url": "https://www.ccel.org/ccel/schaff/npnf207.ii.html"
+      },
+      {
+        "title": "Twelve Chapters Against Nestorius",
+        "url": "https://www.ccel.org/ccel/schaff/npnf214.ix.html"
+      },
+      {
+        "title": "Letters",
+        "url": "https://www.ccel.org/ccel/schaff/npnf214.viii.html"
+      }
+    ]
+  },
+  {
+    "id": "leo-great",
+    "name": "St. Leo the Great",
+    "birthYear": 400,
+    "deathYear": 461,
+    "feastDay": "November 10",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_I",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09154b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Herrera_mozo_San_Le%C3%B3n_magno_Lienzo._%C3%93valo._164_x_105_cm._Museo_del_Prado.png/330px-Herrera_mozo_San_Le%C3%B3n_magno_Lienzo._%C3%93valo._164_x_105_cm._Museo_del_Prado.png",
+    "summary": "Leo the Great was Pope from 440 to 461 and is one of the most important popes in Church history. He is best known for his 'Tome of Leo,' which was instrumental in the Council of Chalcedon (451) in defining the two natures of Christ. He also famously met Attila the Hun and persuaded him not to sack Rome.",
+    "keyQuotes": [
+      "Christian, recognize your dignity."
+    ],
+    "writings": [
+      {
+        "title": "The Tome of Leo",
+        "url": "https://www.ccel.org/ccel/schaff/npnf212.iii.iv.html"
+      },
+      {
+        "title": "Letters",
+        "url": "https://www.ccel.org/ccel/schaff/npnf212.iii.ii.html"
+      },
+      {
+        "title": "Sermons",
+        "url": "https://www.ccel.org/ccel/schaff/npnf212.iii.iii.html"
+      }
+    ]
+  },
+  {
+    "id": "patrick",
+    "name": "St. Patrick",
+    "birthYear": 385,
+    "deathYear": 461,
+    "feastDay": "March 17",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "missionary"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "ireland",
+        "description": "Apostle of Ireland"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Patrick",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11554a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Saint_Patrick_Catholic_Church_%28Junction_City%2C_Ohio%29_-_stained_glass%2C_Saint_Patrick_-_detail.jpg/330px-Saint_Patrick_Catholic_Church_%28Junction_City%2C_Ohio%29_-_stained_glass%2C_Saint_Patrick_-_detail.jpg",
+    "summary": "Patrick was a Romano-British Christian missionary and bishop who is credited with bringing Christianity to Ireland. He is the patron saint of Ireland and is celebrated on March 17. His 'Confessio' provides valuable insight into his life and mission.",
+    "keyQuotes": [
+      "I am Patrick, a sinner, most unlearned, the least of all the faithful, and utterly despised by many."
+    ]
+  },
+  {
+    "id": "vincent-lerins",
+    "name": "St. Vincent of Lérins",
+    "birthYear": null,
+    "deathYear": 445,
+    "feastDay": "May 24",
+    "primaryTradition": "Latin",
+    "roles": [
+      "monk",
+      "theologian"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "lerins",
+        "description": "Monk at Lérins Abbey"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Vincent_of_Lérins",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15434a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Icon_of_St_Vincent_of_Lerins_by_Bojan_Teodosijevi%C4%87.jpg/330px-Icon_of_St_Vincent_of_Lerins_by_Bojan_Teodosijevi%C4%87.jpg",
+    "summary": "Vincent of Lérins was a monk and theologian known for his 'Commonitorium,' in which he formulated the famous principle: 'What has been believed everywhere, always, and by all' (quod ubique, quod semper, quod ab omnibus). This became a key criterion for orthodoxy.",
+    "keyQuotes": [
+      "We hold that which has been believed everywhere, always, and by all."
+    ]
+  },
+  {
+    "id": "prosper-aquitaine",
+    "name": "St. Prosper of Aquitaine",
+    "birthYear": 390,
+    "deathYear": 455,
+    "feastDay": "June 25",
+    "primaryTradition": "Latin",
+    "roles": [
+      "theologian",
+      "writer"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Theologian and writer in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Prosper_of_Aquitaine",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12495a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Aquit%C3%A1niai_Szent_Prosper.jpg/330px-Aquit%C3%A1niai_Szent_Prosper.jpg",
+    "summary": "Prosper of Aquitaine was a theologian and writer who defended Augustine's teachings on grace and predestination. He worked closely with Pope Leo I and wrote extensively against Pelagianism and Semi-Pelagianism.",
+    "keyQuotes": []
+  },
+  {
+    "id": "peter-chrysologus",
+    "name": "St. Peter Chrysologus",
+    "birthYear": 380,
+    "deathYear": 450,
+    "feastDay": "July 30",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "ravenna",
+        "description": "Bishop of Ravenna"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Chrysologus",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11766a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pedro_crisologo01.jpg/330px-Pedro_crisologo01.jpg",
+    "summary": "Peter Chrysologus was Bishop of Ravenna and is known as the 'Golden Worded' for his eloquent sermons. He is considered a Doctor of the Church and was a strong supporter of Pope Leo I's teachings on the two natures of Christ.",
+    "keyQuotes": []
+  },
+  {
+    "id": "simeon-stylites",
+    "name": "St. Simeon Stylites",
+    "birthYear": 390,
+    "deathYear": 459,
+    "feastDay": "January 5",
+    "primaryTradition": "Syriac",
+    "roles": [
+      "monk",
+      "hermit"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "antioch",
+        "description": "Stylite monk near Antioch"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Simeon_Stylites",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13795a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Plaque_de_Saint-Simeon_%28Louvre%2C_Bj_2180%29_%28cropped%29.jpg/330px-Plaque_de_Saint-Simeon_%28Louvre%2C_Bj_2180%29_%28cropped%29.jpg",
+    "summary": "Simeon Stylites was a Syriac ascetic who lived for 37 years on a small platform on top of a pillar near Antioch. He is the first and most famous of the stylite saints, and his example influenced many later ascetics.",
+    "keyQuotes": []
+  },
+  {
+    "id": "john-chrysostom",
+    "name": "St. John Chrysostom",
+    "birthYear": 349,
+    "deathYear": 407,
+    "feastDay": "September 13",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "constantinople",
+        "description": "Bishop of Constantinople"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Chrysostom",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08452b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Johnchrysostom.jpg/330px-Johnchrysostom.jpg",
+    "summary": "John Chrysostom was an important Early Church Father who served as archbishop of Constantinople. He is known for his preaching and public speaking, his denunciation of abuse of authority by both ecclesiastical and political leaders, and his Divine Liturgy.",
+    "keyQuotes": [
+      "The rich man is not one who is in possession of much, but one who gives much."
+    ],
+    "writings": [
+      {
+        "title": "Homilies on the Gospel of Matthew",
+        "url": "https://www.ccel.org/ccel/schaff/npnf210.html"
+      },
+      {
+        "title": "Homilies on the Acts of the Apostles",
+        "url": "https://www.ccel.org/ccel/schaff/npnf211.html"
+      },
+      {
+        "title": "On the Priesthood",
+        "url": "https://www.ccel.org/ccel/schaff/npnf209.iii.html"
+      }
+    ]
+  },
+  {
+    "id": "augustine",
+    "name": "St. Augustine of Hippo",
+    "birthYear": 354,
+    "deathYear": 430,
+    "feastDay": "August 28",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "hippo",
+        "description": "Bishop of Hippo"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02084a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Saint_Augustine_by_Philippe_de_Champaigne.jpg/330px-Saint_Augustine_by_Philippe_de_Champaigne.jpg",
+    "summary": "Augustine of Hippo, also known as Saint Augustine, was a theologian and philosopher of Berber origin and the bishop of Hippo Regius in Numidia, Roman North Africa. His writings influenced the development of Western philosophy and Western Christianity.",
+    "keyQuotes": [
+      "You have made us for yourself, O Lord, and our hearts are restless until they rest in you.",
+      "Late have I loved you, O Beauty ever ancient, ever new, late have I loved you!"
+    ],
+    "writings": [
+      {
+        "title": "Confessions",
+        "url": "https://www.ccel.org/ccel/schaff/npnf101.html"
+      },
+      {
+        "title": "The City of God",
+        "url": "https://www.ccel.org/ccel/schaff/npnf102.html"
+      },
+      {
+        "title": "On the Trinity",
+        "url": "https://www.ccel.org/ccel/schaff/npnf103.html"
+      },
+      {
+        "title": "On Christian Doctrine",
+        "url": "https://www.ccel.org/ccel/schaff/npnf102.iv.html"
+      }
+    ]
+  },
+  {
+    "id": "innocent-i",
+    "name": "St. Innocent I",
+    "birthYear": null,
+    "deathYear": 417,
+    "feastDay": "July 28",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Bishop of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Innocent_I",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08012a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Innocentius_Papa_S_Martino_ai_Monti.JPG/330px-Innocentius_Papa_S_Martino_ai_Monti.JPG",
+    "summary": "Innocent I was Bishop of Rome from 401 to 417. He strongly asserted papal authority and is known for his letters to various bishops, in which he claimed universal jurisdiction over the Church. He supported St. John Chrysostom during his exile and condemned Pelagianism. He also dealt with the sack of Rome by Alaric in 410, working to maintain Church order during the crisis.",
+    "keyQuotes": []
+  },
+  {
+    "id": "celestine-i",
+    "name": "St. Celestine I",
+    "birthYear": null,
+    "deathYear": 432,
+    "feastDay": "July 27",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Bishop of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Celestine_I",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03479a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Caelestinus_I._Celestino_I%2C_santo_e_papa.jpg/330px-Caelestinus_I._Celestino_I%2C_santo_e_papa.jpg",
+    "summary": "Celestine I was Bishop of Rome from 422 to 432. He is known for sending St. Patrick as a missionary to Ireland and for his role in the Council of Ephesus (431), where he supported St. Cyril of Alexandria against Nestorianism. He condemned Pelagianism and Nestorianism and worked to maintain orthodoxy. He is credited with building the first church dedicated to the Virgin Mary in Rome.",
+    "keyQuotes": []
+  }
+]

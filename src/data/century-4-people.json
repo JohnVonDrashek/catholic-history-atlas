@@ -1,0 +1,611 @@
+[
+  {
+    "id": "methodius-olympus",
+    "name": "St. Methodius of Olympus",
+    "birthYear": null,
+    "deathYear": 311,
+    "feastDay": "June 20",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "olympus",
+        "description": "Bishop of Olympus"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Methodius_of_Olympus",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10240a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Methodius_of_Olympus.jpg/330px-Methodius_of_Olympus.jpg",
+    "summary": "Methodius was a bishop and theologian who wrote extensively against Origen's speculative teachings while maintaining respect for his biblical scholarship. He is best known for his 'Symposium' or 'Banquet of the Ten Virgins,' an important early Christian work on virginity and asceticism. He was martyred during the Diocletianic persecution.",
+    "keyQuotes": []
+  },
+  {
+    "id": "lucian-antioch",
+    "name": "St. Lucian of Antioch",
+    "birthYear": 240,
+    "deathYear": 312,
+    "feastDay": "January 7",
+    "primaryTradition": "Greek",
+    "roles": [
+      "priest",
+      "martyr",
+      "biblical scholar"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "antioch",
+        "description": "Priest and biblical scholar in Antioch"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Lucian_of_Antioch",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09410a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Lucian_of_Antioch_%28Menologion_of_Basil_II%29.jpg/330px-Lucian_of_Antioch_%28Menologion_of_Basil_II%29.jpg",
+    "summary": "Lucian was a priest and biblical scholar in Antioch who produced a critical edition of the Greek Bible known as the 'Lucianic recension.' He was martyred during the Diocletianic persecution. His biblical text was influential in the Eastern Church, and he is considered a forerunner of Arianism by some scholars.",
+    "keyQuotes": []
+  },
+  {
+    "id": "pamphilus",
+    "name": "St. Pamphilus of Caesarea",
+    "birthYear": 240,
+    "deathYear": 309,
+    "feastDay": "February 16",
+    "primaryTradition": "Greek",
+    "roles": [
+      "priest",
+      "martyr",
+      "biblical scholar"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "caesarea-maritima",
+        "description": "Priest and biblical scholar in Caesarea"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pamphilus_of_Caesarea",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11440a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pamphilus_of_Caesarea.jpg/330px-Pamphilus_of_Caesarea.jpg",
+    "summary": "Pamphilus was a priest and biblical scholar who established a library and scriptorium in Caesarea. He was a student of Pierius and worked on producing accurate copies of the Scriptures. He was martyred during the Diocletianic persecution. His student Eusebius of Caesarea wrote a biography of him.",
+    "keyQuotes": []
+  },
+  {
+    "id": "lactantius",
+    "name": "Lactantius",
+    "birthYear": 250,
+    "deathYear": 325,
+    "feastDay": null,
+    "primaryTradition": "Latin",
+    "roles": [
+      "apologist",
+      "teacher"
+    ],
+    "orthodoxyStatus": "orthodox",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Teacher in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Lactantius",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08741a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Lactantius.jpg/330px-Lactantius.jpg",
+    "summary": "Lactantius was a Christian apologist and teacher who served as tutor to Constantine's son Crispus. He wrote 'The Divine Institutes,' a comprehensive defense of Christianity, and 'On the Deaths of the Persecutors,' which describes the fates of those who persecuted Christians. His elegant Latin style earned him the title 'Christian Cicero.'",
+    "keyQuotes": []
+  },
+  {
+    "id": "arnobius",
+    "name": "Arnobius",
+    "birthYear": null,
+    "deathYear": 330,
+    "feastDay": null,
+    "primaryTradition": "Latin",
+    "roles": [
+      "apologist",
+      "teacher"
+    ],
+    "orthodoxyStatus": "orthodox",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "sicca",
+        "description": "Teacher in Sicca"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Arnobius",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01746a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/%D0%90%D1%80%D0%BD%D0%BE%D0%B1%D0%B8%D0%B9_%D0%A1%D1%82%D0%B0%D1%80%D1%88%D0%B8%D0%B9_-Arnobius_of_Sicca.jpg/318px-%D0%90%D1%80%D0%BD%D0%BE%D0%B1%D0%B8%D0%B9_%D0%A1%D1%82%D0%B0%D1%80%D1%88%D0%B8%D0%B9_-Arnobius_of_Sicca.jpg",
+    "summary": "Arnobius was a Christian apologist and teacher who wrote 'Against the Pagans' (Adversus Nationes), a seven-volume work defending Christianity against pagan accusations. He converted to Christianity late in life and wrote his apology to prove his sincerity to his bishop.",
+    "keyQuotes": []
+  },
+  {
+    "id": "eusebius-caesarea",
+    "name": "Eusebius of Caesarea",
+    "birthYear": 260,
+    "deathYear": 339,
+    "feastDay": null,
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "historian"
+    ],
+    "orthodoxyStatus": "orthodox",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "caesarea-maritima",
+        "description": "Bishop of Caesarea"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Eusebius",
+    "newAdventUrl": "https://www.newadvent.org/cathen/05617b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Eusebius_of_Caesarea_Rabbula_Gospels_Icon.jpg",
+    "summary": "Eusebius of Caesarea was a bishop, historian, and biblical scholar known as the 'Father of Church History.' His 'Ecclesiastical History' is the primary source for early Church history from the apostolic age to his own time. He attended the Council of Nicaea and wrote extensively on theology, chronology, and geography.",
+    "keyQuotes": []
+  },
+  {
+    "id": "anthony-great",
+    "name": "St. Anthony the Great",
+    "birthYear": 251,
+    "deathYear": 356,
+    "feastDay": "January 17",
+    "primaryTradition": "Greek",
+    "roles": [
+      "monk",
+      "hermit"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "alexandria",
+        "description": "Desert Father in Egypt"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Anthony_the_Great",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01553d.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Saint_Anthony_%28Damaskinos%29.png/330px-Saint_Anthony_%28Damaskinos%29.png",
+    "summary": "Anthony the Great, also known as Anthony of Egypt, was a Christian monk and hermit who is considered the founder of Christian monasticism. He spent most of his life in the Egyptian desert, and his life, written by Athanasius, became a model for monasticism. He is venerated as a saint in both Eastern and Western Christianity.",
+    "keyQuotes": []
+  },
+  {
+    "id": "pachomius",
+    "name": "St. Pachomius the Great",
+    "birthYear": 292,
+    "deathYear": 348,
+    "feastDay": "May 15",
+    "primaryTradition": "Greek",
+    "roles": [
+      "monk"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "alexandria",
+        "description": "Founder of cenobitic monasticism in Egypt"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pachomius_the_Great",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11383a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/StPakhom.jpg",
+    "summary": "Pachomius was an Egyptian monk who founded cenobitic (communal) monasticism. While Anthony the Great established eremitic (hermit) monasticism, Pachomius organized monks into communities with shared rules and common life. His monastic rule influenced later monasticism throughout the Christian world.",
+    "keyQuotes": []
+  },
+  {
+    "id": "macarius-egypt",
+    "name": "St. Macarius of Egypt",
+    "birthYear": 300,
+    "deathYear": 390,
+    "feastDay": "January 15",
+    "primaryTradition": "Greek",
+    "roles": [
+      "monk",
+      "Desert Father"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "alexandria",
+        "description": "Desert Father in Egypt"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Macarius_of_Egypt",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09482a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Saint_Macarius_the_Egyptian.jpg",
+    "summary": "Macarius of Egypt was one of the most famous Desert Fathers and a disciple of Anthony the Great. He spent most of his life in the Egyptian desert and was known for his asceticism, wisdom, and miracles. Many sayings and stories are attributed to him in the collections of Desert Father literature.",
+    "keyQuotes": []
+  },
+  {
+    "id": "hilary-poitiers",
+    "name": "St. Hilary of Poitiers",
+    "birthYear": 310,
+    "deathYear": 367,
+    "feastDay": "January 13",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "poitiers",
+        "description": "Bishop of Poitiers"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Hilary_of_Poitiers",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07349b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Hilaryofpoitiers.jpg/330px-Hilaryofpoitiers.jpg",
+    "summary": "Hilary of Poitiers was a bishop and theologian known as the 'Hammer of the Arians' for his vigorous defense of Nicene orthodoxy. He wrote extensively against Arianism and was exiled for his faith. His works on the Trinity were influential in the West, and he is considered a Doctor of the Church.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "On the Trinity",
+        "url": "https://www.ccel.org/ccel/schaff/npnf209.iii.html"
+      },
+      {
+        "title": "Commentary on Matthew",
+        "url": "https://www.ccel.org/ccel/schaff/npnf209.iv.html"
+      }
+    ]
+  },
+  {
+    "id": "ephrem-syrian",
+    "name": "St. Ephrem the Syrian",
+    "birthYear": 306,
+    "deathYear": 373,
+    "feastDay": "June 9",
+    "primaryTradition": "Syriac",
+    "roles": [
+      "deacon",
+      "hymnographer",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "edessa",
+        "description": "Deacon and teacher in Edessa"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ephrem_the_Syrian",
+    "newAdventUrl": "https://www.newadvent.org/cathen/05498a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ephrem_the_Syrian_%28mosaic_in_Nea_Moni%29.jpg/330px-Ephrem_the_Syrian_%28mosaic_in_Nea_Moni%29.jpg",
+    "summary": "Ephrem the Syrian was a deacon, hymnographer, and theologian who wrote extensively in Syriac. He is known for his hymns, which were used to teach orthodox doctrine and combat heresy. He is the only Syriac-speaking Doctor of the Church and is venerated in both Eastern and Western Christianity.",
+    "keyQuotes": []
+  },
+  {
+    "id": "athanasius",
+    "name": "St. Athanasius",
+    "birthYear": 296,
+    "deathYear": 373,
+    "feastDay": "May 2",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "alexandria",
+        "description": "Bishop of Alexandria"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Athanasius_of_Alexandria",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02035a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Ikone_Athanasius_von_Alexandria.jpg/330px-Ikone_Athanasius_von_Alexandria.jpg",
+    "summary": "Athanasius was a Christian theologian, bishop of Alexandria, and a noted Egyptian leader of the fourth century. He is best known for his role in the conflict with Arius and Arianism. At the First Council of Nicaea, Athanasius argued against the Arians and was a key defender of the doctrine of the Trinity.",
+    "keyQuotes": [
+      "For the Son of God became man so that we might become God.",
+      "He, indeed, assumed humanity that we might become God."
+    ],
+    "writings": [
+      {
+        "title": "On the Incarnation",
+        "url": "https://www.ccel.org/ccel/schaff/npnf204.iv.iii.html"
+      },
+      {
+        "title": "Life of St. Antony",
+        "url": "https://www.ccel.org/ccel/schaff/npnf204.iv.iv.html"
+      },
+      {
+        "title": "Against the Arians",
+        "url": "https://www.ccel.org/ccel/schaff/npnf204.iv.v.html"
+      }
+    ]
+  },
+  {
+    "id": "basil-great",
+    "name": "St. Basil the Great",
+    "birthYear": 329,
+    "deathYear": 379,
+    "feastDay": "January 2",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "caesarea-cappadocia",
+        "description": "Bishop of Caesarea"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basil_of_Caesarea",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02330b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Basil_of_Caesarea.jpg/330px-Basil_of_Caesarea.jpg",
+    "summary": "Basil of Caesarea, also called Saint Basil the Great, was a bishop of Caesarea Mazaca in Cappadocia, Asia Minor. He was an influential theologian who supported the Nicene Creed and opposed the heresies of the early Christian church.",
+    "keyQuotes": [
+      "The bread which you do not use is the bread of the hungry; the garment hanging in your wardrobe is the garment of him who is naked."
+    ],
+    "writings": [
+      {
+        "title": "On the Holy Spirit",
+        "url": "https://www.ccel.org/ccel/schaff/npnf208.viii.html"
+      },
+      {
+        "title": "Hexaemeron (On the Six Days of Creation)",
+        "url": "https://www.ccel.org/ccel/schaff/npnf208.vii.html"
+      },
+      {
+        "title": "The Long Rules",
+        "url": "https://www.ccel.org/ccel/schaff/npnf208.ix.html"
+      }
+    ]
+  },
+  {
+    "id": "macrina-younger",
+    "name": "St. Macrina the Younger",
+    "birthYear": 327,
+    "deathYear": 379,
+    "feastDay": "July 19",
+    "primaryTradition": "Greek",
+    "roles": [
+      "nun"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "caesarea-cappadocia",
+        "description": "Nun in Cappadocia"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Macrina_the_Younger",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09500a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Macrina_the_Younger.jpg/320px-Macrina_the_Younger.jpg",
+    "summary": "Macrina the Younger was the sister of Basil the Great and Gregory of Nyssa, and the granddaughter of Macrina the Elder. She established a monastic community for women and was a significant influence on her brothers' theological development. Gregory of Nyssa wrote a biography of her life.",
+    "keyQuotes": []
+  },
+  {
+    "id": "gregory-nyssa",
+    "name": "St. Gregory of Nyssa",
+    "birthYear": 335,
+    "deathYear": 395,
+    "feastDay": "January 10",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "nyssa",
+        "description": "Bishop of Nyssa"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Gregory_of_Nyssa",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07016a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gregory_of_Nyssa.jpg/330px-Gregory_of_Nyssa.jpg",
+    "summary": "Gregory of Nyssa was a bishop and theologian, and the younger brother of Basil the Great. Together with Basil and Gregory of Nazianzus, he is known as one of the Cappadocian Fathers. He wrote extensively on theology, mysticism, and spirituality, and is considered a Doctor of the Church.",
+    "keyQuotes": [
+      "The goal of a virtuous life is to become like God."
+    ]
+  },
+  {
+    "id": "gregory-nazianzen",
+    "name": "St. Gregory of Nazianzus",
+    "birthYear": 329,
+    "deathYear": 390,
+    "feastDay": "January 2",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "constantinople",
+        "description": "Bishop of Constantinople"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Gregory_of_Nazianzus",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07010b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Gregor-Chora_%28cropped%29.jpg/330px-Gregor-Chora_%28cropped%29.jpg",
+    "summary": "Gregory of Nazianzus, also known as Gregory the Theologian or Gregory Nazianzen, was a 4th-century Archbishop of Constantinople, and theologian. He is widely considered the most accomplished rhetorical stylist of the patristic age.",
+    "keyQuotes": [
+      "What is not assumed is not healed."
+    ]
+  },
+  {
+    "id": "martin-tours",
+    "name": "St. Martin of Tours",
+    "birthYear": 316,
+    "deathYear": 397,
+    "feastDay": "November 11",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "monk"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "tours",
+        "description": "Bishop of Tours"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Martin_of_Tours",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09732c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Simone_Martini_040.jpg/330px-Simone_Martini_040.jpg",
+    "summary": "Martin of Tours was a bishop and monk who is credited with bringing monasticism to Gaul. He founded the first monastery in Gaul and is known for his charity and asceticism. The story of him sharing his cloak with a beggar became one of the most famous hagiographical accounts in the Middle Ages.",
+    "keyQuotes": []
+  },
+  {
+    "id": "monica",
+    "name": "St. Monica",
+    "birthYear": 331,
+    "deathYear": 387,
+    "feastDay": "August 27",
+    "primaryTradition": "Latin",
+    "roles": [],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "hippo",
+        "description": "Mother of St. Augustine"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Monica",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10482a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Monica_of_Hippo_by_Gozzoli.jpg/330px-Monica_of_Hippo_by_Gozzoli.jpg",
+    "summary": "Monica was the mother of St. Augustine of Hippo. She is known for her persistent prayers for her son's conversion, which were eventually answered. Augustine wrote extensively about her in his 'Confessions,' describing her as a model of Christian motherhood and piety.",
+    "keyQuotes": []
+  },
+  {
+    "id": "ambrose",
+    "name": "St. Ambrose",
+    "birthYear": 340,
+    "deathYear": 397,
+    "feastDay": "December 7",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "milan",
+        "description": "Bishop of Milan"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ambrose",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01383c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/AmbroseOfMilan_%28cropped%29.jpg/306px-AmbroseOfMilan_%28cropped%29.jpg",
+    "summary": "Ambrose was a bishop of Milan who became one of the most influential ecclesiastical figures of the 4th century. He is counted as one of the four original doctors of the Church.",
+    "keyQuotes": [
+      "When in Rome, do as the Romans do."
+    ],
+    "writings": [
+      {
+        "title": "On the Duties of the Clergy",
+        "url": "https://www.ccel.org/ccel/schaff/npnf210.iv.html"
+      },
+      {
+        "title": "On the Holy Spirit",
+        "url": "https://www.ccel.org/ccel/schaff/npnf210.v.html"
+      },
+      {
+        "title": "Concerning Virgins",
+        "url": "https://www.ccel.org/ccel/schaff/npnf210.vi.html"
+      }
+    ]
+  },
+  {
+    "id": "arius",
+    "name": "Arius",
+    "birthYear": 256,
+    "deathYear": 336,
+    "primaryTradition": "Greek",
+    "roles": [
+      "priest"
+    ],
+    "orthodoxyStatus": "heresiarch",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "alexandria",
+        "description": "Priest of Alexandria"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Arius",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01707c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Arius_p%C3%BCsp%C3%B6k.jpg/330px-Arius_p%C3%BCsp%C3%B6k.jpg",
+    "summary": "Arius was a Cyrenaic presbyter, ascetic, and priest in Alexandria, Egypt. His teachings about the nature of the Godhead, which emphasized the Father's divinity over the Son, and his opposition to what would become the Nicene Creed, made him a primary topic of the First Council of Nicaea.",
+    "keyQuotes": [
+      "There was a time when the Son was not."
+    ]
+  },
+  {
+    "id": "sylvester-i",
+    "name": "St. Sylvester I",
+    "birthYear": null,
+    "deathYear": 335,
+    "feastDay": "December 31",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Bishop of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Sylvester_I",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14370a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pape_St_Sylvestre_%E2%80%93_BnF%2C_ms_16251%2C_fol._87.jpg/330px-Pape_St_Sylvestre_%E2%80%93_BnF%2C_ms_16251%2C_fol._87.jpg",
+    "summary": "Sylvester I was Bishop of Rome from 314 to 335, during the reign of Emperor Constantine the Great. His pontificate coincided with the legalization of Christianity through the Edict of Milan (313) and the First Council of Nicaea (325). Although he did not attend the Council of Nicaea personally, he sent legates. He is traditionally credited with building the first St. Peter's Basilica and other important churches in Rome.",
+    "keyQuotes": []
+  },
+  {
+    "id": "damasus-i",
+    "name": "St. Damasus I",
+    "birthYear": 305,
+    "deathYear": 384,
+    "feastDay": "December 11",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Bishop of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Damasus_I",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04613a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Pope_Damasus_-_Biblia_Sancti_Martialis_Lemovicensis%2C_Folio_4v.png/330px-Pope_Damasus_-_Biblia_Sancti_Martialis_Lemovicensis%2C_Folio_4v.png",
+    "summary": "Damasus I was Bishop of Rome from 366 to 384. He is known for commissioning St. Jerome to produce the Vulgate, the Latin translation of the Bible. He worked to restore the catacombs and composed many epigrams for the tombs of martyrs. He also strengthened papal authority and dealt with various heresies, including Arianism. He is credited with establishing Latin as the official language of the Roman liturgy.",
+    "keyQuotes": []
+  }
+]

@@ -1,0 +1,223 @@
+[
+  {
+    "id": "benedict-nursia",
+    "name": "St. Benedict of Nursia",
+    "birthYear": 480,
+    "deathYear": 547,
+    "feastDay": "July 11",
+    "primaryTradition": "Latin",
+    "roles": [
+      "monk",
+      "abbot"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "monte-cassino",
+        "description": "Founder and abbot of Monte Cassino"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Benedict_of_Nursia",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02467a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Memling%2C_Trittico_di_Benedetto_Portinari%2C_San_Benedetto.jpg",
+    "summary": "Benedict of Nursia is known as the father of Western monasticism. He founded the monastery at Monte Cassino and wrote the Rule of St. Benedict, which became the foundation for monastic life in the West. His rule emphasized prayer, work, and community life, and has influenced countless religious communities for over 1,500 years. He is the patron saint of Europe.",
+    "keyQuotes": [
+      "Pray and work.",
+      "Listen carefully, my son, to the master's instructions, and attend to them with the ear of your heart."
+    ],
+    "writings": [
+      {
+        "title": "Rule of St. Benedict",
+        "url": "https://www.ccel.org/ccel/benedict/rule.html"
+      }
+    ]
+  },
+  {
+    "id": "scholastica",
+    "name": "St. Scholastica",
+    "birthYear": 480,
+    "deathYear": 547,
+    "feastDay": "February 10",
+    "primaryTradition": "Latin",
+    "roles": [
+      "nun",
+      "abbess"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "monte-cassino",
+        "description": "Nun near Monte Cassino"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Scholastica",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13548a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Jean_Baptiste_de_Champaigne_%281631-1681%29_%28attributed_to%29_-_Saint_Benedict_and_Saint_Scholastica_and_Two_Companions_in_a_Landscape_-_290251_-_National_Trust.jpg",
+    "summary": "Scholastica was the twin sister of St. Benedict of Nursia. She founded a convent near Monte Cassino and is considered the first Benedictine nun. According to tradition, she and her brother met once a year to discuss spiritual matters. She is venerated as the patroness of Benedictine nuns and is remembered for her deep prayer life and devotion.",
+    "keyQuotes": []
+  },
+  {
+    "id": "columba",
+    "name": "St. Columba",
+    "birthYear": 521,
+    "deathYear": 597,
+    "feastDay": "June 9",
+    "primaryTradition": "Latin",
+    "roles": [
+      "monk",
+      "missionary",
+      "abbot"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "iona",
+        "description": "Founder and abbot of Iona"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Columba",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04136a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Columba_at_Bridei%27s_fort.jpg",
+    "summary": "Columba was an Irish abbot and missionary who founded the monastery of Iona in Scotland. He is credited with spreading Christianity throughout Scotland and northern England. He is one of the three patron saints of Ireland along with Patrick and Brigid. His monastery at Iona became a center of learning and missionary activity throughout the British Isles.",
+    "keyQuotes": []
+  },
+  {
+    "id": "caesarius-arles",
+    "name": "St. Caesarius of Arles",
+    "birthYear": 470,
+    "deathYear": 542,
+    "feastDay": "August 27",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "arles",
+        "description": "Bishop of Arles"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Caesarius_of_Arles",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03135a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Arles%2CSt_C%C3%A9saire27%2Cchoeur7%2CSt_C%C3%A9saire_%28cropped%29.jpg",
+    "summary": "Caesarius of Arles was a bishop who played an important role in the Church in Gaul during the 6th century. He presided over several councils, wrote sermons and a rule for nuns, and worked to reform the clergy. He is known for his efforts to combat Arianism and for establishing monasteries for both men and women.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "Sermons",
+        "url": "https://www.ccel.org/ccel/schaff/npnf211.iv.html"
+      }
+    ]
+  },
+  {
+    "id": "radegund",
+    "name": "St. Radegund",
+    "birthYear": 520,
+    "deathYear": 587,
+    "feastDay": "August 13",
+    "primaryTradition": "Latin",
+    "roles": [
+      "queen",
+      "nun"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "poitiers",
+        "description": "Queen, then nun in Poitiers"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Radegund",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12610a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Sainte_Radegonde.JPG",
+    "summary": "Radegund was a Frankish queen who left her royal life to become a nun. She founded the monastery of the Holy Cross in Poitiers and became known for her asceticism, charity, and devotion. She is one of the few early medieval queens to be canonized and is remembered for her example of renouncing worldly power for religious life.",
+    "keyQuotes": []
+  },
+  {
+    "id": "boethius",
+    "name": "Boethius",
+    "birthYear": 477,
+    "deathYear": 524,
+    "primaryTradition": "Latin",
+    "roles": [
+      "philosopher",
+      "theologian"
+    ],
+    "orthodoxyStatus": "orthodox",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "ravenna",
+        "description": "Philosopher and statesman, martyred in Ravenna"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Boethius",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02610b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Boethius.jpeg",
+    "summary": "Boethius was a Roman philosopher, theologian, and statesman who served as consul under Theodoric the Great. He is best known for his work 'The Consolation of Philosophy,' written while imprisoned before his execution. His translations of Aristotle and other Greek works helped preserve classical learning in the West, and his theological works influenced medieval scholasticism.",
+    "keyQuotes": [
+      "In all adversity of fortune, the worst sort of misery is to have been happy."
+    ],
+    "writings": [
+      {
+        "title": "The Consolation of Philosophy",
+        "url": "https://www.ccel.org/ccel/boethius/consolation.html"
+      }
+    ]
+  },
+  {
+    "id": "hormisdas",
+    "name": "St. Hormisdas",
+    "birthYear": null,
+    "deathYear": 523,
+    "feastDay": "August 6",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Bishop of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Hormisdas",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07470a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tafel_paepste.jpg/330px-Tafel_paepste.jpg",
+    "summary": "Hormisdas was Bishop of Rome from 514 to 523. He is best known for ending the Acacian schism, which had divided the Eastern and Western Churches for 35 years. He sent a formula of faith (the Formula of Hormisdas) to Constantinople, which was accepted by Emperor Justin I and Patriarch John II, reuniting the Churches. He was the father of Pope Silverius.",
+    "keyQuotes": []
+  },
+  {
+    "id": "john-i",
+    "name": "St. John I",
+    "birthYear": null,
+    "deathYear": 526,
+    "feastDay": "May 18",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Bishop of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_John_I",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08420a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Busto_relic%C3%A1rio_do_Papa_S%C3%A3o_Jo%C3%A3o_I.jpg/330px-Busto_relic%C3%A1rio_do_Papa_S%C3%A3o_Jo%C3%A3o_I.jpg",
+    "summary": "John I was Bishop of Rome from 523 to 526. He was sent by the Arian Ostrogoth king Theodoric the Great to Constantinople to negotiate on behalf of the Arians, but he instead worked to protect the orthodox. Upon his return, Theodoric imprisoned him in Ravenna, where he died of starvation and is considered a martyr. He is the first pope to have traveled to Constantinople while in office.",
+    "keyQuotes": []
+  }
+]

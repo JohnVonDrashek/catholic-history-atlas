@@ -1,0 +1,99 @@
+[
+  {
+    "id": "suppression-jesuits",
+    "name": "Suppression of the Society of Jesus",
+    "startYear": 1773,
+    "endYear": 1773,
+    "type": "persecution",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Suppression_of_the_Society_of_Jesús",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14096a.htm",
+    "summary": "Pope Clement XIV issued the brief Dominus ac Redemptor, suppressing the Society of Jesus throughout the Catholic world. This was the result of political pressure from Catholic monarchs, particularly in France, Spain, and Portugal, who saw the Jesuits as a threat to their authority. The suppression lasted until 1814, when Pope Pius VII restored the order.",
+    "keyDocuments": [
+      "Dominus ac Redemptor (1773)"
+    ]
+  },
+  {
+    "id": "french-revolution-church",
+    "name": "French Revolution and the Church",
+    "startYear": 1789,
+    "endYear": 1799,
+    "type": "persecution",
+    "locationId": "lyons",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Dechristianization_of_France_during_the_French_Revolution",
+    "newAdventUrl": "https://www.newadvent.org/cathen/06265a.htm",
+    "summary": "The French Revolution brought severe persecution to the Catholic Church in France. The Civil Constitution of the Clergy (1790) attempted to subordinate the Church to the state, leading to a schism. Many priests and religious were executed, churches were desecrated, and the Church's property was confiscated. The Reign of Terror (1793-1794) saw the execution of thousands of clergy and religious.",
+    "keyDocuments": [
+      "Civil Constitution of the Clergy (1790)",
+      "Declaration of the Rights of Man and of the Citizen (1789)"
+    ]
+  },
+  {
+    "id": "civil-constitution-clergy",
+    "name": "Civil Constitution of the Clergy",
+    "startYear": 1790,
+    "endYear": 1790,
+    "type": "schism",
+    "locationId": "lyons",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Civil_Constitution_of_the_Clergy",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04039a.htm",
+    "summary": "The National Assembly of France passed the Civil Constitution of the Clergy, which made the Catholic Church in France a department of the state. Bishops and priests were to be elected by the people and required to take an oath of loyalty to the state. Pope Pius VI condemned it, leading to a schism between the 'constitutional' clergy who took the oath and the 'refractory' clergy who refused.",
+    "keyDocuments": [
+      "Civil Constitution of the Clergy",
+      "Charitas (Pius VI, 1791)"
+    ]
+  },
+  {
+    "id": "papal-states-invasion",
+    "name": "French Invasion of the Papal States",
+    "startYear": 1796,
+    "endYear": 1798,
+    "type": "persecution",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Papal_States",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11449a.htm",
+    "summary": "French revolutionary forces under Napoleon Bonaparte invaded the Papal States, leading to the establishment of the Roman Republic in 1798. Pope Pius VI was taken prisoner and died in exile in France in 1799. This marked a low point in the temporal power of the papacy and demonstrated the vulnerability of the Church to revolutionary forces.",
+    "keyDocuments": []
+  },
+  {
+    "id": "enlightenment-challenges",
+    "name": "Enlightenment Challenges to the Church",
+    "startYear": 1700,
+    "endYear": 1799,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Age_of_Enlightenment",
+    "newAdventUrl": "https://www.newadvent.org/cathen/05520a.htm",
+    "summary": "The 18th century saw the rise of the Enlightenment, a philosophical movement that emphasized reason, science, and individual rights over tradition and religious authority. Thinkers like Voltaire, Rousseau, and Diderot criticized the Church's influence in society. Catholic monarchs adopted 'enlightened absolutism,' seeking greater control over the Church in their territories. The Church responded with both resistance and adaptation to these new intellectual currents.",
+    "keyDocuments": [
+      "Encyclical In eminenti (Benedict XIV, 1741)",
+      "Encyclical A quo primum (Benedict XIV, 1751)"
+    ]
+  },
+  {
+    "id": "jansenism-controversy",
+    "name": "Jansenism Controversy",
+    "startYear": 1700,
+    "endYear": 1799,
+    "type": "other",
+    "locationId": "lyons",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Jansenism",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08285a.htm",
+    "summary": "Jansenism, a theological movement emphasizing predestination and strict moral rigor, continued to be a source of controversy in the 18th century. The papal bull Unigenitus (1713) by Clement XI condemned 101 propositions from the Jansenist work 'Reflections on the New Testament.' Despite papal condemnation, Jansenism retained influence in France and the Netherlands, contributing to tensions between the French Church and Rome.",
+    "keyDocuments": [
+      "Unigenitus (Clement XI, 1713)"
+    ]
+  },
+  {
+    "id": "mission-expansion",
+    "name": "Catholic Mission Expansion",
+    "startYear": 1700,
+    "endYear": 1799,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Catholic_Church_and_the_Age_of_Discovery",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10338a.htm",
+    "summary": "Despite challenges in Europe, Catholic missionary activity continued to expand in the 18th century. Missionaries worked in the Americas, Asia, and Africa. The Jesuits, before their suppression, were particularly active in China, India, and South America. The Reductions of Paraguay, Jesuit missions among the Guarani people, reached their peak before being destroyed by Spanish and Portuguese forces in the 1750s.",
+    "keyDocuments": []
+  }
+]

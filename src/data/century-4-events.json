@@ -1,0 +1,119 @@
+[
+  {
+    "id": "diocletianic-persecution",
+    "name": "Diocletianic Persecution",
+    "startYear": 303,
+    "endYear": 311,
+    "type": "persecution",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Diocletianic_Persecution",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Flagellation_St_Erasmus_Crypta_Balbi.jpg/330px-Flagellation_St_Erasmus_Crypta_Balbi.jpg",
+    "summary": "The Diocletianic Persecution, also known as the Great Persecution, was the last and most severe persecution of Christians in the Roman Empire. Beginning in 303 AD, it involved the destruction of churches, burning of Scriptures, imprisonment and torture of clergy, and execution of those who refused to sacrifice. The persecution ended in 311 AD with the Edict of Serdica, and was followed by the Edict of Milan in 313, which legalized Christianity.",
+    "keyDocuments": [
+      "Edict of Serdica (311)",
+      "Edict of Milan (313)"
+    ]
+  },
+  {
+    "id": "constantine-conversion",
+    "name": "Constantine's Conversion",
+    "startYear": 312,
+    "endYear": 312,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Constantine_the_Great_and_Christianity",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04295c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/BnF_MS_Gr510_folio_440_recto_-_detail_-_Constantine%27s_Vision_and_the_Battle_of_the_Milvian_Bridge.jpg/330px-BnF_MS_Gr510_folio_440_recto_-_detail_-_Constantine%27s_Vision_and_the_Battle_of_the_Milvian_Bridge.jpg",
+    "summary": "Constantine the Great's conversion to Christianity, traditionally dated to 312 AD at the Battle of the Milvian Bridge, marked a turning point in Church history. According to tradition, Constantine saw a vision of a cross in the sky with the words 'In this sign, you will conquer.' His subsequent victory and eventual legalization of Christianity transformed the Church's relationship with the Roman state.",
+    "keyDocuments": []
+  },
+  {
+    "id": "edict-milan",
+    "name": "Edict of Milan",
+    "startYear": 313,
+    "endYear": 313,
+    "type": "other",
+    "locationId": "milan",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Edict_of_Milan",
+    "newAdventUrl": "https://www.newadvent.org/cathen/05330a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Constantine_Chiaramonti_Inv1749.jpg/330px-Constantine_Chiaramonti_Inv1749.jpg",
+    "summary": "The Edict of Milan, issued by Emperors Constantine and Licinius in 313 AD, legalized Christianity throughout the Roman Empire and granted religious tolerance to all faiths. This edict ended the persecution of Christians and marked the beginning of Christianity's transformation from a persecuted minority to the dominant religion of the Roman Empire.",
+    "keyDocuments": [
+      "Edict of Milan"
+    ]
+  },
+  {
+    "id": "arian-controversy",
+    "name": "Arian Controversy",
+    "startYear": 318,
+    "endYear": 381,
+    "type": "other",
+    "locationId": "alexandria",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Arian_controversy",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01707c.htm",
+    "summary": "The Arian controversy was a major theological dispute in the 4th century over the nature of Christ's relationship to God the Father. Arius, a priest of Alexandria, taught that the Son was created and subordinate to the Father. This was opposed by Athanasius and others, leading to the First Council of Nicaea (325) and the First Council of Constantinople (381), which established the orthodox doctrine of the Trinity.",
+    "keyDocuments": [
+      "Nicene Creed",
+      "Niceno-Constantinopolitan Creed"
+    ]
+  },
+  {
+    "id": "council-sardica",
+    "name": "Council of Sardica",
+    "startYear": 343,
+    "endYear": 343,
+    "type": "council",
+    "locationId": "sardica",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Sardica",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13479a.htm",
+    "summary": "The Council of Sardica was convened in 343 AD to address the Arian controversy and the case of Athanasius, who had been deposed from his see. The council reaffirmed the Nicene Creed and established procedures for appealing to Rome, though the Eastern bishops left early, creating a schism. The council's canons became important for the development of papal authority.",
+    "keyDocuments": [
+      "Canons of Sardica"
+    ]
+  },
+  {
+    "id": "donatism",
+    "name": "Donatism",
+    "startYear": 311,
+    "endYear": 411,
+    "type": "schism",
+    "locationId": "carthage",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Donatism",
+    "newAdventUrl": "https://www.newadvent.org/cathen/05121a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Augustine_and_donatists.jpg/330px-Augustine_and_donatists.jpg",
+    "summary": "Donatism was a schismatic movement in North Africa that began in the early 4th century. The Donatists held that the validity of sacraments depended on the moral purity of the minister, and they refused to accept bishops who had lapsed during persecution. The movement was vigorously opposed by Augustine of Hippo and was eventually suppressed, though it persisted in some areas for centuries.",
+    "keyDocuments": []
+  },
+  {
+    "id": "nicaea-i",
+    "name": "First Council of Nicaea",
+    "startYear": 325,
+    "endYear": 325,
+    "type": "council",
+    "locationId": "nicaea",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11044a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Nikea-arius.png/330px-Nikea-arius.png",
+    "summary": "The First Council of Nicaea was a council of Christian bishops convened in the Bithynian city of Nicaea by the Roman Emperor Constantine I in AD 325. This ecumenical council was the first effort to attain consensus in the church through an assembly representing all of Christendom.",
+    "keyDocuments": [
+      "Nicene Creed",
+      "Canons of Nicaea"
+    ]
+  },
+  {
+    "id": "constantinople-i",
+    "name": "First Council of Constantinople",
+    "startYear": 381,
+    "endYear": 381,
+    "type": "council",
+    "locationId": "constantinople",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Council_of_Constantinople",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04308a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/CouncilOfConstantinople381BnFMSGr510.jpg/330px-CouncilOfConstantinople381BnFMSGr510.jpg",
+    "summary": "The First Council of Constantinople was a council of Christian bishops convened in Constantinople in AD 381 by the Roman Emperor Theodosius I. This second ecumenical council, a continuation of the First Council of Nicaea, was intended to complete the Nicene Creed.",
+    "keyDocuments": [
+      "Niceno-Constantinopolitan Creed"
+    ]
+  }
+]

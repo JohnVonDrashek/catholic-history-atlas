@@ -1,0 +1,141 @@
+[
+  {
+    "id": "wilfrid",
+    "name": "St. Wilfrid",
+    "birthYear": 633,
+    "deathYear": 709,
+    "feastDay": "October 12",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "york",
+        "description": "Bishop of York"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Wilfrid",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15625a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chichestercathedralwindowwilfredluffapeacock.jpg/330px-Chichestercathedralwindowwilfredluffapeacock.jpg",
+    "summary": "Wilfrid was a bishop who played a key role in the Synod of Whitby (664), where he successfully argued for the adoption of Roman practices over Celtic ones, particularly regarding the date of Easter. He was a strong advocate for Roman authority and practices in England and was known for his missionary work and church building. He faced exile multiple times due to political conflicts.",
+    "keyQuotes": []
+  },
+  {
+    "id": "bede",
+    "name": "St. Bede the Venerable",
+    "birthYear": 672,
+    "deathYear": 735,
+    "feastDay": "May 25",
+    "primaryTradition": "Latin",
+    "roles": [
+      "monk",
+      "historian",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "jarrow",
+        "description": "Monk at Jarrow"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Bede",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02384a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/E-codices_bke-0047_001v_medium_%28cropped%29.jpg",
+    "summary": "Bede, known as the Venerable Bede, was an English monk, scholar, and historian. He is best known for his 'Ecclesiastical History of the English People,' which is a primary source for early English history. He was a prolific writer on theology, history, grammar, and science. He is the only native of Great Britain to be named a Doctor of the Church.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "Ecclesiastical History of the English People",
+        "url": "https://www.ccel.org/ccel/bede/history.html"
+      }
+    ]
+  },
+  {
+    "id": "boniface",
+    "name": "St. Boniface",
+    "birthYear": 675,
+    "deathYear": 754,
+    "feastDay": "June 5",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "missionary",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "fulda",
+        "description": "Bishop and missionary, martyred in Frisia"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Boniface",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02658a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Saint_Boniface_by_Cornelis_Bloemaert.jpg",
+    "summary": "Boniface was an English missionary who is known as the Apostle of Germany. He organized the Church in Germany and reformed the Frankish Church. He founded several monasteries, including Fulda, and was martyred while on a mission to Frisia. He is considered one of the most important figures in the Christianization of Germany.",
+    "keyQuotes": []
+  },
+  {
+    "id": "john-damascus",
+    "name": "St. John of Damascus",
+    "birthYear": 675,
+    "deathYear": 749,
+    "feastDay": "December 4",
+    "primaryTradition": "Greek",
+    "roles": [
+      "monk",
+      "theologian",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "damascus",
+        "description": "Theologian and monk near Damascus"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_of_Damascus",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08459b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Johndamascene.jpg",
+    "summary": "John of Damascus was a Christian monk, priest, and theologian. He is best known for his defense of icons during the Iconoclast Controversy. His work 'Fount of Knowledge' is a comprehensive summary of Christian doctrine. He is considered the last of the Greek Church Fathers and is venerated as a Doctor of the Church in both East and West.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "Fount of Knowledge",
+        "url": "https://www.ccel.org/ccel/schaff/npnf209.ii.html"
+      }
+    ]
+  },
+  {
+    "id": "willibrord",
+    "name": "St. Willibrord",
+    "birthYear": 658,
+    "deathYear": 739,
+    "feastDay": "November 7",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "missionary"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "utrecht",
+        "description": "Bishop of Utrecht, missionary to Frisia"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Willibrord",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15640a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Georg_Sturm%2C_Willibrordus_predikt_het_Christendom_aan_de_Friezen.jpg",
+    "summary": "Willibrord was an English missionary who is known as the Apostle of the Frisians. He was the first bishop of Utrecht and worked to convert the Frisians to Christianity. He founded several churches and monasteries and is considered one of the most important missionaries of the early Middle Ages.",
+    "keyQuotes": []
+  }
+]

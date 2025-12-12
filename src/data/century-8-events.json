@@ -1,0 +1,66 @@
+[
+  {
+    "id": "iconoclasm-controversy",
+    "name": "Iconoclasm Controversy",
+    "startYear": 726,
+    "endYear": 843,
+    "type": "other",
+    "locationId": "constantinople",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Byzantine_Iconoclasm",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07620a.htm",
+    "summary": "The Iconoclasm Controversy was a major theological dispute in the Byzantine Empire over the use of religious images (icons). Emperor Leo III began the first period of iconoclasm in 726, ordering the destruction of icons. The controversy divided the Church and Empire for over a century, with periods of iconoclasm and restoration. It was finally resolved at the Second Council of Nicaea in 787, which affirmed the veneration of icons.",
+    "keyDocuments": []
+  },
+  {
+    "id": "battle-tours",
+    "name": "Battle of Tours",
+    "startYear": 732,
+    "endYear": 732,
+    "type": "other",
+    "locationId": "tours",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14781a.htm",
+    "summary": "The Battle of Tours (also known as the Battle of Poitiers) was a decisive battle in 732 AD where the Frankish forces under Charles Martel defeated the Umayyad Caliphate. This battle is often credited with halting the Muslim advance into Western Europe and preserving Christianity in the region. It was a turning point in European history.",
+    "keyDocuments": []
+  },
+  {
+    "id": "donation-pepin",
+    "name": "Donation of Pepin",
+    "startYear": 754,
+    "endYear": 756,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Donation_of_Pepin",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04659a.htm",
+    "summary": "The Donation of Pepin was a grant of land made by Pepin the Short, King of the Franks, to Pope Stephen II in 754 and confirmed in 756. This donation established the Papal States, giving the Pope temporal power over central Italy. This was a crucial development in the relationship between the papacy and secular rulers and established the foundation for the Papal States that would last until 1870.",
+    "keyDocuments": []
+  },
+  {
+    "id": "council-nicaea-ii",
+    "name": "Second Council of Nicaea",
+    "startYear": 787,
+    "endYear": 787,
+    "type": "council",
+    "locationId": "nicaea",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Second_Council_of_Nicaea",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11045a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Menologion_of_Basil_024.jpg",
+    "summary": "The Second Council of Nicaea was the seventh ecumenical council, convened by Empress Irene in 787 AD. The council restored the veneration of icons, which had been condemned during the Iconoclasm Controversy. It affirmed that icons could be venerated (though not worshipped) and that they were useful for teaching and inspiring devotion. This council is considered the last of the ecumenical councils recognized by both Eastern and Western Christianity.",
+    "keyDocuments": [
+      "Definition on the Veneration of Icons",
+      "Canons on Iconoclasm"
+    ]
+  },
+  {
+    "id": "coronation-charlemagne",
+    "name": "Coronation of Charlemagne",
+    "startYear": 800,
+    "endYear": 800,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Coronation_of_Charlemagne",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03610c.htm",
+    "summary": "On Christmas Day, 800 AD, Pope Leo III crowned Charlemagne as Holy Roman Emperor in St. Peter's Basilica in Rome. This event marked the revival of the Western Roman Empire and established the precedent of papal coronation of emperors. It also strengthened the relationship between the papacy and the Frankish kingdom, creating a new political and religious order in Western Europe.",
+    "keyDocuments": []
+  }
+]

@@ -1,0 +1,527 @@
+[
+  {
+    "id": "vincent-de-paul",
+    "name": "St. Vincent de Paul",
+    "birthYear": 1581,
+    "deathYear": 1660,
+    "feastDay": "September 27",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "founder",
+      "Doctor of Charity"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "paris",
+        "description": "Founded the Congregation of the Mission and Daughters of Charity in Paris"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Vincent_de_Paul",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15434c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Vincent_de_Paul.PNG/330px-Vincent_de_Paul.PNG",
+    "summary": "Vincent de Paul was a French Catholic priest who dedicated his life to serving the poor. He founded the Congregation of the Mission (Vincentians) and, with St. Louise de Marillac, co-founded the Daughters of Charity. He organized charitable works throughout France, including care for the sick, education of the poor, and ransoming of galley slaves. He is known as the 'Apostle of Charity' and is the patron saint of charitable societies.",
+    "keyQuotes": [
+      "It is not enough for me to love God if I do not love my neighbor.",
+      "The poor have been my masters and I am their servant."
+    ]
+  },
+  {
+    "id": "louise-de-marillac",
+    "name": "St. Louise de Marillac",
+    "birthYear": 1591,
+    "deathYear": 1660,
+    "feastDay": "March 15",
+    "primaryTradition": "Latin",
+    "roles": [
+      "founder",
+      "religious"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "paris",
+        "description": "Co-founded the Daughters of Charity in Paris"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Louise_de_Marillac",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09337a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Louise_de_Marillac_Le_Gras._Line_engraving_by_Sisco._Wellcome_L0006155.jpg/330px-Louise_de_Marillac_Le_Gras._Line_engraving_by_Sisco._Wellcome_L0006155.jpg",
+    "summary": "Louise de Marillac was a French widow who, together with St. Vincent de Paul, co-founded the Daughters of Charity, the first non-cloistered religious community of women. She organized the community to serve the poor and sick in their homes, breaking with the tradition that religious women must be cloistered. She is the patron saint of social workers and is considered a pioneer in modern social work.",
+    "keyQuotes": [
+      "Love the poor and honor them as you would honor Christ himself."
+    ]
+  },
+  {
+    "id": "francis-de-sales",
+    "name": "St. Francis de Sales",
+    "birthYear": 1567,
+    "deathYear": 1622,
+    "feastDay": "January 24",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "Doctor of the Church",
+      "founder"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "geneva",
+        "description": "Bishop of Geneva"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_de_Sales",
+    "newAdventUrl": "https://www.newadvent.org/cathen/06220a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ch%C3%A2teau_de_Bussy-Rabutin_-_Saint_Fran%C3%A7ois_de_Sales%2C_%C3%A9v%C3%AAque_de_Gen%C3%A8ve_%28bgw19_0375%29_%28cropped%29.jpg/330px-Ch%C3%A2teau_de_Bussy-Rabutin_-_Saint_Fran%C3%A7ois_de_Sales%2C_%C3%A9v%C3%AAque_de_Gen%C3%A8ve_%28bgw19_0375%29_%28cropped%29.jpg",
+    "summary": "Francis de Sales was Bishop of Geneva and a Doctor of the Church. He is best known for his writings on spiritual direction and the spiritual life, particularly 'Introduction to the Devout Life' and 'Treatise on the Love of God.' He co-founded the Visitation Order with St. Jane Frances de Chantal. He emphasized that holiness is possible for everyone, not just those in religious life, and his gentle, practical approach to spirituality influenced many.",
+    "keyQuotes": [
+      "Be who you are and be that well.",
+      "Nothing is so strong as gentleness, nothing so gentle as real strength."
+    ],
+    "writings": [
+      {
+        "title": "Introduction to the Devout Life",
+        "url": "https://www.ccel.org/ccel/desales/devout_life.html"
+      },
+      {
+        "title": "Treatise on the Love of God",
+        "url": "https://www.ccel.org/ccel/desales/love_god.html"
+      }
+    ]
+  },
+  {
+    "id": "jane-frances-de-chantal",
+    "name": "St. Jane Frances de Chantal",
+    "birthYear": 1572,
+    "deathYear": 1641,
+    "feastDay": "August 12",
+    "primaryTradition": "Latin",
+    "roles": [
+      "founder",
+      "religious"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "annecy",
+        "description": "Co-founded the Visitation Order in Annecy"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Jane_Frances_de_Chantal",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08274a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sainte_Jeanne-Fran%C3%A7oise_Fr%C3%A9myot_de_Chantal.jpg/330px-Sainte_Jeanne-Fran%C3%A7oise_Fr%C3%A9myot_de_Chantal.jpg",
+    "summary": "Jane Frances de Chantal was a French noblewoman who, after being widowed, co-founded the Visitation of Holy Mary (Visitation Order) with St. Francis de Sales. The order was unique in accepting women who were older or in poor health, who would not have been accepted by other religious communities. She was known for her deep spirituality, charity, and devotion to the poor.",
+    "keyQuotes": []
+  },
+  {
+    "id": "margaret-mary-alacoque",
+    "name": "St. Margaret Mary Alacoque",
+    "birthYear": 1647,
+    "deathYear": 1690,
+    "feastDay": "October 16",
+    "primaryTradition": "Latin",
+    "roles": [
+      "religious",
+      "mystic"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "paray-le-monial",
+        "description": "Visitation nun who received visions of the Sacred Heart"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Margaret_Mary_Alacoque",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09653a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Marguerite-Marie_Alacoque.jpg/330px-Marguerite-Marie_Alacoque.jpg",
+    "summary": "Margaret Mary Alacoque was a French Visitation nun who received visions of Jesus Christ revealing his Sacred Heart between 1673 and 1675. These apparitions led to the establishment of the devotion to the Sacred Heart of Jesus, including the First Friday devotions and the Feast of the Sacred Heart. Initially met with skepticism, her visions were eventually recognized by the Church, and the devotion became one of the most popular in Catholicism.",
+    "keyQuotes": [
+      "Behold this Heart which has loved men so much, and yet men do not want to love Me in return."
+    ]
+  },
+  {
+    "id": "john-eudes",
+    "name": "St. John Eudes",
+    "birthYear": 1601,
+    "deathYear": 1680,
+    "feastDay": "August 19",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "founder"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "caen",
+        "description": "Founded the Congregation of Jesus and Mary and the Sisters of Our Lady of Charity"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Eudes",
+    "newAdventUrl": "https://www.newadvent.org/cathen/05623a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/JeanEudes.png/330px-JeanEudes.png",
+    "summary": "John Eudes was a French priest and founder of the Congregation of Jesus and Mary (Eudists) and the Sisters of Our Lady of Charity of the Refuge. He was a prominent preacher and missionary who worked to reform the clergy and establish seminaries. He promoted devotion to the Sacred Hearts of Jesus and Mary and is considered a precursor to the devotion to the Sacred Heart that would be popularized by St. Margaret Mary Alacoque.",
+    "keyQuotes": []
+  },
+  {
+    "id": "isaac-jogues",
+    "name": "St. Isaac Jogues",
+    "birthYear": 1607,
+    "deathYear": 1646,
+    "feastDay": "October 19",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "missionary",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "new-france",
+        "description": "Jesuit missionary to the Huron and Iroquois peoples"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Isaac_Jogues",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08264a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Father_Isaac_Jogues_S.J.jpg/330px-Father_Isaac_Jogues_S.J.jpg",
+    "summary": "Isaac Jogues was a French Jesuit missionary who worked among the Huron and Iroquois peoples in what is now Canada and upstate New York. He was captured, tortured, and enslaved by the Mohawk, but eventually escaped and returned to France. He chose to return to North America to continue his mission and was martyred by the Mohawk in 1646. He is one of the North American Martyrs, canonized in 1930.",
+    "keyQuotes": [
+      "I do not fear death or torture. I do not know why, but I feel extraordinarily strong in God."
+    ]
+  },
+  {
+    "id": "jean-de-brebeuf",
+    "name": "St. Jean de Brébeuf",
+    "birthYear": 1593,
+    "deathYear": 1649,
+    "feastDay": "October 19",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "missionary",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "new-france",
+        "description": "Jesuit missionary to the Huron people"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Jean_de_Br%C3%A9beuf",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02747a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Br%C3%A9buef-jesuits04jesuuoft.jpg/321px-Br%C3%A9buef-jesuits04jesuuoft.jpg",
+    "summary": "Jean de Brébeuf was a French Jesuit missionary who worked among the Huron people in New France (present-day Canada). He learned the Huron language and wrote a Huron dictionary and catechism. He was known for his physical strength and endurance, which earned him the Huron name 'Echon.' He was captured and martyred by the Iroquois in 1649, suffering brutal torture. He is one of the North American Martyrs.",
+    "keyQuotes": [
+      "For two days now I have experienced a great desire to be a martyr and to endure all the torments the martyrs suffered."
+    ]
+  },
+  {
+    "id": "rose-of-lima",
+    "name": "St. Rose of Lima",
+    "birthYear": 1586,
+    "deathYear": 1617,
+    "feastDay": "August 23",
+    "primaryTradition": "Latin",
+    "roles": [
+      "religious",
+      "mystic"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "lima",
+        "description": "First saint of the Americas, lived in Lima, Peru"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Rose_of_Lima",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13192c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Sta_Rosa_de_Lima_por_Claudio_Coello.jpg/330px-Sta_Rosa_de_Lima_por_Claudio_Coello.jpg",
+    "summary": "Rose of Lima was a Peruvian lay Dominican who is the first person born in the Americas to be canonized as a saint. She lived a life of intense prayer, fasting, and penance in her parents' home in Lima. She was known for her care of the sick and poor, her mystical experiences, and her devotion to the Infant Jesus. She is the patron saint of Peru, the Americas, and the Philippines.",
+    "keyQuotes": [
+      "Lord, increase my sufferings, and with them increase Your love in my heart."
+    ]
+  },
+  {
+    "id": "martin-de-porres",
+    "name": "St. Martin de Porres",
+    "birthYear": 1579,
+    "deathYear": 1639,
+    "feastDay": "November 3",
+    "primaryTradition": "Latin",
+    "roles": [
+      "religious",
+      "lay brother"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "lima",
+        "description": "Dominican lay brother in Lima, Peru"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Martin_de_Porres",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09737a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/San_Martin_de_Porres_huaycan.jpg/330px-San_Martin_de_Porres_huaycan.jpg",
+    "summary": "Martin de Porres was a Peruvian Dominican lay brother of mixed race (African and Spanish). Despite facing discrimination due to his mixed heritage, he became known for his humility, charity, and care for the sick and poor. He established an orphanage and children's hospital and was known for his miraculous abilities, including bilocation and healing. He is the patron saint of mixed-race people, barbers, and public health workers.",
+    "keyQuotes": [
+      "I cure them, not I, but God who cures through me."
+    ]
+  },
+  {
+    "id": "peter-claver",
+    "name": "St. Peter Claver",
+    "birthYear": 1580,
+    "deathYear": 1654,
+    "feastDay": "September 9",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "missionary"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "cartagena",
+        "description": "Jesuit missionary to enslaved Africans in Cartagena"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Claver",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11763a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/StPeterClaver.jpg",
+    "summary": "Peter Claver was a Spanish Jesuit priest who dedicated his life to serving enslaved Africans in Cartagena, Colombia. He met slave ships as they arrived, bringing food, medicine, and comfort to the newly arrived captives. He baptized over 300,000 enslaved people and worked tirelessly to improve their conditions. He is the patron saint of slaves, African missions, and interracial justice.",
+    "keyQuotes": [
+      "We must speak to them with our hands before we speak to them with our lips."
+    ]
+  },
+  {
+    "id": "robert-bellarmine",
+    "name": "St. Robert Bellarmine",
+    "birthYear": 1542,
+    "deathYear": 1621,
+    "feastDay": "September 17",
+    "primaryTradition": "Latin",
+    "roles": [
+      "cardinal",
+      "theologian",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Cardinal and theologian in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Robert_Bellarmine",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02411d.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Portret_van_kardinaal_Robertus_Bellarminus%2C_onbekend%2C_schilderij%2C_Museum_Plantin-Moretus_%28Antwerpen%29_-_MPM_V_IV_110_%28cropped%29.jpg/330px-Portret_van_kardinaal_Robertus_Bellarminus%2C_onbekend%2C_schilderij%2C_Museum_Plantin-Moretus_%28Antwerpen%29_-_MPM_V_IV_110_%28cropped%29.jpg",
+    "summary": "Robert Bellarmine was an Italian Jesuit cardinal, theologian, and Doctor of the Church. He was one of the most important Catholic apologists during the Counter-Reformation. His three-volume 'Disputations on the Controversies of the Christian Faith' was a comprehensive defense of Catholic doctrine against Protestant arguments. He was involved in the Galileo affair, though he treated Galileo with respect. He is the patron saint of catechists and catechumens.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "Disputations on the Controversies of the Christian Faith",
+        "url": "https://www.ccel.org/ccel/bellarmine/controversies.html"
+      }
+    ]
+  },
+  {
+    "id": "laurence-of-brindisi",
+    "name": "St. Laurence of Brindisi",
+    "birthYear": 1559,
+    "deathYear": 1619,
+    "feastDay": "July 21",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "brindisi",
+        "description": "Capuchin friar and preacher"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Lawrence_of_Brindisi",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09095a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/San_Lorenzo_da_Brindisi.jpg/330px-San_Lorenzo_da_Brindisi.jpg",
+    "summary": "Laurence of Brindisi was an Italian Capuchin friar, preacher, and Doctor of the Church. He was a gifted linguist, speaking multiple languages, and was a powerful preacher who traveled throughout Europe. He served as a diplomat and military chaplain, and his preaching was credited with helping to rally Christian forces against the Ottoman Empire. He wrote extensively on theology and biblical exegesis.",
+    "keyQuotes": []
+  },
+  {
+    "id": "alphonsus-rodriguez",
+    "name": "St. Alphonsus Rodriguez",
+    "birthYear": 1532,
+    "deathYear": 1617,
+    "feastDay": "October 30",
+    "primaryTradition": "Latin",
+    "roles": [
+      "religious",
+      "lay brother"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "majorca",
+        "description": "Jesuit lay brother and porter in Majorca"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Alphonsus_Rodriguez",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13135a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Alphonse_Rodriguez%2C_After_Anton_Wierix_II_%28ca_1552_-_ca_1624%29.jpg/330px-Alphonse_Rodriguez%2C_After_Anton_Wierix_II_%28ca_1552_-_ca_1624%29.jpg",
+    "summary": "Alphonsus Rodriguez was a Spanish Jesuit lay brother who served as a porter (doorkeeper) at a Jesuit college in Majorca for 46 years. Despite his humble position, he became known for his holiness, wisdom, and spiritual direction. He mentored St. Peter Claver and influenced many through his simple, prayerful life. He is the patron saint of Jesuit brothers.",
+    "keyQuotes": [
+      "I will try to allow nothing to enter my heart but God alone."
+    ]
+  },
+  {
+    "id": "camillus-de-lellis",
+    "name": "St. Camillus de Lellis",
+    "birthYear": 1550,
+    "deathYear": 1614,
+    "feastDay": "July 14",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "founder"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Founded the Ministers of the Sick (Camillians) in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Camillus_de_Lellis",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03217b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Lellis2.jpg/330px-Lellis2.jpg",
+    "summary": "Camillus de Lellis was an Italian priest who founded the Ministers of the Sick (Camillians), a religious order dedicated to caring for the sick. After a life as a soldier and gambler, he converted and dedicated himself to serving the sick and dying. He established hospitals and organized care for plague victims. He is the patron saint of the sick, hospitals, and nurses.",
+    "keyQuotes": [
+      "Think well. Speak well. Do well. These three things, through the mercy of God, will make a man go to Heaven."
+    ]
+  },
+  {
+    "id": "joseph-calasanz",
+    "name": "St. Joseph Calasanz",
+    "birthYear": 1557,
+    "deathYear": 1648,
+    "feastDay": "August 25",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "founder"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Founded the Piarists (Order of Poor Clerics Regular of the Mother of God of the Pious Schools) in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Joseph_Calasanz",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03179a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/San_Jos%C3%A9_de_Calasanz_%28Museo_del_Prado%29.jpg/330px-San_Jos%C3%A9_de_Calasanz_%28Museo_del_Prado%29.jpg",
+    "summary": "Joseph Calasanz was a Spanish priest who founded the Piarists, the first religious order dedicated to providing free education to poor children. He established the first free public school in Europe in Rome in 1597. He believed that education was essential for the poor and worked tirelessly to provide quality education regardless of social class. He is the patron saint of Catholic schools.",
+    "keyQuotes": [
+      "All who undertake to teach must be endowed with deep love, the greatest patience, and, most of all, profound humility."
+    ]
+  },
+  {
+    "id": "matteo-ricci",
+    "name": "Matteo Ricci",
+    "birthYear": 1552,
+    "deathYear": 1610,
+    "feastDay": null,
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "missionary"
+    ],
+    "orthodoxyStatus": "secular",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "beijing",
+        "description": "Jesuit missionary to China, established mission in Beijing"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Matteo_Ricci",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13034a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Ricciportrait.jpg/330px-Ricciportrait.jpg",
+    "summary": "Matteo Ricci was an Italian Jesuit priest and one of the founding figures of the Jesuit China missions. He learned Chinese and adopted Chinese customs, becoming the first European to enter the Forbidden City of Beijing. He introduced Western science, mathematics, and astronomy to China while attempting to present Christianity in terms compatible with Chinese culture. His approach influenced the Chinese Rites Controversy.",
+    "keyQuotes": []
+  },
+  {
+    "id": "marie-of-the-incarnation",
+    "name": "St. Marie of the Incarnation",
+    "birthYear": 1599,
+    "deathYear": 1672,
+    "feastDay": "April 30",
+    "primaryTradition": "Latin",
+    "roles": [
+      "religious",
+      "missionary",
+      "founder"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "quebec",
+        "description": "Ursuline nun and missionary, founded first school for girls in New France"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Marie_of_the_Incarnation_(Ursuline)",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09660a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Portrait_de_M%C3%A8re_Marie_de_l%27Incarnation.jpg/330px-Portrait_de_M%C3%A8re_Marie_de_l%27Incarnation.jpg",
+    "summary": "Marie of the Incarnation was a French Ursuline nun who founded the first school for girls in New France (Quebec). She learned indigenous languages and worked to educate both French and Native American girls. She wrote extensively about her mystical experiences and the early history of New France. She is considered one of the most important figures in the early Catholic Church in Canada.",
+    "keyQuotes": []
+  },
+  {
+    "id": "kateri-tekakwitha",
+    "name": "St. Kateri Tekakwitha",
+    "birthYear": 1656,
+    "deathYear": 1680,
+    "feastDay": "July 14",
+    "primaryTradition": "Latin",
+    "roles": [
+      "lay person",
+      "mystic"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "new-france",
+        "description": "Mohawk-Algonquin laywoman, first Native American saint"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Kateri_Tekakwitha",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14471a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/CatherinaeTekakwithaVirginis1690.jpg/330px-CatherinaeTekakwithaVirginis1690.jpg",
+    "summary": "Kateri Tekakwitha was a Mohawk-Algonquin woman who converted to Catholicism and became known for her intense devotion and asceticism. Orphaned and disfigured by smallpox, she was baptized at age 20 and moved to a Christian Mohawk community. She lived a life of prayer, penance, and care for the sick and elderly. She is the first Native American to be canonized and is the patron saint of ecology, the environment, and Native Americans.",
+    "keyQuotes": [
+      "Who will teach me what is most pleasing to God, that I may do it?"
+    ]
+  }
+]

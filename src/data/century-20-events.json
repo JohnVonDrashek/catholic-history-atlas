@@ -1,0 +1,203 @@
+[
+  {
+    "id": "vatican-ii",
+    "name": "Second Vatican Council",
+    "startYear": 1962,
+    "endYear": 1965,
+    "type": "council",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Second_Vatican_Council",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15303a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Petersdom_von_Engelsburg_gesehen.jpg/330px-Petersdom_von_Engelsburg_gesehen.jpg",
+    "summary": "The Second Vatican Council, commonly known as Vatican II, was the 21st ecumenical council of the Catholic Church. It was convened by Pope John XXIII in 1962 and continued under Pope Paul VI until 1965. The council brought about the most significant changes to Catholic liturgy, theology, and practice since the Council of Trent, including the Mass in vernacular languages, greater emphasis on the role of the laity, ecumenism, and religious freedom.",
+    "keyDocuments": [
+      "Sacrosanctum Concilium - Constitution on the Sacred Liturgy",
+      "Lumen Gentium - Dogmatic Constitution on the Church",
+      "Dei Verbum - Dogmatic Constitution on Divine Revelation",
+      "Gaudium et Spes - Pastoral Constitution on the Church in the Modern World",
+      "Dignitatis Humanae - Declaration on Religious Freedom",
+      "Nostra Aetate - Declaration on the Relation of the Church to Non-Christian Religions"
+    ]
+  },
+  {
+    "id": "modernist-crisis",
+    "name": "Modernist Crisis",
+    "startYear": 1907,
+    "endYear": 1910,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Modernism_in_the_Catholic_Church",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10415a.htm",
+    "summary": "The Modernist Crisis was a period of conflict within the Catholic Church in the early 20th century. Pope Pius X issued the encyclical Pascendi dominici gregis in 1907, condemning Modernism as 'the synthesis of all heresies.' The crisis led to the implementation of anti-Modernist oaths and restrictions on biblical scholarship and theological education.",
+    "keyDocuments": [
+      "Pascendi dominici gregis",
+      "Lamentabili sane exitu"
+    ]
+  },
+  {
+    "id": "code-canon-law-1917",
+    "name": "1917 Code of Canon Law",
+    "startYear": 1917,
+    "endYear": 1917,
+    "type": "reform",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/1917_Code_of_Canon_Law",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02347a.htm",
+    "summary": "The 1917 Code of Canon Law was the first comprehensive codification of Catholic canon law. It was promulgated by Pope Benedict XV and compiled under the direction of Cardinal Pietro Gasparri. This code systematized centuries of canonical legislation and remained in effect until it was replaced by the 1983 Code of Canon Law.",
+    "keyDocuments": [
+      "Codex Iuris Canonici (1917)"
+    ]
+  },
+  {
+    "id": "benedict-xv-peace-efforts",
+    "name": "Benedict XV's Peace Efforts",
+    "startYear": 1914,
+    "endYear": 1922,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Benedict_XV",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02429a.htm",
+    "summary": "Pope Benedict XV made extensive efforts to end World War I and promote peace. He issued the encyclical Ad beatissimi Apostolorum in 1914 calling for peace and neutrality. Throughout the war, he worked as a mediator, provided humanitarian aid, and condemned the conflict as 'the suicide of civilized Europe.' His peace plan in 1917, though rejected by warring parties, foreshadowed future peace initiatives.",
+    "keyDocuments": [
+      "Ad beatissimi Apostolorum",
+      "Dès le début (1917 Peace Proposal)"
+    ]
+  },
+  {
+    "id": "quadragesimo-anno",
+    "name": "Quadragesimo Anno",
+    "startYear": 1931,
+    "endYear": 1931,
+    "type": "reform",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Quadragesimo_anno",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12589a.htm",
+    "summary": "Quadragesimo Anno was an encyclical issued by Pope Pius XI in 1931, on the 40th anniversary of Pope Leo XIII's Rerum Novarum. It addressed social justice, the distribution of wealth, and the rights and duties of capital and labor. The encyclical introduced the principle of subsidiarity and called for reconstruction of the social order based on Christian principles.",
+    "keyDocuments": [
+      "Quadragesimo Anno"
+    ]
+  },
+  {
+    "id": "mit-brennender-sorge",
+    "name": "Mit brennender Sorge",
+    "startYear": 1937,
+    "endYear": 1937,
+    "type": "persecution",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Mit_brennender_Sorge",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10405a.htm",
+    "summary": "Mit brennender Sorge (With Burning Concern) was an encyclical issued by Pope Pius XI in 1937, condemning Nazi ideology and violations of the Reichskonkordat. It was read from Catholic pulpits across Germany and denounced the persecution of the Church and violations of human rights. The encyclical was a rare public condemnation of Nazi policies by the Church.",
+    "keyDocuments": [
+      "Mit brennender Sorge"
+    ]
+  },
+  {
+    "id": "holocaust-catholic-response",
+    "name": "Catholic Response to the Holocaust",
+    "startYear": 1933,
+    "endYear": 1945,
+    "type": "persecution",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Catholic_Church_and_the_Holocaust",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08385a.htm",
+    "summary": "During the Holocaust, many Catholics, including clergy and religious, risked their lives to save Jews from persecution. Individual Catholics and religious orders hid Jews, provided false documents, and helped them escape. However, the institutional response of the Church hierarchy remains a subject of historical debate, with questions about whether more could have been done to publicly condemn and resist the genocide.",
+    "keyDocuments": []
+  },
+  {
+    "id": "humani-generis",
+    "name": "Humani Generis",
+    "startYear": 1950,
+    "endYear": 1950,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Humani_generis",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07565a.htm",
+    "summary": "Humani Generis was an encyclical issued by Pope Pius XII in 1950 that addressed certain false opinions threatening Catholic doctrine. It cautioned against theological errors while also affirming that evolution could be compatible with Catholic teaching when properly understood. The encyclical addressed issues related to modern biblical scholarship, evolution, and existentialist philosophy.",
+    "keyDocuments": [
+      "Humani Generis"
+    ]
+  },
+  {
+    "id": "munificentissimus-deus",
+    "name": "Dogma of the Assumption",
+    "startYear": 1950,
+    "endYear": 1950,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Assumption_of_Mary",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02006b.htm",
+    "summary": "In 1950, Pope Pius XII defined the dogma of the Assumption of Mary in the apostolic constitution Munificentissimus Deus. This declared as a divinely revealed dogma that the Immaculate Mother of God, the ever Virgin Mary, having completed the course of her earthly life, was assumed body and soul into heavenly glory.",
+    "keyDocuments": [
+      "Munificentissimus Deus"
+    ]
+  },
+  {
+    "id": "pacem-in-terris",
+    "name": "Pacem in Terris",
+    "startYear": 1963,
+    "endYear": 1963,
+    "type": "reform",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pacem_in_terris",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11098a.htm",
+    "summary": "Pacem in Terris (Peace on Earth) was an encyclical issued by Pope John XXIII in 1963, addressed not only to Catholics but to 'all men of good will.' It was the first encyclical addressed to all people and focused on establishing universal peace in truth, justice, charity, and liberty. It addressed human rights, the relationship between individuals and the state, and international relations.",
+    "keyDocuments": [
+      "Pacem in Terris"
+    ]
+  },
+  {
+    "id": "humanae-vitae",
+    "name": "Humanae Vitae",
+    "startYear": 1968,
+    "endYear": 1968,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Humanae_vitae",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07563a.htm",
+    "summary": "Humanae Vitae (Of Human Life) was an encyclical issued by Pope Paul VI in 1968 that reaffirmed the Church's teaching on married love, responsible parenthood, and the rejection of artificial contraception. The document was controversial and met with significant dissent, but it upheld the traditional Catholic position that contraception is intrinsically wrong.",
+    "keyDocuments": [
+      "Humanae Vitae"
+    ]
+  },
+  {
+    "id": "1978-year-three-popes",
+    "name": "Year of Three Popes",
+    "startYear": 1978,
+    "endYear": 1978,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/1978_papal_conclaves",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03647a.htm",
+    "summary": "1978 became known as the 'Year of Three Popes' when three different men served as pope within the same year. Pope Paul VI died in August, and Pope John Paul I was elected but died just 33 days later. Cardinal Karol Wojtyła was then elected as Pope John Paul II, the first non-Italian pope in over 450 years and the first Polish pope in history.",
+    "keyDocuments": []
+  },
+  {
+    "id": "1983-code-canon-law",
+    "name": "1983 Code of Canon Law",
+    "startYear": 1983,
+    "endYear": 1983,
+    "type": "reform",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/1983_Code_of_Canon_Law",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02347a.htm",
+    "summary": "The 1983 Code of Canon Law replaced the 1917 Code and was promulgated by Pope John Paul II. It incorporated the reforms and spirit of the Second Vatican Council, emphasizing the Church as the People of God, the role of the laity, collegiality, and the rights and duties of all the faithful. It remains the current code of canon law for the Latin Church.",
+    "keyDocuments": [
+      "Codex Iuris Canonici (1983)"
+    ]
+  },
+  {
+    "id": "catechism-catholic-church",
+    "name": "Catechism of the Catholic Church",
+    "startYear": 1992,
+    "endYear": 1992,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Catechism_of_the_Catholic_Church",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03435a.htm",
+    "summary": "The Catechism of the Catholic Church was promulgated by Pope John Paul II in 1992. It is a comprehensive summary of Catholic doctrine, intended to serve as a reference for bishops and other teachers of the faith. It was the first universal catechism in over 400 years and was updated in 1997 with the addition of modifications.",
+    "keyDocuments": [
+      "Catechism of the Catholic Church"
+    ]
+  }
+]
+

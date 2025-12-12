@@ -1,0 +1,96 @@
+[
+  {
+    "id": "thirty-years-war",
+    "name": "Thirty Years' War",
+    "startYear": 1618,
+    "endYear": 1648,
+    "type": "other",
+    "locationId": "prague",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14648a.htm",
+    "summary": "The Thirty Years' War was a devastating conflict that began as a religious war between Catholics and Protestants in the Holy Roman Empire. It eventually involved most of the major European powers and resulted in massive destruction and loss of life. The war ended with the Peace of Westphalia, which established the principle of cuius regio, eius religio (whose realm, his religion) and significantly altered the religious and political landscape of Europe.",
+    "keyDocuments": [
+      "Peace of Westphalia (1648)"
+    ]
+  },
+  {
+    "id": "jansenism-rise",
+    "name": "Rise of Jansenism",
+    "startYear": 1640,
+    "endYear": 1653,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Jansenism",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08285a.htm",
+    "summary": "Jansenism was a theological movement within Catholicism, particularly in France, that emphasized original sin, human depravity, the necessity of divine grace, and predestination. Named after Cornelius Jansen, Bishop of Ypres, it was condemned by Pope Innocent X in 1653. The controversy continued for decades and involved figures such as Blaise Pascal and the Port-Royal community.",
+    "keyDocuments": [
+      "Augustinus (Cornelius Jansen, 1640)",
+      "Cum occasione (Innocent X, 1653)"
+    ]
+  },
+  {
+    "id": "chinese-rites-controversy",
+    "name": "Chinese Rites Controversy",
+    "startYear": 1645,
+    "endYear": 1742,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Chinese_Rites_controversy",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13055a.htm",
+    "summary": "The Chinese Rites Controversy was a dispute within the Catholic Church over whether Chinese customs and practices, particularly ancestor veneration and Confucian ceremonies, were compatible with Christianity. The controversy involved Jesuit missionaries who argued for accommodation of Chinese culture, and Dominicans and Franciscans who opposed it. The dispute lasted for nearly a century and significantly impacted Catholic missions in China.",
+    "keyDocuments": [
+      "Ex illa die (Clement XI, 1715)"
+    ]
+  },
+  {
+    "id": "apparitions-paray",
+    "name": "Apparitions of the Sacred Heart to St. Margaret Mary",
+    "startYear": 1673,
+    "endYear": 1675,
+    "type": "other",
+    "locationId": "lyons",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Margaret_Mary_Alacoque",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09653a.htm",
+    "summary": "Between 1673 and 1675, St. Margaret Mary Alacoque, a Visitation nun in Paray-le-Monial, France, received a series of visions of Jesus Christ revealing his Sacred Heart. These apparitions emphasized Christ's love for humanity and led to the establishment of the Feast of the Sacred Heart and the practice of First Friday devotions. The devotion spread throughout the Catholic world and became one of the most popular devotions in the Church.",
+    "keyDocuments": []
+  },
+  {
+    "id": "north-american-martyrs",
+    "name": "Martyrdom of North American Martyrs",
+    "startYear": 1642,
+    "endYear": 1649,
+    "type": "persecution",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Canadian_Martyrs",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10046a.htm",
+    "summary": "Eight Jesuit missionaries, known as the North American Martyrs or Canadian Martyrs, were killed by Iroquois warriors in what is now Canada and upstate New York. They included St. Isaac Jogues, St. Jean de Brébeuf, and six others. Their martyrdom occurred during the period of French colonization and Jesuit missions to the indigenous peoples of North America. They were canonized in 1930.",
+    "keyDocuments": []
+  },
+  {
+    "id": "congregation-propaganda-fide",
+    "name": "Foundation of Congregation for the Propagation of the Faith",
+    "startYear": 1622,
+    "endYear": 1622,
+    "type": "reform",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Congregation_for_the_Evangelization_of_Peoples",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12456a.htm",
+    "summary": "Pope Gregory XV established the Congregation for the Propagation of the Faith (Congregatio de Propaganda Fide) to coordinate and oversee Catholic missionary activities worldwide. This was a significant development in the Church's missionary organization and helped systematize the spread of Catholicism to the Americas, Asia, and Africa during the Age of Discovery.",
+    "keyDocuments": []
+  },
+  {
+    "id": "edict-nantes-revocation",
+    "name": "Revocation of the Edict of Nantes",
+    "startYear": 1685,
+    "endYear": 1685,
+    "type": "persecution",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Edict_of_Fontainebleau",
+    "newAdventUrl": "https://www.newadvent.org/cathen/05377a.htm",
+    "summary": "King Louis XIV of France revoked the Edict of Nantes, which had granted religious freedom to French Protestants (Huguenots) since 1598. The revocation led to the destruction of Protestant churches, forced conversions, and the emigration of hundreds of thousands of Huguenots. While this was a political act by the French monarchy, it had significant religious and social consequences throughout Europe.",
+    "keyDocuments": [
+      "Edict of Fontainebleau (1685)"
+    ]
+  }
+]
+

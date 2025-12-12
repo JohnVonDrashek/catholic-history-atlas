@@ -1,0 +1,512 @@
+[
+  {
+    "id": "ignatius-loyola",
+    "name": "St. Ignatius of Loyola",
+    "birthYear": 1491,
+    "deathYear": 1556,
+    "feastDay": "July 31",
+    "primaryTradition": "Latin",
+    "roles": [
+      "founder",
+      "priest",
+      "mystic"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Founded the Society of Jesus in Rome"
+      },
+      {
+        "placeId": "paris",
+        "description": "Studied at the University of Paris"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ignatius_of_Loyola",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07639c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Ignatius_Loyola.jpg",
+    "summary": "Ignatius of Loyola was a Spanish Basque priest and theologian who founded the Society of Jesus (Jesuits) in 1540. After being wounded in battle, he experienced a profound conversion and dedicated his life to God. He wrote the Spiritual Exercises, one of the most influential works of Christian spirituality. The Jesuits became a major force in the Counter-Reformation, emphasizing education, missionary work, and obedience to the papacy.",
+    "keyQuotes": [
+      "Go forth and set the world on fire.",
+      "Pray as if everything depended on God; work as if everything depended on you."
+    ],
+    "writings": [
+      {
+        "title": "Spiritual Exercises",
+        "url": "https://www.ccel.org/ccel/ignatius/exercises.html"
+      },
+      {
+        "title": "Autobiography",
+        "url": "https://www.ccel.org/ccel/ignatius/autobiography.html"
+      }
+    ]
+  },
+  {
+    "id": "francis-xavier",
+    "name": "St. Francis Xavier",
+    "birthYear": 1506,
+    "deathYear": 1552,
+    "feastDay": "December 3",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "missionary"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "goa",
+        "description": "Missionary in Goa, India"
+      },
+      {
+        "placeId": "japan",
+        "description": "First Christian missionary to Japan"
+      },
+      {
+        "placeId": "malacca",
+        "description": "Missionary in Southeast Asia"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_Xavier",
+    "newAdventUrl": "https://www.newadvent.org/cathen/06233b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Franciscus_de_Xabier.jpg/330px-Franciscus_de_Xabier.jpg",
+    "summary": "Francis Xavier was one of the first seven Jesuits and a pioneering missionary to Asia. He traveled extensively throughout India, Southeast Asia, and Japan, baptizing thousands and establishing Christian communities. He is considered one of the greatest missionaries in Church history and is the patron saint of missionaries. He died on the island of Shangchuan while attempting to enter China.",
+    "keyQuotes": [
+      "It is not the actual physical exertion that counts toward a man's progress, nor the nature of the task, but the spirit of faith with which it is undertaken."
+    ],
+    "writings": [
+      {
+        "title": "Letters and Instructions",
+        "url": "https://www.ccel.org/ccel/xavier/letters.html"
+      }
+    ]
+  },
+  {
+    "id": "teresa-avila",
+    "name": "St. Teresa of Avila",
+    "birthYear": 1515,
+    "deathYear": 1582,
+    "feastDay": "October 15",
+    "primaryTradition": "Latin",
+    "roles": [
+      "nun",
+      "mystic",
+      "founder",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "avila",
+        "description": "Reformed the Carmelite Order in Avila"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Teresa_of_%C3%81vila",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14515b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Santa_Teresa_de_Jes%C3%BAs_%28Museo_del_Prado%29.jpg/330px-Santa_Teresa_de_Jes%C3%BAs_%28Museo_del_Prado%29.jpg",
+    "summary": "Teresa of Avila was a Spanish Carmelite nun, mystic, and reformer. She reformed the Carmelite Order, establishing the Discalced Carmelites with St. John of the Cross. She is one of only four women to be named a Doctor of the Church. Her mystical writings, including 'The Interior Castle' and 'The Way of Perfection,' are among the greatest works of Christian spirituality. She experienced profound mystical visions and ecstasies throughout her life.",
+    "keyQuotes": [
+      "Let nothing disturb you, let nothing frighten you. All things pass away: God never changes.",
+      "God alone suffices."
+    ],
+    "writings": [
+      {
+        "title": "The Interior Castle",
+        "url": "https://www.ccel.org/ccel/teresa/castle.html"
+      },
+      {
+        "title": "The Way of Perfection",
+        "url": "https://www.ccel.org/ccel/teresa/way.html"
+      },
+      {
+        "title": "The Life of Teresa of Jesus",
+        "url": "https://www.ccel.org/ccel/teresa/life.html"
+      }
+    ]
+  },
+  {
+    "id": "john-cross",
+    "name": "St. John of the Cross",
+    "birthYear": 1542,
+    "deathYear": 1591,
+    "feastDay": "December 14",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "mystic",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "avila",
+        "description": "Co-founder of the Discalced Carmelites"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_of_the_Cross",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08480a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Zurbar%C3%A1n_%28atribuido%29-John_of_the_Cross-1656.jpg/330px-Zurbar%C3%A1n_%28atribuido%29-John_of_the_Cross-1656.jpg",
+    "summary": "John of the Cross was a Spanish Carmelite priest, mystic, and poet who co-founded the Discalced Carmelites with St. Teresa of Avila. He is one of the 36 Doctors of the Church and is considered one of the greatest mystical theologians. His most famous work, 'The Dark Night of the Soul,' describes the spiritual journey of the soul toward union with God. He was imprisoned and mistreated by unreformed Carmelites but remained faithful to the reform.",
+    "keyQuotes": [
+      "In the evening of life, we will be judged on love alone.",
+      "Where there is no love, put love, and you will find love."
+    ],
+    "writings": [
+      {
+        "title": "The Dark Night of the Soul",
+        "url": "https://www.ccel.org/ccel/john_cross/dark_night.html"
+      },
+      {
+        "title": "The Ascent of Mount Carmel",
+        "url": "https://www.ccel.org/ccel/john_cross/ascent.html"
+      },
+      {
+        "title": "The Spiritual Canticle",
+        "url": "https://www.ccel.org/ccel/john_cross/canticle.html"
+      }
+    ]
+  },
+  {
+    "id": "philip-neri",
+    "name": "St. Philip Neri",
+    "birthYear": 1515,
+    "deathYear": 1595,
+    "feastDay": "May 26",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "founder"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Founded the Oratory in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Philip_Neri",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12019b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/FNeri.gif/330px-FNeri.gif",
+    "summary": "Philip Neri was an Italian priest known as the 'Apostle of Rome' and the 'Second Apostle of Rome' (after St. Peter). He founded the Congregation of the Oratory in 1575, a community of secular priests dedicated to prayer, preaching, and service. Known for his joy, humor, and love of the poor, he was a key figure in the Counter-Reformation. He is the patron saint of joy and is remembered for his ecstatic experiences of the Holy Spirit.",
+    "keyQuotes": [
+      "A joyful heart is more easily made perfect than a downcast one.",
+      "Cheerfulness strengthens the heart and makes us persevere in a good life."
+    ],
+    "writings": []
+  },
+  {
+    "id": "thomas-more",
+    "name": "St. Thomas More",
+    "birthYear": 1478,
+    "deathYear": 1535,
+    "feastDay": "June 22",
+    "primaryTradition": "Latin",
+    "roles": [
+      "martyr",
+      "statesman",
+      "scholar"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "london",
+        "description": "Lord Chancellor of England, martyred in London"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_More",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14689c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Hans_Holbein%2C_the_Younger_-_Sir_Thomas_More_-_Google_Art_Project.jpg/330px-Hans_Holbein%2C_the_Younger_-_Sir_Thomas_More_-_Google_Art_Project.jpg",
+    "summary": "Thomas More was an English lawyer, statesman, philosopher, and humanist who served as Lord Chancellor of England under Henry VIII. He is best known for his book 'Utopia' and for his martyrdom. When Henry VIII broke with Rome and declared himself head of the Church of England, More refused to take the Oath of Supremacy, choosing death rather than compromise his Catholic faith. He was beheaded in 1535 and is the patron saint of lawyers and statesmen.",
+    "keyQuotes": [
+      "I die the king's good servant, but God's first.",
+      "The times are never so bad that a good man cannot live in them."
+    ],
+    "writings": [
+      {
+        "title": "Utopia",
+        "url": "https://www.ccel.org/ccel/more/utopia.html"
+      },
+      {
+        "title": "Dialogue of Comfort Against Tribulation",
+        "url": "https://www.ccel.org/ccel/more/comfort.html"
+      }
+    ]
+  },
+  {
+    "id": "john-fisher",
+    "name": "St. John Fisher",
+    "birthYear": 1469,
+    "deathYear": 1535,
+    "feastDay": "June 22",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "cardinal",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "london",
+        "description": "Bishop of Rochester, martyred in London"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Fisher",
+    "newAdventUrl": "https://www.newadvent.org/cathen/06078a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/San_Juan_Fisher_Obispo_de_Rochester_y_M%C3%A1rtir.jpg/330px-San_Juan_Fisher_Obispo_de_Rochester_y_M%C3%A1rtir.jpg",
+    "summary": "John Fisher was an English Catholic bishop, cardinal, and theologian. He was the Bishop of Rochester and Chancellor of the University of Cambridge. He was the only bishop in England to oppose Henry VIII's break with Rome and refusal to recognize the king as head of the Church of England. He was imprisoned in the Tower of London and beheaded in 1535, just two weeks before Thomas More. He was made a cardinal by Pope Paul III while in prison.",
+    "keyQuotes": [],
+    "writings": []
+  },
+  {
+    "id": "pius-v",
+    "name": "St. Pius V",
+    "birthYear": 1504,
+    "deathYear": 1572,
+    "feastDay": "April 30",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope (1566-1572)"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Pius_V",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12130a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bartolomeo_Passarotti_-_Pius_V.jpg/330px-Bartolomeo_Passarotti_-_Pius_V.jpg",
+    "summary": "Pius V was pope from 1566 to 1572 and was a key figure in the Counter-Reformation. A Dominican friar before his election, he was known for his personal holiness and strict enforcement of Church discipline. He published the Roman Catechism, the revised Roman Breviary, and the revised Roman Missal. He organized the Holy League that defeated the Ottoman fleet at the Battle of Lepanto in 1571, which he attributed to the intercession of the Blessed Virgin Mary.",
+    "keyQuotes": [],
+    "writings": []
+  },
+  {
+    "id": "charles-borromeo",
+    "name": "St. Charles Borromeo",
+    "birthYear": 1538,
+    "deathYear": 1584,
+    "feastDay": "November 4",
+    "primaryTradition": "Latin",
+    "roles": [
+      "archbishop",
+      "cardinal"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "milan",
+        "description": "Archbishop of Milan"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Charles_Borromeo",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03619a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Carlo_Borromeo.jpg/330px-Carlo_Borromeo.jpg",
+    "summary": "Charles Borromeo was an Italian cardinal and Archbishop of Milan. He was a leading figure in the Counter-Reformation and was instrumental in implementing the reforms of the Council of Trent. He established seminaries, reformed the clergy, and worked tirelessly for the poor and sick. During a plague in Milan, he personally cared for the victims. He is the patron saint of bishops, catechists, and seminarians.",
+    "keyQuotes": [
+      "Be sure that you first preach by the way you live."
+    ],
+    "writings": []
+  },
+  {
+    "id": "peter-canisius",
+    "name": "St. Peter Canisius",
+    "birthYear": 1521,
+    "deathYear": 1597,
+    "feastDay": "December 21",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "theologian",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "vienna",
+        "description": "Jesuit missionary and theologian in Austria"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Canisius",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11732c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Saint_Petrus_Canisius.jpg/330px-Saint_Petrus_Canisius.jpg",
+    "summary": "Peter Canisius was a Dutch Jesuit priest and theologian who was a key figure in the Counter-Reformation in Germany and Austria. He wrote three catechisms that became standard texts for teaching the Catholic faith. He founded colleges and universities throughout Central Europe and was known for his preaching and pastoral work. He is one of the 36 Doctors of the Church and is the patron saint of Germany.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "Catechism of Peter Canisius",
+        "url": "https://www.ccel.org/ccel/canisius/catechism.html"
+      }
+    ]
+  },
+  {
+    "id": "edmund-campion",
+    "name": "St. Edmund Campion",
+    "birthYear": 1540,
+    "deathYear": 1581,
+    "feastDay": "December 1",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "london",
+        "description": "Jesuit missionary, martyred in London"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Edmund_Campion",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03229b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Edmundus_Campion.jpg/330px-Edmundus_Campion.jpg",
+    "summary": "Edmund Campion was an English Jesuit priest and martyr. After converting to Catholicism, he joined the Jesuits and returned to England as a missionary during the reign of Elizabeth I. He was known for his eloquence and learning. He was captured, tortured, and executed at Tyburn in 1581. He is one of the Forty Martyrs of England and Wales and is remembered for his famous 'Brag' defending the Catholic faith.",
+    "keyQuotes": [
+      "In condemning us, you condemn all your own ancestors, all the ancient priests, bishops, and kings."
+    ],
+    "writings": []
+  },
+  {
+    "id": "francis-borgia",
+    "name": "St. Francis Borgia",
+    "birthYear": 1510,
+    "deathYear": 1572,
+    "feastDay": "October 10",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "superior general"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Third Superior General of the Jesuits"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_Borgia",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02699a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/San_Francisco_de_Borja.jpg/330px-San_Francisco_de_Borja.jpg",
+    "summary": "Francis Borgia was a Spanish Jesuit priest who became the third Superior General of the Society of Jesus. He was a member of the powerful Borgia family and had been Duke of Gandía before entering religious life. As Superior General, he expanded the Jesuits' educational and missionary work. He was known for his humility, despite his noble background, and for his administrative skills.",
+    "keyQuotes": [],
+    "writings": []
+  },
+  {
+    "id": "stanislaus-kostka",
+    "name": "St. Stanislaus Kostka",
+    "birthYear": 1550,
+    "deathYear": 1568,
+    "feastDay": "November 13",
+    "primaryTradition": "Latin",
+    "roles": [
+      "novice",
+      "patron"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Jesuit novice in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Stanislaus_Kostka",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14250a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Stanislaus_Kostka_Legros_n1.jpg/330px-Stanislaus_Kostka_Legros_n1.jpg",
+    "summary": "Stanislaus Kostka was a Polish Jesuit novice who died at the age of 18. Despite opposition from his noble family, he traveled on foot from Poland to Rome to join the Jesuits. He is known for his deep piety, devotion to the Eucharist, and visions of the Blessed Virgin Mary. He is the patron saint of Poland, students, and novices, and is particularly venerated by young people.",
+    "keyQuotes": [],
+    "writings": []
+  },
+  {
+    "id": "aloysius-gonzaga",
+    "name": "St. Aloysius Gonzaga",
+    "birthYear": 1568,
+    "deathYear": 1591,
+    "feastDay": "June 21",
+    "primaryTradition": "Latin",
+    "roles": [
+      "novice",
+      "patron"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Jesuit novice in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Aloysius_Gonzaga",
+    "newAdventUrl": "https://www.newadvent.org/cathen/06633c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/The_Vocation_of_Saint_Aloysius_Gonzaga.PNG/330px-The_Vocation_of_Saint_Aloysius_Gonzaga.PNG",
+    "summary": "Aloysius Gonzaga was an Italian Jesuit novice who died at the age of 23 while caring for victims of a plague in Rome. Despite being born into a noble family, he renounced his inheritance to join the Jesuits. He is known for his purity, devotion, and self-sacrifice. He is the patron saint of youth, students, and those suffering from AIDS and other serious illnesses.",
+    "keyQuotes": [
+      "I am a piece of twisted iron; I entered the religious life to get twisted straight."
+    ],
+    "writings": []
+  },
+  {
+    "id": "peter-faber",
+    "name": "Bl. Peter Faber",
+    "birthYear": 1506,
+    "deathYear": 1546,
+    "feastDay": "August 2",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "theologian"
+    ],
+    "orthodoxyStatus": "beatified",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "One of the first Jesuits, companion of Ignatius"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Faber",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11760a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Pierre_Favre%281%29.jpg/330px-Pierre_Favre%281%29.jpg",
+    "summary": "Peter Faber was a French Jesuit priest who was one of the first companions of St. Ignatius of Loyola and one of the first seven Jesuits. He was known for his skill in giving the Spiritual Exercises and for his work in Germany during the early years of the Reformation. He was a close friend of both Ignatius and Francis Xavier. He was beatified in 1872.",
+    "keyQuotes": [],
+    "writings": []
+  },
+  {
+    "id": "japanese-martyrs",
+    "name": "Twenty-Six Martyrs of Japan",
+    "birthYear": null,
+    "deathYear": 1597,
+    "feastDay": "February 6",
+    "primaryTradition": "Latin",
+    "roles": [
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "nagasaki",
+        "description": "Martyred in Nagasaki, Japan"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Twenty-Six_Martyrs_of_Japan",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10328a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Martyrdom-of-Paul-Miki-and-Companions-in-Nagasaki-%28made-c1635%29.png/330px-Martyrdom-of-Paul-Miki-and-Companions-in-Nagasaki-%28made-c1635%29.png",
+    "summary": "The Twenty-Six Martyrs of Japan were a group of Catholics who were executed by crucifixion in Nagasaki on February 5, 1597, by order of Toyotomi Hideyoshi. The group included six Franciscan missionaries (from Spain, Mexico, and India) and twenty Japanese converts, including three young boys. They were the first martyrs of Japan and marked the beginning of over two centuries of persecution. They were canonized in 1862.",
+    "keyQuotes": [],
+    "writings": []
+  }
+]

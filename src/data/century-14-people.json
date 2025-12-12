@@ -1,0 +1,330 @@
+[
+  {
+    "id": "catherine-siena",
+    "name": "St. Catherine of Siena",
+    "birthYear": 1347,
+    "deathYear": 1380,
+    "feastDay": "April 29",
+    "primaryTradition": "Latin",
+    "roles": [
+      "mystic",
+      "Doctor of the Church",
+      "tertiary"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Worked to end the Avignon Papacy and restore the papacy to Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_of_Siena",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03447a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Saint_Catherine_by_Andrea_Vanni%2C_San_Domenico%2C_Siena.jpg",
+    "summary": "Catherine of Siena was an Italian mystic, philosopher, and theologian who played a crucial role in ending the Avignon Papacy and returning the papacy to Rome. Despite being an uneducated woman, she corresponded with popes, cardinals, and rulers, offering spiritual counsel and political advice. She is one of the few women declared a Doctor of the Church and is the patron saint of Italy and Europe.",
+    "keyQuotes": [
+      "Be who God meant you to be and you will set the world on fire.",
+      "Nothing great is ever achieved without much enduring."
+    ],
+    "writings": [
+      {
+        "title": "The Dialogue of Divine Providence",
+        "url": "https://www.newadvent.org/fathers/3704.htm"
+      }
+    ]
+  },
+  {
+    "id": "bridget-sweden",
+    "name": "St. Bridget of Sweden",
+    "birthYear": 1303,
+    "deathYear": 1373,
+    "feastDay": "July 23",
+    "primaryTradition": "Latin",
+    "roles": [
+      "mystic",
+      "founder",
+      "visionary"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Lived in Rome and worked for Church reform"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Bridget_of_Sweden",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02782a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Saint_Bridget_of_Sweden.jpg",
+    "summary": "Bridget of Sweden was a Swedish noblewoman, mystic, and founder of the Bridgettine Order. After the death of her husband, she received visions of Christ and the Virgin Mary, which she recorded. She traveled to Rome to seek approval for her new religious order and worked for the return of the papacy from Avignon. She is one of the patron saints of Europe.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "Revelations of St. Bridget",
+        "url": "https://www.newadvent.org/cathen/02782a.htm"
+      }
+    ]
+  },
+  {
+    "id": "john-nepomuk",
+    "name": "St. John of Nepomuk",
+    "birthYear": 1345,
+    "deathYear": 1393,
+    "feastDay": "May 16",
+    "primaryTradition": "Latin",
+    "roles": [
+      "priest",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "prague",
+        "description": "Confessor and martyr in Prague"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_of_Nepomuk",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08475a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Saint_John_of_Nepomuk_statue_Charles_Bridge_Prague.JPG",
+    "summary": "John of Nepomuk was a Bohemian priest who was martyred by being thrown from the Charles Bridge in Prague. According to tradition, he was killed for refusing to reveal the secrets of the confessional of Queen Sophia of Bavaria to King Wenceslaus IV. He is the patron saint of the Czech Republic and protector against floods and drowning.",
+    "keyQuotes": []
+  },
+  {
+    "id": "boniface-viii",
+    "name": "Pope Boniface VIII",
+    "birthYear": 1230,
+    "deathYear": 1303,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "orthodox",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Boniface_VIII",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02662a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Bonifacio_viii_by_Arnolfo_Di_Cambio.jpg",
+    "summary": "Boniface VIII was Pope from 1294 to 1303. He issued the papal bull Unam Sanctam, which asserted the supremacy of the papacy over all temporal powers. His conflict with King Philip IV of France led to the humiliation at Anagni, where he was briefly imprisoned. His papacy marked the end of the medieval papacy's temporal power and preceded the Avignon Papacy.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "Unam Sanctam",
+        "url": "https://www.newadvent.org/cathen/15126a.htm"
+      }
+    ]
+  },
+  {
+    "id": "clement-v",
+    "name": "Pope Clement V",
+    "birthYear": 1264,
+    "deathYear": 1314,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "orthodox",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "lyons",
+        "description": "First Avignon Pope, began the Babylonian Captivity"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Clement_V",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04039a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Clemente_V_cappellone_degli_Spagnoli.JPG/330px-Clemente_V_cappellone_degli_Spagnoli.JPG",
+    "summary": "Clement V was Pope from 1305 to 1314. He was the first pope to move the papal court to Avignon, beginning what would become known as the Avignon Papacy or Babylonian Captivity. Under pressure from King Philip IV of France, he dissolved the Knights Templar and suppressed the order. He also convened the Council of Vienne.",
+    "keyQuotes": []
+  },
+  {
+    "id": "john-xxii",
+    "name": "Pope John XXII",
+    "birthYear": 1244,
+    "deathYear": 1334,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "orthodox",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "lyons",
+        "description": "Avignon Pope"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_John_XXII",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08423a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Jean_XXII_1316.JPG/330px-Jean_XXII_1316.JPG",
+    "summary": "John XXII was Pope from 1316 to 1334, the second Avignon pope. He is known for his controversial teachings on the Beatific Vision, which he initially held would not occur until after the Last Judgment, though he later recanted. He also opposed the Franciscan Spirituals and defended the Church's right to own property.",
+    "keyQuotes": []
+  },
+  {
+    "id": "urban-v",
+    "name": "Pope Bl. Urban V",
+    "birthYear": 1310,
+    "deathYear": 1370,
+    "feastDay": "December 19",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "blessed",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Briefly returned papacy to Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Urban_V",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15218a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Simone_dei_crocifissi%2C_urbano_V%2C_1375_ca.%2C_forse_dalla_cattedrale_di_s._pietro_01_%28cropped%29.jpg/330px-Simone_dei_crocifissi%2C_urbano_V%2C_1375_ca.%2C_forse_dalla_cattedrale_di_s._pietro_01_%28cropped%29.jpg",
+    "summary": "Urban V was Pope from 1362 to 1370. He was a Benedictine monk known for his piety and learning. Despite being an Avignon pope, he attempted to return the papacy to Rome in 1367, but political difficulties forced him to return to Avignon in 1370, where he died. He is venerated as Blessed.",
+    "keyQuotes": []
+  },
+  {
+    "id": "gregory-xi",
+    "name": "Pope Gregory XI",
+    "birthYear": 1329,
+    "deathYear": 1378,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "orthodox",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Last Avignon Pope, returned papacy to Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_XI",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07001a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Duke_of_Anjou_leading_Pope_Gregory_XI_to_the_palace_at_Avignon%2C_while_cardinals_follow_%28cropped%29.png",
+    "summary": "Gregory XI was Pope from 1370 to 1378. He was the last Avignon pope, finally returning the papacy to Rome in 1377 after decades in Avignon, partly due to the influence of St. Catherine of Siena. His death in 1378 led to the Western Schism when rival popes were elected.",
+    "keyQuotes": []
+  },
+  {
+    "id": "urban-vi",
+    "name": "Pope Urban VI",
+    "birthYear": 1318,
+    "deathYear": 1389,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "orthodox",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Roman claimant during the Western Schism"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Urban_VI",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15218b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Pope_Urban_6.jpg",
+    "summary": "Urban VI was Pope from 1378 to 1389. His election by the cardinals in Rome, followed by the election of an antipope (Clement VII) in Avignon, began the Western Schism that would divide the Church for nearly forty years. His harsh personality and strict reforms alienated many cardinals who then supported the Avignon claimant.",
+    "keyQuotes": []
+  },
+  {
+    "id": "john-wycliffe",
+    "name": "John Wycliffe",
+    "birthYear": 1328,
+    "deathYear": 1384,
+    "primaryTradition": "Latin",
+    "roles": [
+      "theologian",
+      "scholar"
+    ],
+    "orthodoxyStatus": "heresiarch",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "york",
+        "description": "English theologian and reformer"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Wycliffe",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15722a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Wycliffe_by_Kirby.jpg/330px-Wycliffe_by_Kirby.jpg",
+    "summary": "John Wycliffe was an English scholastic philosopher and theologian. He criticized the wealth and corruption of the Church, rejected transubstantiation, and argued that Scripture alone was the source of authority. His followers, the Lollards, spread his teachings, and his translation of the Bible into English influenced later reformers. His works were condemned at the Council of Constance.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "On the Truth of Holy Scripture",
+        "url": "https://www.newadvent.org/cathen/15722a.htm"
+      }
+    ]
+  },
+  {
+    "id": "marsilius-padua",
+    "name": "Marsilius of Padua",
+    "birthYear": 1275,
+    "deathYear": 1342,
+    "primaryTradition": "Latin",
+    "roles": [
+      "philosopher",
+      "political theorist"
+    ],
+    "orthodoxyStatus": "heresiarch",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Political philosopher who challenged papal authority"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Marsilius_of_Padua",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09720a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Marsile_de_Padoue_1319.jpg/330px-Marsile_de_Padoue_1319.jpg",
+    "summary": "Marsilius of Padua was an Italian scholar and political philosopher. His work Defensor Pacis challenged papal authority and argued that the Church should be subject to the state. He rejected the temporal power of the papacy and called for the Church to return to apostolic poverty. His ideas were condemned by Pope John XXII.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "Defensor Pacis",
+        "url": "https://www.newadvent.org/cathen/09720a.htm"
+      }
+    ]
+  },
+  {
+    "id": "william-ockham",
+    "name": "William of Ockham",
+    "birthYear": 1287,
+    "deathYear": 1347,
+    "primaryTradition": "Latin",
+    "roles": [
+      "philosopher",
+      "theologian",
+      "friar"
+    ],
+    "orthodoxyStatus": "orthodox",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "york",
+        "description": "English Franciscan philosopher and theologian"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/William_of_Ockham",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11209a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/William_of_Ockham.png",
+    "summary": "William of Ockham was an English Franciscan friar, philosopher, and theologian. He is best known for Ockham's Razor, the principle that the simplest explanation is usually the best. He was involved in the dispute over Franciscan poverty and spent much of his life in exile after being accused of heresy. His nominalist philosophy challenged the dominant scholastic realism.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "Summa Logicae",
+        "url": "https://www.newadvent.org/cathen/11209a.htm"
+      }
+    ]
+  }
+]

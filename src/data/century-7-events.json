@@ -1,0 +1,45 @@
+[
+  {
+    "id": "rise-islam",
+    "name": "Rise of Islam",
+    "startYear": 610,
+    "endYear": 632,
+    "type": "other",
+    "locationId": "mecca",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Spread_of_Islam",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08193a.htm",
+    "summary": "The rise of Islam began with the revelations received by Muhammad in Mecca starting around 610 AD. Islam spread rapidly throughout the Arabian Peninsula and beyond, creating a new religious and political force that would have profound effects on the Christian world. The rapid expansion of Islamic territories would lead to the loss of many Christian lands in the Middle East, North Africa, and Spain.",
+    "keyDocuments": []
+  },
+  {
+    "id": "synod-whitby",
+    "name": "Synod of Whitby",
+    "startYear": 664,
+    "endYear": 664,
+    "type": "council",
+    "locationId": "whitby",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Synod_of_Whitby",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15625a.htm",
+    "summary": "The Synod of Whitby was a council held in 664 AD at the monastery of Whitby, presided over by Abbess Hilda. The synod decided to adopt Roman practices over Celtic ones, particularly regarding the calculation of the date of Easter and the tonsure. This decision helped unify the English Church and align it more closely with Rome and the rest of Western Christendom.",
+    "keyDocuments": [
+      "Decision on Easter calculation",
+      "Adoption of Roman tonsure"
+    ]
+  },
+  {
+    "id": "council-constantinople-iii",
+    "name": "Third Council of Constantinople",
+    "startYear": 680,
+    "endYear": 681,
+    "type": "council",
+    "locationId": "constantinople",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Third_Council_of_Constantinople",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04309a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/45-manasses-chronicle.jpg",
+    "summary": "The Third Council of Constantinople was the sixth ecumenical council, convened by Emperor Constantine IV in 680-681 AD. The council condemned Monothelitism, the doctrine that Christ had only one will, and affirmed that Christ has both a divine will and a human will. This council, along with the Second Council of Constantinople, completed the Christological definitions of the earlier councils.",
+    "keyDocuments": [
+      "Definition of the Two Wills of Christ",
+      "Condemnation of Monothelitism"
+    ]
+  }
+]

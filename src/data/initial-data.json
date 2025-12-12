@@ -2114,6 +2114,714 @@
           "url": "https://www.ccel.org/ccel/boethius/consolation.html"
         }
       ]
+    },
+    {
+      "id": "isidore-seville",
+      "name": "St. Isidore of Seville",
+      "birthYear": 560,
+      "deathYear": 636,
+      "feastDay": "April 4",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "seville",
+          "description": "Bishop of Seville"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Isidore_of_Seville",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08186a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Isidor_von_Sevilla.jpeg",
+      "summary": "Isidore of Seville was a bishop and scholar who is considered the last of the Latin Church Fathers. He is best known for his 'Etymologies,' an encyclopedic work that preserved much classical knowledge. He presided over the Fourth Council of Toledo and worked to convert the Visigoths from Arianism to Catholicism. He is the patron saint of the Internet and computer users.",
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "Etymologies",
+          "url": "https://www.ccel.org/ccel/schaff/npnf211.iv.html"
+        }
+      ]
+    },
+    {
+      "id": "maximus-confessor",
+      "name": "St. Maximus the Confessor",
+      "birthYear": 580,
+      "deathYear": 662,
+      "feastDay": "August 13",
+      "primaryTradition": "Greek",
+      "roles": ["monk", "theologian"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "constantinople",
+          "description": "Monk and theologian in Constantinople"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Maximus_the_Confessor",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10076a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Athonite_Fresco_Icon_of_Saint_Maximos_the_Confessor_2.jpg",
+      "summary": "Maximus the Confessor was a Christian monk, theologian, and scholar who is venerated in both Eastern and Western Christianity. He is known for his opposition to Monothelitism, the doctrine that Christ had only one will. He was tortured and exiled for his defense of orthodoxy, having his tongue and right hand cut off. His theological works are highly regarded in both Eastern and Western traditions.",
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "On the Cosmic Mystery of Jesus Christ",
+          "url": "https://www.ccel.org/ccel/schaff/npnf214.ix.html"
+        }
+      ]
+    },
+    {
+      "id": "cuthbert",
+      "name": "St. Cuthbert",
+      "birthYear": 634,
+      "deathYear": 687,
+      "feastDay": "March 20",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "monk"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "lindisfarne",
+          "description": "Bishop of Lindisfarne"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cuthbert",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04566a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Cuthbert_discovers_piece_of_timber_-_Life_of_St._Cuthbert_%28late_12th_C%29%2C_f.45v_-_BL_Yates_Thompson_MS_26.jpg",
+      "summary": "Cuthbert was a monk, bishop, and hermit who is one of the most important saints of early medieval England. He was a monk at Melrose and later at Lindisfarne, where he became bishop. He was known for his holiness, miracles, and devotion to prayer. After his death, his body was preserved and became a major pilgrimage site. He is the patron saint of Northumbria.",
+      "keyQuotes": []
+    },
+    {
+      "id": "aidan-lindisfarne",
+      "name": "St. Aidan of Lindisfarne",
+      "birthYear": null,
+      "deathYear": 651,
+      "feastDay": "August 31",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "monk", "missionary"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "lindisfarne",
+          "description": "Bishop of Lindisfarne"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Aidan_of_Lindisfarne",
+      "newAdventUrl": "https://www.newadvent.org/cathen/01233a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Saint_Aidan.jpg",
+      "summary": "Aidan was an Irish monk and missionary who became the first bishop of Lindisfarne. He was sent from Iona to evangelize Northumbria and established the monastery at Lindisfarne, which became a center of learning and missionary activity. He is known for his simplicity, charity, and effective missionary work among the Anglo-Saxons.",
+      "keyQuotes": []
+    },
+    {
+      "id": "hilda-whitby",
+      "name": "St. Hilda of Whitby",
+      "birthYear": 614,
+      "deathYear": 680,
+      "feastDay": "November 17",
+      "primaryTradition": "Latin",
+      "roles": ["abbess"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "whitby",
+          "description": "Abbess of Whitby"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Hilda_of_Whitby",
+      "newAdventUrl": "https://www.newadvent.org/cathen/07351a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/St_Hilda_%28Stained_glass%2C_Chester_Cathedral%29_%28cropped%29.JPG",
+      "summary": "Hilda was an abbess who founded and ruled the monastery at Whitby. She was known for her wisdom and was consulted by kings and bishops. The Synod of Whitby, which decided the date of Easter and other liturgical matters, was held at her monastery. She is remembered for her leadership, learning, and the holiness of her community.",
+      "keyQuotes": []
+    },
+    {
+      "id": "theodore-canterbury",
+      "name": "St. Theodore of Tarsus",
+      "birthYear": 602,
+      "deathYear": 690,
+      "feastDay": "September 19",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "archbishop"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "canterbury",
+          "description": "Archbishop of Canterbury"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Theodore_of_Tarsus",
+      "newAdventUrl": "https://www.newadvent.org/cathen/14573a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Saint_Theodore_of_Tarsus_stained_glass_at_St_John_the_Evangelist%2C_Knotty_Ash.jpg",
+      "summary": "Theodore of Tarsus was a Greek monk who became Archbishop of Canterbury. He was the first archbishop to rule the whole English Church effectively and is credited with organizing the English Church into a proper diocesan structure. He established a school at Canterbury that became a center of learning, and he presided over important synods that helped unify the English Church.",
+      "keyQuotes": []
+    },
+    {
+      "id": "wilfrid",
+      "name": "St. Wilfrid",
+      "birthYear": 633,
+      "deathYear": 709,
+      "feastDay": "October 12",
+      "primaryTradition": "Latin",
+      "roles": ["bishop"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "york",
+          "description": "Bishop of York"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Wilfrid",
+      "newAdventUrl": "https://www.newadvent.org/cathen/15625a.htm",
+      "summary": "Wilfrid was a bishop who played a key role in the Synod of Whitby (664), where he successfully argued for the adoption of Roman practices over Celtic ones, particularly regarding the date of Easter. He was a strong advocate for Roman authority and practices in England and was known for his missionary work and church building. He faced exile multiple times due to political conflicts.",
+      "keyQuotes": []
+    },
+    {
+      "id": "eligius",
+      "name": "St. Eligius",
+      "birthYear": 588,
+      "deathYear": 660,
+      "feastDay": "December 1",
+      "primaryTradition": "Latin",
+      "roles": ["bishop"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "noyon",
+          "description": "Bishop of Noyon"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Eligius",
+      "newAdventUrl": "https://www.newadvent.org/cathen/05381a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Petrus_Christus_003.jpg",
+      "summary": "Eligius, also known as Eloi, was a goldsmith who became a bishop. He was master of the mint under King Clotaire II and Dagobert I, and used his wealth to ransom slaves and build churches. He became bishop of Noyon and Tournai and was known for his missionary work among the pagans of Flanders. He is the patron saint of goldsmiths, metalworkers, and coin collectors.",
+      "keyQuotes": []
+    },
+    {
+      "id": "bede",
+      "name": "St. Bede the Venerable",
+      "birthYear": 672,
+      "deathYear": 735,
+      "feastDay": "May 25",
+      "primaryTradition": "Latin",
+      "roles": ["monk", "historian", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "jarrow",
+          "description": "Monk at Jarrow"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bede",
+      "newAdventUrl": "https://www.newadvent.org/cathen/02384a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/E-codices_bke-0047_001v_medium_%28cropped%29.jpg",
+      "summary": "Bede, known as the Venerable Bede, was an English monk, scholar, and historian. He is best known for his 'Ecclesiastical History of the English People,' which is a primary source for early English history. He was a prolific writer on theology, history, grammar, and science. He is the only native of Great Britain to be named a Doctor of the Church.",
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "Ecclesiastical History of the English People",
+          "url": "https://www.ccel.org/ccel/bede/history.html"
+        }
+      ]
+    },
+    {
+      "id": "boniface",
+      "name": "St. Boniface",
+      "birthYear": 675,
+      "deathYear": 754,
+      "feastDay": "June 5",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "missionary", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "fulda",
+          "description": "Bishop and missionary, martyred in Frisia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Boniface",
+      "newAdventUrl": "https://www.newadvent.org/cathen/02658a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Saint_Boniface_by_Cornelis_Bloemaert.jpg",
+      "summary": "Boniface was an English missionary who is known as the Apostle of Germany. He organized the Church in Germany and reformed the Frankish Church. He founded several monasteries, including Fulda, and was martyred while on a mission to Frisia. He is considered one of the most important figures in the Christianization of Germany.",
+      "keyQuotes": []
+    },
+    {
+      "id": "john-damascus",
+      "name": "St. John of Damascus",
+      "birthYear": 675,
+      "deathYear": 749,
+      "feastDay": "December 4",
+      "primaryTradition": "Greek",
+      "roles": ["monk", "theologian", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "damascus",
+          "description": "Theologian and monk near Damascus"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/John_of_Damascus",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08459b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Johndamascene.jpg",
+      "summary": "John of Damascus was a Christian monk, priest, and theologian. He is best known for his defense of icons during the Iconoclast Controversy. His work 'Fount of Knowledge' is a comprehensive summary of Christian doctrine. He is considered the last of the Greek Church Fathers and is venerated as a Doctor of the Church in both East and West.",
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "Fount of Knowledge",
+          "url": "https://www.ccel.org/ccel/schaff/npnf209.ii.html"
+        }
+      ]
+    },
+    {
+      "id": "willibrord",
+      "name": "St. Willibrord",
+      "birthYear": 658,
+      "deathYear": 739,
+      "feastDay": "November 7",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "missionary"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "utrecht",
+          "description": "Bishop of Utrecht, missionary to Frisia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Willibrord",
+      "newAdventUrl": "https://www.newadvent.org/cathen/15640a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Georg_Sturm%2C_Willibrordus_predikt_het_Christendom_aan_de_Friezen.jpg",
+      "summary": "Willibrord was an English missionary who is known as the Apostle of the Frisians. He was the first bishop of Utrecht and worked to convert the Frisians to Christianity. He founded several churches and monasteries and is considered one of the most important missionaries of the early Middle Ages.",
+      "keyQuotes": []
+    },
+    {
+      "id": "alcuin",
+      "name": "Alcuin of York",
+      "birthYear": 735,
+      "deathYear": 804,
+      "primaryTradition": "Latin",
+      "roles": ["monk", "scholar", "teacher"],
+      "orthodoxyStatus": "orthodox",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "tours",
+          "description": "Scholar and teacher at Tours"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Alcuin",
+      "newAdventUrl": "https://www.newadvent.org/cathen/01276a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Raban-Maur_Alcuin_Otgar.jpg",
+      "summary": "Alcuin was an English scholar, clergyman, and teacher who became a leading figure in the Carolingian Renaissance. He was invited by Charlemagne to establish a palace school and became one of the most important educators of his time. He wrote on theology, grammar, and education, and helped standardize the Latin liturgy.",
+      "keyQuotes": []
+    },
+    {
+      "id": "charlemagne",
+      "name": "Charlemagne",
+      "birthYear": 742,
+      "deathYear": 814,
+      "primaryTradition": "Latin",
+      "roles": ["emperor", "king"],
+      "orthodoxyStatus": "orthodox",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "aachen",
+          "description": "Emperor, based in Aachen"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Charlemagne",
+      "newAdventUrl": "https://www.newadvent.org/cathen/03610c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Charlemagne_denier_Mayence_812_814.jpg",
+      "summary": "Charlemagne, also known as Charles the Great, was King of the Franks and Lombards, and was crowned as the first Holy Roman Emperor by Pope Leo III in 800. He expanded the Frankish kingdom into an empire that covered much of Western and Central Europe. He promoted education, culture, and Christianity throughout his realm, initiating the Carolingian Renaissance. He is considered the father of Europe and one of the most important figures in medieval history.",
+      "keyQuotes": []
+    },
+    {
+      "id": "cyril-methodius",
+      "name": "St. Cyril",
+      "birthYear": 826,
+      "deathYear": 869,
+      "feastDay": "February 14",
+      "primaryTradition": "Greek",
+      "roles": ["monk", "missionary"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "moravia",
+          "description": "Missionary to the Slavs in Moravia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cyril_and_Methodius",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04592a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Sv_Kiril_Metodij_Zahari_Zograf_Trojanski_mon_1848.jpg",
+      "summary": "Cyril, along with his brother Methodius, were Byzantine Greek brothers who became missionaries to the Slavs. They are credited with creating the Glagolitic alphabet, the first alphabet used to transcribe Old Church Slavonic. They translated the Bible and liturgical texts into Slavonic, which helped spread Christianity among Slavic peoples. They are venerated as the Apostles to the Slavs and are co-patrons of Europe.",
+      "keyQuotes": []
+    },
+    {
+      "id": "methodius",
+      "name": "St. Methodius",
+      "birthYear": 815,
+      "deathYear": 885,
+      "feastDay": "February 14",
+      "primaryTradition": "Greek",
+      "roles": ["bishop", "missionary"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "moravia",
+          "description": "Bishop and missionary to the Slavs in Moravia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cyril_and_Methodius",
+      "newAdventUrl": "https://www.newadvent.org/cathen/10249a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Sv_Kiril_Metodij_Zahari_Zograf_Trojanski_mon_1848.jpg",
+      "summary": "Methodius, along with his brother Cyril, were Byzantine Greek brothers who became missionaries to the Slavs. After Cyril's death, Methodius continued their missionary work and became Archbishop of Sirmium. He faced persecution for using Slavonic in the liturgy but was supported by the Pope. He is venerated as the Apostle to the Slavs and co-patron of Europe.",
+      "keyQuotes": []
+    },
+    {
+      "id": "ansgar",
+      "name": "St. Ansgar",
+      "birthYear": 801,
+      "deathYear": 865,
+      "feastDay": "February 3",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "missionary"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "hamburg",
+          "description": "Bishop of Hamburg, missionary to Scandinavia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Ansgar",
+      "newAdventUrl": "https://www.newadvent.org/cathen/01545a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Bendixen_Ansgar.jpg",
+      "summary": "Ansgar was a Frankish missionary who is known as the Apostle of the North. He was the first Archbishop of Hamburg and worked to convert the Danes and Swedes to Christianity. He faced many hardships, including the destruction of his churches by Viking raids, but persevered in his missionary work. He is the patron saint of Scandinavia.",
+      "keyQuotes": []
+    },
+    {
+      "id": "rabanus-maurus",
+      "name": "St. Rabanus Maurus",
+      "birthYear": 780,
+      "deathYear": 856,
+      "feastDay": "February 4",
+      "primaryTradition": "Latin",
+      "roles": ["abbot", "bishop", "theologian"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "fulda",
+          "description": "Abbot of Fulda, later Archbishop of Mainz"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Rabanus_Maurus",
+      "newAdventUrl": "https://www.newadvent.org/cathen/12615a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Raban-Maur_Alcuin_Otgar.jpg",
+      "summary": "Rabanus Maurus was a Frankish Benedictine monk, abbot, and theologian. He was a student of Alcuin and became one of the most learned men of his time. He served as abbot of Fulda and later as Archbishop of Mainz. He wrote extensively on theology, education, and biblical exegesis, and was a key figure in the Carolingian Renaissance.",
+      "keyQuotes": []
+    },
+    {
+      "id": "nicholas-i",
+      "name": "Pope St. Nicholas I",
+      "birthYear": 800,
+      "deathYear": 867,
+      "feastDay": "November 13",
+      "primaryTradition": "Latin",
+      "roles": ["pope"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "rome",
+          "description": "Pope in Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Nicholas_I",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11058a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/St_Nicholas%2C_Great_Wakering_-_Stained_glass_window_-_geograph.org.uk_-_3916715.jpg",
+      "summary": "Nicholas I was Pope from 858 to 867. He is known as Nicholas the Great and is considered one of the most important popes of the 9th century. He strongly asserted papal authority, particularly in conflicts with the Byzantine Empire and the Carolingian rulers. He supported the missionary work of Cyril and Methodius and defended the use of Slavonic in the liturgy.",
+      "keyQuotes": []
+    },
+    {
+      "id": "odo-cluny",
+      "name": "St. Odo of Cluny",
+      "birthYear": 879,
+      "deathYear": 942,
+      "feastDay": "November 18",
+      "primaryTradition": "Latin",
+      "roles": ["abbot"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "cluny",
+          "description": "Abbot of Cluny"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Odo_of_Cluny",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11205a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Odo_Cluny-11.jpg",
+      "summary": "Odo of Cluny was the second abbot of Cluny and a key figure in the Cluniac Reforms. He expanded the influence of Cluny Abbey and reformed monasteries throughout France and Italy. He was known for his strict adherence to the Rule of St. Benedict and his efforts to reform the clergy. His reforms helped establish Cluny as one of the most important monastic centers in medieval Europe.",
+      "keyQuotes": []
+    },
+    {
+      "id": "dunstan",
+      "name": "St. Dunstan",
+      "birthYear": 909,
+      "deathYear": 988,
+      "feastDay": "May 19",
+      "primaryTradition": "Latin",
+      "roles": ["archbishop", "abbot"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "canterbury",
+          "description": "Archbishop of Canterbury"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Dunstan",
+      "newAdventUrl": "https://www.newadvent.org/cathen/05213a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Dunstan2.jpg",
+      "summary": "Dunstan was Archbishop of Canterbury and a leading figure in the 10th-century English Church. He was a skilled craftsman, statesman, and reformer who worked to restore monastic life in England after the Viking invasions. He served as advisor to several English kings and was instrumental in the revival of English monasticism. He is the patron saint of goldsmiths, locksmiths, and musicians.",
+      "keyQuotes": []
+    },
+    {
+      "id": "wenceslaus",
+      "name": "St. Wenceslaus",
+      "birthYear": 907,
+      "deathYear": 935,
+      "feastDay": "September 28",
+      "primaryTradition": "Latin",
+      "roles": ["duke", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "prague",
+          "description": "Duke of Bohemia, martyred"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Wenceslaus_I%2C_Duke_of_Bohemia",
+      "newAdventUrl": "https://www.newadvent.org/cathen/15587b.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Wolfenb%C3%BCttelsk%C3%BD_kodex_%E2%80%93_Gumpoldova_legenda_%E2%80%93_18v_cr.jpg",
+      "summary": "Wenceslaus I was Duke of Bohemia who is venerated as a saint and martyr. He was known for his piety, charity, and efforts to spread Christianity in Bohemia. He was murdered by his brother Boleslaus, who opposed his Christian policies. He is the patron saint of the Czech Republic and is the subject of the Christmas carol 'Good King Wenceslas.'",
+      "keyQuotes": []
+    },
+    {
+      "id": "olga-kiev",
+      "name": "St. Olga of Kiev",
+      "birthYear": 890,
+      "deathYear": 969,
+      "feastDay": "July 11",
+      "primaryTradition": "Greek",
+      "roles": ["queen", "regent"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "kiev",
+          "description": "Princess and regent of Kievan Rus"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Olga_of_Kiev",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11235a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/St_Olga_by_Nesterov_in_1892_%28cropped%29.jpg",
+      "summary": "Olga of Kiev was the first Christian ruler of Kievan Rus. She was regent for her son Sviatoslav and later for her grandson Vladimir. She was baptized in Constantinople and worked to spread Christianity in Kievan Rus, though her efforts were initially resisted. She is venerated as a saint in both the Eastern Orthodox and Roman Catholic Churches and is considered the first Russian saint.",
+      "keyQuotes": []
+    },
+    {
+      "id": "adalbert-prague",
+      "name": "St. Adalbert of Prague",
+      "birthYear": 956,
+      "deathYear": 997,
+      "feastDay": "April 23",
+      "primaryTradition": "Latin",
+      "roles": ["bishop", "missionary", "martyr"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": true,
+      "locations": [
+        {
+          "placeId": "prague",
+          "description": "Bishop of Prague, missionary and martyr"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Adalbert_of_Prague",
+      "newAdventUrl": "https://www.newadvent.org/cathen/01130a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Szt-adalbert.jpg",
+      "summary": "Adalbert of Prague was a bishop, missionary, and martyr. He was Bishop of Prague but left his see due to conflicts with the nobility. He became a missionary to the Prussians and was martyred while preaching to them. He is one of the patron saints of Poland, the Czech Republic, and Prussia. His missionary work helped spread Christianity in Eastern Europe.",
+      "keyQuotes": []
+    },
+    {
+      "id": "sylvester-ii",
+      "name": "Pope Sylvester II",
+      "birthYear": 946,
+      "deathYear": 1003,
+      "primaryTradition": "Latin",
+      "roles": ["pope", "scholar"],
+      "orthodoxyStatus": "orthodox",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "rome",
+          "description": "Pope in Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Sylvester_II",
+      "newAdventUrl": "https://www.newadvent.org/cathen/14370a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Meister_der_Reichenauer_Schule_002_%28cropped%29.jpg",
+      "summary": "Sylvester II, born Gerbert of Aurillac, was Pope from 999 to 1003. He was one of the most learned men of his time, known for his knowledge of mathematics, astronomy, and philosophy. He was the first French pope and helped strengthen the relationship between the papacy and the Holy Roman Empire. He is credited with introducing Arabic numerals to Europe and was a key figure in the intellectual revival of the 10th century.",
+      "keyQuotes": []
+    },
+    {
+      "id": "anselm-canterbury",
+      "name": "St. Anselm of Canterbury",
+      "birthYear": 1033,
+      "deathYear": 1109,
+      "feastDay": "April 21",
+      "primaryTradition": "Latin",
+      "roles": ["archbishop", "theologian", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "canterbury",
+          "description": "Archbishop of Canterbury"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Anselm_of_Canterbury",
+      "newAdventUrl": "https://www.newadvent.org/cathen/01546a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Anselm_of_Canterbury%2C_seal.svg",
+      "summary": "Anselm of Canterbury was an Italian Benedictine monk, philosopher, and theologian who became Archbishop of Canterbury. He is considered the founder of scholasticism and is known for his ontological argument for the existence of God. He was a key figure in the Investiture Controversy, defending the rights of the Church against secular rulers. He is venerated as a Doctor of the Church.",
+      "keyQuotes": [],
+      "writings": [
+        {
+          "title": "Proslogion",
+          "url": "https://www.ccel.org/ccel/anselm/basic_works.html"
+        }
+      ]
+    },
+    {
+      "id": "gregory-vii",
+      "name": "Pope St. Gregory VII",
+      "birthYear": 1020,
+      "deathYear": 1085,
+      "feastDay": "May 25",
+      "primaryTradition": "Latin",
+      "roles": ["pope"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "rome",
+          "description": "Pope in Rome"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_VII",
+      "newAdventUrl": "https://www.newadvent.org/cathen/06791c.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Ritratto_di_Papa_San_Gregorio_VII.png",
+      "summary": "Gregory VII, born Hildebrand, was Pope from 1073 to 1085. He is one of the most important popes in history and a key figure in the Gregorian Reforms. He strongly asserted papal authority and fought against simony and clerical marriage. He is best known for the Investiture Controversy with Holy Roman Emperor Henry IV, which culminated in Henry's penance at Canossa. His reforms strengthened the papacy and the Church's independence from secular rulers.",
+      "keyQuotes": []
+    },
+    {
+      "id": "bruno-cologne",
+      "name": "St. Bruno of Cologne",
+      "birthYear": 1030,
+      "deathYear": 1101,
+      "feastDay": "October 6",
+      "primaryTradition": "Latin",
+      "roles": ["monk", "founder"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "chartreuse",
+          "description": "Founder of the Carthusian Order"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Bruno_of_Cologne",
+      "newAdventUrl": "https://www.newadvent.org/cathen/03014a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Nicolas_Mignard-Saint_Bruno.jpg",
+      "summary": "Bruno of Cologne was a German monk who founded the Carthusian Order. He established the Grande Chartreuse monastery in the French Alps, which became the motherhouse of the Carthusians. The order is known for its strict eremitical life, combining solitary contemplation with communal worship. Bruno is venerated as a saint and is the patron of the Carthusian Order.",
+      "keyQuotes": []
+    },
+    {
+      "id": "peter-damian",
+      "name": "St. Peter Damian",
+      "birthYear": 1007,
+      "deathYear": 1072,
+      "feastDay": "February 21",
+      "primaryTradition": "Latin",
+      "roles": ["cardinal", "bishop", "Doctor of the Church"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "ostia",
+          "description": "Cardinal Bishop of Ostia"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Damian",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11764a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Ercole_de%27_Roberti_007.jpg",
+      "summary": "Peter Damian was an Italian Benedictine monk, cardinal, and reformer. He was a key figure in the Gregorian Reforms and worked to combat simony, clerical marriage, and other abuses in the Church. He was made Cardinal Bishop of Ostia and was a close advisor to several popes. He is venerated as a Doctor of the Church and is known for his asceticism and reform efforts.",
+      "keyQuotes": []
+    },
+    {
+      "id": "margaret-scotland",
+      "name": "St. Margaret of Scotland",
+      "birthYear": 1045,
+      "deathYear": 1093,
+      "feastDay": "November 16",
+      "primaryTradition": "Latin",
+      "roles": ["queen"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "edinburgh",
+          "description": "Queen of Scotland"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Margaret_of_Scotland",
+      "newAdventUrl": "https://www.newadvent.org/cathen/09655a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Saint_Margaret_of_Scotland.jpg",
+      "summary": "Margaret of Scotland was an English princess who became Queen of Scotland through her marriage to King Malcolm III. She was known for her piety, charity, and efforts to reform the Scottish Church. She introduced Roman practices to Scotland and worked to improve the lives of the poor. She is the only Scottish royal saint and is venerated as the patron saint of Scotland.",
+      "keyQuotes": []
+    },
+    {
+      "id": "hugh-cluny",
+      "name": "St. Hugh of Cluny",
+      "birthYear": 1024,
+      "deathYear": 1109,
+      "feastDay": "April 29",
+      "primaryTradition": "Latin",
+      "roles": ["abbot"],
+      "orthodoxyStatus": "canonized",
+      "isMartyr": false,
+      "locations": [
+        {
+          "placeId": "cluny",
+          "description": "Abbot of Cluny"
+        }
+      ],
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Hugh_of_Cluny",
+      "newAdventUrl": "https://www.newadvent.org/cathen/07520a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Hugo-v-cluny_heinrich-iv_mathilde-v-tuszien_cod-vat-lat-4922_1115ad.jpg",
+      "summary": "Hugh of Cluny was the sixth abbot of Cluny and one of the most influential churchmen of his time. Under his leadership, Cluny reached the height of its power and influence, with hundreds of monasteries under its authority. He was a key supporter of the Gregorian Reforms and was a close advisor to several popes. He is venerated as a saint and is known for his wisdom and diplomatic skills.",
+      "keyQuotes": []
     }
   ],
   "events": [
@@ -2581,6 +3289,249 @@
         "Canons of the Second Council of Constantinople",
         "Condemnation of the Three Chapters"
       ]
+    },
+    {
+      "id": "rise-islam",
+      "name": "Rise of Islam",
+      "startYear": 610,
+      "endYear": 632,
+      "type": "other",
+      "locationId": "mecca",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Spread_of_Islam",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08193a.htm",
+      "summary": "The rise of Islam began with the revelations received by Muhammad in Mecca starting around 610 AD. Islam spread rapidly throughout the Arabian Peninsula and beyond, creating a new religious and political force that would have profound effects on the Christian world. The rapid expansion of Islamic territories would lead to the loss of many Christian lands in the Middle East, North Africa, and Spain.",
+      "keyDocuments": []
+    },
+    {
+      "id": "synod-whitby",
+      "name": "Synod of Whitby",
+      "startYear": 664,
+      "endYear": 664,
+      "type": "council",
+      "locationId": "whitby",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Synod_of_Whitby",
+      "newAdventUrl": "https://www.newadvent.org/cathen/15625a.htm",
+      "summary": "The Synod of Whitby was a council held in 664 AD at the monastery of Whitby, presided over by Abbess Hilda. The synod decided to adopt Roman practices over Celtic ones, particularly regarding the calculation of the date of Easter and the tonsure. This decision helped unify the English Church and align it more closely with Rome and the rest of Western Christendom.",
+      "keyDocuments": [
+        "Decision on Easter calculation",
+        "Adoption of Roman tonsure"
+      ]
+    },
+    {
+      "id": "council-constantinople-iii",
+      "name": "Third Council of Constantinople",
+      "startYear": 680,
+      "endYear": 681,
+      "type": "council",
+      "locationId": "constantinople",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Third_Council_of_Constantinople",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04309a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/58/45-manasses-chronicle.jpg",
+      "summary": "The Third Council of Constantinople was the sixth ecumenical council, convened by Emperor Constantine IV in 680-681 AD. The council condemned Monothelitism, the doctrine that Christ had only one will, and affirmed that Christ has both a divine will and a human will. This council, along with the Second Council of Constantinople, completed the Christological definitions of the earlier councils.",
+      "keyDocuments": [
+        "Definition of the Two Wills of Christ",
+        "Condemnation of Monothelitism"
+      ]
+    },
+    {
+      "id": "iconoclasm-controversy",
+      "name": "Iconoclasm Controversy",
+      "startYear": 726,
+      "endYear": 843,
+      "type": "other",
+      "locationId": "constantinople",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Byzantine_Iconoclasm",
+      "newAdventUrl": "https://www.newadvent.org/cathen/07620a.htm",
+      "summary": "The Iconoclasm Controversy was a major theological dispute in the Byzantine Empire over the use of religious images (icons). Emperor Leo III began the first period of iconoclasm in 726, ordering the destruction of icons. The controversy divided the Church and Empire for over a century, with periods of iconoclasm and restoration. It was finally resolved at the Second Council of Nicaea in 787, which affirmed the veneration of icons.",
+      "keyDocuments": []
+    },
+    {
+      "id": "battle-tours",
+      "name": "Battle of Tours",
+      "startYear": 732,
+      "endYear": 732,
+      "type": "other",
+      "locationId": "tours",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+      "newAdventUrl": "https://www.newadvent.org/cathen/14781a.htm",
+      "summary": "The Battle of Tours (also known as the Battle of Poitiers) was a decisive battle in 732 AD where the Frankish forces under Charles Martel defeated the Umayyad Caliphate. This battle is often credited with halting the Muslim advance into Western Europe and preserving Christianity in the region. It was a turning point in European history.",
+      "keyDocuments": []
+    },
+    {
+      "id": "donation-pepin",
+      "name": "Donation of Pepin",
+      "startYear": 754,
+      "endYear": 756,
+      "type": "other",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Donation_of_Pepin",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04659a.htm",
+      "summary": "The Donation of Pepin was a grant of land made by Pepin the Short, King of the Franks, to Pope Stephen II in 754 and confirmed in 756. This donation established the Papal States, giving the Pope temporal power over central Italy. This was a crucial development in the relationship between the papacy and secular rulers and established the foundation for the Papal States that would last until 1870.",
+      "keyDocuments": []
+    },
+    {
+      "id": "council-nicaea-ii",
+      "name": "Second Council of Nicaea",
+      "startYear": 787,
+      "endYear": 787,
+      "type": "council",
+      "locationId": "nicaea",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Second_Council_of_Nicaea",
+      "newAdventUrl": "https://www.newadvent.org/cathen/11045a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Menologion_of_Basil_024.jpg",
+      "summary": "The Second Council of Nicaea was the seventh ecumenical council, convened by Empress Irene in 787 AD. The council restored the veneration of icons, which had been condemned during the Iconoclasm Controversy. It affirmed that icons could be venerated (though not worshipped) and that they were useful for teaching and inspiring devotion. This council is considered the last of the ecumenical councils recognized by both Eastern and Western Christianity.",
+      "keyDocuments": [
+        "Definition on the Veneration of Icons",
+        "Canons on Iconoclasm"
+      ]
+    },
+    {
+      "id": "coronation-charlemagne",
+      "name": "Coronation of Charlemagne",
+      "startYear": 800,
+      "endYear": 800,
+      "type": "other",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Coronation_of_Charlemagne",
+      "newAdventUrl": "https://www.newadvent.org/cathen/03610c.htm",
+      "summary": "On Christmas Day, 800 AD, Pope Leo III crowned Charlemagne as Holy Roman Emperor in St. Peter's Basilica in Rome. This event marked the revival of the Western Roman Empire and established the precedent of papal coronation of emperors. It also strengthened the relationship between the papacy and the Frankish kingdom, creating a new political and religious order in Western Europe.",
+      "keyDocuments": []
+    },
+    {
+      "id": "mission-slavs",
+      "name": "Mission to the Slavs",
+      "startYear": 863,
+      "endYear": 885,
+      "type": "other",
+      "locationId": "moravia",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cyril_and_Methodius",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04592a.htm",
+      "summary": "The Mission to the Slavs was undertaken by the brothers Cyril and Methodius, who were sent by the Byzantine Emperor to evangelize the Slavic peoples of Moravia. They created the Glagolitic alphabet and translated the Bible and liturgical texts into Old Church Slavonic. Their work laid the foundation for Slavic Christianity and culture, though they faced opposition from German bishops who preferred Latin.",
+      "keyDocuments": []
+    },
+    {
+      "id": "photian-schism",
+      "name": "Photian Schism",
+      "startYear": 863,
+      "endYear": 867,
+      "type": "other",
+      "locationId": "constantinople",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Photian_schism",
+      "newAdventUrl": "https://www.newadvent.org/cathen/12034b.htm",
+      "summary": "The Photian Schism was a conflict between Pope Nicholas I and Photius, Patriarch of Constantinople, from 863 to 867. The dispute arose over Photius's appointment as patriarch and his criticism of Western practices, particularly the Filioque clause. Although the schism was eventually resolved, it highlighted growing tensions between the Eastern and Western Churches that would eventually lead to the Great Schism of 1054.",
+      "keyDocuments": []
+    },
+    {
+      "id": "foundation-cluny",
+      "name": "Foundation of Cluny Abbey",
+      "startYear": 910,
+      "endYear": 910,
+      "type": "other",
+      "locationId": "cluny",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cluny_Abbey",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04070a.htm",
+      "summary": "Cluny Abbey was founded in 910 by William I, Duke of Aquitaine. The abbey was established with a charter that granted it independence from local feudal control, placing it directly under papal authority. This foundation marked the beginning of the Cluniac Reforms, a movement that would transform Western monasticism and strengthen the Church's independence from secular powers. Cluny became one of the most influential monasteries in medieval Europe.",
+      "keyDocuments": []
+    },
+    {
+      "id": "cluniac-reforms",
+      "name": "Cluniac Reforms",
+      "startYear": 910,
+      "endYear": 1150,
+      "type": "other",
+      "locationId": "cluny",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Cluniac_Reforms",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04070a.htm",
+      "summary": "The Cluniac Reforms were a series of changes within Western monasticism focused on restoring the observance of the Rule of St. Benedict. The reforms emphasized liturgical prayer, strict adherence to monastic discipline, and independence from secular control. The movement spread throughout Europe, with hundreds of monasteries joining the Cluniac congregation. The reforms helped strengthen the Church and contributed to the Gregorian Reforms of the 11th century.",
+      "keyDocuments": []
+    },
+    {
+      "id": "battle-lechfeld",
+      "name": "Battle of Lechfeld",
+      "startYear": 955,
+      "endYear": 955,
+      "type": "other",
+      "locationId": "augsburg",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Battle_of_Lechfeld",
+      "newAdventUrl": "https://www.newadvent.org/cathen/09095a.htm",
+      "summary": "The Battle of Lechfeld was a decisive victory for Otto I, King of Germany, over the Magyar (Hungarian) forces in 955. This battle ended the Magyar raids into Western Europe and secured Otto's position as the dominant ruler in Central Europe. The victory paved the way for Otto's coronation as Holy Roman Emperor in 962 and marked the beginning of the Holy Roman Empire's dominance in medieval Europe.",
+      "keyDocuments": []
+    },
+    {
+      "id": "christianization-kievan-rus",
+      "name": "Christianization of Kievan Rus",
+      "startYear": 988,
+      "endYear": 988,
+      "type": "other",
+      "locationId": "kiev",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Christianization_of_Kievan_Rus%27",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08651a.htm",
+      "summary": "The Christianization of Kievan Rus' began in 988 when Grand Prince Vladimir the Great was baptized and ordered the baptism of his people. This event marked the conversion of the Eastern Slavic peoples to Christianity and established the foundation for the Russian Orthodox Church. The conversion had profound political, cultural, and religious consequences, connecting Kievan Rus' to the Byzantine Empire and Western Christendom.",
+      "keyDocuments": []
+    },
+    {
+      "id": "great-schism",
+      "name": "Great Schism of 1054",
+      "startYear": 1054,
+      "endYear": 1054,
+      "type": "other",
+      "locationId": "constantinople",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/East%E2%80%93West_Schism",
+      "newAdventUrl": "https://www.newadvent.org/cathen/13535a.htm",
+      "summary": "The Great Schism of 1054 was the formal split between the Eastern Orthodox Church and the Roman Catholic Church. The schism was the culmination of centuries of growing theological, political, and cultural differences. The immediate cause was the mutual excommunication of Pope Leo IX and Patriarch Michael I Cerularius. This schism divided Christendom and remains to this day, though efforts at reconciliation have been made.",
+      "keyDocuments": []
+    },
+    {
+      "id": "investiture-controversy",
+      "name": "Investiture Controversy",
+      "startYear": 1075,
+      "endYear": 1122,
+      "type": "other",
+      "locationId": "rome",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Investiture_Controversy",
+      "newAdventUrl": "https://www.newadvent.org/cathen/08086a.htm",
+      "summary": "The Investiture Controversy was a conflict between the papacy and the Holy Roman Empire over the right to appoint bishops and abbots. Pope Gregory VII banned lay investiture, asserting that only the Church had the right to appoint clergy. This led to a long struggle with Emperor Henry IV, which included Henry's famous penance at Canossa in 1077. The controversy was eventually resolved by the Concordat of Worms in 1122.",
+      "keyDocuments": []
+    },
+    {
+      "id": "penance-canossa",
+      "name": "Penance at Canossa",
+      "startYear": 1077,
+      "endYear": 1077,
+      "type": "other",
+      "locationId": "canossa",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Walk_to_Canossa",
+      "newAdventUrl": "https://www.newadvent.org/cathen/03250a.htm",
+      "summary": "The Penance at Canossa was a dramatic event in 1077 when Holy Roman Emperor Henry IV stood barefoot in the snow for three days outside the castle of Canossa, seeking absolution from Pope Gregory VII. Henry had been excommunicated for his defiance of the pope's ban on lay investiture. The event symbolized the power of the papacy over secular rulers, though the conflict would continue for decades.",
+      "keyDocuments": []
+    },
+    {
+      "id": "first-crusade",
+      "name": "First Crusade",
+      "startYear": 1096,
+      "endYear": 1099,
+      "type": "other",
+      "locationId": "jerusalem",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Crusade",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04543c.htm",
+      "summary": "The First Crusade was launched in 1096 by Pope Urban II at the Council of Clermont. The crusade was called to aid the Byzantine Empire against the Seljuk Turks and to recapture the Holy Land. The crusaders successfully captured Jerusalem in 1099, establishing the Crusader States in the Levant. The First Crusade was the most successful of the crusades and had profound effects on both Europe and the Middle East.",
+      "keyDocuments": []
+    },
+    {
+      "id": "council-clermont",
+      "name": "Council of Clermont",
+      "startYear": 1095,
+      "endYear": 1095,
+      "type": "council",
+      "locationId": "clermont",
+      "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Clermont",
+      "newAdventUrl": "https://www.newadvent.org/cathen/04050a.htm",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Passages_d%27outremer_Fr5594%2C_fol._19r%2C_Concile_de_Clermont.jpg",
+      "summary": "The Council of Clermont was a synod convened by Pope Urban II in 1095. At this council, Urban II delivered his famous speech calling for the First Crusade to recapture the Holy Land from Muslim control. The speech inspired thousands to take up the cross and marked the beginning of the Crusades. The council also addressed various Church reforms and disciplinary matters.",
+      "keyDocuments": [
+        "Call for the First Crusade",
+        "Truce of God"
+      ]
     }
   ],
   "places": [
@@ -2903,6 +3854,190 @@
       "lng": 53.69,
       "region": "Persia",
       "modernCountry": "Iran"
+    },
+    {
+      "id": "seville",
+      "name": "Seville",
+      "lat": 37.39,
+      "lng": -5.99,
+      "region": "Hispania",
+      "modernCountry": "Spain"
+    },
+    {
+      "id": "lindisfarne",
+      "name": "Lindisfarne",
+      "lat": 55.68,
+      "lng": -1.80,
+      "region": "Northumbria",
+      "modernCountry": "United Kingdom"
+    },
+    {
+      "id": "whitby",
+      "name": "Whitby",
+      "lat": 54.49,
+      "lng": -0.61,
+      "region": "Northumbria",
+      "modernCountry": "United Kingdom"
+    },
+    {
+      "id": "canterbury",
+      "name": "Canterbury",
+      "lat": 51.28,
+      "lng": 1.08,
+      "region": "Kent",
+      "modernCountry": "United Kingdom"
+    },
+    {
+      "id": "york",
+      "name": "York",
+      "lat": 53.96,
+      "lng": -1.08,
+      "region": "Northumbria",
+      "modernCountry": "United Kingdom"
+    },
+    {
+      "id": "noyon",
+      "name": "Noyon",
+      "lat": 49.58,
+      "lng": 3.00,
+      "region": "Gaul",
+      "modernCountry": "France"
+    },
+    {
+      "id": "mecca",
+      "name": "Mecca",
+      "lat": 21.39,
+      "lng": 39.86,
+      "region": "Arabia",
+      "modernCountry": "Saudi Arabia"
+    },
+    {
+      "id": "jarrow",
+      "name": "Jarrow",
+      "lat": 54.98,
+      "lng": -1.47,
+      "region": "Northumbria",
+      "modernCountry": "United Kingdom"
+    },
+    {
+      "id": "fulda",
+      "name": "Fulda",
+      "lat": 50.55,
+      "lng": 9.68,
+      "region": "Germany",
+      "modernCountry": "Germany"
+    },
+    {
+      "id": "utrecht",
+      "name": "Utrecht",
+      "lat": 52.09,
+      "lng": 5.12,
+      "region": "Frisia",
+      "modernCountry": "Netherlands"
+    },
+    {
+      "id": "aachen",
+      "name": "Aachen",
+      "lat": 50.78,
+      "lng": 6.08,
+      "region": "Francia",
+      "modernCountry": "Germany"
+    },
+    {
+      "id": "moravia",
+      "name": "Moravia",
+      "lat": 49.20,
+      "lng": 17.67,
+      "region": "Moravia",
+      "modernCountry": "Czech Republic"
+    },
+    {
+      "id": "hamburg",
+      "name": "Hamburg",
+      "lat": 53.55,
+      "lng": 10.00,
+      "region": "Saxony",
+      "modernCountry": "Germany"
+    },
+    {
+      "id": "cluny",
+      "name": "Cluny",
+      "lat": 46.43,
+      "lng": 4.66,
+      "region": "Burgundy",
+      "modernCountry": "France"
+    },
+    {
+      "id": "prague",
+      "name": "Prague",
+      "lat": 50.08,
+      "lng": 14.42,
+      "region": "Bohemia",
+      "modernCountry": "Czech Republic"
+    },
+    {
+      "id": "kiev",
+      "name": "Kiev",
+      "lat": 50.45,
+      "lng": 30.52,
+      "region": "Kievan Rus",
+      "modernCountry": "Ukraine"
+    },
+    {
+      "id": "augsburg",
+      "name": "Augsburg",
+      "lat": 48.37,
+      "lng": 10.90,
+      "region": "Bavaria",
+      "modernCountry": "Germany"
+    },
+    {
+      "id": "chartreuse",
+      "name": "Grande Chartreuse",
+      "lat": 45.36,
+      "lng": 5.78,
+      "region": "Dauphiné",
+      "modernCountry": "France"
+    },
+    {
+      "id": "ostia",
+      "name": "Ostia",
+      "lat": 41.76,
+      "lng": 12.28,
+      "region": "Latium",
+      "modernCountry": "Italy"
+    },
+    {
+      "id": "edinburgh",
+      "name": "Edinburgh",
+      "lat": 55.95,
+      "lng": -3.19,
+      "region": "Scotland",
+      "modernCountry": "United Kingdom"
+    },
+    {
+      "id": "canossa",
+      "name": "Canossa",
+      "lat": 44.58,
+      "lng": 10.45,
+      "region": "Emilia-Romagna",
+      "modernCountry": "Italy"
+    },
+    {
+      "id": "clermont",
+      "name": "Clermont",
+      "lat": 45.78,
+      "lng": 3.09,
+      "region": "Auvergne",
+      "modernCountry": "France"
+    },
+    {
+      "id": "jerusalem",
+      "name": "Jerusalem",
+      "lat": 31.77,
+      "lng": 35.22,
+      "region": "Judea",
+      "modernCountry": "Israel"
     },
     {
       "id": "monte-cassino",

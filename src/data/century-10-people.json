@@ -1,0 +1,127 @@
+[
+  {
+    "id": "odo-cluny",
+    "name": "St. Odo of Cluny",
+    "birthYear": 879,
+    "deathYear": 942,
+    "feastDay": "November 18",
+    "primaryTradition": "Latin",
+    "roles": [
+      "abbot"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "cluny",
+        "description": "Abbot of Cluny"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Odo_of_Cluny",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11205a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Odo_Cluny-11.jpg",
+    "summary": "Odo of Cluny was the second abbot of Cluny and a key figure in the Cluniac Reforms. He expanded the influence of Cluny Abbey and reformed monasteries throughout France and Italy. He was known for his strict adherence to the Rule of St. Benedict and his efforts to reform the clergy. His reforms helped establish Cluny as one of the most important monastic centers in medieval Europe.",
+    "keyQuotes": []
+  },
+  {
+    "id": "dunstan",
+    "name": "St. Dunstan",
+    "birthYear": 909,
+    "deathYear": 988,
+    "feastDay": "May 19",
+    "primaryTradition": "Latin",
+    "roles": [
+      "archbishop",
+      "abbot"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "canterbury",
+        "description": "Archbishop of Canterbury"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Dunstan",
+    "newAdventUrl": "https://www.newadvent.org/cathen/05213a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Dunstan2.jpg",
+    "summary": "Dunstan was Archbishop of Canterbury and a leading figure in the 10th-century English Church. He was a skilled craftsman, statesman, and reformer who worked to restore monastic life in England after the Viking invasions. He served as advisor to several English kings and was instrumental in the revival of English monasticism. He is the patron saint of goldsmiths, locksmiths, and musicians.",
+    "keyQuotes": []
+  },
+  {
+    "id": "wenceslaus",
+    "name": "St. Wenceslaus",
+    "birthYear": 907,
+    "deathYear": 935,
+    "feastDay": "September 28",
+    "primaryTradition": "Latin",
+    "roles": [
+      "duke",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "prague",
+        "description": "Duke of Bohemia, martyred"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Wenceslaus_I%2C_Duke_of_Bohemia",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15587b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Wolfenb%C3%BCttelsk%C3%BD_kodex_%E2%80%93_Gumpoldova_legenda_%E2%80%93_18v_cr.jpg",
+    "summary": "Wenceslaus I was Duke of Bohemia who is venerated as a saint and martyr. He was known for his piety, charity, and efforts to spread Christianity in Bohemia. He was murdered by his brother Boleslaus, who opposed his Christian policies. He is the patron saint of the Czech Republic and is the subject of the Christmas carol 'Good King Wenceslas.'",
+    "keyQuotes": []
+  },
+  {
+    "id": "olga-kiev",
+    "name": "St. Olga of Kiev",
+    "birthYear": 890,
+    "deathYear": 969,
+    "feastDay": "July 11",
+    "primaryTradition": "Greek",
+    "roles": [
+      "queen",
+      "regent"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "kiev",
+        "description": "Princess and regent of Kievan Rus"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Olga_of_Kiev",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11235a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/St_Olga_by_Nesterov_in_1892_%28cropped%29.jpg",
+    "summary": "Olga of Kiev was the first Christian ruler of Kievan Rus. She was regent for her son Sviatoslav and later for her grandson Vladimir. She was baptized in Constantinople and worked to spread Christianity in Kievan Rus, though her efforts were initially resisted. She is venerated as a saint in both the Eastern Orthodox and Roman Catholic Churches and is considered the first Russian saint.",
+    "keyQuotes": []
+  },
+  {
+    "id": "adalbert-prague",
+    "name": "St. Adalbert of Prague",
+    "birthYear": 956,
+    "deathYear": 997,
+    "feastDay": "April 23",
+    "primaryTradition": "Latin",
+    "roles": [
+      "bishop",
+      "missionary",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "prague",
+        "description": "Bishop of Prague, missionary and martyr"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Adalbert_of_Prague",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01130a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Szt-adalbert.jpg",
+    "summary": "Adalbert of Prague was a bishop, missionary, and martyr. He was Bishop of Prague but left his see due to conflicts with the nobility. He became a missionary to the Prussians and was martyred while preaching to them. He is one of the patron saints of Poland, the Czech Republic, and Prussia. His missionary work helped spread Christianity in Eastern Europe.",
+    "keyQuotes": []
+  }
+]

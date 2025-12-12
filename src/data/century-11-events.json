@@ -1,0 +1,66 @@
+[
+  {
+    "id": "great-schism",
+    "name": "Great Schism of 1054",
+    "startYear": 1054,
+    "endYear": 1054,
+    "type": "other",
+    "locationId": "constantinople",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/East%E2%80%93West_Schism",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13535a.htm",
+    "summary": "The Great Schism of 1054 was the formal split between the Eastern Orthodox Church and the Roman Catholic Church. The schism was the culmination of centuries of growing theological, political, and cultural differences. The immediate cause was the mutual excommunication of Pope Leo IX and Patriarch Michael I Cerularius. This schism divided Christendom and remains to this day, though efforts at reconciliation have been made.",
+    "keyDocuments": []
+  },
+  {
+    "id": "investiture-controversy",
+    "name": "Investiture Controversy",
+    "startYear": 1075,
+    "endYear": 1122,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Investiture_Controversy",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08086a.htm",
+    "summary": "The Investiture Controversy was a conflict between the papacy and the Holy Roman Empire over the right to appoint bishops and abbots. Pope Gregory VII banned lay investiture, asserting that only the Church had the right to appoint clergy. This led to a long struggle with Emperor Henry IV, which included Henry's famous penance at Canossa in 1077. The controversy was eventually resolved by the Concordat of Worms in 1122.",
+    "keyDocuments": []
+  },
+  {
+    "id": "penance-canossa",
+    "name": "Penance at Canossa",
+    "startYear": 1077,
+    "endYear": 1077,
+    "type": "other",
+    "locationId": "canossa",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Walk_to_Canossa",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03250a.htm",
+    "summary": "The Penance at Canossa was a dramatic event in 1077 when Holy Roman Emperor Henry IV stood barefoot in the snow for three days outside the castle of Canossa, seeking absolution from Pope Gregory VII. Henry had been excommunicated for his defiance of the pope's ban on lay investiture. The event symbolized the power of the papacy over secular rulers, though the conflict would continue for decades.",
+    "keyDocuments": []
+  },
+  {
+    "id": "first-crusade",
+    "name": "First Crusade",
+    "startYear": 1096,
+    "endYear": 1099,
+    "type": "other",
+    "locationId": "jerusalem",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Crusade",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04543c.htm",
+    "summary": "The First Crusade was launched in 1096 by Pope Urban II at the Council of Clermont. The crusade was called to aid the Byzantine Empire against the Seljuk Turks and to recapture the Holy Land. The crusaders successfully captured Jerusalem in 1099, establishing the Crusader States in the Levant. The First Crusade was the most successful of the crusades and had profound effects on both Europe and the Middle East.",
+    "keyDocuments": []
+  },
+  {
+    "id": "council-clermont",
+    "name": "Council of Clermont",
+    "startYear": 1095,
+    "endYear": 1095,
+    "type": "council",
+    "locationId": "clermont",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Clermont",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04050a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Passages_d%27outremer_Fr5594%2C_fol._19r%2C_Concile_de_Clermont.jpg",
+    "summary": "The Council of Clermont was a synod convened by Pope Urban II in 1095. At this council, Urban II delivered his famous speech calling for the First Crusade to recapture the Holy Land from Muslim control. The speech inspired thousands to take up the cross and marked the beginning of the Crusades. The council also addressed various Church reforms and disciplinary matters.",
+    "keyDocuments": [
+      "Call for the First Crusade",
+      "Truce of God"
+    ]
+  }
+]

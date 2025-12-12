@@ -1,6 +1,7 @@
 import { useMemo, useState, useRef } from 'react';
 import { Person, Event } from '../types';
 import type { OrthodoxyStatus } from '../types/person';
+import type { EventType } from '../types/event';
 
 interface TimelineProps {
   people: Person[];
@@ -8,6 +9,16 @@ interface TimelineProps {
   currentYear: number;
   onItemClick: (item: Person | Event) => void;
   onYearChange: (year: number) => void;
+}
+
+interface TimelineFilters {
+  showPeople: boolean;
+  showEvents: boolean;
+  orthodoxyStatus: Set<OrthodoxyStatus>;
+  showMartyrs: boolean | null; // null = show all, true = only martyrs, false = only non-martyrs
+  roles: Set<string>;
+  primaryTradition: Set<string>;
+  eventTypes: Set<EventType>;
 }
 
 interface TimelineItem {
@@ -25,14 +36,78 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
   const [imageAspectRatios, setImageAspectRatios] = useState<Map<string, number>>(new Map());
   const [zoomLevel, setZoomLevel] = useState(0); // 0 = full range, higher = more zoomed in
   const [viewCenter, setViewCenter] = useState<number | null>(null); // Center year of the view
+  const [showFilters, setShowFilters] = useState(false);
   const svgRef = useRef<SVGSVGElement>(null);
+
+  // Initialize filters with all options enabled
+  const [filters, setFilters] = useState<TimelineFilters>(() => {
+    // Collect all unique roles and traditions from people
+    const allRoles = new Set<string>();
+    const allTraditions = new Set<string>();
+    people.forEach(p => {
+      p.roles?.forEach(r => allRoles.add(r));
+      if (p.primaryTradition) allTraditions.add(p.primaryTradition);
+    });
+
+    return {
+      showPeople: true,
+      showEvents: true,
+      orthodoxyStatus: new Set<OrthodoxyStatus>(['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular']),
+      showMartyrs: null, // null = show all
+      roles: allRoles,
+      primaryTradition: allTraditions,
+      eventTypes: new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'other']),
+    };
+  });
+
+  // Filter people based on filter criteria
+  const filteredPeople = useMemo(() => {
+    if (!filters.showPeople) return [];
+    
+    return people.filter((person) => {
+      // Filter by orthodoxy status
+      if (!filters.orthodoxyStatus.has(person.orthodoxyStatus)) {
+        return false;
+      }
+      
+      // Filter by martyr status
+      if (filters.showMartyrs !== null) {
+        if (filters.showMartyrs && !person.isMartyr) return false;
+        if (!filters.showMartyrs && person.isMartyr) return false;
+      }
+      
+      // Filter by roles (if roles filter is set, person must have at least one selected role)
+      if (filters.roles.size > 0) {
+        if (!person.roles || person.roles.length === 0) return false;
+        const hasSelectedRole = person.roles.some(role => filters.roles.has(role));
+        if (!hasSelectedRole) return false;
+      }
+      
+      // Filter by primary tradition (if tradition filter is set, person must have a selected tradition)
+      if (filters.primaryTradition.size > 0) {
+        if (!person.primaryTradition) return false;
+        if (!filters.primaryTradition.has(person.primaryTradition)) return false;
+      }
+      
+      return true;
+    });
+  }, [people, filters]);
+
+  // Filter events based on filter criteria
+  const filteredEvents = useMemo(() => {
+    if (!filters.showEvents) return [];
+    
+    return events.filter((event) => {
+      return filters.eventTypes.has(event.type);
+    });
+  }, [events, filters]);
 
   // Calculate the time range for the timeline
   const { minYear, maxYear, items } = useMemo(() => {
     const allItems: TimelineItem[] = [];
 
-    // Add people
-    people.forEach((person) => {
+    // Add filtered people
+    filteredPeople.forEach((person) => {
       const start = person.birthYear ?? person.deathYear - 80; // Estimate if no birth year
       const end = person.deathYear;
       
@@ -59,8 +134,8 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
       });
     });
 
-    // Add events
-    events.forEach((event) => {
+    // Add filtered events
+    filteredEvents.forEach((event) => {
       allItems.push({
         id: event.id,
         name: event.name,
@@ -72,10 +147,11 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     });
 
     const minYear = Math.min(...allItems.map(item => item.startYear));
-    const maxYear = Math.max(...allItems.map(item => item.endYear));
+    const calculatedMaxYear = Math.max(...allItems.map(item => item.endYear));
+    const maxYear = Math.max(calculatedMaxYear, 2100); // Extend timeline to 2100
     
     return { minYear, maxYear, items: allItems };
-  }, [people, events]);
+  }, [filteredPeople, filteredEvents]);
 
   const timelineWidth = 1000; // Fixed width for the timeline
   const timelineHeight = 600; // Increased height for more vertical space
@@ -274,102 +350,354 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     onYearChange(year);
   };
 
+  // Get all unique roles and traditions for filter options
+  const allRoles = useMemo(() => {
+    const roles = new Set<string>();
+    people.forEach(p => p.roles?.forEach(r => roles.add(r)));
+    return Array.from(roles).sort();
+  }, [people]);
+
+  const allTraditions = useMemo(() => {
+    const traditions = new Set<string>();
+    people.forEach(p => {
+      if (p.primaryTradition) traditions.add(p.primaryTradition);
+    });
+    return Array.from(traditions).sort();
+  }, [people]);
+
+  const toggleOrthodoxyStatus = (status: OrthodoxyStatus) => {
+    setFilters(prev => {
+      const newSet = new Set(prev.orthodoxyStatus);
+      if (newSet.has(status)) {
+        newSet.delete(status);
+      } else {
+        newSet.add(status);
+      }
+      return { ...prev, orthodoxyStatus: newSet };
+    });
+  };
+
+  const toggleRole = (role: string) => {
+    setFilters(prev => {
+      const newSet = new Set(prev.roles);
+      if (newSet.has(role)) {
+        newSet.delete(role);
+      } else {
+        newSet.add(role);
+      }
+      return { ...prev, roles: newSet };
+    });
+  };
+
+  const toggleTradition = (tradition: string) => {
+    setFilters(prev => {
+      const newSet = new Set(prev.primaryTradition);
+      if (newSet.has(tradition)) {
+        newSet.delete(tradition);
+      } else {
+        newSet.add(tradition);
+      }
+      return { ...prev, primaryTradition: newSet };
+    });
+  };
+
+  const toggleEventType = (type: EventType) => {
+    setFilters(prev => {
+      const newSet = new Set(prev.eventTypes);
+      if (newSet.has(type)) {
+        newSet.delete(type);
+      } else {
+        newSet.add(type);
+      }
+      return { ...prev, eventTypes: newSet };
+    });
+  };
+
+  const resetFilters = () => {
+    setFilters({
+      showPeople: true,
+      showEvents: true,
+      orthodoxyStatus: new Set<OrthodoxyStatus>(['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular']),
+      showMartyrs: null,
+      roles: new Set(allRoles),
+      primaryTradition: new Set(allTraditions),
+      eventTypes: new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'other']),
+    });
+  };
+
   return (
     <div style={{ padding: '2rem', backgroundColor: '#1a1a1a', minHeight: '100%' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
         <h2 style={{ margin: 0, color: '#fff' }}>Timeline View</h2>
-        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-          {/* Pan controls (only visible when zoomed) */}
-          {zoomLevel > 0 && (
-            <>
-              <button
-                onClick={handlePanLeft}
-                style={{
-                  padding: '0.5rem 1rem',
-                  backgroundColor: '#4a9eff',
-                  color: '#fff',
-                  border: 'none',
-                  borderRadius: '4px',
-                  cursor: 'pointer',
-                  fontSize: '14px',
-                }}
-                title="Pan left (earlier)"
-              >
-                ←
-              </button>
-              <button
-                onClick={handlePanRight}
-                style={{
-                  padding: '0.5rem 1rem',
-                  backgroundColor: '#4a9eff',
-                  color: '#fff',
-                  border: 'none',
-                  borderRadius: '4px',
-                  cursor: 'pointer',
-                  fontSize: '14px',
-                }}
-                title="Pan right (later)"
-              >
-                →
-              </button>
-              <div style={{ width: '1px', height: '20px', backgroundColor: '#666', margin: '0 0.25rem' }}></div>
-            </>
-          )}
+        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
           <button
-            onClick={handleZoomOut}
-            disabled={zoomLevel === 0}
+            onClick={() => setShowFilters(!showFilters)}
             style={{
               padding: '0.5rem 1rem',
-              backgroundColor: zoomLevel === 0 ? '#444' : '#4a9eff',
+              backgroundColor: showFilters ? '#4a9eff' : '#333',
               color: '#fff',
               border: 'none',
               borderRadius: '4px',
-              cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
+              cursor: 'pointer',
               fontSize: '14px',
             }}
-            title="Zoom out"
           >
-            −
+            {showFilters ? 'Hide Filters' : 'Show Filters'}
           </button>
-          <span style={{ color: '#aaa', fontSize: '14px', minWidth: '60px', textAlign: 'center' }}>
-            {zoomLevel === 0 ? 'Full' : `${Math.round(Math.pow(2, zoomLevel) * 100)}%`}
-          </span>
-          <button
-            onClick={handleZoomIn}
-            disabled={zoomLevel >= 5}
-            style={{
-              padding: '0.5rem 1rem',
-              backgroundColor: zoomLevel >= 5 ? '#444' : '#4a9eff',
-              color: '#fff',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: zoomLevel >= 5 ? 'not-allowed' : 'pointer',
-              fontSize: '14px',
-            }}
-            title="Zoom in"
-          >
-            +
-          </button>
-          {zoomLevel > 0 && (
+          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+            {/* Pan controls (only visible when zoomed) */}
+            {zoomLevel > 0 && (
+              <>
+                <button
+                  onClick={handlePanLeft}
+                  style={{
+                    padding: '0.5rem 1rem',
+                    backgroundColor: '#4a9eff',
+                    color: '#fff',
+                    border: 'none',
+                    borderRadius: '4px',
+                    cursor: 'pointer',
+                    fontSize: '14px',
+                  }}
+                  title="Pan left (earlier)"
+                >
+                  ←
+                </button>
+                <button
+                  onClick={handlePanRight}
+                  style={{
+                    padding: '0.5rem 1rem',
+                    backgroundColor: '#4a9eff',
+                    color: '#fff',
+                    border: 'none',
+                    borderRadius: '4px',
+                    cursor: 'pointer',
+                    fontSize: '14px',
+                  }}
+                  title="Pan right (later)"
+                >
+                  →
+                </button>
+                <div style={{ width: '1px', height: '20px', backgroundColor: '#666', margin: '0 0.25rem' }}></div>
+              </>
+            )}
             <button
-              onClick={handleZoomReset}
+              onClick={handleZoomOut}
+              disabled={zoomLevel === 0}
               style={{
                 padding: '0.5rem 1rem',
+                backgroundColor: zoomLevel === 0 ? '#444' : '#4a9eff',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
+                fontSize: '14px',
+              }}
+              title="Zoom out"
+            >
+              −
+            </button>
+            <span style={{ color: '#aaa', fontSize: '14px', minWidth: '60px', textAlign: 'center' }}>
+              {zoomLevel === 0 ? 'Full' : `${Math.round(Math.pow(2, zoomLevel) * 100)}%`}
+            </span>
+            <button
+              onClick={handleZoomIn}
+              disabled={zoomLevel >= 5}
+              style={{
+                padding: '0.5rem 1rem',
+                backgroundColor: zoomLevel >= 5 ? '#444' : '#4a9eff',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: zoomLevel >= 5 ? 'not-allowed' : 'pointer',
+                fontSize: '14px',
+              }}
+              title="Zoom in"
+            >
+              +
+            </button>
+            {zoomLevel > 0 && (
+              <button
+                onClick={handleZoomReset}
+                style={{
+                  padding: '0.5rem 1rem',
+                  backgroundColor: '#666',
+                  color: '#fff',
+                  border: 'none',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  fontSize: '12px',
+                  marginLeft: '0.5rem',
+                }}
+                title="Reset zoom"
+              >
+                Reset
+              </button>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Filter Panel */}
+      {showFilters && (
+        <div style={{
+          marginBottom: '2rem',
+          padding: '1.5rem',
+          backgroundColor: '#2a2a2a',
+          borderRadius: '8px',
+          color: '#fff',
+        }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+            <h3 style={{ margin: 0, color: '#fff' }}>Filters</h3>
+            <button
+              onClick={resetFilters}
+              style={{
+                padding: '0.4rem 0.8rem',
                 backgroundColor: '#666',
                 color: '#fff',
                 border: 'none',
                 borderRadius: '4px',
                 cursor: 'pointer',
                 fontSize: '12px',
-                marginLeft: '0.5rem',
               }}
-              title="Reset zoom"
             >
-              Reset
+              Reset All
             </button>
-          )}
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
+            {/* Show/Hide Toggles */}
+            <div>
+              <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Show/Hide</div>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                <input
+                  type="checkbox"
+                  checked={filters.showPeople}
+                  onChange={(e) => setFilters(prev => ({ ...prev, showPeople: e.target.checked }))}
+                />
+                <span>People</span>
+              </label>
+              <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+                <input
+                  type="checkbox"
+                  checked={filters.showEvents}
+                  onChange={(e) => setFilters(prev => ({ ...prev, showEvents: e.target.checked }))}
+                />
+                <span>Events</span>
+              </label>
+            </div>
+
+            {/* Orthodoxy Status */}
+            {filters.showPeople && (
+              <div>
+                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Orthodoxy Status</div>
+                {(['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular'] as OrthodoxyStatus[]).map(status => (
+                  <label key={status} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                    <input
+                      type="checkbox"
+                      checked={filters.orthodoxyStatus.has(status)}
+                      onChange={() => toggleOrthodoxyStatus(status)}
+                    />
+                    <span style={{ textTransform: 'capitalize' }}>{status}</span>
+                  </label>
+                ))}
+              </div>
+            )}
+
+            {/* Martyr Filter */}
+            {filters.showPeople && (
+              <div>
+                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Martyr Status</div>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                  <input
+                    type="radio"
+                    name="martyr"
+                    checked={filters.showMartyrs === null}
+                    onChange={() => setFilters(prev => ({ ...prev, showMartyrs: null }))}
+                  />
+                  <span>All</span>
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                  <input
+                    type="radio"
+                    name="martyr"
+                    checked={filters.showMartyrs === true}
+                    onChange={() => setFilters(prev => ({ ...prev, showMartyrs: true }))}
+                  />
+                  <span>Martyrs Only</span>
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+                  <input
+                    type="radio"
+                    name="martyr"
+                    checked={filters.showMartyrs === false}
+                    onChange={() => setFilters(prev => ({ ...prev, showMartyrs: false }))}
+                  />
+                  <span>Non-Martyrs Only</span>
+                </label>
+              </div>
+            )}
+
+            {/* Roles */}
+            {filters.showPeople && allRoles.length > 0 && (
+              <div>
+                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Roles</div>
+                <div style={{ maxHeight: '200px', overflowY: 'auto' }}>
+                  {allRoles.map(role => (
+                    <label key={role} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                      <input
+                        type="checkbox"
+                        checked={filters.roles.has(role)}
+                        onChange={() => toggleRole(role)}
+                      />
+                      <span>{role}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Primary Tradition */}
+            {filters.showPeople && allTraditions.length > 0 && (
+              <div>
+                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Primary Tradition</div>
+                {allTraditions.map(tradition => (
+                  <label key={tradition} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                    <input
+                      type="checkbox"
+                      checked={filters.primaryTradition.has(tradition)}
+                      onChange={() => toggleTradition(tradition)}
+                    />
+                    <span>{tradition}</span>
+                  </label>
+                ))}
+              </div>
+            )}
+
+            {/* Event Types */}
+            {filters.showEvents && (
+              <div>
+                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Event Types</div>
+                {(['council', 'schism', 'persecution', 'reform', 'other'] as EventType[]).map(type => (
+                  <label key={type} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                    <input
+                      type="checkbox"
+                      checked={filters.eventTypes.has(type)}
+                      onChange={() => toggleEventType(type)}
+                    />
+                    <span style={{ textTransform: 'capitalize' }}>{type}</span>
+                  </label>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Active Filter Summary */}
+          <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid #444', fontSize: '12px', color: '#aaa' }}>
+            Showing: {filteredPeople.length} people, {filteredEvents.length} events
+          </div>
         </div>
-      </div>
+      )}
       
       {zoomLevel > 0 && (
         <div style={{ 
@@ -511,22 +839,32 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             // Calculate vertical positions to avoid overlaps
             const itemPositions = new Map<string, number>();
             
-            // Separate councils from other items
+            // Separate popes, councils, and other items
+            const popes = sortedItems.filter(item => 
+              item.type === 'person' && (item.data as Person).roles?.includes('pope')
+            );
             const councils = sortedItems.filter(item => 
               item.type === 'event' && (item.data as Event).type === 'council'
             );
-            const nonCouncils = sortedItems.filter(item => 
+            const others = sortedItems.filter(item => 
+              !(item.type === 'person' && (item.data as Person).roles?.includes('pope')) &&
               !(item.type === 'event' && (item.data as Event).type === 'council')
             );
             
-            // Place all councils on the same line (slightly above the timeline)
-            const councilY = timelineHeight / 2 - 60; // Fixed position for all councils
+            // Place all popes on the same line at the top
+            const popeY = 80; // Fixed position for all popes at the top
+            popes.forEach((item) => {
+              itemPositions.set(item.id, popeY);
+            });
+            
+            // Place all councils on the same line (below popes)
+            const councilY = 140; // Fixed position for all councils, below popes
             councils.forEach((item) => {
               itemPositions.set(item.id, councilY);
             });
 
-            // Position non-council items, avoiding the council line
-            nonCouncils.forEach((item) => {
+            // Position other items, avoiding both pope and council lines
+            others.forEach((item) => {
               const startX = getXPosition(item.startYear);
               const endX = getXPosition(item.endYear);
               
@@ -540,12 +878,13 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                 for (const direction of [-1, 1]) {
                   const testY = timelineHeight / 2 + (offset * direction);
                   
-                  // Skip positions too close to the council line
+                  // Skip positions too close to pope or council lines
+                  if (Math.abs(testY - popeY) < 50) continue;
                   if (Math.abs(testY - councilY) < 50) continue;
                   
-                  // Check for overlaps with nearby items
+                  // Check for overlaps with nearby items (excluding popes and councils which are on fixed lines)
                   let overlapCount = 0;
-                  sortedItems.forEach((otherItem) => {
+                  others.forEach((otherItem) => {
                     if (otherItem.id === item.id || !itemPositions.has(otherItem.id)) return;
                     
                     const otherY = itemPositions.get(otherItem.id)!;
@@ -573,11 +912,11 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
 
               // If still overlapping, try alternating pattern
               if (minOverlap > 0) {
-                const itemIndex = nonCouncils.findIndex(i => i.id === item.id);
+                const itemIndex = others.findIndex(i => i.id === item.id);
                 const alternatingOffset = ((itemIndex % 4) - 1.5) * 50;
                 const candidateY = timelineHeight / 2 + alternatingOffset;
-                // Make sure it's not too close to council line
-                if (Math.abs(candidateY - councilY) >= 50) {
+                // Make sure it's not too close to pope or council lines
+                if (Math.abs(candidateY - popeY) >= 50 && Math.abs(candidateY - councilY) >= 50) {
                   bestY = candidateY;
                 }
               }

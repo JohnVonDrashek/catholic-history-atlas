@@ -1,0 +1,323 @@
+[
+  {
+    "id": "simon-zealot",
+    "name": "St. Simon the Zealot",
+    "birthYear": null,
+    "deathYear": 107,
+    "feastDay": "October 28",
+    "primaryTradition": "Greek",
+    "roles": [
+      "apostle",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "persia",
+        "description": "Martyred in Persia"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Simon_the_Zealot",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13796a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Rubens_apostel_simon.jpg",
+    "summary": "Simon the Zealot, also known as Simon the Cananaean, was one of the Twelve Apostles. The title 'Zealot' may refer to his membership in the Jewish Zealot party, or it may simply mean 'zealous.' According to tradition, he preached in Egypt and Persia, where he was martyred, possibly by being sawn in half. He is often depicted with a saw, the instrument of his martyrdom.",
+    "keyQuotes": []
+  },
+  {
+    "id": "ignatius-antioch",
+    "name": "St. Ignatius of Antioch",
+    "birthYear": null,
+    "deathYear": 108,
+    "feastDay": "October 17",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "martyr",
+      "Apostolic Father"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "antioch",
+        "description": "Bishop of Antioch"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ignatius_of_Antioch",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07644a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Hosios_Loukas_%28south_west_chapel%2C_south_side%29_-_Ignatios.jpg/330px-Hosios_Loukas_%28south_west_chapel%2C_south_side%29_-_Ignatios.jpg",
+    "summary": "Ignatius of Antioch was an early Christian writer and bishop of Antioch. He was martyred in Rome, and on his way there, he wrote seven letters to various churches. These letters are among the earliest Christian documents outside the New Testament.",
+    "keyQuotes": [
+      "Where the bishop is, there let the multitude of believers be; even as where Jesus is, there is the Catholic Church.",
+      "I am God's wheat, and I shall be ground by the teeth of wild beasts, that I may be found the pure bread of Christ."
+    ],
+    "writings": [
+      {
+        "title": "Epistle to the Ephesians",
+        "url": "https://www.ccel.org/ccel/schaff/anf01.iv.ii.html"
+      },
+      {
+        "title": "Epistle to the Magnesians",
+        "url": "https://www.ccel.org/ccel/schaff/anf01.iv.iii.html"
+      },
+      {
+        "title": "Epistle to the Trallians",
+        "url": "https://www.ccel.org/ccel/schaff/anf01.iv.iv.html"
+      },
+      {
+        "title": "Epistle to the Romans",
+        "url": "https://www.ccel.org/ccel/schaff/anf01.iv.v.html"
+      },
+      {
+        "title": "Epistle to the Philadelphians",
+        "url": "https://www.ccel.org/ccel/schaff/anf01.iv.vi.html"
+      },
+      {
+        "title": "Epistle to the Smyrnaeans",
+        "url": "https://www.ccel.org/ccel/schaff/anf01.iv.vii.html"
+      },
+      {
+        "title": "Epistle to Polycarp",
+        "url": "https://www.ccel.org/ccel/schaff/anf01.iv.viii.html"
+      }
+    ]
+  },
+  {
+    "id": "polycarp",
+    "name": "St. Polycarp",
+    "birthYear": 69,
+    "deathYear": 155,
+    "feastDay": "February 23",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "martyr",
+      "Apostolic Father"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "smyrna",
+        "description": "Bishop of Smyrna"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Polycarp",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12219b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Hosios_Loukas_%28diakonikon%29_-_Polycarp.jpg/330px-Hosios_Loukas_%28diakonikon%29_-_Polycarp.jpg",
+    "summary": "Polycarp was a 2nd-century Christian bishop of Smyrna. According to the Martyrdom of Polycarp, he was martyred by being stabbed after an attempt to burn him at the stake proved unsuccessful.",
+    "keyQuotes": [
+      "Eighty and six years have I served Christ, and He never did me any injury: how then can I blaspheme my King and my Saviour?"
+    ],
+    "writings": [
+      {
+        "title": "Epistle to the Philippians",
+        "url": "https://www.ccel.org/ccel/schaff/anf01.iv.ix.html"
+      }
+    ]
+  },
+  {
+    "id": "papias",
+    "name": "St. Papias of Hierapolis",
+    "birthYear": 60,
+    "deathYear": 130,
+    "feastDay": "February 22",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "Apostolic Father"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "hierapolis",
+        "description": "Bishop of Hierapolis"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Papias_of_Hierapolis",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11457b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Papias.png",
+    "summary": "Papias was an early Christian bishop of Hierapolis and an Apostolic Father. He is known for his five-volume work 'Exposition of the Sayings of the Lord,' which preserved early oral traditions about the apostles and the origins of the Gospels. His writings are among the earliest testimonies to the authorship of the Gospels.",
+    "keyQuotes": []
+  },
+  {
+    "id": "quadratus",
+    "name": "St. Quadratus of Athens",
+    "birthYear": null,
+    "deathYear": 129,
+    "feastDay": "September 26",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "apologist"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "athens",
+        "description": "Bishop of Athens"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Quadratus_of_Athens",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12592a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Quadratus_of_Athens_%28Menologion_of_Basil_II%29.jpg/330px-Quadratus_of_Athens_%28Menologion_of_Basil_II%29.jpg",
+    "summary": "Quadratus was an early Christian apologist and bishop of Athens. He is known for presenting an apology for Christianity to Emperor Hadrian around 125 AD, making him one of the earliest Christian apologists. His work is now lost except for a brief fragment preserved by Eusebius.",
+    "keyQuotes": []
+  },
+  {
+    "id": "hermas",
+    "name": "St. Hermas",
+    "birthYear": null,
+    "deathYear": 150,
+    "feastDay": "May 9",
+    "primaryTradition": "Latin",
+    "roles": [
+      "prophet"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Author in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Hermas_(freedman)",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07263a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canon_Muratori.png/330px-Canon_Muratori.png",
+    "summary": "Hermas was a Christian writer of the 2nd century and the author of 'The Shepherd of Hermas,' one of the most popular Christian works of the early Church. The work, written in Rome, contains visions, commandments, and parables, and was considered canonical by some early Christian communities.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "The Shepherd of Hermas",
+        "url": "https://www.ccel.org/ccel/schaff/anf02.iv.ii.html"
+      }
+    ]
+  },
+  {
+    "id": "justin-martyr",
+    "name": "St. Justin Martyr",
+    "birthYear": 100,
+    "deathYear": 165,
+    "feastDay": "June 1",
+    "primaryTradition": "Greek",
+    "roles": [
+      "apologist",
+      "martyr",
+      "philosopher"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Martyred in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Justin_Martyr",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08580c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Saint_Justin_Martyr_by_Theophanes_the_Cretan.jpg/330px-Saint_Justin_Martyr_by_Theophanes_the_Cretan.jpg",
+    "summary": "Justin Martyr was an early Christian apologist and philosopher who converted to Christianity after studying various philosophical schools. He wrote two major apologies defending Christianity and was martyred in Rome along with six companions. He is considered one of the most important early Christian apologists.",
+    "keyQuotes": [
+      "We have been taught that Christ is the first-begotten of God, and we have declared above that He is the Word of whom every race of men were partakers."
+    ],
+    "writings": [
+      {
+        "title": "First Apology",
+        "url": "https://www.ccel.org/ccel/schaff/anf01.viii.ii.html"
+      },
+      {
+        "title": "Second Apology",
+        "url": "https://www.ccel.org/ccel/schaff/anf01.viii.iii.html"
+      },
+      {
+        "title": "Dialogue with Trypho",
+        "url": "https://www.ccel.org/ccel/schaff/anf01.viii.iv.html"
+      }
+    ]
+  },
+  {
+    "id": "melito-sardis",
+    "name": "St. Melito of Sardis",
+    "birthYear": null,
+    "deathYear": 180,
+    "feastDay": "April 1",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "apologist"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "sardis",
+        "description": "Bishop of Sardis"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Melito_of_Sardis",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10162a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/%D0%9C%D0%B5%D0%BB%D0%B8%D1%82%D0%BE%D0%BD_%D0%A1%D0%B0%D1%80%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9.jpg",
+    "summary": "Melito was a bishop of Sardis in the 2nd century and an important early Christian apologist. He wrote an apology to Emperor Marcus Aurelius and is known for his work 'On the Passover,' which provides important insights into early Christian liturgical practices and theology.",
+    "keyQuotes": []
+  },
+  {
+    "id": "theophilus-antioch",
+    "name": "St. Theophilus of Antioch",
+    "birthYear": null,
+    "deathYear": 183,
+    "feastDay": "October 13",
+    "primaryTradition": "Greek",
+    "roles": [
+      "bishop",
+      "apologist"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "antioch",
+        "description": "Bishop of Antioch"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Theophilus_of_Antioch",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14625a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Theophilus_Antiochenus.png/330px-Theophilus_Antiochenus.png",
+    "summary": "Theophilus was a bishop of Antioch in the late 2nd century and an important early Christian apologist. He wrote 'To Autolycus,' a three-volume apology that defends Christianity against pagan objections and provides one of the earliest uses of the term 'Trinity' in Christian literature.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "To Autolycus",
+        "url": "https://www.ccel.org/ccel/schaff/anf02.iv.iv.html"
+      }
+    ]
+  },
+  {
+    "id": "victor-i",
+    "name": "St. Victor I",
+    "birthYear": null,
+    "deathYear": 199,
+    "feastDay": "July 28",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Bishop of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Victor_I",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15408a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pfarrkirche_Semmering_Glasfenster.jpg/330px-Pfarrkirche_Semmering_Glasfenster.jpg",
+    "summary": "Victor I was Bishop of Rome from 189 to 199. He is best known for the Easter controversy, in which he attempted to establish a uniform date for Easter throughout the Church. He was the first pope from Africa and is credited with changing the language of the Roman liturgy from Greek to Latin. He is traditionally considered a martyr.",
+    "keyQuotes": []
+  }
+]

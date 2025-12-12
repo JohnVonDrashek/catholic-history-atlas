@@ -1,0 +1,429 @@
+[
+  {
+    "id": "martin-v",
+    "name": "Pope Martin V",
+    "birthYear": 1368,
+    "deathYear": 1431,
+    "feastDay": null,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Martin_V",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09721b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Papa_Martino_V.jpg/330px-Papa_Martino_V.jpg",
+    "summary": "Pope Martin V was elected at the Council of Constance in 1417, ending the Western Schism. He was the first pope in nearly 40 years to be universally recognized. His papacy focused on restoring papal authority, rebuilding Rome, and consolidating the Church after the schism. He worked to implement the reforms called for by the Council of Constance.",
+    "keyQuotes": []
+  },
+  {
+    "id": "jan-hus",
+    "name": "Jan Hus",
+    "birthYear": 1369,
+    "deathYear": 1415,
+    "feastDay": null,
+    "primaryTradition": "Latin",
+    "roles": [
+      "theologian",
+      "reformer",
+      "martyr"
+    ],
+    "orthodoxyStatus": "schismatic",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "prague",
+        "description": "Preacher and rector in Prague"
+      },
+      {
+        "placeId": "constance",
+        "description": "Martyred at Council of Constance"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Jan_Hus",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07584b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Stimmer_Jan_Hus.jpg/330px-Stimmer_Jan_Hus.jpg",
+    "summary": "Jan Hus was a Czech priest, philosopher, and reformer who became a key figure in the Bohemian Reformation. Influenced by John Wycliffe, he criticized Church corruption and advocated for reform. He was condemned as a heretic and burned at the stake at the Council of Constance in 1415. His death sparked the Hussite Wars and made him a national hero in the Czech lands.",
+    "keyQuotes": [
+      "Seek the truth, hear the truth, learn the truth, love the truth, speak the truth, hold the truth and defend the truth until death."
+    ],
+    "writings": [
+      {
+        "title": "On the Church",
+        "url": "https://www.ccel.org/ccel/hus/church"
+      }
+    ]
+  },
+  {
+    "id": "eugene-iv",
+    "name": "Pope Eugene IV",
+    "birthYear": 1383,
+    "deathYear": 1447,
+    "feastDay": null,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope in Rome"
+      },
+      {
+        "placeId": "florence",
+        "description": "Presided over Council of Florence"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Eugene_IV",
+    "newAdventUrl": "https://www.newadvent.org/cathen/05599b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/PapstEugen.jpg/330px-PapstEugen.jpg",
+    "summary": "Pope Eugene IV presided over the Council of Florence, which achieved a temporary reunion between the Eastern and Western Churches. His papacy was marked by conflicts with the Council of Basel and struggles to maintain papal authority. He worked to reform the Church and strengthen the papacy after the Western Schism.",
+    "keyQuotes": []
+  },
+  {
+    "id": "nicholas-cusa",
+    "name": "Nicholas of Cusa",
+    "birthYear": 1401,
+    "deathYear": 1464,
+    "feastDay": null,
+    "primaryTradition": "Latin",
+    "roles": [
+      "cardinal",
+      "philosopher",
+      "theologian"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Cardinal and papal legate"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Nicholas_of_Cusa",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11058a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Nicholas_of_Cusa.jpg/330px-Nicholas_of_Cusa.jpg",
+    "summary": "Nicholas of Cusa was a German philosopher, theologian, and cardinal who made significant contributions to philosophy, mathematics, and astronomy. He is known for his concept of 'learned ignorance' and his anticipation of modern scientific thought. He participated in the Council of Florence and worked for Church reform and reconciliation between East and West.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "On Learned Ignorance",
+        "url": "https://www.ccel.org/ccel/cusa/learned_ignorance"
+      }
+    ]
+  },
+  {
+    "id": "bernardine-siena",
+    "name": "St. Bernardine of Siena",
+    "birthYear": 1380,
+    "deathYear": 1444,
+    "feastDay": "May 20",
+    "primaryTradition": "Latin",
+    "roles": [
+      "friar",
+      "preacher"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "siena",
+        "description": "Born in Siena"
+      },
+      {
+        "placeId": "aquila",
+        "description": "Died in Aquila"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Bernardine_of_Siena",
+    "newAdventUrl": "https://www.newadvent.org/cathen/02506b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Saint_Bernardino_of_Siena.PNG/330px-Saint_Bernardino_of_Siena.PNG",
+    "summary": "Bernardine of Siena was a Franciscan friar and one of the most famous preachers of the 15th century. He traveled throughout Italy preaching repentance and reform, drawing large crowds. He promoted devotion to the Holy Name of Jesus and is credited with popularizing the IHS monogram. He was a key figure in the Observant Franciscan reform movement.",
+    "keyQuotes": []
+  },
+  {
+    "id": "joan-arc",
+    "name": "St. Joan of Arc",
+    "birthYear": 1412,
+    "deathYear": 1431,
+    "feastDay": "May 30",
+    "primaryTradition": "Latin",
+    "roles": [
+      "mystic",
+      "martyr",
+      "patron"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "domremy",
+        "description": "Born in Domrémy"
+      },
+      {
+        "placeId": "orleans",
+        "description": "Led French forces at Orléans"
+      },
+      {
+        "placeId": "rouen",
+        "description": "Martyred in Rouen"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Joan_of_Arc",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08409c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Joan_of_Arc_miniature_graded.jpg/330px-Joan_of_Arc_miniature_graded.jpg",
+    "summary": "Joan of Arc, also known as the Maid of Orléans, was a French peasant girl who claimed to receive visions from God instructing her to help drive the English from France during the Hundred Years' War. She successfully led French forces to victory at Orléans and played a key role in the coronation of Charles VII. She was captured by the English, tried for heresy, and burned at the stake in 1431. She was later declared innocent and canonized as a saint.",
+    "keyQuotes": [
+      "I am not afraid... I was born to do this."
+    ]
+  },
+  {
+    "id": "antoninus-florence",
+    "name": "St. Antoninus of Florence",
+    "birthYear": 1389,
+    "deathYear": 1459,
+    "feastDay": "May 10",
+    "primaryTradition": "Latin",
+    "roles": [
+      "archbishop",
+      "theologian"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "florence",
+        "description": "Archbishop of Florence"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Antoninus_of_Florence",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01595a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Sant%27antonino_pierozzi_%28cropped%29.jpg/330px-Sant%27antonino_pierozzi_%28cropped%29.jpg",
+    "summary": "Antoninus of Florence was a Dominican friar who became Archbishop of Florence. He was known for his learning, pastoral care, and efforts to reform the Church. He wrote extensively on moral theology and canon law. He was a key figure in the reform movement within the Dominican Order and worked to address corruption and promote spiritual renewal.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "Summa Theologica",
+        "url": "https://www.newadvent.org/cathen/01595a.htm"
+      }
+    ]
+  },
+  {
+    "id": "john-capistran",
+    "name": "St. John of Capistrano",
+    "birthYear": 1386,
+    "deathYear": 1456,
+    "feastDay": "October 23",
+    "primaryTradition": "Latin",
+    "roles": [
+      "friar",
+      "preacher",
+      "inquisitor"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "capistrano",
+        "description": "Born in Capistrano"
+      },
+      {
+        "placeId": "belgrade",
+        "description": "Preached crusade at Belgrade"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_of_Capistrano",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08420a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/82Johannes_von_Capestrano.jpg/330px-82Johannes_von_Capestrano.jpg",
+    "summary": "John of Capistrano was a Franciscan friar and one of the most famous preachers of his time. He traveled throughout Europe preaching repentance and reform. He was a key figure in the Observant Franciscan reform movement. He also preached a crusade against the Ottoman Turks and was present at the Siege of Belgrade in 1456. He was known for his zeal in combating heresy.",
+    "keyQuotes": []
+  },
+  {
+    "id": "catherine-bologna",
+    "name": "St. Catherine of Bologna",
+    "birthYear": 1413,
+    "deathYear": 1463,
+    "feastDay": "March 9",
+    "primaryTradition": "Latin",
+    "roles": [
+      "nun",
+      "mystic",
+      "artist"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "bologna",
+        "description": "Founded monastery in Bologna"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_of_Bologna",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03448a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Caterina-bologna.jpg/330px-Caterina-bologna.jpg",
+    "summary": "Catherine of Bologna was a Poor Clare nun, mystic, and artist. She was known for her visions, her writings on the spiritual life, and her artistic talents. She helped found a monastery in Bologna and served as its abbess. Her body was found incorrupt after death, and she is venerated as a saint and patron of artists.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "The Seven Spiritual Weapons",
+        "url": "https://www.ccel.org/ccel/catherine_bologna/weapons"
+      }
+    ]
+  },
+  {
+    "id": "vincent-ferrer",
+    "name": "St. Vincent Ferrer",
+    "birthYear": 1350,
+    "deathYear": 1419,
+    "feastDay": "April 5",
+    "primaryTradition": "Latin",
+    "roles": [
+      "friar",
+      "preacher",
+      "missionary"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "valencia",
+        "description": "Born in Valencia"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Vincent_Ferrer",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15436a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Joan_de_Joanes_-_St_Vincent_Ferrer_-_WGA12062.jpg/330px-Joan_de_Joanes_-_St_Vincent_Ferrer_-_WGA12062.jpg",
+    "summary": "Vincent Ferrer was a Dominican friar and one of the most famous preachers of the late Middle Ages. He traveled throughout Europe preaching repentance, the coming judgment, and the need for reform. He was known for his powerful oratory and his ability to draw large crowds. He worked to end the Western Schism and was a key figure in the conversion of many Jews and Muslims in Spain.",
+    "keyQuotes": []
+  },
+  {
+    "id": "francis-paola",
+    "name": "St. Francis of Paola",
+    "birthYear": 1416,
+    "deathYear": 1507,
+    "feastDay": "April 2",
+    "primaryTradition": "Latin",
+    "roles": [
+      "hermit",
+      "founder"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "paola",
+        "description": "Born in Paola"
+      },
+      {
+        "placeId": "france",
+        "description": "Died in France"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_of_Paola",
+    "newAdventUrl": "https://www.newadvent.org/cathen/06228a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Francis_of_Paola_by_Giovanni_Domenico_Tiepolo.jpg/330px-Francis_of_Paola_by_Giovanni_Domenico_Tiepolo.jpg",
+    "summary": "Francis of Paola was an Italian hermit and founder of the Order of Minims, a strict religious order emphasizing humility and penance. He was known for his asceticism, miracles, and prophetic gifts. He was called to France by King Louis XI and became a spiritual advisor to French royalty. He is the patron saint of Calabria and of seafarers.",
+    "keyQuotes": []
+  },
+  {
+    "id": "savonarola",
+    "name": "Girolamo Savonarola",
+    "birthYear": 1452,
+    "deathYear": 1498,
+    "feastDay": null,
+    "primaryTradition": "Latin",
+    "roles": [
+      "friar",
+      "preacher",
+      "reformer"
+    ],
+    "orthodoxyStatus": "schismatic",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "florence",
+        "description": "Preacher and reformer in Florence"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Girolamo_Savonarola",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13490a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Savonarola_%28cropped%29.jpg/330px-Savonarola_%28cropped%29.jpg",
+    "summary": "Girolamo Savonarola was a Dominican friar who led a moral and religious reform movement in Florence from 1494 to 1498. He criticized the corruption of the Church and the Medici family, calling for repentance and reform. His influence led to the 'Bonfire of the Vanities' where luxury items were burned. However, he was eventually excommunicated, tried for heresy, and executed by hanging and burning.",
+    "keyQuotes": [
+      "The Church must be reformed, and it will be reformed."
+    ],
+    "writings": [
+      {
+        "title": "The Triumph of the Cross",
+        "url": "https://www.ccel.org/ccel/savonarola/triumph"
+      }
+    ]
+  },
+  {
+    "id": "isabella-castile",
+    "name": "Isabella I of Castile",
+    "birthYear": 1451,
+    "deathYear": 1504,
+    "feastDay": null,
+    "primaryTradition": "Latin",
+    "roles": [
+      "queen",
+      "patron"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "spain",
+        "description": "Queen of Castile and Aragon"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Isabella_I_of_Castile",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08177a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/IsabellaofCastile03.jpg/330px-IsabellaofCastile03.jpg",
+    "summary": "Isabella I of Castile, together with her husband Ferdinand II of Aragon, completed the Reconquista by conquering Granada in 1492. She established the Spanish Inquisition and sponsored Christopher Columbus's voyage to the Americas. She was known for her piety and her support of the Church, though her policies also had negative consequences for religious minorities in Spain.",
+    "keyQuotes": []
+  },
+  {
+    "id": "thomas-kempis",
+    "name": "Thomas à Kempis",
+    "birthYear": 1380,
+    "deathYear": 1471,
+    "feastDay": null,
+    "primaryTradition": "Latin",
+    "roles": [
+      "monk",
+      "writer"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "zwolle",
+        "description": "Canon regular in Zwolle"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_%C3%A0_Kempis",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14661a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Thomas_von_Kempen_JS.JPG/330px-Thomas_von_Kempen_JS.JPG",
+    "summary": "Thomas à Kempis was a German-Dutch canon regular and the probable author of 'The Imitation of Christ,' one of the most widely read Christian devotional books after the Bible. The work emphasizes the interior life and following Christ's example. He was part of the Devotio Moderna movement, which emphasized personal piety and spiritual renewal.",
+    "keyQuotes": [
+      "Man proposes, but God disposes."
+    ],
+    "writings": [
+      {
+        "title": "The Imitation of Christ",
+        "url": "https://www.ccel.org/ccel/kempis/imitation"
+      }
+    ]
+  }
+]

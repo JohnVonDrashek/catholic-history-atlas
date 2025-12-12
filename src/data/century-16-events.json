@@ -1,0 +1,170 @@
+[
+  {
+    "id": "protestant-reformation",
+    "name": "Protestant Reformation",
+    "startYear": 1517,
+    "endYear": 1648,
+    "type": "other",
+    "locationId": "wittenberg",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Reformation",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12700b.htm",
+    "summary": "The Protestant Reformation began in 1517 when Martin Luther posted his Ninety-Five Theses, challenging various practices of the Catholic Church. This movement led to the establishment of Protestant churches across Europe and fundamentally changed the religious landscape of Western Christianity. The Reformation prompted the Catholic Counter-Reformation and the Council of Trent.",
+    "keyDocuments": [
+      "Ninety-Five Theses (Martin Luther)",
+      "Augsburg Confession"
+    ]
+  },
+  {
+    "id": "council-trent",
+    "name": "Council of Trent",
+    "startYear": 1545,
+    "endYear": 1563,
+    "type": "council",
+    "locationId": "trent",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Trent",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15030c.htm",
+    "summary": "The Council of Trent was the 19th ecumenical council of the Catholic Church, convened in response to the Protestant Reformation. It addressed doctrinal issues, clarified Catholic teaching on justification, the sacraments, and Scripture, and initiated important reforms in the Church. The council's decrees shaped Catholic doctrine and practice for centuries and were central to the Counter-Reformation.",
+    "keyDocuments": [
+      "Decrees of the Council of Trent",
+      "Catechism of the Council of Trent",
+      "Roman Catechism"
+    ]
+  },
+  {
+    "id": "founding-jesuits",
+    "name": "Founding of the Society of Jesus",
+    "startYear": 1540,
+    "endYear": 1540,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Society_of_Jesus",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14081a.htm",
+    "summary": "The Society of Jesus (Jesuits) was founded by St. Ignatius of Loyola and approved by Pope Paul III in 1540. The order became one of the most influential forces in the Counter-Reformation, emphasizing education, missionary work, and obedience to the papacy. The Jesuits established schools and universities throughout Europe and sent missionaries to Asia, Africa, and the Americas.",
+    "keyDocuments": [
+      "Formula of the Institute",
+      "Spiritual Exercises (Ignatius of Loyola)"
+    ]
+  },
+  {
+    "id": "martyrdom-thomas-more",
+    "name": "Martyrdom of St. Thomas More",
+    "startYear": 1535,
+    "endYear": 1535,
+    "type": "persecution",
+    "locationId": "london",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_More",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14689c.htm",
+    "summary": "St. Thomas More, Lord Chancellor of England, was executed for refusing to acknowledge King Henry VIII as the head of the Church of England. More, a lawyer, scholar, and humanist, chose death rather than compromise his Catholic faith. He is the patron saint of lawyers and statesmen and is remembered for his famous words: 'I die the king's good servant, but God's first.'",
+    "keyDocuments": [
+      "Utopia",
+      "Dialogue of Comfort Against Tribulation"
+    ]
+  },
+  {
+    "id": "martyrdom-john-fisher",
+    "name": "Martyrdom of St. John Fisher",
+    "startYear": 1535,
+    "endYear": 1535,
+    "type": "persecution",
+    "locationId": "london",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Fisher",
+    "newAdventUrl": "https://www.newadvent.org/cathen/06078a.htm",
+    "summary": "St. John Fisher, Bishop of Rochester and Cardinal, was executed for refusing to recognize Henry VIII as head of the Church of England. He was the only bishop in England to oppose the king's break with Rome. Fisher was a renowned scholar and theologian who had been the confessor of Henry's mother, Margaret Beaufort. He was beheaded on Tower Hill, just two weeks before Thomas More.",
+    "keyDocuments": []
+  },
+  {
+    "id": "english-reformation",
+    "name": "English Reformation",
+    "startYear": 1534,
+    "endYear": 1603,
+    "type": "other",
+    "locationId": "london",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/English_Reformation",
+    "newAdventUrl": "https://www.newadvent.org/cathen/12777a.htm",
+    "summary": "The English Reformation began when King Henry VIII broke with Rome after the pope refused to annul his marriage to Catherine of Aragon. The Act of Supremacy (1534) declared the English monarch as the head of the Church of England. This led to the dissolution of monasteries, the execution of Catholic martyrs including Thomas More and John Fisher, and the establishment of the Anglican Church. The period saw alternating periods of Catholic and Protestant rule under different monarchs.",
+    "keyDocuments": [
+      "Act of Supremacy (1534)",
+      "Book of Common Prayer"
+    ]
+  },
+  {
+    "id": "st-bartholomew-massacre",
+    "name": "St. Bartholomew's Day Massacre",
+    "startYear": 1572,
+    "endYear": 1572,
+    "type": "persecution",
+    "locationId": "paris",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Bartholomew%27s_Day_massacre",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13333b.htm",
+    "summary": "The St. Bartholomew's Day Massacre was a wave of violence against French Huguenots (Protestants) that began in Paris on August 24, 1572, and spread throughout France. Thousands of Protestants were killed, including many prominent leaders. The massacre occurred during the French Wars of Religion and was a tragic episode in the religious conflicts of the 16th century.",
+    "keyDocuments": []
+  },
+  {
+    "id": "founding-oratorians",
+    "name": "Founding of the Oratory",
+    "startYear": 1575,
+    "endYear": 1575,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Oratory_of_Saint_Philip_Neri",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11277a.htm",
+    "summary": "The Congregation of the Oratory was founded by St. Philip Neri in Rome in 1575. The Oratorians were a community of secular priests living together without vows, dedicated to prayer, preaching, and the sacraments. The order emphasized joy, simplicity, and service to the poor. The Oratory spread throughout Italy and later to other countries, becoming an important part of the Counter-Reformation.",
+    "keyDocuments": []
+  },
+  {
+    "id": "founding-carmelites-reformed",
+    "name": "Reform of the Carmelite Order",
+    "startYear": 1562,
+    "endYear": 1591,
+    "type": "other",
+    "locationId": "avila",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Discalced_Carmelites",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03325a.htm",
+    "summary": "St. Teresa of Avila, with the help of St. John of the Cross, reformed the Carmelite Order, establishing the Discalced (barefoot) Carmelites. The reform emphasized a return to the original contemplative and austere spirit of the order, with strict observance of poverty, prayer, and solitude. The reformed Carmelites became a major force in the Counter-Reformation and produced many mystics and saints.",
+    "keyDocuments": [
+      "The Interior Castle (Teresa of Avila)",
+      "The Dark Night of the Soul (John of the Cross)"
+    ]
+  },
+  {
+    "id": "roman-catechism",
+    "name": "Publication of the Roman Catechism",
+    "startYear": 1566,
+    "endYear": 1566,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Roman_Catechism",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03420a.htm",
+    "summary": "The Roman Catechism, also known as the Catechism of the Council of Trent, was published in 1566 under the direction of Pope St. Pius V. It was written to provide a comprehensive and authoritative explanation of Catholic doctrine in response to the Protestant Reformation. The catechism was intended primarily for parish priests to help them teach the faith accurately to their congregations.",
+    "keyDocuments": [
+      "Catechism of the Council of Trent"
+    ]
+  },
+  {
+    "id": "gregorian-calendar",
+    "name": "Introduction of the Gregorian Calendar",
+    "startYear": 1582,
+    "endYear": 1582,
+    "type": "other",
+    "locationId": "rome",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Gregorian_calendar",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03147a.htm",
+    "summary": "Pope Gregory XIII introduced the Gregorian calendar in 1582 to correct errors in the Julian calendar. The reform adjusted the calculation of leap years and removed ten days from October 1582. The new calendar was gradually adopted by Catholic countries and later by most of the world. It remains the civil calendar used internationally today.",
+    "keyDocuments": [
+      "Inter gravissimas (Papal Bull)"
+    ]
+  },
+  {
+    "id": "japanese-persecution",
+    "name": "Persecution of Christians in Japan",
+    "startYear": 1597,
+    "endYear": 1637,
+    "type": "persecution",
+    "locationId": "nagasaki",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_Japan",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10328a.htm",
+    "summary": "Beginning in 1597, the Japanese government under Toyotomi Hideyoshi and later the Tokugawa shogunate began systematic persecution of Christians. The first major persecution resulted in the crucifixion of 26 martyrs in Nagasaki, including six Franciscan missionaries and 20 Japanese converts. This marked the beginning of over two centuries of severe persecution that nearly eliminated Christianity from Japan.",
+    "keyDocuments": []
+  }
+]
+

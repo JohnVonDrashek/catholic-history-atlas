@@ -1,0 +1,83 @@
+[
+  {
+    "id": "anselm-canterbury",
+    "name": "St. Anselm of Canterbury",
+    "birthYear": 1033,
+    "deathYear": 1109,
+    "feastDay": "April 21",
+    "primaryTradition": "Latin",
+    "roles": [
+      "archbishop",
+      "theologian",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "canterbury",
+        "description": "Archbishop of Canterbury"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Anselm_of_Canterbury",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01546a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Anselm_of_Canterbury%2C_seal.svg",
+    "summary": "Anselm of Canterbury was an Italian Benedictine monk, philosopher, and theologian who became Archbishop of Canterbury. He is considered the founder of scholasticism and is known for his ontological argument for the existence of God. He was a key figure in the Investiture Controversy, defending the rights of the Church against secular rulers. He is venerated as a Doctor of the Church.",
+    "keyQuotes": [],
+    "writings": [
+      {
+        "title": "Proslogion",
+        "url": "https://www.ccel.org/ccel/anselm/basic_works.html"
+      }
+    ]
+  },
+  {
+    "id": "bruno-cologne",
+    "name": "St. Bruno of Cologne",
+    "birthYear": 1030,
+    "deathYear": 1101,
+    "feastDay": "October 6",
+    "primaryTradition": "Latin",
+    "roles": [
+      "monk",
+      "founder"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "chartreuse",
+        "description": "Founder of the Carthusian Order"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Bruno_of_Cologne",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03014a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Nicolas_Mignard-Saint_Bruno.jpg",
+    "summary": "Bruno of Cologne was a German monk who founded the Carthusian Order. He established the Grande Chartreuse monastery in the French Alps, which became the motherhouse of the Carthusians. The order is known for its strict eremitical life, combining solitary contemplation with communal worship. Bruno is venerated as a saint and is the patron of the Carthusian Order.",
+    "keyQuotes": []
+  },
+  {
+    "id": "hugh-cluny",
+    "name": "St. Hugh of Cluny",
+    "birthYear": 1024,
+    "deathYear": 1109,
+    "feastDay": "April 29",
+    "primaryTradition": "Latin",
+    "roles": [
+      "abbot"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "cluny",
+        "description": "Abbot of Cluny"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Hugh_of_Cluny",
+    "newAdventUrl": "https://www.newadvent.org/cathen/07520a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Hugo-v-cluny_heinrich-iv_mathilde-v-tuszien_cod-vat-lat-4922_1115ad.jpg",
+    "summary": "Hugh of Cluny was the sixth abbot of Cluny and one of the most influential churchmen of his time. Under his leadership, Cluny reached the height of its power and influence, with hundreds of monasteries under its authority. He was a key supporter of the Gregorian Reforms and was a close advisor to several popes. He is venerated as a saint and is known for his wisdom and diplomatic skills.",
+    "keyQuotes": []
+  }
+]

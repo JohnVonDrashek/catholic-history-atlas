@@ -6,7 +6,7 @@ import { MapView } from './components/MapView';
 import { DetailsModal } from './components/DetailsModal';
 import { FrameLegend } from './components/FrameLegend';
 import type { Person, Event } from './types';
-import initialData from './data/initial-data.json';
+import initialData from './data';
 import './styles/main.css';
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
           year={currentYear}
           onYearChange={setCurrentYear}
           minYear={30}
-          maxYear={2000}
+          maxYear={2100}
           step={10}
         />
 

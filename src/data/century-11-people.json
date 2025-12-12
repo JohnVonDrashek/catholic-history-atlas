@@ -1,0 +1,100 @@
+[
+  {
+    "id": "sylvester-ii",
+    "name": "Pope Sylvester II",
+    "birthYear": 946,
+    "deathYear": 1003,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope",
+      "scholar"
+    ],
+    "orthodoxyStatus": "orthodox",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Sylvester_II",
+    "newAdventUrl": "https://www.newadvent.org/cathen/14370a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Meister_der_Reichenauer_Schule_002_%28cropped%29.jpg",
+    "summary": "Sylvester II, born Gerbert of Aurillac, was Pope from 999 to 1003. He was one of the most learned men of his time, known for his knowledge of mathematics, astronomy, and philosophy. He was the first French pope and helped strengthen the relationship between the papacy and the Holy Roman Empire. He is credited with introducing Arabic numerals to Europe and was a key figure in the intellectual revival of the 10th century.",
+    "keyQuotes": []
+  },
+  {
+    "id": "gregory-vii",
+    "name": "Pope St. Gregory VII",
+    "birthYear": 1020,
+    "deathYear": 1085,
+    "feastDay": "May 25",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope in Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_VII",
+    "newAdventUrl": "https://www.newadvent.org/cathen/06791c.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Ritratto_di_Papa_San_Gregorio_VII.png",
+    "summary": "Gregory VII, born Hildebrand, was Pope from 1073 to 1085. He is one of the most important popes in history and a key figure in the Gregorian Reforms. He strongly asserted papal authority and fought against simony and clerical marriage. He is best known for the Investiture Controversy with Holy Roman Emperor Henry IV, which culminated in Henry's penance at Canossa. His reforms strengthened the papacy and the Church's independence from secular rulers.",
+    "keyQuotes": []
+  },
+  {
+    "id": "peter-damian",
+    "name": "St. Peter Damian",
+    "birthYear": 1007,
+    "deathYear": 1072,
+    "feastDay": "February 21",
+    "primaryTradition": "Latin",
+    "roles": [
+      "cardinal",
+      "bishop",
+      "Doctor of the Church"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "ostia",
+        "description": "Cardinal Bishop of Ostia"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Damian",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11764a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Ercole_de%27_Roberti_007.jpg",
+    "summary": "Peter Damian was an Italian Benedictine monk, cardinal, and reformer. He was a key figure in the Gregorian Reforms and worked to combat simony, clerical marriage, and other abuses in the Church. He was made Cardinal Bishop of Ostia and was a close advisor to several popes. He is venerated as a Doctor of the Church and is known for his asceticism and reform efforts.",
+    "keyQuotes": []
+  },
+  {
+    "id": "margaret-scotland",
+    "name": "St. Margaret of Scotland",
+    "birthYear": 1045,
+    "deathYear": 1093,
+    "feastDay": "November 16",
+    "primaryTradition": "Latin",
+    "roles": [
+      "queen"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "edinburgh",
+        "description": "Queen of Scotland"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Margaret_of_Scotland",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09655a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Saint_Margaret_of_Scotland.jpg",
+    "summary": "Margaret of Scotland was an English princess who became Queen of Scotland through her marriage to King Malcolm III. She was known for her piety, charity, and efforts to reform the Scottish Church. She introduced Roman practices to Scotland and worked to improve the lives of the poor. She is the only Scottish royal saint and is venerated as the patron saint of Scotland.",
+    "keyQuotes": []
+  }
+]
