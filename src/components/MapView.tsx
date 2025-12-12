@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { useEffect, useState, useMemo } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { FaScroll } from 'react-icons/fa';
+import { FaScroll, FaCrown } from 'react-icons/fa';
 import type { Person, Event, Place, OrthodoxyStatus } from '../types';
 import { getActivePeople, getActiveEvents } from '../utils/filters';
 import { getCachedImageUrl } from '../utils/imageCache';
@@ -134,7 +134,8 @@ const createPersonIcon = (
   orthodoxyStatus?: OrthodoxyStatus,
   isMartyr?: boolean,
   aspectRatio: number = 1,
-  hasWritings: boolean = false
+  hasWritings: boolean = false,
+  isPope: boolean = false
 ) => {
   const maxSize = 40; // Max width or height
   const borderStyle = orthodoxyStatus
@@ -168,6 +169,28 @@ const createPersonIcon = (
   const frameWidth = width + framePadding * 2;
   const frameHeight = height + framePadding * 2;
 
+  // Crown icon HTML (if person is pope) - using react-icons component
+  const crownIconHtml = isPope ? renderToStaticMarkup(
+    <div style={{
+      position: 'absolute',
+      top: `${framePadding}px`,
+      left: `${framePadding}px`,
+      width: '14px',
+      height: '14px',
+      zIndex: 10,
+      filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.8))',
+    }}>
+      <FaCrown style={{ 
+        color: '#FFD700', 
+        fontSize: '14px',
+        filter: 'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
+        stroke: '#000',
+        strokeWidth: '0.5px',
+        paintOrder: 'stroke fill'
+      }} />
+    </div>
+  ) : '';
+
   // Scroll icon HTML (if person has writings) - using react-icons component
   const scrollIconHtml = hasWritings ? renderToStaticMarkup(
     <div style={{
@@ -190,7 +213,7 @@ const createPersonIcon = (
     </div>
   ) : '';
 
-  const fallbackHtml = `<div style="position: relative; background-color: ${fallbackColor}; width: ${frameWidth}px; height: ${frameHeight}px; border-radius: ${borderRadius}px; ${borderStyle.border}; box-shadow: ${borderStyle.boxShadow};">${scrollIconHtml}</div>`;
+  const fallbackHtml = `<div style="position: relative; background-color: ${fallbackColor}; width: ${frameWidth}px; height: ${frameHeight}px; border-radius: ${borderRadius}px; ${borderStyle.border}; box-shadow: ${borderStyle.boxShadow};">${crownIconHtml}${scrollIconHtml}</div>`;
   
   if (!imageUrl) {
     return L.divIcon({
@@ -225,7 +248,7 @@ const createPersonIcon = (
             background-position: center;
             border: 2px solid white;
           "></div>
-          ${scrollIconHtml}
+          ${crownIconHtml}${scrollIconHtml}
         </div>
       `,
       iconSize: [frameWidth, frameHeight],
@@ -257,7 +280,7 @@ const createPersonIcon = (
           background-size: cover;
           background-position: center;
         "></div>
-        ${scrollIconHtml}
+        ${crownIconHtml}${scrollIconHtml}
       </div>
     `,
     iconSize: [frameWidth, frameHeight],
@@ -556,7 +579,8 @@ function ZoomAwareMarkers({
 
             // Always use frame colors based on orthodoxy status and martyr status
             // Important sees will be shown as separate independent markers
-            icon = createPersonIcon(cachedImageUrl, person.orthodoxyStatus, person.isMartyr, aspectRatio, hasWritings);
+            const isPope = person.roles?.includes('pope') || false;
+            icon = createPersonIcon(cachedImageUrl, person.orthodoxyStatus, person.isMartyr, aspectRatio, hasWritings, isPope);
           }
 
           // Create unique key combining place, type, and item id

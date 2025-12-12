@@ -123,5 +123,74 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Szt-adalbert.jpg",
     "summary": "Adalbert of Prague was a bishop, missionary, and martyr. He was Bishop of Prague but left his see due to conflicts with the nobility. He became a missionary to the Prussians and was martyred while preaching to them. He is one of the patron saints of Poland, the Czech Republic, and Prussia. His missionary work helped spread Christianity in Eastern Europe.",
     "keyQuotes": []
+  },
+  {
+    "id": "john-x",
+    "name": "Pope John X",
+    "birthYear": 860,
+    "deathYear": 928,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_John_X",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08424a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Pope_John_X.jpg/330px-Pope_John_X.jpg",
+    "summary": "John X was Pope from 914 to 928. He is known for organizing a coalition that defeated the Saracens at the Battle of Garigliano in 915, which helped secure central Italy. He worked to maintain papal authority and supported the Cluniac reforms. He was eventually deposed and imprisoned, where he died.",
+    "keyQuotes": []
+  },
+  {
+    "id": "agapetus-ii",
+    "name": "Pope Agapetus II",
+    "birthYear": null,
+    "deathYear": 955,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Agapetus_II",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01206a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Pope_Agapetus_II.jpg/330px-Pope_Agapetus_II.jpg",
+    "summary": "Agapetus II was Pope from 946 to 955. He worked to reform the Church and maintain papal authority during a difficult period. He supported the Cluniac reforms and worked to improve relations with the German rulers. He is known for his efforts to combat simony and other abuses in the Church.",
+    "keyQuotes": []
+  },
+  {
+    "id": "john-xii",
+    "name": "Pope John XII",
+    "birthYear": 937,
+    "deathYear": 964,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "secular",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_John_XII",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08425a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Pope_John_XII.jpg/330px-Pope_John_XII.jpg",
+    "summary": "John XII was Pope from 955 to 964. He was the son of Alberic II of Spoleto and became pope at the age of 18. He is known for crowning Otto I as Holy Roman Emperor in 962, establishing the relationship between the papacy and the empire. His pontificate was marked by political conflicts and personal scandals.",
+    "keyQuotes": []
   }
 ]

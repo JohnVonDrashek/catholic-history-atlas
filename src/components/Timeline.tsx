@@ -1,6 +1,5 @@
 import { useMemo, useState, useRef, useEffect } from 'react';
-import { renderToStaticMarkup } from 'react-dom/server';
-import { FaScroll } from 'react-icons/fa';
+import { FaScroll, FaCrown } from 'react-icons/fa';
 import { Person, Event } from '../types';
 import type { OrthodoxyStatus } from '../types/person';
 import type { EventType } from '../types/event';
@@ -173,7 +172,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     // Initial size - use a small delay to ensure DOM is ready
     const timeoutId = setTimeout(updateSize, 0);
     // Update on window resize with debounce
-    let resizeTimeout: NodeJS.Timeout;
+    let resizeTimeout: ReturnType<typeof setTimeout>;
     const handleResize = () => {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(updateSize, 100);
@@ -189,7 +188,6 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
   const timelineWidth = containerSize.width;
   const timelineHeight = containerSize.height;
   const padding = 60;
-  const maxVerticalOffset = Math.min(200, timelineHeight / 3); // Scale with container height
   const portraitSize = 40; // Size of portrait images on timeline
 
   // Get frame style for portrait based on orthodoxy status
@@ -921,77 +919,85 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
               item.type === 'person' && !(item.data as Person).roles?.includes('pope')
             );
             
-            // Place all popes on the same line at the top
-            const popeY = 80; // Fixed position for all popes at the top
+            // Define 3 rows above timeline (including pope row) and 3 below (including events row)
+            const timelineCenter = timelineHeight / 2;
+            
+            // 3 rows above timeline: closest, middle, furthest (popes on top)
+            const row1Above = timelineCenter - 50;  // Row 1 above (closest to timeline)
+            const row2Above = timelineCenter - 100; // Row 2 above (middle)
+            const row3Above = timelineCenter - 150; // Row 3 above (furthest) - popes go here
+            
+            // 3 rows below timeline: closest, middle, furthest (events on bottom)
+            const row1Below = timelineCenter + 50;  // Row 1 below (closest to timeline)
+            const row2Below = timelineCenter + 100; // Row 2 below (middle)
+            const row3Below = timelineCenter + 150; // Row 3 below (furthest) - events go here
+            
+            // Place all popes on row 3 above (furthest row above timeline - top)
             popes.forEach((item) => {
-              itemPositions.set(item.id, popeY);
+              itemPositions.set(item.id, row3Above);
             });
             
-            // Place all events on the same line at the bottom
-            const eventY = timelineHeight - 80; // Fixed position for all events at the bottom
+            // Place all events on row 3 below (furthest row below timeline - bottom)
             events.forEach((item) => {
-              itemPositions.set(item.id, eventY);
+              itemPositions.set(item.id, row3Below);
             });
-
-            // Position other people, avoiding pope line and event line
-            otherPeople.forEach((item) => {
+            
+            // For other people, use the remaining 4 rows (2 above, 2 below)
+            const availableRows = [
+              row1Above,  // Row 1 above
+              row2Above,  // Row 2 above (middle)
+              row1Below,  // Row 1 below
+              row2Below,  // Row 2 below (middle)
+            ];
+            const allRows = availableRows;
+            
+            // Sort items by start year for consistent assignment
+            const sortedOtherPeople = [...otherPeople].sort((a, b) => a.startYear - b.startYear);
+            
+            // Track which items are assigned to which row
+            const rowAssignments = new Map<number, Array<{ item: TimelineItem; startX: number; endX: number }>>();
+            allRows.forEach(rowY => rowAssignments.set(rowY, []));
+            
+            // Assign items to rows, avoiding horizontal overlaps
+            sortedOtherPeople.forEach((item) => {
               const startX = getXPosition(item.startYear);
               const endX = getXPosition(item.endYear);
               
-              // Find a vertical position that doesn't overlap with nearby items
-              let bestY = timelineHeight / 2;
-              let minOverlap = Infinity;
-
-              // Try different vertical offsets
-              for (let offset = 0; offset <= maxVerticalOffset; offset += 30) {
-                // Try both above and below
-                for (const direction of [-1, 1]) {
-                  const testY = timelineHeight / 2 + (offset * direction);
-                  
-                  // Skip positions too close to pope or event lines
-                  if (Math.abs(testY - popeY) < 50) continue;
-                  if (Math.abs(testY - eventY) < 50) continue;
-                  
-                  // Check for overlaps with nearby items (excluding popes and events which are on fixed lines)
-                  let overlapCount = 0;
-                  otherPeople.forEach((otherItem) => {
-                    if (otherItem.id === item.id || !itemPositions.has(otherItem.id)) return;
-                    
-                    const otherY = itemPositions.get(otherItem.id)!;
-                    const otherStartX = getXPosition(otherItem.startYear);
-                    const otherEndX = getXPosition(otherItem.endYear);
-                    
-                    // Check if items overlap horizontally
-                    const horizontalOverlap = !(endX < otherStartX || startX > otherEndX);
-                    
-                    // Check if items are too close vertically
-                    const verticalDistance = Math.abs(testY - otherY);
-                    const minVerticalDistance = 35; // Minimum spacing between items
-                    
-                    if (horizontalOverlap && verticalDistance < minVerticalDistance) {
-                      overlapCount++;
-                    }
-                  });
-                  
-                  if (overlapCount < minOverlap) {
-                    minOverlap = overlapCount;
-                    bestY = testY;
+              // Find the best row that doesn't have overlapping items
+              let bestRow: number | null = null;
+              let minOverlaps = Infinity;
+              
+              for (const rowY of allRows) {
+                // No need to skip - we've already excluded pope and event rows from allRows
+                
+                const itemsInRow = rowAssignments.get(rowY)!;
+                let overlapCount = 0;
+                
+                // Check for horizontal overlaps with items already in this row
+                for (const existing of itemsInRow) {
+                  const horizontalOverlap = !(endX < existing.startX || startX > existing.endX);
+                  if (horizontalOverlap) {
+                    overlapCount++;
                   }
                 }
-              }
-
-              // If still overlapping, try alternating pattern
-              if (minOverlap > 0) {
-                const itemIndex = otherPeople.findIndex(i => i.id === item.id);
-                const alternatingOffset = ((itemIndex % 4) - 1.5) * 50;
-                const candidateY = timelineHeight / 2 + alternatingOffset;
-                // Make sure it's not too close to pope or event lines
-                if (Math.abs(candidateY - popeY) >= 50 && Math.abs(candidateY - eventY) >= 50) {
-                  bestY = candidateY;
+                
+                // Prefer rows with fewer overlaps, and prefer rows closer to timeline center
+                if (overlapCount < minOverlaps || (overlapCount === minOverlaps && (bestRow === null || Math.abs(rowY - timelineCenter) < Math.abs(bestRow - timelineCenter)))) {
+                  minOverlaps = overlapCount;
+                  bestRow = rowY;
                 }
               }
-
-              itemPositions.set(item.id, bestY);
+              
+              // Assign to best row (or first available if all have overlaps)
+              if (bestRow !== null) {
+                rowAssignments.get(bestRow)!.push({ item, startX, endX });
+                itemPositions.set(item.id, bestRow);
+              } else {
+                // Fallback: assign to first available row
+                const fallbackRow = allRows[0] || row1Above;
+                rowAssignments.get(fallbackRow)!.push({ item, startX, endX });
+                itemPositions.set(item.id, fallbackRow);
+              }
             });
 
             // Filter items to only show those in the visible range
@@ -1003,6 +1009,8 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
               const startX = getXPosition(item.startYear);
               const endX = getXPosition(item.endYear);
               const centerX = (startX + endX) / 2;
+              // For people, connect line at death year; for events, use center
+              const connectX = item.type === 'person' ? endX : centerX;
               const isActive = currentYear >= item.startYear && currentYear <= item.endYear;
               const y = itemPositions.get(item.id) || timelineHeight / 2;
 
@@ -1029,7 +1037,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                 
                 return (
                   <g key={item.id}>
-                    {/* Line connecting to timeline */}
+                    {/* Line connecting to timeline - events use center */}
                     <line
                       x1={centerX}
                       y1={timelineHeight / 2}
@@ -1144,7 +1152,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                     {hoveredItem === item.id && (
                       <g>
                         <rect
-                          x={centerX - 80}
+                          x={connectX - 80}
                           y={y - 50}
                           width="160"
                           height="35"
@@ -1153,7 +1161,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                           rx="4"
                         />
                         <text
-                          x={centerX}
+                          x={connectX}
                           y={y - 30}
                           textAnchor="middle"
                           fill="#fff"
@@ -1163,7 +1171,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                           {item.name}
                         </text>
                         <text
-                          x={centerX}
+                          x={connectX}
                           y={y - 15}
                           textAnchor="middle"
                           fill="#aaa"
@@ -1250,9 +1258,9 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                 <g key={item.id}>
                   {/* Line connecting to timeline */}
                   <line
-                    x1={centerX}
+                    x1={connectX}
                     y1={timelineHeight / 2}
-                    x2={centerX}
+                    x2={connectX}
                     y2={y}
                     stroke={isActive ? '#4a9eff' : '#666'}
                     strokeWidth={isActive ? 2 : 1}
@@ -1261,7 +1269,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                   
                   {/* Portrait with frame */}
                   <g
-                    transform={`translate(${centerX}, ${y})`}
+                    transform={`translate(${connectX}, ${y})`}
                     onClick={() => handleItemClick(item)}
                     onMouseEnter={() => setHoveredItem(item.id)}
                     onMouseLeave={() => setHoveredItem(null)}
@@ -1366,7 +1374,37 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                       />
                     )}
                     
-                    {/* Scroll icon for saints with writings - neon gold, no background circle */}
+                    {/* Crown icon for popes - top left */}
+                    {person.roles?.includes('pope') && (
+                      <foreignObject 
+                        x={-frameWidth / 2 + framePadding} 
+                        y={-frameHeight / 2 + framePadding} 
+                        width="14" 
+                        height="14"
+                        style={{ overflow: 'visible' }}
+                      >
+                        <div style={{ 
+                          width: '14px', 
+                          height: '14px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.8))'
+                        }}>
+                          <FaCrown style={{ 
+                            color: '#FFD700', 
+                            fontSize: '14px', 
+                            display: 'block',
+                            filter: 'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
+                            stroke: '#000',
+                            strokeWidth: '0.5px',
+                            paintOrder: 'stroke fill'
+                          }} />
+                        </div>
+                      </foreignObject>
+                    )}
+                    
+                    {/* Scroll icon for saints with writings - top right */}
                     {person.writings && person.writings.length > 0 && (
                       <foreignObject 
                         x={frameWidth / 2 - 14 - framePadding} 
@@ -1454,20 +1492,12 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
         <div style={{ fontWeight: 'bold', marginBottom: '0.75rem', fontSize: '14px', color: '#fff' }}>Legend</div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ color: '#a11b1b', fontSize: '16px' }}>✝</span>
-            <span>Martyr</span>
+            <FaCrown style={{ color: '#FFD700', fontSize: '14px' }} />
+            <span>Pope</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ color: '#d4af37', fontSize: '16px' }}>📖</span>
-            <span>Doctor of the Church</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ color: '#4a9eff', fontSize: '16px' }}>⛪</span>
-            <span>Bishop</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ color: '#888', fontSize: '16px' }}>👤</span>
-            <span>Other</span>
+            <FaScroll style={{ color: '#00D9FF', fontSize: '14px' }} />
+            <span>Writings</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <div style={{ width: '20px', height: '12px', backgroundColor: '#ffd700', borderRadius: '4px' }}></div>

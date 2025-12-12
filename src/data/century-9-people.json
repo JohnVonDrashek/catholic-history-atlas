@@ -172,5 +172,99 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/St_Nicholas%2C_Great_Wakering_-_Stained_glass_window_-_geograph.org.uk_-_3916715.jpg",
     "summary": "Nicholas I was Pope from 858 to 867. He is known as Nicholas the Great and is considered one of the most important popes of the 9th century. He strongly asserted papal authority, particularly in conflicts with the Byzantine Empire and the Carolingian rulers. He supported the missionary work of Cyril and Methodius and defended the use of Slavonic in the liturgy.",
     "keyQuotes": []
+  },
+  {
+    "id": "paschal-i",
+    "name": "St. Paschal I",
+    "birthYear": null,
+    "deathYear": 824,
+    "feastDay": "February 11",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Paschal_I",
+    "newAdventUrl": "https://www.newadvent.org/cathen/11515a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Pope_Paschal_I.jpg/330px-Pope_Paschal_I.jpg",
+    "summary": "Paschal I was Pope from 817 to 824. He is known for his extensive building and restoration of churches in Rome, including Santa Prassede and Santa Cecilia. He worked to maintain good relations with the Carolingian Empire and supported the missionary work of the Church. He is venerated as a saint.",
+    "keyQuotes": []
+  },
+  {
+    "id": "leo-iv",
+    "name": "St. Leo IV",
+    "birthYear": null,
+    "deathYear": 855,
+    "feastDay": "July 17",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_IV",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09162a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Pope_Leo_IV.jpg/330px-Pope_Leo_IV.jpg",
+    "summary": "Leo IV was Pope from 847 to 855. He is known for fortifying Rome against Saracen attacks, including building the Leonine Wall around the Vatican. He worked to reform the clergy and strengthen the Church. He is credited with establishing the practice of blessing the fleet before battle.",
+    "keyQuotes": []
+  },
+  {
+    "id": "adrian-ii",
+    "name": "Pope Adrian II",
+    "birthYear": 792,
+    "deathYear": 872,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Adrian_II",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01152a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pope_Adrian_II.jpg/330px-Pope_Adrian_II.jpg",
+    "summary": "Adrian II was Pope from 867 to 872. He continued the policies of his predecessor Nicholas I and worked to maintain papal authority. He supported the missionary work of Cyril and Methodius and confirmed the use of Slavonic in the liturgy. He faced challenges from the Byzantine Empire and the Carolingian rulers.",
+    "keyQuotes": []
+  },
+  {
+    "id": "john-viii",
+    "name": "Pope John VIII",
+    "birthYear": null,
+    "deathYear": 882,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_John_VIII",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08423a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Pope_John_VIII.jpg/330px-Pope_John_VIII.jpg",
+    "summary": "John VIII was Pope from 872 to 882. He worked to defend Rome and the Papal States from Saracen attacks and maintained relations with both the Byzantine Empire and the Carolingian rulers. He supported the missionary work of the Church and worked to maintain unity. He was murdered, possibly by members of his own household.",
+    "keyQuotes": []
   }
 ]

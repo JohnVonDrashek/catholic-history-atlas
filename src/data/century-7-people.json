@@ -261,5 +261,102 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Petrus_Christus_003.jpg",
     "summary": "Eligius, also known as Eloi, was a goldsmith who became a bishop. He was master of the mint under King Clotaire II and Dagobert I, and used his wealth to ransom slaves and build churches. He became bishop of Noyon and Tournai and was known for his missionary work among the pagans of Flanders. He is the patron saint of goldsmiths, metalworkers, and coin collectors.",
     "keyQuotes": []
+  },
+  {
+    "id": "martin-i",
+    "name": "St. Martin I",
+    "birthYear": null,
+    "deathYear": 655,
+    "feastDay": "April 13",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope",
+      "martyr"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": true,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome, martyred in exile"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Martin_I",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09723b.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Pope_Martin_I_Illustration_%28no_border%29.jpg/330px-Pope_Martin_I_Illustration_%28no_border%29.jpg",
+    "summary": "Martin I was Pope from 649 to 655. He is known for his opposition to Monothelitism and for convening the Lateran Council of 649, which condemned the doctrine. He was arrested by the Byzantine Emperor Constans II, tried for treason, and exiled to Crimea, where he died. He is venerated as a martyr and is the last pope to be venerated as a martyr.",
+    "keyQuotes": []
+  },
+  {
+    "id": "vitalian",
+    "name": "St. Vitalian",
+    "birthYear": null,
+    "deathYear": 672,
+    "feastDay": "January 27",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Vitalian",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15488a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Pope_Vitalian.jpg/330px-Pope_Vitalian.jpg",
+    "summary": "Vitalian was Pope from 657 to 672. He worked to improve relations with the Byzantine Empire and the Eastern Church. He sent missionaries to England, including Theodore of Tarsus, who became Archbishop of Canterbury. He is credited with introducing the organ to Western liturgical music.",
+    "keyQuotes": []
+  },
+  {
+    "id": "agatho",
+    "name": "St. Agatho",
+    "birthYear": null,
+    "deathYear": 681,
+    "feastDay": "January 10",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Agatho",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01205a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pope_Agatho.jpg/330px-Pope_Agatho.jpg",
+    "summary": "Agatho was Pope from 678 to 681. He is known for his role in the Third Council of Constantinople (680-681), which condemned Monothelitism and Monophysitism. He sent legates to the council who successfully defended the orthodox position on the two wills of Christ. He is venerated as a saint.",
+    "keyQuotes": []
+  },
+  {
+    "id": "leo-ii",
+    "name": "St. Leo II",
+    "birthYear": null,
+    "deathYear": 683,
+    "feastDay": "July 3",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_II",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09160a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pope_Leo_II.jpg/330px-Pope_Leo_II.jpg",
+    "summary": "Leo II was Pope from 682 to 683. He confirmed the decrees of the Third Council of Constantinople and worked to implement its decisions. He is known for his efforts to maintain unity between the Eastern and Western Churches and for his charitable works.",
+    "keyQuotes": []
   }
 ]

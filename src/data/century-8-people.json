@@ -137,5 +137,124 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Georg_Sturm%2C_Willibrordus_predikt_het_Christendom_aan_de_Friezen.jpg",
     "summary": "Willibrord was an English missionary who is known as the Apostle of the Frisians. He was the first bishop of Utrecht and worked to convert the Frisians to Christianity. He founded several churches and monasteries and is considered one of the most important missionaries of the early Middle Ages.",
     "keyQuotes": []
+  },
+  {
+    "id": "gregory-ii",
+    "name": "St. Gregory II",
+    "birthYear": 669,
+    "deathYear": 731,
+    "feastDay": "February 11",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_II",
+    "newAdventUrl": "https://www.newadvent.org/cathen/06781a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Pope_Gregory_II.jpg/330px-Pope_Gregory_II.jpg",
+    "summary": "Gregory II was Pope from 715 to 731. He is known for his opposition to the iconoclastic policies of the Byzantine Emperor Leo III, which led to tensions between Rome and Constantinople. He supported the missionary work of Boniface in Germany and worked to strengthen the Church in Italy. He is venerated as a saint.",
+    "keyQuotes": []
+  },
+  {
+    "id": "gregory-iii",
+    "name": "St. Gregory III",
+    "birthYear": null,
+    "deathYear": 741,
+    "feastDay": "December 10",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_III",
+    "newAdventUrl": "https://www.newadvent.org/cathen/06782a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pope_Gregory_III.jpg/330px-Pope_Gregory_III.jpg",
+    "summary": "Gregory III was Pope from 731 to 741. He continued his predecessor's opposition to iconoclasm and convened a synod in Rome that condemned the iconoclastic policies. He strengthened ties with the Frankish kingdom and supported Boniface's missionary work. He is the last pope to be elected by acclamation.",
+    "keyQuotes": []
+  },
+  {
+    "id": "zachary",
+    "name": "St. Zachary",
+    "birthYear": 679,
+    "deathYear": 752,
+    "feastDay": "March 15",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Zachary",
+    "newAdventUrl": "https://www.newadvent.org/cathen/15745a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Pope_Zachary.jpg/330px-Pope_Zachary.jpg",
+    "summary": "Zachary was Pope from 741 to 752. He is known for his diplomatic skills and for mediating disputes between the Lombards and the Byzantine Empire. He supported the missionary work of Boniface and worked to reform the Frankish Church. He translated the Dialogues of Gregory the Great into Greek.",
+    "keyQuotes": []
+  },
+  {
+    "id": "hadrian-i",
+    "name": "Pope Hadrian I",
+    "birthYear": 700,
+    "deathYear": 795,
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Adrian_I",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01151a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Pope_Adrian_I.jpg/330px-Pope_Adrian_I.jpg",
+    "summary": "Hadrian I was Pope from 772 to 795. He is known for his close relationship with Charlemagne, whom he crowned as Patrician of the Romans. He worked with Charlemagne to defend the Papal States and supported the Carolingian Renaissance. He convened the Second Council of Nicaea (787), which restored the veneration of icons.",
+    "keyQuotes": []
+  },
+  {
+    "id": "leo-iii",
+    "name": "St. Leo III",
+    "birthYear": 750,
+    "deathYear": 816,
+    "feastDay": "June 12",
+    "primaryTradition": "Latin",
+    "roles": [
+      "pope"
+    ],
+    "orthodoxyStatus": "canonized",
+    "isMartyr": false,
+    "locations": [
+      {
+        "placeId": "rome",
+        "description": "Pope of Rome"
+      }
+    ],
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_III",
+    "newAdventUrl": "https://www.newadvent.org/cathen/09161a.htm",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pope_Leo_III.jpg/330px-Pope_Leo_III.jpg",
+    "summary": "Leo III was Pope from 795 to 816. He is most famous for crowning Charlemagne as Holy Roman Emperor on Christmas Day, 800, an event that established the relationship between the papacy and the empire. He survived an attack by Roman nobles and was protected by Charlemagne. He worked to strengthen papal authority and reform the Church.",
+    "keyQuotes": []
   }
 ]
