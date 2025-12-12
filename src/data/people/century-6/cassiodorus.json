@@ -1,0 +1,35 @@
+{
+  "id": "cassiodorus",
+  "name": "Cassiodorus",
+  "birthYear": 485,
+  "deathYear": 585,
+  "primaryTradition": "Latin",
+  "roles": [
+    "statesman",
+    "scholar",
+    "monk"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "ravenna",
+      "description": "Statesman and scholar in Ravenna"
+    },
+    {
+      "placeId": "vivarium",
+      "description": "Founded monastery at Vivarium"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Cassiodorus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03405a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Gesta_Theodorici_-_Flavius_Magnus_Aurelius_Cassiodorus_%28c_485_-_c_580%29.jpg/330px-Gesta_Theodorici_-_Flavius_Magnus_Aurelius_Cassiodorus_%28c_485_-_c_580%29.jpg",
+  "summary": "Cassiodorus was a Roman statesman, scholar, and monk who served under Theodoric the Great and his successors. After retiring from public life, he founded the monastery of Vivarium, where he established a scriptorium for copying manuscripts. His work helped preserve classical learning during the transition from antiquity to the Middle Ages. He wrote extensively on history, theology, and education.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Institutions of Divine and Secular Learning",
+      "url": "https://www.ccel.org/ccel/schaff/npnf211.iv.html"
+    }
+  ]
+}

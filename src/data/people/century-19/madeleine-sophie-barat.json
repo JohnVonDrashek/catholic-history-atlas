@@ -1,0 +1,24 @@
+{
+  "id": "madeleine-sophie-barat",
+  "name": "St. Madeleine Sophie Barat",
+  "birthYear": 1779,
+  "deathYear": 1865,
+  "feastDay": "May 25",
+  "primaryTradition": "Latin",
+  "roles": [
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "Founder of the Society of the Sacred Heart"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Madeleine_Sophie_Barat",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02200a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Barat-XIX.jpg/330px-Barat-XIX.jpg",
+  "summary": "Madeleine Sophie Barat was a French saint and the founder of the Society of the Sacred Heart, a religious congregation dedicated to the education of girls. She established schools throughout France and later expanded the order internationally. Despite facing opposition during the French Revolution and its aftermath, she persevered in her mission. She was canonized in 1925 and is the patron saint of educators.",
+  "keyQuotes": []
+}

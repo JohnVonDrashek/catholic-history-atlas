@@ -1,0 +1,36 @@
+{
+  "id": "hugh-saint-victor",
+  "name": "Hugh of Saint Victor",
+  "birthYear": 1096,
+  "deathYear": 1141,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "theologian",
+    "mystic",
+    "philosopher"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "Theologian and mystic at the Abbey of Saint Victor"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Hugh_of_Saint_Victor",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07521c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Hugostv.jpg/330px-Hugostv.jpg",
+  "summary": "Hugh of Saint Victor was a German canon regular, theologian, and mystic who spent most of his life at the Abbey of Saint Victor in Paris. He was a leading figure in the 12th-century renaissance of learning and is known for his synthesis of theology, philosophy, and mysticism. His works on education, particularly 'Didascalicon,' were influential in medieval education. He emphasized the importance of both reason and mystical experience in the spiritual life.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Didascalicon (On the Study of Reading)",
+      "url": "https://www.ccel.org/ccel/hugh_victor/didascalicon.html"
+    },
+    {
+      "title": "On the Sacraments of the Christian Faith",
+      "url": "https://www.newadvent.org/cathen/07521c.htm"
+    }
+  ]
+}

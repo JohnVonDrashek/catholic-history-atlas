@@ -1,0 +1,25 @@
+{
+  "id": "vincent-pallotti",
+  "name": "St. Vincent Pallotti",
+  "birthYear": 1795,
+  "deathYear": 1850,
+  "feastDay": "January 22",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Founder of the Society of the Catholic Apostolate (Pallottines)"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Vincent_Pallotti",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11425a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/St._Vincent_Pallotti_Church%2C_12_Nadbrzezie_street%2C_Pleszow%2C_Nowa_Huta%2C_Krakow%2C_Poland.JPG/330px-St._Vincent_Pallotti_Church%2C_12_Nadbrzezie_street%2C_Pleszow%2C_Nowa_Huta%2C_Krakow%2C_Poland.JPG",
+  "summary": "Vincent Pallotti was an Italian priest and founder of the Society of the Catholic Apostolate (Pallottines). He was a pioneer in the lay apostolate movement, encouraging laypeople to take an active role in the Church's mission. He established the Union of the Catholic Apostolate and worked extensively with the poor in Rome. He is the patron saint of the Catholic Apostolate.",
+  "keyQuotes": []
+}

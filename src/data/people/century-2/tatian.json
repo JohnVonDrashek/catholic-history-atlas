@@ -1,0 +1,32 @@
+{
+  "id": "tatian",
+  "name": "Tatian",
+  "birthYear": 120,
+  "deathYear": 180,
+  "feastDay": null,
+  "primaryTradition": "Syriac",
+  "roles": [
+    "apologist",
+    "theologian",
+    "writer"
+  ],
+  "orthodoxyStatus": "heretic",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Studied in Rome, later returned to Syria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Tatian",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14465a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Adolf_von_Harnack_Tatian_1884_Titel.jpg/330px-Adolf_von_Harnack_Tatian_1884_Titel.jpg",
+  "summary": "Tatian was an Assyrian Christian writer and theologian of the 2nd century. He was a pupil of Justin Martyr in Rome and later returned to Syria. He is best known for creating the Diatessaron, a harmony of the four Gospels that became the standard Gospel text in the Syriac-speaking churches until the 5th century. He later became associated with the Encratite heresy, which rejected marriage and the consumption of meat and wine.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Address to the Greeks",
+      "url": "https://www.ccel.org/ccel/schaff/anf02.iv.ii.html"
+    }
+  ]
+}

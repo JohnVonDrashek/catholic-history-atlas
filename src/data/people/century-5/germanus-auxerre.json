@@ -1,0 +1,25 @@
+{
+  "id": "germanus-auxerre",
+  "name": "St. Germanus of Auxerre",
+  "birthYear": 378,
+  "deathYear": 448,
+  "feastDay": "July 31",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "auxerre",
+      "description": "Bishop of Auxerre, missionary to Britain"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Germanus_of_Auxerre",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06472b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/St._Germanus_%28Haaren%29_40.jpg/330px-St._Germanus_%28Haaren%29_40.jpg",
+  "summary": "Germanus of Auxerre was the Bishop of Auxerre who made two important missions to Britain to combat Pelagianism. He was a former Roman official who became a bishop and was known for his learning and missionary zeal. His missions to Britain helped preserve orthodox Christianity there. He is also credited with the 'Alleluia Victory' over the Picts and Saxons, where his forces reportedly won a battle through prayer.",
+  "keyQuotes": []
+}

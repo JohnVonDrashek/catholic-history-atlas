@@ -1,0 +1,25 @@
+{
+  "id": "fabius-antioch",
+  "name": "Fabius of Antioch",
+  "birthYear": null,
+  "deathYear": 250,
+  "feastDay": null,
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "antioch",
+      "description": "Bishop of Antioch"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Fabius_of_Antioch",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05740a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/History_of_the_First_Council_of_Nice.djvu/page1-330px-History_of_the_First_Council_of_Nice.djvu.jpg",
+  "summary": "Fabius was Bishop of Antioch from 250 to 252. He became bishop during the Decian persecution and faced the challenge of dealing with those who had lapsed during persecution. He took a moderate position on the readmission of lapsed Christians, which placed him in conflict with the rigorist Novatianists. His correspondence with Dionysius of Alexandria and Cyprian of Carthage provides important insights into the early Church's handling of the lapsi controversy.",
+  "keyQuotes": [],
+  "writings": []
+}

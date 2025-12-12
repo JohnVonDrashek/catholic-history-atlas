@@ -3,7 +3,6 @@ import aidan_lindisfarne from './aidan-lindisfarne.json';
 import columbanus from './columbanus.json';
 import cuthbert from './cuthbert.json';
 import eligius from './eligius.json';
-import gregory_great from './gregory-great.json';
 import hilda_whitby from './hilda-whitby.json';
 import isidore_seville from './isidore-seville.json';
 import leo_ii from './leo-ii.json';
@@ -18,7 +17,6 @@ export default [
   columbanus,
   cuthbert,
   eligius,
-  gregory_great,
   hilda_whitby,
   isidore_seville,
   leo_ii,

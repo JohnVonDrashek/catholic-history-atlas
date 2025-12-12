@@ -1,0 +1,34 @@
+{
+  "id": "aelred-rievaulx",
+  "name": "St. Aelred of Rievaulx",
+  "birthYear": 1110,
+  "deathYear": 1167,
+  "feastDay": "January 12",
+  "primaryTradition": "Latin",
+  "roles": [
+    "abbot",
+    "writer",
+    "spiritual director"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "york",
+      "description": "Cistercian abbot and spiritual writer"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Aelred_of_Rievaulx",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01172a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/St_Aelred_of_Rievaulx_Church%2C_Woodlands_Drive%2C_Starbeck_%2811th_June_2023%29_010.jpg/330px-St_Aelred_of_Rievaulx_Church%2C_Woodlands_Drive%2C_Starbeck_%2811th_June_2023%29_010.jpg",
+  "summary": "Aelred of Rievaulx was an English Cistercian monk, abbot, and spiritual writer. He became abbot of Rievaulx Abbey in Yorkshire and was known for his emphasis on spiritual friendship and love. His most famous work, 'On Spiritual Friendship,' explores the nature of Christian friendship as a path to God. He was a close friend of King David I of Scotland and played an important role in the spiritual and political life of 12th-century England and Scotland.",
+  "keyQuotes": [
+    "God is friendship."
+  ],
+  "writings": [
+    {
+      "title": "On Spiritual Friendship",
+      "url": "https://www.ccel.org/ccel/aelred/friendship.html"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "osmund-salisbury",
+  "name": "St. Osmund of Salisbury",
+  "birthYear": 1050,
+  "deathYear": 1099,
+  "feastDay": "December 4",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "salisbury",
+      "description": "Bishop of Salisbury"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Osmund_(bishop)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11355a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Church_of_St_Osmund_%281%29_Salisbury%2C_UK.jpg/330px-Church_of_St_Osmund_%281%29_Salisbury%2C_UK.jpg",
+  "summary": "Osmund was Bishop of Salisbury from 1078 to 1099. He was a Norman nobleman who came to England with William the Conqueror and served as his chancellor. As bishop, he was known for his learning, piety, and administrative skills. He helped organize the Sarum Rite (Use of Salisbury), which became one of the most important liturgical traditions in medieval England. He was canonized in 1457.",
+  "keyQuotes": []
+}

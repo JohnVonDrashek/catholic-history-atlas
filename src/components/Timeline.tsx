@@ -3,6 +3,7 @@ import { FaScroll, FaCrown } from 'react-icons/fa';
 import { Person, Event } from '../types';
 import type { OrthodoxyStatus } from '../types/person';
 import type { EventType } from '../types/event';
+import { getEventColor } from '../utils/eventColors';
 
 interface TimelineProps {
   people: Person[];
@@ -76,7 +77,7 @@ const deserializeFilters = (
     showMartyrs: serialized.showMartyrs ?? null,
     roles: new Set(serialized.roles || Array.from(defaultRoles)),
     primaryTradition: new Set(serialized.primaryTradition || Array.from(defaultTraditions)),
-    eventTypes: new Set(serialized.eventTypes || ['council', 'schism', 'persecution', 'reform', 'other']),
+    eventTypes: new Set(serialized.eventTypes || ['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other']),
     showPopes: serialized.showPopes ?? null,
     showWithWritings: serialized.showWithWritings ?? null,
   };
@@ -136,7 +137,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
       showMartyrs: null, // null = show all
       roles: defaultRoles,
       primaryTradition: defaultTraditions,
-      eventTypes: new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'other']),
+      eventTypes: new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other']),
       showPopes: null, // null = show all
       showWithWritings: null, // null = show all
     };
@@ -614,7 +615,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
       showMartyrs: null,
       roles: new Set(allRoles),
       primaryTradition: new Set(allTraditions),
-      eventTypes: new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'other']),
+      eventTypes: new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other']),
       showPopes: null,
       showWithWritings: null,
     });
@@ -630,7 +631,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
   const activeFilterCount = useMemo(() => {
     let count = 0;
     const defaultOrthodoxyStatus = new Set<OrthodoxyStatus>(['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular']);
-    const defaultEventTypes = new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'other']);
+    const defaultEventTypes = new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other']);
 
     // Check showPeople
     if (!filters.showPeople) count++;
@@ -659,7 +660,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
       count++;
     }
 
-    // Check eventTypes (if not all 5 are selected)
+    // Check eventTypes (if not all 7 are selected)
     if (filters.eventTypes.size !== defaultEventTypes.size ||
         !Array.from(defaultEventTypes).every(t => filters.eventTypes.has(t))) {
       count++;
@@ -1090,16 +1091,30 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             {filters.showEvents && (
               <div>
                 <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Event Types</div>
-                {(['council', 'schism', 'persecution', 'reform', 'other'] as EventType[]).map(type => (
-                  <label key={type} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                    <input
-                      type="checkbox"
-                      checked={filters.eventTypes.has(type)}
-                      onChange={() => toggleEventType(type)}
-                    />
-                    <span style={{ textTransform: 'capitalize' }}>{type}</span>
-                  </label>
-                ))}
+                {(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other'] as EventType[]).map(type => {
+                  const color = getEventColor(type);
+                  return (
+                    <label key={type} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                      <input
+                        type="checkbox"
+                        checked={filters.eventTypes.has(type)}
+                        onChange={() => toggleEventType(type)}
+                      />
+                      <div
+                        style={{
+                          width: '16px',
+                          height: '16px',
+                          backgroundColor: color.fill,
+                          border: `1px solid ${color.stroke}`,
+                          borderRadius: '3px',
+                          flexShrink: 0,
+                        }}
+                        title={color.label}
+                      />
+                      <span style={{ textTransform: 'capitalize' }}>{type}</span>
+                    </label>
+                  );
+                })}
               </div>
             )}
           </div>
@@ -1107,6 +1122,47 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
           {/* Active Filter Summary */}
           <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid #444', fontSize: '12px', color: '#aaa' }}>
             Showing: {filteredPeople.length} people, {filteredEvents.length} events
+          </div>
+        </div>
+      )}
+
+      {/* Event Type Legend - Bottom Right */}
+      {filters.showEvents && (
+        <div style={{
+          position: 'absolute',
+          bottom: '10px',
+          right: '10px',
+          padding: '0.75rem',
+          backgroundColor: 'rgba(26, 26, 26, 0.95)',
+          borderRadius: '8px',
+          color: '#fff',
+          fontSize: '12px',
+          zIndex: 1000,
+          boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+          border: '1px solid #444',
+        }}>
+          <div style={{ marginBottom: '0.5rem', fontWeight: 'bold', fontSize: '13px', color: '#fff' }}>
+            Event Types
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+            {(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other'] as EventType[]).map(type => {
+              const color = getEventColor(type);
+              return (
+                <div key={type} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div
+                    style={{
+                      width: '14px',
+                      height: '14px',
+                      backgroundColor: color.fill,
+                      border: `1px solid ${color.stroke}`,
+                      borderRadius: '3px',
+                      flexShrink: 0,
+                    }}
+                  />
+                  <span style={{ textTransform: 'capitalize', fontSize: '11px' }}>{color.label}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       )}
@@ -1422,7 +1478,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                         </clipPath>
                       </defs>
                       
-                      {/* Frame border - gold for councils */}
+                      {/* Frame border - color based on event type */}
                       <rect
                         x={-frameWidth / 2}
                         y={-frameHeight / 2}
@@ -1430,9 +1486,9 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                         height={frameHeight}
                         rx="8"
                         fill="none"
-                        stroke="#ffd700"
+                        stroke={getEventColor(event.type).fill}
                         strokeWidth="3"
-                        style={{ filter: 'drop-shadow(0 0 6px rgba(255, 215, 0, 0.6))' }}
+                        style={{ filter: `drop-shadow(0 0 6px ${getEventColor(event.type).fill}80)` }}
                       />
                       
                       {/* Council image with clipping */}
@@ -1540,6 +1596,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
               
               // Render other events as bars
               const width = Math.max(20, endX - startX);
+              const eventColor = getEventColor(event.type);
               
               return (
                 <g key={item.id}>
@@ -1548,8 +1605,8 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                     y={y - 10}
                     width={width}
                     height="20"
-                    fill={event.type === 'council' ? '#ffd700' : '#ff6b6b'}
-                    stroke={isActive ? '#4a9eff' : '#333'}
+                    fill={eventColor.fill}
+                    stroke={isActive ? '#4a9eff' : eventColor.stroke}
                     strokeWidth={isActive ? 2 : 1}
                     rx="4"
                     onClick={() => handleItemClick(item)}

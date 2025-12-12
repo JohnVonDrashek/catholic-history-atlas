@@ -1,0 +1,25 @@
+{
+  "id": "john-xiv",
+  "name": "Pope John XIV",
+  "birthYear": null,
+  "deathYear": 984,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope (983-984), martyred"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_John_XIV",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08424a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Pope_John_XIV.jpg",
+  "summary": "John XIV was Pope from 983 to 984. Originally named Peter Canepanova, he was bishop of Pavia before being elected pope. His pontificate was cut short when the antipope Boniface VII returned to Rome and imprisoned him in the Castel Sant'Angelo, where he died of starvation or was murdered. His death reflects the violent political struggles that plagued the papacy during this period.",
+  "keyQuotes": []
+}

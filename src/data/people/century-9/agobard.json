@@ -1,0 +1,24 @@
+{
+  "id": "agobard",
+  "name": "St. Agobard of Lyons",
+  "birthYear": 769,
+  "deathYear": 840,
+  "feastDay": "June 6",
+  "primaryTradition": "Latin",
+  "roles": [
+    "archbishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lyons",
+      "description": "Archbishop of Lyons"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Agobard",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01210a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Illustrations_of_the_history_of_medieval_thought_and_learning.djvu/page1-330px-Illustrations_of_the_history_of_medieval_thought_and_learning.djvu.jpg",
+  "summary": "Agobard was Archbishop of Lyons from 816 to 840. He was a key figure in the Carolingian Church and a strong defender of episcopal authority. He wrote extensively against superstition, including beliefs about weather magic. He was involved in political conflicts with Louis the Pious and his sons, particularly over the division of the empire. He is venerated as a saint and is remembered for his learning, pastoral care, and defense of orthodoxy.",
+  "keyQuotes": []
+}

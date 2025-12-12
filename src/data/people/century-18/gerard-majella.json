@@ -1,0 +1,26 @@
+{
+  "id": "gerard-majella",
+  "name": "St. Gerard Majella",
+  "birthYear": 1726,
+  "deathYear": 1755,
+  "feastDay": "October 16",
+  "primaryTradition": "Latin",
+  "roles": [
+    "religious",
+    "mystic"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "naples",
+      "description": "Redemptorist lay brother"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Gerard_Majella",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06469b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Saint_Gerard_Church_%28Lima%2C_Ohio%29_-_St._Gerard_Majella_relic.jpg/330px-Saint_Gerard_Church_%28Lima%2C_Ohio%29_-_St._Gerard_Majella_relic.jpg",
+  "summary": "Gerard Majella was an Italian lay brother of the Redemptorists and a mystic. Despite being rejected initially due to poor health, he became known for his sanctity, humility, and miracles. He had the gift of bilocation, reading souls, and prophecy. He is particularly venerated as the patron saint of expectant mothers, childbirth, and children, due to his compassion for mothers in distress.",
+  "keyQuotes": [],
+  "writings": []
+}

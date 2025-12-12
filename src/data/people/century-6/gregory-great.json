@@ -1,0 +1,42 @@
+{
+  "id": "gregory-great",
+  "name": "St. Gregory the Great",
+  "birthYear": 540,
+  "deathYear": 604,
+  "feastDay": "September 3",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome, 590-604"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06780a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Pope_Gregory_I.jpg/330px-Pope_Gregory_I.jpg",
+  "summary": "Gregory the Great was pope from 590 to 604 and is one of the four great Latin Doctors of the Church. He is known for his extensive writings, including the Dialogues, Pastoral Care, and Moralia in Job. He reformed the liturgy (Gregorian chant is named after him), sent missionaries to England, and established the temporal power of the papacy. He is considered one of the most important popes in Church history.",
+  "keyQuotes": [
+    "The proof of love is in the works. Where love exists, it works great things. But when it ceases to act, it ceases to exist.",
+    "No one does more harm in the Church than he who has the title or rank of holiness and acts perversely."
+  ],
+  "writings": [
+    {
+      "title": "Dialogues",
+      "url": "https://www.ccel.org/ccel/schaff/npnf212.iv.html"
+    },
+    {
+      "title": "Pastoral Care",
+      "url": "https://www.ccel.org/ccel/schaff/npnf212.v.html"
+    },
+    {
+      "title": "Moralia in Job",
+      "url": "https://www.ccel.org/ccel/schaff/npnf212.vi.html"
+    }
+  ]
+}

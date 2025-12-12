@@ -1,0 +1,27 @@
+{
+  "id": "raymond-penyafort",
+  "name": "St. Raymond of Penyafort",
+  "birthYear": 1175,
+  "deathYear": 1275,
+  "feastDay": "January 7",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "canon lawyer",
+    "Master of the Order of Preachers"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "barcelona",
+      "description": "Dominican canon lawyer"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Raymond_of_Pe%C3%B1afort",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12671c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/ESP_St_Raymond_of_Penyafort_Order_-_Common.svg/330px-ESP_St_Raymond_of_Penyafort_Order_-_Common.svg.png",
+  "summary": "Raymond of Penyafort was a Spanish Dominican friar and canon lawyer. He compiled the 'Decretals of Gregory IX', the authoritative collection of papal decretals that served as canon law for centuries. He served as Master General of the Dominican Order and worked for the conversion of Muslims and Jews. He is the patron saint of canon lawyers and is known for his contributions to the development of canon law and his work in pastoral care.",
+  "keyQuotes": [],
+  "writings": []
+}

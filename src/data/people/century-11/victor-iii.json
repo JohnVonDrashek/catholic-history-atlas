@@ -1,0 +1,29 @@
+{
+  "id": "victor-iii",
+  "name": "Pope Bl. Victor III",
+  "birthYear": 1026,
+  "deathYear": 1087,
+  "feastDay": "September 16",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "monk"
+  ],
+  "orthodoxyStatus": "beatified",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in Rome"
+    },
+    {
+      "placeId": "monte-cassino",
+      "description": "Abbot of Monte Cassino"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Victor_III",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15410a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Pope_Victor_III.jpg/330px-Pope_Victor_III.jpg",
+  "summary": "Victor III, born Desiderius, was Pope from 1086 to 1087. Before becoming pope, he was the abbot of Monte Cassino, one of the most important Benedictine monasteries. He was a close friend and supporter of Gregory VII and continued his reform efforts. His papacy was short but significant, as he worked to maintain the Gregorian Reforms during a difficult period. He is venerated as Blessed.",
+  "keyQuotes": []
+}

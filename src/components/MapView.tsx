@@ -3,8 +3,10 @@ import { useEffect, useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { FaScroll, FaCrown } from 'react-icons/fa';
 import type { Person, Event, Place, OrthodoxyStatus } from '../types';
+import type { EventType } from '../types/event';
 import { getActivePeople, getActiveEvents } from '../utils/filters';
 import { getCachedImageUrl } from '../utils/imageCache';
+import { getEventColor } from '../utils/eventColors';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -292,19 +294,92 @@ const createPersonIcon = (
   });
 };
 
-const createCouncilIcon = (imageUrl?: string) => {
+const createEventIcon = (eventType: EventType, imageUrl?: string) => {
   const size = 40;
-  const fallbackHtml = '<div style="background-color: #ffd700; width: ' + size + 'px; height: ' + size + 'px; border-radius: 0; transform: rotate(45deg); border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3); position: relative;"><div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-45deg); color: white; font-size: 16px; font-weight: bold;">★</div></div>';
+  const color = getEventColor(eventType);
+  const symbol = eventType === 'council' ? '★' : 
+                 eventType === 'schism' ? '⚡' :
+                 eventType === 'persecution' ? '✟' :
+                 eventType === 'reform' ? '♻' :
+                 eventType === 'heresy' ? '⚠' :
+                 eventType === 'war' ? '⚔' : '●';
+  const isDiamond = eventType === 'council';
   
+  // For events without images, show the colored symbol on a white circular background
   if (!imageUrl) {
     return L.divIcon({
       className: 'custom-marker',
-      html: fallbackHtml,
+      html: `
+        <div style="
+          position: relative;
+          width: ${size}px;
+          height: ${size}px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        ">
+          <div style="
+            width: ${size}px;
+            height: ${size}px;
+            border-radius: 50%;
+            background-color: white;
+            border: 2px solid ${color.fill};
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          ">
+            <div style="
+              color: ${color.fill};
+              font-size: ${isDiamond ? '24px' : '20px'};
+              font-weight: bold;
+              line-height: 1;
+            ">${symbol}</div>
+          </div>
+        </div>
+      `,
       iconSize: [size, size],
       iconAnchor: [size / 2, size / 2],
     });
   }
 
+  // For councils, use the diamond shape with image
+  if (eventType === 'council') {
+    return L.divIcon({
+      className: 'custom-marker',
+      html: `
+        <div style="
+          position: relative;
+          width: ${size}px;
+          height: ${size}px;
+          border-radius: 0;
+          transform: rotate(45deg);
+          border: 3px solid ${color.fill};
+          box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+          overflow: hidden;
+          background-color: ${color.fill};
+          background-image: url('${imageUrl}');
+          background-size: cover;
+          background-position: center;
+        ">
+          <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            color: ${color.textColor};
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 0 0 4px rgba(0,0,0,0.8);
+          ">${symbol}</div>
+        </div>
+      `,
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+    });
+  }
+
+  // For other event types, use circular icon with colored border
   return L.divIcon({
     className: 'custom-marker',
     html: `
@@ -312,12 +387,11 @@ const createCouncilIcon = (imageUrl?: string) => {
         position: relative;
         width: ${size}px;
         height: ${size}px;
-        border-radius: 0;
-        transform: rotate(45deg);
-        border: 3px solid #ffd700;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+        border-radius: 50%;
+        border: 3px solid ${color.fill};
+        box-shadow: 0 2px 6px rgba(0,0,0,0.4), 0 0 8px ${color.fill}80;
         overflow: hidden;
-        background-color: #ffd700;
+        background-color: ${color.fill};
         background-image: url('${imageUrl}');
         background-size: cover;
         background-position: center;
@@ -326,12 +400,12 @@ const createCouncilIcon = (imageUrl?: string) => {
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%) rotate(-45deg);
-          color: white;
+          transform: translate(-50%, -50%);
+          color: ${color.textColor};
           font-size: 18px;
           font-weight: bold;
           text-shadow: 0 0 4px rgba(0,0,0,0.8);
-        ">★</div>
+        ">${symbol}</div>
       </div>
     `,
     iconSize: [size, size],
@@ -597,13 +671,8 @@ function ZoomAwareMarkers({
             // Get cached image URL for map context (80px max)
             const cachedImageUrl = getCachedImageUrl(imageUrl, 'map', 80);
 
-            // Councils get special icon
-            if (event.type === 'council') {
-              icon = createCouncilIcon(cachedImageUrl);
-            } else {
-              // Other events use person icon style (no frame colors for events)
-              icon = createPersonIcon(cachedImageUrl, undefined, undefined, aspectRatio, false);
-            }
+            // Events get colored icons based on type
+            icon = createEventIcon(event.type, cachedImageUrl);
           } else {
             const person = item.data;
             itemName = person.name;
@@ -645,9 +714,14 @@ function ZoomAwareMarkers({
                   <div style={{ fontSize: '12px', color: '#888', marginBottom: '0.25rem' }}>
                     {place.name}
                   </div>
-                  {item.type === 'event' && item.data.type === 'council' && (
-                    <div style={{ fontSize: '11px', color: '#aaa', fontStyle: 'italic' }}>
-                      Council
+                  {item.type === 'event' && (
+                    <div style={{ 
+                      fontSize: '11px', 
+                      color: getEventColor(item.data.type).fill,
+                      fontStyle: 'italic',
+                      fontWeight: 'bold'
+                    }}>
+                      {getEventColor(item.data.type).label}
                     </div>
                   )}
                 </div>
@@ -723,30 +797,43 @@ export function MapView({ people, events, places, sees, currentYear, onItemClick
           {/* Event Types */}
           <div>
             <div style={{ fontSize: '12px', color: '#aaa', marginBottom: '0.5rem', fontWeight: 'bold' }}>Events</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <div style={{
-                  backgroundColor: '#ffd700',
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '0',
-                  transform: 'rotate(45deg)',
-                  border: '2px solid white',
-                  boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
-                  position: 'relative',
-                }}>
-                  <div style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%) rotate(-45deg)',
-                    color: 'white',
-                    fontSize: '12px',
-                    fontWeight: 'bold',
-                  }}>★</div>
-                </div>
-                <span style={{ fontSize: '13px' }}>Council</span>
-              </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+              {(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other'] as EventType[]).map(type => {
+                const color = getEventColor(type);
+                const symbol = type === 'council' ? '★' : 
+                               type === 'schism' ? '⚡' :
+                               type === 'persecution' ? '✟' :
+                               type === 'reform' ? '♻' :
+                               type === 'heresy' ? '⚠' :
+                               type === 'war' ? '⚔' : '●';
+                const isDiamond = type === 'council';
+                return (
+                  <div key={type} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <div style={{
+                      backgroundColor: color.fill,
+                      width: '18px',
+                      height: '18px',
+                      borderRadius: isDiamond ? '0' : '50%',
+                      transform: isDiamond ? 'rotate(45deg)' : 'none',
+                      border: `2px solid ${color.stroke}`,
+                      boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
+                      position: 'relative',
+                      flexShrink: 0,
+                    }}>
+                      <div style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: `translate(-50%, -50%) ${isDiamond ? 'rotate(-45deg)' : 'none'}`,
+                        color: color.textColor,
+                        fontSize: '11px',
+                        fontWeight: 'bold',
+                      }}>{symbol}</div>
+                    </div>
+                    <span style={{ fontSize: '12px' }}>{color.label}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
 

@@ -1,0 +1,28 @@
+{
+  "id": "urban-ii",
+  "name": "Pope Blessed Urban II",
+  "birthYear": 1042,
+  "deathYear": 1099,
+  "feastDay": "July 29",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "beatified",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in Rome"
+    },
+    {
+      "placeId": "clermont",
+      "description": "Council of Clermont (1095)"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Urban_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15210a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Pope_Urban_II_Illustration.jpg/330px-Pope_Urban_II_Illustration.jpg",
+  "summary": "Urban II, born Odo of Châtillon, was Pope from 1088 to 1099. He is best known for initiating the First Crusade at the Council of Clermont in 1095, calling on Western Christians to help their Eastern brethren and to liberate the Holy Land from Muslim control. He continued the Gregorian Reforms, strengthened papal authority, and worked to reform the Church. He established the modern College of Cardinals and promoted Cluniac reforms.",
+  "keyQuotes": []
+}

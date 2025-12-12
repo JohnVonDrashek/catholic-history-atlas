@@ -1,0 +1,32 @@
+{
+  "id": "anthony-mary-claret",
+  "name": "St. Anthony Mary Claret",
+  "birthYear": 1807,
+  "deathYear": 1870,
+  "feastDay": "October 24",
+  "primaryTradition": "Latin",
+  "roles": [
+    "archbishop",
+    "founder",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "barcelona",
+      "description": "Archbishop of Santiago de Cuba, founder of Claretians"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Anthony_Mary_Claret",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04033a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Stanthonyfresno.jpg",
+  "summary": "Anthony Mary Claret was a Spanish archbishop, missionary, and founder of the Claretians (Missionary Sons of the Immaculate Heart of Mary). He served as Archbishop of Santiago de Cuba and later as confessor to Queen Isabella II of Spain. He was a prolific writer, preacher, and missionary who traveled extensively throughout Spain and Cuba. He is the patron saint of weavers, textile merchants, and the Catholic press.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Autobiography",
+      "url": "https://www.claret.org/en/saints/anthony-mary-claret"
+    }
+  ]
+}

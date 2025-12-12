@@ -1,0 +1,26 @@
+{
+  "id": "teresa-margherita-redi",
+  "name": "Bl. Teresa Margherita Redi",
+  "birthYear": 1747,
+  "deathYear": 1770,
+  "feastDay": "March 7",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "mystic"
+  ],
+  "orthodoxyStatus": "blessed",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "florence",
+      "description": "Carmelite nun"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Teresa_Margherita_Redi",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14512a.htm",
+  "imageUrl": null,
+  "summary": "Teresa Margherita Redi was an Italian Discalced Carmelite nun known for her devotion to the Sacred Heart of Jesus. She entered the Carmelite monastery in Florence at age 17 and lived only three years as a nun before dying at age 23. Despite her short life, she was known for her profound mystical experiences, humility, and devotion. She was beatified by Pope Pius XI in 1929.",
+  "keyQuotes": [],
+  "writings": []
+}

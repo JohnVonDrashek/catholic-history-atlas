@@ -3,7 +3,7 @@
   "name": "Hundred Years' War",
   "startYear": 1337,
   "endYear": 1453,
-  "type": "other",
+  "type": "war",
   "locationId": "rome",
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Hundred_Years%27_War",
   "newAdventUrl": "https://www.newadvent.org/cathen/07558a.htm",

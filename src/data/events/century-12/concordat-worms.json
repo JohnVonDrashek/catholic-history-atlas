@@ -1,0 +1,15 @@
+{
+  "id": "concordat-worms",
+  "name": "Concordat of Worms",
+  "startYear": 1122,
+  "endYear": 1122,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Concordat_of_Worms",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04330a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Concordat_of_Worms.jpg/330px-Concordat_of_Worms.jpg",
+  "summary": "The Concordat of Worms was an agreement reached in 1122 between Pope Callixtus II and Holy Roman Emperor Henry V that ended the Investiture Controversy, a conflict that had lasted for over 50 years over the right to appoint bishops and abbots. The concordat established a compromise: the emperor would invest bishops with their temporal authority (the regalia), while the pope would invest them with their spiritual authority (the ring and staff). This agreement marked a significant victory for the papacy and established the principle of the Church's independence in spiritual matters.",
+  "keyDocuments": [
+    "Concordat of Worms"
+  ]
+}

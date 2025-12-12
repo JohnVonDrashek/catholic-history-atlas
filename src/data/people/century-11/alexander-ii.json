@@ -1,0 +1,24 @@
+{
+  "id": "alexander-ii",
+  "name": "Pope Alexander II",
+  "birthYear": 1010,
+  "deathYear": 1073,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Alexander_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01284a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Alessandro-ii-color.jpg/330px-Alessandro-ii-color.jpg",
+  "summary": "Alexander II was Pope from 1061 to 1073. Born Anselm of Baggio, he was a key figure in the Gregorian Reforms. He continued the fight against simony and clerical marriage, and worked to strengthen papal authority. He supported William the Conqueror's invasion of England in 1066, seeing it as a way to reform the English Church. His papacy set the stage for the more radical reforms of his successor, Gregory VII.",
+  "keyQuotes": []
+}

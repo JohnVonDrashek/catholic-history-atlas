@@ -1,0 +1,26 @@
+{
+  "id": "silverius",
+  "name": "St. Silverius",
+  "birthYear": null,
+  "deathYear": 537,
+  "feastDay": "June 20",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome, 536-537"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Silverius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13793a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Pope_Silverius.jpg/330px-Pope_Silverius.jpg",
+  "summary": "Silverius was pope from 536 to 537. He was the son of Pope Hormisdas and was elected during the Gothic Wars. He was deposed and exiled by the Byzantine general Belisarius, who was acting on behalf of Empress Theodora, because Silverius refused to restore the Monophysite patriarch Anthimus. He died in exile on the island of Palmaria and is venerated as a martyr and saint.",
+  "keyQuotes": [],
+  "writings": []
+}

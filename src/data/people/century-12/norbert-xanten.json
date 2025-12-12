@@ -1,0 +1,26 @@
+{
+  "id": "norbert-xanten",
+  "name": "St. Norbert of Xanten",
+  "birthYear": 1080,
+  "deathYear": 1134,
+  "feastDay": "June 6",
+  "primaryTradition": "Latin",
+  "roles": [
+    "archbishop",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "cologne",
+      "description": "Founder of the Premonstratensian Order, Archbishop of Magdeburg"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Norbert_of_Xanten",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11099a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Wehr%2C_Kirche_-_Norbert_v._X_%282014-10-01_857b%29.JPG/330px-Wehr%2C_Kirche_-_Norbert_v._X_%282014-10-01_857b%29.JPG",
+  "summary": "Norbert of Xanten was a German bishop and founder of the Premonstratensian Order (Norbertines), a religious order of canons regular. After a dramatic conversion from a worldly life, he founded the Abbey of Prémontré in France in 1120. The order combined the active ministry of canons with the contemplative life of monks. He later became Archbishop of Magdeburg and worked for Church reform. He is venerated as a saint.",
+  "keyQuotes": [],
+  "writings": []
+}

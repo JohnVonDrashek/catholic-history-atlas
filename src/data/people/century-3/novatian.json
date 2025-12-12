@@ -1,0 +1,31 @@
+{
+  "id": "novatian",
+  "name": "Novatian",
+  "birthYear": 200,
+  "deathYear": 258,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "presbyter",
+    "antipope"
+  ],
+  "orthodoxyStatus": "schismatic",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Antipope, founder of Novatianism"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Novatian",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11135a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/%D0%9A%D0%B0%D1%84%D0%B0%D1%80%D1%8B.PNG/330px-%D0%9A%D0%B0%D1%84%D0%B0%D1%80%D1%8B.PNG",
+  "summary": "Novatian was a Roman presbyter and theologian who became an antipope, creating a schism in the Church. After the Decian persecution, he took a rigorist position, arguing that those who had apostatized under persecution could not be readmitted to the Church. When the moderate Cornelius was elected pope, Novatian was consecrated as a rival bishop, creating the Novatianist schism. His followers maintained that the Church could not absolve serious post-baptismal sins. The schism persisted for several centuries, though Novatian himself was martyred during the Valerian persecution.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "On the Trinity",
+      "url": "https://www.newadvent.org/fathers/0512.htm"
+    }
+  ]
+}

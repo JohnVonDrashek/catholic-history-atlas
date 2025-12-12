@@ -1,0 +1,16 @@
+{
+  "id": "council-lateran-iii",
+  "name": "Third Lateran Council",
+  "startYear": 1179,
+  "endYear": 1179,
+  "type": "council",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Third_Council_of_the_Lateran",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09019a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Lateran_Basilica.jpg/330px-Lateran_Basilica.jpg",
+  "summary": "The Third Lateran Council was convened by Pope Alexander III in 1179. The council was called to address the schism that had divided the Church during Alexander's pontificate, when antipopes were supported by the Holy Roman Emperor Frederick Barbarossa. The council established the requirement of a two-thirds majority for papal elections, which remains in effect today. It also condemned the Cathars and Waldensians as heretics, addressed clerical discipline, and prohibited the use of mercenaries in warfare.",
+  "keyDocuments": [
+    "Licet de vitanda (canon on papal elections)",
+    "Canons of the Third Lateran Council"
+  ]
+}

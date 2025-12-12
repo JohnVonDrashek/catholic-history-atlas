@@ -1,0 +1,43 @@
+{
+  "id": "anselm-canterbury",
+  "name": "St. Anselm of Canterbury",
+  "birthYear": 1033,
+  "deathYear": 1109,
+  "feastDay": "April 21",
+  "primaryTradition": "Latin",
+  "roles": [
+    "archbishop",
+    "monk",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "canterbury",
+      "description": "Archbishop of Canterbury"
+    },
+    {
+      "placeId": "bec",
+      "description": "Abbot of Bec Abbey"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Anselm_of_Canterbury",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01546a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Anselm_of_Canterbury.jpg/330px-Anselm_of_Canterbury.jpg",
+  "summary": "Anselm of Canterbury was an Italian Benedictine monk, abbot, philosopher, and theologian who served as Archbishop of Canterbury from 1093 to 1109. He is considered the founder of scholasticism and is best known for his ontological argument for the existence of God. He was a Doctor of the Church and a key figure in medieval philosophy and theology. His major works include the Monologion, Proslogion, and Cur Deus Homo (Why God Became Man).",
+  "keyQuotes": [
+    "I believe in order to understand.",
+    "God is that than which nothing greater can be conceived."
+  ],
+  "writings": [
+    {
+      "title": "Proslogion",
+      "url": "https://www.newadvent.org/fathers/1102.htm"
+    },
+    {
+      "title": "Cur Deus Homo",
+      "url": "https://www.newadvent.org/fathers/1103.htm"
+    }
+  ]
+}

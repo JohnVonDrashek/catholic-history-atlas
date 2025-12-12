@@ -1,0 +1,24 @@
+{
+  "id": "blandina",
+  "name": "St. Blandina",
+  "birthYear": null,
+  "deathYear": 177,
+  "feastDay": "June 2",
+  "primaryTradition": "Greek",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "lyons",
+      "description": "Martyred in Lyons"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Blandina",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02594a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Blandine.jpg/330px-Blandine.jpg",
+  "summary": "Blandina was a Christian slave who was martyred in Lyons in 177 during the persecution of Marcus Aurelius. According to the account preserved by Eusebius, she was a young slave woman who, despite being tortured repeatedly, remained steadfast in her faith. She was finally killed in the arena, tied to a stake and exposed to wild beasts. Her courage and endurance inspired many, and she became one of the most celebrated martyrs of the early Church.",
+  "keyQuotes": []
+}

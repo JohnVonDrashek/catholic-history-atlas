@@ -1,0 +1,15 @@
+{
+  "id": "council-lateran-ii",
+  "name": "Second Lateran Council",
+  "startYear": 1139,
+  "endYear": 1139,
+  "type": "council",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Second_Council_of_the_Lateran",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09018a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Lateran_Basilica.jpg/330px-Lateran_Basilica.jpg",
+  "summary": "The Second Lateran Council was convened by Pope Innocent II in 1139. The council was called to resolve the schism that had divided the Church following the contested papal election of 1130, which resulted in the antipope Anacletus II. The council condemned Anacletus II and his supporters, nullified all ordinations performed by schismatic bishops, and addressed various disciplinary matters. It also prohibited the use of crossbows against Christians and condemned simony and clerical marriage.",
+  "keyDocuments": [
+    "Canons of the Second Lateran Council"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "murder-thomas-becket",
+  "name": "Murder of Thomas Becket",
+  "startYear": 1170,
+  "endYear": 1170,
+  "type": "persecution",
+  "locationId": "canterbury",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_Becket",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14676a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Thomas_Becket.jpg/330px-Thomas_Becket.jpg",
+  "summary": "On December 29, 1170, Thomas Becket, Archbishop of Canterbury, was murdered in Canterbury Cathedral by four knights who believed they were acting on behalf of King Henry II of England. The murder followed years of conflict between Becket and Henry over the rights and privileges of the Church, particularly the issue of trying clerics in royal courts. The murder shocked Europe and led to Becket's rapid canonization in 1173. Henry II was forced to do penance for his role in the murder, and the event became a symbol of the Church's independence from secular authority.",
+  "keyDocuments": [
+    "Constitutions of Clarendon"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "photius",
+  "name": "Photius",
+  "birthYear": 810,
+  "deathYear": 893,
+  "feastDay": null,
+  "primaryTradition": "Byzantine",
+  "roles": [
+    "patriarch",
+    "scholar"
+  ],
+  "orthodoxyStatus": "other",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "constantinople",
+      "description": "Patriarch of Constantinople"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Photios_I_of_Constantinople",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12047b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/%D0%9F%D0%B0%D1%82%D1%80%D0%B8%D0%B0%D1%80%D1%85_%D1%84%D0%BE%D1%82%D0%B8%D0%B9.png/330px-%D0%9F%D0%B0%D1%82%D1%80%D0%B8%D0%B0%D1%80%D1%85_%D1%84%D0%BE%D1%82%D0%B8%D0%B9.png",
+  "summary": "Photius was Patriarch of Constantinople from 858 to 867 and again from 877 to 886. He is one of the most important figures in Byzantine history and a key figure in the Photian Schism, which created tensions between the Eastern and Western Churches. He was a brilliant scholar and theologian, known for his Bibliotheca, a summary of 280 books. He opposed papal claims to universal jurisdiction and the Filioque clause. The schism was eventually resolved, but it foreshadowed the Great Schism of 1054.",
+  "keyQuotes": []
+}

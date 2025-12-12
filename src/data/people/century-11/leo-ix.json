@@ -1,0 +1,28 @@
+{
+  "id": "leo-ix",
+  "name": "Pope St. Leo IX",
+  "birthYear": 1002,
+  "deathYear": 1054,
+  "feastDay": "April 19",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in Rome"
+    },
+    {
+      "placeId": "constantinople",
+      "description": "Great Schism of 1054"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_IX",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09154a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Pope_Leo_IX.jpg/330px-Pope_Leo_IX.jpg",
+  "summary": "Leo IX, born Bruno of Egisheim-Dagsburg, was Pope from 1049 to 1054. His papacy marked the beginning of the papal reform movement that would culminate in the Gregorian Reforms. He worked to combat simony and clerical marriage and strengthened papal authority. His papacy is most notable for the Great Schism of 1054, when the mutual excommunications between Rome and Constantinople led to the formal separation of the Eastern and Western Churches that persists to this day.",
+  "keyQuotes": []
+}

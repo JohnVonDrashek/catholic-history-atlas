@@ -1,0 +1,24 @@
+{
+  "id": "john-xv",
+  "name": "Pope John XV",
+  "birthYear": null,
+  "deathYear": 996,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope (985-996)"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_John_XV",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08423a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Pope_John_XV_Illustration.jpg/330px-Pope_John_XV_Illustration.jpg",
+  "summary": "John XV was Pope from 985 to 996. His pontificate was marked by conflicts with the Roman nobility and efforts to maintain papal independence. He is notable for being the first pope to canonize a saint officially (Ulrich of Augsburg in 993), establishing a precedent for papal canonization. He worked to mediate disputes and maintain peace in Italy during a turbulent period.",
+  "keyQuotes": []
+}

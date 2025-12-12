@@ -1,0 +1,24 @@
+{
+  "id": "pelagius-ii",
+  "name": "Pope Pelagius II",
+  "birthYear": null,
+  "deathYear": 590,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome, 579-590"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Pelagius_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11605b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pope_Pelagius_II.jpg/330px-Pope_Pelagius_II.jpg",
+  "summary": "Pelagius II was pope from 579 to 590. His pontificate was marked by the Lombard invasions of Italy and the ongoing schism with the Three Chapters. He worked to maintain the independence of the papacy and to provide relief to the people of Rome during times of war and plague. He sent missionaries to England and worked to strengthen the Church's position in Italy. He was succeeded by Gregory the Great.",
+  "keyQuotes": [],
+  "writings": []
+}

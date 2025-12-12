@@ -1,0 +1,32 @@
+{
+  "id": "gertrude-great",
+  "name": "St. Gertrude the Great",
+  "birthYear": 1256,
+  "deathYear": 1302,
+  "feastDay": "November 16",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "mystic",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "helfta",
+      "description": "Benedictine nun and mystic"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Gertrude_the_Great",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06534a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Santa_Giustina_%28Padua%29_-_Ecstasy_of_St._Gertrude_by_Pietro_Liberi.jpg/330px-Santa_Giustina_%28Padua%29_-_Ecstasy_of_St._Gertrude_by_Pietro_Liberi.jpg",
+  "summary": "Gertrude the Great was a German Benedictine nun and mystic. She is one of only a few women to be declared a Doctor of the Church. Known for her devotion to the Sacred Heart of Jesus, her mystical writings describe visions and her deep relationship with Christ. Her works, particularly 'The Herald of Divine Love' and 'Spiritual Exercises', have influenced Christian spirituality for centuries. She promoted devotion to the Sacred Heart and the value of liturgical prayer.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "The Herald of Divine Love",
+      "url": "https://www.ccel.org/ccel/gertrude/herald.html"
+    }
+  ]
+}

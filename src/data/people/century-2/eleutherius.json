@@ -1,0 +1,25 @@
+{
+  "id": "eleutherius",
+  "name": "St. Eleutherius",
+  "birthYear": null,
+  "deathYear": 189,
+  "feastDay": "May 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Bishop of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Eleutherius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05372a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pope_Eleutherius_in_St_Paul.gif/330px-Pope_Eleutherius_in_St_Paul.gif",
+  "summary": "Eleutherius was Bishop of Rome from about 175 to 189. According to the Liber Pontificalis, he received a letter from King Lucius of Britain requesting missionaries, though this account is considered legendary. He is traditionally considered a martyr, though historical evidence for this is uncertain. His pontificate saw the continued growth of the Church and the spread of Christianity throughout the Roman Empire.",
+  "keyQuotes": []
+}

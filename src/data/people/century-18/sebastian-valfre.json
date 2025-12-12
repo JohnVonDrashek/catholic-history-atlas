@@ -1,0 +1,26 @@
+{
+  "id": "sebastian-valfre",
+  "name": "Bl. Sebastian Valfrè",
+  "birthYear": 1629,
+  "deathYear": 1710,
+  "feastDay": "January 30",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "confessor"
+  ],
+  "orthodoxyStatus": "blessed",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "turin",
+      "description": "Oratorian priest and confessor"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Sebastian_Valfr%C3%A8",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15266b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Bl-sebastian-valfre.jpg",
+  "summary": "Sebastian Valfrè was an Italian Oratorian priest known for his extraordinary charity, humility, and work as a confessor. He served the poor and sick in Turin, and was a spiritual director to many, including members of the royal family of Savoy. Known for his patience and kindness, he spent hours in the confessional and was revered for his holiness. He was beatified by Pope Gregory XVI in 1834.",
+  "keyQuotes": [],
+  "writings": []
+}

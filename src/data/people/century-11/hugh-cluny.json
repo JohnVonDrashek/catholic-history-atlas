@@ -1,0 +1,25 @@
+{
+  "id": "hugh-cluny",
+  "name": "St. Hugh of Cluny",
+  "birthYear": 1024,
+  "deathYear": 1109,
+  "feastDay": "April 29",
+  "primaryTradition": "Latin",
+  "roles": [
+    "abbot",
+    "monk"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "cluny",
+      "description": "Abbot of Cluny Abbey"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Hugh_of_Cluny",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07518a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Coat_of_arms_of_George_Hugh_Niederauer.svg/330px-Coat_of_arms_of_George_Hugh_Niederauer.svg.png",
+  "summary": "Hugh of Cluny, also known as Hugh the Great, was Abbot of Cluny from 1049 to 1109, serving for 60 years during the height of Cluny's influence. He was a key advisor to several popes and played an important role in the Gregorian Reforms. Under his leadership, Cluny became the most influential monastery in Western Europe, with over 200 priories and more than 10,000 monks. He reformed many monasteries and was known for his piety, administrative skill, and commitment to the reform of the Church.",
+  "keyQuotes": []
+}

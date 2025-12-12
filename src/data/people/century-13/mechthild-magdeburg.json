@@ -1,0 +1,31 @@
+{
+  "id": "mechthild-magdeburg",
+  "name": "Mechthild of Magdeburg",
+  "birthYear": 1207,
+  "deathYear": 1282,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "mystic"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "helfta",
+      "description": "Beguine and later Cistercian nun"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Mechthild_of_Magdeburg",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10109b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Merazhofen_Pfarrkirche_Chorgest%C3%BChl_links_Mechthild.jpg/330px-Merazhofen_Pfarrkirche_Chorgest%C3%BChl_links_Mechthild.jpg",
+  "summary": "Mechthild of Magdeburg was a German Beguine who later became a Cistercian nun at the monastery of Helfta. She was one of the most important medieval mystics and wrote 'The Flowing Light of the Godhead', the first known work of Christian mysticism written in Middle Low German. Her writings describe her mystical experiences, visions, and her deep spiritual relationship with God. She was a contemporary and friend of Gertrude the Great.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "The Flowing Light of the Godhead",
+      "url": "https://www.ccel.org/ccel/mechthild/flowing.html"
+    }
+  ]
+}

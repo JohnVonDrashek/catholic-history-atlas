@@ -1,0 +1,26 @@
+{
+  "id": "oswald-worcester",
+  "name": "St. Oswald of Worcester",
+  "birthYear": 925,
+  "deathYear": 992,
+  "feastDay": "February 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "archbishop",
+    "bishop",
+    "reformer"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "worcester",
+      "description": "Bishop of Worcester, Archbishop of York"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Oswald_of_Worcester",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11350a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Oswald_and_Eadnoth.jpg/330px-Oswald_and_Eadnoth.jpg",
+  "summary": "Oswald was Bishop of Worcester and later Archbishop of York. He was one of the three leaders of the English monastic reform movement of the 10th century, along with St. Dunstan and St. Æthelwold. He studied at Fleury Abbey in France and brought back strict Benedictine practices to England. He founded Ramsey Abbey and reformed many other monasteries. He was known for his learning, piety, and dedication to monastic reform.",
+  "keyQuotes": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "bruno",
+  "name": "St. Bruno",
+  "birthYear": 1030,
+  "deathYear": 1101,
+  "feastDay": "October 6",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "hermit",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "chartreuse",
+      "description": "Founder of the Grande Chartreuse monastery"
+    },
+    {
+      "placeId": "cologne",
+      "description": "Born in Cologne"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Bruno_of_Cologne",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03014b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Saint_Bruno_of_Cologne.png/330px-Saint_Bruno_of_Cologne.png",
+  "summary": "Bruno of Cologne, also known as St. Bruno, was a German monk and the founder of the Carthusian Order. He established the Grande Chartreuse monastery in the French Alps in 1084, which became the motherhouse of the Carthusians. The order combines eremitical and cenobitic life, with monks living as hermits but coming together for liturgy. The Carthusians are known for their strict adherence to contemplative life and silence. Bruno was a canon and chancellor in Reims before founding his order.",
+  "keyQuotes": []
+}

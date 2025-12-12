@@ -1,0 +1,38 @@
+{
+  "id": "peter-abelard",
+  "name": "Peter Abelard",
+  "birthYear": 1079,
+  "deathYear": 1142,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "theologian",
+    "philosopher",
+    "logician"
+  ],
+  "orthodoxyStatus": "condemned",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "Theologian and philosopher, taught at the University of Paris"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Abelard",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01036b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Peter_Abelard.jpg/330px-Peter_Abelard.jpg",
+  "summary": "Peter Abelard was a French scholastic philosopher, theologian, and logician. He is best known for his tragic love affair with Héloïse and for his theological works that challenged traditional doctrines. His teachings on the Trinity were condemned at the Council of Sens in 1141, largely due to the influence of Bernard of Clairvaux. Despite his condemnation, he made significant contributions to logic, ethics, and theology, and is considered one of the founders of scholasticism.",
+  "keyQuotes": [
+    "I must understand in order to believe."
+  ],
+  "writings": [
+    {
+      "title": "Sic et Non (Yes and No)",
+      "url": "https://sourcebooks.fordham.edu/source/abelard-sicetnon1.asp"
+    },
+    {
+      "title": "Theologia Christiana",
+      "url": "https://www.newadvent.org/cathen/01036b.htm"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "ferdinand-iii-castile",
+  "name": "St. Ferdinand III of Castile",
+  "birthYear": 1199,
+  "deathYear": 1252,
+  "feastDay": "May 30",
+  "primaryTradition": "Latin",
+  "roles": [
+    "king"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "seville",
+      "description": "King of Castile and León"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ferdinand_III_of_Castile",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06051a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Ferdinand_III_of_Castile.png",
+  "summary": "Ferdinand III was King of Castile from 1217 and King of León from 1230, uniting the two kingdoms. He is known for his role in the Reconquista, successfully capturing major cities from Muslim control including Córdoba and Seville. A deeply pious ruler, he supported the Church, founded monasteries, and promoted the Christian faith throughout his realm. He was canonized in 1671 and is the patron saint of Seville.",
+  "keyQuotes": [],
+  "writings": []
+}

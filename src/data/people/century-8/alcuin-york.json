@@ -1,0 +1,31 @@
+{
+  "id": "alcuin-york",
+  "name": "St. Alcuin of York",
+  "birthYear": 735,
+  "deathYear": 804,
+  "feastDay": "May 20",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "scholar",
+    "teacher",
+    "abbot"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "tours",
+      "description": "Abbot of St. Martin's Abbey in Tours, advisor to Charlemagne"
+    },
+    {
+      "placeId": "aachen",
+      "description": "Member of Charlemagne's court and Palace School"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Alcuin",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01276a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Alcuin_of_York._Lectures_delivered_in_the_cathedral_church_of_Bristol_in_1907_and_1908_%281908%29_%2814594364810%29.jpg/330px-Alcuin_of_York._Lectures_delivered_in_the_cathedral_church_of_Bristol_in_1907_and_1908_%281908%29_%2814594364810%29.jpg",
+  "summary": "Alcuin of York was an English scholar, teacher, and abbot who became a leading figure in the Carolingian Renaissance. He was invited by Charlemagne to join his court at Aachen, where he established the Palace School and helped reform education throughout the Frankish Empire. He was a prolific writer on theology, grammar, rhetoric, and education. He later became abbot of St. Martin's Abbey in Tours, where he continued his educational work.",
+  "keyQuotes": []
+}

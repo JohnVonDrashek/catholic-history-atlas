@@ -1,0 +1,25 @@
+{
+  "id": "demetrius-alexandria",
+  "name": "Demetrius of Alexandria",
+  "birthYear": null,
+  "deathYear": 232,
+  "feastDay": null,
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Bishop of Alexandria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Demetrius_of_Alexandria",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04708a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Pope_Demetrius_of_Alexandria.jpg/330px-Pope_Demetrius_of_Alexandria.jpg",
+  "summary": "Demetrius was Bishop of Alexandria from 189 to 232, making him one of the longest-serving bishops of that see. During his episcopate, the Catechetical School of Alexandria flourished under the leadership of Clement and later Origen. He played a role in the conflict with Origen over the latter's self-castration and later theological speculations. Demetrius was instrumental in establishing the organizational structure of the Church in Egypt and maintaining orthodoxy during a period of theological development.",
+  "keyQuotes": [],
+  "writings": []
+}

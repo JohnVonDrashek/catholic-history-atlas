@@ -1,0 +1,24 @@
+{
+  "id": "paschal-ii",
+  "name": "Pope Paschal II",
+  "birthYear": 1050,
+  "deathYear": 1118,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Paschal_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11512a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Pope_Paschal-II_1107.jpg/330px-Pope_Paschal-II_1107.jpg",
+  "summary": "Paschal II was Pope from 1099 to 1118. He continued the Gregorian Reforms and the Investiture Controversy with the Holy Roman Emperor. His papacy saw the continuation of the First Crusade, which had been launched by Urban II. He struggled with the investiture issue and was briefly imprisoned by Emperor Henry V. Despite these challenges, he worked to maintain papal authority and reform the Church.",
+  "keyQuotes": []
+}

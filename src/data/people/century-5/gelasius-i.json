@@ -1,0 +1,32 @@
+{
+  "id": "gelasius-i",
+  "name": "Pope Gelasius I",
+  "birthYear": 410,
+  "deathYear": 496,
+  "feastDay": "November 21",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 492 to 496"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gelasius_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06405a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pope_Gelasius_I.jpg/330px-Pope_Gelasius_I.jpg",
+  "summary": "Gelasius I was Pope from 492 to 496. He is best known for his letter to Emperor Anastasius I in which he articulated the doctrine of the 'two swords' - spiritual and temporal power - asserting the superiority of spiritual authority. He was a prolific writer and worked to strengthen papal authority. He also compiled important liturgical texts and is credited with establishing the Gelasian Sacramentary.",
+  "keyQuotes": [
+    "There are two powers by which this world is chiefly ruled: the sacred authority of the priesthood and the royal power."
+  ],
+  "writings": [
+    {
+      "title": "Letters",
+      "url": "https://www.ccel.org/ccel/schaff/npnf212.iv.html"
+    }
+  ]
+}

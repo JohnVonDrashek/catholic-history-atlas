@@ -1,0 +1,24 @@
+{
+  "id": "sixtus-iii",
+  "name": "Pope Sixtus III",
+  "birthYear": 390,
+  "deathYear": 440,
+  "feastDay": "March 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 432 to 440, predecessor of Leo the Great"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Sixtus_III",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14033a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Pope-Sixtus-III.jpg/330px-Pope-Sixtus-III.jpg",
+  "summary": "Sixtus III was Pope from 432 to 440. He was a supporter of the Council of Ephesus (431) and worked to maintain unity in the Church after the Nestorian controversy. He is known for his extensive building projects in Rome, including the restoration and decoration of the Basilica of Santa Maria Maggiore. He was a peacemaker who worked to reconcile differences between various Christian communities.",
+  "keyQuotes": []
+}

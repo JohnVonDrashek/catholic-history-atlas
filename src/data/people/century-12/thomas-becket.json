@@ -1,0 +1,28 @@
+{
+  "id": "thomas-becket",
+  "name": "St. Thomas Becket",
+  "birthYear": 1118,
+  "deathYear": 1170,
+  "feastDay": "December 29",
+  "primaryTradition": "Latin",
+  "roles": [
+    "archbishop",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "canterbury",
+      "description": "Archbishop of Canterbury, martyred in Canterbury Cathedral"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_Becket",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14676a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Thomas_Becket.jpg/330px-Thomas_Becket.jpg",
+  "summary": "Thomas Becket, also known as Thomas à Becket, was Archbishop of Canterbury from 1162 until his murder in 1170. He engaged in conflict with Henry II of England over the rights and privileges of the Church and was murdered by followers of the king in Canterbury Cathedral. He is venerated as a saint and martyr in both the Catholic Church and the Anglican Communion. His death had a profound impact on the relationship between Church and state in medieval England.",
+  "keyQuotes": [
+    "I am ready to die for my Lord, that in my blood the Church may obtain liberty and peace."
+  ],
+  "writings": []
+}

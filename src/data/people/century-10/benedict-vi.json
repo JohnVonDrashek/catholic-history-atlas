@@ -1,0 +1,25 @@
+{
+  "id": "benedict-vi",
+  "name": "Pope Benedict VI",
+  "birthYear": null,
+  "deathYear": 974,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope (973-974), martyred"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Benedict_VI",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02428a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Pope_Benedict_VI_Illustration.jpg/330px-Pope_Benedict_VI_Illustration.jpg",
+  "summary": "Benedict VI was Pope from 973 to 974. His brief pontificate was marked by political turmoil in Rome. He was imprisoned and strangled to death by supporters of the Crescentii family, who installed an antipope (Boniface VII) in his place. His martyrdom reflects the violent political struggles that characterized the papacy during this period.",
+  "keyQuotes": []
+}

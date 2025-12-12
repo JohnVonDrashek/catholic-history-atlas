@@ -1,0 +1,25 @@
+{
+  "id": "berengar-tours",
+  "name": "Berengar of Tours",
+  "birthYear": 999,
+  "deathYear": 1088,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "archdeacon",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heretic",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "tours",
+      "description": "Archdeacon of Tours"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Berengar_of_Tours",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02519a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/B%C3%A9renger_de_Tours.jpg/330px-B%C3%A9renger_de_Tours.jpg",
+  "summary": "Berengar of Tours was an 11th-century French theologian and archdeacon. He is best known for his controversial views on the Eucharist, which questioned the real presence of Christ in the sacrament. His teachings were condemned at several councils, including the Council of Rome in 1059. He eventually recanted but his views influenced later debates about transubstantiation. He represents an important moment in medieval Eucharistic theology.",
+  "keyQuotes": []
+}

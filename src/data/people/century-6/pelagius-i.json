@@ -1,0 +1,24 @@
+{
+  "id": "pelagius-i",
+  "name": "Pope Pelagius I",
+  "birthYear": null,
+  "deathYear": 561,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome, 556-561"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Pelagius_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11605a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Pope_Pelagius_I.jpg/330px-Pope_Pelagius_I.jpg",
+  "summary": "Pelagius I was pope from 556 to 561. He was elected after the death of Vigilius and worked to restore relations with the Eastern Church after the Three Chapters controversy. He was known for his charity and efforts to help the poor, especially during times of famine and plague. He also worked to restore churches and monasteries that had been damaged during the Gothic Wars.",
+  "keyQuotes": [],
+  "writings": []
+}

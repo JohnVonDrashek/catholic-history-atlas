@@ -1,0 +1,30 @@
+{
+  "id": "lanfranc",
+  "name": "Bl. Lanfranc",
+  "birthYear": 1005,
+  "deathYear": 1089,
+  "feastDay": "May 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "archbishop",
+    "monk",
+    "theologian"
+  ],
+  "orthodoxyStatus": "beatified",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "canterbury",
+      "description": "Archbishop of Canterbury"
+    },
+    {
+      "placeId": "bec",
+      "description": "Prior and teacher at Bec Abbey"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Lanfranc",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08759a.htm",
+  "imageUrl": null,
+  "summary": "Lanfranc was Archbishop of Canterbury from 1070 to 1089. He was an Italian Benedictine monk who became prior of Bec Abbey in Normandy, where he established a famous school. He was a teacher of Anselm of Canterbury and played a key role in the Norman reform of the English Church. He worked closely with William the Conqueror to reorganize the English Church along Norman lines. He is venerated as Blessed.",
+  "keyQuotes": []
+}

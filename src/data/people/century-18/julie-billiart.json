@@ -1,0 +1,26 @@
+{
+  "id": "julie-billiart",
+  "name": "St. Julie Billiart",
+  "birthYear": 1751,
+  "deathYear": 1816,
+  "feastDay": "April 8",
+  "primaryTradition": "Latin",
+  "roles": [
+    "founder",
+    "educator"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "namur",
+      "description": "Founder of the Sisters of Notre Dame de Namur"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Julie_Billiart",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02592a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Saint_Julie_Billiart_Catholic_Parish_%28Hamilton%2C_Ohio%29_-_exterior1.jpg/330px-Saint_Julie_Billiart_Catholic_Parish_%28Hamilton%2C_Ohio%29_-_exterior1.jpg",
+  "summary": "Julie Billiart was a French nun who founded the Sisters of Notre Dame de Namur, a religious congregation dedicated to the education of girls, especially the poor. Despite being paralyzed for 22 years, she continued her work and was miraculously cured. She established schools throughout France and Belgium, focusing on providing Christian education to girls from all social classes. She was canonized by Pope Paul VI in 1969.",
+  "keyQuotes": [],
+  "writings": []
+}

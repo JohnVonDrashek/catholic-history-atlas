@@ -1,5 +1,6 @@
 import { FaScroll } from 'react-icons/fa';
 import { Person, Event } from '../types';
+import { getEventColor } from '../utils/eventColors';
 import { FigurePortrait } from './FigurePortrait';
 import { getCachedImageUrl } from '../utils/imageCache';
 
@@ -438,14 +439,15 @@ function EventDetails({ event }: { event: Event }) {
                 {years}
               </p>
               <span style={{
-                backgroundColor: event.type === 'council' ? '#ffd700' : '#ff6b6b',
-                color: event.type === 'council' ? '#000' : '#fff',
+                backgroundColor: getEventColor(event.type).fill,
+                color: getEventColor(event.type).textColor,
                 padding: '0.25rem 0.75rem',
                 borderRadius: '12px',
                 fontSize: '0.85rem',
                 fontWeight: 'bold',
+                border: `1px solid ${getEventColor(event.type).stroke}`,
               }}>
-                {typeLabel}
+                {getEventColor(event.type).label}
               </span>
             </div>
           </div>

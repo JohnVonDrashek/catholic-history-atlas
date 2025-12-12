@@ -1,0 +1,25 @@
+{
+  "id": "lioba",
+  "name": "St. Lioba",
+  "birthYear": 710,
+  "deathYear": 782,
+  "feastDay": "September 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "abbess",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "tauberbischofsheim",
+      "description": "Abbess and missionary in Germany, relative of St. Boniface"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Lioba",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09280a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Schornsheim-Lioba.JPG/330px-Schornsheim-Lioba.JPG",
+  "summary": "Lioba was an English nun and abbess who became a missionary in Germany. She was a relative of St. Boniface and was invited by him to help establish convents in Germany. She became the abbess of the convent at Tauberbischofsheim and was known for her learning, piety, and leadership. She played an important role in the Christianization of Germany and the education of women in the Frankish Empire.",
+  "keyQuotes": []
+}

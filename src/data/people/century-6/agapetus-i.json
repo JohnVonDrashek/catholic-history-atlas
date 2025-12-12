@@ -1,0 +1,29 @@
+{
+  "id": "agapetus-i",
+  "name": "St. Agapetus I",
+  "birthYear": null,
+  "deathYear": 536,
+  "feastDay": "September 20",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome, 535-536"
+    },
+    {
+      "placeId": "constantinople",
+      "description": "Died in Constantinople"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Agapetus_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01202a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pope_Agapetus_I.jpg/330px-Pope_Agapetus_I.jpg",
+  "summary": "Agapetus I was pope from 535 to 536. He traveled to Constantinople to prevent Emperor Justinian from invading Italy, but died there. He is remembered for deposing the Monophysite patriarch Anthimus I of Constantinople and consecrating the orthodox Menas in his place. He also worked to maintain the independence of the papacy and to defend orthodox doctrine.",
+  "keyQuotes": [],
+  "writings": []
+}

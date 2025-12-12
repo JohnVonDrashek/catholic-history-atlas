@@ -1,0 +1,25 @@
+{
+  "id": "anicetus",
+  "name": "St. Anicetus",
+  "birthYear": null,
+  "deathYear": 168,
+  "feastDay": "April 17",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Bishop of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Anicetus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01519a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Papa_Aniceto_cropped.jpg",
+  "summary": "Anicetus was Bishop of Rome from about 157 to 168. He was the first bishop of Rome to have dealings with heretics, specifically with Marcion. According to Irenaeus, Polycarp of Smyrna visited Anicetus in Rome to discuss the date of Easter, and though they disagreed, they remained in communion. He is traditionally considered a martyr.",
+  "keyQuotes": []
+}

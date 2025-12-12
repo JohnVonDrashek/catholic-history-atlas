@@ -1,0 +1,25 @@
+{
+  "id": "honoratus-lerins",
+  "name": "St. Honoratus of Lérins",
+  "birthYear": 350,
+  "deathYear": 429,
+  "feastDay": "January 16",
+  "primaryTradition": "Latin",
+  "roles": [
+    "abbot",
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lerins",
+      "description": "Founder and abbot of Lérins Abbey, later Archbishop of Arles"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Honoratus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07452a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Saint_Honorat_d%27Arles.jpg",
+  "summary": "Honoratus was the founder and first abbot of the famous Lérins Abbey on the island of Lérins (now Île Saint-Honorat) off the coast of southern France. The abbey became one of the most important centers of learning and monasticism in the West, producing many bishops and saints. Honoratus later became Archbishop of Arles. He was known for his holiness, learning, and the rule of life he established at Lérins.",
+  "keyQuotes": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "cassian",
+  "name": "St. John Cassian",
+  "birthYear": 360,
+  "deathYear": 435,
+  "feastDay": "February 29",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "abbot",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "marseilles",
+      "description": "Founder of monasteries in Gaul, introduced Eastern monasticism to the West"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Cassian",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03404a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/John_Cassian.jpeg/330px-John_Cassian.jpeg",
+  "summary": "John Cassian was a monk, theologian, and founder of monasteries in Gaul. He spent time in Egypt learning from the Desert Fathers and then brought Eastern monastic practices to the West. He founded the Abbey of St. Victor in Marseilles and wrote influential works on monasticism, including 'The Institutes' and 'The Conferences,' which became foundational texts for Western monasticism.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "The Institutes",
+      "url": "https://www.ccel.org/ccel/schaff/npnf211.html"
+    },
+    {
+      "title": "The Conferences",
+      "url": "https://www.ccel.org/ccel/schaff/npnf211.html"
+    }
+  ]
+}

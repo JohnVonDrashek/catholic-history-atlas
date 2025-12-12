@@ -1,0 +1,26 @@
+{
+  "id": "peter-chanel",
+  "name": "St. Peter Chanel",
+  "birthYear": 1803,
+  "deathYear": 1841,
+  "feastDay": "April 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "futuna",
+      "description": "Martyred on Futuna Island, first martyr of Oceania"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Chanel",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03560a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Our_Lady_of_Lourdes_and_St_Peter_Chanel_-_geograph.org.uk_-_5159153.jpg/330px-Our_Lady_of_Lourdes_and_St_Peter_Chanel_-_geograph.org.uk_-_5159153.jpg",
+  "summary": "Peter Chanel was a French Marist priest and missionary who was martyred on the island of Futuna in the South Pacific. He was the first martyr of Oceania and the first Marist to be martyred. He worked to convert the islanders to Christianity but was killed by local chieftains who feared his influence. His death led to the conversion of the island. He is the patron saint of Oceania.",
+  "keyQuotes": []
+}

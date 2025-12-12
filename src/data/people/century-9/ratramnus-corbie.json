@@ -1,0 +1,25 @@
+{
+  "id": "ratramnus-corbie",
+  "name": "Ratramnus of Corbie",
+  "birthYear": 800,
+  "deathYear": 868,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "theologian"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "corbie",
+      "description": "Monk at Corbie Abbey"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ratramnus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12660a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ratramnus_from_Frontispiece_for_Vindicae_Predestinationis_et_Gratiae_MET_DP836286_%28cropped%29.jpg/330px-Ratramnus_from_Frontispiece_for_Vindicae_Predestinationis_et_Gratiae_MET_DP836286_%28cropped%29.jpg",
+  "summary": "Ratramnus was a Benedictine monk and theologian at Corbie Abbey. He is best known for his work on the Eucharist, De corpore et sanguine Domini, written in response to Paschasius Radbertus. He argued for a more symbolic understanding of the Eucharist, though his views were later interpreted in various ways. He also wrote on predestination, supporting a moderate position in the debate with Gottschalk. He was an important figure in 9th-century theology.",
+  "keyQuotes": []
+}

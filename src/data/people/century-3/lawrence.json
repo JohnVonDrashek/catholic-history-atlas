@@ -1,0 +1,26 @@
+{
+  "id": "lawrence",
+  "name": "St. Lawrence",
+  "birthYear": 225,
+  "deathYear": 258,
+  "feastDay": "August 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "deacon",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Deacon of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Lawrence_of_Rome",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09089a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Right_transept_of_San_Francesco_della_Vigna_%28Venice%29_-_Saint_Lawrence_of_Rome.jpg/330px-Right_transept_of_San_Francesco_della_Vigna_%28Venice%29_-_Saint_Lawrence_of_Rome.jpg",
+  "summary": "Lawrence was one of the seven deacons of Rome under Pope Sixtus II. During the persecution of Valerian, he was responsible for the Church's treasury and distribution of alms to the poor. According to tradition, when ordered to hand over the Church's treasures, he presented the poor, saying they were the true treasures of the Church. He was martyred by being roasted alive on a gridiron, becoming one of the most venerated martyrs of the early Church and a patron of Rome.",
+  "keyQuotes": [],
+  "writings": []
+}

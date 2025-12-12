@@ -1,0 +1,24 @@
+{
+  "id": "gregory-v",
+  "name": "Pope Gregory V",
+  "birthYear": 972,
+  "deathYear": 999,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope (996-999)"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_V",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07001a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/59-Gregorio-V.jpg/330px-59-Gregorio-V.jpg",
+  "summary": "Gregory V was Pope from 996 to 999. He was the first German pope and a cousin of Emperor Otto III, who secured his election. His pontificate was marked by conflicts with the Roman nobility, particularly the Crescentii family, who installed an antipope (John XVI) during his reign. He worked to reform the Church and strengthen papal authority, but his reign was cut short by his early death at age 27.",
+  "keyQuotes": []
+}

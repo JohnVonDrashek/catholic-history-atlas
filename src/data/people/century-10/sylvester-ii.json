@@ -1,0 +1,26 @@
+{
+  "id": "sylvester-ii",
+  "name": "Pope Sylvester II (Gerbert of Aurillac)",
+  "birthYear": 946,
+  "deathYear": 1003,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "scholar",
+    "mathematician"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope (999-1003)"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Sylvester_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14371a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Silvester_II.JPG/330px-Silvester_II.JPG",
+  "summary": "Gerbert of Aurillac, who became Pope Sylvester II, was the first French pope and one of the most learned men of his time. He was a renowned mathematician, astronomer, and scholar who introduced Arabic numerals to Europe and was an expert in the abacus. He served as archbishop of Reims and Ravenna before being elected pope in 999. His papacy was marked by efforts to reform the Church and strengthen papal authority.",
+  "keyQuotes": []
+}

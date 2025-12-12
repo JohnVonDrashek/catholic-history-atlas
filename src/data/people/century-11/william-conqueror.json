@@ -1,0 +1,28 @@
+{
+  "id": "william-conqueror",
+  "name": "William the Conqueror",
+  "birthYear": 1028,
+  "deathYear": 1087,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "king"
+  ],
+  "orthodoxyStatus": "other",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "normandy",
+      "description": "Duke of Normandy"
+    },
+    {
+      "placeId": "london",
+      "description": "King of England"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/William_the_Conqueror",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15638c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_Tomb_of_William_The_Conqueror_2.jpg/330px-The_Tomb_of_William_The_Conqueror_2.jpg",
+  "summary": "William the Conqueror was Duke of Normandy from 1035 and King of England from 1066 to 1087. His conquest of England in 1066 had profound effects on English society and the Church. He worked closely with Pope Alexander II and later Lanfranc to reform the English Church along Norman lines, replacing English bishops with Normans and reorganizing the ecclesiastical structure. The Norman Conquest marked a turning point in English and Church history.",
+  "keyQuotes": []
+}

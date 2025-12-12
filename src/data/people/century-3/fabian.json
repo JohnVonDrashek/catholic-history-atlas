@@ -1,0 +1,26 @@
+{
+  "id": "fabian",
+  "name": "St. Fabian",
+  "birthYear": 200,
+  "deathYear": 250,
+  "feastDay": "January 20",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Fabian",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05738a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Ringstedt_Kirche.jpg/330px-Ringstedt_Kirche.jpg",
+  "summary": "Fabian was Bishop of Rome from 236 to 250. According to legend, a dove descended upon his head during the papal election, signifying divine choice. He reorganized the Church in Rome, dividing the city into seven districts with deacons to oversee them. He was martyred during the Decian persecution in 250, becoming one of the first popes to die as a martyr. His death marked a significant moment in the early Church's persecution history.",
+  "keyQuotes": [],
+  "writings": []
+}

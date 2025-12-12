@@ -1,0 +1,25 @@
+{
+  "id": "rose-philippine-duchesne",
+  "name": "St. Rose Philippine Duchesne",
+  "birthYear": 1769,
+  "deathYear": 1852,
+  "feastDay": "November 18",
+  "primaryTradition": "Latin",
+  "roles": [
+    "missionary",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "missouri",
+      "description": "Missionary to Native Americans, brought Sacred Heart to America"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Rose_Philippine_Duchesne",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05200a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/18/St._Rose_Philippine_Duchesne.jpg",
+  "summary": "Rose Philippine Duchesne was a French religious sister of the Society of the Sacred Heart who became a missionary to the United States. She established the first Sacred Heart school in America and worked with Native Americans in Missouri and Kansas. Despite facing many hardships, she persevered in her mission. She was canonized in 1988 and is the patron saint of perseverance.",
+  "keyQuotes": []
+}

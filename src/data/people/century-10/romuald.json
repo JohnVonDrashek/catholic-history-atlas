@@ -1,0 +1,26 @@
+{
+  "id": "romuald",
+  "name": "St. Romuald",
+  "birthYear": 951,
+  "deathYear": 1027,
+  "feastDay": "June 19",
+  "primaryTradition": "Latin",
+  "roles": [
+    "abbot",
+    "hermit",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "camaldoli",
+      "description": "Founder of the Camaldolese order"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Romuald",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13180a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/San_Romualdo.jpg/330px-San_Romualdo.jpg",
+  "summary": "Romuald was an Italian hermit and the founder of the Camaldolese order, a branch of the Benedictines that combines the eremitical and cenobitic forms of monastic life. He spent much of his life as a wandering hermit, founding monasteries throughout Italy. He was known for his extreme asceticism and dedication to contemplative prayer. The Camaldolese order he founded continues to this day, with hermitages and monasteries in Italy and around the world.",
+  "keyQuotes": []
+}

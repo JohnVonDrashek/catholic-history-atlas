@@ -3,6 +3,8 @@ export type EventType =
   | 'schism'
   | 'persecution'
   | 'reform'
+  | 'heresy'
+  | 'war'
   | 'other';
 
 export interface Event {

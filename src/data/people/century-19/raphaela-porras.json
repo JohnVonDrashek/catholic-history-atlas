@@ -1,0 +1,24 @@
+{
+  "id": "raphaela-porras",
+  "name": "St. Raphaela Porras",
+  "birthYear": 1850,
+  "deathYear": 1925,
+  "feastDay": "January 6",
+  "primaryTradition": "Latin",
+  "roles": [
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "madrid",
+      "description": "Founder of the Handmaids of the Sacred Heart of Jesus"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Raphaela_Porras",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12645a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/RafaelaPorras.jpg",
+  "summary": "Raphaela Porras was a Spanish religious sister who co-founded the Handmaids of the Sacred Heart of Jesus with her sister Pilar. The congregation was dedicated to education and the adoration of the Blessed Sacrament. She served as superior general and worked to expand the order. She was canonized in 1977.",
+  "keyQuotes": []
+}

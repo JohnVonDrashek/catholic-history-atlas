@@ -1,0 +1,24 @@
+{
+  "id": "stephen-v",
+  "name": "Pope Stephen V",
+  "birthYear": 840,
+  "deathYear": 891,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Stephen_V",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14289a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Pope_Stephen_V_%282%29.jpg/330px-Pope_Stephen_V_%282%29.jpg",
+  "summary": "Stephen V was Pope from 885 to 891. His papacy occurred during a period of great political instability in Italy and the Carolingian Empire. He worked to maintain papal authority and supported missionary efforts. He was involved in conflicts with the Holy Roman Emperor and Italian nobles. His papacy reflects the challenges faced by the papacy in the late 9th century.",
+  "keyQuotes": []
+}

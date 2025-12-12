@@ -1,0 +1,26 @@
+{
+  "id": "julius-africanus",
+  "name": "Julius Africanus",
+  "birthYear": 160,
+  "deathYear": 240,
+  "feastDay": null,
+  "primaryTradition": "Greek",
+  "roles": [
+    "historian",
+    "chronographer"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "jerusalem",
+      "description": "Christian historian and chronographer"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Sextus_Julius_Africanus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08554a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Sextus_Julius_Africanus_Julius_aphricanus_%28titel_op_object%29_Liber_Chronicarum_%28serietitel%29%2C_RP-P-2016-49-79-4.jpg/330px-Sextus_Julius_Africanus_Julius_aphricanus_%28titel_op_object%29_Liber_Chronicarum_%28serietitel%29%2C_RP-P-2016-49-79-4.jpg",
+  "summary": "Julius Africanus was a Christian traveler and historian of the late 2nd and early 3rd century. He is known for his 'Chronographiae', a five-volume universal history from Creation to 221 AD, and his 'Cesti' (Embroideries), an encyclopedia on various topics. He was influential in establishing Christian chronology and his works were cited by later Church historians including Eusebius. He maintained correspondence with Origen and was an important figure in early Christian scholarship.",
+  "keyQuotes": [],
+  "writings": []
+}

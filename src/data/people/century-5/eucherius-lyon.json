@@ -1,0 +1,31 @@
+{
+  "id": "eucherius-lyon",
+  "name": "St. Eucherius of Lyon",
+  "birthYear": 380,
+  "deathYear": 449,
+  "feastDay": "November 16",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "writer"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lyon",
+      "description": "Bishop of Lyon, former monk of Lérins"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Eucherius_of_Lyon",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05598a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Statue_de_Saint_Eucherius_de_Lyon_%28cropped%29.JPG/330px-Statue_de_Saint_Eucherius_de_Lyon_%28cropped%29.JPG",
+  "summary": "Eucherius of Lyon was a bishop and writer who was originally a monk at Lérins Abbey. He became Bishop of Lyon and was known for his theological writings and his defense of orthodoxy. He wrote works on asceticism, biblical interpretation, and theology. He was a friend of Cassian and played an important role in the theological and spiritual life of Gaul in the 5th century.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "On Contempt for the World",
+      "url": "https://www.ccel.org/ccel/eucherius/contempt.html"
+    }
+  ]
+}

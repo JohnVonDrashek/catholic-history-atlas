@@ -1,0 +1,32 @@
+{
+  "id": "joachim-fiore",
+  "name": "Joachim of Fiore",
+  "birthYear": 1135,
+  "deathYear": 1202,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "abbot",
+    "mystic",
+    "theologian"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Cistercian abbot and apocalyptic theologian"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Joachim_of_Fiore",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08408a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Gioacchino_da_Fiore.jpg/330px-Gioacchino_da_Fiore.jpg",
+  "summary": "Joachim of Fiore was an Italian Cistercian abbot, mystic, and theologian known for his apocalyptic interpretations of history. He developed a theory of three ages: the Age of the Father (Old Testament), the Age of the Son (New Testament to his time), and the coming Age of the Spirit. His ideas influenced later medieval and Renaissance thought, though some of his teachings were later condemned. He founded the monastic order of San Giovanni in Fiore.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Exposition on the Apocalypse",
+      "url": "https://www.newadvent.org/cathen/08408a.htm"
+    }
+  ]
+}

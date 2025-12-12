@@ -1,0 +1,24 @@
+{
+  "id": "boris-bulgaria",
+  "name": "St. Boris I of Bulgaria",
+  "birthYear": 828,
+  "deathYear": 907,
+  "feastDay": "May 2",
+  "primaryTradition": "Byzantine",
+  "roles": [
+    "king"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "bulgaria",
+      "description": "Khan and later King of Bulgaria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Boris_I_of_Bulgaria",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02688a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Boris_I_of_Bulgaria.jpg",
+  "summary": "Boris I was the ruler of Bulgaria from 852 to 889. He converted Bulgaria to Christianity in 864, accepting baptism from Byzantine missionaries. He initially accepted Christianity from Rome but later aligned with Constantinople, leading to the Christianization of Bulgaria. He invited Cyril and Methodius to establish the Slavonic liturgy in Bulgaria. He is venerated as a saint in both the Eastern and Western Churches and is considered the founder of the Bulgarian Church.",
+  "keyQuotes": []
+}

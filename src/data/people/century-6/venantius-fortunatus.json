@@ -1,0 +1,31 @@
+{
+  "id": "venantius-fortunatus",
+  "name": "St. Venantius Fortunatus",
+  "birthYear": 530,
+  "deathYear": 609,
+  "feastDay": "December 14",
+  "primaryTradition": "Latin",
+  "roles": [
+    "poet",
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "poitiers",
+      "description": "Bishop of Poitiers"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Venantius_Fortunatus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06151a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Venantius_Fortunatus%2C_Milano_C_74_sup.jpg/330px-Venantius_Fortunatus%2C_Milano_C_74_sup.jpg",
+  "summary": "Venantius Fortunatus was a Latin poet and bishop of Poitiers. He is best known for his hymns, including 'Vexilla Regis' and 'Pange Lingua Gloriosi Proelium Certaminis,' which are still used in the liturgy. He was a friend of St. Radegund and wrote extensively about the saints and religious life in Merovingian Gaul. His poetry helped preserve classical Latin verse forms during the early Middle Ages.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Poems",
+      "url": "https://www.ccel.org/ccel/schaff/npnf211.iv.html"
+    }
+  ]
+}

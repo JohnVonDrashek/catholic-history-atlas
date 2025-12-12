@@ -1,0 +1,27 @@
+{
+  "id": "john-baptist-de-la-salle",
+  "name": "St. John Baptist de La Salle",
+  "birthYear": 1651,
+  "deathYear": 1719,
+  "feastDay": "April 7",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "founder",
+    "educator"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rouen",
+      "description": "Founder of the Institute of the Brothers of the Christian Schools"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Baptist_de_La_Salle",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09047a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/John_baptist_de_la_salle_1.jpg/330px-John_baptist_de_la_salle_1.jpg",
+  "summary": "John Baptist de La Salle was a French priest, educational reformer, and founder of the Institute of the Brothers of the Christian Schools (Lasallian Brothers). He revolutionized education by establishing free schools for poor children, training teachers, and developing innovative teaching methods. He is considered the patron of teachers and is a Doctor of the Church. His educational methods influenced modern pedagogy and his order continues to operate schools worldwide.",
+  "keyQuotes": [],
+  "writings": []
+}

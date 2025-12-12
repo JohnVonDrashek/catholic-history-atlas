@@ -1,0 +1,25 @@
+{
+  "id": "pothinus",
+  "name": "St. Pothinus",
+  "birthYear": 87,
+  "deathYear": 177,
+  "feastDay": "June 2",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "lyons",
+      "description": "First Bishop of Lyons"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pothinus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12300a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Vitrail_de_St-Pothin_par_B%C3%A9gule.jpg/330px-Vitrail_de_St-Pothin_par_B%C3%A9gule.jpg",
+  "summary": "Pothinus was the first Bishop of Lyons in Gaul. At the age of 90, he was martyred during the persecution of Marcus Aurelius in 177, along with many other Christians including the slave Blandina. According to the account of the martyrs of Lyons, Pothinus was beaten and thrown into prison, where he died shortly after. His successor was Irenaeus of Lyons.",
+  "keyQuotes": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "edward-confessor",
+  "name": "St. Edward the Confessor",
+  "birthYear": 1003,
+  "deathYear": 1066,
+  "feastDay": "October 13",
+  "primaryTradition": "Latin",
+  "roles": [
+    "king",
+    "monk"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "london",
+      "description": "King of England"
+    },
+    {
+      "placeId": "westminster",
+      "description": "Founder of Westminster Abbey"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Edward_the_Confessor",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05322a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/St._Edward_the_Confessor_%28Granville%29_-_interior.jpg/330px-St._Edward_the_Confessor_%28Granville%29_-_interior.jpg",
+  "summary": "Edward the Confessor was King of England from 1042 to 1066. He was known for his piety and devotion, earning him the title 'the Confessor.' He founded Westminster Abbey, which became one of the most important churches in England. His reign was marked by relative peace and stability, and he was canonized in 1161. He was the last Anglo-Saxon king of England before the Norman Conquest.",
+  "keyQuotes": []
+}

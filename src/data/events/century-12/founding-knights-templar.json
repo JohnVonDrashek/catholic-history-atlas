@@ -1,0 +1,15 @@
+{
+  "id": "founding-knights-templar",
+  "name": "Founding of the Knights Templar",
+  "startYear": 1119,
+  "endYear": 1119,
+  "type": "other",
+  "locationId": "jerusalem",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Knights_Templar",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14493a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Knights_Templar_Cross.svg/330px-Knights_Templar_Cross.svg.png",
+  "summary": "The Poor Fellow-Soldiers of Christ and of the Temple of Solomon, commonly known as the Knights Templar, was a Catholic military order founded in 1119 by Hugues de Payens and eight other knights. The order was established to protect Christian pilgrims traveling to the Holy Land. They received official recognition at the Council of Troyes in 1129, largely through the support of Bernard of Clairvaux. The Templars became one of the most powerful and wealthy organizations in medieval Europe, with extensive holdings and influence. They were eventually suppressed in the early 14th century.",
+  "keyDocuments": [
+    "Rule of the Templars"
+  ]
+}

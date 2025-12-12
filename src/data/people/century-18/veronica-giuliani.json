@@ -1,0 +1,26 @@
+{
+  "id": "veronica-giuliani",
+  "name": "St. Veronica Giuliani",
+  "birthYear": 1660,
+  "deathYear": 1727,
+  "feastDay": "July 9",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "mystic"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "città-di-castello",
+      "description": "Capuchin Poor Clare nun and mystic"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Veronica_Giuliani",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15359b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ver%C3%B3nica_Giuliani.jpg/330px-Ver%C3%B3nica_Giuliani.jpg",
+  "summary": "Veronica Giuliani was an Italian Capuchin Poor Clare nun and mystic. She received the stigmata in 1697 and experienced numerous visions and mystical experiences. She kept detailed spiritual diaries documenting her experiences, which are considered important works of mystical theology. She served as abbess of her monastery and was known for her humility and obedience. She was canonized by Pope Gregory XVI in 1839.",
+  "keyQuotes": [],
+  "writings": []
+}

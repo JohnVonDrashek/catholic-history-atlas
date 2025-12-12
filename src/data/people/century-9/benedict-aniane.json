@@ -1,0 +1,26 @@
+{
+  "id": "benedict-aniane",
+  "name": "St. Benedict of Aniane",
+  "birthYear": 747,
+  "deathYear": 821,
+  "feastDay": "February 12",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "abbot",
+    "reformer"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "aniane",
+      "description": "Abbot of Aniane"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Benedict_of_Aniane",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02429a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Benedict_of_Aniane%2C_Sant-Guilhem-1-Benet_%28cropped%29.jpg",
+  "summary": "Benedict of Aniane was a Benedictine monk and abbot who played a crucial role in the Carolingian monastic reform. He worked closely with Louis the Pious to standardize monastic observance throughout the Carolingian Empire. He helped establish the Rule of St. Benedict as the standard for Western monasticism. His reforms influenced monastic life for centuries and helped create a unified monastic culture in Western Europe.",
+  "keyQuotes": []
+}

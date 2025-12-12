@@ -1,0 +1,26 @@
+{
+  "id": "nilus-rossano",
+  "name": "St. Nilus of Rossano",
+  "birthYear": 910,
+  "deathYear": 1005,
+  "feastDay": "September 26",
+  "primaryTradition": "Byzantine",
+  "roles": [
+    "abbot",
+    "hermit",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rossano",
+      "description": "Byzantine monk and abbot in Calabria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Nilus_the_Younger",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11080a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/St_Nilus_monument_in_Grottaferrata.jpg/330px-St_Nilus_monument_in_Grottaferrata.jpg",
+  "summary": "Nilus of Rossano was a Byzantine monk, abbot, and theologian who lived in Calabria, Italy. He was a leading figure in the Italo-Greek monastic tradition and was known for his learning, asceticism, and spiritual writings. He founded the monastery of Grottaferrata near Rome, which became an important center of Byzantine spirituality in the West. He was a defender of orthodoxy and worked to maintain the Byzantine tradition in southern Italy.",
+  "keyQuotes": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "benedict-vii",
+  "name": "Pope Benedict VII",
+  "birthYear": null,
+  "deathYear": 983,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope (974-983)"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Benedict_VII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02429a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Pope_Benedict_VII.jpg",
+  "summary": "Benedict VII was Pope from 974 to 983. His pontificate occurred during a period of political instability in Rome. He worked to reform the Church and combat simony. He supported the monastic reforms of Cluny and worked to strengthen the authority of the papacy. He was a relative of Alberic II of Spoleto and was elected pope with the support of Emperor Otto II.",
+  "keyQuotes": []
+}

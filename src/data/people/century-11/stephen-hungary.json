@@ -1,0 +1,24 @@
+{
+  "id": "stephen-hungary",
+  "name": "St. Stephen of Hungary",
+  "birthYear": 975,
+  "deathYear": 1038,
+  "feastDay": "August 16",
+  "primaryTradition": "Latin",
+  "roles": [
+    "king"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "hungary",
+      "description": "First King of Hungary"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Stephen_I_of_Hungary",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14287a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/St_Stephen_of_Hungary_Church_-_Hamilton%2C_ON.jpg/330px-St_Stephen_of_Hungary_Church_-_Hamilton%2C_ON.jpg",
+  "summary": "Stephen I was the first King of Hungary, ruling from 1000 or 1001 to 1038. He converted Hungary to Christianity and established the Hungarian Church. He was a strong ruler who organized the kingdom, established dioceses, and promoted Christianization. He was canonized in 1083 and is the patron saint of Hungary. His reign marked the beginning of Hungary as a Christian kingdom in Central Europe.",
+  "keyQuotes": []
+}

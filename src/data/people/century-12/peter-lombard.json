@@ -1,0 +1,31 @@
+{
+  "id": "peter-lombard",
+  "name": "Peter Lombard",
+  "birthYear": 1096,
+  "deathYear": 1160,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "theologian",
+    "bishop"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "Theologian and Bishop of Paris"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Lombard",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11768c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Petrus_Lombardus.jpg/330px-Petrus_Lombardus.jpg",
+  "summary": "Peter Lombard was an Italian scholastic theologian and Bishop of Paris. He is best known for his 'Sentences' (Sententiae in IV libris distinctae), which became the standard theological textbook for medieval universities for over 400 years. The work systematically organized theological questions and became the basis for theological education throughout the Middle Ages. His work influenced Thomas Aquinas and many other theologians.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Sentences (Sententiae in IV libris distinctae)",
+      "url": "https://www.newadvent.org/cathen/11768c.htm"
+    }
+  ]
+}

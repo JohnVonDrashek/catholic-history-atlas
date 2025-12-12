@@ -1,0 +1,25 @@
+{
+  "id": "peter-julian-eymard",
+  "name": "St. Peter Julian Eymard",
+  "birthYear": 1811,
+  "deathYear": 1868,
+  "feastDay": "August 2",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "Founder of the Congregation of the Blessed Sacrament"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Julian_Eymard",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05733a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Eymard.jpg",
+  "summary": "Peter Julian Eymard was a French priest and founder of the Congregation of the Blessed Sacrament, a religious order dedicated to promoting devotion to the Eucharist. He also founded the Servants of the Blessed Sacrament for women. He was a prolific writer on Eucharistic spirituality and worked to establish perpetual adoration chapels. He is the patron saint of Eucharistic adoration.",
+  "keyQuotes": []
+}

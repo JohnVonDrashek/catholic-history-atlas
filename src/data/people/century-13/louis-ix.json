@@ -1,0 +1,26 @@
+{
+  "id": "louis-ix",
+  "name": "St. Louis IX",
+  "birthYear": 1214,
+  "deathYear": 1270,
+  "feastDay": "August 25",
+  "primaryTradition": "Latin",
+  "roles": [
+    "king",
+    "crusader"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "King of France"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Louis_IX_of_France",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09368a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Picture_of_St._Louis_of_the_French.jpg/330px-Picture_of_St._Louis_of_the_French.jpg",
+  "summary": "Louis IX was King of France from 1226 to 1270. He is the only canonized king of France and is known for his personal piety, justice, and leadership in the Seventh and Eighth Crusades. He reformed French law and established the Parlement of Paris. His devotion to justice and care for the poor made him a model Christian ruler. He died during the Eighth Crusade at Tunis.",
+  "keyQuotes": [],
+  "writings": []
+}
