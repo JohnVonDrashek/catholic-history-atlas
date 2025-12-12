@@ -60,7 +60,7 @@ function App() {
           </button>
         </div>
 
-        <div style={{ flex: 1, overflow: 'auto' }}>
+        <div style={{ flex: 1, overflow: 'hidden', position: 'relative' }}>
           {view === 'timeline' ? (
             <Timeline
               people={data.people}

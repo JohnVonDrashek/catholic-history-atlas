@@ -1,4 +1,4 @@
-import { useMemo, useState, useRef } from 'react';
+import { useMemo, useState, useRef, useEffect } from 'react';
 import { Person, Event } from '../types';
 import type { OrthodoxyStatus } from '../types/person';
 import type { EventType } from '../types/event';
@@ -153,10 +153,41 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     return { minYear, maxYear, items: allItems };
   }, [filteredPeople, filteredEvents]);
 
-  const timelineWidth = 1000; // Fixed width for the timeline
-  const timelineHeight = 600; // Increased height for more vertical space
+  // Use container dimensions for responsive sizing
+  const [containerSize, setContainerSize] = useState({ width: 1000, height: 600 });
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Update container size on mount and resize
+  useEffect(() => {
+    const updateSize = () => {
+      if (containerRef.current) {
+        const rect = containerRef.current.getBoundingClientRect();
+        // Use actual container dimensions, with reasonable minimums
+        const newWidth = Math.max(rect.width || 1000, 800);
+        const newHeight = Math.max(rect.height || 600, 400);
+        setContainerSize({ width: newWidth, height: newHeight });
+      }
+    };
+    // Initial size - use a small delay to ensure DOM is ready
+    const timeoutId = setTimeout(updateSize, 0);
+    // Update on window resize with debounce
+    let resizeTimeout: NodeJS.Timeout;
+    const handleResize = () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(updateSize, 100);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      clearTimeout(timeoutId);
+      clearTimeout(resizeTimeout);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const timelineWidth = containerSize.width;
+  const timelineHeight = containerSize.height;
   const padding = 60;
-  const maxVerticalOffset = 200; // Maximum distance above/below timeline
+  const maxVerticalOffset = Math.min(200, timelineHeight / 3); // Scale with container height
   const portraitSize = 40; // Size of portrait images on timeline
 
   // Get frame style for portrait based on orthodoxy status
@@ -426,129 +457,162 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
   };
 
   return (
-    <div style={{ padding: '2rem', backgroundColor: '#1a1a1a', minHeight: '100%' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
-        <h2 style={{ margin: 0, color: '#fff' }}>Timeline View</h2>
-        <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+    <div 
+      ref={containerRef}
+      style={{ 
+        width: '100%', 
+        height: '100%', 
+        minHeight: '400px', 
+        position: 'relative',
+        backgroundColor: '#1a1a1a',
+        overflow: 'hidden',
+      }}
+    >
+      {/* Zoom/Pan Controls Overlay - Top Left */}
+      <div style={{
+        position: 'absolute',
+        top: '10px',
+        left: '10px',
+        backgroundColor: 'rgba(26, 26, 26, 0.9)',
+        padding: '0.75rem',
+        borderRadius: '8px',
+        zIndex: 1000,
+        display: 'flex',
+        gap: '0.5rem',
+        alignItems: 'center',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+      }}>
+        {/* Pan controls (only visible when zoomed) */}
+        {zoomLevel > 0 && (
+          <>
+            <button
+              onClick={handlePanLeft}
+              style={{
+                padding: '0.5rem 0.75rem',
+                backgroundColor: '#4a9eff',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '14px',
+              }}
+              title="Pan left (earlier)"
+            >
+              ←
+            </button>
+            <button
+              onClick={handlePanRight}
+              style={{
+                padding: '0.5rem 0.75rem',
+                backgroundColor: '#4a9eff',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '14px',
+              }}
+              title="Pan right (later)"
+            >
+              →
+            </button>
+            <div style={{ width: '1px', height: '20px', backgroundColor: '#666', margin: '0 0.25rem' }}></div>
+          </>
+        )}
+        <button
+          onClick={handleZoomOut}
+          disabled={zoomLevel === 0}
+          style={{
+            padding: '0.5rem 0.75rem',
+            backgroundColor: zoomLevel === 0 ? '#444' : '#4a9eff',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
+            fontSize: '14px',
+          }}
+          title="Zoom out"
+        >
+          −
+        </button>
+        <span style={{ color: '#aaa', fontSize: '14px', minWidth: '50px', textAlign: 'center' }}>
+          {zoomLevel === 0 ? 'Full' : `${Math.round(Math.pow(2, zoomLevel) * 100)}%`}
+        </span>
+        <button
+          onClick={handleZoomIn}
+          disabled={zoomLevel >= 5}
+          style={{
+            padding: '0.5rem 0.75rem',
+            backgroundColor: zoomLevel >= 5 ? '#444' : '#4a9eff',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: zoomLevel >= 5 ? 'not-allowed' : 'pointer',
+            fontSize: '14px',
+          }}
+          title="Zoom in"
+        >
+          +
+        </button>
+        {zoomLevel > 0 && (
           <button
-            onClick={() => setShowFilters(!showFilters)}
+            onClick={handleZoomReset}
             style={{
-              padding: '0.5rem 1rem',
-              backgroundColor: showFilters ? '#4a9eff' : '#333',
+              padding: '0.5rem 0.75rem',
+              backgroundColor: '#666',
               color: '#fff',
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer',
-              fontSize: '14px',
+              fontSize: '12px',
+              marginLeft: '0.25rem',
             }}
+            title="Reset zoom"
           >
-            {showFilters ? 'Hide Filters' : 'Show Filters'}
+            Reset
           </button>
-          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-            {/* Pan controls (only visible when zoomed) */}
-            {zoomLevel > 0 && (
-              <>
-                <button
-                  onClick={handlePanLeft}
-                  style={{
-                    padding: '0.5rem 1rem',
-                    backgroundColor: '#4a9eff',
-                    color: '#fff',
-                    border: 'none',
-                    borderRadius: '4px',
-                    cursor: 'pointer',
-                    fontSize: '14px',
-                  }}
-                  title="Pan left (earlier)"
-                >
-                  ←
-                </button>
-                <button
-                  onClick={handlePanRight}
-                  style={{
-                    padding: '0.5rem 1rem',
-                    backgroundColor: '#4a9eff',
-                    color: '#fff',
-                    border: 'none',
-                    borderRadius: '4px',
-                    cursor: 'pointer',
-                    fontSize: '14px',
-                  }}
-                  title="Pan right (later)"
-                >
-                  →
-                </button>
-                <div style={{ width: '1px', height: '20px', backgroundColor: '#666', margin: '0 0.25rem' }}></div>
-              </>
-            )}
-            <button
-              onClick={handleZoomOut}
-              disabled={zoomLevel === 0}
-              style={{
-                padding: '0.5rem 1rem',
-                backgroundColor: zoomLevel === 0 ? '#444' : '#4a9eff',
-                color: '#fff',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
-                fontSize: '14px',
-              }}
-              title="Zoom out"
-            >
-              −
-            </button>
-            <span style={{ color: '#aaa', fontSize: '14px', minWidth: '60px', textAlign: 'center' }}>
-              {zoomLevel === 0 ? 'Full' : `${Math.round(Math.pow(2, zoomLevel) * 100)}%`}
-            </span>
-            <button
-              onClick={handleZoomIn}
-              disabled={zoomLevel >= 5}
-              style={{
-                padding: '0.5rem 1rem',
-                backgroundColor: zoomLevel >= 5 ? '#444' : '#4a9eff',
-                color: '#fff',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: zoomLevel >= 5 ? 'not-allowed' : 'pointer',
-                fontSize: '14px',
-              }}
-              title="Zoom in"
-            >
-              +
-            </button>
-            {zoomLevel > 0 && (
-              <button
-                onClick={handleZoomReset}
-                style={{
-                  padding: '0.5rem 1rem',
-                  backgroundColor: '#666',
-                  color: '#fff',
-                  border: 'none',
-                  borderRadius: '4px',
-                  cursor: 'pointer',
-                  fontSize: '12px',
-                  marginLeft: '0.5rem',
-                }}
-                title="Reset zoom"
-              >
-                Reset
-              </button>
-            )}
-          </div>
-        </div>
+        )}
       </div>
 
-      {/* Filter Panel */}
+      {/* Filter Toggle Button - Top Right */}
+      <button
+        onClick={() => setShowFilters(!showFilters)}
+        style={{
+          position: 'absolute',
+          top: '10px',
+          right: '10px',
+          padding: '0.5rem 1rem',
+          backgroundColor: showFilters ? '#4a9eff' : 'rgba(26, 26, 26, 0.9)',
+          color: '#fff',
+          border: 'none',
+          borderRadius: '8px',
+          cursor: 'pointer',
+          fontSize: '14px',
+          zIndex: 1001,
+          boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+        }}
+      >
+        {showFilters ? 'Hide Filters' : 'Filters'}
+      </button>
+
+      {/* Filter Panel Overlay - Top Right (when open) */}
       {showFilters && (
         <div style={{
-          marginBottom: '2rem',
+          position: 'absolute',
+          top: '50px',
+          right: '10px',
+          width: '400px',
+          maxHeight: 'calc(100vh - 100px)',
           padding: '1.5rem',
-          backgroundColor: '#2a2a2a',
+          backgroundColor: 'rgba(26, 26, 26, 0.95)',
           borderRadius: '8px',
+          zIndex: 1000,
           color: '#fff',
+          fontSize: '14px',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.5)',
+          overflowY: 'auto',
         }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-            <h3 style={{ margin: 0, color: '#fff' }}>Filters</h3>
+            <h3 style={{ margin: 0, color: '#fff', fontSize: '16px' }}>Filters</h3>
             <button
               onClick={resetFilters}
               style={{
@@ -565,7 +629,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             </button>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             {/* Show/Hide Toggles */}
             <div>
               <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Show/Hide</div>
@@ -642,7 +706,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             {filters.showPeople && allRoles.length > 0 && (
               <div>
                 <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Roles</div>
-                <div style={{ maxHeight: '200px', overflowY: 'auto' }}>
+                <div style={{ maxHeight: '150px', overflowY: 'auto' }}>
                   {allRoles.map(role => (
                     <label key={role} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
                       <input
@@ -698,36 +762,40 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
           </div>
         </div>
       )}
-      
+
+      {/* View Range Indicator - Bottom Left (when zoomed) */}
       {zoomLevel > 0 && (
-        <div style={{ 
-          marginBottom: '1rem', 
-          padding: '0.75rem', 
-          backgroundColor: '#2a2a2a', 
-          borderRadius: '4px',
+        <div style={{
+          position: 'absolute',
+          bottom: '10px',
+          left: '10px',
+          padding: '0.75rem',
+          backgroundColor: 'rgba(26, 26, 26, 0.9)',
+          borderRadius: '8px',
           color: '#aaa',
           fontSize: '14px',
+          zIndex: 1000,
+          boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
         }}>
           Viewing: {Math.round(visibleRange.start)} – {Math.round(visibleRange.end)} 
           ({Math.round(visibleRange.end - visibleRange.start)} years)
         </div>
       )}
       
+      {/* Timeline SVG Container */}
       <div style={{ 
-        backgroundColor: '#2a2a2a', 
-        padding: '2rem', 
-        borderRadius: '8px',
-        overflowX: 'auto',
         width: '100%',
+        height: '100%',
+        position: 'relative',
       }}>
         <svg
           ref={svgRef}
           width="100%"
+          height="100%"
           viewBox={`0 0 ${timelineWidth} ${timelineHeight}`}
           preserveAspectRatio="xMidYMid meet"
           style={{ 
-            display: 'block', 
-            minWidth: `${timelineWidth}px`,
+            display: 'block',
             cursor: isDragging ? 'grabbing' : zoomLevel > 0 ? 'grab' : 'pointer'
           }}
           onClick={handleTimelineClick}
@@ -1366,32 +1434,44 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
         </svg>
       </div>
 
-      {/* Legend */}
-      <div style={{ marginTop: '2rem', color: '#aaa', fontSize: '14px' }}>
-        <h3 style={{ color: '#fff', marginBottom: '1rem' }}>Legend</h3>
-        <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
+      {/* Legend Overlay - Bottom Right */}
+      <div style={{
+        position: 'absolute',
+        bottom: '10px',
+        right: '10px',
+        padding: '1rem',
+        backgroundColor: 'rgba(26, 26, 26, 0.9)',
+        borderRadius: '8px',
+        zIndex: 1000,
+        color: '#aaa',
+        fontSize: '12px',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+        maxWidth: '300px',
+      }}>
+        <div style={{ fontWeight: 'bold', marginBottom: '0.75rem', fontSize: '14px', color: '#fff' }}>Legend</div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ color: '#a11b1b', fontSize: '20px' }}>✝</span>
+            <span style={{ color: '#a11b1b', fontSize: '16px' }}>✝</span>
             <span>Martyr</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ color: '#d4af37', fontSize: '20px' }}>📖</span>
+            <span style={{ color: '#d4af37', fontSize: '16px' }}>📖</span>
             <span>Doctor of the Church</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ color: '#4a9eff', fontSize: '20px' }}>⛪</span>
+            <span style={{ color: '#4a9eff', fontSize: '16px' }}>⛪</span>
             <span>Bishop</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <span style={{ color: '#888', fontSize: '20px' }}>👤</span>
+            <span style={{ color: '#888', fontSize: '16px' }}>👤</span>
             <span>Other</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <div style={{ width: '30px', height: '15px', backgroundColor: '#ffd700', borderRadius: '4px' }}></div>
+            <div style={{ width: '20px', height: '12px', backgroundColor: '#ffd700', borderRadius: '4px' }}></div>
             <span>Council</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <div style={{ width: '30px', height: '15px', backgroundColor: '#ff6b6b', borderRadius: '4px' }}></div>
+            <div style={{ width: '20px', height: '12px', backgroundColor: '#ff6b6b', borderRadius: '4px' }}></div>
             <span>Other Event</span>
           </div>
         </div>
