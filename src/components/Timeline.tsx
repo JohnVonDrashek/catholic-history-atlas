@@ -20,6 +20,8 @@ interface TimelineFilters {
   roles: Set<string>;
   primaryTradition: Set<string>;
   eventTypes: Set<EventType>;
+  showPopes: boolean | null; // null = show all, true = only popes, false = exclude popes
+  showWithWritings: boolean | null; // null = show all, true = only with writings, false = only without writings
 }
 
 interface TimelineItem {
@@ -32,6 +34,54 @@ interface TimelineItem {
   icon?: string;
 }
 
+// Helper type for serialized filters (Sets converted to arrays)
+interface SerializedTimelineFilters {
+  showPeople: boolean;
+  showEvents: boolean;
+  orthodoxyStatus: OrthodoxyStatus[];
+  showMartyrs: boolean | null;
+  roles: string[];
+  primaryTradition: string[];
+  eventTypes: EventType[];
+  showPopes: boolean | null;
+  showWithWritings: boolean | null;
+}
+
+const STORAGE_KEY = 'catholic-history-atlas-filters';
+
+// Helper functions to serialize/deserialize filters
+const serializeFilters = (filters: TimelineFilters): SerializedTimelineFilters => {
+  return {
+    showPeople: filters.showPeople,
+    showEvents: filters.showEvents,
+    orthodoxyStatus: Array.from(filters.orthodoxyStatus),
+    showMartyrs: filters.showMartyrs,
+    roles: Array.from(filters.roles),
+    primaryTradition: Array.from(filters.primaryTradition),
+    eventTypes: Array.from(filters.eventTypes),
+    showPopes: filters.showPopes,
+    showWithWritings: filters.showWithWritings,
+  };
+};
+
+const deserializeFilters = (
+  serialized: SerializedTimelineFilters,
+  defaultRoles: Set<string>,
+  defaultTraditions: Set<string>
+): TimelineFilters => {
+  return {
+    showPeople: serialized.showPeople ?? true,
+    showEvents: serialized.showEvents ?? true,
+    orthodoxyStatus: new Set(serialized.orthodoxyStatus || ['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular']),
+    showMartyrs: serialized.showMartyrs ?? null,
+    roles: new Set(serialized.roles || Array.from(defaultRoles)),
+    primaryTradition: new Set(serialized.primaryTradition || Array.from(defaultTraditions)),
+    eventTypes: new Set(serialized.eventTypes || ['council', 'schism', 'persecution', 'reform', 'other']),
+    showPopes: serialized.showPopes ?? null,
+    showWithWritings: serialized.showWithWritings ?? null,
+  };
+};
+
 export function Timeline({ people, events, currentYear, onItemClick, onYearChange }: TimelineProps) {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [imageAspectRatios, setImageAspectRatios] = useState<Map<string, number>>(new Map());
@@ -42,26 +92,65 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
   const [isEditingZoom, setIsEditingZoom] = useState(false);
   const [zoomInputValue, setZoomInputValue] = useState('100');
 
-  // Initialize filters with all options enabled
+  // Collect all unique roles and traditions from people (needed for defaults)
+  const allRoles = useMemo(() => {
+    const roles = new Set<string>();
+    people.forEach(p => p.roles?.forEach(r => roles.add(r)));
+    return roles;
+  }, [people]);
+
+  const allTraditions = useMemo(() => {
+    const traditions = new Set<string>();
+    people.forEach(p => {
+      if (p.primaryTradition) traditions.add(p.primaryTradition);
+    });
+    return traditions;
+  }, [people]);
+
+  // Initialize filters with all options enabled, loading from localStorage if available
   const [filters, setFilters] = useState<TimelineFilters>(() => {
     // Collect all unique roles and traditions from people
-    const allRoles = new Set<string>();
-    const allTraditions = new Set<string>();
+    const defaultRoles = new Set<string>();
+    const defaultTraditions = new Set<string>();
     people.forEach(p => {
-      p.roles?.forEach(r => allRoles.add(r));
-      if (p.primaryTradition) allTraditions.add(p.primaryTradition);
+      p.roles?.forEach(r => defaultRoles.add(r));
+      if (p.primaryTradition) defaultTraditions.add(p.primaryTradition);
     });
 
+    // Try to load from localStorage
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) {
+        const parsed = JSON.parse(stored) as SerializedTimelineFilters;
+        return deserializeFilters(parsed, defaultRoles, defaultTraditions);
+      }
+    } catch (error) {
+      console.warn('Failed to load filters from localStorage:', error);
+    }
+
+    // Return defaults if nothing stored or error occurred
     return {
       showPeople: true,
       showEvents: true,
       orthodoxyStatus: new Set<OrthodoxyStatus>(['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular']),
       showMartyrs: null, // null = show all
-      roles: allRoles,
-      primaryTradition: allTraditions,
+      roles: defaultRoles,
+      primaryTradition: defaultTraditions,
       eventTypes: new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'other']),
+      showPopes: null, // null = show all
+      showWithWritings: null, // null = show all
     };
   });
+
+  // Save filters to localStorage whenever they change
+  useEffect(() => {
+    try {
+      const serialized = serializeFilters(filters);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(serialized));
+    } catch (error) {
+      console.warn('Failed to save filters to localStorage:', error);
+    }
+  }, [filters]);
 
   // Filter people based on filter criteria
   const filteredPeople = useMemo(() => {
@@ -90,6 +179,20 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
       if (filters.primaryTradition.size > 0) {
         if (!person.primaryTradition) return false;
         if (!filters.primaryTradition.has(person.primaryTradition)) return false;
+      }
+      
+      // Filter by pope status
+      if (filters.showPopes !== null) {
+        const isPope = person.roles?.includes('pope') ?? false;
+        if (filters.showPopes && !isPope) return false;
+        if (!filters.showPopes && isPope) return false;
+      }
+      
+      // Filter by writings
+      if (filters.showWithWritings !== null) {
+        const hasWritings = person.writings && person.writings.length > 0;
+        if (filters.showWithWritings && !hasWritings) return false;
+        if (!filters.showWithWritings && hasWritings) return false;
       }
       
       return true;
@@ -446,20 +549,14 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     onYearChange(year);
   };
 
-  // Get all unique roles and traditions for filter options
-  const allRoles = useMemo(() => {
-    const roles = new Set<string>();
-    people.forEach(p => p.roles?.forEach(r => roles.add(r)));
-    return Array.from(roles).sort();
-  }, [people]);
+  // Get all unique roles and traditions for filter options (as arrays for UI)
+  const allRolesArray = useMemo(() => {
+    return Array.from(allRoles).sort();
+  }, [allRoles]);
 
-  const allTraditions = useMemo(() => {
-    const traditions = new Set<string>();
-    people.forEach(p => {
-      if (p.primaryTradition) traditions.add(p.primaryTradition);
-    });
-    return Array.from(traditions).sort();
-  }, [people]);
+  const allTraditionsArray = useMemo(() => {
+    return Array.from(allTraditions).sort();
+  }, [allTraditions]);
 
   const toggleOrthodoxyStatus = (status: OrthodoxyStatus) => {
     setFilters(prev => {
@@ -518,8 +615,64 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
       roles: new Set(allRoles),
       primaryTradition: new Set(allTraditions),
       eventTypes: new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'other']),
+      showPopes: null,
+      showWithWritings: null,
     });
+    // Clear localStorage when resetting
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch (error) {
+      console.warn('Failed to clear filters from localStorage:', error);
+    }
   };
+
+  // Calculate number of active filters (filters that differ from defaults)
+  const activeFilterCount = useMemo(() => {
+    let count = 0;
+    const defaultOrthodoxyStatus = new Set<OrthodoxyStatus>(['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular']);
+    const defaultEventTypes = new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'other']);
+
+    // Check showPeople
+    if (!filters.showPeople) count++;
+
+    // Check showEvents
+    if (!filters.showEvents) count++;
+
+    // Check orthodoxyStatus (if not all 6 are selected)
+    if (filters.orthodoxyStatus.size !== defaultOrthodoxyStatus.size ||
+        !Array.from(defaultOrthodoxyStatus).every(s => filters.orthodoxyStatus.has(s))) {
+      count++;
+    }
+
+    // Check showMartyrs
+    if (filters.showMartyrs !== null) count++;
+
+    // Check roles (if not all roles are selected)
+    if (filters.roles.size !== allRoles.size ||
+        !Array.from(allRoles).every(r => filters.roles.has(r))) {
+      count++;
+    }
+
+    // Check primaryTradition (if not all traditions are selected)
+    if (filters.primaryTradition.size !== allTraditions.size ||
+        !Array.from(allTraditions).every(t => filters.primaryTradition.has(t))) {
+      count++;
+    }
+
+    // Check eventTypes (if not all 5 are selected)
+    if (filters.eventTypes.size !== defaultEventTypes.size ||
+        !Array.from(defaultEventTypes).every(t => filters.eventTypes.has(t))) {
+      count++;
+    }
+
+    // Check showPopes
+    if (filters.showPopes !== null) count++;
+
+    // Check showWithWritings
+    if (filters.showWithWritings !== null) count++;
+
+    return count;
+  }, [filters, allRoles, allTraditions]);
 
   return (
     <div 
@@ -672,25 +825,54 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
       </div>
 
       {/* Filter Toggle Button - Top Right */}
-      <button
-        onClick={() => setShowFilters(!showFilters)}
+      <div
         style={{
           position: 'absolute',
           top: '10px',
           right: '10px',
-          padding: '0.5rem 1rem',
-          backgroundColor: showFilters ? '#4a9eff' : 'rgba(26, 26, 26, 0.9)',
-          color: '#fff',
-          border: 'none',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          fontSize: '14px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem',
           zIndex: 1001,
-          boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
         }}
       >
-        {showFilters ? 'Hide Filters' : 'Filters'}
-      </button>
+        <button
+          onClick={() => setShowFilters(!showFilters)}
+          style={{
+            padding: '0.5rem 1rem',
+            backgroundColor: showFilters ? '#4a9eff' : 'rgba(26, 26, 26, 0.9)',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '8px',
+            cursor: 'pointer',
+            fontSize: '14px',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+            position: 'relative',
+          }}
+        >
+          {showFilters ? 'Hide Filters' : 'Filters'}
+        </button>
+        {activeFilterCount > 0 && (
+          <div
+            style={{
+              backgroundColor: '#ff4444',
+              color: '#fff',
+              borderRadius: '50%',
+              width: '24px',
+              height: '24px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '12px',
+              fontWeight: 'bold',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+            }}
+            title={`${activeFilterCount} active filter${activeFilterCount !== 1 ? 's' : ''}`}
+          >
+            {activeFilterCount}
+          </div>
+        )}
+      </div>
 
       {/* Filter Panel Overlay - Top Right (when open) */}
       {showFilters && (
@@ -800,12 +982,80 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
               </div>
             )}
 
+            {/* Pope Filter */}
+            {filters.showPeople && (
+              <div>
+                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Popes</div>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                  <input
+                    type="radio"
+                    name="popes"
+                    checked={filters.showPopes === null}
+                    onChange={() => setFilters(prev => ({ ...prev, showPopes: null }))}
+                  />
+                  <span>All</span>
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                  <input
+                    type="radio"
+                    name="popes"
+                    checked={filters.showPopes === true}
+                    onChange={() => setFilters(prev => ({ ...prev, showPopes: true }))}
+                  />
+                  <span>Popes Only</span>
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+                  <input
+                    type="radio"
+                    name="popes"
+                    checked={filters.showPopes === false}
+                    onChange={() => setFilters(prev => ({ ...prev, showPopes: false }))}
+                  />
+                  <span>Exclude Popes</span>
+                </label>
+              </div>
+            )}
+
+            {/* Writings Filter */}
+            {filters.showPeople && (
+              <div>
+                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Extant Writings</div>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                  <input
+                    type="radio"
+                    name="writings"
+                    checked={filters.showWithWritings === null}
+                    onChange={() => setFilters(prev => ({ ...prev, showWithWritings: null }))}
+                  />
+                  <span>All</span>
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
+                  <input
+                    type="radio"
+                    name="writings"
+                    checked={filters.showWithWritings === true}
+                    onChange={() => setFilters(prev => ({ ...prev, showWithWritings: true }))}
+                  />
+                  <span>With Writings Only</span>
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
+                  <input
+                    type="radio"
+                    name="writings"
+                    checked={filters.showWithWritings === false}
+                    onChange={() => setFilters(prev => ({ ...prev, showWithWritings: false }))}
+                  />
+                  <span>Without Writings Only</span>
+                </label>
+              </div>
+            )}
+
             {/* Roles */}
-            {filters.showPeople && allRoles.length > 0 && (
+            {filters.showPeople && allRolesArray.length > 0 && (
               <div>
                 <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Roles</div>
                 <div style={{ maxHeight: '150px', overflowY: 'auto' }}>
-                  {allRoles.map(role => (
+                  {allRolesArray.map(role => (
                     <label key={role} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
                       <input
                         type="checkbox"
@@ -820,10 +1070,10 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             )}
 
             {/* Primary Tradition */}
-            {filters.showPeople && allTraditions.length > 0 && (
+            {filters.showPeople && allTraditionsArray.length > 0 && (
               <div>
                 <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Primary Tradition</div>
-                {allTraditions.map(tradition => (
+                {allTraditionsArray.map(tradition => (
                   <label key={tradition} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
                     <input
                       type="checkbox"
