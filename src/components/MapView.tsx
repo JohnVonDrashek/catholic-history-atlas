@@ -13,12 +13,7 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
 });
 
-// Important patriarchal sees (Pentarchy)
-const IMPORTANT_SEES = new Set([
-  'antioch',
-  'alexandria',
-  'constantinople',
-]);
+// Note: Important sees are now defined in sees.json data file
 
 // Calculate offset position for markers at the same location
 // Arranges markers in a circle around the base position
@@ -134,7 +129,8 @@ const createPersonIcon = (
   imageUrl?: string,
   orthodoxyStatus?: OrthodoxyStatus,
   isMartyr?: boolean,
-  aspectRatio: number = 1
+  aspectRatio: number = 1,
+  hasWritings: boolean = false
 ) => {
   const maxSize = 40; // Max width or height
   const borderStyle = orthodoxyStatus
@@ -168,7 +164,27 @@ const createPersonIcon = (
   const frameWidth = width + framePadding * 2;
   const frameHeight = height + framePadding * 2;
 
-  const fallbackHtml = `<div style="background-color: ${fallbackColor}; width: ${frameWidth}px; height: ${frameHeight}px; border-radius: ${borderRadius}px; ${borderStyle.border}; box-shadow: ${borderStyle.boxShadow};"></div>`;
+  // Scroll icon HTML (if person has writings)
+  const scrollIconHtml = hasWritings ? `
+    <div style="
+      position: absolute;
+      top: ${framePadding}px;
+      right: ${framePadding}px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 1.5px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+      z-index: 10;
+    ">📜</div>
+  ` : '';
+
+  const fallbackHtml = `<div style="position: relative; background-color: ${fallbackColor}; width: ${frameWidth}px; height: ${frameHeight}px; border-radius: ${borderRadius}px; ${borderStyle.border}; box-shadow: ${borderStyle.boxShadow};">${scrollIconHtml}</div>`;
   
   if (!imageUrl) {
     return L.divIcon({
@@ -203,6 +219,7 @@ const createPersonIcon = (
             background-position: center;
             border: 2px solid white;
           "></div>
+          ${scrollIconHtml}
         </div>
       `,
       iconSize: [frameWidth, frameHeight],
@@ -215,12 +232,13 @@ const createPersonIcon = (
     className: 'custom-marker',
     html: `
       <div style="
+        position: relative;
         width: ${frameWidth}px;
         height: ${frameHeight}px;
         border-radius: ${borderRadius}px;
         ${borderStyle.border};
         box-shadow: ${borderStyle.boxShadow};
-        overflow: hidden;
+        overflow: visible;
         background-color: ${fallbackColor};
         padding: ${framePadding}px;
         box-sizing: border-box;
@@ -233,6 +251,7 @@ const createPersonIcon = (
           background-size: cover;
           background-position: center;
         "></div>
+        ${scrollIconHtml}
       </div>
     `,
     iconSize: [frameWidth, frameHeight],
@@ -287,47 +306,42 @@ const createCouncilIcon = (imageUrl?: string) => {
   });
 };
 
-const createImportantSeeIcon = (imageUrl?: string) => {
+const createImportantSeeIcon = () => {
   const size = 44;
-  const fallbackHtml = '<div style="position: relative;"><div style="background-color: #d4af37; width: ' + size + 'px; height: ' + size + 'px; border-radius: 50%; border: 3px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div><div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: ' + (size - 10) + 'px; height: ' + (size - 10) + 'px; border-radius: 50%; border: 2px solid white; background-color: transparent;"></div></div>';
-  
-  if (!imageUrl) {
-    return L.divIcon({
-      className: 'custom-marker',
-      html: fallbackHtml,
-      iconSize: [size, size],
-      iconAnchor: [size / 2, size / 2],
-    });
-  }
+  // Church icon SVG - cathedral/church building with cross
+  const churchIconSvg = `
+    <svg width="${size - 8}" height="${size - 8}" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+      <!-- Church building -->
+      <path d="M12 2L3 7V20H21V7L12 2Z" fill="#d4af37" stroke="#8b6914" stroke-width="1.2"/>
+      <!-- Door -->
+      <rect x="10" y="14" width="4" height="6" fill="#8b6914" rx="1"/>
+      <!-- Windows -->
+      <rect x="5" y="10" width="3" height="3" fill="#fff" rx="0.5"/>
+      <rect x="16" y="10" width="3" height="3" fill="#fff" rx="0.5"/>
+      <!-- Cross on top -->
+      <path d="M12 2L12 0M9 2L12 2M15 2L12 2" stroke="#8b6914" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="12" cy="2" r="1.5" fill="#8b6914"/>
+    </svg>
+  `;
 
   return L.divIcon({
     className: 'custom-marker',
     html: `
-      <div style="position: relative;">
-        <div style="
-          width: ${size}px;
-          height: ${size}px;
-          border-radius: 50%;
-          border: 3px solid #d4af37;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-          overflow: hidden;
-          background-color: #d4af37;
-          background-image: url('${imageUrl}');
-          background-size: cover;
-          background-position: center;
-        "></div>
-        <div style="
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: ${size - 10}px;
-          height: ${size - 10}px;
-          border-radius: 50%;
-          border: 2px solid white;
-          background-color: transparent;
-          pointer-events: none;
-        "></div>
+      <div style="
+        position: relative;
+        width: ${size}px;
+        height: ${size}px;
+        border-radius: 50%;
+        border: 3px solid #d4af37;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.4), 0 0 8px rgba(212, 175, 55, 0.6);
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        box-sizing: border-box;
+      ">
+        ${churchIconSvg}
       </div>
     `,
     iconSize: [size, size],
@@ -335,10 +349,13 @@ const createImportantSeeIcon = (imageUrl?: string) => {
   });
 };
 
+import type { See } from '../types';
+
 interface MapViewProps {
   people: Person[];
   events: Event[];
   places: Place[];
+  sees: See[];
   currentYear: number;
   onItemClick: (item: Person | Event) => void;
 }
@@ -347,10 +364,12 @@ interface MapViewProps {
 function ZoomAwareMarkers({
   itemsByPlace,
   placeMap,
+  activeSees,
   onItemClick,
 }: {
   itemsByPlace: Map<string, Array<{ type: 'person'; data: Person } | { type: 'event'; data: Event }>>;
   placeMap: Map<string, Place>;
+  activeSees: See[];
   onItemClick: (item: Person | Event) => void;
 }) {
   const map = useMap();
@@ -420,21 +439,75 @@ function ZoomAwareMarkers({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [itemsByPlace]);
 
+  // Get sees that have active items at their location (for positioning)
+  const seesWithItems = useMemo(() => {
+    const seePlaceIds = new Set(activeSees.map(see => see.placeId));
+    const seesWithItemsSet = new Set<string>();
+    Array.from(itemsByPlace.keys()).forEach(placeId => {
+      if (seePlaceIds.has(placeId)) {
+        seesWithItemsSet.add(placeId);
+      }
+    });
+    return seesWithItemsSet;
+  }, [activeSees, itemsByPlace]);
+
   return (
     <>
+      {/* Render sees as independent markers - always centered */}
+      {activeSees.map(see => {
+        const place = placeMap.get(see.placeId);
+        if (!place) return null;
+
+        // Sees are always positioned at the exact center (base location)
+        const lat = place.lat;
+        const lng = place.lng;
+
+        const seeTypeLabel = see.type === 'patriarchate' ? 'Patriarchate' : 
+                            see.type === 'major-see' ? 'Major See' : 
+                            'Apostolic See';
+
+        return (
+          <Marker key={`see-${see.id}`} position={[lat, lng]} icon={createImportantSeeIcon()}>
+            <Popup>
+              <div>
+                <div style={{ fontWeight: 'bold', fontSize: '14px', marginBottom: '0.25rem', color: '#4a9eff' }}>
+                  {see.name}
+                </div>
+                <div style={{ fontSize: '12px', color: '#888', marginBottom: '0.25rem' }}>
+                  {place.name}
+                </div>
+                <div style={{ fontSize: '11px', color: '#aaa', fontStyle: 'italic', marginBottom: '0.5rem' }}>
+                  {seeTypeLabel}
+                </div>
+                {see.description && (
+                  <div style={{ fontSize: '11px', color: '#ccc', lineHeight: '1.4' }}>
+                    {see.description}
+                  </div>
+                )}
+              </div>
+            </Popup>
+          </Marker>
+        );
+      })}
+
+      {/* Render people and events */}
       {Array.from(itemsByPlace.entries()).map(([placeId, items]) => {
         const place = placeMap.get(placeId);
         if (!place) return null;
 
-        const isImportantSee = IMPORTANT_SEES.has(place.id.toLowerCase());
-
+        // Check if there's an active see at this location
+        const seeAtPlace = activeSees.find(see => see.placeId === placeId);
+        const hasSee = seeAtPlace !== undefined;
+        
         return items.map((item, index) => {
-          // Calculate offset position for this item with current zoom
+          // For places with sees, arrange people/events in a circle around the centered see
+          // For places without sees, arrange items normally
+          const totalCount = items.length;
           const [lat, lng] = calculateOffsetPosition(
             place.lat,
             place.lng,
             index,
-            items.length,
+            totalCount,
             zoom
           );
 
@@ -457,7 +530,7 @@ function ZoomAwareMarkers({
               icon = createCouncilIcon(imageUrl);
             } else {
               // Other events use person icon style (no frame colors for events)
-              icon = createPersonIcon(imageUrl, undefined, undefined, aspectRatio);
+              icon = createPersonIcon(imageUrl, undefined, undefined, aspectRatio, false);
             }
           } else {
             const person = item.data;
@@ -467,13 +540,11 @@ function ZoomAwareMarkers({
               aspectRatio = imageAspectRatios.get(imageUrl) || 1;
             }
 
-            // People at important sees get special icon (keep circular for now)
-            if (isImportantSee) {
-              icon = createImportantSeeIcon(imageUrl);
-            } else {
-              // Use frame colors based on orthodoxy status and martyr status
-              icon = createPersonIcon(imageUrl, person.orthodoxyStatus, person.isMartyr, aspectRatio);
-            }
+            const hasWritings = !!(person.writings && person.writings.length > 0);
+
+            // Always use frame colors based on orthodoxy status and martyr status
+            // Important sees will be shown as separate independent markers
+            icon = createPersonIcon(imageUrl, person.orthodoxyStatus, person.isMartyr, aspectRatio, hasWritings);
           }
 
           // Create unique key combining place, type, and item id
@@ -503,11 +574,6 @@ function ZoomAwareMarkers({
                       Council
                     </div>
                   )}
-                  {isImportantSee && item.type === 'person' && (
-                    <div style={{ fontSize: '11px', color: '#aaa', fontStyle: 'italic' }}>
-                      Important See
-                    </div>
-                  )}
                 </div>
               </Popup>
             </Marker>
@@ -518,7 +584,7 @@ function ZoomAwareMarkers({
   );
 }
 
-export function MapView({ people, events, places, currentYear, onItemClick }: MapViewProps) {
+export function MapView({ people, events, places, sees, currentYear, onItemClick }: MapViewProps) {
   const activePeople = getActivePeople(people, currentYear);
   const activeEvents = getActiveEvents(events, currentYear);
 
@@ -549,6 +615,13 @@ export function MapView({ people, events, places, currentYear, onItemClick }: Ma
   // Create a lookup map for places
   const placeMap = new Map<string, Place>();
   places.forEach(place => placeMap.set(place.id, place));
+
+  // Filter sees that are active in the current year
+  const activeSees = sees.filter(see => {
+    const start = see.startYear ?? -Infinity;
+    const end = see.endYear ?? Infinity;
+    return currentYear >= start && currentYear <= end;
+  });
 
   // Default to Mediterranean view for early centuries
   const center: [number, number] = currentYear < 1000 ? [38, 20] : [50, 10];
@@ -738,6 +811,7 @@ export function MapView({ people, events, places, currentYear, onItemClick }: Ma
         <ZoomAwareMarkers
           itemsByPlace={itemsByPlace}
           placeMap={placeMap}
+          activeSees={activeSees}
           onItemClick={onItemClick}
         />
       </MapContainer>

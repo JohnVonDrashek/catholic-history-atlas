@@ -40,8 +40,9 @@ import century19Events from './century-19-events.json';
 import century20Events from './century-20-events.json';
 
 import places from './places.json';
+import sees from './sees.json';
 
-import type { Person, Event, Place } from '../types';
+import type { Person, Event, Place, See } from '../types';
 
 const initialData = {
   people: [
@@ -88,6 +89,7 @@ const initialData = {
     ...century20Events,
   ] as Event[],
   places: places as Place[],
+  sees: sees as See[],
 };
 
 export default initialData;

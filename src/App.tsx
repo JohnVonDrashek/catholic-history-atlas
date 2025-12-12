@@ -18,6 +18,7 @@ function App() {
     people: Person[];
     events: Event[];
     places: import('./types').Place[];
+    sees: import('./types').See[];
   };
 
   return (
@@ -74,6 +75,7 @@ function App() {
               people={data.people}
               events={data.events}
               places={data.places}
+              sees={data.sees}
               currentYear={currentYear}
               onItemClick={setSelectedItem}
             />

@@ -1,0 +1,73 @@
+[
+  {
+    "id": "rome",
+    "name": "See of Rome",
+    "placeId": "rome",
+    "type": "patriarchate",
+    "startYear": 30,
+    "description": "The Apostolic See of Rome, founded by St. Peter. The Bishop of Rome is the Pope, the successor of St. Peter and head of the Catholic Church. One of the five patriarchates of the Pentarchy.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Holy_See",
+    "newAdventUrl": "https://www.newadvent.org/cathen/13139a.htm"
+  },
+  {
+    "id": "constantinople",
+    "name": "Patriarchate of Constantinople",
+    "placeId": "constantinople",
+    "type": "patriarchate",
+    "startYear": 330,
+    "description": "The Ecumenical Patriarchate of Constantinople, established when the capital moved from Rome. One of the five patriarchates of the Pentarchy. The Ecumenical Patriarch is the spiritual leader of the Eastern Orthodox Church.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ecumenical_Patriarchate_of_Constantinople",
+    "newAdventUrl": "https://www.newadvent.org/cathen/04301a.htm"
+  },
+  {
+    "id": "alexandria",
+    "name": "Patriarchate of Alexandria",
+    "placeId": "alexandria",
+    "type": "patriarchate",
+    "startYear": 42,
+    "description": "The Patriarchate of Alexandria, traditionally founded by St. Mark the Evangelist. One of the five patriarchates of the Pentarchy. Split into Coptic Orthodox and Greek Orthodox patriarchates after the Council of Chalcedon.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Patriarchate_of_Alexandria",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01303a.htm"
+  },
+  {
+    "id": "antioch",
+    "name": "Patriarchate of Antioch",
+    "placeId": "antioch",
+    "type": "patriarchate",
+    "startYear": 34,
+    "description": "The Patriarchate of Antioch, traditionally founded by St. Peter. One of the five patriarchates of the Pentarchy. The first place where followers of Jesus were called 'Christians' (Acts 11:26).",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Patriarchate_of_Antioch",
+    "newAdventUrl": "https://www.newadvent.org/cathen/01559a.htm"
+  },
+  {
+    "id": "jerusalem",
+    "name": "Patriarchate of Jerusalem",
+    "placeId": "jerusalem",
+    "type": "patriarchate",
+    "startYear": 70,
+    "description": "The Patriarchate of Jerusalem, established after the destruction of the Temple. One of the five patriarchates of the Pentarchy. The Holy City, site of Christ's passion, death, and resurrection.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Latin_Patriarchate_of_Jerusalem",
+    "newAdventUrl": "https://www.newadvent.org/cathen/08355a.htm"
+  },
+  {
+    "id": "milan",
+    "name": "Archdiocese of Milan",
+    "placeId": "milan",
+    "type": "major-see",
+    "startYear": 200,
+    "description": "The Archdiocese of Milan, one of the most important sees in the Western Church. Known for the Ambrosian Rite and influential bishops like St. Ambrose.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Roman_Catholic_Archdiocese_of_Milan",
+    "newAdventUrl": "https://www.newadvent.org/cathen/10301a.htm"
+  },
+  {
+    "id": "carthage",
+    "name": "Archdiocese of Carthage",
+    "placeId": "carthage",
+    "type": "major-see",
+    "startYear": 200,
+    "endYear": 698,
+    "description": "The Archdiocese of Carthage, a major see in North Africa. Produced many important Church Fathers including St. Cyprian and St. Augustine. Destroyed during the Arab conquest.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Archdiocese_of_Carthage",
+    "newAdventUrl": "https://www.newadvent.org/cathen/03385a.htm"
+  }
+]
