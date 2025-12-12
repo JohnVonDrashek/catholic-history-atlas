@@ -500,9 +500,9 @@ function ZoomAwareMarkers({
         const hasSee = seeAtPlace !== undefined;
         
         return items.map((item, index) => {
-          // For places with sees, arrange people/events in a circle around the centered see
-          // For places without sees, arrange items normally
-          const totalCount = items.length;
+          // For places with sees, add 1 to totalCount to offset items around the centered see
+          // This ensures items don't overlap with the see marker
+          const totalCount = hasSee ? items.length + 1 : items.length;
           const [lat, lng] = calculateOffsetPosition(
             place.lat,
             place.lng,
