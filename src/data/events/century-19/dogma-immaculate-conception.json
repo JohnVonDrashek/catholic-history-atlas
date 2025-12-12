@@ -1,0 +1,15 @@
+{
+  "id": "dogma-immaculate-conception",
+  "name": "Dogma of the Immaculate Conception",
+  "startYear": 1854,
+  "endYear": 1854,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Immaculate_Conception",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07674d.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Inmaculada_Concepci%C3%B3n_de_Aranjuez.jpg",
+  "summary": "Pope Pius IX defined the dogma of the Immaculate Conception in the apostolic constitution 'Ineffabilis Deus' on December 8, 1854. The dogma teaches that the Blessed Virgin Mary was preserved from original sin from the moment of her conception. This was the first time a pope exercised papal infallibility in defining a dogma, though the doctrine itself had been widely held for centuries.",
+  "keyDocuments": [
+    "Ineffabilis Deus"
+  ]
+}

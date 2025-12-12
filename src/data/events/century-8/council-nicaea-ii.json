@@ -1,0 +1,16 @@
+{
+  "id": "council-nicaea-ii",
+  "name": "Second Council of Nicaea",
+  "startYear": 787,
+  "endYear": 787,
+  "type": "council",
+  "locationId": "nicaea",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Second_Council_of_Nicaea",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11045a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Menologion_of_Basil_024.jpg",
+  "summary": "The Second Council of Nicaea was the seventh ecumenical council, convened by Empress Irene in 787 AD. The council restored the veneration of icons, which had been condemned during the Iconoclasm Controversy. It affirmed that icons could be venerated (though not worshipped) and that they were useful for teaching and inspiring devotion. This council is considered the last of the ecumenical councils recognized by both Eastern and Western Christianity.",
+  "keyDocuments": [
+    "Definition on the Veneration of Icons",
+    "Canons on Iconoclasm"
+  ]
+}

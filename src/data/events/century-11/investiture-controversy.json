@@ -1,0 +1,12 @@
+{
+  "id": "investiture-controversy",
+  "name": "Investiture Controversy",
+  "startYear": 1075,
+  "endYear": 1122,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Investiture_Controversy",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08086a.htm",
+  "summary": "The Investiture Controversy was a conflict between the papacy and the Holy Roman Empire over the right to appoint bishops and abbots. Pope Gregory VII banned lay investiture, asserting that only the Church had the right to appoint clergy. This led to a long struggle with Emperor Henry IV, which included Henry's famous penance at Canossa in 1077. The controversy was eventually resolved by the Concordat of Worms in 1122.",
+  "keyDocuments": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "callistus-i",
+  "name": "St. Callistus I",
+  "birthYear": null,
+  "deathYear": 222,
+  "feastDay": "October 14",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Bishop of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Callistus_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03183b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Pope_Callistus_I_%E2%80%93_Santa_Maria_in_Trastevere.jpg/330px-Pope_Callistus_I_%E2%80%93_Santa_Maria_in_Trastevere.jpg",
+  "summary": "Callistus I was Bishop of Rome from 217 to 222. He was a former slave who became pope and is known for his lenient policies toward those who had lapsed during persecution. He allowed the readmission of sinners to the Church after penance, which was controversial at the time. He was martyred during a popular uprising and is venerated as a saint.",
+  "keyQuotes": []
+}

@@ -45,15 +45,25 @@ data.events.forEach(event => {
   }
 });
 
+// Ensure subdirectories exist
+const peopleDir = path.join(__dirname, 'people');
+const eventsDir = path.join(__dirname, 'events');
+if (!fs.existsSync(peopleDir)) {
+  fs.mkdirSync(peopleDir, { recursive: true });
+}
+if (!fs.existsSync(eventsDir)) {
+  fs.mkdirSync(eventsDir, { recursive: true });
+}
+
 // Write century files
 Object.keys(peopleByCentury).forEach(century => {
-  const filePath = path.join(__dirname, `${century}-people.json`);
+  const filePath = path.join(peopleDir, `${century}-people.json`);
   fs.writeFileSync(filePath, JSON.stringify(peopleByCentury[century], null, 2));
   console.log(`Created ${filePath} with ${peopleByCentury[century].length} people`);
 });
 
 Object.keys(eventsByCentury).forEach(century => {
-  const filePath = path.join(__dirname, `${century}-events.json`);
+  const filePath = path.join(eventsDir, `${century}-events.json`);
   fs.writeFileSync(filePath, JSON.stringify(eventsByCentury[century], null, 2));
   console.log(`Created ${filePath} with ${eventsByCentury[century].length} events`);
 });

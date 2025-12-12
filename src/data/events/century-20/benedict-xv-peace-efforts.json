@@ -1,0 +1,15 @@
+{
+  "id": "benedict-xv-peace-efforts",
+  "name": "Benedict XV's Peace Efforts",
+  "startYear": 1914,
+  "endYear": 1922,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Benedict_XV",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02429a.htm",
+  "summary": "Pope Benedict XV made extensive efforts to end World War I and promote peace. He issued the encyclical Ad beatissimi Apostolorum in 1914 calling for peace and neutrality. Throughout the war, he worked as a mediator, provided humanitarian aid, and condemned the conflict as 'the suicide of civilized Europe.' His peace plan in 1917, though rejected by warring parties, foreshadowed future peace initiatives.",
+  "keyDocuments": [
+    "Ad beatissimi Apostolorum",
+    "Dès le début (1917 Peace Proposal)"
+  ]
+}

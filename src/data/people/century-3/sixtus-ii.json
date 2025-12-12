@@ -1,0 +1,25 @@
+{
+  "id": "sixtus-ii",
+  "name": "St. Sixtus II",
+  "birthYear": null,
+  "deathYear": 258,
+  "feastDay": "August 7",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Bishop of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Sixtus_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14032a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Sandro_Botticelli_%E2%80%93_Sixtus_II.jpg/330px-Sandro_Botticelli_%E2%80%93_Sixtus_II.jpg",
+  "summary": "Sixtus II was Bishop of Rome from 257 to 258. He was martyred during the Valerian persecution, being beheaded while celebrating Mass in the catacombs. According to tradition, he was captured and executed along with six deacons, including St. Lawrence. He is mentioned in the Roman Canon of the Mass and is venerated as a martyr.",
+  "keyQuotes": []
+}

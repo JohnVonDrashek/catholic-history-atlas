@@ -1,0 +1,25 @@
+{
+  "id": "catherine-laboure",
+  "name": "St. Catherine Labouré",
+  "birthYear": 1806,
+  "deathYear": 1876,
+  "feastDay": "November 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "visionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "Sister of Charity in Paris"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_Labour%C3%A9",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09033a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Catherine_Laboure.jpg",
+  "summary": "Catherine Labouré was a French member of the Daughters of Charity of Saint Vincent de Paul who reported visions of the Blessed Virgin Mary. In 1830, Mary appeared to her and asked her to have a medal struck—the Miraculous Medal, which became one of the most popular Catholic devotional items. She lived a hidden life of service and only revealed her visions shortly before her death.",
+  "keyQuotes": []
+}

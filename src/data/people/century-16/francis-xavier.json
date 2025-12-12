@@ -1,0 +1,41 @@
+{
+  "id": "francis-xavier",
+  "name": "St. Francis Xavier",
+  "birthYear": 1506,
+  "deathYear": 1552,
+  "feastDay": "December 3",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "goa",
+      "description": "Missionary in Goa, India"
+    },
+    {
+      "placeId": "japan",
+      "description": "First Christian missionary to Japan"
+    },
+    {
+      "placeId": "malacca",
+      "description": "Missionary in Southeast Asia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_Xavier",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06233b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Franciscus_de_Xabier.jpg/330px-Franciscus_de_Xabier.jpg",
+  "summary": "Francis Xavier was one of the first seven Jesuits and a pioneering missionary to Asia. He traveled extensively throughout India, Southeast Asia, and Japan, baptizing thousands and establishing Christian communities. He is considered one of the greatest missionaries in Church history and is the patron saint of missionaries. He died on the island of Shangchuan while attempting to enter China.",
+  "keyQuotes": [
+    "It is not the actual physical exertion that counts toward a man's progress, nor the nature of the task, but the spirit of faith with which it is undertaken."
+  ],
+  "writings": [
+    {
+      "title": "Letters and Instructions",
+      "url": "https://www.ccel.org/ccel/xavier/letters.html"
+    }
+  ]
+}

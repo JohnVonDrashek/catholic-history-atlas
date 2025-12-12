@@ -1,0 +1,25 @@
+{
+  "id": "lactantius",
+  "name": "Lactantius",
+  "birthYear": 250,
+  "deathYear": 325,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "apologist",
+    "teacher"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Teacher in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Lactantius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08741a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Lactantius.jpg/330px-Lactantius.jpg",
+  "summary": "Lactantius was a Christian apologist and teacher who served as tutor to Constantine's son Crispus. He wrote 'The Divine Institutes,' a comprehensive defense of Christianity, and 'On the Deaths of the Persecutors,' which describes the fates of those who persecuted Christians. His elegant Latin style earned him the title 'Christian Cicero.'",
+  "keyQuotes": []
+}

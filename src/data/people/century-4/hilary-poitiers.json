@@ -1,0 +1,35 @@
+{
+  "id": "hilary-poitiers",
+  "name": "St. Hilary of Poitiers",
+  "birthYear": 310,
+  "deathYear": 367,
+  "feastDay": "January 13",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "poitiers",
+      "description": "Bishop of Poitiers"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Hilary_of_Poitiers",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07349b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Hilaryofpoitiers.jpg/330px-Hilaryofpoitiers.jpg",
+  "summary": "Hilary of Poitiers was a bishop and theologian known as the 'Hammer of the Arians' for his vigorous defense of Nicene orthodoxy. He wrote extensively against Arianism and was exiled for his faith. His works on the Trinity were influential in the West, and he is considered a Doctor of the Church.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "On the Trinity",
+      "url": "https://www.ccel.org/ccel/schaff/npnf209.iii.html"
+    },
+    {
+      "title": "Commentary on Matthew",
+      "url": "https://www.ccel.org/ccel/schaff/npnf209.iv.html"
+    }
+  ]
+}

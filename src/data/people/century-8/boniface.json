@@ -1,0 +1,26 @@
+{
+  "id": "boniface",
+  "name": "St. Boniface",
+  "birthYear": 675,
+  "deathYear": 754,
+  "feastDay": "June 5",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "missionary",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "fulda",
+      "description": "Bishop and missionary, martyred in Frisia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Boniface",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02658a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Saint_Boniface_by_Cornelis_Bloemaert.jpg",
+  "summary": "Boniface was an English missionary who is known as the Apostle of Germany. He organized the Church in Germany and reformed the Frankish Church. He founded several monasteries, including Fulda, and was martyred while on a mission to Frisia. He is considered one of the most important figures in the Christianization of Germany.",
+  "keyQuotes": []
+}

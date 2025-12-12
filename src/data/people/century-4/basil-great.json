@@ -1,0 +1,41 @@
+{
+  "id": "basil-great",
+  "name": "St. Basil the Great",
+  "birthYear": 329,
+  "deathYear": 379,
+  "feastDay": "January 2",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "caesarea-cappadocia",
+      "description": "Bishop of Caesarea"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Basil_of_Caesarea",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02330b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Basil_of_Caesarea.jpg/330px-Basil_of_Caesarea.jpg",
+  "summary": "Basil of Caesarea, also called Saint Basil the Great, was a bishop of Caesarea Mazaca in Cappadocia, Asia Minor. He was an influential theologian who supported the Nicene Creed and opposed the heresies of the early Christian church.",
+  "keyQuotes": [
+    "The bread which you do not use is the bread of the hungry; the garment hanging in your wardrobe is the garment of him who is naked."
+  ],
+  "writings": [
+    {
+      "title": "On the Holy Spirit",
+      "url": "https://www.ccel.org/ccel/schaff/npnf208.viii.html"
+    },
+    {
+      "title": "Hexaemeron (On the Six Days of Creation)",
+      "url": "https://www.ccel.org/ccel/schaff/npnf208.vii.html"
+    },
+    {
+      "title": "The Long Rules",
+      "url": "https://www.ccel.org/ccel/schaff/npnf208.ix.html"
+    }
+  ]
+}

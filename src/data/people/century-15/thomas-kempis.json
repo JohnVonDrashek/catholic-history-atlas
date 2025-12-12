@@ -1,0 +1,33 @@
+{
+  "id": "thomas-kempis",
+  "name": "Thomas à Kempis",
+  "birthYear": 1380,
+  "deathYear": 1471,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "writer"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "zwolle",
+      "description": "Canon regular in Zwolle"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_%C3%A0_Kempis",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14661a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Thomas_von_Kempen_JS.JPG/330px-Thomas_von_Kempen_JS.JPG",
+  "summary": "Thomas à Kempis was a German-Dutch canon regular and the probable author of 'The Imitation of Christ,' one of the most widely read Christian devotional books after the Bible. The work emphasizes the interior life and following Christ's example. He was part of the Devotio Moderna movement, which emphasized personal piety and spiritual renewal.",
+  "keyQuotes": [
+    "Man proposes, but God disposes."
+  ],
+  "writings": [
+    {
+      "title": "The Imitation of Christ",
+      "url": "https://www.ccel.org/ccel/kempis/imitation"
+    }
+  ]
+}

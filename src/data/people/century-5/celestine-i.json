@@ -1,0 +1,24 @@
+{
+  "id": "celestine-i",
+  "name": "St. Celestine I",
+  "birthYear": null,
+  "deathYear": 432,
+  "feastDay": "July 27",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Bishop of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Celestine_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03479a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Caelestinus_I._Celestino_I%2C_santo_e_papa.jpg/330px-Caelestinus_I._Celestino_I%2C_santo_e_papa.jpg",
+  "summary": "Celestine I was Bishop of Rome from 422 to 432. He is known for sending St. Patrick as a missionary to Ireland and for his role in the Council of Ephesus (431), where he supported St. Cyril of Alexandria against Nestorianism. He condemned Pelagianism and Nestorianism and worked to maintain orthodoxy. He is credited with building the first church dedicated to the Virgin Mary in Rome.",
+  "keyQuotes": []
+}

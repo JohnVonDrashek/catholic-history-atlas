@@ -1,0 +1,41 @@
+{
+  "id": "gregory-great",
+  "name": "St. Gregory the Great",
+  "birthYear": 540,
+  "deathYear": 604,
+  "feastDay": "September 3",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06780a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Gregory_the_Great_with_the_Holy_Spirit.jpg",
+  "summary": "Gregory the Great was Pope from 590 to 604 and is one of the four original Doctors of the Church. He is known for his extensive writings, including the Dialogues, which contain the Life of St. Benedict, and his Pastoral Rule. He reformed the liturgy (Gregorian Chant is named after him), sent missionaries to England, and strengthened papal authority. He is considered one of the most important popes in Church history.",
+  "keyQuotes": [
+    "The proof of love is in the works. Where love exists, it works great things."
+  ],
+  "writings": [
+    {
+      "title": "Dialogues",
+      "url": "https://www.ccel.org/ccel/schaff/npnf212.iv.html"
+    },
+    {
+      "title": "Pastoral Rule",
+      "url": "https://www.ccel.org/ccel/schaff/npnf212.v.html"
+    },
+    {
+      "title": "Moralia on Job",
+      "url": "https://www.ccel.org/ccel/schaff/npnf212.vi.html"
+    }
+  ]
+}

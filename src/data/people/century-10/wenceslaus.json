@@ -1,0 +1,25 @@
+{
+  "id": "wenceslaus",
+  "name": "St. Wenceslaus",
+  "birthYear": 907,
+  "deathYear": 935,
+  "feastDay": "September 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "duke",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "prague",
+      "description": "Duke of Bohemia, martyred"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Wenceslaus_I%2C_Duke_of_Bohemia",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15587b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/Wolfenb%C3%BCttelsk%C3%BD_kodex_%E2%80%93_Gumpoldova_legenda_%E2%80%93_18v_cr.jpg",
+  "summary": "Wenceslaus I was Duke of Bohemia who is venerated as a saint and martyr. He was known for his piety, charity, and efforts to spread Christianity in Bohemia. He was murdered by his brother Boleslaus, who opposed his Christian policies. He is the patron saint of the Czech Republic and is the subject of the Christmas carol 'Good King Wenceslas.'",
+  "keyQuotes": []
+}

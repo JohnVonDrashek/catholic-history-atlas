@@ -1,0 +1,24 @@
+{
+  "id": "margaret-scotland",
+  "name": "St. Margaret of Scotland",
+  "birthYear": 1045,
+  "deathYear": 1093,
+  "feastDay": "November 16",
+  "primaryTradition": "Latin",
+  "roles": [
+    "queen"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "edinburgh",
+      "description": "Queen of Scotland"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Margaret_of_Scotland",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09655a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Saint_Margaret_of_Scotland.jpg",
+  "summary": "Margaret of Scotland was an English princess who became Queen of Scotland through her marriage to King Malcolm III. She was known for her piety, charity, and efforts to reform the Scottish Church. She introduced Roman practices to Scotland and worked to improve the lives of the poor. She is the only Scottish royal saint and is venerated as the patron saint of Scotland.",
+  "keyQuotes": []
+}

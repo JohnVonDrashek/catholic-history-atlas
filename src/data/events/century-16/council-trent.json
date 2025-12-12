@@ -1,0 +1,16 @@
+{
+  "id": "council-trent",
+  "name": "Council of Trent",
+  "startYear": 1545,
+  "endYear": 1563,
+  "type": "council",
+  "locationId": "trent",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Trent",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15030c.htm",
+  "summary": "The Council of Trent was the 19th ecumenical council of the Catholic Church, convened in response to the Protestant Reformation. It addressed doctrinal issues, clarified Catholic teaching on justification, the sacraments, and Scripture, and initiated important reforms in the Church. The council's decrees shaped Catholic doctrine and practice for centuries and were central to the Counter-Reformation.",
+  "keyDocuments": [
+    "Decrees of the Council of Trent",
+    "Catechism of the Council of Trent",
+    "Roman Catechism"
+  ]
+}

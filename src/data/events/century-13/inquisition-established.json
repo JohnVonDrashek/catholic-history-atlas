@@ -1,0 +1,12 @@
+{
+  "id": "inquisition-established",
+  "name": "Papal Inquisition Established",
+  "startYear": 1231,
+  "endYear": 1231,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Medieval_Inquisition",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08026a.htm",
+  "summary": "The Papal Inquisition was formally established by Pope Gregory IX in 1231 to combat heresy. The Inquisition was initially focused on the Albigensian heresy in southern France but later expanded. It was administered by Dominican and Franciscan friars and became a permanent institution of the Church for dealing with heresy.",
+  "keyDocuments": []
+}

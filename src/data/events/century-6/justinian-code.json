@@ -1,0 +1,17 @@
+{
+  "id": "justinian-code",
+  "name": "Justinian's Code",
+  "startYear": 529,
+  "endYear": 534,
+  "type": "other",
+  "locationId": "constantinople",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Corpus_Juris_Civilis",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04397a.htm",
+  "summary": "The Corpus Juris Civilis, also known as Justinian's Code, was a comprehensive compilation of Roman law commissioned by Emperor Justinian I. It consisted of four parts: the Codex (imperial laws), the Digest (legal opinions), the Institutes (textbook), and the Novellae (new laws). This codification preserved Roman legal tradition and influenced legal systems throughout Europe for centuries.",
+  "keyDocuments": [
+    "Corpus Juris Civilis",
+    "Codex Justinianus",
+    "Digest",
+    "Institutes"
+  ]
+}

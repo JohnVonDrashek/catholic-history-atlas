@@ -1,0 +1,14 @@
+{
+  "id": "pacem-in-terris",
+  "name": "Pacem in Terris",
+  "startYear": 1963,
+  "endYear": 1963,
+  "type": "reform",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pacem_in_terris",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11098a.htm",
+  "summary": "Pacem in Terris (Peace on Earth) was an encyclical issued by Pope John XXIII in 1963, addressed not only to Catholics but to 'all men of good will.' It was the first encyclical addressed to all people and focused on establishing universal peace in truth, justice, charity, and liberty. It addressed human rights, the relationship between individuals and the state, and international relations.",
+  "keyDocuments": [
+    "Pacem in Terris"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "john-viii",
+  "name": "Pope John VIII",
+  "birthYear": null,
+  "deathYear": 882,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_John_VIII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08423a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Pope_John_VIII.jpg/330px-Pope_John_VIII.jpg",
+  "summary": "John VIII was Pope from 872 to 882. He worked to defend Rome and the Papal States from Saracen attacks and maintained relations with both the Byzantine Empire and the Carolingian rulers. He supported the missionary work of the Church and worked to maintain unity. He was murdered, possibly by members of his own household.",
+  "keyQuotes": []
+}

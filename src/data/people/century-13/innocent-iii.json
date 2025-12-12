@@ -1,0 +1,23 @@
+{
+  "id": "innocent-iii",
+  "name": "Pope Innocent III",
+  "birthYear": 1160,
+  "deathYear": 1216,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Innocent_III",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08013a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/05/Innozenz3.jpg",
+  "summary": "Innocent III was Pope from 1198 to 1216 and is considered one of the most powerful and influential popes in history. He convened the Fourth Lateran Council, launched the Albigensian Crusade, and asserted papal authority over secular rulers. He supported the Franciscan and Dominican orders and worked to reform the Church. His pontificate marked the height of medieval papal power.",
+  "keyQuotes": []
+}

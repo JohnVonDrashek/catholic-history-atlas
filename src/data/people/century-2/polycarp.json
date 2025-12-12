@@ -1,0 +1,34 @@
+{
+  "id": "polycarp",
+  "name": "St. Polycarp",
+  "birthYear": 69,
+  "deathYear": 155,
+  "feastDay": "February 23",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "martyr",
+    "Apostolic Father"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "smyrna",
+      "description": "Bishop of Smyrna"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Polycarp",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12219b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Hosios_Loukas_%28diakonikon%29_-_Polycarp.jpg/330px-Hosios_Loukas_%28diakonikon%29_-_Polycarp.jpg",
+  "summary": "Polycarp was a 2nd-century Christian bishop of Smyrna. According to the Martyrdom of Polycarp, he was martyred by being stabbed after an attempt to burn him at the stake proved unsuccessful.",
+  "keyQuotes": [
+    "Eighty and six years have I served Christ, and He never did me any injury: how then can I blaspheme my King and my Saviour?"
+  ],
+  "writings": [
+    {
+      "title": "Epistle to the Philippians",
+      "url": "https://www.ccel.org/ccel/schaff/anf01.iv.ix.html"
+    }
+  ]
+}

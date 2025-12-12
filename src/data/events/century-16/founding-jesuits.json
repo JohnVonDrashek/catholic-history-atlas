@@ -1,0 +1,15 @@
+{
+  "id": "founding-jesuits",
+  "name": "Founding of the Society of Jesus",
+  "startYear": 1540,
+  "endYear": 1540,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Society_of_Jesus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14081a.htm",
+  "summary": "The Society of Jesus (Jesuits) was founded by St. Ignatius of Loyola and approved by Pope Paul III in 1540. The order became one of the most influential forces in the Counter-Reformation, emphasizing education, missionary work, and obedience to the papacy. The Jesuits established schools and universities throughout Europe and sent missionaries to Asia, Africa, and the Americas.",
+  "keyDocuments": [
+    "Formula of the Institute",
+    "Spiritual Exercises (Ignatius of Loyola)"
+  ]
+}

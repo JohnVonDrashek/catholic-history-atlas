@@ -1,0 +1,29 @@
+{
+  "id": "boniface-viii",
+  "name": "Pope Boniface VIII",
+  "birthYear": 1230,
+  "deathYear": 1303,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Boniface_VIII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02662a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Bonifacio_viii_by_Arnolfo_Di_Cambio.jpg",
+  "summary": "Boniface VIII was Pope from 1294 to 1303. He issued the papal bull Unam Sanctam, which asserted the supremacy of the papacy over all temporal powers. His conflict with King Philip IV of France led to the humiliation at Anagni, where he was briefly imprisoned. His papacy marked the end of the medieval papacy's temporal power and preceded the Avignon Papacy.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Unam Sanctam",
+      "url": "https://www.newadvent.org/cathen/15126a.htm"
+    }
+  ]
+}

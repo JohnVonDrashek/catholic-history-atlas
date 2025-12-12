@@ -1,0 +1,25 @@
+{
+  "id": "scholastica",
+  "name": "St. Scholastica",
+  "birthYear": 480,
+  "deathYear": 547,
+  "feastDay": "February 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "abbess"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "monte-cassino",
+      "description": "Nun near Monte Cassino"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Scholastica",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13548a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Jean_Baptiste_de_Champaigne_%281631-1681%29_%28attributed_to%29_-_Saint_Benedict_and_Saint_Scholastica_and_Two_Companions_in_a_Landscape_-_290251_-_National_Trust.jpg",
+  "summary": "Scholastica was the twin sister of St. Benedict of Nursia. She founded a convent near Monte Cassino and is considered the first Benedictine nun. According to tradition, she and her brother met once a year to discuss spiritual matters. She is venerated as the patroness of Benedictine nuns and is remembered for her deep prayer life and devotion.",
+  "keyQuotes": []
+}

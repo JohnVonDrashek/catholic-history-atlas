@@ -1,0 +1,26 @@
+{
+  "id": "leonard-port-maurice",
+  "name": "St. Leonard of Port Maurice",
+  "birthYear": 1676,
+  "deathYear": 1751,
+  "feastDay": "November 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "preacher"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Franciscan preacher, popularized the Stations of the Cross"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Leonard_of_Port_Maurice",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09178a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/S_Leonardo.JPG/330px-S_Leonardo.JPG",
+  "summary": "Leonard of Port Maurice was an Italian Franciscan friar and preacher. He is best known for popularizing the devotion of the Stations of the Cross throughout Italy. He preached missions throughout Italy and was known for his powerful preaching on penance and the Passion of Christ. He established the Stations of the Cross in over 500 locations throughout Italy.",
+  "keyQuotes": [],
+  "writings": []
+}

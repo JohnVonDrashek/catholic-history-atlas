@@ -1,0 +1,20 @@
+{
+  "id": "vatican-ii",
+  "name": "Second Vatican Council",
+  "startYear": 1962,
+  "endYear": 1965,
+  "type": "council",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Second_Vatican_Council",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15303a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Petersdom_von_Engelsburg_gesehen.jpg/330px-Petersdom_von_Engelsburg_gesehen.jpg",
+  "summary": "The Second Vatican Council, commonly known as Vatican II, was the 21st ecumenical council of the Catholic Church. It was convened by Pope John XXIII in 1962 and continued under Pope Paul VI until 1965. The council brought about the most significant changes to Catholic liturgy, theology, and practice since the Council of Trent, including the Mass in vernacular languages, greater emphasis on the role of the laity, ecumenism, and religious freedom.",
+  "keyDocuments": [
+    "Sacrosanctum Concilium - Constitution on the Sacred Liturgy",
+    "Lumen Gentium - Dogmatic Constitution on the Church",
+    "Dei Verbum - Dogmatic Constitution on Divine Revelation",
+    "Gaudium et Spes - Pastoral Constitution on the Church in the Modern World",
+    "Dignitatis Humanae - Declaration on Religious Freedom",
+    "Nostra Aetate - Declaration on the Relation of the Church to Non-Christian Religions"
+  ]
+}

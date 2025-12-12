@@ -1,0 +1,25 @@
+{
+  "id": "papias",
+  "name": "St. Papias of Hierapolis",
+  "birthYear": 60,
+  "deathYear": 130,
+  "feastDay": "February 22",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "Apostolic Father"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "hierapolis",
+      "description": "Bishop of Hierapolis"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Papias_of_Hierapolis",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11457b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Papias.png",
+  "summary": "Papias was an early Christian bishop of Hierapolis and an Apostolic Father. He is known for his five-volume work 'Exposition of the Sayings of the Lord,' which preserved early oral traditions about the apostles and the origins of the Gospels. His writings are among the earliest testimonies to the authorship of the Gospels.",
+  "keyQuotes": []
+}

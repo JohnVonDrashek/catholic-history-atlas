@@ -1,0 +1,43 @@
+{
+  "id": "john-cross",
+  "name": "St. John of the Cross",
+  "birthYear": 1542,
+  "deathYear": 1591,
+  "feastDay": "December 14",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "mystic",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "avila",
+      "description": "Co-founder of the Discalced Carmelites"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_of_the_Cross",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08480a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Zurbar%C3%A1n_%28atribuido%29-John_of_the_Cross-1656.jpg/330px-Zurbar%C3%A1n_%28atribuido%29-John_of_the_Cross-1656.jpg",
+  "summary": "John of the Cross was a Spanish Carmelite priest, mystic, and poet who co-founded the Discalced Carmelites with St. Teresa of Avila. He is one of the 36 Doctors of the Church and is considered one of the greatest mystical theologians. His most famous work, 'The Dark Night of the Soul,' describes the spiritual journey of the soul toward union with God. He was imprisoned and mistreated by unreformed Carmelites but remained faithful to the reform.",
+  "keyQuotes": [
+    "In the evening of life, we will be judged on love alone.",
+    "Where there is no love, put love, and you will find love."
+  ],
+  "writings": [
+    {
+      "title": "The Dark Night of the Soul",
+      "url": "https://www.ccel.org/ccel/john_cross/dark_night.html"
+    },
+    {
+      "title": "The Ascent of Mount Carmel",
+      "url": "https://www.ccel.org/ccel/john_cross/ascent.html"
+    },
+    {
+      "title": "The Spiritual Canticle",
+      "url": "https://www.ccel.org/ccel/john_cross/canticle.html"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "mother-teresa",
+  "name": "St. Teresa of Calcutta",
+  "birthYear": 1910,
+  "deathYear": 1997,
+  "feastDay": "September 5",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "founder",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "india",
+      "description": "Founded Missionaries of Charity and served the poor in Calcutta"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Mother_Teresa",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14569a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Mother_Teresa_1.jpg/330px-Mother_Teresa_1.jpg",
+  "summary": "Teresa of Calcutta, commonly known as Mother Teresa, was an Albanian-Indian Catholic nun and missionary who founded the Missionaries of Charity, a religious congregation dedicated to serving the poorest of the poor. She received the Nobel Peace Prize in 1979 and was canonized in 2016. Her work spread to over 130 countries, establishing hospices and homes for people with various needs.",
+  "keyQuotes": [
+    "Not all of us can do great things. But we can do small things with great love.",
+    "If you judge people, you have no time to love them.",
+    "Give, but give until it hurts."
+  ],
+  "writings": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "gregory-ii",
+  "name": "St. Gregory II",
+  "birthYear": 669,
+  "deathYear": 731,
+  "feastDay": "February 11",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06781a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Pope_Gregory_II.jpg/330px-Pope_Gregory_II.jpg",
+  "summary": "Gregory II was Pope from 715 to 731. He is known for his opposition to the iconoclastic policies of the Byzantine Emperor Leo III, which led to tensions between Rome and Constantinople. He supported the missionary work of Boniface in Germany and worked to strengthen the Church in Italy. He is venerated as a saint.",
+  "keyQuotes": []
+}

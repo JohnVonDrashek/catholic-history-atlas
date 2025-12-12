@@ -1,0 +1,27 @@
+{
+  "id": "margaret-mary-alacoque",
+  "name": "St. Margaret Mary Alacoque",
+  "birthYear": 1647,
+  "deathYear": 1690,
+  "feastDay": "October 16",
+  "primaryTradition": "Latin",
+  "roles": [
+    "religious",
+    "mystic"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paray-le-monial",
+      "description": "Visitation nun who received visions of the Sacred Heart"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Margaret_Mary_Alacoque",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09653a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Marguerite-Marie_Alacoque.jpg/330px-Marguerite-Marie_Alacoque.jpg",
+  "summary": "Margaret Mary Alacoque was a French Visitation nun who received visions of Jesus Christ revealing his Sacred Heart between 1673 and 1675. These apparitions led to the establishment of the devotion to the Sacred Heart of Jesus, including the First Friday devotions and the Feast of the Sacred Heart. Initially met with skepticism, her visions were eventually recognized by the Church, and the devotion became one of the most popular in Catholicism.",
+  "keyQuotes": [
+    "Behold this Heart which has loved men so much, and yet men do not want to love Me in return."
+  ]
+}

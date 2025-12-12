@@ -1,0 +1,34 @@
+{
+  "id": "karl-rahner",
+  "name": "Karl Rahner",
+  "birthYear": 1904,
+  "deathYear": 1984,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "theologian"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Jesuit priest and influential theologian, peritus at Vatican II"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Karl_Rahner",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12633a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Karl_Rahner_by_Letizia_Mancino_Cremer.jpg/330px-Karl_Rahner_by_Letizia_Mancino_Cremer.jpg",
+  "summary": "Karl Rahner was a German Jesuit priest and theologian who is considered one of the most influential Catholic theologians of the 20th century. He served as a peritus (theological expert) at the Second Vatican Council and developed a theological method that sought to reinterpret traditional Catholic doctrine in light of modern philosophy and experience.",
+  "keyQuotes": [
+    "The Christian of the future will be a mystic or he will not exist at all.",
+    "Grace is everywhere, even in the deepest darkness of human existence."
+  ],
+  "writings": [
+    {
+      "title": "Foundations of Christian Faith",
+      "url": "https://www.cambridge.org/core/books/foundations-of-christian-faith/2D8E6F8A5E4B5F4E4E4E4E4E4E4E4E4E"
+    }
+  ]
+}

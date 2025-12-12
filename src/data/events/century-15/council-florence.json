@@ -1,0 +1,14 @@
+{
+  "id": "council-florence",
+  "name": "Council of Florence",
+  "startYear": 1431,
+  "endYear": 1449,
+  "type": "council",
+  "locationId": "florence",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Florence",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06107a.htm",
+  "summary": "The Council of Florence (also called the Council of Basel-Ferrara-Florence) was convened to address the reunion of the Eastern and Western Churches. The council achieved a temporary reunion with the Byzantine Church through the Decree of Union, though this was later repudiated by the Eastern Church. The council also addressed various reforms and theological issues.",
+  "keyDocuments": [
+    "Decree of Union (Laetentur Caeli)"
+  ]
+}

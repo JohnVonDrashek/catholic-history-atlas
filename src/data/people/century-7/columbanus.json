@@ -1,0 +1,36 @@
+{
+  "id": "columbanus",
+  "name": "St. Columbanus",
+  "birthYear": 543,
+  "deathYear": 615,
+  "feastDay": "November 23",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "missionary",
+    "abbot"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "luxeuil",
+      "description": "Founder of Luxeuil Abbey"
+    },
+    {
+      "placeId": "bobbio",
+      "description": "Founder of Bobbio Abbey"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Columbanus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04136b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/San_Colombano.jpg",
+  "summary": "Columbanus was an Irish missionary who founded several monasteries in continental Europe, including Luxeuil in France and Bobbio in Italy. He introduced the Irish penitential system to the continent and wrote a monastic rule. His missionary work helped spread Irish monasticism throughout Europe and influenced the development of Western monasticism.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Rule of St. Columbanus",
+      "url": "https://www.ccel.org/ccel/columbanus/rule.html"
+    }
+  ]
+}

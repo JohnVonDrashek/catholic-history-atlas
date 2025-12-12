@@ -1,0 +1,14 @@
+{
+  "id": "thirty-years-war",
+  "name": "Thirty Years' War",
+  "startYear": 1618,
+  "endYear": 1648,
+  "type": "other",
+  "locationId": "prague",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14648a.htm",
+  "summary": "The Thirty Years' War was a devastating conflict that began as a religious war between Catholics and Protestants in the Holy Roman Empire. It eventually involved most of the major European powers and resulted in massive destruction and loss of life. The war ended with the Peace of Westphalia, which established the principle of cuius regio, eius religio (whose realm, his religion) and significantly altered the religious and political landscape of Europe.",
+  "keyDocuments": [
+    "Peace of Westphalia (1648)"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "jansenism-controversy",
+  "name": "Jansenism Controversy",
+  "startYear": 1700,
+  "endYear": 1799,
+  "type": "other",
+  "locationId": "lyons",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jansenism",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08285a.htm",
+  "summary": "Jansenism, a theological movement emphasizing predestination and strict moral rigor, continued to be a source of controversy in the 18th century. The papal bull Unigenitus (1713) by Clement XI condemned 101 propositions from the Jansenist work 'Reflections on the New Testament.' Despite papal condemnation, Jansenism retained influence in France and the Netherlands, contributing to tensions between the French Church and Rome.",
+  "keyDocuments": [
+    "Unigenitus (Clement XI, 1713)"
+  ]
+}

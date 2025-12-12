@@ -1,0 +1,24 @@
+{
+  "id": "martin-v",
+  "name": "Pope Martin V",
+  "birthYear": 1368,
+  "deathYear": 1431,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Martin_V",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09721b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Papa_Martino_V.jpg/330px-Papa_Martino_V.jpg",
+  "summary": "Pope Martin V was elected at the Council of Constance in 1417, ending the Western Schism. He was the first pope in nearly 40 years to be universally recognized. His papacy focused on restoring papal authority, rebuilding Rome, and consolidating the Church after the schism. He worked to implement the reforms called for by the Council of Constance.",
+  "keyQuotes": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": "jan-hus",
+  "name": "Jan Hus",
+  "birthYear": 1369,
+  "deathYear": 1415,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "theologian",
+    "reformer",
+    "martyr"
+  ],
+  "orthodoxyStatus": "schismatic",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "prague",
+      "description": "Preacher and rector in Prague"
+    },
+    {
+      "placeId": "constance",
+      "description": "Martyred at Council of Constance"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jan_Hus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07584b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Stimmer_Jan_Hus.jpg/330px-Stimmer_Jan_Hus.jpg",
+  "summary": "Jan Hus was a Czech priest, philosopher, and reformer who became a key figure in the Bohemian Reformation. Influenced by John Wycliffe, he criticized Church corruption and advocated for reform. He was condemned as a heretic and burned at the stake at the Council of Constance in 1415. His death sparked the Hussite Wars and made him a national hero in the Czech lands.",
+  "keyQuotes": [
+    "Seek the truth, hear the truth, learn the truth, love the truth, speak the truth, hold the truth and defend the truth until death."
+  ],
+  "writings": [
+    {
+      "title": "On the Church",
+      "url": "https://www.ccel.org/ccel/hus/church"
+    }
+  ]
+}

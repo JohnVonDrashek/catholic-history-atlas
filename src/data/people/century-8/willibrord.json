@@ -1,0 +1,25 @@
+{
+  "id": "willibrord",
+  "name": "St. Willibrord",
+  "birthYear": 658,
+  "deathYear": 739,
+  "feastDay": "November 7",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "utrecht",
+      "description": "Bishop of Utrecht, missionary to Frisia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Willibrord",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15640a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Georg_Sturm%2C_Willibrordus_predikt_het_Christendom_aan_de_Friezen.jpg",
+  "summary": "Willibrord was an English missionary who is known as the Apostle of the Frisians. He was the first bishop of Utrecht and worked to convert the Frisians to Christianity. He founded several churches and monasteries and is considered one of the most important missionaries of the early Middle Ages.",
+  "keyQuotes": []
+}

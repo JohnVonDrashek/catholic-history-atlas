@@ -1,0 +1,35 @@
+{
+  "id": "faustina-kowalska",
+  "name": "St. Faustina Kowalska",
+  "birthYear": 1905,
+  "deathYear": 1938,
+  "feastDay": "October 5",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "mystic",
+    "visionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "prague",
+      "description": "Member of the Sisters of Our Lady of Mercy"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Faustina_Kowalska",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14422b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Maria_Faustyna_Kowalska.jpg/330px-Maria_Faustyna_Kowalska.jpg",
+  "summary": "Faustina Kowalska was a Polish Roman Catholic nun and mystic who is venerated as a saint in the Catholic Church. She is known for her devotion to the Divine Mercy and for receiving revelations from Jesus Christ that she recorded in her diary. The Divine Mercy devotion and the image of Divine Mercy originated from her visions.",
+  "keyQuotes": [
+    "Jesus, I trust in You.",
+    "I feel certain that my mission will not come to an end upon my death, but will begin."
+  ],
+  "writings": [
+    {
+      "title": "Diary: Divine Mercy in My Soul",
+      "url": "https://www.thedivinemercy.org/message/diary/foreword"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "quadragesimo-anno",
+  "name": "Quadragesimo Anno",
+  "startYear": 1931,
+  "endYear": 1931,
+  "type": "reform",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Quadragesimo_anno",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12589a.htm",
+  "summary": "Quadragesimo Anno was an encyclical issued by Pope Pius XI in 1931, on the 40th anniversary of Pope Leo XIII's Rerum Novarum. It addressed social justice, the distribution of wealth, and the rights and duties of capital and labor. The encyclical introduced the principle of subsidiarity and called for reconstruction of the social order based on Christian principles.",
+  "keyDocuments": [
+    "Quadragesimo Anno"
+  ]
+}

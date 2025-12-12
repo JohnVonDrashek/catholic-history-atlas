@@ -1,0 +1,12 @@
+{
+  "id": "coronation-charlemagne",
+  "name": "Coronation of Charlemagne",
+  "startYear": 800,
+  "endYear": 800,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Coronation_of_Charlemagne",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03610c.htm",
+  "summary": "On Christmas Day, 800 AD, Pope Leo III crowned Charlemagne as Holy Roman Emperor in St. Peter's Basilica in Rome. This event marked the revival of the Western Roman Empire and established the precedent of papal coronation of emperors. It also strengthened the relationship between the papacy and the Frankish kingdom, creating a new political and religious order in Western Europe.",
+  "keyDocuments": []
+}

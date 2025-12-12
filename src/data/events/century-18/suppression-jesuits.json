@@ -1,0 +1,14 @@
+{
+  "id": "suppression-jesuits",
+  "name": "Suppression of the Society of Jesus",
+  "startYear": 1773,
+  "endYear": 1773,
+  "type": "persecution",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Suppression_of_the_Society_of_Jesús",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14096a.htm",
+  "summary": "Pope Clement XIV issued the brief Dominus ac Redemptor, suppressing the Society of Jesus throughout the Catholic world. This was the result of political pressure from Catholic monarchs, particularly in France, Spain, and Portugal, who saw the Jesuits as a threat to their authority. The suppression lasted until 1814, when Pope Pius VII restored the order.",
+  "keyDocuments": [
+    "Dominus ac Redemptor (1773)"
+  ]
+}

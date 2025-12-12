@@ -1,0 +1,24 @@
+{
+  "id": "paschal-i",
+  "name": "St. Paschal I",
+  "birthYear": null,
+  "deathYear": 824,
+  "feastDay": "February 11",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Paschal_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11515a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Pope_Paschal_I.jpg/330px-Pope_Paschal_I.jpg",
+  "summary": "Paschal I was Pope from 817 to 824. He is known for his extensive building and restoration of churches in Rome, including Santa Prassede and Santa Cecilia. He worked to maintain good relations with the Carolingian Empire and supported the missionary work of the Church. He is venerated as a saint.",
+  "keyQuotes": []
+}

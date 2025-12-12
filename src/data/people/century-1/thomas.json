@@ -1,0 +1,27 @@
+{
+  "id": "thomas",
+  "name": "St. Thomas",
+  "birthYear": null,
+  "deathYear": 72,
+  "feastDay": "July 3",
+  "primaryTradition": "Greek",
+  "roles": [
+    "apostle",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "india",
+      "description": "Martyred in India"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_the_Apostle",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14698a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Rubens_apostel_thomas.jpg",
+  "summary": "Thomas, also known as Didymus (the Twin), was one of the Twelve Apostles. He is best known for doubting the Resurrection until he saw and touched the wounds of the risen Christ, earning him the nickname 'Doubting Thomas.' According to tradition, he preached the Gospel in India, where he was martyred by being speared to death. The ancient Christian communities of India trace their origins to his mission.",
+  "keyQuotes": [
+    "My Lord and my God!"
+  ]
+}

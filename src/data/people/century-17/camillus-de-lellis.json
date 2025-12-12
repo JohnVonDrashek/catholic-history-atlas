@@ -1,0 +1,27 @@
+{
+  "id": "camillus-de-lellis",
+  "name": "St. Camillus de Lellis",
+  "birthYear": 1550,
+  "deathYear": 1614,
+  "feastDay": "July 14",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Founded the Ministers of the Sick (Camillians) in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Camillus_de_Lellis",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03217b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Lellis2.jpg/330px-Lellis2.jpg",
+  "summary": "Camillus de Lellis was an Italian priest who founded the Ministers of the Sick (Camillians), a religious order dedicated to caring for the sick. After a life as a soldier and gambler, he converted and dedicated himself to serving the sick and dying. He established hospitals and organized care for plague victims. He is the patron saint of the sick, hospitals, and nurses.",
+  "keyQuotes": [
+    "Think well. Speak well. Do well. These three things, through the mercy of God, will make a man go to Heaven."
+  ]
+}

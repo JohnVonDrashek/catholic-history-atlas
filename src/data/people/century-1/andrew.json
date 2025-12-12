@@ -1,0 +1,27 @@
+{
+  "id": "andrew",
+  "name": "St. Andrew",
+  "birthYear": null,
+  "deathYear": 60,
+  "feastDay": "November 30",
+  "primaryTradition": "Greek",
+  "roles": [
+    "apostle",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "patras",
+      "description": "Martyred in Patras"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Andrew_the_Apostle",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01471a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Rubens_apostel_andreas_grt.jpg",
+  "summary": "Andrew was one of the Twelve Apostles and the brother of Simon Peter. He was the first disciple called by Jesus and is known for bringing his brother Peter to Christ. According to tradition, he was martyred by crucifixion on an X-shaped cross (St. Andrew's Cross) in Patras, Greece. He is the patron saint of Scotland, Russia, and Greece.",
+  "keyQuotes": [
+    "We have found the Messiah."
+  ]
+}

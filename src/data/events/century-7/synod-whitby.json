@@ -1,0 +1,15 @@
+{
+  "id": "synod-whitby",
+  "name": "Synod of Whitby",
+  "startYear": 664,
+  "endYear": 664,
+  "type": "council",
+  "locationId": "whitby",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Synod_of_Whitby",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15625a.htm",
+  "summary": "The Synod of Whitby was a council held in 664 AD at the monastery of Whitby, presided over by Abbess Hilda. The synod decided to adopt Roman practices over Celtic ones, particularly regarding the calculation of the date of Easter and the tonsure. This decision helped unify the English Church and align it more closely with Rome and the rest of Western Christendom.",
+  "keyDocuments": [
+    "Decision on Easter calculation",
+    "Adoption of Roman tonsure"
+  ]
+}

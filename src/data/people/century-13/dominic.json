@@ -1,0 +1,25 @@
+{
+  "id": "dominic",
+  "name": "St. Dominic",
+  "birthYear": 1170,
+  "deathYear": 1221,
+  "feastDay": "August 8",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "caleruega",
+      "description": "Founder of the Dominican Order"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Dominic",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05106a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/SaintDominic.jpg",
+  "summary": "Dominic was a Castilian priest and founder of the Dominican Order. He is known for his preaching against the Albigensian heresy and for establishing an order dedicated to preaching and study. The Dominicans became one of the most influential religious orders in the Middle Ages, producing many theologians and scholars.",
+  "keyQuotes": []
+}

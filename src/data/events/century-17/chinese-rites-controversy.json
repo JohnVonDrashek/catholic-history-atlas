@@ -1,0 +1,14 @@
+{
+  "id": "chinese-rites-controversy",
+  "name": "Chinese Rites Controversy",
+  "startYear": 1645,
+  "endYear": 1742,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Chinese_Rites_controversy",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13055a.htm",
+  "summary": "The Chinese Rites Controversy was a dispute within the Catholic Church over whether Chinese customs and practices, particularly ancestor veneration and Confucian ceremonies, were compatible with Christianity. The controversy involved Jesuit missionaries who argued for accommodation of Chinese culture, and Dominicans and Franciscans who opposed it. The dispute lasted for nearly a century and significantly impacted Catholic missions in China.",
+  "keyDocuments": [
+    "Ex illa die (Clement XI, 1715)"
+  ]
+}

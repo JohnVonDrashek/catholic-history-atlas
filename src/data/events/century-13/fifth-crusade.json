@@ -1,0 +1,12 @@
+{
+  "id": "fifth-crusade",
+  "name": "Fifth Crusade",
+  "startYear": 1217,
+  "endYear": 1221,
+  "type": "other",
+  "locationId": "egypt",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Fifth_Crusade",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04543c.htm",
+  "summary": "The Fifth Crusade was launched in 1217 with the goal of conquering Egypt as a stepping stone to recapturing Jerusalem. The crusaders captured the port city of Damietta but were eventually forced to retreat after a failed attack on Cairo. The crusade ended in failure, though it did result in a temporary truce with the Ayyubid sultan.",
+  "keyDocuments": []
+}

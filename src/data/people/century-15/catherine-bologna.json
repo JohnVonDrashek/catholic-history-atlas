@@ -1,0 +1,32 @@
+{
+  "id": "catherine-bologna",
+  "name": "St. Catherine of Bologna",
+  "birthYear": 1413,
+  "deathYear": 1463,
+  "feastDay": "March 9",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "mystic",
+    "artist"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "bologna",
+      "description": "Founded monastery in Bologna"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_of_Bologna",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03448a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Caterina-bologna.jpg/330px-Caterina-bologna.jpg",
+  "summary": "Catherine of Bologna was a Poor Clare nun, mystic, and artist. She was known for her visions, her writings on the spiritual life, and her artistic talents. She helped found a monastery in Bologna and served as its abbess. Her body was found incorrupt after death, and she is venerated as a saint and patron of artists.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "The Seven Spiritual Weapons",
+      "url": "https://www.ccel.org/ccel/catherine_bologna/weapons"
+    }
+  ]
+}

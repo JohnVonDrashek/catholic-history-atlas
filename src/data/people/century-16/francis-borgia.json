@@ -1,0 +1,26 @@
+{
+  "id": "francis-borgia",
+  "name": "St. Francis Borgia",
+  "birthYear": 1510,
+  "deathYear": 1572,
+  "feastDay": "October 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "superior general"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Third Superior General of the Jesuits"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_Borgia",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02699a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/San_Francisco_de_Borja.jpg/330px-San_Francisco_de_Borja.jpg",
+  "summary": "Francis Borgia was a Spanish Jesuit priest who became the third Superior General of the Society of Jesus. He was a member of the powerful Borgia family and had been Duke of Gandía before entering religious life. As Superior General, he expanded the Jesuits' educational and missionary work. He was known for his humility, despite his noble background, and for his administrative skills.",
+  "keyQuotes": [],
+  "writings": []
+}

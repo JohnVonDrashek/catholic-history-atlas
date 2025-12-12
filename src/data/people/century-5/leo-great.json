@@ -1,0 +1,41 @@
+{
+  "id": "leo-great",
+  "name": "St. Leo the Great",
+  "birthYear": 400,
+  "deathYear": 461,
+  "feastDay": "November 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09154b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Herrera_mozo_San_Le%C3%B3n_magno_Lienzo._%C3%93valo._164_x_105_cm._Museo_del_Prado.png/330px-Herrera_mozo_San_Le%C3%B3n_magno_Lienzo._%C3%93valo._164_x_105_cm._Museo_del_Prado.png",
+  "summary": "Leo the Great was Pope from 440 to 461 and is one of the most important popes in Church history. He is best known for his 'Tome of Leo,' which was instrumental in the Council of Chalcedon (451) in defining the two natures of Christ. He also famously met Attila the Hun and persuaded him not to sack Rome.",
+  "keyQuotes": [
+    "Christian, recognize your dignity."
+  ],
+  "writings": [
+    {
+      "title": "The Tome of Leo",
+      "url": "https://www.ccel.org/ccel/schaff/npnf212.iii.iv.html"
+    },
+    {
+      "title": "Letters",
+      "url": "https://www.ccel.org/ccel/schaff/npnf212.iii.ii.html"
+    },
+    {
+      "title": "Sermons",
+      "url": "https://www.ccel.org/ccel/schaff/npnf212.iii.iii.html"
+    }
+  ]
+}

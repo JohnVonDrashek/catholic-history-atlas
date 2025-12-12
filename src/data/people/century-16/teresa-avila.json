@@ -1,0 +1,44 @@
+{
+  "id": "teresa-avila",
+  "name": "St. Teresa of Avila",
+  "birthYear": 1515,
+  "deathYear": 1582,
+  "feastDay": "October 15",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "mystic",
+    "founder",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "avila",
+      "description": "Reformed the Carmelite Order in Avila"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Teresa_of_%C3%81vila",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14515b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Santa_Teresa_de_Jes%C3%BAs_%28Museo_del_Prado%29.jpg/330px-Santa_Teresa_de_Jes%C3%BAs_%28Museo_del_Prado%29.jpg",
+  "summary": "Teresa of Avila was a Spanish Carmelite nun, mystic, and reformer. She reformed the Carmelite Order, establishing the Discalced Carmelites with St. John of the Cross. She is one of only four women to be named a Doctor of the Church. Her mystical writings, including 'The Interior Castle' and 'The Way of Perfection,' are among the greatest works of Christian spirituality. She experienced profound mystical visions and ecstasies throughout her life.",
+  "keyQuotes": [
+    "Let nothing disturb you, let nothing frighten you. All things pass away: God never changes.",
+    "God alone suffices."
+  ],
+  "writings": [
+    {
+      "title": "The Interior Castle",
+      "url": "https://www.ccel.org/ccel/teresa/castle.html"
+    },
+    {
+      "title": "The Way of Perfection",
+      "url": "https://www.ccel.org/ccel/teresa/way.html"
+    },
+    {
+      "title": "The Life of Teresa of Jesus",
+      "url": "https://www.ccel.org/ccel/teresa/life.html"
+    }
+  ]
+}

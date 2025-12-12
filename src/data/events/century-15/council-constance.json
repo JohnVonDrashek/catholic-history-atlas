@@ -1,0 +1,15 @@
+{
+  "id": "council-constance",
+  "name": "Council of Constance",
+  "startYear": 1414,
+  "endYear": 1418,
+  "type": "council",
+  "locationId": "constance",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Constance",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04288a.htm",
+  "summary": "The Council of Constance was convened to resolve the Western Schism, which had divided the Church with three competing popes. The council successfully ended the schism by deposing all three popes and electing Martin V as the single legitimate pope. The council also condemned the teachings of John Wycliffe and Jan Hus, leading to Hus's execution. It declared that ecumenical councils have authority over the pope.",
+  "keyDocuments": [
+    "Haec Sancta",
+    "Frequens"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "pius-ix",
+  "name": "Pope Pius IX",
+  "birthYear": 1792,
+  "deathYear": 1878,
+  "feastDay": "February 7",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope (1846-1878)"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Pius_IX",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12134b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Pope_Pius_IX.jpg",
+  "summary": "Pope Pius IX had the longest pontificate in papal history (1846-1878), spanning 31 years. He defined the dogma of the Immaculate Conception, convoked the First Vatican Council which defined papal infallibility, and witnessed the end of the Papal States with the capture of Rome in 1870. He was a staunch defender of papal authority and traditional Catholic teaching against modernism and liberalism.",
+  "keyQuotes": [
+    "I am tradition."
+  ],
+  "writings": [
+    {
+      "title": "Ineffabilis Deus",
+      "url": "https://www.papalencyclicals.net/pius09/p9ineff.htm"
+    },
+    {
+      "title": "Quanta Cura",
+      "url": "https://www.papalencyclicals.net/pius09/p9quanta.htm"
+    },
+    {
+      "title": "Syllabus of Errors",
+      "url": "https://www.papalencyclicals.net/pius09/p9syll.htm"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "civil-constitution-clergy",
+  "name": "Civil Constitution of the Clergy",
+  "startYear": 1790,
+  "endYear": 1790,
+  "type": "schism",
+  "locationId": "lyons",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Civil_Constitution_of_the_Clergy",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04039a.htm",
+  "summary": "The National Assembly of France passed the Civil Constitution of the Clergy, which made the Catholic Church in France a department of the state. Bishops and priests were to be elected by the people and required to take an oath of loyalty to the state. Pope Pius VI condemned it, leading to a schism between the 'constitutional' clergy who took the oath and the 'refractory' clergy who refused.",
+  "keyDocuments": [
+    "Civil Constitution of the Clergy",
+    "Charitas (Pius VI, 1791)"
+  ]
+}

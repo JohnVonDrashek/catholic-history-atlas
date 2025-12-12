@@ -1,0 +1,14 @@
+{
+  "id": "gregorian-calendar",
+  "name": "Introduction of the Gregorian Calendar",
+  "startYear": 1582,
+  "endYear": 1582,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Gregorian_calendar",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03147a.htm",
+  "summary": "Pope Gregory XIII introduced the Gregorian calendar in 1582 to correct errors in the Julian calendar. The reform adjusted the calculation of leap years and removed ten days from October 1582. The new calendar was gradually adopted by Catholic countries and later by most of the world. It remains the civil calendar used internationally today.",
+  "keyDocuments": [
+    "Inter gravissimas (Papal Bull)"
+  ]
+}

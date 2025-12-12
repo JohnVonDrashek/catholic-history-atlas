@@ -1,0 +1,29 @@
+{
+  "id": "philip-neri",
+  "name": "St. Philip Neri",
+  "birthYear": 1515,
+  "deathYear": 1595,
+  "feastDay": "May 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Founded the Oratory in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Philip_Neri",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12019b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/FNeri.gif/330px-FNeri.gif",
+  "summary": "Philip Neri was an Italian priest known as the 'Apostle of Rome' and the 'Second Apostle of Rome' (after St. Peter). He founded the Congregation of the Oratory in 1575, a community of secular priests dedicated to prayer, preaching, and service. Known for his joy, humor, and love of the poor, he was a key figure in the Counter-Reformation. He is the patron saint of joy and is remembered for his ecstatic experiences of the Holy Spirit.",
+  "keyQuotes": [
+    "A joyful heart is more easily made perfect than a downcast one.",
+    "Cheerfulness strengthens the heart and makes us persevere in a good life."
+  ],
+  "writings": []
+}

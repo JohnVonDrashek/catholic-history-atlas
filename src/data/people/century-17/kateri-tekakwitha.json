@@ -1,0 +1,27 @@
+{
+  "id": "kateri-tekakwitha",
+  "name": "St. Kateri Tekakwitha",
+  "birthYear": 1656,
+  "deathYear": 1680,
+  "feastDay": "July 14",
+  "primaryTradition": "Latin",
+  "roles": [
+    "lay person",
+    "mystic"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "new-france",
+      "description": "Mohawk-Algonquin laywoman, first Native American saint"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kateri_Tekakwitha",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14471a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/CatherinaeTekakwithaVirginis1690.jpg/330px-CatherinaeTekakwithaVirginis1690.jpg",
+  "summary": "Kateri Tekakwitha was a Mohawk-Algonquin woman who converted to Catholicism and became known for her intense devotion and asceticism. Orphaned and disfigured by smallpox, she was baptized at age 20 and moved to a Christian Mohawk community. She lived a life of prayer, penance, and care for the sick and elderly. She is the first Native American to be canonized and is the patron saint of ecology, the environment, and Native Americans.",
+  "keyQuotes": [
+    "Who will teach me what is most pleasing to God, that I may do it?"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "francis-de-sales",
+  "name": "St. Francis de Sales",
+  "birthYear": 1567,
+  "deathYear": 1622,
+  "feastDay": "January 24",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "Doctor of the Church",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "geneva",
+      "description": "Bishop of Geneva"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_de_Sales",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06220a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ch%C3%A2teau_de_Bussy-Rabutin_-_Saint_Fran%C3%A7ois_de_Sales%2C_%C3%A9v%C3%AAque_de_Gen%C3%A8ve_%28bgw19_0375%29_%28cropped%29.jpg/330px-Ch%C3%A2teau_de_Bussy-Rabutin_-_Saint_Fran%C3%A7ois_de_Sales%2C_%C3%A9v%C3%AAque_de_Gen%C3%A8ve_%28bgw19_0375%29_%28cropped%29.jpg",
+  "summary": "Francis de Sales was Bishop of Geneva and a Doctor of the Church. He is best known for his writings on spiritual direction and the spiritual life, particularly 'Introduction to the Devout Life' and 'Treatise on the Love of God.' He co-founded the Visitation Order with St. Jane Frances de Chantal. He emphasized that holiness is possible for everyone, not just those in religious life, and his gentle, practical approach to spirituality influenced many.",
+  "keyQuotes": [
+    "Be who you are and be that well.",
+    "Nothing is so strong as gentleness, nothing so gentle as real strength."
+  ],
+  "writings": [
+    {
+      "title": "Introduction to the Devout Life",
+      "url": "https://www.ccel.org/ccel/desales/devout_life.html"
+    },
+    {
+      "title": "Treatise on the Love of God",
+      "url": "https://www.ccel.org/ccel/desales/love_god.html"
+    }
+  ]
+}

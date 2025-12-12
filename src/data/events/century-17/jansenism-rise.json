@@ -1,0 +1,15 @@
+{
+  "id": "jansenism-rise",
+  "name": "Rise of Jansenism",
+  "startYear": 1640,
+  "endYear": 1653,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jansenism",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08285a.htm",
+  "summary": "Jansenism was a theological movement within Catholicism, particularly in France, that emphasized original sin, human depravity, the necessity of divine grace, and predestination. Named after Cornelius Jansen, Bishop of Ypres, it was condemned by Pope Innocent X in 1653. The controversy continued for decades and involved figures such as Blaise Pascal and the Port-Royal community.",
+  "keyDocuments": [
+    "Augustinus (Cornelius Jansen, 1640)",
+    "Cum occasione (Innocent X, 1653)"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "elizabeth-ann-seton",
+  "name": "St. Elizabeth Ann Seton",
+  "birthYear": 1774,
+  "deathYear": 1821,
+  "feastDay": "January 4",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "founder",
+    "educator"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "london",
+      "description": "Founder of the Sisters of Charity"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Elizabeth_Ann_Seton",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13726a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/83/Elizabeth_Ann_Seton_portrait_by_Amabilia_Filicchi.jpg",
+  "summary": "Elizabeth Ann Seton was the first native-born citizen of the United States to be canonized as a saint. A convert to Catholicism, she founded the Sisters of Charity of St. Joseph, the first religious community for women in the United States, and established the first Catholic school and orphanage in the country. She is considered the founder of the Catholic parochial school system in America.",
+  "keyQuotes": []
+}

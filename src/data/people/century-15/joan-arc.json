@@ -1,0 +1,36 @@
+{
+  "id": "joan-arc",
+  "name": "St. Joan of Arc",
+  "birthYear": 1412,
+  "deathYear": 1431,
+  "feastDay": "May 30",
+  "primaryTradition": "Latin",
+  "roles": [
+    "mystic",
+    "martyr",
+    "patron"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "domremy",
+      "description": "Born in Domrémy"
+    },
+    {
+      "placeId": "orleans",
+      "description": "Led French forces at Orléans"
+    },
+    {
+      "placeId": "rouen",
+      "description": "Martyred in Rouen"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Joan_of_Arc",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08409c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Joan_of_Arc_miniature_graded.jpg/330px-Joan_of_Arc_miniature_graded.jpg",
+  "summary": "Joan of Arc, also known as the Maid of Orléans, was a French peasant girl who claimed to receive visions from God instructing her to help drive the English from France during the Hundred Years' War. She successfully led French forces to victory at Orléans and played a key role in the coronation of Charles VII. She was captured by the English, tried for heresy, and burned at the stake in 1431. She was later declared innocent and canonized as a saint.",
+  "keyQuotes": [
+    "I am not afraid... I was born to do this."
+  ]
+}

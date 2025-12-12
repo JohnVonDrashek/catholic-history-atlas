@@ -1,0 +1,16 @@
+{
+  "id": "council-clermont",
+  "name": "Council of Clermont",
+  "startYear": 1095,
+  "endYear": 1095,
+  "type": "council",
+  "locationId": "clermont",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Clermont",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04050a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Passages_d%27outremer_Fr5594%2C_fol._19r%2C_Concile_de_Clermont.jpg",
+  "summary": "The Council of Clermont was a synod convened by Pope Urban II in 1095. At this council, Urban II delivered his famous speech calling for the First Crusade to recapture the Holy Land from Muslim control. The speech inspired thousands to take up the cross and marked the beginning of the Crusades. The council also addressed various Church reforms and disciplinary matters.",
+  "keyDocuments": [
+    "Call for the First Crusade",
+    "Truce of God"
+  ]
+}

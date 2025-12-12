@@ -1,0 +1,27 @@
+{
+  "id": "vincent-lerins",
+  "name": "St. Vincent of Lérins",
+  "birthYear": null,
+  "deathYear": 445,
+  "feastDay": "May 24",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lerins",
+      "description": "Monk at Lérins Abbey"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Vincent_of_Lérins",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15434a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Icon_of_St_Vincent_of_Lerins_by_Bojan_Teodosijevi%C4%87.jpg/330px-Icon_of_St_Vincent_of_Lerins_by_Bojan_Teodosijevi%C4%87.jpg",
+  "summary": "Vincent of Lérins was a monk and theologian known for his 'Commonitorium,' in which he formulated the famous principle: 'What has been believed everywhere, always, and by all' (quod ubique, quod semper, quod ab omnibus). This became a key criterion for orthodoxy.",
+  "keyQuotes": [
+    "We hold that which has been believed everywhere, always, and by all."
+  ]
+}

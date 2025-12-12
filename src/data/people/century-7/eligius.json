@@ -1,0 +1,24 @@
+{
+  "id": "eligius",
+  "name": "St. Eligius",
+  "birthYear": 588,
+  "deathYear": 660,
+  "feastDay": "December 1",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "noyon",
+      "description": "Bishop of Noyon"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Eligius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05381a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Petrus_Christus_003.jpg",
+  "summary": "Eligius, also known as Eloi, was a goldsmith who became a bishop. He was master of the mint under King Clotaire II and Dagobert I, and used his wealth to ransom slaves and build churches. He became bishop of Noyon and Tournai and was known for his missionary work among the pagans of Flanders. He is the patron saint of goldsmiths, metalworkers, and coin collectors.",
+  "keyQuotes": []
+}

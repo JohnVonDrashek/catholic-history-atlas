@@ -1,0 +1,36 @@
+{
+  "id": "edith-stein",
+  "name": "St. Teresa Benedicta of the Cross (Edith Stein)",
+  "birthYear": 1891,
+  "deathYear": 1942,
+  "feastDay": "August 9",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr",
+    "philosopher",
+    "nun",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "cologne",
+      "description": "Converted and entered Carmel"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Edith_Stein",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14422a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Edith_Stein_%28ca._1938-1939%29.jpg/330px-Edith_Stein_%28ca._1938-1939%29.jpg",
+  "summary": "Edith Stein was a German Jewish philosopher who converted to Catholicism and became a Discalced Carmelite nun, taking the name Teresa Benedicta of the Cross. She was murdered in Auschwitz concentration camp during the Holocaust. She is a co-patron saint of Europe and was declared a Doctor of the Church in 1999.",
+  "keyQuotes": [
+    "Do not accept anything as the truth if it lacks love. And do not accept anything as love which lacks truth.",
+    "The world is in flames. Are you impelled to put them out? Look at the Cross. From the open heart gushes the blood of the Saviour. This extinguishes the flames of hell."
+  ],
+  "writings": [
+    {
+      "title": "The Science of the Cross",
+      "url": "https://www.catholicculture.org/culture/library/view.cfm?recnum=6158"
+    }
+  ]
+}

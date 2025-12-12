@@ -1,0 +1,16 @@
+{
+  "id": "ephesus",
+  "name": "Council of Ephesus",
+  "startYear": 431,
+  "endYear": 431,
+  "type": "council",
+  "locationId": "ephesus",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Ephesus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05491a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Concile-Ephese-Fourviere-detail.jpg/330px-Concile-Ephese-Fourviere-detail.jpg",
+  "summary": "The Council of Ephesus was the third ecumenical council, convened in 431 AD by Emperor Theodosius II. It condemned Nestorianism and affirmed that Mary is 'Theotokos' (God-bearer), confirming the unity of Christ's person. The council was presided over by Cyril of Alexandria and played a crucial role in defining orthodox Christology.",
+  "keyDocuments": [
+    "Condemnation of Nestorianism",
+    "Definition of Theotokos"
+  ]
+}

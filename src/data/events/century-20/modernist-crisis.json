@@ -1,0 +1,15 @@
+{
+  "id": "modernist-crisis",
+  "name": "Modernist Crisis",
+  "startYear": 1907,
+  "endYear": 1910,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Modernism_in_the_Catholic_Church",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10415a.htm",
+  "summary": "The Modernist Crisis was a period of conflict within the Catholic Church in the early 20th century. Pope Pius X issued the encyclical Pascendi dominici gregis in 1907, condemning Modernism as 'the synthesis of all heresies.' The crisis led to the implementation of anti-Modernist oaths and restrictions on biblical scholarship and theological education.",
+  "keyDocuments": [
+    "Pascendi dominici gregis",
+    "Lamentabili sane exitu"
+  ]
+}

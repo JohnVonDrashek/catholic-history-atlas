@@ -1,0 +1,27 @@
+{
+  "id": "joseph-calasanz",
+  "name": "St. Joseph Calasanz",
+  "birthYear": 1557,
+  "deathYear": 1648,
+  "feastDay": "August 25",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Founded the Piarists (Order of Poor Clerics Regular of the Mother of God of the Pious Schools) in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Joseph_Calasanz",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03179a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/San_Jos%C3%A9_de_Calasanz_%28Museo_del_Prado%29.jpg/330px-San_Jos%C3%A9_de_Calasanz_%28Museo_del_Prado%29.jpg",
+  "summary": "Joseph Calasanz was a Spanish priest who founded the Piarists, the first religious order dedicated to providing free education to poor children. He established the first free public school in Europe in Rome in 1597. He believed that education was essential for the poor and worked tirelessly to provide quality education regardless of social class. He is the patron saint of Catholic schools.",
+  "keyQuotes": [
+    "All who undertake to teach must be endowed with deep love, the greatest patience, and, most of all, profound humility."
+  ]
+}

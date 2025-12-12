@@ -1,0 +1,31 @@
+{
+  "id": "theophilus-antioch",
+  "name": "St. Theophilus of Antioch",
+  "birthYear": null,
+  "deathYear": 183,
+  "feastDay": "October 13",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "apologist"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "antioch",
+      "description": "Bishop of Antioch"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Theophilus_of_Antioch",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14625a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Theophilus_Antiochenus.png/330px-Theophilus_Antiochenus.png",
+  "summary": "Theophilus was a bishop of Antioch in the late 2nd century and an important early Christian apologist. He wrote 'To Autolycus,' a three-volume apology that defends Christianity against pagan objections and provides one of the earliest uses of the term 'Trinity' in Christian literature.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "To Autolycus",
+      "url": "https://www.ccel.org/ccel/schaff/anf02.iv.iv.html"
+    }
+  ]
+}

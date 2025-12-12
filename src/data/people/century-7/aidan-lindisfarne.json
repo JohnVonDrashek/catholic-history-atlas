@@ -1,0 +1,26 @@
+{
+  "id": "aidan-lindisfarne",
+  "name": "St. Aidan of Lindisfarne",
+  "birthYear": null,
+  "deathYear": 651,
+  "feastDay": "August 31",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "monk",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lindisfarne",
+      "description": "Bishop of Lindisfarne"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Aidan_of_Lindisfarne",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01233a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Saint_Aidan.jpg",
+  "summary": "Aidan was an Irish monk and missionary who became the first bishop of Lindisfarne. He was sent from Iona to evangelize Northumbria and established the monastery at Lindisfarne, which became a center of learning and missionary activity. He is known for his simplicity, charity, and effective missionary work among the Anglo-Saxons.",
+  "keyQuotes": []
+}

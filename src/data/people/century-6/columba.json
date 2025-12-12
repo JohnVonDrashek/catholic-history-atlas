@@ -1,0 +1,26 @@
+{
+  "id": "columba",
+  "name": "St. Columba",
+  "birthYear": 521,
+  "deathYear": 597,
+  "feastDay": "June 9",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "missionary",
+    "abbot"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "iona",
+      "description": "Founder and abbot of Iona"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Columba",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04136a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Columba_at_Bridei%27s_fort.jpg",
+  "summary": "Columba was an Irish abbot and missionary who founded the monastery of Iona in Scotland. He is credited with spreading Christianity throughout Scotland and northern England. He is one of the three patron saints of Ireland along with Patrick and Brigid. His monastery at Iona became a center of learning and missionary activity throughout the British Isles.",
+  "keyQuotes": []
+}

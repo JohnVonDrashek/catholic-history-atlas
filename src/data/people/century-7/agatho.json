@@ -1,0 +1,24 @@
+{
+  "id": "agatho",
+  "name": "St. Agatho",
+  "birthYear": null,
+  "deathYear": 681,
+  "feastDay": "January 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Agatho",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01205a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pope_Agatho.jpg/330px-Pope_Agatho.jpg",
+  "summary": "Agatho was Pope from 678 to 681. He is known for his role in the Third Council of Constantinople (680-681), which condemned Monothelitism and Monophysitism. He sent legates to the council who successfully defended the orthodox position on the two wills of Christ. He is venerated as a saint.",
+  "keyQuotes": []
+}

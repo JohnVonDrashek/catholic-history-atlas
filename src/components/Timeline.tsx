@@ -39,6 +39,8 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
   const [viewCenter, setViewCenter] = useState<number | null>(null); // Center year of the view
   const [showFilters, setShowFilters] = useState(false);
   const svgRef = useRef<SVGSVGElement>(null);
+  const [isEditingZoom, setIsEditingZoom] = useState(false);
+  const [zoomInputValue, setZoomInputValue] = useState('100');
 
   // Initialize filters with all options enabled
   const [filters, setFilters] = useState<TimelineFilters>(() => {
@@ -284,6 +286,48 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     };
   }, [zoomLevel, viewCenter, visibleRange, timelineWidth, padding]);
 
+  // Update zoom input value when zoom level changes
+  useEffect(() => {
+    const zoomPercent = Math.round(Math.pow(2, zoomLevel) * 100);
+    setZoomInputValue(zoomPercent.toString());
+  }, [zoomLevel]);
+
+  const handleZoomInputClick = () => {
+    setIsEditingZoom(true);
+  };
+
+  const handleZoomInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setZoomInputValue(e.target.value);
+  };
+
+  const handleZoomInputBlur = () => {
+    setIsEditingZoom(false);
+    const percent = parseInt(zoomInputValue, 10);
+    if (!isNaN(percent) && percent >= 100 && percent <= 3200) {
+      // Convert percentage to zoom level
+      // zoomLevel = log2(percent / 100)
+      const newZoomLevel = Math.max(0, Math.min(5, Math.round(Math.log2(percent / 100))));
+      setZoomLevel(newZoomLevel);
+      // Update input to match actual zoom level
+      const actualPercent = Math.round(Math.pow(2, newZoomLevel) * 100);
+      setZoomInputValue(actualPercent.toString());
+    } else {
+      // Reset to current zoom level if invalid
+      const zoomPercent = Math.round(Math.pow(2, zoomLevel) * 100);
+      setZoomInputValue(zoomPercent.toString());
+    }
+  };
+
+  const handleZoomInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.currentTarget.blur();
+    } else if (e.key === 'Escape') {
+      const zoomPercent = Math.round(Math.pow(2, zoomLevel) * 100);
+      setZoomInputValue(zoomPercent.toString());
+      setIsEditingZoom(false);
+    }
+  };
+
   const handleZoomIn = () => {
     const newZoom = Math.min(zoomLevel + 1, 5); // Max zoom level
     setZoomLevel(newZoom);
@@ -503,42 +547,42 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
         alignItems: 'center',
         boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
       }}>
-        {/* Pan controls (only visible when zoomed) */}
-        {zoomLevel > 0 && (
-          <>
-            <button
-              onClick={handlePanLeft}
-              style={{
-                padding: '0.5rem 0.75rem',
-                backgroundColor: '#4a9eff',
-                color: '#fff',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                fontSize: '14px',
-              }}
-              title="Pan left (earlier)"
-            >
-              ←
-            </button>
-            <button
-              onClick={handlePanRight}
-              style={{
-                padding: '0.5rem 0.75rem',
-                backgroundColor: '#4a9eff',
-                color: '#fff',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                fontSize: '14px',
-              }}
-              title="Pan right (later)"
-            >
-              →
-            </button>
-            <div style={{ width: '1px', height: '20px', backgroundColor: '#666', margin: '0 0.25rem' }}></div>
-          </>
-        )}
+        {/* Pan controls (always visible, disabled at 100%) */}
+        <button
+          onClick={handlePanLeft}
+          disabled={zoomLevel === 0}
+          style={{
+            padding: '0.5rem 0.75rem',
+            backgroundColor: zoomLevel === 0 ? '#444' : '#4a9eff',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
+            fontSize: '14px',
+            opacity: zoomLevel === 0 ? 0.5 : 1,
+          }}
+          title="Pan left (earlier)"
+        >
+          ←
+        </button>
+        <button
+          onClick={handlePanRight}
+          disabled={zoomLevel === 0}
+          style={{
+            padding: '0.5rem 0.75rem',
+            backgroundColor: zoomLevel === 0 ? '#444' : '#4a9eff',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
+            fontSize: '14px',
+            opacity: zoomLevel === 0 ? 0.5 : 1,
+          }}
+          title="Pan right (later)"
+        >
+          →
+        </button>
+        <div style={{ width: '1px', height: '20px', backgroundColor: '#666', margin: '0 0.25rem' }}></div>
         <button
           onClick={handleZoomOut}
           disabled={zoomLevel === 0}
@@ -555,9 +599,42 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
         >
           −
         </button>
-        <span style={{ color: '#aaa', fontSize: '14px', minWidth: '50px', textAlign: 'center' }}>
-          {zoomLevel === 0 ? 'Full' : `${Math.round(Math.pow(2, zoomLevel) * 100)}%`}
-        </span>
+        {isEditingZoom ? (
+          <input
+            type="number"
+            value={zoomInputValue}
+            onChange={handleZoomInputChange}
+            onBlur={handleZoomInputBlur}
+            onKeyDown={handleZoomInputKeyDown}
+            min={100}
+            max={3200}
+            style={{
+              fontSize: '14px',
+              textAlign: 'center',
+              width: '60px',
+              backgroundColor: '#2a2a2a',
+              color: '#fff',
+              border: '2px solid #4a9eff',
+              borderRadius: '4px',
+              padding: '0.25rem',
+            }}
+            autoFocus
+          />
+        ) : (
+          <span
+            onClick={handleZoomInputClick}
+            style={{
+              color: '#aaa',
+              fontSize: '14px',
+              minWidth: '60px',
+              textAlign: 'center',
+              cursor: 'pointer',
+            }}
+            title="Click to enter a specific zoom level (100-3200%)"
+          >
+            {Math.round(Math.pow(2, zoomLevel) * 100)}%
+          </span>
+        )}
         <button
           onClick={handleZoomIn}
           disabled={zoomLevel >= 5}
@@ -574,24 +651,24 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
         >
           +
         </button>
-        {zoomLevel > 0 && (
-          <button
-            onClick={handleZoomReset}
-            style={{
-              padding: '0.5rem 0.75rem',
-              backgroundColor: '#666',
-              color: '#fff',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              fontSize: '12px',
-              marginLeft: '0.25rem',
-            }}
-            title="Reset zoom"
-          >
-            Reset
-          </button>
-        )}
+        <button
+          onClick={handleZoomReset}
+          disabled={zoomLevel === 0}
+          style={{
+            padding: '0.5rem 0.75rem',
+            backgroundColor: zoomLevel === 0 ? '#444' : '#666',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
+            fontSize: '12px',
+            marginLeft: '0.25rem',
+            opacity: zoomLevel === 0 ? 0.5 : 1,
+          }}
+          title="Reset zoom"
+        >
+          Reset
+        </button>
       </div>
 
       {/* Filter Toggle Button - Top Right */}

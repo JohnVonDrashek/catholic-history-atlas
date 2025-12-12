@@ -1,0 +1,12 @@
+{
+  "id": "dissolution-templars",
+  "name": "Dissolution of the Knights Templar",
+  "startYear": 1312,
+  "endYear": 1312,
+  "type": "other",
+  "locationId": "lyons",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Knights_Templar",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14493a.htm",
+  "summary": "The Knights Templar, a powerful military and financial order, were suppressed by Pope Clement V at the Council of Vienne in 1312. The suppression came after years of persecution by King Philip IV of France, who accused the order of heresy and immorality. The Templars' assets were transferred to the Knights Hospitaller, though much was seized by secular rulers. The last Grand Master, Jacques de Molay, was burned at the stake in 1314.",
+  "keyDocuments": []
+}

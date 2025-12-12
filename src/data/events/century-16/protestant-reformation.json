@@ -1,0 +1,15 @@
+{
+  "id": "protestant-reformation",
+  "name": "Protestant Reformation",
+  "startYear": 1517,
+  "endYear": 1648,
+  "type": "other",
+  "locationId": "wittenberg",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Reformation",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12700b.htm",
+  "summary": "The Protestant Reformation began in 1517 when Martin Luther posted his Ninety-Five Theses, challenging various practices of the Catholic Church. This movement led to the establishment of Protestant churches across Europe and fundamentally changed the religious landscape of Western Christianity. The Reformation prompted the Catholic Counter-Reformation and the Council of Trent.",
+  "keyDocuments": [
+    "Ninety-Five Theses (Martin Luther)",
+    "Augsburg Confession"
+  ]
+}

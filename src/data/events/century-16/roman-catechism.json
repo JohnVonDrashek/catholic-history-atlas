@@ -1,0 +1,14 @@
+{
+  "id": "roman-catechism",
+  "name": "Publication of the Roman Catechism",
+  "startYear": 1566,
+  "endYear": 1566,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Roman_Catechism",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03420a.htm",
+  "summary": "The Roman Catechism, also known as the Catechism of the Council of Trent, was published in 1566 under the direction of Pope St. Pius V. It was written to provide a comprehensive and authoritative explanation of Catholic doctrine in response to the Protestant Reformation. The catechism was intended primarily for parish priests to help them teach the faith accurately to their congregations.",
+  "keyDocuments": [
+    "Catechism of the Council of Trent"
+  ]
+}

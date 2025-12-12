@@ -1,0 +1,41 @@
+{
+  "id": "cyril-alexandria",
+  "name": "St. Cyril of Alexandria",
+  "birthYear": 376,
+  "deathYear": 444,
+  "feastDay": "June 27",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Bishop of Alexandria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Cyril_of_Alexandria",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04592b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Chora-Kirche_2013-03-21zh_%28cropped%29.jpg/330px-Chora-Kirche_2013-03-21zh_%28cropped%29.jpg",
+  "summary": "Cyril of Alexandria was a bishop and theologian who played a central role in the Council of Ephesus (431), where he defended the title 'Theotokos' (God-bearer) for the Virgin Mary and opposed Nestorianism. He is considered a Doctor of the Church and is known for his extensive theological writings.",
+  "keyQuotes": [
+    "I have been accustomed to pay reverence to the holy Fathers, and to follow them in all things."
+  ],
+  "writings": [
+    {
+      "title": "Commentary on the Gospel of John",
+      "url": "https://www.ccel.org/ccel/schaff/npnf207.ii.html"
+    },
+    {
+      "title": "Twelve Chapters Against Nestorius",
+      "url": "https://www.ccel.org/ccel/schaff/npnf214.ix.html"
+    },
+    {
+      "title": "Letters",
+      "url": "https://www.ccel.org/ccel/schaff/npnf214.viii.html"
+    }
+  ]
+}

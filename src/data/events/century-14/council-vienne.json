@@ -1,0 +1,15 @@
+{
+  "id": "council-vienne",
+  "name": "Council of Vienne",
+  "startYear": 1311,
+  "endYear": 1312,
+  "type": "council",
+  "locationId": "lyons",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Vienne",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15419a.htm",
+  "summary": "The Council of Vienne was an ecumenical council convened by Pope Clement V in 1311-1312. The council suppressed the Knights Templar, whose order had been dissolved by the pope under pressure from King Philip IV of France. The council also addressed the status of the Franciscan Spirituals and various disciplinary matters. It was the first ecumenical council held outside Italy or Constantinople.",
+  "keyDocuments": [
+    "Suppression of the Knights Templar",
+    "Decrees on Franciscan Poverty"
+  ]
+}

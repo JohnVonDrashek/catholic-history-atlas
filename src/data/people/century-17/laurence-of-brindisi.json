@@ -1,0 +1,25 @@
+{
+  "id": "laurence-of-brindisi",
+  "name": "St. Laurence of Brindisi",
+  "birthYear": 1559,
+  "deathYear": 1619,
+  "feastDay": "July 21",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "brindisi",
+      "description": "Capuchin friar and preacher"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Lawrence_of_Brindisi",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09095a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/San_Lorenzo_da_Brindisi.jpg/330px-San_Lorenzo_da_Brindisi.jpg",
+  "summary": "Laurence of Brindisi was an Italian Capuchin friar, preacher, and Doctor of the Church. He was a gifted linguist, speaking multiple languages, and was a powerful preacher who traveled throughout Europe. He served as a diplomat and military chaplain, and his preaching was credited with helping to rally Christian forces against the Ottoman Empire. He wrote extensively on theology and biblical exegesis.",
+  "keyQuotes": []
+}

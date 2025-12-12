@@ -1,0 +1,25 @@
+{
+  "id": "peter-chrysologus",
+  "name": "St. Peter Chrysologus",
+  "birthYear": 380,
+  "deathYear": 450,
+  "feastDay": "July 30",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "ravenna",
+      "description": "Bishop of Ravenna"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Chrysologus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11766a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pedro_crisologo01.jpg/330px-Pedro_crisologo01.jpg",
+  "summary": "Peter Chrysologus was Bishop of Ravenna and is known as the 'Golden Worded' for his eloquent sermons. He is considered a Doctor of the Church and was a strong supporter of Pope Leo I's teachings on the two natures of Christ.",
+  "keyQuotes": []
+}

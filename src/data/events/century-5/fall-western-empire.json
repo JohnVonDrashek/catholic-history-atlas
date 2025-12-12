@@ -1,0 +1,13 @@
+{
+  "id": "fall-western-empire",
+  "name": "Fall of the Western Roman Empire",
+  "startYear": 476,
+  "endYear": 476,
+  "type": "other",
+  "locationId": "ravenna",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13146a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Roman_Republic_Empire_map.gif/330px-Roman_Republic_Empire_map.gif",
+  "summary": "The fall of the Western Roman Empire in 476 AD, when the last Western Roman Emperor Romulus Augustulus was deposed by Odoacer, marked the end of ancient Rome and the beginning of the Middle Ages. This event had profound consequences for the Church, which would become the primary institution preserving Roman culture and civilization in the West.",
+  "keyDocuments": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "papal-states-invasion",
+  "name": "French Invasion of the Papal States",
+  "startYear": 1796,
+  "endYear": 1798,
+  "type": "persecution",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Papal_States",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11449a.htm",
+  "summary": "French revolutionary forces under Napoleon Bonaparte invaded the Papal States, leading to the establishment of the Roman Republic in 1798. Pope Pius VI was taken prisoner and died in exile in France in 1799. This marked a low point in the temporal power of the papacy and demonstrated the vulnerability of the Church to revolutionary forces.",
+  "keyDocuments": []
+}

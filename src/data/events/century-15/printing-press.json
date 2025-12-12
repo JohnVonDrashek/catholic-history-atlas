@@ -1,0 +1,12 @@
+{
+  "id": "printing-press",
+  "name": "Invention of the Printing Press",
+  "startYear": 1450,
+  "endYear": 1450,
+  "type": "other",
+  "locationId": "mainz",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Printing_press",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12420a.htm",
+  "summary": "Johannes Gutenberg's invention of the movable-type printing press around 1450 revolutionized the spread of information and had profound effects on the Church. The printing press made the Bible and other religious texts more widely available, contributing to both Catholic reform movements and later Protestant challenges to Church authority. The Gutenberg Bible was the first major book printed in Europe.",
+  "keyDocuments": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "gregory-iii",
+  "name": "St. Gregory III",
+  "birthYear": null,
+  "deathYear": 741,
+  "feastDay": "December 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_III",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06782a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pope_Gregory_III.jpg/330px-Pope_Gregory_III.jpg",
+  "summary": "Gregory III was Pope from 731 to 741. He continued his predecessor's opposition to iconoclasm and convened a synod in Rome that condemned the iconoclastic policies. He strengthened ties with the Frankish kingdom and supported Boniface's missionary work. He is the last pope to be elected by acclamation.",
+  "keyQuotes": []
+}

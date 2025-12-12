@@ -1,0 +1,16 @@
+{
+  "id": "chalcedon",
+  "name": "Council of Chalcedon",
+  "startYear": 451,
+  "endYear": 451,
+  "type": "council",
+  "locationId": "chalcedon",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Chalcedon",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03555a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Fourth_ecumenical_council_of_chalcedon_-_1876.jpg/330px-Fourth_ecumenical_council_of_chalcedon_-_1876.jpg",
+  "summary": "The Council of Chalcedon was the fourth ecumenical council, held in 451 AD. It defined the orthodox doctrine of the two natures of Christ (divine and human) in one person, using Pope Leo I's 'Tome of Leo' as a key document. The council condemned both Nestorianism and Monophysitism, establishing the Chalcedonian Definition that remains the standard of orthodoxy. Over 520 bishops attended, making it the largest and best-documented of the first seven ecumenical councils.",
+  "keyDocuments": [
+    "Chalcedonian Definition",
+    "Tome of Leo"
+  ]
+}

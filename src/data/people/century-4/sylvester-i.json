@@ -1,0 +1,24 @@
+{
+  "id": "sylvester-i",
+  "name": "St. Sylvester I",
+  "birthYear": null,
+  "deathYear": 335,
+  "feastDay": "December 31",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Bishop of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Sylvester_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14370a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pape_St_Sylvestre_%E2%80%93_BnF%2C_ms_16251%2C_fol._87.jpg/330px-Pape_St_Sylvestre_%E2%80%93_BnF%2C_ms_16251%2C_fol._87.jpg",
+  "summary": "Sylvester I was Bishop of Rome from 314 to 335, during the reign of Emperor Constantine the Great. His pontificate coincided with the legalization of Christianity through the Edict of Milan (313) and the First Council of Nicaea (325). Although he did not attend the Council of Nicaea personally, he sent legates. He is traditionally credited with building the first St. Peter's Basilica and other important churches in Rome.",
+  "keyQuotes": []
+}

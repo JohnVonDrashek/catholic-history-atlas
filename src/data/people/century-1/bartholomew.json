@@ -1,0 +1,27 @@
+{
+  "id": "bartholomew",
+  "name": "St. Bartholomew",
+  "birthYear": null,
+  "deathYear": 70,
+  "feastDay": "August 24",
+  "primaryTradition": "Greek",
+  "roles": [
+    "apostle",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "armenia",
+      "description": "Martyred in Armenia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Bartholomew_the_Apostle",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02313c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Rubens_apostel_bartolomeus_grt.jpg",
+  "summary": "Bartholomew, also known as Nathanael, was one of the Twelve Apostles. He is identified in the Gospel of John as Nathanael, whom Philip brought to Jesus. According to tradition, he preached in India and Armenia, where he was martyred by being flayed alive and then beheaded. He is the patron saint of tanners and is often depicted holding a knife or his own skin.",
+  "keyQuotes": [
+    "Can anything good come out of Nazareth?"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "restoration-jesuits",
+  "name": "Restoration of the Society of Jesus",
+  "startYear": 1814,
+  "endYear": 1814,
+  "type": "reform",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Suppression_and_restoration_of_the_Society_of_Jesus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14081a.htm",
+  "summary": "Pope Pius VII restored the Society of Jesus (Jesuits) through the bull 'Sollicitudo omnium ecclesiarum' in 1814, ending the suppression that had been in effect since 1773. The restoration came during a period when the Church needed the Jesuits' educational and missionary work. The order quickly regained its influence and became one of the largest and most active religious orders in the Church.",
+  "keyDocuments": [
+    "Sollicitudo omnium ecclesiarum"
+  ]
+}

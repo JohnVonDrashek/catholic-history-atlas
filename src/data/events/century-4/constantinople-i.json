@@ -1,0 +1,15 @@
+{
+  "id": "constantinople-i",
+  "name": "First Council of Constantinople",
+  "startYear": 381,
+  "endYear": 381,
+  "type": "council",
+  "locationId": "constantinople",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Council_of_Constantinople",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04308a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/CouncilOfConstantinople381BnFMSGr510.jpg/330px-CouncilOfConstantinople381BnFMSGr510.jpg",
+  "summary": "The First Council of Constantinople was a council of Christian bishops convened in Constantinople in AD 381 by the Roman Emperor Theodosius I. This second ecumenical council, a continuation of the First Council of Nicaea, was intended to complete the Nicene Creed.",
+  "keyDocuments": [
+    "Niceno-Constantinopolitan Creed"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "athanasius",
+  "name": "St. Athanasius",
+  "birthYear": 296,
+  "deathYear": 373,
+  "feastDay": "May 2",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Bishop of Alexandria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Athanasius_of_Alexandria",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02035a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Ikone_Athanasius_von_Alexandria.jpg/330px-Ikone_Athanasius_von_Alexandria.jpg",
+  "summary": "Athanasius was a Christian theologian, bishop of Alexandria, and a noted Egyptian leader of the fourth century. He is best known for his role in the conflict with Arius and Arianism. At the First Council of Nicaea, Athanasius argued against the Arians and was a key defender of the doctrine of the Trinity.",
+  "keyQuotes": [
+    "For the Son of God became man so that we might become God.",
+    "He, indeed, assumed humanity that we might become God."
+  ],
+  "writings": [
+    {
+      "title": "On the Incarnation",
+      "url": "https://www.ccel.org/ccel/schaff/npnf204.iv.iii.html"
+    },
+    {
+      "title": "Life of St. Antony",
+      "url": "https://www.ccel.org/ccel/schaff/npnf204.iv.iv.html"
+    },
+    {
+      "title": "Against the Arians",
+      "url": "https://www.ccel.org/ccel/schaff/npnf204.iv.v.html"
+    }
+  ]
+}

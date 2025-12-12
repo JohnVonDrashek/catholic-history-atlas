@@ -1,0 +1,24 @@
+{
+  "id": "urban-v",
+  "name": "Pope Bl. Urban V",
+  "birthYear": 1310,
+  "deathYear": 1370,
+  "feastDay": "December 19",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "blessed",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Briefly returned papacy to Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Urban_V",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15218a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Simone_dei_crocifissi%2C_urbano_V%2C_1375_ca.%2C_forse_dalla_cattedrale_di_s._pietro_01_%28cropped%29.jpg/330px-Simone_dei_crocifissi%2C_urbano_V%2C_1375_ca.%2C_forse_dalla_cattedrale_di_s._pietro_01_%28cropped%29.jpg",
+  "summary": "Urban V was Pope from 1362 to 1370. He was a Benedictine monk known for his piety and learning. Despite being an Avignon pope, he attempted to return the papacy to Rome in 1367, but political difficulties forced him to return to Avignon in 1370, where he died. He is venerated as Blessed.",
+  "keyQuotes": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "capture-rome",
+  "name": "Capture of Rome and End of Papal States",
+  "startYear": 1870,
+  "endYear": 1870,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Capture_of_Rome",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12597a.htm",
+  "summary": "On September 20, 1870, Italian troops breached the walls of Rome and captured the city, ending the temporal power of the papacy and the Papal States that had existed for over a thousand years. Pope Pius IX declared himself a 'prisoner in the Vatican' and refused to recognize the Italian state. This situation, known as the Roman Question, would last until the Lateran Treaty of 1929.",
+  "keyDocuments": []
+}

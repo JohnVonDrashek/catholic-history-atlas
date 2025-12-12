@@ -1,0 +1,14 @@
+{
+  "id": "dogma-papal-infallibility",
+  "name": "Dogma of Papal Infallibility",
+  "startYear": 1870,
+  "endYear": 1870,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Papal_infallibility",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07790a.htm",
+  "summary": "The First Vatican Council defined the dogma of papal infallibility in the constitution 'Pastor Aeternus' on July 18, 1870. The dogma states that when the pope speaks ex cathedra (from the chair of Peter) on matters of faith and morals, he is preserved from error by the Holy Spirit. This was a controversial definition that led to the formation of the Old Catholic Church by those who rejected it.",
+  "keyDocuments": [
+    "Pastor Aeternus"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "alphonsus-rodriguez",
+  "name": "St. Alphonsus Rodriguez",
+  "birthYear": 1532,
+  "deathYear": 1617,
+  "feastDay": "October 30",
+  "primaryTradition": "Latin",
+  "roles": [
+    "religious",
+    "lay brother"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "majorca",
+      "description": "Jesuit lay brother and porter in Majorca"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Alphonsus_Rodriguez",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13135a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Alphonse_Rodriguez%2C_After_Anton_Wierix_II_%28ca_1552_-_ca_1624%29.jpg/330px-Alphonse_Rodriguez%2C_After_Anton_Wierix_II_%28ca_1552_-_ca_1624%29.jpg",
+  "summary": "Alphonsus Rodriguez was a Spanish Jesuit lay brother who served as a porter (doorkeeper) at a Jesuit college in Majorca for 46 years. Despite his humble position, he became known for his holiness, wisdom, and spiritual direction. He mentored St. Peter Claver and influenced many through his simple, prayerful life. He is the patron saint of Jesuit brothers.",
+  "keyQuotes": [
+    "I will try to allow nothing to enter my heart but God alone."
+  ]
+}

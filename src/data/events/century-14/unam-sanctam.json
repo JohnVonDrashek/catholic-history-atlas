@@ -1,0 +1,14 @@
+{
+  "id": "unam-sanctam",
+  "name": "Unam Sanctam",
+  "startYear": 1302,
+  "endYear": 1302,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Unam_sanctam",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15126a.htm",
+  "summary": "Unam Sanctam was a papal bull issued by Pope Boniface VIII in 1302, one of the most extreme statements of papal authority in history. It asserted that both spiritual and temporal power are subject to the pope, and that submission to the Roman pontiff is necessary for salvation. The bull was issued during Boniface's conflict with King Philip IV of France and represents the high point of medieval papal claims to universal authority.",
+  "keyDocuments": [
+    "Unam Sanctam"
+  ]
+}

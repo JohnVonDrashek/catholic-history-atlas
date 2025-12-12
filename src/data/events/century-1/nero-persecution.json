@@ -1,0 +1,12 @@
+{
+  "id": "nero-persecution",
+  "name": "Nero's Persecution of Christians",
+  "startYear": 64,
+  "endYear": 68,
+  "type": "persecution",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Nero",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10755a.htm",
+  "summary": "Following the Great Fire of Rome in 64 AD, Emperor Nero blamed Christians for the disaster and initiated the first systematic persecution of Christians in the Roman Empire. This persecution resulted in the martyrdoms of St. Peter and St. Paul, among many others. Christians were tortured, crucified, and burned alive as human torches.",
+  "keyDocuments": []
+}

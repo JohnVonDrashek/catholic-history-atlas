@@ -1,0 +1,15 @@
+{
+  "id": "enlightenment-challenges",
+  "name": "Enlightenment Challenges to the Church",
+  "startYear": 1700,
+  "endYear": 1799,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Age_of_Enlightenment",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05520a.htm",
+  "summary": "The 18th century saw the rise of the Enlightenment, a philosophical movement that emphasized reason, science, and individual rights over tradition and religious authority. Thinkers like Voltaire, Rousseau, and Diderot criticized the Church's influence in society. Catholic monarchs adopted 'enlightened absolutism,' seeking greater control over the Church in their territories. The Church responded with both resistance and adaptation to these new intellectual currents.",
+  "keyDocuments": [
+    "Encyclical In eminenti (Benedict XIV, 1741)",
+    "Encyclical A quo primum (Benedict XIV, 1751)"
+  ]
+}

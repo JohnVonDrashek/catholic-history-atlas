@@ -1,0 +1,35 @@
+{
+  "id": "luke-evangelist",
+  "name": "St. Luke the Evangelist",
+  "birthYear": null,
+  "deathYear": 84,
+  "feastDay": "October 18",
+  "primaryTradition": "Greek",
+  "roles": [
+    "evangelist",
+    "physician"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "antioch",
+      "description": "Born in Antioch"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Luke_the_Evangelist",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09420a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Luke_by_roslin.jpg",
+  "summary": "Luke the Evangelist is traditionally credited with writing the Gospel of Luke and the Acts of the Apostles. He was a physician and a companion of Paul the Apostle on his missionary journeys. His gospel emphasizes the universal nature of Christ's mission and includes many details about women and the poor.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Gospel According to Luke",
+      "url": "https://bible.usccb.org/bible/luke/0"
+    },
+    {
+      "title": "Acts of the Apostles",
+      "url": "https://bible.usccb.org/bible/acts/0"
+    }
+  ]
+}

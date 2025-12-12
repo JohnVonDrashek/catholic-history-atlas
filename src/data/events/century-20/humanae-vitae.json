@@ -1,0 +1,14 @@
+{
+  "id": "humanae-vitae",
+  "name": "Humanae Vitae",
+  "startYear": 1968,
+  "endYear": 1968,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Humanae_vitae",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07563a.htm",
+  "summary": "Humanae Vitae (Of Human Life) was an encyclical issued by Pope Paul VI in 1968 that reaffirmed the Church's teaching on married love, responsible parenthood, and the rejection of artificial contraception. The document was controversial and met with significant dissent, but it upheld the traditional Catholic position that contraception is intrinsically wrong.",
+  "keyDocuments": [
+    "Humanae Vitae"
+  ]
+}

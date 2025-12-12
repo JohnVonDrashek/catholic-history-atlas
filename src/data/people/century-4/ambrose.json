@@ -1,0 +1,41 @@
+{
+  "id": "ambrose",
+  "name": "St. Ambrose",
+  "birthYear": 340,
+  "deathYear": 397,
+  "feastDay": "December 7",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "milan",
+      "description": "Bishop of Milan"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ambrose",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01383c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/AmbroseOfMilan_%28cropped%29.jpg/306px-AmbroseOfMilan_%28cropped%29.jpg",
+  "summary": "Ambrose was a bishop of Milan who became one of the most influential ecclesiastical figures of the 4th century. He is counted as one of the four original doctors of the Church.",
+  "keyQuotes": [
+    "When in Rome, do as the Romans do."
+  ],
+  "writings": [
+    {
+      "title": "On the Duties of the Clergy",
+      "url": "https://www.ccel.org/ccel/schaff/npnf210.iv.html"
+    },
+    {
+      "title": "On the Holy Spirit",
+      "url": "https://www.ccel.org/ccel/schaff/npnf210.v.html"
+    },
+    {
+      "title": "Concerning Virgins",
+      "url": "https://www.ccel.org/ccel/schaff/npnf210.vi.html"
+    }
+  ]
+}

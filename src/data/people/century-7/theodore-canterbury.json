@@ -1,0 +1,25 @@
+{
+  "id": "theodore-canterbury",
+  "name": "St. Theodore of Tarsus",
+  "birthYear": 602,
+  "deathYear": 690,
+  "feastDay": "September 19",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "archbishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "canterbury",
+      "description": "Archbishop of Canterbury"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Theodore_of_Tarsus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14573a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Saint_Theodore_of_Tarsus_stained_glass_at_St_John_the_Evangelist%2C_Knotty_Ash.jpg",
+  "summary": "Theodore of Tarsus was a Greek monk who became Archbishop of Canterbury. He was the first archbishop to rule the whole English Church effectively and is credited with organizing the English Church into a proper diocesan structure. He established a school at Canterbury that became a center of learning, and he presided over important synods that helped unify the English Church.",
+  "keyQuotes": []
+}

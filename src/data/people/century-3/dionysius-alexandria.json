@@ -1,0 +1,24 @@
+{
+  "id": "dionysius-alexandria",
+  "name": "St. Dionysius of Alexandria",
+  "birthYear": 190,
+  "deathYear": 264,
+  "feastDay": "November 17",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Bishop of Alexandria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Dionysius_of_Alexandria",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05009a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Dionisii_alek.jpg/330px-Dionisii_alek.jpg",
+  "summary": "Dionysius was a bishop of Alexandria and a student of Origen. He played an important role in the theological controversies of his time, particularly regarding the Trinity and the treatment of those who lapsed during persecution. He was known for his moderation and pastoral care.",
+  "keyQuotes": []
+}

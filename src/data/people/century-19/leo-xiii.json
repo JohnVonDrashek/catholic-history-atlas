@@ -1,0 +1,36 @@
+{
+  "id": "leo-xiii",
+  "name": "Pope Leo XIII",
+  "birthYear": 1810,
+  "deathYear": 1903,
+  "feastDay": "July 3",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope (1878-1903)"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_XIII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09169a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Leo_XIII.jpg",
+  "summary": "Pope Leo XIII was pope from 1878 to 1903, the second-longest pontificate after Pius IX. He is known for his extensive social teaching, particularly the encyclical 'Rerum Novarum' (1891), which addressed the condition of the working classes and established the foundation of modern Catholic social teaching. He also promoted Thomistic philosophy, opened the Vatican archives to scholars, and worked to improve relations with various nations.",
+  "keyQuotes": [
+    "The condition of the working classes is the question of the hour."
+  ],
+  "writings": [
+    {
+      "title": "Rerum Novarum",
+      "url": "https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_15051891_rerum-novarum.html"
+    },
+    {
+      "title": "Aeterni Patris",
+      "url": "https://www.vatican.va/content/leo-xiii/en/encyclicals/documents/hf_l-xiii_enc_04081879_aeterni-patris.html"
+    }
+  ]
+}

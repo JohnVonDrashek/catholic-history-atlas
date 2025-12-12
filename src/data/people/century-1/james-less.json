@@ -1,0 +1,26 @@
+{
+  "id": "james-less",
+  "name": "St. James the Less",
+  "birthYear": null,
+  "deathYear": 62,
+  "feastDay": "May 3",
+  "primaryTradition": "Greek",
+  "roles": [
+    "apostle",
+    "bishop",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "jerusalem",
+      "description": "Bishop of Jerusalem, martyred there"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/James%2C_son_of_Alphaeus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08280b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Rubens_apostel_jakobus_mindere_grt.jpg",
+  "summary": "James the Less, also known as James the son of Alphaeus, was one of the Twelve Apostles. He is sometimes identified with James, the brother of the Lord, who became the first bishop of Jerusalem. According to tradition, he was martyred by being thrown from the pinnacle of the Temple in Jerusalem and then stoned to death. He is often depicted with a fuller's club, the instrument of his martyrdom.",
+  "keyQuotes": []
+}

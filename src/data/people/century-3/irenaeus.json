@@ -1,0 +1,37 @@
+{
+  "id": "irenaeus",
+  "name": "St. Irenaeus",
+  "birthYear": 130,
+  "deathYear": 202,
+  "feastDay": "June 28",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lyons",
+      "description": "Bishop of Lyons"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Irenaeus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08130b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Saint_irenee_saint_irenee.jpg/330px-Saint_irenee_saint_irenee.jpg",
+  "summary": "Irenaeus was a Greek bishop noted for his role in guiding and expanding Christian communities in the southern regions of present-day France and, more widely, for the development of Christian theology by combating heresy and defining orthodoxy.",
+  "keyQuotes": [
+    "The glory of God is man fully alive, and the life of man is the vision of God."
+  ],
+  "writings": [
+    {
+      "title": "Against Heresies",
+      "url": "https://www.ccel.org/ccel/schaff/anf01.ix.i.html"
+    },
+    {
+      "title": "The Demonstration of the Apostolic Preaching",
+      "url": "https://www.ccel.org/ccel/schaff/anf01.ix.ii.html"
+    }
+  ]
+}

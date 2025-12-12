@@ -1,0 +1,14 @@
+{
+  "id": "rerum-novarum",
+  "name": "Rerum Novarum",
+  "startYear": 1891,
+  "endYear": 1891,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Rerum_novarum",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12782a.htm",
+  "summary": "Pope Leo XIII issued the encyclical 'Rerum Novarum' on May 15, 1891, addressing the condition of the working classes. It was the first major Catholic social encyclical and established the Church's position on labor rights, private property, the role of the state, and the rights and duties of workers and employers. It laid the foundation for modern Catholic social teaching and influenced labor movements worldwide.",
+  "keyDocuments": [
+    "Rerum Novarum"
+  ]
+}

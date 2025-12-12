@@ -1,0 +1,25 @@
+{
+  "id": "quadratus",
+  "name": "St. Quadratus of Athens",
+  "birthYear": null,
+  "deathYear": 129,
+  "feastDay": "September 26",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "apologist"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "athens",
+      "description": "Bishop of Athens"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Quadratus_of_Athens",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12592a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Quadratus_of_Athens_%28Menologion_of_Basil_II%29.jpg/330px-Quadratus_of_Athens_%28Menologion_of_Basil_II%29.jpg",
+  "summary": "Quadratus was an early Christian apologist and bishop of Athens. He is known for presenting an apology for Christianity to Emperor Hadrian around 125 AD, making him one of the earliest Christian apologists. His work is now lost except for a brief fragment preserved by Eusebius.",
+  "keyQuotes": []
+}

@@ -1,0 +1,12 @@
+{
+  "id": "discovery-americas",
+  "name": "Discovery of the Americas",
+  "startYear": 1492,
+  "endYear": 1492,
+  "type": "other",
+  "locationId": "spain",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Christopher_Columbus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04140a.htm",
+  "summary": "Christopher Columbus's voyage to the Americas in 1492, sponsored by the Catholic Monarchs of Spain, opened a new era of European exploration and colonization. This discovery would lead to the spread of Christianity to the New World, though it also brought conflict, disease, and exploitation to indigenous peoples. The Church would play a central role in the evangelization of the Americas.",
+  "keyDocuments": []
+}

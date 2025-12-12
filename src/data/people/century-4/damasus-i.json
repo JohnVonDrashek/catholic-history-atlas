@@ -1,0 +1,24 @@
+{
+  "id": "damasus-i",
+  "name": "St. Damasus I",
+  "birthYear": 305,
+  "deathYear": 384,
+  "feastDay": "December 11",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Bishop of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Damasus_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04613a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Pope_Damasus_-_Biblia_Sancti_Martialis_Lemovicensis%2C_Folio_4v.png/330px-Pope_Damasus_-_Biblia_Sancti_Martialis_Lemovicensis%2C_Folio_4v.png",
+  "summary": "Damasus I was Bishop of Rome from 366 to 384. He is known for commissioning St. Jerome to produce the Vulgate, the Latin translation of the Bible. He worked to restore the catacombs and composed many epigrams for the tombs of martyrs. He also strengthened papal authority and dealt with various heresies, including Arianism. He is credited with establishing Latin as the official language of the Roman liturgy.",
+  "keyQuotes": []
+}

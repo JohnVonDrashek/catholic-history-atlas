@@ -1,0 +1,15 @@
+{
+  "id": "arian-controversy",
+  "name": "Arian Controversy",
+  "startYear": 318,
+  "endYear": 381,
+  "type": "other",
+  "locationId": "alexandria",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Arian_controversy",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01707c.htm",
+  "summary": "The Arian controversy was a major theological dispute in the 4th century over the nature of Christ's relationship to God the Father. Arius, a priest of Alexandria, taught that the Son was created and subordinate to the Father. This was opposed by Athanasius and others, leading to the First Council of Nicaea (325) and the First Council of Constantinople (381), which established the orthodox doctrine of the Trinity.",
+  "keyDocuments": [
+    "Nicene Creed",
+    "Niceno-Constantinopolitan Creed"
+  ]
+}

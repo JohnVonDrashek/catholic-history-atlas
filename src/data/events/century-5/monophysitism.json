@@ -1,0 +1,14 @@
+{
+  "id": "monophysitism",
+  "name": "Monophysite Controversy",
+  "startYear": 444,
+  "endYear": 680,
+  "type": "other",
+  "locationId": "alexandria",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Monophysitism",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10489b.htm",
+  "summary": "Monophysitism was a Christological heresy that held that Christ has only one nature (divine), rather than two natures (divine and human) in one person. This was condemned at the Council of Chalcedon (451), which affirmed the orthodox doctrine of the hypostatic union. The controversy led to schisms with several Eastern churches.",
+  "keyDocuments": [
+    "Council of Chalcedon (451)"
+  ]
+}

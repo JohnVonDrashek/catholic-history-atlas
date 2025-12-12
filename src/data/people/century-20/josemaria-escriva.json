@@ -1,0 +1,34 @@
+{
+  "id": "josemaria-escriva",
+  "name": "St. Josemaría Escrivá",
+  "birthYear": 1902,
+  "deathYear": 1975,
+  "feastDay": "June 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Founded Opus Dei"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Josemaría_Escrivá",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05528a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Josemaria_Escriva.jpg/330px-Josemaria_Escriva.jpg",
+  "summary": "Josemaría Escrivá was a Spanish Catholic priest who founded Opus Dei, an organization of laypeople and priests dedicated to the teaching that everyone is called to holiness and that ordinary life is a path to sanctity. He was canonized in 2002 by Pope John Paul II. Opus Dei has grown to include tens of thousands of members worldwide.",
+  "keyQuotes": [
+    "Do everything for Love. Thus there will be no little things: everything will be big. Perseverance in little things for Love is heroism.",
+    "The ordinary, unspectacular flow of everyday life should be the setting for our sanctification."
+  ],
+  "writings": [
+    {
+      "title": "The Way",
+      "url": "https://www.opusdei.org/en-us/article/the-way/"
+    }
+  ]
+}

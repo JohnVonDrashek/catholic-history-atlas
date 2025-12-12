@@ -1,0 +1,30 @@
+{
+  "id": "caesarius-arles",
+  "name": "St. Caesarius of Arles",
+  "birthYear": 470,
+  "deathYear": 542,
+  "feastDay": "August 27",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "arles",
+      "description": "Bishop of Arles"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Caesarius_of_Arles",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03135a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/Arles%2CSt_C%C3%A9saire27%2Cchoeur7%2CSt_C%C3%A9saire_%28cropped%29.jpg",
+  "summary": "Caesarius of Arles was a bishop who played an important role in the Church in Gaul during the 6th century. He presided over several councils, wrote sermons and a rule for nuns, and worked to reform the clergy. He is known for his efforts to combat Arianism and for establishing monasteries for both men and women.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Sermons",
+      "url": "https://www.ccel.org/ccel/schaff/npnf211.iv.html"
+    }
+  ]
+}

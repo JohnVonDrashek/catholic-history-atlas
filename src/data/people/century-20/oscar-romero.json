@@ -1,0 +1,29 @@
+{
+  "id": "oscar-romero",
+  "name": "St. Óscar Romero",
+  "birthYear": 1917,
+  "deathYear": 1980,
+  "feastDay": "March 24",
+  "primaryTradition": "Latin",
+  "roles": [
+    "archbishop",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Archbishop of San Salvador, martyred for speaking out against injustice"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Óscar_Romero",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13183a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Monse%C3%B1or_Romero_%28colour%29.jpg/330px-Monse%C3%B1or_Romero_%28colour%29.jpg",
+  "summary": "Óscar Romero was a Salvadoran Catholic prelate who served as the fourth Archbishop of San Salvador. He spoke out against poverty, social injustice, assassinations, and torture in El Salvador. He was assassinated while celebrating Mass in 1980, shortly after pleading with soldiers to stop carrying out the government's repression. He was canonized in 2018.",
+  "keyQuotes": [
+    "I have frequently been threatened with death. I must say that, as a Christian, I do not believe in death without resurrection. If they kill me, I shall rise in the Salvadoran people.",
+    "A church that suffers no persecution but enjoys the privileges and support of the things of the earth - beware! - is not the true church of Jesus Christ."
+  ],
+  "writings": []
+}

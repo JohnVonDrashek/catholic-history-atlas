@@ -1,0 +1,35 @@
+{
+  "id": "henri-de-lubac",
+  "name": "Henri de Lubac",
+  "birthYear": 1896,
+  "deathYear": 1991,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "theologian",
+    "cardinal"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Jesuit priest, cardinal, influential theologian and peritus at Vatican II"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Henri_de_Lubac",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09415a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/af/Henri_de_Lubac%2C_S.J.jpg",
+  "summary": "Henri de Lubac was a French Jesuit priest and cardinal who became one of the most influential theologians of the 20th century. He was a leading figure in the nouvelle théologie movement and served as a peritus at the Second Vatican Council. He made important contributions to ecclesiology, especially regarding the relationship between nature and grace.",
+  "keyQuotes": [
+    "The Church is not an institution that we have been invited to run. We are simply the guests at the table, the servants of the mystery.",
+    "The mystery of the Church is the mystery of the Incarnation continued."
+  ],
+  "writings": [
+    {
+      "title": "Catholicism: Christ and the Common Destiny of Man",
+      "url": "https://www.ignatius.com/Catholicism-P269.aspx"
+    }
+  ]
+}

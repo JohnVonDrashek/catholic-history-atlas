@@ -1,0 +1,24 @@
+{
+  "id": "charlemagne",
+  "name": "Charlemagne",
+  "birthYear": 742,
+  "deathYear": 814,
+  "primaryTradition": "Latin",
+  "roles": [
+    "emperor",
+    "king"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "aachen",
+      "description": "Emperor, based in Aachen"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Charlemagne",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03610c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Charlemagne_denier_Mayence_812_814.jpg",
+  "summary": "Charlemagne, also known as Charles the Great, was King of the Franks and Lombards, and was crowned as the first Holy Roman Emperor by Pope Leo III in 800. He expanded the Frankish kingdom into an empire that covered much of Western and Central Europe. He promoted education, culture, and Christianity throughout his realm, initiating the Carolingian Renaissance. He is considered the father of Europe and one of the most important figures in medieval history.",
+  "keyQuotes": []
+}

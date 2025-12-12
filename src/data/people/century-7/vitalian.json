@@ -1,0 +1,24 @@
+{
+  "id": "vitalian",
+  "name": "St. Vitalian",
+  "birthYear": null,
+  "deathYear": 672,
+  "feastDay": "January 27",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Vitalian",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15488a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Pope_Vitalian.jpg/330px-Pope_Vitalian.jpg",
+  "summary": "Vitalian was Pope from 657 to 672. He worked to improve relations with the Byzantine Empire and the Eastern Church. He sent missionaries to England, including Theodore of Tarsus, who became Archbishop of Canterbury. He is credited with introducing the organ to Western liturgical music.",
+  "keyQuotes": []
+}

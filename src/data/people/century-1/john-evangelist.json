@@ -1,0 +1,50 @@
+{
+  "id": "john-evangelist",
+  "name": "St. John the Evangelist",
+  "birthYear": 6,
+  "deathYear": 100,
+  "feastDay": "December 27",
+  "primaryTradition": "Greek",
+  "roles": [
+    "apostle",
+    "evangelist"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "ephesus",
+      "description": "Apostle and bishop in Ephesus"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_the_Apostle",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08492a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Rubens_apostel_johannes_grt.jpg/330px-Rubens_apostel_johannes_grt.jpg",
+  "summary": "John the Evangelist, also known as John the Beloved Disciple, was one of the Twelve Apostles and the author of the Gospel of John, three epistles, and the Book of Revelation. He was the only apostle not to be martyred, living to an old age in Ephesus. He is traditionally identified as the 'disciple whom Jesus loved.'",
+  "keyQuotes": [
+    "In the beginning was the Word, and the Word was with God, and the Word was God.",
+    "God is love, and whoever abides in love abides in God, and God abides in him."
+  ],
+  "writings": [
+    {
+      "title": "Gospel According to John",
+      "url": "https://bible.usccb.org/bible/john/0"
+    },
+    {
+      "title": "First Letter of John",
+      "url": "https://bible.usccb.org/bible/1john/0"
+    },
+    {
+      "title": "Second Letter of John",
+      "url": "https://bible.usccb.org/bible/2john/0"
+    },
+    {
+      "title": "Third Letter of John",
+      "url": "https://bible.usccb.org/bible/3john/0"
+    },
+    {
+      "title": "Book of Revelation",
+      "url": "https://bible.usccb.org/bible/revelation/0"
+    }
+  ]
+}

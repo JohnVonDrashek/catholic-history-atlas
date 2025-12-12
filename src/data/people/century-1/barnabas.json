@@ -1,0 +1,29 @@
+{
+  "id": "barnabas",
+  "name": "St. Barnabas",
+  "birthYear": null,
+  "deathYear": 61,
+  "feastDay": "June 11",
+  "primaryTradition": "Greek",
+  "roles": [
+    "apostle",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "antioch",
+      "description": "Missionary in Antioch"
+    },
+    {
+      "placeId": "cyprus",
+      "description": "Martyred in Cyprus"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Barnabas",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02300a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Galer%C3%ADa_Uffizi%2C_Florencia%2C_Italia%2C_2022_09_18%2C_DD_42_%281%29_%28cropped%29.jpg/330px-Galer%C3%ADa_Uffizi%2C_Florencia%2C_Italia%2C_2022_09_18%2C_DD_42_%281%29_%28cropped%29.jpg",
+  "summary": "Barnabas was an early Christian disciple and missionary companion of Paul the Apostle. He was instrumental in introducing Paul to the apostles in Jerusalem and later accompanied him on missionary journeys. He is considered an apostle and is traditionally said to have been martyred in Cyprus.",
+  "keyQuotes": []
+}

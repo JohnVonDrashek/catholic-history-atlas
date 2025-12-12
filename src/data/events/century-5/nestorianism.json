@@ -1,0 +1,15 @@
+{
+  "id": "nestorianism",
+  "name": "Nestorian Controversy",
+  "startYear": 428,
+  "endYear": 451,
+  "type": "other",
+  "locationId": "constantinople",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Nestorianism",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10755a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/EcumenicalCouncil_3rd_09-07.jpg/330px-EcumenicalCouncil_3rd_09-07.jpg",
+  "summary": "The Nestorian controversy was a major theological dispute in the 5th century over the nature of Christ. Nestorius, Patriarch of Constantinople, objected to calling Mary 'Theotokos' (God-bearer), preferring 'Christotokos' (Christ-bearer). This was condemned at the Council of Ephesus (431), leading to a schism with the Church of the East.",
+  "keyDocuments": [
+    "Council of Ephesus (431)"
+  ]
+}

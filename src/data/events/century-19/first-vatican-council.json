@@ -1,0 +1,16 @@
+{
+  "id": "first-vatican-council",
+  "name": "First Vatican Council",
+  "startYear": 1869,
+  "endYear": 1870,
+  "type": "council",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Vatican_Council",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15303a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Engraving_of_First_Vatican_Council.jpg",
+  "summary": "The First Vatican Council was convoked by Pope Pius IX and met from 1869 to 1870. It was the 20th ecumenical council of the Catholic Church. The council defined the dogma of papal infallibility and the primacy of papal jurisdiction. The council was interrupted by the Franco-Prussian War and the capture of Rome, and was never formally closed, though it effectively ended with the suspension of sessions.",
+  "keyDocuments": [
+    "Pastor Aeternus",
+    "Dei Filius"
+  ]
+}

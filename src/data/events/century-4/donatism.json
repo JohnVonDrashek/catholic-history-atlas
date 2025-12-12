@@ -1,0 +1,13 @@
+{
+  "id": "donatism",
+  "name": "Donatism",
+  "startYear": 311,
+  "endYear": 411,
+  "type": "schism",
+  "locationId": "carthage",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Donatism",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05121a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Augustine_and_donatists.jpg/330px-Augustine_and_donatists.jpg",
+  "summary": "Donatism was a schismatic movement in North Africa that began in the early 4th century. The Donatists held that the validity of sacraments depended on the moral purity of the minister, and they refused to accept bishops who had lapsed during persecution. The movement was vigorously opposed by Augustine of Hippo and was eventually suppressed, though it persisted in some areas for centuries.",
+  "keyDocuments": []
+}

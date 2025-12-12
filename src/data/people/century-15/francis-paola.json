@@ -1,0 +1,29 @@
+{
+  "id": "francis-paola",
+  "name": "St. Francis of Paola",
+  "birthYear": 1416,
+  "deathYear": 1507,
+  "feastDay": "April 2",
+  "primaryTradition": "Latin",
+  "roles": [
+    "hermit",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paola",
+      "description": "Born in Paola"
+    },
+    {
+      "placeId": "france",
+      "description": "Died in France"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_of_Paola",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06228a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Francis_of_Paola_by_Giovanni_Domenico_Tiepolo.jpg/330px-Francis_of_Paola_by_Giovanni_Domenico_Tiepolo.jpg",
+  "summary": "Francis of Paola was an Italian hermit and founder of the Order of Minims, a strict religious order emphasizing humility and penance. He was known for his asceticism, miracles, and prophetic gifts. He was called to France by King Louis XI and became a spiritual advisor to French royalty. He is the patron saint of Calabria and of seafarers.",
+  "keyQuotes": []
+}

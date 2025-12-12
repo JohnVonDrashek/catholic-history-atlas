@@ -1,0 +1,34 @@
+{
+  "id": "john-xxiii",
+  "name": "St. John XXIII",
+  "birthYear": 1881,
+  "deathYear": 1963,
+  "feastDay": "October 11",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "reformer"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope (1958-1963), convened Vatican II"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_John_XXIII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08431a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Ioannes_XXIII%2C_by_De_Agostini%2C_1958%E2%80%931963.jpg/330px-Ioannes_XXIII%2C_by_De_Agostini%2C_1958%E2%80%931963.jpg",
+  "summary": "Pope John XXIII, born Angelo Giuseppe Roncalli, was head of the Catholic Church from 1958 until his death in 1963. He is best known for convening the Second Vatican Council, which brought significant changes to the Church. Despite his short pontificate, he was known for his warmth, humor, and pastoral approach, earning him the nickname 'Good Pope John'.",
+  "keyQuotes": [
+    "It often happens that I wake at night and begin to think about a serious problem and decide I must tell the Pope about it. Then I wake up completely and remember that I am the Pope.",
+    "Consult not your fears but your hopes and your dreams."
+  ],
+  "writings": [
+    {
+      "title": "Pacem in Terris",
+      "url": "https://www.vatican.va/content/john-xxiii/en/encyclicals/documents/hf_j-xxiii_enc_11041963_pacem.html"
+    }
+  ]
+}

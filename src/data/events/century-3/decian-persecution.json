@@ -1,0 +1,15 @@
+{
+  "id": "decian-persecution",
+  "name": "Decian Persecution",
+  "startYear": 250,
+  "endYear": 251,
+  "type": "persecution",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Decian_persecution",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Byzantine_icon_St-Mercurius_1295.jpg/330px-Byzantine_icon_St-Mercurius_1295.jpg",
+  "summary": "The Decian persecution (250-251 AD) was the first empire-wide, systematic persecution of Christians in the Roman Empire. Emperor Decius issued an edict requiring all citizens to perform a sacrifice to the Roman gods and obtain a certificate (libellus) proving their compliance. Many Christians refused and were martyred, while others lapsed and later sought readmission to the Church, leading to debates about penance and reconciliation.",
+  "keyDocuments": [
+    "Libelli (sacrifice certificates)"
+  ]
+}

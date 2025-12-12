@@ -1,0 +1,13 @@
+{
+  "id": "destruction-jerusalem",
+  "name": "Destruction of Jerusalem",
+  "startYear": 70,
+  "endYear": 70,
+  "type": "other",
+  "locationId": "jerusalem",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08355a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%28Venice%29_La_distruzione_del_tempio_di_Gerusalemme_-Francesco_Hayez_-_gallerie_Accademia_Venice.jpg/330px-%28Venice%29_La_distruzione_del_tempio_di_Gerusalemme_-Francesco_Hayez_-_gallerie_Accademia_Venice.jpg",
+  "summary": "In 70 AD, the Roman general Titus besieged and destroyed Jerusalem, including the Second Temple, in response to the First Jewish-Roman War. This event fulfilled Jesus' prophecy about the destruction of the Temple and marked the end of the Jewish-Christian center in Jerusalem, forcing the Church to spread throughout the Roman Empire.",
+  "keyDocuments": []
+}

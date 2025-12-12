@@ -1,0 +1,25 @@
+{
+  "id": "cuthbert",
+  "name": "St. Cuthbert",
+  "birthYear": 634,
+  "deathYear": 687,
+  "feastDay": "March 20",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "monk"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lindisfarne",
+      "description": "Bishop of Lindisfarne"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Cuthbert",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04566a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Cuthbert_discovers_piece_of_timber_-_Life_of_St._Cuthbert_%28late_12th_C%29%2C_f.45v_-_BL_Yates_Thompson_MS_26.jpg",
+  "summary": "Cuthbert was a monk, bishop, and hermit who is one of the most important saints of early medieval England. He was a monk at Melrose and later at Lindisfarne, where he became bishop. He was known for his holiness, miracles, and devotion to prayer. After his death, his body was preserved and became a major pilgrimage site. He is the patron saint of Northumbria.",
+  "keyQuotes": []
+}

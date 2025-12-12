@@ -1,0 +1,24 @@
+{
+  "id": "innocent-i",
+  "name": "St. Innocent I",
+  "birthYear": null,
+  "deathYear": 417,
+  "feastDay": "July 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Bishop of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Innocent_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08012a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Innocentius_Papa_S_Martino_ai_Monti.JPG/330px-Innocentius_Papa_S_Martino_ai_Monti.JPG",
+  "summary": "Innocent I was Bishop of Rome from 401 to 417. He strongly asserted papal authority and is known for his letters to various bishops, in which he claimed universal jurisdiction over the Church. He supported St. John Chrysostom during his exile and condemned Pelagianism. He also dealt with the sack of Rome by Alaric in 410, working to maintain Church order during the crisis.",
+  "keyQuotes": []
+}

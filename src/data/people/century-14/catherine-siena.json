@@ -1,0 +1,35 @@
+{
+  "id": "catherine-siena",
+  "name": "St. Catherine of Siena",
+  "birthYear": 1347,
+  "deathYear": 1380,
+  "feastDay": "April 29",
+  "primaryTradition": "Latin",
+  "roles": [
+    "mystic",
+    "Doctor of the Church",
+    "tertiary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Worked to end the Avignon Papacy and restore the papacy to Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_of_Siena",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03447a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Saint_Catherine_by_Andrea_Vanni%2C_San_Domenico%2C_Siena.jpg",
+  "summary": "Catherine of Siena was an Italian mystic, philosopher, and theologian who played a crucial role in ending the Avignon Papacy and returning the papacy to Rome. Despite being an uneducated woman, she corresponded with popes, cardinals, and rulers, offering spiritual counsel and political advice. She is one of the few women declared a Doctor of the Church and is the patron saint of Italy and Europe.",
+  "keyQuotes": [
+    "Be who God meant you to be and you will set the world on fire.",
+    "Nothing great is ever achieved without much enduring."
+  ],
+  "writings": [
+    {
+      "title": "The Dialogue of Divine Providence",
+      "url": "https://www.newadvent.org/fathers/3704.htm"
+    }
+  ]
+}

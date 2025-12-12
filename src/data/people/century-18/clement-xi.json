@@ -1,0 +1,30 @@
+{
+  "id": "clement-xi",
+  "name": "Pope Clement XI",
+  "birthYear": 1649,
+  "deathYear": 1721,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1700 to 1721"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Clement_XI",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04025a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Pope_Clement_XI.jpg/330px-Pope_Clement_XI.jpg",
+  "summary": "Clement XI was pope from 1700 to 1721. His pontificate was marked by conflicts with European powers, particularly over Jansenism and the Chinese Rites Controversy. He issued the bull Unigenitus (1713) condemning Jansenism and Ex illa die (1715) prohibiting the Chinese rites. He was a patron of the arts and learning, supporting the Vatican Library and commissioning works of art.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Unigenitus",
+      "url": "https://www.papalencyclicals.net/clem11/c11unige.htm"
+    }
+  ]
+}

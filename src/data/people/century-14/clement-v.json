@@ -1,0 +1,23 @@
+{
+  "id": "clement-v",
+  "name": "Pope Clement V",
+  "birthYear": 1264,
+  "deathYear": 1314,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lyons",
+      "description": "First Avignon Pope, began the Babylonian Captivity"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Clement_V",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04039a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Clemente_V_cappellone_degli_Spagnoli.JPG/330px-Clemente_V_cappellone_degli_Spagnoli.JPG",
+  "summary": "Clement V was Pope from 1305 to 1314. He was the first pope to move the papal court to Avignon, beginning what would become known as the Avignon Papacy or Babylonian Captivity. Under pressure from King Philip IV of France, he dissolved the Knights Templar and suppressed the order. He also convened the Council of Vienne.",
+  "keyQuotes": []
+}

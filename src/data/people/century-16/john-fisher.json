@@ -1,0 +1,27 @@
+{
+  "id": "john-fisher",
+  "name": "St. John Fisher",
+  "birthYear": 1469,
+  "deathYear": 1535,
+  "feastDay": "June 22",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "cardinal",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "london",
+      "description": "Bishop of Rochester, martyred in London"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Fisher",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06078a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/San_Juan_Fisher_Obispo_de_Rochester_y_M%C3%A1rtir.jpg/330px-San_Juan_Fisher_Obispo_de_Rochester_y_M%C3%A1rtir.jpg",
+  "summary": "John Fisher was an English Catholic bishop, cardinal, and theologian. He was the Bishop of Rochester and Chancellor of the University of Cambridge. He was the only bishop in England to oppose Henry VIII's break with Rome and refusal to recognize the king as head of the Church of England. He was imprisoned in the Tower of London and beheaded in 1535, just two weeks before Thomas More. He was made a cardinal by Pope Paul III while in prison.",
+  "keyQuotes": [],
+  "writings": []
+}

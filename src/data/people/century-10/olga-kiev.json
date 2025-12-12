@@ -1,0 +1,25 @@
+{
+  "id": "olga-kiev",
+  "name": "St. Olga of Kiev",
+  "birthYear": 890,
+  "deathYear": 969,
+  "feastDay": "July 11",
+  "primaryTradition": "Greek",
+  "roles": [
+    "queen",
+    "regent"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "kiev",
+      "description": "Princess and regent of Kievan Rus"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Olga_of_Kiev",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11235a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/St_Olga_by_Nesterov_in_1892_%28cropped%29.jpg",
+  "summary": "Olga of Kiev was the first Christian ruler of Kievan Rus. She was regent for her son Sviatoslav and later for her grandson Vladimir. She was baptized in Constantinople and worked to spread Christianity in Kievan Rus, though her efforts were initially resisted. She is venerated as a saint in both the Eastern Orthodox and Roman Catholic Churches and is considered the first Russian saint.",
+  "keyQuotes": []
+}

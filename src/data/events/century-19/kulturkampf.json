@@ -1,0 +1,12 @@
+{
+  "id": "kulturkampf",
+  "name": "Kulturkampf",
+  "startYear": 1871,
+  "endYear": 1878,
+  "type": "persecution",
+  "locationId": "cologne",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Kulturkampf",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08710b.htm",
+  "summary": "The Kulturkampf (culture struggle) was a conflict between the German government under Chancellor Otto von Bismarck and the Catholic Church from 1871 to 1878. The government passed laws restricting Catholic influence, expelling Jesuits, controlling education, and requiring state approval for clerical appointments. The conflict ended with a compromise, but it demonstrated the tensions between the Church and modern nation-states.",
+  "keyDocuments": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "cyril-methodius",
+  "name": "St. Cyril",
+  "birthYear": 826,
+  "deathYear": 869,
+  "feastDay": "February 14",
+  "primaryTradition": "Greek",
+  "roles": [
+    "monk",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "moravia",
+      "description": "Missionary to the Slavs in Moravia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Cyril_and_Methodius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04592a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/75/Sv_Kiril_Metodij_Zahari_Zograf_Trojanski_mon_1848.jpg",
+  "summary": "Cyril, along with his brother Methodius, were Byzantine Greek brothers who became missionaries to the Slavs. They are credited with creating the Glagolitic alphabet, the first alphabet used to transcribe Old Church Slavonic. They translated the Bible and liturgical texts into Slavonic, which helped spread Christianity among Slavic peoples. They are venerated as the Apostles to the Slavs and are co-patrons of Europe.",
+  "keyQuotes": []
+}

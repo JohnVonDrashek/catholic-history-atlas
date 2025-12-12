@@ -1,0 +1,30 @@
+{
+  "id": "clement-xiv",
+  "name": "Pope Clement XIV",
+  "birthYear": 1705,
+  "deathYear": 1774,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1769 to 1774, suppressed the Jesuits"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Clement_XIV",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04026a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Pope_Clement_XIV.jpg/330px-Pope_Clement_XIV.jpg",
+  "summary": "Clement XIV was pope from 1769 to 1774. Under intense pressure from Catholic monarchs, particularly the Bourbon courts of France, Spain, and Portugal, he issued the brief Dominus ac Redemptor in 1773, suppressing the Society of Jesus throughout the Catholic world. This was one of the most controversial acts of the 18th-century papacy and had lasting consequences for Catholic missions and education.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Dominus ac Redemptor",
+      "url": "https://www.papalencyclicals.net/clem14/c14domi.htm"
+    }
+  ]
+}

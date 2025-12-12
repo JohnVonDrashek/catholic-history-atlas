@@ -1,0 +1,15 @@
+{
+  "id": "marcionism",
+  "name": "Marcionism",
+  "startYear": 144,
+  "endYear": 144,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Marcionism",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09645c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/M.Sander_-_Marcion_%C3%B5petamas.jpg/330px-M.Sander_-_Marcion_%C3%B5petamas.jpg",
+  "summary": "Marcionism was a major heretical movement founded by Marcion of Sinope around 144 AD. Marcion rejected the Old Testament and most of the New Testament, accepting only an edited version of Luke's Gospel and ten of Paul's letters. His dualistic theology, which posited two separate gods (the creator God of the Old Testament and the loving God of the New), was vigorously opposed by the early Church and led to the development of the New Testament canon.",
+  "keyDocuments": [
+    "Marcion's Canon"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hadrian-i",
+  "name": "Pope Hadrian I",
+  "birthYear": 700,
+  "deathYear": 795,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Adrian_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01151a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Pope_Adrian_I.jpg/330px-Pope_Adrian_I.jpg",
+  "summary": "Hadrian I was Pope from 772 to 795. He is known for his close relationship with Charlemagne, whom he crowned as Patrician of the Romans. He worked with Charlemagne to defend the Papal States and supported the Carolingian Renaissance. He convened the Second Council of Nicaea (787), which restored the veneration of icons.",
+  "keyQuotes": []
+}

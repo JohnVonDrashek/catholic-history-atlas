@@ -1,0 +1,26 @@
+{
+  "id": "lucian-antioch",
+  "name": "St. Lucian of Antioch",
+  "birthYear": 240,
+  "deathYear": 312,
+  "feastDay": "January 7",
+  "primaryTradition": "Greek",
+  "roles": [
+    "priest",
+    "martyr",
+    "biblical scholar"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "antioch",
+      "description": "Priest and biblical scholar in Antioch"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Lucian_of_Antioch",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09410a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Lucian_of_Antioch_%28Menologion_of_Basil_II%29.jpg/330px-Lucian_of_Antioch_%28Menologion_of_Basil_II%29.jpg",
+  "summary": "Lucian was a priest and biblical scholar in Antioch who produced a critical edition of the Greek Bible known as the 'Lucianic recension.' He was martyred during the Diocletianic persecution. His biblical text was influential in the Eastern Church, and he is considered a forerunner of Arianism by some scholars.",
+  "keyQuotes": []
+}

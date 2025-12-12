@@ -1,0 +1,25 @@
+{
+  "id": "radegund",
+  "name": "St. Radegund",
+  "birthYear": 520,
+  "deathYear": 587,
+  "feastDay": "August 13",
+  "primaryTradition": "Latin",
+  "roles": [
+    "queen",
+    "nun"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "poitiers",
+      "description": "Queen, then nun in Poitiers"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Radegund",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12610a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Sainte_Radegonde.JPG",
+  "summary": "Radegund was a Frankish queen who left her royal life to become a nun. She founded the monastery of the Holy Cross in Poitiers and became known for her asceticism, charity, and devotion. She is one of the few early medieval queens to be canonized and is remembered for her example of renouncing worldly power for religious life.",
+  "keyQuotes": []
+}

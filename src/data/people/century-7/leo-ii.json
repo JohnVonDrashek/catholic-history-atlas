@@ -1,0 +1,24 @@
+{
+  "id": "leo-ii",
+  "name": "St. Leo II",
+  "birthYear": null,
+  "deathYear": 683,
+  "feastDay": "July 3",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09160a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pope_Leo_II.jpg/330px-Pope_Leo_II.jpg",
+  "summary": "Leo II was Pope from 682 to 683. He confirmed the decrees of the Third Council of Constantinople and worked to implement its decisions. He is known for his efforts to maintain unity between the Eastern and Western Churches and for his charitable works.",
+  "keyQuotes": []
+}

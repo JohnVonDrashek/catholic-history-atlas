@@ -1,0 +1,24 @@
+{
+  "id": "leo-iii",
+  "name": "St. Leo III",
+  "birthYear": 750,
+  "deathYear": 816,
+  "feastDay": "June 12",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_III",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09161a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pope_Leo_III.jpg/330px-Pope_Leo_III.jpg",
+  "summary": "Leo III was Pope from 795 to 816. He is most famous for crowning Charlemagne as Holy Roman Emperor on Christmas Day, 800, an event that established the relationship between the papacy and the empire. He survived an attack by Roman nobles and was protected by Charlemagne. He worked to strengthen papal authority and reform the Church.",
+  "keyQuotes": []
+}

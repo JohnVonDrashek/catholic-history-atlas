@@ -1,0 +1,12 @@
+{
+  "id": "end-western-schism",
+  "name": "End of the Western Schism",
+  "startYear": 1417,
+  "endYear": 1417,
+  "type": "schism",
+  "locationId": "constance",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Western_Schism",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13539a.htm",
+  "summary": "The Western Schism, which began in 1378, was finally resolved at the Council of Constance in 1417 with the election of Pope Martin V. For nearly 40 years, the Church had been divided with multiple claimants to the papacy, causing confusion and weakening papal authority. The resolution restored unity to the Western Church.",
+  "keyDocuments": []
+}

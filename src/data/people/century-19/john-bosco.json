@@ -1,0 +1,34 @@
+{
+  "id": "john-bosco",
+  "name": "St. John Bosco",
+  "birthYear": 1815,
+  "deathYear": 1888,
+  "feastDay": "January 31",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "founder",
+    "educator"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "milan",
+      "description": "Founder of the Salesians"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Bosco",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02689d.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/65/Don_Bosco_%40_Torino%2C_1880_%28original%29.jpg",
+  "summary": "John Bosco, also known as Don Bosco, was an Italian priest and educator who founded the Salesian Society and the Daughters of Mary Help of Christians. He dedicated his life to the education and care of poor and abandoned youth, developing a preventive system of education based on reason, religion, and loving kindness. He is the patron saint of apprentices, editors, and young people.",
+  "keyQuotes": [
+    "It is not enough to love the young; they must know that they are loved."
+  ],
+  "writings": [
+    {
+      "title": "Memoirs of the Oratory",
+      "url": "https://www.salesianresources.org/books/memoirs-of-the-oratory"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "french-revolution-church",
+  "name": "French Revolution and the Church",
+  "startYear": 1789,
+  "endYear": 1799,
+  "type": "persecution",
+  "locationId": "lyons",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Dechristianization_of_France_during_the_French_Revolution",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06265a.htm",
+  "summary": "The French Revolution brought severe persecution to the Catholic Church in France. The Civil Constitution of the Clergy (1790) attempted to subordinate the Church to the state, leading to a schism. Many priests and religious were executed, churches were desecrated, and the Church's property was confiscated. The Reign of Terror (1793-1794) saw the execution of thousands of clergy and religious.",
+  "keyDocuments": [
+    "Civil Constitution of the Clergy (1790)",
+    "Declaration of the Rights of Man and of the Citizen (1789)"
+  ]
+}

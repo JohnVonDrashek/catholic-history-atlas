@@ -1,0 +1,30 @@
+{
+  "id": "pio-pietrelcina",
+  "name": "St. Pio of Pietrelcina",
+  "birthYear": 1887,
+  "deathYear": 1968,
+  "feastDay": "September 23",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "mystic",
+    "stigmatist"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Served as Capuchin friar and priest"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pio_of_Pietrelcina",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12107a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Padre_Pio_portraitFXD.jpg/330px-Padre_Pio_portraitFXD.jpg",
+  "summary": "Pio of Pietrelcina, commonly known as Padre Pio, was an Italian Capuchin friar, priest, and mystic who is venerated as a saint in the Catholic Church. He was known for bearing the stigmata for most of his life and for his reported abilities of bilocation, levitation, prophecy, and miraculous healings. He founded the House for the Relief of Suffering, a hospital in San Giovanni Rotondo.",
+  "keyQuotes": [
+    "Pray, hope, and don't worry.",
+    "The life of a Christian is nothing but a perpetual struggle against self."
+  ],
+  "writings": []
+}

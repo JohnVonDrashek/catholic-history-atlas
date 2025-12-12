@@ -1,0 +1,46 @@
+{
+  "id": "origen",
+  "name": "Origen",
+  "birthYear": 185,
+  "deathYear": 254,
+  "feastDay": null,
+  "primaryTradition": "Greek",
+  "roles": [
+    "theologian",
+    "teacher",
+    "biblical scholar"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Head of Catechetical School of Alexandria"
+    },
+    {
+      "placeId": "caesarea-maritima",
+      "description": "Established school in Caesarea"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Origen",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11306a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Origen.jpg/330px-Origen.jpg",
+  "summary": "Origen was one of the most influential early Christian theologians and biblical scholars. He headed the Catechetical School of Alexandria and wrote extensively on Scripture, theology, and philosophy. While some of his speculative teachings were later condemned, his contributions to biblical exegesis, theology, and Christian philosophy were foundational for later Church Fathers.",
+  "keyQuotes": [
+    "The end of the world and the consummation will take place when everyone shall be subjected to punishment."
+  ],
+  "writings": [
+    {
+      "title": "On First Principles",
+      "url": "https://www.ccel.org/ccel/schaff/anf04.iv.iv.html"
+    },
+    {
+      "title": "Against Celsus",
+      "url": "https://www.ccel.org/ccel/schaff/anf04.iv.v.html"
+    },
+    {
+      "title": "Commentary on the Gospel of John",
+      "url": "https://www.ccel.org/ccel/origen/john.html"
+    }
+  ]
+}

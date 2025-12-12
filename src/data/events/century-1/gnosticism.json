@@ -1,0 +1,16 @@
+{
+  "id": "gnosticism",
+  "name": "Rise of Gnosticism",
+  "startYear": 100,
+  "endYear": 200,
+  "type": "other",
+  "locationId": "alexandria",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Gnosticism",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06592a.htm",
+  "summary": "Gnosticism was a diverse set of religious movements that emerged in the 2nd century, teaching that salvation comes through secret knowledge (gnosis) rather than faith. Gnostics typically held that the material world was created by an inferior deity and that the true God was completely transcendent. Major Gnostic teachers included Valentinus, Basilides, and Marcion. The Church Fathers, especially Irenaeus, wrote extensively against Gnosticism.",
+  "keyDocuments": [
+    "Against Heresies (Irenaeus)",
+    "Gospel of Thomas",
+    "Gospel of Judas"
+  ]
+}

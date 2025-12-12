@@ -1,0 +1,41 @@
+{
+  "id": "john-chrysostom",
+  "name": "St. John Chrysostom",
+  "birthYear": 349,
+  "deathYear": 407,
+  "feastDay": "September 13",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "constantinople",
+      "description": "Bishop of Constantinople"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Chrysostom",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08452b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Johnchrysostom.jpg/330px-Johnchrysostom.jpg",
+  "summary": "John Chrysostom was an important Early Church Father who served as archbishop of Constantinople. He is known for his preaching and public speaking, his denunciation of abuse of authority by both ecclesiastical and political leaders, and his Divine Liturgy.",
+  "keyQuotes": [
+    "The rich man is not one who is in possession of much, but one who gives much."
+  ],
+  "writings": [
+    {
+      "title": "Homilies on the Gospel of Matthew",
+      "url": "https://www.ccel.org/ccel/schaff/npnf210.html"
+    },
+    {
+      "title": "Homilies on the Acts of the Apostles",
+      "url": "https://www.ccel.org/ccel/schaff/npnf211.html"
+    },
+    {
+      "title": "On the Priesthood",
+      "url": "https://www.ccel.org/ccel/schaff/npnf209.iii.html"
+    }
+  ]
+}

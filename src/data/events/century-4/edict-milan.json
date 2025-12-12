@@ -1,0 +1,15 @@
+{
+  "id": "edict-milan",
+  "name": "Edict of Milan",
+  "startYear": 313,
+  "endYear": 313,
+  "type": "other",
+  "locationId": "milan",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Edict_of_Milan",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05330a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Constantine_Chiaramonti_Inv1749.jpg/330px-Constantine_Chiaramonti_Inv1749.jpg",
+  "summary": "The Edict of Milan, issued by Emperors Constantine and Licinius in 313 AD, legalized Christianity throughout the Roman Empire and granted religious tolerance to all faiths. This edict ended the persecution of Christians and marked the beginning of Christianity's transformation from a persecuted minority to the dominant religion of the Roman Empire.",
+  "keyDocuments": [
+    "Edict of Milan"
+  ]
+}

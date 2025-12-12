@@ -1,0 +1,16 @@
+{
+  "id": "council-constantinople-ii",
+  "name": "Second Council of Constantinople",
+  "startYear": 553,
+  "endYear": 553,
+  "type": "council",
+  "locationId": "constantinople",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Second_Council_of_Constantinople",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04308a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/EcumenicalCouncil_5th_11-22.jpg",
+  "summary": "The Second Council of Constantinople was the fifth ecumenical council, convened by Emperor Justinian I in 553 AD. The council condemned the 'Three Chapters' (writings of Theodore of Mopsuestia, Theodoret of Cyrrhus, and Ibas of Edessa) in an attempt to reconcile the Monophysites. It also affirmed the Christological definitions of the previous councils and clarified the relationship between the divine and human natures of Christ.",
+  "keyDocuments": [
+    "Canons of the Second Council of Constantinople",
+    "Condemnation of the Three Chapters"
+  ]
+}

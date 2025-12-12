@@ -1,0 +1,31 @@
+{
+  "id": "isidore-seville",
+  "name": "St. Isidore of Seville",
+  "birthYear": 560,
+  "deathYear": 636,
+  "feastDay": "April 4",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "seville",
+      "description": "Bishop of Seville"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Isidore_of_Seville",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08186a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Isidor_von_Sevilla.jpeg",
+  "summary": "Isidore of Seville was a bishop and scholar who is considered the last of the Latin Church Fathers. He is best known for his 'Etymologies,' an encyclopedic work that preserved much classical knowledge. He presided over the Fourth Council of Toledo and worked to convert the Visigoths from Arianism to Catholicism. He is the patron saint of the Internet and computer users.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Etymologies",
+      "url": "https://www.ccel.org/ccel/schaff/npnf211.iv.html"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "english-reformation",
+  "name": "English Reformation",
+  "startYear": 1534,
+  "endYear": 1603,
+  "type": "other",
+  "locationId": "london",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/English_Reformation",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12777a.htm",
+  "summary": "The English Reformation began when King Henry VIII broke with Rome after the pope refused to annul his marriage to Catherine of Aragon. The Act of Supremacy (1534) declared the English monarch as the head of the Church of England. This led to the dissolution of monasteries, the execution of Catholic martyrs including Thomas More and John Fisher, and the establishment of the Anglican Church. The period saw alternating periods of Catholic and Protestant rule under different monarchs.",
+  "keyDocuments": [
+    "Act of Supremacy (1534)",
+    "Book of Common Prayer"
+  ]
+}

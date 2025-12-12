@@ -1,0 +1,25 @@
+{
+  "id": "martin-tours",
+  "name": "St. Martin of Tours",
+  "birthYear": 316,
+  "deathYear": 397,
+  "feastDay": "November 11",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "monk"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "tours",
+      "description": "Bishop of Tours"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Martin_of_Tours",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09732c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Simone_Martini_040.jpg/330px-Simone_Martini_040.jpg",
+  "summary": "Martin of Tours was a bishop and monk who is credited with bringing monasticism to Gaul. He founded the first monastery in Gaul and is known for his charity and asceticism. The story of him sharing his cloak with a beggar became one of the most famous hagiographical accounts in the Middle Ages.",
+  "keyQuotes": []
+}

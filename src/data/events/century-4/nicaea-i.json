@@ -1,0 +1,16 @@
+{
+  "id": "nicaea-i",
+  "name": "First Council of Nicaea",
+  "startYear": 325,
+  "endYear": 325,
+  "type": "council",
+  "locationId": "nicaea",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11044a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Nikea-arius.png/330px-Nikea-arius.png",
+  "summary": "The First Council of Nicaea was a council of Christian bishops convened in the Bithynian city of Nicaea by the Roman Emperor Constantine I in AD 325. This ecumenical council was the first effort to attain consensus in the church through an assembly representing all of Christendom.",
+  "keyDocuments": [
+    "Nicene Creed",
+    "Canons of Nicaea"
+  ]
+}

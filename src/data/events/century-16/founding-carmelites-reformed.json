@@ -1,0 +1,15 @@
+{
+  "id": "founding-carmelites-reformed",
+  "name": "Reform of the Carmelite Order",
+  "startYear": 1562,
+  "endYear": 1591,
+  "type": "other",
+  "locationId": "avila",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Discalced_Carmelites",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03325a.htm",
+  "summary": "St. Teresa of Avila, with the help of St. John of the Cross, reformed the Carmelite Order, establishing the Discalced (barefoot) Carmelites. The reform emphasized a return to the original contemplative and austere spirit of the order, with strict observance of poverty, prayer, and solitude. The reformed Carmelites became a major force in the Counter-Reformation and produced many mystics and saints.",
+  "keyDocuments": [
+    "The Interior Castle (Teresa of Avila)",
+    "The Dark Night of the Soul (John of the Cross)"
+  ]
+}

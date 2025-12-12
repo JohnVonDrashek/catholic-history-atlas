@@ -1,0 +1,30 @@
+{
+  "id": "john-wycliffe",
+  "name": "John Wycliffe",
+  "birthYear": 1328,
+  "deathYear": 1384,
+  "primaryTradition": "Latin",
+  "roles": [
+    "theologian",
+    "scholar"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "york",
+      "description": "English theologian and reformer"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Wycliffe",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15722a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Wycliffe_by_Kirby.jpg/330px-Wycliffe_by_Kirby.jpg",
+  "summary": "John Wycliffe was an English scholastic philosopher and theologian. He criticized the wealth and corruption of the Church, rejected transubstantiation, and argued that Scripture alone was the source of authority. His followers, the Lollards, spread his teachings, and his translation of the Bible into English influenced later reformers. His works were condemned at the Council of Constance.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "On the Truth of Holy Scripture",
+      "url": "https://www.newadvent.org/cathen/15722a.htm"
+    }
+  ]
+}

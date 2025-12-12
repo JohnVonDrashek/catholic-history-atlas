@@ -1,0 +1,34 @@
+{
+  "id": "benedict-nursia",
+  "name": "St. Benedict of Nursia",
+  "birthYear": 480,
+  "deathYear": 547,
+  "feastDay": "July 11",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "abbot"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "monte-cassino",
+      "description": "Founder and abbot of Monte Cassino"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Benedict_of_Nursia",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02467a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/16/Memling%2C_Trittico_di_Benedetto_Portinari%2C_San_Benedetto.jpg",
+  "summary": "Benedict of Nursia is known as the father of Western monasticism. He founded the monastery at Monte Cassino and wrote the Rule of St. Benedict, which became the foundation for monastic life in the West. His rule emphasized prayer, work, and community life, and has influenced countless religious communities for over 1,500 years. He is the patron saint of Europe.",
+  "keyQuotes": [
+    "Pray and work.",
+    "Listen carefully, my son, to the master's instructions, and attend to them with the ear of your heart."
+  ],
+  "writings": [
+    {
+      "title": "Rule of St. Benedict",
+      "url": "https://www.ccel.org/ccel/benedict/rule.html"
+    }
+  ]
+}

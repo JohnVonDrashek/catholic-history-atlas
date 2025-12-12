@@ -1,0 +1,42 @@
+{
+  "id": "jerome",
+  "name": "St. Jerome",
+  "birthYear": 347,
+  "deathYear": 420,
+  "feastDay": "September 30",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "Doctor of the Church",
+    "biblical scholar"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "bethlehem",
+      "description": "Monk and biblical scholar in Bethlehem"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jerome",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08341a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/MatthiasStom-SaintJerome-Nantes.jpg/330px-MatthiasStom-SaintJerome-Nantes.jpg",
+  "summary": "Jerome was a priest, biblical scholar, and translator who produced the Vulgate, the Latin translation of the Bible that became the standard version in the Western Church for over a millennium. He wrote extensively on Scripture, theology, and Christian life, and is considered one of the four original Doctors of the Church.",
+  "keyQuotes": [
+    "Ignorance of Scripture is ignorance of Christ."
+  ],
+  "writings": [
+    {
+      "title": "The Vulgate (Latin Bible)",
+      "url": "https://www.biblegateway.com/versions/Vulgate-Latin-Bible/"
+    },
+    {
+      "title": "Commentary on Matthew",
+      "url": "https://www.ccel.org/ccel/schaff/npnf206.vi.html"
+    },
+    {
+      "title": "Letters",
+      "url": "https://www.ccel.org/ccel/schaff/npnf206.v.html"
+    }
+  ]
+}

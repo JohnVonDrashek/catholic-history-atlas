@@ -1,0 +1,12 @@
+{
+  "id": "western-schism",
+  "name": "Western Schism (Great Schism)",
+  "startYear": 1378,
+  "endYear": 1417,
+  "type": "schism",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Western_Schism",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13539a.htm",
+  "summary": "The Western Schism, also known as the Great Schism or Papal Schism, was a split within the Catholic Church from 1378 to 1417 when multiple men simultaneously claimed to be the true pope. It began with the election of Urban VI in Rome, followed by the election of Clement VII in Avignon by cardinals who disputed Urban's election. At one point, there were even three rival popes. The schism deeply divided Western Christendom and damaged the credibility of the papacy. It was finally resolved by the Council of Constance.",
+  "keyDocuments": []
+}

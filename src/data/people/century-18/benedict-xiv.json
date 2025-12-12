@@ -1,0 +1,25 @@
+{
+  "id": "benedict-xiv",
+  "name": "Pope Benedict XIV",
+  "birthYear": 1675,
+  "deathYear": 1758,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1740 to 1758"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Benedict_XIV",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02432a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Pope_Benedict_XIV.jpg/330px-Pope_Benedict_XIV.jpg",
+  "summary": "Benedict XIV was pope from 1740 to 1758. He was one of the most learned popes of the 18th century, known for his scholarship and administrative reforms. He worked to improve relations with European powers while maintaining Church doctrine. He definitively settled the Chinese Rites Controversy with Ex quo singulari (1742). He was a patron of learning and the arts, and he reformed the procedures for beatification and canonization.",
+  "keyQuotes": [],
+  "writings": []
+}

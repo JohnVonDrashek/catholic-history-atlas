@@ -1,0 +1,31 @@
+{
+  "id": "bernadette-soubirous",
+  "name": "St. Bernadette Soubirous",
+  "birthYear": 1844,
+  "deathYear": 1879,
+  "feastDay": "April 16",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "visionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "Visionary of Lourdes"
+    },
+    {
+      "placeId": "paris",
+      "description": "Sister of Charity in Nevers"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Bernadette_Soubirous",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02504b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Bernadette_Soubirous.jpg",
+  "summary": "Bernadette Soubirous was a French peasant girl who, at the age of 14, witnessed 18 apparitions of the Blessed Virgin Mary in a grotto near Lourdes in 1858. The apparition identified herself as 'the Immaculate Conception' and revealed a spring with healing properties. Bernadette later became a nun with the Sisters of Charity of Nevers and lived a life of humility and suffering. Lourdes became one of the world's most important pilgrimage sites.",
+  "keyQuotes": [
+    "I am the Immaculate Conception."
+  ]
+}

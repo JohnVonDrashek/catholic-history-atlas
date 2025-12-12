@@ -1,0 +1,31 @@
+{
+  "id": "william-ockham",
+  "name": "William of Ockham",
+  "birthYear": 1287,
+  "deathYear": 1347,
+  "primaryTradition": "Latin",
+  "roles": [
+    "philosopher",
+    "theologian",
+    "friar"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "york",
+      "description": "English Franciscan philosopher and theologian"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/William_of_Ockham",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11209a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/William_of_Ockham.png",
+  "summary": "William of Ockham was an English Franciscan friar, philosopher, and theologian. He is best known for Ockham's Razor, the principle that the simplest explanation is usually the best. He was involved in the dispute over Franciscan poverty and spent much of his life in exile after being accused of heresy. His nominalist philosophy challenged the dominant scholastic realism.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Summa Logicae",
+      "url": "https://www.newadvent.org/cathen/11209a.htm"
+    }
+  ]
+}

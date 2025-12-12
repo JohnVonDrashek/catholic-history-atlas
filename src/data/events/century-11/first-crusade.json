@@ -1,0 +1,12 @@
+{
+  "id": "first-crusade",
+  "name": "First Crusade",
+  "startYear": 1096,
+  "endYear": 1099,
+  "type": "other",
+  "locationId": "jerusalem",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Crusade",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04543c.htm",
+  "summary": "The First Crusade was launched in 1096 by Pope Urban II at the Council of Clermont. The crusade was called to aid the Byzantine Empire against the Seljuk Turks and to recapture the Holy Land. The crusaders successfully captured Jerusalem in 1099, establishing the Crusader States in the Levant. The First Crusade was the most successful of the crusades and had profound effects on both Europe and the Middle East.",
+  "keyDocuments": []
+}

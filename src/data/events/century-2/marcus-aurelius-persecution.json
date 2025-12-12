@@ -1,0 +1,14 @@
+{
+  "id": "marcus-aurelius-persecution",
+  "name": "Persecution under Marcus Aurelius",
+  "startYear": 177,
+  "endYear": 180,
+  "type": "persecution",
+  "locationId": "lyons",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+  "summary": "During the reign of Marcus Aurelius (161-180 AD), Christians faced severe persecution, particularly in Gaul. The most notable episode was the persecution in Lyons and Vienne in 177 AD, which resulted in the martyrdom of many Christians including the elderly bishop Pothinus and the slave Blandina. This persecution is documented in the 'Letter of the Churches of Lyons and Vienne.'",
+  "keyDocuments": [
+    "Letter of the Churches of Lyons and Vienne"
+  ]
+}

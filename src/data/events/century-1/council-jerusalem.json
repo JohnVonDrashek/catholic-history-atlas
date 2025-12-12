@@ -1,0 +1,15 @@
+{
+  "id": "council-jerusalem",
+  "name": "Council of Jerusalem",
+  "startYear": 50,
+  "endYear": 50,
+  "type": "council",
+  "locationId": "jerusalem",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Jerusalem",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08355a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Saint_James_the_Just.jpg/319px-Saint_James_the_Just.jpg",
+  "summary": "The Council of Jerusalem was the first Christian council, held around 50 AD to address the question of whether Gentile converts to Christianity needed to follow Jewish law, particularly circumcision. The council, led by James the Just and attended by Peter and Paul, decided that Gentile converts did not need to be circumcised, establishing the universal nature of the Christian mission.",
+  "keyDocuments": [
+    "Apostolic Decree"
+  ]
+}

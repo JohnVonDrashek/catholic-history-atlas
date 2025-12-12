@@ -1,0 +1,24 @@
+{
+  "id": "wilfrid",
+  "name": "St. Wilfrid",
+  "birthYear": 633,
+  "deathYear": 709,
+  "feastDay": "October 12",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "york",
+      "description": "Bishop of York"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Wilfrid",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15625a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Chichestercathedralwindowwilfredluffapeacock.jpg/330px-Chichestercathedralwindowwilfredluffapeacock.jpg",
+  "summary": "Wilfrid was a bishop who played a key role in the Synod of Whitby (664), where he successfully argued for the adoption of Roman practices over Celtic ones, particularly regarding the date of Easter. He was a strong advocate for Roman authority and practices in England and was known for his missionary work and church building. He faced exile multiple times due to political conflicts.",
+  "keyQuotes": []
+}

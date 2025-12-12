@@ -1,0 +1,32 @@
+{
+  "id": "bede",
+  "name": "St. Bede the Venerable",
+  "birthYear": 672,
+  "deathYear": 735,
+  "feastDay": "May 25",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "historian",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "jarrow",
+      "description": "Monk at Jarrow"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Bede",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02384a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/E-codices_bke-0047_001v_medium_%28cropped%29.jpg",
+  "summary": "Bede, known as the Venerable Bede, was an English monk, scholar, and historian. He is best known for his 'Ecclesiastical History of the English People,' which is a primary source for early English history. He was a prolific writer on theology, history, grammar, and science. He is the only native of Great Britain to be named a Doctor of the Church.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Ecclesiastical History of the English People",
+      "url": "https://www.ccel.org/ccel/bede/history.html"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "luis-de-velasco",
+  "name": "Bl. Luis de Velasco",
+  "birthYear": 1751,
+  "deathYear": 1794,
+  "feastDay": "September 2",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "blessed",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "lyons",
+      "description": "Martyred during the French Revolution"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Martyrs_of_the_French_Revolution",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06265a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Gerard_Seghers_%28attr%29_-_The_Four_Doctors_of_the_Western_Church%2C_Saint_Augustine_of_Hippo_%28354%E2%80%93430%29.jpg/330px-Gerard_Seghers_%28attr%29_-_The_Four_Doctors_of_the_Western_Church%2C_Saint_Augustine_of_Hippo_%28354%E2%80%93430%29.jpg",
+  "summary": "Luis de Velasco was a Spanish Augustinian priest who was martyred during the French Revolution. He was one of many priests and religious who refused to take the oath to the Civil Constitution of the Clergy and were executed for their fidelity to the Church. He was beatified as one of the Martyrs of the French Revolution.",
+  "keyQuotes": []
+}

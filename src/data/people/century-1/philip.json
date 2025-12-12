@@ -1,0 +1,27 @@
+{
+  "id": "philip",
+  "name": "St. Philip",
+  "birthYear": null,
+  "deathYear": 80,
+  "feastDay": "May 3",
+  "primaryTradition": "Greek",
+  "roles": [
+    "apostle",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "hierapolis",
+      "description": "Martyred in Hierapolis"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Philip_the_Apostle",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11797a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Rubens_apostel_philippus.jpg",
+  "summary": "Philip was one of the Twelve Apostles. He is mentioned in the Gospel of John as bringing Nathanael (Bartholomew) to Jesus. According to tradition, he preached in Asia Minor and was martyred by crucifixion in Hierapolis. He is often depicted with a cross or loaves of bread, referencing his question to Jesus about feeding the five thousand.",
+  "keyQuotes": [
+    "Lord, show us the Father, and it is enough for us."
+  ]
+}

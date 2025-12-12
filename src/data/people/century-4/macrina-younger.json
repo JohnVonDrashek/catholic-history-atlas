@@ -1,0 +1,24 @@
+{
+  "id": "macrina-younger",
+  "name": "St. Macrina the Younger",
+  "birthYear": 327,
+  "deathYear": 379,
+  "feastDay": "July 19",
+  "primaryTradition": "Greek",
+  "roles": [
+    "nun"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "caesarea-cappadocia",
+      "description": "Nun in Cappadocia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Macrina_the_Younger",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09500a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Macrina_the_Younger.jpg/320px-Macrina_the_Younger.jpg",
+  "summary": "Macrina the Younger was the sister of Basil the Great and Gregory of Nyssa, and the granddaughter of Macrina the Elder. She established a monastic community for women and was a significant influence on her brothers' theological development. Gregory of Nyssa wrote a biography of her life.",
+  "keyQuotes": []
+}

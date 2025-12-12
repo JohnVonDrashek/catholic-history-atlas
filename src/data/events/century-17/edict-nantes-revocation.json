@@ -1,0 +1,14 @@
+{
+  "id": "edict-nantes-revocation",
+  "name": "Revocation of the Edict of Nantes",
+  "startYear": 1685,
+  "endYear": 1685,
+  "type": "persecution",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Edict_of_Fontainebleau",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05377a.htm",
+  "summary": "King Louis XIV of France revoked the Edict of Nantes, which had granted religious freedom to French Protestants (Huguenots) since 1598. The revocation led to the destruction of Protestant churches, forced conversions, and the emigration of hundreds of thousands of Huguenots. While this was a political act by the French monarchy, it had significant religious and social consequences throughout Europe.",
+  "keyDocuments": [
+    "Edict of Fontainebleau (1685)"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "muratorian-canon",
+  "name": "Muratorian Canon",
+  "startYear": 170,
+  "endYear": 200,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Muratorian_fragment",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10629a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canon_Muratori.png/330px-Canon_Muratori.png",
+  "summary": "The Muratorian Canon, dating from around 170-200 AD, is the earliest known list of New Testament books. Discovered in the 18th century, it provides crucial evidence for the early formation of the biblical canon, listing most of the books now accepted as canonical and excluding others. It demonstrates that the core of the New Testament was already established by the late 2nd century.",
+  "keyDocuments": [
+    "Muratorian Fragment"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "ephrem-syrian",
+  "name": "St. Ephrem the Syrian",
+  "birthYear": 306,
+  "deathYear": 373,
+  "feastDay": "June 9",
+  "primaryTradition": "Syriac",
+  "roles": [
+    "deacon",
+    "hymnographer",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "edessa",
+      "description": "Deacon and teacher in Edessa"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ephrem_the_Syrian",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05498a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ephrem_the_Syrian_%28mosaic_in_Nea_Moni%29.jpg/330px-Ephrem_the_Syrian_%28mosaic_in_Nea_Moni%29.jpg",
+  "summary": "Ephrem the Syrian was a deacon, hymnographer, and theologian who wrote extensively in Syriac. He is known for his hymns, which were used to teach orthodox doctrine and combat heresy. He is the only Syriac-speaking Doctor of the Church and is venerated in both Eastern and Western Christianity.",
+  "keyQuotes": []
+}

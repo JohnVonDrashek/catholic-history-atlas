@@ -1,0 +1,31 @@
+{
+  "id": "francis-assisi",
+  "name": "St. Francis of Assisi",
+  "birthYear": 1181,
+  "deathYear": 1226,
+  "feastDay": "October 4",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "assisi",
+      "description": "Founder of the Franciscan Order"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_of_Assisi",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06221a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Philip_Fruytiers_-_St._Francis_of_Assisi.jpg",
+  "summary": "Francis of Assisi was an Italian Catholic friar, deacon, and mystic. He founded the Franciscan Order and is one of the most venerated religious figures in Christianity. He is known for his devotion to poverty, his love of nature, and for receiving the stigmata. He is the patron saint of Italy, animals, and the environment.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Canticle of the Sun",
+      "url": "https://www.ccel.org/ccel/francis/writings.html"
+    }
+  ]
+}

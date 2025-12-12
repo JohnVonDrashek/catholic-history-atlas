@@ -1,0 +1,32 @@
+{
+  "id": "boethius",
+  "name": "Boethius",
+  "birthYear": 477,
+  "deathYear": 524,
+  "primaryTradition": "Latin",
+  "roles": [
+    "philosopher",
+    "theologian"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "ravenna",
+      "description": "Philosopher and statesman, martyred in Ravenna"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Boethius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02610b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Boethius.jpeg",
+  "summary": "Boethius was a Roman philosopher, theologian, and statesman who served as consul under Theodoric the Great. He is best known for his work 'The Consolation of Philosophy,' written while imprisoned before his execution. His translations of Aristotle and other Greek works helped preserve classical learning in the West, and his theological works influenced medieval scholasticism.",
+  "keyQuotes": [
+    "In all adversity of fortune, the worst sort of misery is to have been happy."
+  ],
+  "writings": [
+    {
+      "title": "The Consolation of Philosophy",
+      "url": "https://www.ccel.org/ccel/boethius/consolation.html"
+    }
+  ]
+}

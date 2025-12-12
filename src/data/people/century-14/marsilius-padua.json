@@ -1,0 +1,30 @@
+{
+  "id": "marsilius-padua",
+  "name": "Marsilius of Padua",
+  "birthYear": 1275,
+  "deathYear": 1342,
+  "primaryTradition": "Latin",
+  "roles": [
+    "philosopher",
+    "political theorist"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Political philosopher who challenged papal authority"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Marsilius_of_Padua",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09720a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Marsile_de_Padoue_1319.jpg/330px-Marsile_de_Padoue_1319.jpg",
+  "summary": "Marsilius of Padua was an Italian scholar and political philosopher. His work Defensor Pacis challenged papal authority and argued that the Church should be subject to the state. He rejected the temporal power of the papacy and called for the Church to return to apostolic poverty. His ideas were condemned by Pope John XXII.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Defensor Pacis",
+      "url": "https://www.newadvent.org/cathen/09720a.htm"
+    }
+  ]
+}

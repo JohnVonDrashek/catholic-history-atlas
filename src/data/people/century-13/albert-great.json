@@ -1,0 +1,26 @@
+{
+  "id": "albert-great",
+  "name": "St. Albert the Great",
+  "birthYear": 1200,
+  "deathYear": 1280,
+  "feastDay": "November 15",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "theologian",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "cologne",
+      "description": "Bishop of Regensburg, teacher of Thomas Aquinas"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Albertus_Magnus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01264a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Vicente_salvador_gomez-san_alberto.jpg",
+  "summary": "Albert the Great was a German Dominican friar, bishop, and philosopher. He was one of the greatest scholars of the Middle Ages and is known for his comprehensive knowledge of natural sciences, philosophy, and theology. He was the teacher of Thomas Aquinas and is venerated as a Doctor of the Church. He is the patron saint of scientists and students of the natural sciences.",
+  "keyQuotes": []
+}

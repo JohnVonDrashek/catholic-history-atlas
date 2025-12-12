@@ -1,0 +1,32 @@
+{
+  "id": "robert-bellarmine",
+  "name": "St. Robert Bellarmine",
+  "birthYear": 1542,
+  "deathYear": 1621,
+  "feastDay": "September 17",
+  "primaryTradition": "Latin",
+  "roles": [
+    "cardinal",
+    "theologian",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Cardinal and theologian in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Robert_Bellarmine",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02411d.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Portret_van_kardinaal_Robertus_Bellarminus%2C_onbekend%2C_schilderij%2C_Museum_Plantin-Moretus_%28Antwerpen%29_-_MPM_V_IV_110_%28cropped%29.jpg/330px-Portret_van_kardinaal_Robertus_Bellarminus%2C_onbekend%2C_schilderij%2C_Museum_Plantin-Moretus_%28Antwerpen%29_-_MPM_V_IV_110_%28cropped%29.jpg",
+  "summary": "Robert Bellarmine was an Italian Jesuit cardinal, theologian, and Doctor of the Church. He was one of the most important Catholic apologists during the Counter-Reformation. His three-volume 'Disputations on the Controversies of the Christian Faith' was a comprehensive defense of Catholic doctrine against Protestant arguments. He was involved in the Galileo affair, though he treated Galileo with respect. He is the patron saint of catechists and catechumens.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Disputations on the Controversies of the Christian Faith",
+      "url": "https://www.ccel.org/ccel/bellarmine/controversies.html"
+    }
+  ]
+}

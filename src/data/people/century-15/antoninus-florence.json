@@ -1,0 +1,31 @@
+{
+  "id": "antoninus-florence",
+  "name": "St. Antoninus of Florence",
+  "birthYear": 1389,
+  "deathYear": 1459,
+  "feastDay": "May 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "archbishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "florence",
+      "description": "Archbishop of Florence"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Antoninus_of_Florence",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01595a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Sant%27antonino_pierozzi_%28cropped%29.jpg/330px-Sant%27antonino_pierozzi_%28cropped%29.jpg",
+  "summary": "Antoninus of Florence was a Dominican friar who became Archbishop of Florence. He was known for his learning, pastoral care, and efforts to reform the Church. He wrote extensively on moral theology and canon law. He was a key figure in the reform movement within the Dominican Order and worked to address corruption and promote spiritual renewal.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Summa Theologica",
+      "url": "https://www.newadvent.org/cathen/01595a.htm"
+    }
+  ]
+}

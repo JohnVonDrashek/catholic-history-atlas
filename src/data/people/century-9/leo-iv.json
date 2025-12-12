@@ -1,0 +1,24 @@
+{
+  "id": "leo-iv",
+  "name": "St. Leo IV",
+  "birthYear": null,
+  "deathYear": 855,
+  "feastDay": "July 17",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_IV",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09162a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Pope_Leo_IV.jpg/330px-Pope_Leo_IV.jpg",
+  "summary": "Leo IV was Pope from 847 to 855. He is known for fortifying Rome against Saracen attacks, including building the Leonine Wall around the Vatican. He worked to reform the clergy and strengthen the Church. He is credited with establishing the practice of blessing the fleet before battle.",
+  "keyQuotes": []
+}

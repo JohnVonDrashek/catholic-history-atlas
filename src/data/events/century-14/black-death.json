@@ -1,0 +1,12 @@
+{
+  "id": "black-death",
+  "name": "Black Death",
+  "startYear": 1347,
+  "endYear": 1351,
+  "type": "other",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Black_Death",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02425a.htm",
+  "summary": "The Black Death was one of the most devastating pandemics in human history, killing an estimated 30-60% of Europe's population between 1347 and 1351. The plague had profound effects on the Church, killing many clergy and leading to changes in religious practice. Flagellant movements arose, and many blamed the plague on God's wrath, leading to persecution of Jews and other minorities. The Church struggled to respond to the crisis, with many questioning why God would allow such suffering.",
+  "keyDocuments": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "septimius-severus-persecution",
+  "name": "Persecution under Septimius Severus",
+  "startYear": 202,
+  "endYear": 211,
+  "type": "persecution",
+  "locationId": "carthage",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+  "summary": "Emperor Septimius Severus issued an edict in 202 AD prohibiting conversion to Judaism or Christianity. This led to widespread persecution, particularly in North Africa and Egypt. The most famous martyrs of this period were Perpetua and Felicity in Carthage, whose detailed account of their imprisonment and martyrdom is one of the earliest Christian texts written by a woman.",
+  "keyDocuments": [
+    "Passion of Perpetua and Felicity"
+  ]
+}

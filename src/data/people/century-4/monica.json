@@ -1,0 +1,22 @@
+{
+  "id": "monica",
+  "name": "St. Monica",
+  "birthYear": 331,
+  "deathYear": 387,
+  "feastDay": "August 27",
+  "primaryTradition": "Latin",
+  "roles": [],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "hippo",
+      "description": "Mother of St. Augustine"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Monica",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10482a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Monica_of_Hippo_by_Gozzoli.jpg/330px-Monica_of_Hippo_by_Gozzoli.jpg",
+  "summary": "Monica was the mother of St. Augustine of Hippo. She is known for her persistent prayers for her son's conversion, which were eventually answered. Augustine wrote extensively about her in his 'Confessions,' describing her as a model of Christian motherhood and piety.",
+  "keyQuotes": []
+}

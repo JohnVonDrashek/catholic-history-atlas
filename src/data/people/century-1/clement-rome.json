@@ -1,0 +1,34 @@
+{
+  "id": "clement-rome",
+  "name": "St. Clement of Rome",
+  "birthYear": null,
+  "deathYear": 99,
+  "feastDay": "November 23",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "Apostolic Father",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Third or fourth Bishop of Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Clement_of_Rome",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04012c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clemens_Romanus.jpg/330px-Clemens_Romanus.jpg",
+  "summary": "Clement of Rome, also known as Pope Clement I, was one of the Apostolic Fathers and an early bishop of Rome. He is best known for his First Epistle to the Corinthians, one of the earliest Christian documents outside the New Testament. According to tradition, he was martyred by being tied to an anchor and thrown into the sea.",
+  "keyQuotes": [
+    "Let us be humble, therefore, brethren, laying aside all arrogance and conceit and folly and anger."
+  ],
+  "writings": [
+    {
+      "title": "First Epistle to the Corinthians",
+      "url": "https://www.ccel.org/ccel/schaff/anf01.ii.ii.html"
+    }
+  ]
+}

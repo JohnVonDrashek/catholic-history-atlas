@@ -1,0 +1,16 @@
+{
+  "id": "diocletianic-persecution",
+  "name": "Diocletianic Persecution",
+  "startYear": 303,
+  "endYear": 311,
+  "type": "persecution",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Diocletianic_Persecution",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Flagellation_St_Erasmus_Crypta_Balbi.jpg/330px-Flagellation_St_Erasmus_Crypta_Balbi.jpg",
+  "summary": "The Diocletianic Persecution, also known as the Great Persecution, was the last and most severe persecution of Christians in the Roman Empire. Beginning in 303 AD, it involved the destruction of churches, burning of Scriptures, imprisonment and torture of clergy, and execution of those who refused to sacrifice. The persecution ended in 311 AD with the Edict of Serdica, and was followed by the Edict of Milan in 313, which legalized Christianity.",
+  "keyDocuments": [
+    "Edict of Serdica (311)",
+    "Edict of Milan (313)"
+  ]
+}

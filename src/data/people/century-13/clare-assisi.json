@@ -1,0 +1,25 @@
+{
+  "id": "clare-assisi",
+  "name": "St. Clare of Assisi",
+  "birthYear": 1194,
+  "deathYear": 1253,
+  "feastDay": "August 11",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "assisi",
+      "description": "Founder of the Poor Clares"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Clare_of_Assisi",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04004a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Simone_Martini_047.jpg",
+  "summary": "Clare of Assisi was an Italian saint and one of the first followers of Francis of Assisi. She founded the Order of Poor Ladies, later known as the Poor Clares, a contemplative order for women. She is known for her devotion to poverty, her miracles, and for being the first woman to write a monastic rule. She is the patron saint of television and eye diseases.",
+  "keyQuotes": []
+}

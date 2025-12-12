@@ -1,0 +1,23 @@
+{
+  "id": "gregory-xi",
+  "name": "Pope Gregory XI",
+  "birthYear": 1329,
+  "deathYear": 1378,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Last Avignon Pope, returned papacy to Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_XI",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07001a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Duke_of_Anjou_leading_Pope_Gregory_XI_to_the_palace_at_Avignon%2C_while_cardinals_follow_%28cropped%29.png",
+  "summary": "Gregory XI was Pope from 1370 to 1378. He was the last Avignon pope, finally returning the papacy to Rome in 1377 after decades in Avignon, partly due to the influence of St. Catherine of Siena. His death in 1378 led to the Western Schism when rival popes were elected.",
+  "keyQuotes": []
+}

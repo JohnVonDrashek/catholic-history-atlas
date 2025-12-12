@@ -1,0 +1,43 @@
+{
+  "id": "ignatius-loyola",
+  "name": "St. Ignatius of Loyola",
+  "birthYear": 1491,
+  "deathYear": 1556,
+  "feastDay": "July 31",
+  "primaryTradition": "Latin",
+  "roles": [
+    "founder",
+    "priest",
+    "mystic"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Founded the Society of Jesus in Rome"
+    },
+    {
+      "placeId": "paris",
+      "description": "Studied at the University of Paris"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ignatius_of_Loyola",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07639c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Ignatius_Loyola.jpg",
+  "summary": "Ignatius of Loyola was a Spanish Basque priest and theologian who founded the Society of Jesus (Jesuits) in 1540. After being wounded in battle, he experienced a profound conversion and dedicated his life to God. He wrote the Spiritual Exercises, one of the most influential works of Christian spirituality. The Jesuits became a major force in the Counter-Reformation, emphasizing education, missionary work, and obedience to the papacy.",
+  "keyQuotes": [
+    "Go forth and set the world on fire.",
+    "Pray as if everything depended on God; work as if everything depended on you."
+  ],
+  "writings": [
+    {
+      "title": "Spiritual Exercises",
+      "url": "https://www.ccel.org/ccel/ignatius/exercises.html"
+    },
+    {
+      "title": "Autobiography",
+      "url": "https://www.ccel.org/ccel/ignatius/autobiography.html"
+    }
+  ]
+}

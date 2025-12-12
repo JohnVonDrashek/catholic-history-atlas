@@ -1,0 +1,31 @@
+{
+  "id": "maximus-confessor",
+  "name": "St. Maximus the Confessor",
+  "birthYear": 580,
+  "deathYear": 662,
+  "feastDay": "August 13",
+  "primaryTradition": "Greek",
+  "roles": [
+    "monk",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "constantinople",
+      "description": "Monk and theologian in Constantinople"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Maximus_the_Confessor",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10076a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Athonite_Fresco_Icon_of_Saint_Maximos_the_Confessor_2.jpg",
+  "summary": "Maximus the Confessor was a Christian monk, theologian, and scholar who is venerated in both Eastern and Western Christianity. He is known for his opposition to Monothelitism, the doctrine that Christ had only one will. He was tortured and exiled for his defense of orthodoxy, having his tongue and right hand cut off. His theological works are highly regarded in both Eastern and Western traditions.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "On the Cosmic Mystery of Jesus Christ",
+      "url": "https://www.ccel.org/ccel/schaff/npnf214.ix.html"
+    }
+  ]
+}

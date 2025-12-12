@@ -1,0 +1,32 @@
+{
+  "id": "nicholas-cusa",
+  "name": "Nicholas of Cusa",
+  "birthYear": 1401,
+  "deathYear": 1464,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "cardinal",
+    "philosopher",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Cardinal and papal legate"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Nicholas_of_Cusa",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11058a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Nicholas_of_Cusa.jpg/330px-Nicholas_of_Cusa.jpg",
+  "summary": "Nicholas of Cusa was a German philosopher, theologian, and cardinal who made significant contributions to philosophy, mathematics, and astronomy. He is known for his concept of 'learned ignorance' and his anticipation of modern scientific thought. He participated in the Council of Florence and worked for Church reform and reconciliation between East and West.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "On Learned Ignorance",
+      "url": "https://www.ccel.org/ccel/cusa/learned_ignorance"
+    }
+  ]
+}

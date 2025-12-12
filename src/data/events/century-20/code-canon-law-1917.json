@@ -1,0 +1,14 @@
+{
+  "id": "code-canon-law-1917",
+  "name": "1917 Code of Canon Law",
+  "startYear": 1917,
+  "endYear": 1917,
+  "type": "reform",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/1917_Code_of_Canon_Law",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02347a.htm",
+  "summary": "The 1917 Code of Canon Law was the first comprehensive codification of Catholic canon law. It was promulgated by Pope Benedict XV and compiled under the direction of Cardinal Pietro Gasparri. This code systematized centuries of canonical legislation and remained in effect until it was replaced by the 1983 Code of Canon Law.",
+  "keyDocuments": [
+    "Codex Iuris Canonici (1917)"
+  ]
+}

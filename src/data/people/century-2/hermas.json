@@ -1,0 +1,30 @@
+{
+  "id": "hermas",
+  "name": "St. Hermas",
+  "birthYear": null,
+  "deathYear": 150,
+  "feastDay": "May 9",
+  "primaryTradition": "Latin",
+  "roles": [
+    "prophet"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Author in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Hermas_(freedman)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07263a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Canon_Muratori.png/330px-Canon_Muratori.png",
+  "summary": "Hermas was a Christian writer of the 2nd century and the author of 'The Shepherd of Hermas,' one of the most popular Christian works of the early Church. The work, written in Rome, contains visions, commandments, and parables, and was considered canonical by some early Christian communities.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "The Shepherd of Hermas",
+      "url": "https://www.ccel.org/ccel/schaff/anf02.iv.ii.html"
+    }
+  ]
+}

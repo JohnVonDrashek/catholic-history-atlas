@@ -1,0 +1,42 @@
+{
+  "id": "justin-martyr",
+  "name": "St. Justin Martyr",
+  "birthYear": 100,
+  "deathYear": 165,
+  "feastDay": "June 1",
+  "primaryTradition": "Greek",
+  "roles": [
+    "apologist",
+    "martyr",
+    "philosopher"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Martyred in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Justin_Martyr",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08580c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Saint_Justin_Martyr_by_Theophanes_the_Cretan.jpg/330px-Saint_Justin_Martyr_by_Theophanes_the_Cretan.jpg",
+  "summary": "Justin Martyr was an early Christian apologist and philosopher who converted to Christianity after studying various philosophical schools. He wrote two major apologies defending Christianity and was martyred in Rome along with six companions. He is considered one of the most important early Christian apologists.",
+  "keyQuotes": [
+    "We have been taught that Christ is the first-begotten of God, and we have declared above that He is the Word of whom every race of men were partakers."
+  ],
+  "writings": [
+    {
+      "title": "First Apology",
+      "url": "https://www.ccel.org/ccel/schaff/anf01.viii.ii.html"
+    },
+    {
+      "title": "Second Apology",
+      "url": "https://www.ccel.org/ccel/schaff/anf01.viii.iii.html"
+    },
+    {
+      "title": "Dialogue with Trypho",
+      "url": "https://www.ccel.org/ccel/schaff/anf01.viii.iv.html"
+    }
+  ]
+}

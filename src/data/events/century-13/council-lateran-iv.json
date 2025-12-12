@@ -1,0 +1,17 @@
+{
+  "id": "council-lateran-iv",
+  "name": "Fourth Lateran Council",
+  "startYear": 1215,
+  "endYear": 1215,
+  "type": "council",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Fourth_Lateran_Council",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09016a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Matthew_Paris_Chronica_Maiora_Fourth_Lateran_Council.jpg",
+  "summary": "The Fourth Lateran Council was convened by Pope Innocent III in 1215. It was one of the most important councils of the Middle Ages and addressed numerous issues including Church reform, the definition of transubstantiation, annual confession, and the organization of crusades. The council also established regulations for Jews and Muslims and strengthened papal authority.",
+  "keyDocuments": [
+    "Definition of Transubstantiation",
+    "Requirement of Annual Confession",
+    "Canons on Church Reform"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "trajan-persecution",
+  "name": "Persecution under Trajan",
+  "startYear": 98,
+  "endYear": 117,
+  "type": "persecution",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11652a.htm",
+  "summary": "During the reign of Emperor Trajan (98-117 AD), Christians faced systematic persecution throughout the Roman Empire. Trajan's policy, outlined in his correspondence with Pliny the Younger, established that Christians should not be sought out but should be punished if denounced and refused to recant. This period saw the martyrdom of Ignatius of Antioch and others.",
+  "keyDocuments": [
+    "Pliny-Trajan Correspondence"
+  ]
+}

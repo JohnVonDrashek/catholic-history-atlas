@@ -1,0 +1,14 @@
+{
+  "id": "council-sardica",
+  "name": "Council of Sardica",
+  "startYear": 343,
+  "endYear": 343,
+  "type": "council",
+  "locationId": "sardica",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Sardica",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13479a.htm",
+  "summary": "The Council of Sardica was convened in 343 AD to address the Arian controversy and the case of Athanasius, who had been deposed from his see. The council reaffirmed the Nicene Creed and established procedures for appealing to Rome, though the Eastern bishops left early, creating a schism. The council's canons became important for the development of papal authority.",
+  "keyDocuments": [
+    "Canons of Sardica"
+  ]
+}

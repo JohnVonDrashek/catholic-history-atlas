@@ -1,0 +1,46 @@
+{
+  "id": "augustine",
+  "name": "St. Augustine of Hippo",
+  "birthYear": 354,
+  "deathYear": 430,
+  "feastDay": "August 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "hippo",
+      "description": "Bishop of Hippo"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02084a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Saint_Augustine_by_Philippe_de_Champaigne.jpg/330px-Saint_Augustine_by_Philippe_de_Champaigne.jpg",
+  "summary": "Augustine of Hippo, also known as Saint Augustine, was a theologian and philosopher of Berber origin and the bishop of Hippo Regius in Numidia, Roman North Africa. His writings influenced the development of Western philosophy and Western Christianity.",
+  "keyQuotes": [
+    "You have made us for yourself, O Lord, and our hearts are restless until they rest in you.",
+    "Late have I loved you, O Beauty ever ancient, ever new, late have I loved you!"
+  ],
+  "writings": [
+    {
+      "title": "Confessions",
+      "url": "https://www.ccel.org/ccel/schaff/npnf101.html"
+    },
+    {
+      "title": "The City of God",
+      "url": "https://www.ccel.org/ccel/schaff/npnf102.html"
+    },
+    {
+      "title": "On the Trinity",
+      "url": "https://www.ccel.org/ccel/schaff/npnf103.html"
+    },
+    {
+      "title": "On Christian Doctrine",
+      "url": "https://www.ccel.org/ccel/schaff/npnf102.iv.html"
+    }
+  ]
+}
