@@ -34,18 +34,22 @@ function calculateOffsetPosition(
 
   // Base radius in degrees - scales inversely with zoom
   // Much larger offsets at lower zoom levels to prevent overlap
-  // At zoom 2: ~1.2 degrees (~133km)
-  // At zoom 4: ~0.5 degrees (~55km)
-  // At zoom 6: ~0.2 degrees (~22km)
+  // Adjusted to provide more spacing at lower zoom levels (zoom 6 and below)
+  // At zoom 2: ~1.8 degrees (~200km)
+  // At zoom 4: ~0.8 degrees (~89km)
+  // At zoom 6: ~0.35 degrees (~39km) - increased from ~0.2
+  // At zoom 7: ~0.18 degrees (~20km) - fine as is
   // At zoom 8: ~0.08 degrees (~8.8km)
   // At zoom 10: ~0.032 degrees (~3.5km)
   // At zoom 12: ~0.013 degrees (~1.4km)
   // Formula: baseRadius decreases exponentially as zoom increases
-  const baseRadius = 0.5 / Math.pow(1.4, zoom - 4);
+  // Increased base multiplier and adjusted exponent for better spacing at lower zooms
+  const baseRadius = 0.7 / Math.pow(1.5, zoom - 4);
   
   // Scale radius based on total count to prevent overlap
-  // More aggressive scaling for larger groups
-  const radius = baseRadius * Math.min(1 + totalCount * 0.3, 3.5);
+  // More aggressive scaling for larger groups, especially at lower zoom levels
+  const countMultiplier = zoom <= 6 ? Math.min(1 + totalCount * 0.4, 4.0) : Math.min(1 + totalCount * 0.3, 3.5);
+  const radius = baseRadius * countMultiplier;
 
   // Calculate angle in radians
   const angle = (index * 2 * Math.PI) / totalCount;
@@ -389,6 +393,43 @@ interface MapViewProps {
   onItemClick: (item: Person | Event) => void;
 }
 
+// Component to display zoom level
+function ZoomDisplay() {
+  const map = useMap();
+  const [zoom, setZoom] = useState(map.getZoom());
+
+  useEffect(() => {
+    const updateZoom = () => {
+      setZoom(map.getZoom());
+    };
+
+    map.on('zoomend', updateZoom);
+    updateZoom(); // Initial zoom
+
+    return () => {
+      map.off('zoomend', updateZoom);
+    };
+  }, [map]);
+
+  return (
+    <div style={{
+      position: 'absolute',
+      bottom: '10px',
+      left: '10px',
+      backgroundColor: 'rgba(26, 26, 26, 0.9)',
+      padding: '0.5rem 0.75rem',
+      borderRadius: '8px',
+      zIndex: 1000,
+      color: '#fff',
+      fontSize: '14px',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+      fontFamily: 'monospace',
+    }}>
+      Zoom: {zoom.toFixed(1)}
+    </div>
+  );
+}
+
 // Component to track zoom level and render markers
 function ZoomAwareMarkers({
   itemsByPlace,
@@ -512,14 +553,25 @@ function ZoomAwareMarkers({
         const place = placeMap.get(placeId);
         if (!place) return null;
 
-        // Check if there's an active see at this location
-        const seeAtPlace = activeSees.find(see => see.placeId === placeId);
-        const hasSee = seeAtPlace !== undefined;
-        
         return items.map((item, index) => {
-          // For places with sees, add 1 to totalCount to offset items around the centered see
-          // This ensures items don't overlap with the see marker
-          const totalCount = hasSee ? items.length + 1 : items.length;
+          // Calculate phantom positions to ensure well-formed circle
+          // Pattern: 1 real → 3 phantoms, 2 real → 2 phantoms, 3 real → 1 phantom, 4+ real → 0 phantoms
+          // This ensures at least 4 positions on the circle for better visual distribution
+          const realCount = items.length;
+          let phantomCount = 0;
+          if (realCount === 1) {
+            phantomCount = 3; // 1 real + 3 phantoms = 4 total
+          } else if (realCount === 2) {
+            phantomCount = 2; // 2 real + 2 phantoms = 4 total
+          } else if (realCount === 3) {
+            phantomCount = 1; // 3 real + 1 phantom = 4 total
+          }
+          // 4+ real markers: no phantoms needed
+          
+          // For places with sees, the see is at the center, so we don't count it in the circle positions
+          // Total positions on the circle = real markers + phantom positions
+          const totalCount = realCount + phantomCount;
+          
           const [lat, lng] = calculateOffsetPosition(
             place.lat,
             place.lng,
@@ -838,6 +890,7 @@ export function MapView({ people, events, places, sees, currentYear, onItemClick
           activeSees={activeSees}
           onItemClick={onItemClick}
         />
+        <ZoomDisplay />
       </MapContainer>
     </div>
   );
