@@ -1,3 +1,4 @@
+import { FaScroll } from 'react-icons/fa';
 import { Person, Event } from '../types';
 import { FigurePortrait } from './FigurePortrait';
 import { getCachedImageUrl } from '../utils/imageCache';
@@ -298,7 +299,15 @@ function PersonDetails({ person }: { person: Person }) {
                   e.currentTarget.style.backgroundColor = 'rgba(212, 175, 55, 0.1)';
                 }}
               >
-                <span style={{ fontSize: '1rem' }}>📜</span>
+                <FaScroll style={{ 
+                  fontSize: '1rem', 
+                  marginRight: '0.5rem', 
+                  color: '#00D9FF', 
+                  filter: 'drop-shadow(0 0 2px rgba(0, 217, 255, 0.8)) drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
+                  stroke: '#000',
+                  strokeWidth: '0.5px',
+                  paintOrder: 'stroke fill'
+                }} />
                 {writing.title}
                 <span style={{ fontSize: '0.85rem', marginLeft: 'auto' }}>→</span>
               </a>

@@ -1,4 +1,6 @@
 import { useMemo, useState, useRef, useEffect } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { FaScroll } from 'react-icons/fa';
 import { Person, Event } from '../types';
 import type { OrthodoxyStatus } from '../types/person';
 import type { EventType } from '../types/event';
@@ -208,9 +210,9 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
       case 'orthodox':
         return { stroke: '#777', strokeWidth: 2, fill: '#f7f7f7' };
       case 'schismatic':
-        return { stroke: 'url(#schismaticGradient)', strokeWidth: 3, fill: 'none' };
+        return { stroke: 'url(#schismaticPattern)', strokeWidth: 3, fill: 'none' };
       case 'heresiarch':
-        return { stroke: '#5b1a1a', strokeWidth: 3, fill: 'none' };
+        return { stroke: 'url(#heresiarchPattern)', strokeWidth: 3, fill: 'none' };
       case 'secular':
       default:
         return { stroke: '#bbb', strokeWidth: 1, fill: 'none' };
@@ -815,13 +817,16 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
               <rect width="6" height="12" fill="#d4af37" />
               <rect x="6" width="6" height="12" fill="#a11b1b" />
             </pattern>
-            {/* Schismatic gradient: gray to red split */}
-            <linearGradient id="schismaticGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#777" />
-              <stop offset="50%" stopColor="#777" />
-              <stop offset="50%" stopColor="#b03a2e" />
-              <stop offset="100%" stopColor="#b03a2e" />
-            </linearGradient>
+            {/* Schismatic pattern: black and neon red diagonal stripes */}
+            <pattern id="schismaticPattern" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(45)">
+              <rect width="6" height="12" fill="#000000" />
+              <rect x="6" width="6" height="12" fill="#ff073a" />
+            </pattern>
+            {/* Heresiarch pattern: black and neon green diagonal stripes */}
+            <pattern id="heresiarchPattern" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(45)">
+              <rect width="6" height="12" fill="#000000" />
+              <rect x="6" width="6" height="12" fill="#39ff14" />
+            </pattern>
           </defs>
 
           {/* Timeline line */}
@@ -907,16 +912,13 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             // Calculate vertical positions to avoid overlaps
             const itemPositions = new Map<string, number>();
             
-            // Separate popes, councils, and other items
+            // Separate popes, events, and other people
             const popes = sortedItems.filter(item => 
               item.type === 'person' && (item.data as Person).roles?.includes('pope')
             );
-            const councils = sortedItems.filter(item => 
-              item.type === 'event' && (item.data as Event).type === 'council'
-            );
-            const others = sortedItems.filter(item => 
-              !(item.type === 'person' && (item.data as Person).roles?.includes('pope')) &&
-              !(item.type === 'event' && (item.data as Event).type === 'council')
+            const events = sortedItems.filter(item => item.type === 'event');
+            const otherPeople = sortedItems.filter(item => 
+              item.type === 'person' && !(item.data as Person).roles?.includes('pope')
             );
             
             // Place all popes on the same line at the top
@@ -925,14 +927,14 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
               itemPositions.set(item.id, popeY);
             });
             
-            // Place all councils on the same line (below popes)
-            const councilY = 140; // Fixed position for all councils, below popes
-            councils.forEach((item) => {
-              itemPositions.set(item.id, councilY);
+            // Place all events on the same line at the bottom
+            const eventY = timelineHeight - 80; // Fixed position for all events at the bottom
+            events.forEach((item) => {
+              itemPositions.set(item.id, eventY);
             });
 
-            // Position other items, avoiding both pope and council lines
-            others.forEach((item) => {
+            // Position other people, avoiding pope line and event line
+            otherPeople.forEach((item) => {
               const startX = getXPosition(item.startYear);
               const endX = getXPosition(item.endYear);
               
@@ -946,13 +948,13 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                 for (const direction of [-1, 1]) {
                   const testY = timelineHeight / 2 + (offset * direction);
                   
-                  // Skip positions too close to pope or council lines
+                  // Skip positions too close to pope or event lines
                   if (Math.abs(testY - popeY) < 50) continue;
-                  if (Math.abs(testY - councilY) < 50) continue;
+                  if (Math.abs(testY - eventY) < 50) continue;
                   
-                  // Check for overlaps with nearby items (excluding popes and councils which are on fixed lines)
+                  // Check for overlaps with nearby items (excluding popes and events which are on fixed lines)
                   let overlapCount = 0;
-                  others.forEach((otherItem) => {
+                  otherPeople.forEach((otherItem) => {
                     if (otherItem.id === item.id || !itemPositions.has(otherItem.id)) return;
                     
                     const otherY = itemPositions.get(otherItem.id)!;
@@ -980,11 +982,11 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
 
               // If still overlapping, try alternating pattern
               if (minOverlap > 0) {
-                const itemIndex = others.findIndex(i => i.id === item.id);
+                const itemIndex = otherPeople.findIndex(i => i.id === item.id);
                 const alternatingOffset = ((itemIndex % 4) - 1.5) * 50;
                 const candidateY = timelineHeight / 2 + alternatingOffset;
-                // Make sure it's not too close to pope or council lines
-                if (Math.abs(candidateY - popeY) >= 50 && Math.abs(candidateY - councilY) >= 50) {
+                // Make sure it's not too close to pope or event lines
+                if (Math.abs(candidateY - popeY) >= 50 && Math.abs(candidateY - eventY) >= 50) {
                   bestY = candidateY;
                 }
               }
@@ -1364,33 +1366,34 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                       />
                     )}
                     
-                    {/* Scroll icon for saints with writings */}
+                    {/* Scroll icon for saints with writings - neon gold, no background circle */}
                     {person.writings && person.writings.length > 0 && (
-                      <g transform={`translate(${frameWidth / 2 - 10}, ${-frameHeight / 2 + 10})`}>
-                        {/* Scroll icon background circle */}
-                        <circle
-                          cx="0"
-                          cy="0"
-                          r="8"
-                          fill="#fff"
-                          stroke="#333"
-                          strokeWidth="1.5"
-                          opacity="0.95"
-                        />
-                        {/* Scroll icon using text/emoji */}
-                        <text
-                          x="0"
-                          y="0"
-                          textAnchor="middle"
-                          dominantBaseline="middle"
-                          fill="#333"
-                          fontSize="10"
-                          fontWeight="bold"
-                          style={{ pointerEvents: 'none' }}
-                        >
-                          📜
-                        </text>
-                      </g>
+                      <foreignObject 
+                        x={frameWidth / 2 - 14 - framePadding} 
+                        y={-frameHeight / 2 + framePadding} 
+                        width="14" 
+                        height="14"
+                        style={{ overflow: 'visible' }}
+                      >
+                        <div style={{ 
+                          width: '14px', 
+                          height: '14px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          filter: 'drop-shadow(0 0 2px rgba(0, 217, 255, 0.8))'
+                        }}>
+                          <FaScroll style={{ 
+                            color: '#00D9FF', 
+                            fontSize: '14px', 
+                            display: 'block',
+                            filter: 'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
+                            stroke: '#000',
+                            strokeWidth: '0.5px',
+                            paintOrder: 'stroke fill'
+                          }} />
+                        </div>
+                      </foreignObject>
                     )}
                   </g>
                   

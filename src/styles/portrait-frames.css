@@ -60,22 +60,42 @@
   background: #f7f7f7;
 }
 
-/* E. Schismatic: split border effect */
+/* E. Schismatic: black and neon red diagonal stripes */
 .portrait-frame--schismatic {
   border: 3px solid transparent;
-  background-image: linear-gradient(
-    to right,
-    #777 0%,
-    #777 50%,
-    #b03a2e 50%,
-    #b03a2e 100%
+  background-image: repeating-linear-gradient(
+    45deg,
+    #000000,
+    #000000 6px,
+    #ff073a 6px,
+    #ff073a 12px
   );
+  box-shadow: 0 0 4px rgba(255, 7, 58, 0.6);
 }
 
-/* F. Heresiarch: dark, sharp */
+/* Optional: inner white to keep image clean */
+.portrait-frame--schismatic .portrait-frame__image {
+  border-radius: 3px;
+  border: 2px solid #fff;
+}
+
+/* F. Heresiarch: black and neon green diagonal stripes */
 .portrait-frame--heresiarch {
-  border: 3px solid #5b1a1a;
-  box-shadow: 0 0 4px rgba(91, 26, 26, 0.8);
+  border: 3px solid transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #000000,
+    #000000 6px,
+    #39ff14 6px,
+    #39ff14 12px
+  );
+  box-shadow: 0 0 4px rgba(57, 255, 20, 0.6);
+}
+
+/* Optional: inner white to keep image clean */
+.portrait-frame--heresiarch .portrait-frame__image {
+  border-radius: 3px;
+  border: 2px solid #fff;
 }
 
 /* G. Secular: thin neutral border */

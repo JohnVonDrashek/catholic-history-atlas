@@ -1,5 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { useEffect, useState, useMemo } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { FaScroll } from 'react-icons/fa';
 import type { Person, Event, Place, OrthodoxyStatus } from '../types';
 import { getActivePeople, getActiveEvents } from '../utils/filters';
 import { getCachedImageUrl } from '../utils/imageCache';
@@ -99,19 +101,20 @@ function getPersonBorderStyle(orthodoxyStatus: OrthodoxyStatus, isMartyr?: boole
         background: '#f7f7f7',
       };
     case 'schismatic':
-      // Schismatic: split border effect (gray + red)
+      // Schismatic: black and neon red diagonal stripes
       return {
         border: '3px solid transparent',
         borderWidth: '3px',
-        boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
-        background: `linear-gradient(to right, #777 0%, #777 50%, #b03a2e 50%, #b03a2e 100%)`,
+        background: 'repeating-linear-gradient(45deg, #000000 0px, #000000 6px, #ff073a 6px, #ff073a 12px)',
+        boxShadow: '0 0 4px rgba(255, 7, 58, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
       };
     case 'heresiarch':
-      // Heresiarch: dark, sharp
+      // Heresiarch: black and neon green diagonal stripes
       return {
-        border: '3px solid #5b1a1a',
+        border: '3px solid transparent',
         borderWidth: '3px',
-        boxShadow: '0 0 4px rgba(91, 26, 26, 0.8), 0 2px 6px rgba(0,0,0,0.4)',
+        background: 'repeating-linear-gradient(45deg, #000000 0px, #000000 6px, #39ff14 6px, #39ff14 12px)',
+        boxShadow: '0 0 4px rgba(57, 255, 20, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
       };
     case 'secular':
     default:
@@ -145,8 +148,8 @@ const createPersonIcon = (
   const fallbackColor = orthodoxyStatus === 'canonized' ? '#d4af37' :
                         orthodoxyStatus === 'blessed' ? '#c0c0c0' :
                         orthodoxyStatus === 'orthodox' ? '#777' :
-                        orthodoxyStatus === 'schismatic' ? '#777' :
-                        orthodoxyStatus === 'heresiarch' ? '#5b1a1a' :
+                        orthodoxyStatus === 'schismatic' ? '#000000' :
+                        orthodoxyStatus === 'heresiarch' ? '#000000' :
                         '#4a9eff';
 
   // Calculate dimensions based on aspect ratio
@@ -165,25 +168,27 @@ const createPersonIcon = (
   const frameWidth = width + framePadding * 2;
   const frameHeight = height + framePadding * 2;
 
-  // Scroll icon HTML (if person has writings)
-  const scrollIconHtml = hasWritings ? `
-    <div style="
-      position: absolute;
-      top: ${framePadding}px;
-      right: ${framePadding}px;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: #fff;
-      border: 1.5px solid #333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 10px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-      z-index: 10;
-    ">📜</div>
-  ` : '';
+  // Scroll icon HTML (if person has writings) - using react-icons component
+  const scrollIconHtml = hasWritings ? renderToStaticMarkup(
+    <div style={{
+      position: 'absolute',
+      top: `${framePadding}px`,
+      right: `${framePadding}px`,
+      width: '14px',
+      height: '14px',
+      zIndex: 10,
+      filter: 'drop-shadow(0 0 2px rgba(0, 217, 255, 0.8))',
+    }}>
+      <FaScroll style={{ 
+        color: '#00D9FF', 
+        fontSize: '14px',
+        filter: 'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
+        stroke: '#000',
+        strokeWidth: '0.5px',
+        paintOrder: 'stroke fill'
+      }} />
+    </div>
+  ) : '';
 
   const fallbackHtml = `<div style="position: relative; background-color: ${fallbackColor}; width: ${frameWidth}px; height: ${frameHeight}px; border-radius: ${borderRadius}px; ${borderStyle.border}; box-shadow: ${borderStyle.boxShadow};">${scrollIconHtml}</div>`;
   
