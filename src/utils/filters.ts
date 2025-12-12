@@ -4,7 +4,9 @@ import type { Person, Event } from '../types';
  * Check if a person was alive during a given year
  */
 export function isPersonActive(person: Person, year: number): boolean {
-  const birth = person.birthYear ?? -Infinity;
+  // If birth year is unknown, estimate it (typically 80 years before death)
+  // Only show person in the estimated lifespan, not from the beginning of time
+  const birth = person.birthYear ?? (person.deathYear - 80);
   const death = person.deathYear;
   return year >= birth && year <= death;
 }
