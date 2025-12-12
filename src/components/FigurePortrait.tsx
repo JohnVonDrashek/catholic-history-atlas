@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { OrthodoxyStatus } from '../types/person';
+import { getCachedImageUrl } from '../utils/imageCache';
 import '../styles/portrait-frames.css';
 
 interface FigurePortraitProps {
@@ -18,7 +19,9 @@ export function FigurePortrait({
   size = 'medium',
 }: FigurePortraitProps) {
   const [imgError, setImgError] = useState(false);
-  const [imgSrc, setImgSrc] = useState(imageUrl);
+  // Get cached image URL for timeline context (150px max)
+  const cachedImageUrl = getCachedImageUrl(imageUrl, 'timeline', 150);
+  const [imgSrc, setImgSrc] = useState(cachedImageUrl || imageUrl);
 
   const baseClass = 'portrait-frame';
 

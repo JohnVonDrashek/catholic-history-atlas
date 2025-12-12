@@ -1,5 +1,6 @@
 import { Person, Event } from '../types';
 import { FigurePortrait } from './FigurePortrait';
+import { getCachedImageUrl } from '../utils/imageCache';
 
 interface DetailsModalProps {
   item: Person | Event | null;
@@ -385,7 +386,7 @@ function EventDetails({ event }: { event: Event }) {
           {event.imageUrl && (
             <div style={{ flexShrink: 0, maxWidth: '300px', maxHeight: '400px' }}>
               <img
-                src={event.imageUrl}
+                src={getCachedImageUrl(event.imageUrl, 'modal', 400)}
                 alt={event.name}
                 style={{
                   width: '100%',

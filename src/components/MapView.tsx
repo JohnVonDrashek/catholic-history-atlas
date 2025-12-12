@@ -2,6 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { useEffect, useState, useMemo } from 'react';
 import type { Person, Event, Place, OrthodoxyStatus } from '../types';
 import { getActivePeople, getActiveEvents } from '../utils/filters';
+import { getCachedImageUrl } from '../utils/imageCache';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -525,12 +526,15 @@ function ZoomAwareMarkers({
               aspectRatio = imageAspectRatios.get(imageUrl) || 1;
             }
 
+            // Get cached image URL for map context (80px max)
+            const cachedImageUrl = getCachedImageUrl(imageUrl, 'map', 80);
+
             // Councils get special icon
             if (event.type === 'council') {
-              icon = createCouncilIcon(imageUrl);
+              icon = createCouncilIcon(cachedImageUrl);
             } else {
               // Other events use person icon style (no frame colors for events)
-              icon = createPersonIcon(imageUrl, undefined, undefined, aspectRatio, false);
+              icon = createPersonIcon(cachedImageUrl, undefined, undefined, aspectRatio, false);
             }
           } else {
             const person = item.data;
@@ -542,9 +546,12 @@ function ZoomAwareMarkers({
 
             const hasWritings = !!(person.writings && person.writings.length > 0);
 
+            // Get cached image URL for map context (80px max)
+            const cachedImageUrl = getCachedImageUrl(imageUrl, 'map', 80);
+
             // Always use frame colors based on orthodoxy status and martyr status
             // Important sees will be shown as separate independent markers
-            icon = createPersonIcon(imageUrl, person.orthodoxyStatus, person.isMartyr, aspectRatio, hasWritings);
+            icon = createPersonIcon(cachedImageUrl, person.orthodoxyStatus, person.isMartyr, aspectRatio, hasWritings);
           }
 
           // Create unique key combining place, type, and item id
