@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { FaScroll, FaCrown } from 'react-icons/fa';
 import type { Person, Event, Place, OrthodoxyStatus } from '../types';
@@ -467,18 +467,6 @@ function ZoomAwareMarkers({
     loadImageAspectRatios();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [itemsByPlace]);
-
-  // Get sees that have active items at their location (for positioning)
-  const seesWithItems = useMemo(() => {
-    const seePlaceIds = new Set(activeSees.map(see => see.placeId));
-    const seesWithItemsSet = new Set<string>();
-    Array.from(itemsByPlace.keys()).forEach(placeId => {
-      if (seePlaceIds.has(placeId)) {
-        seesWithItemsSet.add(placeId);
-      }
-    });
-    return seesWithItemsSet;
-  }, [activeSees, itemsByPlace]);
 
   return (
     <>

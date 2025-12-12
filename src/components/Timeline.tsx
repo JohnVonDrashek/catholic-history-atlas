@@ -777,7 +777,12 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
           zIndex: 1000,
           boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
         }}>
-          Viewing: {Math.round(visibleRange.start)} – {Math.round(visibleRange.end)} 
+          Viewing: {(() => {
+            const start = Math.round(visibleRange.start);
+            const end = Math.round(visibleRange.end);
+            const formatYear = (y: number) => y < 0 ? `${Math.abs(y)} BC` : y === 0 ? '1 BC' : `${y} AD`;
+            return `${formatYear(start)} – ${formatYear(end)}`;
+          })()}
           ({Math.round(visibleRange.end - visibleRange.start)} years)
         </div>
       )}
@@ -860,7 +865,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             fontSize="14"
             fontWeight="bold"
           >
-            {currentYear}
+            {currentYear < 0 ? `${Math.abs(currentYear)} BC` : currentYear === 0 ? '1 BC' : `${currentYear} AD`}
           </text>
 
           {/* Year markers */}
@@ -890,7 +895,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                     fill="#aaa"
                     fontSize="12"
                   >
-                    {year}
+                    {year < 0 ? `${Math.abs(year)} BC` : year === 0 ? '1 BC' : `${year} AD`}
                   </text>
                 </g>
               );

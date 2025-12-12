@@ -1,3 +1,5 @@
+import { useState, useRef, useEffect } from 'react';
+
 interface YearSelectorProps {
   year: number;
   onYearChange: (year: number) => void;
@@ -13,6 +15,21 @@ export function YearSelector({
   maxYear = 2100,
   step = 10,
 }: YearSelectorProps) {
+  const [isEditing, setIsEditing] = useState(false);
+  const [inputValue, setInputValue] = useState(year.toString());
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    setInputValue(year.toString());
+  }, [year]);
+
+  useEffect(() => {
+    if (isEditing && inputRef.current) {
+      inputRef.current.focus();
+      inputRef.current.select();
+    }
+  }, [isEditing]);
+
   const handleDecrement = () => {
     const newYear = Math.max(minYear, year - step);
     onYearChange(newYear);
@@ -23,14 +40,38 @@ export function YearSelector({
     onYearChange(newYear);
   };
 
-  const handleYearClick = () => {
-    const input = prompt(`Enter a year (${minYear}-${maxYear}):`, year.toString());
-    if (input) {
-      const newYear = parseInt(input, 10);
-      if (!isNaN(newYear) && newYear >= minYear && newYear <= maxYear) {
-        onYearChange(newYear);
-      }
+  const handleInputClick = () => {
+    setIsEditing(true);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target.value);
+  };
+
+  const handleInputBlur = () => {
+    setIsEditing(false);
+    const newYear = parseInt(inputValue, 10);
+    if (!isNaN(newYear) && newYear >= minYear && newYear <= maxYear) {
+      onYearChange(newYear);
+    } else {
+      // Reset to current year if invalid
+      setInputValue(year.toString());
     }
+  };
+
+  const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.currentTarget.blur();
+    } else if (e.key === 'Escape') {
+      setInputValue(year.toString());
+      setIsEditing(false);
+    }
+  };
+
+  const formatYear = (y: number) => {
+    if (y < 0) return `${Math.abs(y)} BC`;
+    if (y === 0) return '1 BC';
+    return `${y} AD`;
   };
 
   return (
@@ -51,23 +92,51 @@ export function YearSelector({
           fontSize: '1.2rem',
           cursor: year <= minYear ? 'not-allowed' : 'pointer',
           opacity: year <= minYear ? 0.5 : 1,
+          backgroundColor: 'transparent',
+          border: 'none',
+          color: '#fff',
         }}
       >
         ←
       </button>
-      <span
-        onClick={handleYearClick}
-        style={{
-          fontSize: '2rem',
-          fontWeight: 'bold',
-          cursor: 'pointer',
-          minWidth: '120px',
-          textAlign: 'center',
-        }}
-        title="Click to enter a specific year"
-      >
-        {year}
-      </span>
+      {isEditing ? (
+        <input
+          ref={inputRef}
+          type="number"
+          value={inputValue}
+          onChange={handleInputChange}
+          onBlur={handleInputBlur}
+          onKeyDown={handleInputKeyDown}
+          min={minYear}
+          max={maxYear}
+          style={{
+            fontSize: '2rem',
+            fontWeight: 'bold',
+            textAlign: 'center',
+            width: '150px',
+            backgroundColor: '#2a2a2a',
+            color: '#fff',
+            border: '2px solid #4a9eff',
+            borderRadius: '4px',
+            padding: '0.25rem',
+          }}
+        />
+      ) : (
+        <span
+          onClick={handleInputClick}
+          style={{
+            fontSize: '2rem',
+            fontWeight: 'bold',
+            cursor: 'pointer',
+            minWidth: '150px',
+            textAlign: 'center',
+            color: '#fff',
+          }}
+          title="Click to enter a specific year"
+        >
+          {formatYear(year)}
+        </span>
+      )}
       <button
         onClick={handleIncrement}
         disabled={year >= maxYear}
@@ -76,6 +145,9 @@ export function YearSelector({
           fontSize: '1.2rem',
           cursor: year >= maxYear ? 'not-allowed' : 'pointer',
           opacity: year >= maxYear ? 0.5 : 1,
+          backgroundColor: 'transparent',
+          border: 'none',
+          color: '#fff',
         }}
       >
         →
