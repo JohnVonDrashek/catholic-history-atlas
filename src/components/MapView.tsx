@@ -7,6 +7,7 @@ import type { EventType } from '../types/event';
 import { getActivePeople, getActiveEvents } from '../utils/filters';
 import { getCachedImageUrl } from '../utils/imageCache';
 import { getEventColor } from '../utils/eventColors';
+import { calculateAge, getLifeStage, getSizeForLifeStage } from '../utils/ageUtils';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -67,17 +68,28 @@ function calculateOffsetPosition(
 
 // Get border style based on orthodoxy status and martyr status
 // Matches the portrait frame system
-function getPersonBorderStyle(orthodoxyStatus: OrthodoxyStatus, isMartyr?: boolean): {
+// borderWidthOverride: if provided, overrides the default border width
+function getPersonBorderStyle(
+  orthodoxyStatus: OrthodoxyStatus,
+  isMartyr?: boolean,
+  borderWidthOverride?: number
+): {
   border: string;
   borderWidth: string;
   boxShadow: string;
   background?: string;
 } {
+  // Helper to get border width with override
+  const getBorderWidth = (defaultWidth: number): number => {
+    return borderWidthOverride ?? defaultWidth;
+  };
+
   if (isMartyr && (orthodoxyStatus === 'canonized' || orthodoxyStatus === 'blessed')) {
     // Martyr: gold + red stripes
+    const borderWidth = getBorderWidth(3);
     return {
-      border: '3px solid transparent',
-      borderWidth: '3px',
+      border: `${borderWidth}px solid transparent`,
+      borderWidth: `${borderWidth}px`,
       boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
       background: `repeating-linear-gradient(45deg, #d4af37, #d4af37 4px, #a11b1b 4px, #a11b1b 8px)`,
     };
@@ -86,69 +98,104 @@ function getPersonBorderStyle(orthodoxyStatus: OrthodoxyStatus, isMartyr?: boole
   switch (orthodoxyStatus) {
     case 'canonized':
       // Canonized saint: solid gold
+      const canonizedWidth = getBorderWidth(3);
       return {
-        border: '3px solid #d4af37',
-        borderWidth: '3px',
+        border: `${canonizedWidth}px solid #d4af37`,
+        borderWidth: `${canonizedWidth}px`,
         boxShadow: '0 0 6px rgba(212, 175, 55, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
       };
     case 'blessed':
       // Blessed: softer gold / silver
+      const blessedWidth = getBorderWidth(2);
       return {
-        border: '2px solid #c0c0c0',
-        borderWidth: '2px',
+        border: `${blessedWidth}px solid #c0c0c0`,
+        borderWidth: `${blessedWidth}px`,
         boxShadow: '0 0 4px rgba(192, 192, 192, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
       };
     case 'orthodox':
       // Orthodox-but-not-saint: stone/gray
+      const orthodoxWidth = getBorderWidth(2);
       return {
-        border: '2px solid #777',
-        borderWidth: '2px',
+        border: `${orthodoxWidth}px solid #777`,
+        borderWidth: `${orthodoxWidth}px`,
         boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
         background: '#f7f7f7',
       };
     case 'schismatic':
       // Schismatic: black and neon red diagonal stripes
+      const schismaticWidth = getBorderWidth(3);
       return {
-        border: '3px solid transparent',
-        borderWidth: '3px',
+        border: `${schismaticWidth}px solid transparent`,
+        borderWidth: `${schismaticWidth}px`,
         background: 'repeating-linear-gradient(45deg, #000000 0px, #000000 6px, #ff073a 6px, #ff073a 12px)',
         boxShadow: '0 0 4px rgba(255, 7, 58, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
       };
     case 'heresiarch':
       // Heresiarch: black and neon green diagonal stripes
+      const heresiarchWidth = getBorderWidth(3);
       return {
-        border: '3px solid transparent',
-        borderWidth: '3px',
+        border: `${heresiarchWidth}px solid transparent`,
+        borderWidth: `${heresiarchWidth}px`,
         background: 'repeating-linear-gradient(45deg, #000000 0px, #000000 6px, #39ff14 6px, #39ff14 12px)',
         boxShadow: '0 0 4px rgba(57, 255, 20, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
       };
     case 'secular':
     default:
       // Secular: thin neutral border
+      const secularWidth = getBorderWidth(1);
       return {
-        border: '1px solid #bbb',
-        borderWidth: '1px',
+        border: `${secularWidth}px solid #bbb`,
+        borderWidth: `${secularWidth}px`,
         boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
       };
   }
 }
 
 // Create custom icons with images and frame colors matching portrait frames
-// Now supports aspect ratio for rectangular images
+// Now supports aspect ratio for rectangular images and age-based sizing
 const createPersonIcon = (
-  imageUrl?: string,
-  orthodoxyStatus?: OrthodoxyStatus,
-  isMartyr?: boolean,
-  aspectRatio: number = 1,
-  hasWritings: boolean = false,
-  isPope: boolean = false
+  imageUrl: string | undefined,
+  orthodoxyStatus: OrthodoxyStatus | undefined,
+  isMartyr: boolean | undefined,
+  aspectRatio: number,
+  hasWritings: boolean,
+  isPope: boolean,
+  person: Person,
+  currentYear: number
 ) => {
-  const maxSize = 40; // Max width or height
+  // Calculate age and life stage for size/border adjustments
+  const age = calculateAge(person, currentYear);
+  const lifeStage = getLifeStage(age);
+  const baseSize = 40;
+  const maxSize = getSizeForLifeStage(lifeStage, baseSize); // Adjust size based on life stage
+  
+  // Determine border width based on life stage and orthodoxy status
+  // Prime age (30-60) gets thicker borders to indicate they're in their most active years
+  const getBorderWidthForStatus = (status: OrthodoxyStatus | undefined, martyr: boolean | undefined): number => {
+    const isPrime = lifeStage === 'prime';
+    
+    if (martyr && (status === 'canonized' || status === 'blessed')) {
+      return isPrime ? 4 : 3;
+    }
+    
+    switch (status) {
+      case 'canonized': return isPrime ? 4 : 3;
+      case 'blessed': return isPrime ? 3 : 2;
+      case 'orthodox': return isPrime ? 3 : 2;
+      case 'schismatic': return isPrime ? 4 : 3;
+      case 'heresiarch': return isPrime ? 4 : 3;
+      case 'secular':
+      default: return isPrime ? 2 : 1;
+    }
+  };
+  
+  const borderWidthOverride = orthodoxyStatus ? getBorderWidthForStatus(orthodoxyStatus, isMartyr) : (lifeStage === 'prime' ? 2 : 1);
+  
   const borderStyle = orthodoxyStatus
-    ? getPersonBorderStyle(orthodoxyStatus, isMartyr)
+    ? getPersonBorderStyle(orthodoxyStatus, isMartyr, borderWidthOverride)
     : {
-        border: '2px solid #4a9eff',
-        borderWidth: '2px',
+        border: `${borderWidthOverride ?? 2}px solid #4a9eff`,
+        borderWidth: `${borderWidthOverride ?? 2}px`,
         boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
       };
 
@@ -174,6 +221,9 @@ const createPersonIcon = (
   const framePadding = (orthodoxyStatus === 'canonized' && !isMartyr) ? 2 : 4;
   const frameWidth = width + framePadding * 2;
   const frameHeight = height + framePadding * 2;
+  
+  // Add translucency for young people - apply to entire marker
+  const markerOpacity = lifeStage === 'young' ? 0.6 : 1.0;
 
   // Crown icon HTML (if person is pope) - using react-icons component
   const crownIconHtml = isPope ? renderToStaticMarkup(
@@ -219,7 +269,7 @@ const createPersonIcon = (
     </div>
   ) : '';
 
-  const fallbackHtml = `<div style="position: relative; background-color: ${fallbackColor}; width: ${frameWidth}px; height: ${frameHeight}px; border-radius: ${borderRadius}px; ${borderStyle.border}; box-shadow: ${borderStyle.boxShadow};">${crownIconHtml}${scrollIconHtml}</div>`;
+  const fallbackHtml = `<div style="position: relative; background-color: ${fallbackColor}; width: ${frameWidth}px; height: ${frameHeight}px; border-radius: ${borderRadius}px; ${borderStyle.border}; box-shadow: ${borderStyle.boxShadow}; opacity: ${markerOpacity};">${crownIconHtml}${scrollIconHtml}</div>`;
   
   if (!imageUrl) {
     return L.divIcon({
@@ -244,6 +294,7 @@ const createPersonIcon = (
           background: ${borderStyle.background};
           box-shadow: ${borderStyle.boxShadow};
           padding: ${framePadding}px;
+          opacity: ${markerOpacity};
         ">
           <div style="
             width: ${width}px;
@@ -277,6 +328,7 @@ const createPersonIcon = (
         background-color: ${fallbackColor};
         padding: ${framePadding}px;
         box-sizing: border-box;
+        opacity: ${markerOpacity};
       ">
         <div style="
           width: ${width}px;
@@ -510,11 +562,13 @@ function ZoomAwareMarkers({
   placeMap,
   activeSees,
   onItemClick,
+  currentYear,
 }: {
   itemsByPlace: Map<string, Array<{ type: 'person'; data: Person } | { type: 'event'; data: Event }>>;
   placeMap: Map<string, Place>;
   activeSees: See[];
   onItemClick: (item: Person | Event) => void;
+  currentYear: number;
 }) {
   const map = useMap();
   const [zoom, setZoom] = useState(map.getZoom());
@@ -689,7 +743,7 @@ function ZoomAwareMarkers({
             // Always use frame colors based on orthodoxy status and martyr status
             // Important sees will be shown as separate independent markers
             const isPope = person.roles?.includes('pope') || false;
-            icon = createPersonIcon(cachedImageUrl, person.orthodoxyStatus, person.isMartyr, aspectRatio, hasWritings, isPope);
+            icon = createPersonIcon(cachedImageUrl, person.orthodoxyStatus, person.isMartyr, aspectRatio, hasWritings, isPope, person, currentYear);
           }
 
           // Create unique key combining place, type, and item id
@@ -976,6 +1030,7 @@ export function MapView({ people, events, places, sees, currentYear, onItemClick
           placeMap={placeMap}
           activeSees={activeSees}
           onItemClick={onItemClick}
+          currentYear={currentYear}
         />
         <ZoomDisplay />
       </MapContainer>
