@@ -386,8 +386,6 @@ function EventDetails({ event }: { event: Event }) {
     ? `${event.startYear}–${event.endYear}`
     : event.startYear.toString();
 
-  const typeLabel = event.type.charAt(0).toUpperCase() + event.type.slice(1);
-
   return (
     <div>
       {/* Header Section */}
