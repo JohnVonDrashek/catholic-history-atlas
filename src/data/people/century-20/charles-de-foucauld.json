@@ -1,0 +1,27 @@
+{
+  "id": "charles-de-foucauld",
+  "name": "St. Charles de Foucauld",
+  "birthYear": 1858,
+  "deathYear": 1916,
+  "feastDay": "December 1",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "hermit",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "algeria",
+      "description": "Hermit and missionary in the Sahara, Algeria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Charles_de_Foucauld",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06145a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Grave_of_Charles_de_Foucauld_04.jpg/330px-Grave_of_Charles_de_Foucauld_04.jpg",
+  "summary": "Charles de Foucauld was a French Catholic priest, hermit, and missionary who lived among the Tuareg people in the Sahara Desert. After a worldly youth, he experienced a profound conversion and dedicated his life to prayer and service. He was killed by bandits in 1916 and inspired the foundation of the Little Brothers of Jesus and Little Sisters of Jesus.",
+  "keyQuotes": [],
+  "writings": []
+}

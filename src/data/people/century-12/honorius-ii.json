@@ -1,0 +1,24 @@
+{
+  "id": "honorius-ii",
+  "name": "Pope Honorius II",
+  "birthYear": null,
+  "deathYear": 1130,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1124 to 1130"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Honorius_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07452a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Coliseo_medieval.jpg/330px-Coliseo_medieval.jpg",
+  "summary": "Honorius II, born Lamberto Scannabecchi, was Pope from 1124 to 1130. His election was contested, but he eventually secured the papacy. He confirmed the Knights Templar as an order and supported their work in the Holy Land. He worked to maintain papal authority and dealt with various political conflicts in Italy and the Holy Roman Empire. His pontificate helped continue the reform movement begun by his predecessors, particularly Gregory VII. He also approved the Premonstratensian order founded by St. Norbert.",
+  "keyQuotes": []
+}
+

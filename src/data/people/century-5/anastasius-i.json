@@ -1,0 +1,24 @@
+{
+  "id": "anastasius-i",
+  "name": "Pope St. Anastasius I",
+  "birthYear": null,
+  "deathYear": 401,
+  "feastDay": "December 19",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 399 to 401"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Anastasius_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01451a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/AnastasiI.jpg/330px-AnastasiI.jpg",
+  "summary": "Anastasius I was Pope from 399 to 401. He condemned Origenism and the works of Origen, showing his commitment to orthodoxy. He is praised by St. Jerome for his firm stance against heretical teachings. He worked to maintain Church discipline and orthodoxy during a period of theological controversy. His brief pontificate helped prepare the way for the major doctrinal developments that would occur in the following decades.",
+  "keyQuotes": []
+}

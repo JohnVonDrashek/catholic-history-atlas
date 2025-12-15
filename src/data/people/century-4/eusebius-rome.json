@@ -1,0 +1,24 @@
+{
+  "id": "eusebius-rome",
+  "name": "Pope St. Eusebius",
+  "birthYear": null,
+  "deathYear": 310,
+  "feastDay": "August 17",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in 309-310"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Eusebius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05614a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Eusebius.jpg",
+  "summary": "Eusebius was Pope for a very brief period in 309-310, during the Diocletianic Persecution. His pontificate was marked by conflicts regarding the treatment of those who had apostatized during the persecution. He was exiled to Sicily by Emperor Maxentius and died in exile. His brief papacy reflects the difficult circumstances of the Church during the final years of the Great Persecution.",
+  "keyQuotes": []
+}

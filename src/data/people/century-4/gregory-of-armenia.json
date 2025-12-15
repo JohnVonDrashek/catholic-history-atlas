@@ -1,0 +1,27 @@
+{
+  "id": "gregory-of-armenia",
+  "name": "St. Gregory the Illuminator",
+  "birthYear": 257,
+  "deathYear": 331,
+  "feastDay": "September 30",
+  "primaryTradition": "Armenian",
+  "roles": [
+    "bishop",
+    "missionary",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "armenia",
+      "description": "Patron saint and evangelizer of Armenia, first Catholicos"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Gregory_the_Illuminator",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07010a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Stgregoryilluminator.jpg",
+  "summary": "Gregory the Illuminator was the patron saint and evangelizer of Armenia. He converted King Tiridates III to Christianity, making Armenia the first nation to adopt Christianity as its state religion in 301 AD. He became the first Catholicos (Patriarch) of the Armenian Apostolic Church.",
+  "keyQuotes": [],
+  "writings": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "cosmas-damian",
+  "name": "Sts. Cosmas and Damian",
+  "birthYear": null,
+  "deathYear": 287,
+  "feastDay": "September 26",
+  "primaryTradition": "Greek",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "cyrrhus",
+      "description": "Twin brothers, physicians, martyred in Cyrrhus"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Cosmas_and_Damian",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04403a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Saint_C%C3%B4me_%26_Saint_Damien_Grandes_Heures_Anne_de_Bretagne_XVIe.jpg/330px-Saint_C%C3%B4me_%26_Saint_Damien_Grandes_Heures_Anne_de_Bretagne_XVIe.jpg",
+  "summary": "Cosmas and Damian were twin brothers who were physicians and Christian martyrs. According to tradition, they practiced medicine without charging fees, earning them the title 'Anargyroi' (the silverless ones). They were martyred during the Diocletian persecution. They are the patron saints of physicians, surgeons, pharmacists, and barbers. They are among the Fourteen Holy Helpers and are venerated in both East and West.",
+  "keyQuotes": []
+}
+

@@ -1,3 +1,5 @@
+import apparitions_good_success from './apparitions-good-success.json';
+import apparitions_guadalupe from './apparitions-guadalupe.json';
 import council_trent from './council-trent.json';
 import english_reformation from './english-reformation.json';
 import founding_carmelites_reformed from './founding-carmelites-reformed.json';
@@ -12,6 +14,8 @@ import roman_catechism from './roman-catechism.json';
 import st_bartholomew_massacre from './st-bartholomew-massacre.json';
 
 export default [
+  apparitions_good_success,
+  apparitions_guadalupe,
   council_trent,
   english_reformation,
   founding_carmelites_reformed,

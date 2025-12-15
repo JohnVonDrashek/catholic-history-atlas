@@ -1,0 +1,25 @@
+{
+  "id": "anacletus-i",
+  "name": "Pope St. Anacletus",
+  "birthYear": null,
+  "deathYear": 92,
+  "feastDay": "July 13",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from c. 79 to 92"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Anacletus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01444a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Interior_of_Chiesa_dei_Gesuiti_%28Venice%29_-_sacristy_-_Papa_Cleto_-_1592-1593_-_by_Palma_il_Giovane.jpg/330px-Interior_of_Chiesa_dei_Gesuiti_%28Venice%29_-_sacristy_-_Papa_Cleto_-_1592-1593_-_by_Palma_il_Giovane.jpg",
+  "summary": "Anacletus (also called Cletus) was Bishop of Rome from approximately 79 to 92. According to tradition, he was martyred. He is said to have ordained priests and established parishes in Rome. Some ancient sources list him as the third pope after Peter and Linus, though there is some confusion with Pope Cletus. His feast day is celebrated on July 13 (or April 26 in some calendars).",
+  "keyQuotes": []
+}

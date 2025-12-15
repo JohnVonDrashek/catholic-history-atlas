@@ -1,0 +1,29 @@
+{
+  "id": "helena",
+  "name": "St. Helena",
+  "birthYear": 248,
+  "deathYear": 330,
+  "feastDay": "August 18",
+  "primaryTradition": "Latin",
+  "roles": [
+    "empress"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Empress, mother of Constantine"
+    },
+    {
+      "placeId": "jerusalem",
+      "description": "Discovered the True Cross in Jerusalem"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Helena_(empress)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07202b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Saint_Helena_Island.jpg/330px-Saint_Helena_Island.jpg",
+  "summary": "Helena was the mother of Constantine the Great and the first Christian empress. According to tradition, she made a pilgrimage to the Holy Land in her old age and discovered the True Cross on which Jesus was crucified, along with other relics. She is credited with building churches in Jerusalem and Bethlehem, including the Church of the Holy Sepulchre. She is venerated as a saint and is the patron saint of archaeologists and converts.",
+  "keyQuotes": []
+}
+

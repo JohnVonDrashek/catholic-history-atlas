@@ -1,0 +1,26 @@
+{
+  "id": "charles-garnier",
+  "name": "St. Charles Garnier",
+  "birthYear": 1606,
+  "deathYear": 1649,
+  "feastDay": "September 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "canada",
+      "description": "Jesuit missionary, one of the North American Martyrs in Canada"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Charles_Garnier_(missionary)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06387a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/St._Charles_Garnier_Church_-_Hamilton%2C_ON.jpg/330px-St._Charles_Garnier_Church_-_Hamilton%2C_ON.jpg",
+  "summary": "Charles Garnier was a French Jesuit priest and martyr who worked as a missionary among the Huron people in New France (Canada). He arrived in Canada in 1636 and spent 13 years working with the Huron, learning their language and customs. When the Iroquois attacked the Huron mission at Saint-Jean, he was killed while ministering to the wounded. He is one of the North American Martyrs and is remembered for his deep love for the Huron people and his willingness to die with them.",
+  "keyQuotes": []
+}

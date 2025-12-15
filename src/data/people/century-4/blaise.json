@@ -1,0 +1,25 @@
+{
+  "id": "blaise",
+  "name": "St. Blaise",
+  "birthYear": null,
+  "deathYear": 316,
+  "feastDay": "February 3",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "sebaste",
+      "description": "Bishop of Sebaste, martyred"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Blaise",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02592c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Saint_Blaise_Louvre_OAR504.jpg/330px-Saint_Blaise_Louvre_OAR504.jpg",
+  "summary": "Blaise was a physician and bishop of Sebaste (modern Sivas, Turkey) who was martyred during the persecution of Licinius. According to tradition, he was known for healing both people and animals. He is the patron saint of throat diseases, and the blessing of throats on his feast day is a popular devotion. He is also the patron saint of wool combers, veterinarians, and wild animals.",
+  "keyQuotes": []
+}

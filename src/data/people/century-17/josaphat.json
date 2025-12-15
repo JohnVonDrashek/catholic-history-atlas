@@ -1,0 +1,26 @@
+{
+  "id": "josaphat",
+  "name": "St. Josaphat Kuntsevych",
+  "birthYear": 1580,
+  "deathYear": 1623,
+  "feastDay": "November 12",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "polotsk",
+      "description": "Archbishop of Polotsk, martyred for Church unity"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Josaphat_Kuntsevych",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08510a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/St_Josaphat_Roman_Catholic_Church_Chicago_2021-2917.jpg/330px-St_Josaphat_Roman_Catholic_Church_Chicago_2021-2917.jpg",
+  "summary": "Josaphat Kuntsevych was a Ruthenian archbishop who worked for the union of the Ruthenian Church with Rome. He was martyred by opponents of the union in Vitebsk. He is the first Eastern Catholic to be canonized and is a symbol of unity between Eastern and Western Christianity. He is the patron saint of Ukraine and Belarus.",
+  "keyQuotes": []
+}
+

@@ -1,0 +1,24 @@
+{
+  "id": "marius",
+  "name": "St. Marius",
+  "birthYear": null,
+  "deathYear": 270,
+  "feastDay": "January 19",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Martyred in Rome with his family"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Marius%2C_Martha%2C_Audifax%2C_and_Abachum",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09673a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Inscriptie_Commanderie_van_St._Jan_door_Marius_van_Beek%2C_Janslangstraat%2C_Arnhem.jpg/330px-Inscriptie_Commanderie_van_St._Jan_door_Marius_van_Beek%2C_Janslangstraat%2C_Arnhem.jpg",
+  "summary": "Marius was a Persian Christian who, along with his wife Martha and sons Audifax and Abachum, traveled to Rome to venerate the relics of the martyrs. They were arrested during the persecution of Claudius II and were all martyred together. They are venerated as saints and are an example of family martyrdom in the early Church. Their feast day is celebrated together on January 19.",
+  "keyQuotes": []
+}

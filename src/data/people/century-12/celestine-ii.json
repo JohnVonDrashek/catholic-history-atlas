@@ -1,0 +1,24 @@
+{
+  "id": "celestine-ii",
+  "name": "Pope Celestine II",
+  "birthYear": null,
+  "deathYear": 1144,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1143 to 1144"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Celestine_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03475b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Pope_Celestine%2C_St_William_and_an_unidentified_Prelate%2C_East_Window%2C_York_Minster.jpg/330px-Pope_Celestine%2C_St_William_and_an_unidentified_Prelate%2C_East_Window%2C_York_Minster.jpg",
+  "summary": "Celestine II, born Guido di Castello, was Pope from 1143 to 1144. His brief pontificate lasted only about five months. He was a former student of Peter Abelard and had been a cardinal before his election. He worked to improve relations with the Holy Roman Emperor and tried to resolve disputes. However, his short reign meant he had little opportunity to implement significant policies. His papacy occurred during the period following the resolution of the Investiture Controversy.",
+  "keyQuotes": []
+}
+

@@ -1,0 +1,24 @@
+{
+  "id": "honorius-iv",
+  "name": "Pope Honorius IV",
+  "birthYear": 1210,
+  "deathYear": 1287,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1285 to 1287"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Honorius_IV",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07454a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Santa_Maria_in_Aracoeli%3B_Grabmal_Giovanna_Aldobrandeschi_%28cropped%29.JPG/330px-Santa_Maria_in_Aracoeli%3B_Grabmal_Giovanna_Aldobrandeschi_%28cropped%29.JPG",
+  "summary": "Honorius IV, born Giacomo Savelli, was Pope from 1285 to 1287. He continued the policies of his predecessor Martin IV, particularly regarding the Kingdom of Sicily and relations with the French. He worked to support the mendicant orders and approved various privileges for religious communities. He attempted to organize a crusade but was unsuccessful. His pontificate was relatively brief and marked by ongoing political struggles in Italy and the Mediterranean region.",
+  "keyQuotes": []
+}
+

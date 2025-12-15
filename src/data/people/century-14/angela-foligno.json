@@ -1,0 +1,36 @@
+{
+  "id": "angela-foligno",
+  "name": "Bl. Angela of Foligno",
+  "birthYear": 1248,
+  "deathYear": 1309,
+  "feastDay": "January 4",
+  "primaryTradition": "Latin",
+  "roles": [
+    "mystic",
+    "tertiary"
+  ],
+  "orthodoxyStatus": "blessed",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "foligno",
+      "description": "Franciscan tertiary and mystic"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Angela_of_Foligno",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01484a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/AngelaFoligno.jpg",
+  "summary": "Angela of Foligno was an Italian Franciscan tertiary and mystic. After a conversion from a worldly life, she became known for her mystical experiences and spiritual writings. Her 'Memorial' and 'Instructions' describe her spiritual journey, visions, and teachings on the contemplative life. She was known as 'Magistra Theologorum' (Teacher of Theologians) and her writings influenced later mystics. She was beatified by Pope Innocent XII in 1693.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "The Book of Divine Consolation of the Blessed Angela of Foligno",
+      "url": "https://www.ccel.org/ccel/angela/consolation.html"
+    }
+  ]
+}
+
+
+
+
+

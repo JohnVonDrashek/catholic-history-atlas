@@ -1,3 +1,4 @@
+import apparitions_czestochowa from './apparitions-czestochowa.json';
 import avignon_papacy from './avignon-papacy.json';
 import black_death from './black-death.json';
 import council_vienne from './council-vienne.json';
@@ -7,6 +8,7 @@ import unam_sanctam from './unam-sanctam.json';
 import western_schism from './western-schism.json';
 
 export default [
+  apparitions_czestochowa,
   avignon_papacy,
   black_death,
   council_vienne,

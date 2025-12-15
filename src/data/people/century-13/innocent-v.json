@@ -1,0 +1,24 @@
+{
+  "id": "innocent-v",
+  "name": "Pope Bl. Innocent V",
+  "birthYear": 1225,
+  "deathYear": 1276,
+  "feastDay": "June 22",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "blessed",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in 1276"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Innocent_V",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08016a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/40_Innocenzo_V.jpg/330px-40_Innocenzo_V.jpg",
+  "summary": "Innocent V, born Pierre de Tarentaise, was Pope for only about five months in 1276. He was a Dominican friar and theologian before becoming pope. He worked to reconcile the Greek and Latin Churches and attempted to organize a crusade. He was known for his learning and piety. His brief pontificate prevented him from implementing many of his plans. He is venerated as Blessed in the Catholic Church.",
+  "keyQuotes": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "urban-viii",
+  "name": "Pope Urban VIII",
+  "birthYear": 1568,
+  "deathYear": 1644,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1623 to 1644"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Urban_VIII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15218b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Pietro_da_Cortona_-_Portrait_of_Urban_VIII_%28ca._1624-1627%29_-_Google_Art_Project_-_edited.jpg/330px-Pietro_da_Cortona_-_Portrait_of_Urban_VIII_%28ca._1624-1627%29_-_Google_Art_Project_-_edited.jpg",
+  "summary": "Urban VIII, born Maffeo Barberini, was Pope from 1623 to 1644. He was a patron of the arts and supported the work of Gian Lorenzo Bernini, including the completion of St. Peter's Basilica. He strengthened the papal fortifications and condemned Galileo Galilei for heliocentrism. He also canonized several saints including Ignatius of Loyola, Francis Xavier, and Philip Neri. His pontificate was marked by the Thirty Years' War and tensions with various European powers.",
+  "keyQuotes": []
+}
+

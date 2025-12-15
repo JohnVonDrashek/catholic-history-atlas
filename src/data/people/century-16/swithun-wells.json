@@ -1,0 +1,24 @@
+{
+  "id": "swithun-wells",
+  "name": "St. Swithun Wells",
+  "birthYear": 1536,
+  "deathYear": 1591,
+  "feastDay": "December 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "london",
+      "description": "Schoolmaster and martyr in London, England"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Swithun_Wells",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15560a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/St_Swithun_Wells%2C_Fair_Oak_%28geograph_3350974%29.jpg/330px-St_Swithun_Wells%2C_Fair_Oak_%28geograph_3350974%29.jpg",
+  "summary": "Swithun Wells was an English Catholic layman and martyr who was executed during the reign of Elizabeth I. He was a schoolmaster who allowed Mass to be celebrated in his home. When authorities discovered this, he and his wife were arrested. His wife was reprieved, but he was executed at Gray's Inn Fields. He is one of the Forty Martyrs of England and Wales and is remembered for his courage in providing a safe place for Catholic worship.",
+  "keyQuotes": []
+}

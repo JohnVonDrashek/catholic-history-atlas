@@ -1,0 +1,25 @@
+{
+  "id": "felicity",
+  "name": "St. Felicity",
+  "birthYear": null,
+  "deathYear": 203,
+  "feastDay": "March 7",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "carthage",
+      "description": "Martyred in Carthage"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Perpetua_and_Felicity",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11687c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Perpetua%2C_Felicitas%2C_Revocatus%2C_Saturninus_and_Secundulus_%28Menologion_of_Basil_II%29.jpg/330px-Perpetua%2C_Felicitas%2C_Revocatus%2C_Saturninus_and_Secundulus_%28Menologion_of_Basil_II%29.jpg",
+  "summary": "Felicity was a slave and Christian martyr who died in Carthage alongside Perpetua during the persecution of Septimius Severus. She was pregnant when imprisoned and gave birth to a daughter just days before her martyrdom. Despite the pain of childbirth and the prospect of leaving her newborn, she remained resolute in her faith. She and Perpetua were thrown to wild beasts in the arena. Their joint martyrdom is one of the most celebrated in early Christian history, and they are venerated together as patron saints of mothers and expectant mothers.",
+  "keyQuotes": []
+}
+

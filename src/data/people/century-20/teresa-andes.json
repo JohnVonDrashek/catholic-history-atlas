@@ -1,0 +1,25 @@
+{
+  "id": "teresa-andes",
+  "name": "St. Teresa of the Andes",
+  "birthYear": 1900,
+  "deathYear": 1920,
+  "feastDay": "April 12",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "chile",
+      "description": "Carmelite nun in Los Andes, Chile"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Teresa_of_the_Andes",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Santa_Teresa_de_los_Andes_A74132620240121.jpg/330px-Santa_Teresa_de_los_Andes_A74132620240121.jpg",
+  "summary": "Teresa of the Andes was a Chilean Carmelite nun who died at the age of 19. Despite her short life, she left behind extensive spiritual writings and is known for her deep mystical experiences and devotion to God. She is the first Chilean saint and the first Discalced Carmelite nun from the Americas to be canonized. Her feast day is celebrated throughout Latin America.",
+  "keyQuotes": []
+}
+

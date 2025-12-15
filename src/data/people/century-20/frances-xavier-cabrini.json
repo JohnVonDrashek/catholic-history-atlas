@@ -1,0 +1,30 @@
+{
+  "id": "frances-xavier-cabrini",
+  "name": "St. Frances Xavier Cabrini",
+  "birthYear": 1850,
+  "deathYear": 1917,
+  "feastDay": "November 13",
+  "primaryTradition": "Latin",
+  "roles": [
+    "founder",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "new-york",
+      "description": "Founder of Missionary Sisters of the Sacred Heart, first American citizen saint"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Frances_Xavier_Cabrini",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03125c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/St._Frances_Xavier_Cabrini_Shrine_from_Cabrini_Boulevard.jpg/330px-St._Frances_Xavier_Cabrini_Shrine_from_Cabrini_Boulevard.jpg",
+  "summary": "Frances Xavier Cabrini, also known as Mother Cabrini, was an Italian-American religious sister who founded the Missionary Sisters of the Sacred Heart of Jesus. She was the first naturalized citizen of the United States to be canonized. She dedicated her life to serving Italian immigrants in the United States, establishing schools, hospitals, and orphanages. She is the patron saint of immigrants.",
+  "keyQuotes": []
+}
+
+
+
+
+

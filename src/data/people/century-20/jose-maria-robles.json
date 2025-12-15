@@ -1,0 +1,26 @@
+{
+  "id": "jose-maria-robles",
+  "name": "St. José María Robles",
+  "birthYear": 1888,
+  "deathYear": 1927,
+  "feastDay": "June 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "mexico",
+      "description": "Jesuit priest martyred during the Cristero War in Mexico"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jos%C3%A9_Mar%C3%ADa_Robles_Hurtado",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/San_jose_maria_robles_hurtado.jpg",
+  "summary": "José María Robles was a Mexican Jesuit priest and martyr who was executed during the Cristero War. He was known for his devotion to the Sacred Heart of Jesus and his work with the poor. Despite the government's ban on public worship, he continued to serve his people, celebrating Mass in secret. He was arrested and hanged from a tree, becoming one of the many martyrs of the Mexican persecution. He is remembered for his courage and faithfulness to the end.",
+  "keyQuotes": []
+}
+

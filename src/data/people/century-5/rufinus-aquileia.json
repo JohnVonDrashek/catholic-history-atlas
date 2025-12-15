@@ -1,0 +1,35 @@
+{
+  "id": "rufinus-aquileia",
+  "name": "Rufinus of Aquileia",
+  "birthYear": 345,
+  "deathYear": 411,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "theologian"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "jerusalem",
+      "description": "Monk and translator in Jerusalem"
+    },
+    {
+      "placeId": "aquileia",
+      "description": "From Aquileia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Tyrannius_Rufinus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13220a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Rufinus_Aquileiensis.jpg/330px-Rufinus_Aquileiensis.jpg",
+  "summary": "Rufinus of Aquileia was a monk, theologian, and translator who worked in Jerusalem. He was a friend of St. Jerome until they had a falling out over Origen's teachings. He translated many Greek theological works into Latin, including works by Origen, Eusebius, and Basil. He was a friend and supporter of Melania the Elder and played an important role in bringing Eastern theology to the West.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Commentary on the Apostles' Creed",
+      "url": "https://www.ccel.org/ccel/schaff/npnf203.iv.iv.html"
+    }
+  ]
+}

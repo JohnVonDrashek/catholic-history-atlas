@@ -1,0 +1,29 @@
+{
+  "id": "josephine-bakhita",
+  "name": "St. Josephine Bakhita",
+  "birthYear": 1869,
+  "deathYear": 1947,
+  "feastDay": "February 8",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "sudan",
+      "description": "Born in Darfur, Sudan"
+    },
+    {
+      "placeId": "italy",
+      "description": "Canossian Sister in Schio, Italy"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Josephine_Bakhita",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Bakhita_Szent_Jozefina.jpeg",
+  "summary": "Josephine Bakhita was a Sudanese-born former slave who became a Canossian nun in Italy. Kidnapped as a child and sold into slavery, she endured terrible suffering before gaining her freedom in Italy. She became known for her deep faith, humility, and ability to forgive those who had enslaved her. She is the patron saint of Sudan and human trafficking survivors.",
+  "keyQuotes": []
+}
+

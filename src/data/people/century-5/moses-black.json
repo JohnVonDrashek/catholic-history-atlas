@@ -1,0 +1,29 @@
+{
+  "id": "moses-black",
+  "name": "St. Moses the Black",
+  "birthYear": 330,
+  "deathYear": 405,
+  "feastDay": "August 28",
+  "primaryTradition": "Coptic",
+  "roles": [
+    "monk",
+    "hermit"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "scetis",
+      "description": "Desert monk in Scetis, Egypt"
+    },
+    {
+      "placeId": "ethiopia",
+      "description": "Born in Ethiopia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Moses_the_Black",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10605a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Saint_Mary_and_St._Moses_the_Black_Coptic_Orthodox_Church_01.jpg/330px-Saint_Mary_and_St._Moses_the_Black_Coptic_Orthodox_Church_01.jpg",
+  "summary": "Moses the Black, also known as Moses the Ethiopian, was a desert monk and hermit in Egypt. He was a former slave and bandit who converted to Christianity and became one of the most revered Desert Fathers. He is known for his humility, his struggle against temptation, and his wisdom. He was martyred when Berber raiders attacked his monastery. He is venerated as a saint and is the patron saint of Africa and non-violence.",
+  "keyQuotes": []
+}

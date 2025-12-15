@@ -1,0 +1,26 @@
+{
+  "id": "charbel",
+  "name": "St. Charbel Makhlouf",
+  "birthYear": 1828,
+  "deathYear": 1898,
+  "feastDay": "July 24",
+  "primaryTradition": "Maronite",
+  "roles": [
+    "monk",
+    "hermit"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lebanon",
+      "description": "Maronite monk and hermit, known for miracles"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Charbel_Makhlouf",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03588a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/St_Charbel_Makhlouf_Annaya.jpg/330px-St_Charbel_Makhlouf_Annaya.jpg",
+  "summary": "Charbel Makhlouf was a Maronite monk and hermit from Lebanon who is known for his extreme asceticism and the many miracles attributed to him. He lived as a hermit for 23 years, dedicating himself to prayer and penance. After his death, his body was found incorrupt and many miracles have been reported at his tomb. He is one of the most popular saints in the Middle East and is the patron saint of Lebanon.",
+  "keyQuotes": []
+}
+

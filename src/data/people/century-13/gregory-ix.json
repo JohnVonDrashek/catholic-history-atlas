@@ -1,0 +1,24 @@
+{
+  "id": "gregory-ix",
+  "name": "Pope Gregory IX",
+  "birthYear": 1145,
+  "deathYear": 1241,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1227 to 1241"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_IX",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06796a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Gregory_IX.jpg/330px-Gregory_IX.jpg",
+  "summary": "Gregory IX, born Ugolino di Conti, was Pope from 1227 to 1241. He was a nephew of Innocent III and continued his predecessor's policies. He canonized St. Francis of Assisi and St. Dominic. He established the papal inquisition and promoted the use of torture in ecclesiastical trials. He had conflicts with Holy Roman Emperor Frederick II, excommunicating him twice. He also compiled and published the Decretals of Gregory IX, an important collection of canon law.",
+  "keyQuotes": []
+}
+

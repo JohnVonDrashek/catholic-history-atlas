@@ -6,38 +6,30 @@
   "feastDay": "July 31",
   "primaryTradition": "Latin",
   "roles": [
-    "founder",
     "priest",
-    "mystic"
+    "founder"
   ],
   "orthodoxyStatus": "canonized",
   "isMartyr": false,
   "locations": [
     {
       "placeId": "rome",
-      "description": "Founded the Society of Jesus in Rome"
+      "description": "Founder of the Society of Jesus (Jesuits)"
     },
     {
-      "placeId": "paris",
-      "description": "Studied at the University of Paris"
+      "placeId": "spain",
+      "description": "Born in Loyola, Spain"
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Ignatius_of_Loyola",
   "newAdventUrl": "https://www.newadvent.org/cathen/07639c.htm",
-  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Ignatius_Loyola.jpg",
-  "summary": "Ignatius of Loyola was a Spanish Basque priest and theologian who founded the Society of Jesus (Jesuits) in 1540. After being wounded in battle, he experienced a profound conversion and dedicated his life to God. He wrote the Spiritual Exercises, one of the most influential works of Christian spirituality. The Jesuits became a major force in the Counter-Reformation, emphasizing education, missionary work, and obedience to the papacy.",
-  "keyQuotes": [
-    "Go forth and set the world on fire.",
-    "Pray as if everything depended on God; work as if everything depended on you."
-  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Triumph_of_St._Ignatius_of_Loyola%2C_ceiling_fresco_by_Andrea_Pozzo.jpg/330px-Triumph_of_St._Ignatius_of_Loyola%2C_ceiling_fresco_by_Andrea_Pozzo.jpg",
+  "summary": "Ignatius of Loyola was a Spanish priest and theologian who founded the Society of Jesus (Jesuits) in 1540. After being wounded in battle, he underwent a spiritual conversion and wrote the Spiritual Exercises, one of the most influential works on Christian spirituality. The Jesuits became one of the most important religious orders in the Catholic Church, known for their work in education, missions, and scholarship. He is the patron saint of soldiers and the Society of Jesus.",
+  "keyQuotes": [],
   "writings": [
     {
       "title": "Spiritual Exercises",
       "url": "https://www.ccel.org/ccel/ignatius/exercises.html"
-    },
-    {
-      "title": "Autobiography",
-      "url": "https://www.ccel.org/ccel/ignatius/autobiography.html"
     }
   ]
 }

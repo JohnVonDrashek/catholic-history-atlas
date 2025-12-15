@@ -1,0 +1,27 @@
+{
+  "id": "gregory-palamas",
+  "name": "St. Gregory Palamas",
+  "birthYear": 1296,
+  "deathYear": 1359,
+  "feastDay": "November 14",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "monk",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "greece",
+      "description": "Greek Orthodox monk and Archbishop of Thessalonica"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Gregory_Palamas",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06395a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Gregor_Palamas_by_North_Greece_anonym_%2815th_c.%2C_Pushkin_museum%29.jpg/330px-Gregor_Palamas_by_North_Greece_anonym_%2815th_c.%2C_Pushkin_museum%29.jpg",
+  "summary": "Gregory Palamas was a Greek Orthodox monk, theologian, and Archbishop of Thessalonica. He is known for his defense of Hesychasm and the doctrine of the uncreated energies of God. His theological works are fundamental to Eastern Orthodox spirituality and he is venerated as a saint in both the Eastern and Catholic Churches.",
+  "keyQuotes": [],
+  "writings": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "robert-southwell",
+  "name": "St. Robert Southwell",
+  "birthYear": 1561,
+  "deathYear": 1595,
+  "feastDay": "February 21",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "poet",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "london",
+      "description": "Jesuit priest and poet martyred in London, England"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Robert_Southwell_(priest)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14152a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/The_Complete_poems_of_Robert_Southwell%2C_S.J._-_for_the_first_time_fully_collected_and_collated_with_the_original_and_early_editions_and_mss._%281872%29_%2814587571879%29.jpg/330px-thumbnail.jpg",
+  "summary": "Robert Southwell was an English Jesuit priest, poet, and martyr who was executed during the reign of Elizabeth I. He was ordained in Rome and returned to England to minister secretly. He was also a talented poet whose works influenced later English literature. He was arrested, tortured in the Tower of London, and executed at Tyburn. He is one of the Forty Martyrs of England and Wales and is remembered both for his martyrdom and his literary contributions.",
+  "keyQuotes": []
+}

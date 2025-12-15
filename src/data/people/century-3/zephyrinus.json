@@ -1,0 +1,25 @@
+{
+  "id": "zephyrinus",
+  "name": "Pope St. Zephyrinus",
+  "birthYear": null,
+  "deathYear": 217,
+  "feastDay": "August 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 199 to 217"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Zephyrinus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15754a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Zephyrinus.jpg/330px-Zephyrinus.jpg",
+  "summary": "Zephyrinus was Bishop of Rome from 199 to 217. His pontificate was marked by theological controversies, particularly regarding the nature of Christ and the Trinity. He faced opposition from the antipope Hippolytus, who criticized his handling of theological matters. He maintained the unity of the Church during a period of significant doctrinal challenges. According to tradition, he may have been martyred, though this is uncertain.",
+  "keyQuotes": []
+}
+

@@ -1,0 +1,29 @@
+{
+  "id": "junípero-serra",
+  "name": "St. Junípero Serra",
+  "birthYear": 1713,
+  "deathYear": 1784,
+  "feastDay": "July 1",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "california",
+      "description": "Founded missions in California"
+    },
+    {
+      "placeId": "mexico",
+      "description": "Missionary in Mexico"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jun%C3%ADpero_Serra",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13757a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Jun%C3%ADpero_Serra.jpg/330px-Jun%C3%ADpero_Serra.jpg",
+  "summary": "Junípero Serra was a Spanish Franciscan friar who founded a series of missions in California, including San Diego, San Francisco, and others. He worked to convert Native Americans to Christianity and established the mission system that would shape California's development. He is a controversial figure due to the impact of the mission system on Native American communities, but he is venerated as a saint and is considered the Apostle of California.",
+  "keyQuotes": []
+}

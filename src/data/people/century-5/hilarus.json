@@ -1,0 +1,25 @@
+{
+  "id": "hilarus",
+  "name": "Pope St. Hilarus",
+  "birthYear": null,
+  "deathYear": 468,
+  "feastDay": "November 17",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 461 to 468"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Hilarius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07347a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ilaro_pontefice.png/330px-Ilaro_pontefice.png",
+  "summary": "Hilarius (also spelled Hilarus) was Pope from 461 to 468. He succeeded Leo the Great and continued his predecessor's policies. He worked to strengthen papal authority, especially in Gaul and Spain. He built several churches and chapels in Rome, including the Oratory of the Holy Cross. He confirmed the decisions of several synods and worked to maintain orthodoxy. His pontificate occurred during the final years of the Western Roman Empire.",
+  "keyQuotes": []
+}
+

@@ -1,0 +1,25 @@
+{
+  "id": "marcellinus",
+  "name": "St. Marcellinus",
+  "birthYear": null,
+  "deathYear": 304,
+  "feastDay": "June 2",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope, martyred in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Marcellinus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09633a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Blick_auf_St._Marcellinus_und_Petrus_II.jpg/330px-Blick_auf_St._Marcellinus_und_Petrus_II.jpg",
+  "summary": "Marcellinus was the Bishop of Rome from 296 to 304, during the Diocletian persecution. According to the Liberian Catalogue, he was martyred during this persecution. However, some sources suggest he may have lapsed during the persecution and later repented. He is venerated as a saint and martyr in the Catholic Church.",
+  "keyQuotes": []
+}

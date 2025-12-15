@@ -1,0 +1,25 @@
+{
+  "id": "maruthas",
+  "name": "St. Maruthas of Martyropolis",
+  "birthYear": null,
+  "deathYear": 420,
+  "feastDay": "December 4",
+  "primaryTradition": "Syriac",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "persia",
+      "description": "Bishop of Martyropolis (Mayyafariqin), missionary to Persia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Maruthas",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09720a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Saint_Maruthas%2C_Bishop_of_Martyropolis_in_Mesopotamia_%28Menologion_of_Basil_II%29.jpeg/330px-Saint_Maruthas%2C_Bishop_of_Martyropolis_in_Mesopotamia_%28Menologion_of_Basil_II%29.jpeg",
+  "summary": "Maruthas was a Syriac bishop of Martyropolis (modern-day Silvan, Turkey) who played a significant role in the early Church in Persia. He attended the Council of Constantinople in 381 and worked to establish peace between the Roman and Persian empires. He collected accounts of Persian martyrs and is credited with building churches and promoting Christianity in the Persian Empire. His work helped establish the foundation for the Church of the East.",
+  "keyQuotes": []
+}
+

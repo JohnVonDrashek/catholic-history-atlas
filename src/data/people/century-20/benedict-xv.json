@@ -1,0 +1,24 @@
+{
+  "id": "benedict-xv",
+  "name": "Pope Benedict XV",
+  "birthYear": 1854,
+  "deathYear": 1922,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1914 to 1922"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Benedict_XV",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02429a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Benedictus_XV%2C_by_Nicola_Perscheid%2C_1915_%28retouched%29.jpg/330px-Benedictus_XV%2C_by_Nicola_Perscheid%2C_1915_%28retouched%29.jpg",
+  "summary": "Benedict XV, born Giacomo della Chiesa, was Pope from 1914 to 1922. His pontificate was dominated by World War I and its aftermath. He worked tirelessly for peace, calling the war a 'useless slaughter' and attempting to broker peace negotiations. He established relief efforts for prisoners of war and refugees. He promulgated the 1917 Code of Canon Law, which had been prepared under Pius X. He also promoted missionary work and established the Congregation for the Oriental Churches.",
+  "keyQuotes": []
+}
+

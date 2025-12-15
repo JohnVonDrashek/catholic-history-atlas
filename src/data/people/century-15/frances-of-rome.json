@@ -1,0 +1,25 @@
+{
+  "id": "frances-of-rome",
+  "name": "St. Frances of Rome",
+  "birthYear": 1384,
+  "deathYear": 1440,
+  "feastDay": "March 9",
+  "primaryTradition": "Latin",
+  "roles": [
+    "widow",
+    "foundress"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Roman noblewoman, foundress of the Oblates of Mary, known for her visions and service to the poor"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Frances_of_Rome",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06217a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Mont-Saint-Adrien_vue.JPG/330px-Mont-Saint-Adrien_vue.JPG",
+  "summary": "Frances of Rome was a Roman noblewoman who, after her husband's death, founded the Oblates of Mary (Oblates of Tor de' Specchi) to serve the poor. She was known for her visions, particularly of her guardian angel, and her extensive charitable work. She is the patron saint of motorists and widows.",
+  "keyQuotes": []
+}

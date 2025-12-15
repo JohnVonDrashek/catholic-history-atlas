@@ -1,0 +1,24 @@
+{
+  "id": "benedict-xiii",
+  "name": "Pope Benedict XIII",
+  "birthYear": 1649,
+  "deathYear": 1730,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1724 to 1730"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Benedict_XIII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02433a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Benedetto_XIII.jpg/330px-Benedetto_XIII.jpg",
+  "summary": "Benedict XIII, born Pietro Francesco Orsini, was Pope from 1724 to 1730. A Dominican friar before his election, he was known for his personal piety and simplicity. He canonized several saints including Aloysius Gonzaga and Stanislaus Kostka. He worked to reform the clergy and reduce abuses in the Church. However, he was criticized for being too trusting of his advisors, particularly Cardinal Coscia, who was later accused of corruption. His pontificate reflected the challenges of reforming the papal administration.",
+  "keyQuotes": []
+}
+

@@ -1,0 +1,26 @@
+{
+  "id": "gabriel-lalemant",
+  "name": "St. Gabriel Lalemant",
+  "birthYear": 1610,
+  "deathYear": 1649,
+  "feastDay": "September 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "canada",
+      "description": "Jesuit missionary, one of the North American Martyrs in Canada"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Gabriel_Lalemant",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08750a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/%C3%89glise_de_Saint-Gabriel-Lallemant%2C_Bas-Saint-Laurent%2C_Qu%C3%A9bec%2C_Canada_-_20090918.jpg/330px-%C3%89glise_de_Saint-Gabriel-Lallemant%2C_Bas-Saint-Laurent%2C_Qu%C3%A9bec%2C_Canada_-_20090918.jpg",
+  "summary": "Gabriel Lalemant was a French Jesuit priest and martyr who worked as a missionary among the Huron people in New France (Canada). He arrived in Canada in 1646 and worked alongside Jean de Brébeuf. When the Iroquois attacked the Huron mission, he and Brébeuf were captured and subjected to horrific torture. He died the day after Brébeuf. He is one of the North American Martyrs and is remembered for his courage and dedication to the Huron people.",
+  "keyQuotes": []
+}

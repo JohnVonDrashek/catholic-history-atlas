@@ -1,0 +1,26 @@
+{
+  "id": "henry-suso",
+  "name": "Bl. Henry Suso",
+  "birthYear": 1295,
+  "deathYear": 1366,
+  "feastDay": "January 23",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "mystic"
+  ],
+  "orthodoxyStatus": "blessed",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "germany",
+      "description": "German Dominican mystic and writer, one of the great Rhineland mystics"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Henry_Suso",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07255a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Henry_Suso.jpg/330px-Henry_Suso.jpg",
+  "summary": "Henry Suso was a German Dominican friar, mystic, and writer who was one of the great Rhineland mystics along with Meister Eckhart and John Tauler. His works, particularly 'The Little Book of Eternal Wisdom' and 'The Life of the Servant', are important contributions to German mystical literature. He emphasized the suffering of Christ and union with God.",
+  "keyQuotes": []
+}
+

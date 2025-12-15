@@ -1,0 +1,25 @@
+{
+  "id": "john-nepomucene",
+  "name": "St. John Nepomucene",
+  "birthYear": 1345,
+  "deathYear": 1393,
+  "feastDay": "May 16",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "prague",
+      "description": "Vicar general of Prague, martyred by being thrown from Charles Bridge"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_of_Nepomuk",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08467a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Prague_07-2016_Charles_Bridge_John_of_Nepomuk_statue_img1.jpg/330px-Prague_07-2016_Charles_Bridge_John_of_Nepomuk_statue_img1.jpg",
+  "summary": "John Nepomucene was a Czech priest and vicar general of Prague who was martyred by being thrown from the Charles Bridge into the Vltava River. According to tradition, he was killed for refusing to reveal the confessions of Queen Sophia of Bavaria to her husband, King Wenceslaus IV. He is the patron saint of the Czech Republic, Bohemia, and confessors, and is invoked against floods and drowning.",
+  "keyQuotes": []
+}

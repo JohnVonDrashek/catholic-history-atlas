@@ -1,0 +1,30 @@
+{
+  "id": "joseph-vaz",
+  "name": "St. Joseph Vaz",
+  "birthYear": 1651,
+  "deathYear": 1711,
+  "feastDay": "January 16",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "india",
+      "description": "Born in India, Oratorian priest"
+    },
+    {
+      "placeId": "sri-lanka",
+      "description": "Missionary in Sri Lanka (Ceylon), known as the Apostle of Ceylon"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Joseph_Vaz",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08509a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Statue_of_St._Joseph_Vaz_at_Betul_church.jpg/330px-Statue_of_St._Joseph_Vaz_at_Betul_church.jpg",
+  "summary": "Joseph Vaz was an Indian Oratorian priest and missionary known as the 'Apostle of Ceylon' (Sri Lanka). During Dutch persecution of Catholics, he worked secretly to preserve and expand the Catholic faith in Sri Lanka. He is the first Indian saint to be canonized and is a patron saint of Sri Lanka.",
+  "keyQuotes": [],
+  "writings": []
+}

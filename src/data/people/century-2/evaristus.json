@@ -1,0 +1,24 @@
+{
+  "id": "evaristus",
+  "name": "Pope St. Evaristus",
+  "birthYear": null,
+  "deathYear": 107,
+  "feastDay": "October 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from c. 99 to 107"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Evaristus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05646a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/2018-12-30_10.54.09_Evaristo_e0.jpg/330px-2018-12-30_10.54.09_Evaristo_e0.jpg",
+  "summary": "Evaristus was Bishop of Rome from approximately 99 to 107. According to tradition, he was martyred during the reign of Emperor Trajan. He is said to have divided Rome into parishes (tituli) and assigned priests to them, establishing a more organized structure for the Church in Rome. He was succeeded by Pope Alexander I.",
+  "keyQuotes": []
+}

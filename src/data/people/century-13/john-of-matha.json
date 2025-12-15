@@ -1,0 +1,26 @@
+{
+  "id": "john-of-matha",
+  "name": "St. John of Matha",
+  "birthYear": 1160,
+  "deathYear": 1213,
+  "feastDay": "February 8",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "france",
+      "description": "Founded the Order of the Most Holy Trinity (Trinitarians) in France"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_of_Matha",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08468a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/St._John_of_Matha_discussing_the_Gospel_with_a_Pirate.jpg/330px-St._John_of_Matha_discussing_the_Gospel_with_a_Pirate.jpg",
+  "summary": "John of Matha was a French Catholic priest who founded the Order of the Most Holy Trinity (Trinitarians) in 1198. The order was dedicated to ransoming Christian captives from Muslim slavery. He received papal approval from Pope Innocent III and established monasteries throughout Europe.",
+  "keyQuotes": [],
+  "writings": []
+}

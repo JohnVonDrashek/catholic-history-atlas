@@ -1,0 +1,24 @@
+{
+  "id": "innocent-xiii",
+  "name": "Pope Innocent XIII",
+  "birthYear": 1655,
+  "deathYear": 1724,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1721 to 1724"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Innocent_XIII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08028a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/InnocientXIII.jpg/330px-InnocientXIII.jpg",
+  "summary": "Innocent XIII, born Michelangelo dei Conti, was Pope from 1721 to 1724. His brief pontificate was marked by efforts to reform the Church and reduce nepotism. He confirmed the condemnation of Jansenism and worked to improve relations with European powers. He was known for his personal piety and attempts to reduce papal expenditures. His pontificate occurred during a relatively peaceful period in Church history.",
+  "keyQuotes": []
+}
+

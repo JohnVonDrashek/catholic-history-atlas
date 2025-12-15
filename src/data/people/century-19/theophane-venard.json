@@ -1,0 +1,27 @@
+{
+  "id": "theophane-venard",
+  "name": "St. Theophane Vénard",
+  "birthYear": 1829,
+  "deathYear": 1861,
+  "feastDay": "February 2",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "vietnam",
+      "description": "French missionary priest martyred in Vietnam"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Th%C3%A9ophane_V%C3%A9nard",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Basilica_and_National_Shrine_of_Our_Lady_of_Consolation_%28Carey%2C_Ohio%29_-_collection_of_17_relics.jpg/330px-Basilica_and_National_Shrine_of_Our_Lady_of_Consolation_%28Carey%2C_Ohio%29_-_collection_of_17_relics.jpg",
+  "summary": "Theophane Vénard was a French priest of the Paris Foreign Missions Society who was martyred in Vietnam. He arrived in Vietnam in 1852 and worked as a missionary despite the ongoing persecution of Christians. He was captured, imprisoned, and eventually beheaded. Known for his joyful spirit even in the face of death, he wrote inspiring letters to his family from prison. He is one of the Martyrs of Vietnam and is particularly remembered for his courage and faith.",
+  "keyQuotes": []
+}
+

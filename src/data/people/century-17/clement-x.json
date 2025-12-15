@@ -1,0 +1,24 @@
+{
+  "id": "clement-x",
+  "name": "Pope Clement X",
+  "birthYear": 1590,
+  "deathYear": 1676,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1670 to 1676"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Clement_X",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04035a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Portrait_of_Pope_Clement_X%2C_by_Giovanni_Battista_Gaulli_%28Baciccio%29_-_Metropolitan_Museum_of_Art.jpg/330px-Portrait_of_Pope_Clement_X%2C_by_Giovanni_Battista_Gaulli_%28Baciccio%29_-_Metropolitan_Museum_of_Art.jpg",
+  "summary": "Clement X, born Emilio Bonaventura Altieri, was Pope from 1670 to 1676. He was elected pope at the age of 79, making him one of the oldest popes at election. Despite his age, he worked actively during his pontificate. He canonized several saints including Rose of Lima, the first saint from the Americas. He worked to help Christians in Poland against the Ottoman Turks. He was known for his charity and support of missions. His pontificate occurred during a relatively peaceful period for the papacy.",
+  "keyQuotes": []
+}
+

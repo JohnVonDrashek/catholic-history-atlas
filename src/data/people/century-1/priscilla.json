@@ -1,0 +1,34 @@
+{
+  "id": "priscilla",
+  "name": "St. Priscilla",
+  "birthYear": null,
+  "deathYear": 98,
+  "feastDay": "February 13",
+  "primaryTradition": "Latin",
+  "roles": [
+    "missionary",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Early Christian in Rome"
+    },
+    {
+      "placeId": "corinth",
+      "description": "Missionary with Aquila in Corinth"
+    },
+    {
+      "placeId": "ephesus",
+      "description": "Missionary with Aquila in Ephesus"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Priscilla_and_Aquila",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12425a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/St._Aquila_and_St._Priscilla%2C_His_Wife_Met_DP891022.jpg/330px-St._Aquila_and_St._Priscilla%2C_His_Wife_Met_DP891022.jpg",
+  "summary": "Priscilla, along with her husband Aquila, were early Christian missionaries and close friends of Paul the Apostle. They were tentmakers by trade and worked alongside Paul in Corinth and Ephesus. They are credited with instructing Apollos in the Christian faith. Priscilla is often mentioned before her husband in the New Testament, which was unusual for the time and suggests she may have been the more prominent teacher. According to tradition, they were martyred in Rome.",
+  "keyQuotes": []
+}
+

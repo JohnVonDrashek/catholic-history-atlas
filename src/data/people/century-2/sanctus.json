@@ -1,0 +1,28 @@
+{
+  "id": "sanctus",
+  "name": "St. Sanctus",
+  "birthYear": null,
+  "deathYear": 177,
+  "feastDay": "June 2",
+  "primaryTradition": "Greek",
+  "roles": [
+    "martyr",
+    "deacon"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "lyons",
+      "description": "Martyred in Lyons with Blandina and companions"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Martyrs_of_Lyons",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09470b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/St_Nicholas_Icon_Sinai_13th_century.jpg/330px-St_Nicholas_Icon_Sinai_13th_century.jpg",
+  "summary": "Sanctus was a deacon and one of the martyrs of Lyons who died in 177 during the persecution of Marcus Aurelius. According to the account preserved by Eusebius, he was tortured repeatedly with red-hot plates applied to his body, but he remained steadfast, only repeating 'I am a Christian.' His courage and endurance, along with that of Blandina and the other martyrs, inspired many and became a powerful witness to the faith in early Gaul.",
+  "keyQuotes": [
+    "I am a Christian."
+  ]
+}
+

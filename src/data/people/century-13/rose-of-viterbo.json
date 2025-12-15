@@ -1,0 +1,25 @@
+{
+  "id": "rose-of-viterbo",
+  "name": "St. Rose of Viterbo",
+  "birthYear": 1233,
+  "deathYear": 1251,
+  "feastDay": "September 4",
+  "primaryTradition": "Latin",
+  "roles": [
+    "virgin",
+    "mystic"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "viterbo",
+      "description": "Franciscan tertiary and mystic in Viterbo, known for her visions and public preaching"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Rose_of_Viterbo",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13199a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Rose_of_Viterbo.jpg/330px-Rose_of_Viterbo.jpg",
+  "summary": "Rose of Viterbo was an Italian Franciscan tertiary who, despite being only 18 when she died, was known for her visions, miracles, and public preaching. She supported the papacy against the Holy Roman Emperor and was known for her deep devotion and ability to convert sinners. She is the patron saint of Viterbo.",
+  "keyQuotes": []
+}

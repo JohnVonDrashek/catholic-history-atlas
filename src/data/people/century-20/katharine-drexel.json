@@ -1,0 +1,25 @@
+{
+  "id": "katharine-drexel",
+  "name": "St. Katharine Drexel",
+  "birthYear": 1858,
+  "deathYear": 1955,
+  "feastDay": "March 3",
+  "primaryTradition": "Latin",
+  "roles": [
+    "religious sister",
+    "foundress"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "philadelphia",
+      "description": "Born in Philadelphia, founded the Sisters of the Blessed Sacrament"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Katharine_Drexel",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05157a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Katharine_Drexel.jpg/330px-Katharine_Drexel.jpg",
+  "summary": "Katharine Drexel was an American heiress who gave up her fortune to become a religious sister and founded the Sisters of the Blessed Sacrament, dedicated to serving Native Americans and African Americans. She established schools and missions throughout the United States, using her inheritance to fund education and social services for marginalized communities. She is the second American-born saint to be canonized.",
+  "keyQuotes": []
+}

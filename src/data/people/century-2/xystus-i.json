@@ -1,0 +1,26 @@
+{
+  "id": "xystus-i",
+  "name": "Pope St. Sixtus I",
+  "birthYear": null,
+  "deathYear": 125,
+  "feastDay": "April 3",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from c. 115 to 125"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Sixtus_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14032a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bista-relikvijar_pape_sv._Siksta_I._iz_1596._-_en_face.JPG/330px-Bista-relikvijar_pape_sv._Siksta_I._iz_1596._-_en_face.JPG",
+  "summary": "Sixtus I (also called Xystus I) was Bishop of Rome from approximately 115 to 125. According to tradition, he was martyred. He is credited with establishing that only sacred ministers should touch the sacred vessels and that the bishop's blessing should follow the reading of the Epistle and Gospel. His feast day is celebrated on April 3 in the West and April 6 in the East.",
+  "keyQuotes": []
+}
+

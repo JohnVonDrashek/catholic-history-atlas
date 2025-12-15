@@ -17,10 +17,59 @@ const colors = {
   red: '\x1b[31m',
   yellow: '\x1b[33m',
   blue: '\x1b[34m',
+  cyan: '\x1b[36m',
 };
 
-function checkImageUrl(url) {
+// Cache configuration
+const CACHE_FILE = path.join(__dirname, '.image-cache.json');
+const CACHE_MAX_AGE = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
+
+// Load cache from file
+function loadCache() {
+  try {
+    if (fs.existsSync(CACHE_FILE)) {
+      const cacheData = fs.readFileSync(CACHE_FILE, 'utf8');
+      return JSON.parse(cacheData);
+    }
+  } catch (error) {
+    console.warn(`${colors.yellow}Warning: Could not load cache file: ${error.message}${colors.reset}`);
+  }
+  return {};
+}
+
+// Save cache to file
+function saveCache(cache) {
+  try {
+    fs.writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2), 'utf8');
+  } catch (error) {
+    console.warn(`${colors.yellow}Warning: Could not save cache file: ${error.message}${colors.reset}`);
+  }
+}
+
+// Check if cache entry is still valid
+function isCacheValid(entry) {
+  if (!entry || !entry.timestamp) return false;
+  const age = Date.now() - entry.timestamp;
+  return age < CACHE_MAX_AGE;
+}
+
+function checkImageUrl(url, cache) {
   return new Promise((resolve) => {
+    // Check cache first
+    const cacheEntry = cache[url];
+    if (isCacheValid(cacheEntry)) {
+      resolve({
+        url,
+        valid: cacheEntry.valid,
+        statusCode: cacheEntry.statusCode,
+        contentType: cacheEntry.contentType,
+        error: cacheEntry.error,
+        cached: true,
+      });
+      return;
+    }
+
+    // Not in cache or expired, make HTTP request
     try {
       const parsedUrl = new URL(url);
       const client = parsedUrl.protocol === 'https:' ? https : http;
@@ -42,47 +91,95 @@ function checkImageUrl(url) {
         const isImage = contentType.startsWith('image/');
         const isOk = statusCode >= 200 && statusCode < 300;
         
-        resolve({
+        const result = {
           url,
           valid: isOk && isImage,
           statusCode,
           contentType,
           error: null,
-        });
+          cached: false,
+        };
+
+        // Update cache
+        cache[url] = {
+          valid: result.valid,
+          statusCode: result.statusCode,
+          contentType: result.contentType,
+          error: result.error,
+          timestamp: Date.now(),
+        };
+        
+        resolve(result);
         
         res.destroy();
       });
 
       req.on('error', (error) => {
-        resolve({
+        const result = {
           url,
           valid: false,
           statusCode: null,
           contentType: null,
           error: error.message,
-        });
+          cached: false,
+        };
+
+        // Cache errors too (but with shorter TTL consideration - we'll still cache for now)
+        cache[url] = {
+          valid: false,
+          statusCode: null,
+          contentType: null,
+          error: error.message,
+          timestamp: Date.now(),
+        };
+
+        resolve(result);
       });
 
       req.on('timeout', () => {
         req.destroy();
-        resolve({
+        const result = {
           url,
           valid: false,
           statusCode: null,
           contentType: null,
           error: 'Request timeout',
-        });
+          cached: false,
+        };
+
+        // Cache timeout errors
+        cache[url] = {
+          valid: false,
+          statusCode: null,
+          contentType: null,
+          error: 'Request timeout',
+          timestamp: Date.now(),
+        };
+
+        resolve(result);
       });
 
       req.end();
     } catch (error) {
-      resolve({
+      const result = {
         url,
         valid: false,
         statusCode: null,
         contentType: null,
         error: `Invalid URL: ${error.message}`,
-      });
+        cached: false,
+      };
+
+      // Cache invalid URL errors
+      cache[url] = {
+        valid: false,
+        statusCode: null,
+        contentType: null,
+        error: `Invalid URL: ${error.message}`,
+        timestamp: Date.now(),
+      };
+
+      resolve(result);
     }
   });
 }
@@ -104,7 +201,7 @@ function findJsonFiles(dir, fileList = []) {
   return fileList;
 }
 
-async function verifyPersonFile(filePath) {
+async function verifyPersonFile(filePath, cache) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
     const person = JSON.parse(content);
@@ -117,10 +214,11 @@ async function verifyPersonFile(filePath) {
         url: null,
         valid: false,
         error: 'Missing imageUrl',
+        cached: false,
       };
     }
     
-    const result = await checkImageUrl(person.imageUrl);
+    const result = await checkImageUrl(person.imageUrl, cache);
     return {
       file: filePath,
       name: person.name,
@@ -135,6 +233,7 @@ async function verifyPersonFile(filePath) {
       url: null,
       valid: false,
       error: `Failed to parse JSON: ${error.message}`,
+      cached: false,
     };
   }
 }
@@ -147,32 +246,59 @@ async function main() {
     process.exit(1);
   }
   
+  // Load cache
+  console.log(`${colors.blue}Loading image cache...${colors.reset}`);
+  const cache = loadCache();
+  const cacheSize = Object.keys(cache).length;
+  console.log(`Cache loaded: ${cacheSize} entries\n`);
+  
   console.log(`${colors.blue}Finding all person JSON files...${colors.reset}`);
   const jsonFiles = findJsonFiles(peopleDir);
   console.log(`Found ${jsonFiles.length} person files\n`);
   
   const allResults = [];
   let processed = 0;
+  let cachedCount = 0;
+  let checkedCount = 0;
   
   for (const file of jsonFiles) {
     processed++;
     const relativePath = path.relative(__dirname, file);
     process.stdout.write(`[${processed}/${jsonFiles.length}] Checking ${relativePath}... `);
     
-    const result = await verifyPersonFile(file);
+    const result = await verifyPersonFile(file, cache);
     allResults.push(result);
     
-    if (result.valid) {
-      process.stdout.write(`${colors.green}✓${colors.reset}\n`);
-    } else if (!result.url) {
-      process.stdout.write(`${colors.yellow}⚠ Missing imageUrl${colors.reset}\n`);
+    if (result.cached) {
+      cachedCount++;
+      if (result.valid) {
+        process.stdout.write(`${colors.cyan}✓ (cached)${colors.reset}\n`);
+      } else if (!result.url) {
+        process.stdout.write(`${colors.yellow}⚠ Missing imageUrl${colors.reset}\n`);
+      } else {
+        process.stdout.write(`${colors.red}✗ (cached) ${result.error || `Status: ${result.statusCode}`}${colors.reset}\n`);
+      }
     } else {
-      process.stdout.write(`${colors.red}✗ ${result.error || `Status: ${result.statusCode}`}${colors.reset}\n`);
+      checkedCount++;
+      if (result.valid) {
+        process.stdout.write(`${colors.green}✓${colors.reset}\n`);
+      } else if (!result.url) {
+        process.stdout.write(`${colors.yellow}⚠ Missing imageUrl${colors.reset}\n`);
+      } else {
+        process.stdout.write(`${colors.red}✗ ${result.error || `Status: ${result.statusCode}`}${colors.reset}\n`);
+      }
+      
+      // Small delay to avoid overwhelming servers (only for non-cached requests)
+      await new Promise(resolve => setTimeout(resolve, 200));
     }
-    
-    // Small delay to avoid overwhelming servers
-    await new Promise(resolve => setTimeout(resolve, 200));
   }
+  
+  // Save cache
+  console.log(`\n${colors.blue}Saving cache...${colors.reset}`);
+  saveCache(cache);
+  console.log(`Cache saved: ${Object.keys(cache).length} entries`);
+  console.log(`  ${colors.cyan}Cached: ${cachedCount}${colors.reset}`);
+  console.log(`  ${colors.blue}Checked: ${checkedCount}${colors.reset}\n`);
   
   // Summary
   console.log(`\n${colors.blue}=== SUMMARY ===${colors.reset}`);

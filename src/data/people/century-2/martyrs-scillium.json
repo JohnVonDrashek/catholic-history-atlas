@@ -1,0 +1,28 @@
+{
+  "id": "martyrs-scillium",
+  "name": "Martyrs of Scillium",
+  "birthYear": null,
+  "deathYear": 180,
+  "feastDay": "July 17",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "carthage",
+      "description": "First documented martyrs in North Africa, executed in Carthage"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Scillitan_Martyrs",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13609a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Roma-sangiovanniepaolo01.jpg/330px-Roma-sangiovanniepaolo01.jpg",
+  "summary": "The Martyrs of Scillium were a group of twelve Christians who were the first documented martyrs in North Africa. They were arrested in Scillium (near Carthage) and brought before the proconsul, who offered them the chance to recant. Led by Speratus, they refused, declaring 'I am a Christian' and 'I do not recognize the empire of this world.' They were beheaded in Carthage in 180. Their martyrdom is recorded in one of the earliest surviving Christian documents from Africa, the Acts of the Scillitan Martyrs.",
+  "keyQuotes": [
+    "I am a Christian.",
+    "I do not recognize the empire of this world."
+  ]
+}
+

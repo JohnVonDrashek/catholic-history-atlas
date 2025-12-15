@@ -1,0 +1,24 @@
+{
+  "id": "afra-augsburg",
+  "name": "St. Afra of Augsburg",
+  "birthYear": null,
+  "deathYear": 304,
+  "feastDay": "August 5",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "augsburg",
+      "description": "Martyred in Augsburg, Germany"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Afra_of_Augsburg",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01170a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Basilica_of_SS._Ulrich_and_Afra%2C_Augsburg%2C_Germany%2C_20250503_1604_8795.jpg/330px-Basilica_of_SS._Ulrich_and_Afra%2C_Augsburg%2C_Germany%2C_20250503_1604_8795.jpg",
+  "summary": "Afra was a Christian martyr who died in Augsburg during the Diocletian persecution. According to tradition, she was a former prostitute who converted to Christianity and was martyred for refusing to renounce her faith. She is the patron saint of Augsburg and is venerated as an example of conversion and redemption. Her martyrdom helped establish Christianity in the region that would become Bavaria.",
+  "keyQuotes": []
+}

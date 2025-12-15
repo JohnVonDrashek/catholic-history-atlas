@@ -1,0 +1,28 @@
+{
+  "id": "john-berchmans",
+  "name": "St. John Berchmans",
+  "birthYear": 1599,
+  "deathYear": 1621,
+  "feastDay": "November 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "religious"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "belgium",
+      "description": "Jesuit scholastic, born in Diest, Belgium"
+    },
+    {
+      "placeId": "rome",
+      "description": "Died in Rome while studying for the priesthood"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Berchmans",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02488a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Jean_Berchmans_%281599-1621%29.jpg/330px-Jean_Berchmans_%281599-1621%29.jpg",
+  "summary": "John Berchmans was a Belgian Jesuit scholastic who died at the age of 22 while studying for the priesthood in Rome. He is known for his devotion to the ordinary duties of religious life, his love for the Blessed Virgin Mary, and his motto 'Do ordinary things extraordinarily well.' He is one of the three Jesuit 'boy saints' (along with Aloysius Gonzaga and Stanislaus Kostka) and is the patron saint of altar servers and students.",
+  "keyQuotes": []
+}

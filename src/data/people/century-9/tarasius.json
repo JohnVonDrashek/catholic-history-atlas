@@ -1,0 +1,30 @@
+{
+  "id": "tarasius",
+  "name": "St. Tarasius of Constantinople",
+  "birthYear": 730,
+  "deathYear": 806,
+  "feastDay": "February 25",
+  "primaryTradition": "Greek",
+  "roles": [
+    "patriarch",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "constantinople",
+      "description": "Patriarch of Constantinople who presided over the Second Council of Nicaea"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Patriarch_Tarasios_of_Constantinople",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14445a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Patriarch_Tarasios.jpg",
+  "summary": "Tarasius was the Patriarch of Constantinople from 784 to 806. He played a crucial role in ending the first phase of the Iconoclast Controversy by presiding over the Second Council of Nicaea in 787, which restored the veneration of icons. He was known for his learning, piety, and efforts to reform the Church. He is venerated as a saint in both the Eastern Orthodox and Catholic Churches.",
+  "keyQuotes": []
+}
+
+
+
+
+

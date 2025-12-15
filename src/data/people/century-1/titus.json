@@ -1,0 +1,29 @@
+{
+  "id": "titus",
+  "name": "St. Titus",
+  "birthYear": null,
+  "deathYear": 96,
+  "feastDay": "January 26",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "crete",
+      "description": "Bishop of Crete"
+    },
+    {
+      "placeId": "corinth",
+      "description": "Missionary companion of Paul"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Titus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14732b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Saint_Titus_%28Kosovo%2C_14th_c._Pech_Patriarch.%2C_S._Nicholas_church%29.jpg/330px-Saint_Titus_%28Kosovo%2C_14th_c._Pech_Patriarch.%2C_S._Nicholas_church%29.jpg",
+  "summary": "Titus was a Gentile convert and trusted companion of Paul the Apostle. He accompanied Paul on several missionary journeys and was instrumental in resolving conflicts in the Corinthian church. Paul appointed him as the first bishop of Crete, where he worked to organize the Christian community. He received a canonical letter from Paul (the Epistle to Titus) containing instructions for church leadership. According to tradition, he died peacefully in Crete at an advanced age.",
+  "keyQuotes": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "denis-paris",
+  "name": "St. Denis of Paris",
+  "birthYear": null,
+  "deathYear": 250,
+  "feastDay": "October 9",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "First Bishop of Paris, martyred in Paris"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Denis_of_Paris",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04721a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Paris_Immeuble_142_rue_St-Denis_2013.jpg/330px-Paris_Immeuble_142_rue_St-Denis_2013.jpg",
+  "summary": "Denis, also known as Dionysius, was the first bishop of Paris and is the patron saint of France. According to tradition, he was sent from Italy to evangelize Gaul in the 3rd century. He was martyred along with his companions Rusticus and Eleutherius on Montmartre (Mount of Martyrs) in Paris. According to legend, after being beheaded, he picked up his head and walked several miles, preaching a sermon. He is one of the most venerated saints in France.",
+  "keyQuotes": []
+}
+

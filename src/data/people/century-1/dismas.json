@@ -1,0 +1,28 @@
+{
+  "id": "dismas",
+  "name": "St. Dismas",
+  "birthYear": null,
+  "deathYear": 33,
+  "feastDay": "March 25",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr",
+    "penitent"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "jerusalem",
+      "description": "The Good Thief crucified with Jesus"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Penitent_thief",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05030a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Museo_del_Duomo_-_Milan_-_Vitrage_-_Penitent_Thief.jpg/330px-Museo_del_Duomo_-_Milan_-_Vitrage_-_Penitent_Thief.jpg",
+  "summary": "Dismas, known as the 'Good Thief' or 'Penitent Thief,' was one of the two criminals crucified alongside Jesus. While the other thief mocked Jesus, Dismas rebuked him and asked Jesus to remember him when he came into his kingdom. Jesus responded, 'Truly, I say to you, today you will be with me in Paradise.' Dismas is venerated as a saint and is the patron of prisoners, repentant thieves, and funeral directors.",
+  "keyQuotes": [
+    "Jesus, remember me when you come into your kingdom."
+  ]
+}
+

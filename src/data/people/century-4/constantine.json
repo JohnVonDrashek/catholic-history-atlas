@@ -1,0 +1,29 @@
+{
+  "id": "constantine",
+  "name": "Constantine the Great",
+  "birthYear": 272,
+  "deathYear": 337,
+  "feastDay": null,
+  "primaryTradition": "Greek",
+  "roles": [
+    "emperor"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "constantinople",
+      "description": "Founded and ruled from Constantinople"
+    },
+    {
+      "placeId": "rome",
+      "description": "Emperor, issued Edict of Milan"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Constantine_the_Great",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04295a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Saint_Constantine_the_Great_by_Nikolay_Ramazanov%2C_replica_by_Dmitry_Tugarinov_2.jpg/330px-Saint_Constantine_the_Great_by_Nikolay_Ramazanov%2C_replica_by_Dmitry_Tugarinov_2.jpg",
+  "summary": "Constantine the Great was a Roman emperor who legalized Christianity with the Edict of Milan in 313 and became the first Christian emperor. He called the First Council of Nicaea in 325, which produced the Nicene Creed. He moved the capital of the Roman Empire to Constantinople (Byzantium), which became the center of the Eastern Roman Empire. He was baptized on his deathbed and is venerated as a saint in the Eastern Orthodox Church, though not in the Catholic Church.",
+  "keyQuotes": []
+}
+

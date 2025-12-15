@@ -1,0 +1,26 @@
+{
+  "id": "pantaenus",
+  "name": "St. Pantaenus",
+  "birthYear": null,
+  "deathYear": 200,
+  "feastDay": "July 7",
+  "primaryTradition": "Greek",
+  "roles": [
+    "theologian",
+    "teacher"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Head of the Catechetical School of Alexandria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pantaenus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11445a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Burghers-Pantaenus.jpg",
+  "summary": "Pantaenus was a Stoic philosopher who converted to Christianity and became the head of the Catechetical School of Alexandria, one of the most important centers of Christian learning in the early Church. He was the teacher of Clement of Alexandria and is credited with establishing the tradition of Christian scholarship in Alexandria. According to tradition, he was sent as a missionary to India, where he found Christians who already had a copy of the Gospel of Matthew in Hebrew. He is considered a saint in both Eastern and Western traditions.",
+  "keyQuotes": []
+}
+

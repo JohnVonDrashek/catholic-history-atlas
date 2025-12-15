@@ -1,0 +1,25 @@
+{
+  "id": "ralph-sherwin",
+  "name": "St. Ralph Sherwin",
+  "birthYear": 1550,
+  "deathYear": 1581,
+  "feastDay": "December 1",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "london",
+      "description": "Priest martyred in London, England"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ralph_Sherwin",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13750a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/St_Peter%27s_Church%2C_Nottinghamshire_WW1_War_Memorial.jpg/330px-St_Peter%27s_Church%2C_Nottinghamshire_WW1_War_Memorial.jpg",
+  "summary": "Ralph Sherwin was an English Catholic priest and martyr who was executed during the reign of Elizabeth I. He was one of the first students at the English College in Rome and was ordained there. He returned to England to minister secretly to Catholics. He was arrested, tortured, and executed at Tyburn along with Edmund Campion and Alexander Briant. He is one of the Forty Martyrs of England and Wales and is remembered for his courage and faithfulness.",
+  "keyQuotes": []
+}

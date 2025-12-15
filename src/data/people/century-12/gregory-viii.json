@@ -1,0 +1,24 @@
+{
+  "id": "gregory-viii",
+  "name": "Pope Gregory VIII",
+  "birthYear": 1100,
+  "deathYear": 1187,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in 1187"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Gregory_VIII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06797a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Gregorius_VIII._podoba.jpg",
+  "summary": "Gregory VIII, born Alberto di Morra, was Pope for only about two months in 1187. His extremely brief pontificate was marked by his call for the Third Crusade after the fall of Jerusalem to Saladin. He issued the papal bull Audita tremendi, which called for a new crusade. He died before the crusade could be launched. Despite his short reign, his call for the Third Crusade was significant, and the crusade eventually proceeded under his successor, Clement III.",
+  "keyQuotes": []
+}
+

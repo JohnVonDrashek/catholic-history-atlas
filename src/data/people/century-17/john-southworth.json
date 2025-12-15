@@ -1,0 +1,25 @@
+{
+  "id": "john-southworth",
+  "name": "St. John Southworth",
+  "birthYear": 1592,
+  "deathYear": 1654,
+  "feastDay": "June 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "london",
+      "description": "Priest martyred in London, England"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Southworth",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14151a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/St_Mary%27s_and_St_John_Southworth_Church%2C_Samlesbury_-_geograph.org.uk_-_83868.jpg/330px-St_Mary%27s_and_St_John_Southworth_Church%2C_Samlesbury_-_geograph.org.uk_-_83868.jpg",
+  "summary": "John Southworth was an English Catholic priest and martyr who was executed during the Commonwealth period. He was ordained in Douai and returned to England to minister secretly. He was particularly known for his work during the plague in London, where he risked his life to minister to the sick. He was arrested, tried, and executed at Tyburn. He is one of the Forty Martyrs of England and Wales and is the only martyr whose body was preserved and is now enshrined in Westminster Cathedral.",
+  "keyQuotes": []
+}

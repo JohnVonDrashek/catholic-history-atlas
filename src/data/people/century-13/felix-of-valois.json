@@ -1,0 +1,26 @@
+{
+  "id": "felix-of-valois",
+  "name": "St. Felix of Valois",
+  "birthYear": 1127,
+  "deathYear": 1212,
+  "feastDay": "November 20",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "france",
+      "description": "Co-founded the Order of the Most Holy Trinity (Trinitarians) in France"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Felix_of_Valois",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06027a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Suzionys_church.jpg/330px-Suzionys_church.jpg",
+  "summary": "Felix of Valois was a French Catholic priest who co-founded the Order of the Most Holy Trinity (Trinitarians) with St. John of Matha. The order was dedicated to ransoming Christian captives. He spent much of his life as a hermit before joining John of Matha in establishing the order.",
+  "keyQuotes": [],
+  "writings": []
+}

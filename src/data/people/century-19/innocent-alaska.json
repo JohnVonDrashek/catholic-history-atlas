@@ -1,0 +1,26 @@
+{
+  "id": "innocent-alaska",
+  "name": "St. Innocent of Alaska",
+  "birthYear": 1797,
+  "deathYear": 1879,
+  "feastDay": "March 31",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alaska",
+      "description": "Bishop and missionary in Alaska, later Metropolitan of Moscow"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Innocent_of_Alaska",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/St._Innocent_Russian_Orthodox_Cathedral%2C_Anchorage%2C_Alaska.jpg/330px-St._Innocent_Russian_Orthodox_Cathedral%2C_Anchorage%2C_Alaska.jpg",
+  "summary": "Innocent of Alaska was a Russian Orthodox bishop and missionary who worked extensively in Alaska, translating the Bible and liturgical texts into Aleut and other native languages. He later became Metropolitan of Moscow. He was a skilled linguist, ethnographer, and educator who deeply respected the cultures of the peoples he served. He is considered an apostle to Alaska and the Americas.",
+  "keyQuotes": []
+}
+

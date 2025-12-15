@@ -1,0 +1,25 @@
+{
+  "id": "vladimir-kiev",
+  "name": "St. Vladimir the Great",
+  "birthYear": 958,
+  "deathYear": 1015,
+  "feastDay": "July 15",
+  "primaryTradition": "Greek",
+  "roles": [
+    "prince"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "kiev",
+      "description": "Grand Prince of Kiev, baptized the Kievan Rus'"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Vladimir_the_Great",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15498a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/St_Vladimir_church_103024.jpg/330px-St_Vladimir_church_103024.jpg",
+  "summary": "Vladimir the Great was the Grand Prince of Kiev who converted to Christianity in 988 and baptized the entire Kievan Rus', marking the beginning of Christianity in what would become Russia, Ukraine, and Belarus. His conversion and the subsequent Christianization of the Rus' was one of the most significant events in Eastern European history. He is venerated as a saint in both the Eastern Orthodox and Catholic Churches and is considered equal to the apostles.",
+  "keyQuotes": []
+}
+

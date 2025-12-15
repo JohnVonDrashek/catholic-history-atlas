@@ -1,0 +1,25 @@
+{
+  "id": "valerian",
+  "name": "St. Valerian",
+  "birthYear": null,
+  "deathYear": 269,
+  "feastDay": "December 15",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "carthage",
+      "description": "Martyred in Carthage"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Valerian_and_Tiburtius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15250a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/1905_-_Seeing_off_Valerian_Kuibyshev_to_the_St._Petersburg_Military_Medical_Academy._Kokchetav.jpg/330px-1905_-_Seeing_off_Valerian_Kuibyshev_to_the_St._Petersburg_Military_Medical_Academy._Kokchetav.jpg",
+  "summary": "Valerian was a Roman nobleman and Christian martyr who died in Carthage during the persecution of Valerian. According to tradition, he was the husband of St. Cecilia and was converted to Christianity by her. He and his brother Tiburtius were both martyred for their faith. He is venerated as a saint and is often depicted with his wife Cecilia and brother Tiburtius.",
+  "keyQuotes": []
+}
+

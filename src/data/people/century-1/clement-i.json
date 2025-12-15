@@ -1,0 +1,26 @@
+{
+  "id": "clement-i-pope",
+  "name": "Pope St. Clement I",
+  "birthYear": null,
+  "deathYear": 99,
+  "feastDay": "November 23",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from c. 88 to 99"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Clement_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04012c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Clemens_Romanus.jpg/330px-Clemens_Romanus.jpg",
+  "summary": "Clement I, also known as Clement of Rome, was Bishop of Rome from approximately 88 to 99. He is considered one of the Apostolic Fathers and is credited with writing the First Epistle of Clement, an important early Christian document. According to tradition, he was martyred by being tied to an anchor and thrown into the sea. He is venerated as a saint and his feast day is November 23. He is one of the earliest popes after St. Peter.",
+  "keyQuotes": []
+}
+

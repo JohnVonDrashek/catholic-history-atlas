@@ -1,0 +1,27 @@
+{
+  "id": "john-louis-bonnard",
+  "name": "St. John-Louis Bonnard",
+  "birthYear": 1824,
+  "deathYear": 1852,
+  "feastDay": "May 1",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "vietnam",
+      "description": "French missionary priest martyred in Vietnam"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jean-Louis_Bonnard",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02666a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Nicolas_Poussin_-_Landscape_with_Saint_John_on_Patmos_-_Google_Art_Project.jpg/330px-Nicolas_Poussin_-_Landscape_with_Saint_John_on_Patmos_-_Google_Art_Project.jpg",
+  "summary": "John-Louis Bonnard was a French priest of the Paris Foreign Missions Society who was martyred in Vietnam during the persecution of Christians under Emperor Tự Đức. He was beheaded for refusing to renounce his faith. He is one of the Martyrs of Vietnam canonized in 1988.",
+  "keyQuotes": [],
+  "writings": []
+}

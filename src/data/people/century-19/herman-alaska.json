@@ -1,0 +1,25 @@
+{
+  "id": "herman-alaska",
+  "name": "St. Herman of Alaska",
+  "birthYear": 1756,
+  "deathYear": 1837,
+  "feastDay": "December 13",
+  "primaryTradition": "Greek",
+  "roles": [
+    "monk",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alaska",
+      "description": "Russian Orthodox missionary monk in Alaska"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Herman_of_Alaska",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/St._Herman_of_Alaska.jpg",
+  "summary": "Herman of Alaska was a Russian Orthodox monk and missionary who came to Alaska in 1794 as part of the first Orthodox mission to the Americas. He spent over 40 years on Spruce Island, Alaska, where he cared for the native Aleut people, teaching them the Christian faith and protecting them from exploitation. He is considered the first Orthodox saint of North America and is venerated by both Orthodox and Catholic Christians.",
+  "keyQuotes": []
+}

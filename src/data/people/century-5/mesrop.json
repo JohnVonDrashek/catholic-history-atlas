@@ -1,0 +1,26 @@
+{
+  "id": "mesrop",
+  "name": "St. Mesrop Mashtots",
+  "birthYear": 362,
+  "deathYear": 440,
+  "feastDay": "February 17",
+  "primaryTradition": "Armenian",
+  "roles": [
+    "monk",
+    "scholar"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "armenia",
+      "description": "Created the Armenian alphabet, missionary work throughout Armenia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Mesrop_Mashtots",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10210a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mesrop_Mashtots_sculpture_Yerevan.jpg/330px-Mesrop_Mashtots_sculpture_Yerevan.jpg",
+  "summary": "Mesrop Mashtots was an Armenian monk, theologian, and linguist who created the Armenian alphabet in 405 AD. This achievement enabled the translation of the Bible and other Christian texts into Armenian, playing a crucial role in the Christianization of Armenia. He also created alphabets for the Georgian and Caucasian Albanian languages. He is considered one of the most important figures in Armenian history and culture.",
+  "keyQuotes": []
+}
+

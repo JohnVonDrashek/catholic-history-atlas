@@ -1,0 +1,26 @@
+{
+  "id": "emiliana",
+  "name": "St. Emiliana",
+  "birthYear": null,
+  "deathYear": 251,
+  "feastDay": "January 5",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr",
+    "virgin"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Martyred in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Emiliana_of_Rome",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05405a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Artgate_Fondazione_Cariplo_-_Ottino_Pasquale%2C_S._Francesco_e_l%27angelo.jpg/330px-Artgate_Fondazione_Cariplo_-_Ottino_Pasquale%2C_S._Francesco_e_l%27angelo.jpg",
+  "summary": "Emiliana was a Christian virgin martyr who died in Rome. According to tradition, she was the sister of St. Trasilla and St. Gordiana, and the aunt of Pope St. Gregory the Great. She is venerated as a saint and is an example of the early Christian women who consecrated themselves to virginity and were martyred for their faith.",
+  "keyQuotes": []
+}
+

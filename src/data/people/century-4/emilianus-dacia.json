@@ -1,0 +1,26 @@
+{
+  "id": "emilianus-dacia",
+  "name": "St. Emilianus of Dacia",
+  "birthYear": null,
+  "deathYear": 362,
+  "feastDay": "July 18",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "dacia",
+      "description": "Martyred in Dacia (modern Romania)"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Emilianus_of_Dacia",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05405b.htm",
+  "imageUrl": null,
+  "summary": "Emilianus was a Christian martyr who died in Dacia (modern Romania) during the persecution of Julian the Apostate. According to tradition, he was a Roman soldier who converted to Christianity and was martyred for his faith. He is venerated as a saint and is one of the early Christian martyrs from the region that would become Romania, demonstrating the spread of Christianity to the Danube frontier.",
+  "keyQuotes": []
+}
+
+

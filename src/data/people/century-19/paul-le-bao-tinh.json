@@ -1,0 +1,25 @@
+{
+  "id": "paul-le-bao-tinh",
+  "name": "St. Paul Lê Bảo Tịnh",
+  "birthYear": 1793,
+  "deathYear": 1857,
+  "feastDay": "April 6",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "vietnam",
+      "description": "Vietnamese priest, one of the Martyrs of Vietnam"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Paul_L%C3%AA_B%E1%BA%A3o_T%E1%BB%8Bnh",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Saint_Agnes_le_thi_thanh.jpg/330px-Saint_Agnes_le_thi_thanh.jpg",
+  "summary": "Paul Lê Bảo Tịnh was a Vietnamese Catholic priest and one of the 117 Martyrs of Vietnam. He worked as a catechist and priest during a period of intense persecution of Christians in Vietnam. He was arrested, imprisoned, and eventually beheaded for refusing to renounce his faith. He is remembered for his courage and faithfulness, and represents the many Vietnamese martyrs who gave their lives for Christ during the 19th century persecutions.",
+  "keyQuotes": []
+}

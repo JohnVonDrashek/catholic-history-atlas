@@ -1,0 +1,23 @@
+{
+  "id": "innocent-iv-pope",
+  "name": "Pope Innocent IV",
+  "birthYear": 1195,
+  "deathYear": 1254,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lyon",
+      "description": "Pope from 1243 to 1254"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Innocent_IV",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08015a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/The_Council_of_Lyons_excommunicating_Frederic_II_%28cropped%29.png",
+  "summary": "Innocent IV, born Sinibaldo Fieschi, was Pope from 1243 to 1254. He is best known for the First Council of Lyon (1245), where he deposed and excommunicated Holy Roman Emperor Frederick II. He had to flee Rome and spent much of his pontificate in Lyon. He was a canon lawyer and issued the important decretal collection known as the 'Apparatus' on the Decretals of Gregory IX. He strongly asserted papal authority over temporal rulers and worked to combat Frederick II's attempts to control Italy.",
+  "keyQuotes": []
+}

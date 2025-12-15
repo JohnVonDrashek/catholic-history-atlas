@@ -1,0 +1,26 @@
+{
+  "id": "brigid",
+  "name": "St. Brigid of Kildare",
+  "birthYear": 451,
+  "deathYear": 525,
+  "feastDay": "February 1",
+  "primaryTradition": "Latin",
+  "roles": [
+    "abbess",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "ireland",
+      "description": "Abbess of Kildare, one of Ireland's patron saints"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Brigid_of_Kildare",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02784b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Stbrigid.jpg",
+  "summary": "Brigid of Kildare was an Irish abbess and founder of several monasteries, most notably the double monastery at Kildare. She is one of Ireland's three patron saints, along with Patrick and Columba. She was known for her charity, her miracles, and her care for the poor. She is often called 'Mary of the Gael' and is one of the most beloved saints in Ireland.",
+  "keyQuotes": []
+}
+

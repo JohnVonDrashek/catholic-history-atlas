@@ -1,0 +1,24 @@
+{
+  "id": "innocent-xii",
+  "name": "Pope Innocent XII",
+  "birthYear": 1615,
+  "deathYear": 1700,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1691 to 1700"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Innocent_XII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08016a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/PIGNATELLI_ANTONIO.jpg",
+  "summary": "Innocent XII, born Antonio Pignatelli, was Pope from 1691 to 1700. He is known for issuing the papal bull Romanum decet Pontificem in 1692, which limited papal nepotism by prohibiting popes from bestowing estates, offices, or revenues on relatives. This was a significant reform of papal administration. He worked to combat corruption and improve the Church's moral standing. He also worked to resolve disputes with Louis XIV of France over the Gallican Articles. His pontificate marked a return to more austere papal governance.",
+  "keyQuotes": []
+}
+

@@ -1,0 +1,25 @@
+{
+  "id": "nimatullah-kassab",
+  "name": "St. Nimatullah Kassab",
+  "birthYear": 1808,
+  "deathYear": 1858,
+  "feastDay": "December 14",
+  "primaryTradition": "Maronite",
+  "roles": [
+    "monk",
+    "hermit"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lebanon",
+      "description": "Maronite monk and hermit in Lebanon, known for his holiness and miracles"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Nimatullah_Kassab",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11075a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Hardini.jpg",
+  "summary": "Nimatullah Kassab was a Maronite Catholic monk and hermit from Lebanon who lived a life of prayer, penance, and service to the poor. He entered the Lebanese Maronite Order and later became a hermit, dedicating himself to contemplation and helping those in need. He is known for his humility, charity, and numerous miracles attributed to his intercession. He is venerated as a saint in the Maronite Church.",
+  "keyQuotes": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "apollonia",
+  "name": "St. Apollonia",
+  "birthYear": null,
+  "deathYear": 249,
+  "feastDay": "February 9",
+  "primaryTradition": "Greek",
+  "roles": [
+    "martyr",
+    "virgin"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Martyred in Alexandria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Apollonia",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01617a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Felbecke_Kapelle.jpg/330px-Felbecke_Kapelle.jpg",
+  "summary": "Apollonia was a deaconess and virgin martyr who died in Alexandria during a local uprising against Christians. According to tradition, she was an elderly woman who was tortured, including having her teeth knocked out, and then thrown into a fire. She is the patron saint of dentists and those suffering from toothaches. Her martyrdom is described in a letter from Dionysius of Alexandria to Fabius of Antioch.",
+  "keyQuotes": []
+}
+

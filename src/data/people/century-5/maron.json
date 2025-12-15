@@ -1,0 +1,26 @@
+{
+  "id": "maron",
+  "name": "St. Maron",
+  "birthYear": null,
+  "deathYear": 410,
+  "feastDay": "February 9",
+  "primaryTradition": "Syriac",
+  "roles": [
+    "monk",
+    "hermit"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lebanon",
+      "description": "Syrian monk, founder of the Maronite Church"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Maron",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09687a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/St._Maron.jpg/330px-St._Maron.jpg",
+  "summary": "Maron was a Syrian monk and hermit who lived in the mountains near Antioch. He is the founder of the Maronite Church, one of the Eastern Catholic Churches. He was known for his asceticism and his devotion to prayer. His disciples established monasteries throughout Syria and Lebanon, and the Maronite Church continues to be a significant Christian community in the Middle East today.",
+  "keyQuotes": []
+}
+

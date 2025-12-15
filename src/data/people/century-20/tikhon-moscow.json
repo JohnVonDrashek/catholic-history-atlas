@@ -1,0 +1,26 @@
+{
+  "id": "tikhon-moscow",
+  "name": "St. Tikhon of Moscow",
+  "birthYear": 1865,
+  "deathYear": 1925,
+  "feastDay": "April 7",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "patriarch"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "russia",
+      "description": "Patriarch of Moscow and All Russia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Tikhon_of_Moscow",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/St_Tikhon_Wooden_Carving.jpg/330px-St_Tikhon_Wooden_Carving.jpg",
+  "summary": "Tikhon of Moscow was the first Patriarch of Moscow and All Russia after the restoration of the patriarchate in 1917. He led the Russian Orthodox Church during the difficult years of the Bolshevik Revolution and early Soviet persecution. Despite constant harassment and threats, he courageously defended the Church and spoke out against the persecution of believers. He is venerated as a confessor and is considered a martyr by many.",
+  "keyQuotes": []
+}
+

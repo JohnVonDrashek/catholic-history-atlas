@@ -1,0 +1,44 @@
+{
+  "id": "irenaeus-lyons",
+  "name": "St. Irenaeus of Lyons",
+  "birthYear": 130,
+  "deathYear": 202,
+  "feastDay": "June 28",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "martyr",
+    "theologian",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "lyons",
+      "description": "Bishop of Lyons"
+    },
+    {
+      "placeId": "smyrna",
+      "description": "Student of Polycarp in Smyrna"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Irenaeus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08130b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Saint_Irenaeus.jpg",
+  "summary": "Irenaeus of Lyons was a bishop, theologian, and one of the most important early Christian writers. He was a student of Polycarp, who was a disciple of John the Apostle, making Irenaeus part of the apostolic succession. His major work 'Against Heresies' is a comprehensive refutation of Gnosticism and an important early statement of orthodox Christian doctrine. He emphasized the unity of the Church and the importance of apostolic tradition. He is considered a Doctor of the Church and was martyred during the persecution of Septimius Severus.",
+  "keyQuotes": [
+    "The glory of God is man fully alive, and the life of man is the vision of God.",
+    "Error, indeed, is never set forth in its naked deformity, lest, being thus exposed, it should at once be detected. But it is craftily decked out in an attractive dress."
+  ],
+  "writings": [
+    {
+      "title": "Against Heresies",
+      "url": "https://www.ccel.org/ccel/schaff/anf01.ix.html"
+    },
+    {
+      "title": "Demonstration of the Apostolic Preaching",
+      "url": "https://www.ccel.org/ccel/schaff/anf01.ix.ii.html"
+    }
+  ]
+}

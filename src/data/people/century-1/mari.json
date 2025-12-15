@@ -1,0 +1,26 @@
+{
+  "id": "mari",
+  "name": "St. Mari",
+  "birthYear": null,
+  "deathYear": 65,
+  "feastDay": "August 5",
+  "primaryTradition": "Syriac",
+  "roles": [
+    "apostle",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "edessa",
+      "description": "Apostle to Mesopotamia, companion of Addai"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Mari_(Apostle)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09670a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Mari_Lwyd_at_rest_on_St_Mary_Street%2C_Chepstow-Cas-Gwent_-_geograph.org.uk_-_7960565.jpg/330px-Mari_Lwyd_at_rest_on_St_Mary_Street%2C_Chepstow-Cas-Gwent_-_geograph.org.uk_-_7960565.jpg",
+  "summary": "Mari was one of the Seventy Disciples and a companion of Addai in the mission to Edessa and Mesopotamia. He is venerated in the Syriac Christian tradition as one of the apostles who brought Christianity to the East. According to tradition, he worked alongside Addai to establish the Church in Mesopotamia and is considered a co-founder of the Church of the East. His mission extended beyond Edessa into the Parthian Empire, helping to spread Christianity throughout the region.",
+  "keyQuotes": []
+}
+

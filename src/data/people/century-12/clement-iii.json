@@ -1,0 +1,24 @@
+{
+  "id": "clement-iii",
+  "name": "Pope Clement III",
+  "birthYear": 1130,
+  "deathYear": 1191,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1187 to 1191"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Clement_III",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04026a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/SpeculumGrandmontis_%28Pope_Clement_III%29.jpg/330px-SpeculumGrandmontis_%28Pope_Clement_III%29.jpg",
+  "summary": "Clement III, born Paolo Scolari, was Pope from 1187 to 1191. He succeeded Gregory VIII and worked to organize the Third Crusade that his predecessor had called for. He negotiated with Holy Roman Emperor Frederick I Barbarossa and managed to secure the emperor's participation in the crusade. He also worked to resolve the conflict between the papacy and the Roman Commune, allowing the pope to return to Rome after years of papal residence in other cities. His pontificate helped stabilize relations between the papacy and various European powers.",
+  "keyQuotes": []
+}
+

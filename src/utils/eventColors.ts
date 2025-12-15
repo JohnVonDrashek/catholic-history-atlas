@@ -44,6 +44,12 @@ export const eventTypeColors: Record<EventType, EventColorScheme> = {
     textColor: '#fff',
     label: 'War',
   },
+  apparition: {
+    fill: '#87CEEB', // Sky Blue
+    stroke: '#B0E0E6',
+    textColor: '#fff',
+    label: 'Apparition',
+  },
   other: {
     fill: '#4a9eff', // Light Blue
     stroke: '#6bb3ff',
@@ -55,6 +61,8 @@ export const eventTypeColors: Record<EventType, EventColorScheme> = {
 export function getEventColor(type: EventType): EventColorScheme {
   return eventTypeColors[type];
 }
+
+
 
 
 

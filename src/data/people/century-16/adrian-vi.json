@@ -1,0 +1,24 @@
+{
+  "id": "adrian-vi",
+  "name": "Pope Adrian VI",
+  "birthYear": 1459,
+  "deathYear": 1523,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1522 to 1523"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Adrian_VI",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01157c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Portrait_of_Pope_Adrian_VI_%28after_Jan_van_Scorel%29.jpg/330px-Portrait_of_Pope_Adrian_VI_%28after_Jan_van_Scorel%29.jpg",
+  "summary": "Adrian VI, born Adriaan Florenszoon Boeyens, was Pope from 1522 to 1523. He was the last non-Italian pope until John Paul II in 1978. He was Dutch and had been a professor of theology and tutor to the future Holy Roman Emperor Charles V. His brief pontificate occurred during the early years of the Protestant Reformation. He attempted to reform the Church and address corruption, but his efforts were met with resistance. He was the last pope to retain his baptismal name upon election.",
+  "keyQuotes": []
+}
+

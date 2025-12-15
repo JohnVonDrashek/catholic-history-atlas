@@ -1,0 +1,27 @@
+{
+  "id": "meister-eckhart",
+  "name": "Bl. Meister Eckhart",
+  "birthYear": 1260,
+  "deathYear": 1328,
+  "feastDay": "January 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "mystic",
+    "theologian"
+  ],
+  "orthodoxyStatus": "blessed",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "germany",
+      "description": "German Dominican mystic, theologian, and preacher, master of Rhineland mysticism"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Meister_Eckhart",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05275a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Meister_Eckhart.jpg/330px-Meister_Eckhart.jpg",
+  "summary": "Meister Eckhart was a German Dominican friar, mystic, theologian, and preacher who is considered one of the greatest mystics in Western Christianity. His teachings on the 'Godhead' and the birth of God in the soul influenced later mystics including John Tauler and Henry Suso. Some of his propositions were questioned during his lifetime, but he is now recognized as a blessed.",
+  "keyQuotes": []
+}
+

@@ -1,0 +1,25 @@
+{
+  "id": "jean-de-lalande",
+  "name": "St. Jean de Lalande",
+  "birthYear": null,
+  "deathYear": 1646,
+  "feastDay": "September 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "layperson",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "canada",
+      "description": "Jesuit donné (lay assistant), one of the North American Martyrs in Canada"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jean_de_Lalande",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08750a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/St._John%27s_Church_%28Omaha%2C_Nebraska%29%2C_window_26c%2C_transept%2C_St._Lalande.jpg/330px-St._John%27s_Church_%28Omaha%2C_Nebraska%29%2C_window_26c%2C_transept%2C_St._Lalande.jpg",
+  "summary": "Jean de Lalande was a French Jesuit donné (lay assistant) and martyr who worked as a missionary in New France (Canada). He accompanied Isaac Jogues on his second mission to the Iroquois. When they were captured, he was tortured and killed alongside Jogues. He is one of the North American Martyrs and is remembered for his courage and dedication to the mission despite the danger.",
+  "keyQuotes": []
+}

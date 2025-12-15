@@ -1,0 +1,32 @@
+{
+  "id": "andrew-caesarea",
+  "name": "St. Andrew of Caesarea",
+  "birthYear": null,
+  "deathYear": 614,
+  "feastDay": "May 19",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "caesarea-cappadocia",
+      "description": "Bishop of Caesarea in Cappadocia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Andrew_of_Caesarea",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01473a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Walters_Ms._W917_-_Apocalypse_by_Andrew_of_Caesarea_f.009v_Christ_inspiring_St._John.jpg/330px-Walters_Ms._W917_-_Apocalypse_by_Andrew_of_Caesarea_f.009v_Christ_inspiring_St._John.jpg",
+  "summary": "Andrew of Caesarea was a bishop and theologian who wrote an important commentary on the Book of Revelation. His commentary, written in the early 7th century, is one of the earliest and most influential interpretations of the Apocalypse in the Eastern Church. He was known for his orthodox interpretation and his defense of the canonicity of Revelation.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Commentary on the Apocalypse",
+      "url": "https://www.ccel.org/ccel/schaff/npnf214.ix.html"
+    }
+  ]
+}
+

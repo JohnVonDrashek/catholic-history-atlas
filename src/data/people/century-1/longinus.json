@@ -1,0 +1,28 @@
+{
+  "id": "longinus",
+  "name": "St. Longinus",
+  "birthYear": null,
+  "deathYear": 45,
+  "feastDay": "March 15",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr",
+    "centurion"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "jerusalem",
+      "description": "Centurion at the Crucifixion"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Longinus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09352a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Bernini_Hl._Longinus_Petersdom.jpg/330px-Bernini_Hl._Longinus_Petersdom.jpg",
+  "summary": "Longinus is traditionally identified as the Roman centurion who pierced the side of Jesus with a lance during the Crucifixion. According to the Gospels, when he saw the events surrounding Jesus' death, he declared, 'Truly this was the Son of God!' He is said to have converted to Christianity and was martyred in Cappadocia. The Holy Lance (Spear of Longinus) is one of the most revered relics in Christian tradition.",
+  "keyQuotes": [
+    "Truly this was the Son of God!"
+  ]
+}
+

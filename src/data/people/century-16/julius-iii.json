@@ -1,0 +1,24 @@
+{
+  "id": "julius-iii",
+  "name": "Pope Julius III",
+  "birthYear": 1487,
+  "deathYear": 1555,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1550 to 1555"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Julius_III",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08563a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Girolamo_Sicciolante_-_Paus_Julius_IIIFXD.jpg/330px-Girolamo_Sicciolante_-_Paus_Julius_IIIFXD.jpg",
+  "summary": "Julius III, born Giovanni Maria Ciocchi del Monte, was Pope from 1550 to 1555. He reconvened the Council of Trent in 1551 after it had been suspended. He supported the Jesuits and confirmed the Society of Jesus. He was a patron of the arts and commissioned Michelangelo to complete work on St. Peter's Basilica. However, his pontificate was also marked by accusations of nepotism and personal scandal. He worked to continue the Counter-Reformation efforts begun by his predecessors.",
+  "keyQuotes": []
+}
+

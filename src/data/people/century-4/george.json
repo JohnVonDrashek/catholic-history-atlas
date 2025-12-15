@@ -1,0 +1,24 @@
+{
+  "id": "george",
+  "name": "St. George",
+  "birthYear": null,
+  "deathYear": 303,
+  "feastDay": "April 23",
+  "primaryTradition": "Greek",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "lod",
+      "description": "Martyred in Lydda (Lod), Palestine"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_George",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06453a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/St_George_Utah_from_east_1.jpg/330px-St_George_Utah_from_east_1.jpg",
+  "summary": "George was a Christian martyr who died in Lydda (modern Lod, Israel) during the Diocletian persecution. According to the Golden Legend, he was a Roman soldier who slayed a dragon and saved a princess. He is one of the most venerated saints in Christianity and is the patron saint of England, Georgia, and many other places. He is also the patron of soldiers, archers, and scouts. His cult spread widely throughout Europe and the Middle East.",
+  "keyQuotes": []
+}

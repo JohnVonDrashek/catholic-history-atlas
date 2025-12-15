@@ -1,0 +1,23 @@
+{
+  "id": "eugenius-ii",
+  "name": "Pope Eugene II",
+  "birthYear": null,
+  "deathYear": 827,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 824 to 827"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Eugene_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05596a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Pope_Eugene_II.jpg/330px-Pope_Eugene_II.jpg",
+  "summary": "Eugene II was Pope from 824 to 827. His pontificate was marked by the Constitution of Lothair, which strengthened the authority of the Holy Roman Emperor over papal elections and the administration of Rome. He worked to reform the clergy and improve education. He held a council in Rome that addressed various disciplinary issues. His papacy reflects the growing influence of the Carolingian emperors on papal affairs.",
+  "keyQuotes": []
+}

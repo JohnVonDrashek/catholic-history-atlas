@@ -1,0 +1,25 @@
+{
+  "id": "julius-i",
+  "name": "Pope St. Julius I",
+  "birthYear": 280,
+  "deathYear": 352,
+  "feastDay": "April 12",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 337 to 352"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Julius_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08561a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Iulius_I.jpg",
+  "summary": "Julius I was Pope from 337 to 352. He is best known for his strong defense of St. Athanasius of Alexandria, who had been deposed by the Arian bishops. He called a synod in Rome in 340 that vindicated Athanasius and other orthodox bishops. He asserted the right of the Bishop of Rome to hear appeals from other churches, establishing an important precedent for papal authority. His pontificate occurred during a period of intense Arian controversy.",
+  "keyQuotes": []
+}
+

@@ -1,3 +1,4 @@
+import apparitions_pillar from './apparitions-pillar.json';
 import council_jerusalem from './council-jerusalem.json';
 import destruction_jerusalem from './destruction-jerusalem.json';
 import gnosticism from './gnosticism.json';
@@ -8,6 +9,7 @@ import nero_persecution from './nero-persecution.json';
 import trajan_persecution from './trajan-persecution.json';
 
 export default [
+  apparitions_pillar,
   council_jerusalem,
   destruction_jerusalem,
   gnosticism,

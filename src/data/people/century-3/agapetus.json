@@ -1,0 +1,25 @@
+{
+  "id": "agapetus",
+  "name": "St. Agapetus",
+  "birthYear": null,
+  "deathYear": 274,
+  "feastDay": "April 22",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Martyred in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Agapetus_of_Rome",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01202a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Jacques_Callot%2C_St._Fidelis%3B_St._Agapetus%3B_St._Dula%3B_St._Latro_Dimas%2C_NGA_51821.jpg/330px-Jacques_Callot%2C_St._Fidelis%3B_St._Agapetus%3B_St._Dula%3B_St._Latro_Dimas%2C_NGA_51821.jpg",
+  "summary": "Agapetus was a young Christian who was martyred in Rome during the persecution of Aurelian. According to tradition, he was only 15 years old when he was arrested for being a Christian. He was tortured and then beheaded for refusing to renounce his faith. He is venerated as a saint and is one of the many young martyrs of the early Church who demonstrated remarkable courage.",
+  "keyQuotes": []
+}
+

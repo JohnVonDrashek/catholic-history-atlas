@@ -1,0 +1,25 @@
+{
+  "id": "lucy",
+  "name": "St. Lucy",
+  "birthYear": 283,
+  "deathYear": 304,
+  "feastDay": "December 13",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr",
+    "virgin"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "syracuse",
+      "description": "Martyred in Syracuse, Sicily"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Lucy",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09414a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Living_room_of_a_typical_rural_house_in_northeast_Brazil.jpg/330px-Living_room_of_a_typical_rural_house_in_northeast_Brazil.jpg",
+  "summary": "Lucy was a young Christian martyr who died in Syracuse, Sicily, during the Diocletian persecution. According to tradition, she consecrated her virginity to God and distributed her wealth to the poor. When her betrothed reported her to the authorities, she was tortured and had her eyes gouged out before being executed. She is one of the most venerated virgin martyrs and is the patron saint of the blind and those with eye problems. Her name means 'light,' and she is often invoked for protection of sight.",
+  "keyQuotes": []
+}

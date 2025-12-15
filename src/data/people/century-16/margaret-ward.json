@@ -1,0 +1,24 @@
+{
+  "id": "margaret-ward",
+  "name": "St. Margaret Ward",
+  "birthYear": null,
+  "deathYear": 1588,
+  "feastDay": "August 30",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "london",
+      "description": "Martyred in London, England"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Margaret_Ward",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15560a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Map_St_Margaret%27s_Ward%2C_Ipswich.png/330px-Map_St_Margaret%27s_Ward%2C_Ipswich.png",
+  "summary": "Margaret Ward was an English Catholic martyr who was executed during the reign of Elizabeth I. She helped a priest escape from prison by smuggling a rope to him. When questioned, she refused to reveal the priest's whereabouts or to attend Protestant services. She was hanged, drawn, and quartered at Tyburn. She is one of the Forty Martyrs of England and Wales and is remembered for her courage in protecting priests during the persecution.",
+  "keyQuotes": []
+}

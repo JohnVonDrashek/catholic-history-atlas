@@ -1,0 +1,26 @@
+{
+  "id": "barbara",
+  "name": "St. Barbara",
+  "birthYear": null,
+  "deathYear": 235,
+  "feastDay": "December 4",
+  "primaryTradition": "Greek",
+  "roles": [
+    "martyr",
+    "virgin"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "nicomedia",
+      "description": "Martyred in Nicomedia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Barbara",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02281a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Haenigsen_Kirche_Barbara.JPG/330px-Haenigsen_Kirche_Barbara.JPG",
+  "summary": "Barbara was a Christian martyr who, according to tradition, was locked in a tower by her pagan father to preserve her from the world. She converted to Christianity and was martyred by her own father. She is one of the Fourteen Holy Helpers and is the patron saint of artillerymen, architects, builders, firefighters, and those who work with explosives. She is often invoked against lightning and fire.",
+  "keyQuotes": []
+}
+

@@ -1,0 +1,25 @@
+{
+  "id": "rabbula",
+  "name": "St. Rabbula",
+  "birthYear": null,
+  "deathYear": 435,
+  "feastDay": "August 7",
+  "primaryTradition": "Syriac",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "edessa",
+      "description": "Bishop of Edessa"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Rabbula",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12610a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/St._John_the_Evangelist_%28Rabbula_Gospels%29.png/330px-St._John_the_Evangelist_%28Rabbula_Gospels%29.png",
+  "summary": "Rabbula was the Bishop of Edessa from 412 to 435. He was a strong opponent of Nestorianism and worked to suppress the Diatessaron (a harmony of the Gospels) in favor of the separate Gospels. He was known for his strict discipline and his efforts to reform the clergy. He is venerated as a saint and is an important figure in the history of the Syriac Church.",
+  "keyQuotes": []
+}
+

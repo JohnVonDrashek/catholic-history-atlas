@@ -1,0 +1,24 @@
+{
+  "id": "innocent-vi",
+  "name": "Pope Innocent VI",
+  "birthYear": 1282,
+  "deathYear": 1362,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1352 to 1362 (Avignon)"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Innocent_VI",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08027a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Innocent_VI.JPG/330px-Innocent_VI.JPG",
+  "summary": "Innocent VI, born Étienne Aubert, was Pope from 1352 to 1362. He was the fifth Avignon pope. He worked to reform the Curia and reduce papal expenses. He tried to negotiate peace between France and England during the Hundred Years' War. He supported the efforts of Cardinal Albornoz to restore papal authority in the Papal States. He was known for his piety and efforts at reform, though the Avignon Papacy continued during his pontificate.",
+  "keyQuotes": []
+}
+

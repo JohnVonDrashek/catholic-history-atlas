@@ -1,0 +1,29 @@
+{
+  "id": "paula",
+  "name": "St. Paula",
+  "birthYear": 347,
+  "deathYear": 404,
+  "feastDay": "January 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "patron"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "bethlehem",
+      "description": "Founded monasteries in Bethlehem with Jerome"
+    },
+    {
+      "placeId": "rome",
+      "description": "Noblewoman from Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Paula_of_Rome",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11580a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Santa_Paula_Liber_Veritatis.jpg",
+  "summary": "Paula was a Roman noblewoman who became a disciple of St. Jerome and followed him to the Holy Land. She founded monasteries in Bethlehem, including one for men and one for women, and devoted herself to prayer, study, and works of charity. She was a close friend and patron of Jerome, supporting his biblical translation work. Jerome wrote a moving eulogy for her after her death, praising her virtues and devotion.",
+  "keyQuotes": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "telesphorus",
+  "name": "Pope St. Telesphorus",
+  "birthYear": null,
+  "deathYear": 137,
+  "feastDay": "January 5",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from c. 125 to 137"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Telesphorus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14477a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Straubing%2C_Karmelitenkirche_008.JPG/330px-Straubing%2C_Karmelitenkirche_008.JPG",
+  "summary": "Telesphorus was Bishop of Rome from approximately 125 to 137. According to tradition, he was martyred during the reign of Emperor Hadrian. He is credited with establishing the Christmas midnight Mass and the Lenten fast. He is mentioned by Irenaeus of Lyons as one of the early popes who preserved the apostolic tradition. His feast day is celebrated on January 5 in the West and February 22 in the East.",
+  "keyQuotes": []
+}
+

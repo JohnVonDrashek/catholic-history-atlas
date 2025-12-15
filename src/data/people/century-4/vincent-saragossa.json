@@ -1,0 +1,25 @@
+{
+  "id": "vincent-saragossa",
+  "name": "St. Vincent of Saragossa",
+  "birthYear": null,
+  "deathYear": 304,
+  "feastDay": "January 22",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr",
+    "deacon"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "valencia",
+      "description": "Deacon and martyr in Valencia, Spain"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Vincent_of_Saragossa",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15434a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/%C3%89glise_Saint-Vincent_de_Saint-Vincent-sur-Jard_en_2013.jpg/330px-%C3%89glise_Saint-Vincent_de_Saint-Vincent-sur-Jard_en_2013.jpg",
+  "summary": "Vincent of Saragossa was a deacon and one of the most celebrated martyrs of Spain. He was martyred in Valencia during the Diocletian persecution. According to tradition, he was tortured on a gridiron and then thrown into prison, where he died. His courage and faith made him one of the most venerated martyrs in the early Church. He is the patron saint of Valencia and is often invoked for protection. His martyrdom was widely celebrated throughout the Christian world, and many churches were dedicated to him.",
+  "keyQuotes": []
+}

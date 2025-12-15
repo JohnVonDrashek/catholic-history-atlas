@@ -1,0 +1,34 @@
+{
+  "id": "cyril-jerusalem",
+  "name": "St. Cyril of Jerusalem",
+  "birthYear": 315,
+  "deathYear": 386,
+  "feastDay": "March 18",
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "Doctor of the Church"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "jerusalem",
+      "description": "Bishop of Jerusalem"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Cyril_of_Jerusalem",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04595b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/St._Cyril_of_Jerusalem_Church.jpg/330px-St._Cyril_of_Jerusalem_Church.jpg",
+  "summary": "Cyril of Jerusalem was a bishop of Jerusalem and is considered a Doctor of the Church. He is best known for his Catechetical Lectures, which provide valuable insight into the liturgy and doctrine of the 4th-century Church. He was exiled multiple times due to theological controversies, particularly regarding Arianism. His writings on the sacraments, especially baptism and the Eucharist, are important sources for understanding early Christian worship.",
+  "keyQuotes": [
+    "The bread and wine of the Eucharist before the invocation of the Holy and Adorable Trinity were simple bread and wine, but after the invocation the bread becomes the Body of Christ and the wine the Blood of Christ."
+  ],
+  "writings": [
+    {
+      "title": "Catechetical Lectures",
+      "url": "https://www.ccel.org/ccel/schaff/npnf207.ii.html"
+    }
+  ]
+}
+

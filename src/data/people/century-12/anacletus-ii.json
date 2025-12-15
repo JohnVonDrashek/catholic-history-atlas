@@ -1,0 +1,24 @@
+{
+  "id": "anacletus-ii",
+  "name": "Antipope Anacletus II",
+  "birthYear": 1090,
+  "deathYear": 1138,
+  "primaryTradition": "Latin",
+  "roles": [
+    "antipope"
+  ],
+  "orthodoxyStatus": "schismatic",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Antipope from 1130 to 1138"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Antipope_Anacletus_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01444a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/046CupolaSPietro.jpg/330px-046CupolaSPietro.jpg",
+  "summary": "Anacletus II, born Pietro Pierleoni, was an antipope who ruled from 1130 to 1138 in opposition to Pope Innocent II. He came from a powerful Roman family and had strong support in Rome, while Innocent II had to flee. The schism was eventually resolved in favor of Innocent II with the support of Bernard of Clairvaux and the German Emperor Lothair III. Anacletus's followers continued to support him even after his death, but the schism ended in 1138.",
+  "keyQuotes": []
+}
+

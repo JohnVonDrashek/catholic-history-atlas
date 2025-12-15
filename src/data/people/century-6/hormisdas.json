@@ -1,6 +1,6 @@
 {
   "id": "hormisdas",
-  "name": "St. Hormisdas",
+  "name": "Pope St. Hormisdas",
   "birthYear": null,
   "deathYear": 523,
   "feastDay": "August 6",
@@ -13,12 +13,12 @@
   "locations": [
     {
       "placeId": "rome",
-      "description": "Bishop of Rome"
+      "description": "Pope from 514 to 523"
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Hormisdas",
-  "newAdventUrl": "https://www.newadvent.org/cathen/07470a.htm",
+  "newAdventUrl": "https://www.newadvent.org/cathen/07476a.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Tafel_paepste.jpg/330px-Tafel_paepste.jpg",
-  "summary": "Hormisdas was Bishop of Rome from 514 to 523. He is best known for ending the Acacian schism, which had divided the Eastern and Western Churches for 35 years. He sent a formula of faith (the Formula of Hormisdas) to Constantinople, which was accepted by Emperor Justin I and Patriarch John II, reuniting the Churches. He was the father of Pope Silverius.",
+  "summary": "Hormisdas was Pope from 514 to 523. He is best known for ending the Acacian Schism between Rome and Constantinople that had lasted for 35 years. The Formula of Hormisdas, which he composed, required the Eastern bishops to accept the Council of Chalcedon and reject the teachings of those who had supported the Henotikon. His son Silverius would later also become pope. He worked to restore communion between the Eastern and Western Churches.",
   "keyQuotes": []
 }

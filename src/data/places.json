@@ -96,12 +96,52 @@
     "modernCountry": "Israel"
   },
   {
+    "id": "bethany",
+    "name": "Bethany",
+    "lat": 31.77,
+    "lng": 35.26,
+    "region": "Judea",
+    "modernCountry": "West Bank"
+  },
+  {
     "id": "rome",
     "name": "Rome",
     "lat": 41.9,
     "lng": 12.5,
     "region": "Italia",
     "modernCountry": "Italy"
+  },
+  {
+    "id": "syracuse",
+    "name": "Syracuse",
+    "lat": 37.08,
+    "lng": 15.29,
+    "region": "Sicily",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "catania",
+    "name": "Catania",
+    "lat": 37.5,
+    "lng": 15.09,
+    "region": "Sicily",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "valencia",
+    "name": "Valentia (Valencia)",
+    "lat": 39.47,
+    "lng": -0.38,
+    "region": "Hispania",
+    "modernCountry": "Spain"
+  },
+  {
+    "id": "tarragona",
+    "name": "Tarraco (Tarragona)",
+    "lat": 41.12,
+    "lng": 1.26,
+    "region": "Hispania",
+    "modernCountry": "Spain"
   },
   {
     "id": "corinth",
@@ -152,6 +192,14 @@
     "modernCountry": "Cyprus"
   },
   {
+    "id": "crete",
+    "name": "Crete",
+    "lat": 35.24,
+    "lng": 24.81,
+    "region": "Mediterranean",
+    "modernCountry": "Greece"
+  },
+  {
     "id": "athens",
     "name": "Athens",
     "lat": 37.98,
@@ -172,6 +220,22 @@
     "name": "Hierapolis",
     "lat": 37.93,
     "lng": 29.12,
+    "region": "Phrygia",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "colossae",
+    "name": "Colossae",
+    "lat": 37.79,
+    "lng": 29.26,
+    "region": "Phrygia",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "laodicea",
+    "name": "Laodicea",
+    "lat": 37.84,
+    "lng": 29.1,
     "region": "Phrygia",
     "modernCountry": "Turkey"
   },
@@ -264,6 +328,30 @@
     "modernCountry": "Ireland"
   },
   {
+    "id": "britain",
+    "name": "Britain",
+    "lat": 51.51,
+    "lng": -0.13,
+    "region": "Britannia",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "dacia",
+    "name": "Dacia",
+    "lat": 44.43,
+    "lng": 26.10,
+    "region": "Dacia",
+    "modernCountry": "Romania"
+  },
+  {
+    "id": "nineveh",
+    "name": "Nineveh",
+    "lat": 36.36,
+    "lng": 43.15,
+    "region": "Mesopotamia",
+    "modernCountry": "Iraq"
+  },
+  {
     "id": "lerins",
     "name": "Lérins",
     "lat": 43.5,
@@ -296,6 +384,14 @@
     "modernCountry": "Armenia"
   },
   {
+    "id": "georgia",
+    "name": "Georgia (Iberia)",
+    "lat": 42.32,
+    "lng": 43.36,
+    "region": "Caucasus",
+    "modernCountry": "Georgia"
+  },
+  {
     "id": "india",
     "name": "India",
     "lat": 20.59,
@@ -310,6 +406,38 @@
     "lng": 38.75,
     "region": "Ethiopia",
     "modernCountry": "Ethiopia"
+  },
+  {
+    "id": "axum",
+    "name": "Axum",
+    "lat": 14.13,
+    "lng": 38.72,
+    "region": "Ethiopia",
+    "modernCountry": "Ethiopia"
+  },
+  {
+    "id": "seleucia-ctesiphon",
+    "name": "Seleucia-Ctesiphon",
+    "lat": 33.09,
+    "lng": 44.58,
+    "region": "Mesopotamia",
+    "modernCountry": "Iraq"
+  },
+  {
+    "id": "nisibis",
+    "name": "Nisibis",
+    "lat": 37.07,
+    "lng": 41.22,
+    "region": "Mesopotamia",
+    "modernCountry": "Turkey"
+  },
+  {
+    "id": "mount-izla",
+    "name": "Mount Izla",
+    "lat": 37.20,
+    "lng": 41.30,
+    "region": "Mesopotamia",
+    "modernCountry": "Turkey"
   },
   {
     "id": "persia",
@@ -446,6 +574,62 @@
     "lng": 30.52,
     "region": "Kievan Rus",
     "modernCountry": "Ukraine"
+  },
+  {
+    "id": "krakow",
+    "name": "Krakow",
+    "lat": 50.06,
+    "lng": 19.94,
+    "region": "Poland",
+    "modernCountry": "Poland"
+  },
+  {
+    "id": "polotsk",
+    "name": "Polotsk",
+    "lat": 55.48,
+    "lng": 28.80,
+    "region": "Belarus",
+    "modernCountry": "Belarus"
+  },
+  {
+    "id": "lichfield",
+    "name": "Lichfield",
+    "lat": 52.68,
+    "lng": -1.83,
+    "region": "Mercia",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "serbia",
+    "name": "Serbia",
+    "lat": 44.79,
+    "lng": 20.45,
+    "region": "Balkans",
+    "modernCountry": "Serbia"
+  },
+  {
+    "id": "lebanon",
+    "name": "Lebanon",
+    "lat": 33.85,
+    "lng": 35.50,
+    "region": "Levant",
+    "modernCountry": "Lebanon"
+  },
+  {
+    "id": "scetis",
+    "name": "Scetis (Wadi El Natrun)",
+    "lat": 30.32,
+    "lng": 30.35,
+    "region": "Egypt",
+    "modernCountry": "Egypt"
+  },
+  {
+    "id": "agaunum",
+    "name": "Agaunum (Saint-Maurice)",
+    "lat": 46.22,
+    "lng": 7.00,
+    "region": "Gaul",
+    "modernCountry": "Switzerland"
   },
   {
     "id": "augsburg",
@@ -664,6 +848,94 @@
     "modernCountry": "Japan"
   },
   {
+    "id": "china",
+    "name": "China",
+    "lat": 35.86,
+    "lng": 104.20,
+    "region": "China",
+    "modernCountry": "China"
+  },
+  {
+    "id": "korea",
+    "name": "Korea",
+    "lat": 37.57,
+    "lng": 126.98,
+    "region": "Korea",
+    "modernCountry": "South Korea"
+  },
+  {
+    "id": "philippines",
+    "name": "Philippines",
+    "lat": 14.60,
+    "lng": 120.98,
+    "region": "Philippines",
+    "modernCountry": "Philippines"
+  },
+  {
+    "id": "guam",
+    "name": "Guam",
+    "lat": 13.44,
+    "lng": 144.79,
+    "region": "Mariana Islands",
+    "modernCountry": "Guam"
+  },
+  {
+    "id": "california",
+    "name": "California",
+    "lat": 36.78,
+    "lng": -119.42,
+    "region": "North America",
+    "modernCountry": "United States"
+  },
+  {
+    "id": "mexico",
+    "name": "Mexico",
+    "lat": 19.43,
+    "lng": -99.13,
+    "region": "North America",
+    "modernCountry": "Mexico"
+  },
+  {
+    "id": "lima",
+    "name": "Lima",
+    "lat": -12.05,
+    "lng": -77.04,
+    "region": "South America",
+    "modernCountry": "Peru"
+  },
+  {
+    "id": "new-york",
+    "name": "New York",
+    "lat": 40.71,
+    "lng": -74.01,
+    "region": "North America",
+    "modernCountry": "United States"
+  },
+  {
+    "id": "sweden",
+    "name": "Sweden",
+    "lat": 59.33,
+    "lng": 18.07,
+    "region": "Scandinavia",
+    "modernCountry": "Sweden"
+  },
+  {
+    "id": "norway",
+    "name": "Norway",
+    "lat": 59.91,
+    "lng": 10.75,
+    "region": "Scandinavia",
+    "modernCountry": "Norway"
+  },
+  {
+    "id": "spain",
+    "name": "Spain",
+    "lat": 40.42,
+    "lng": -3.70,
+    "region": "Iberia",
+    "modernCountry": "Spain"
+  },
+  {
     "id": "nagasaki",
     "name": "Nagasaki",
     "lat": 32.75,
@@ -694,5 +966,453 @@
     "lng": 16.37,
     "region": "Austria",
     "modernCountry": "Austria"
+  },
+  {
+    "id": "mexico-city",
+    "name": "Mexico City",
+    "lat": 19.43,
+    "lng": -99.13,
+    "region": "New Spain",
+    "modernCountry": "Mexico"
+  },
+  {
+    "id": "grenoble",
+    "name": "Grenoble",
+    "lat": 45.19,
+    "lng": 5.72,
+    "region": "Dauphiné",
+    "modernCountry": "France"
+  },
+  {
+    "id": "knock",
+    "name": "Knock",
+    "lat": 53.79,
+    "lng": -8.92,
+    "region": "County Mayo",
+    "modernCountry": "Ireland"
+  },
+  {
+    "id": "fatima",
+    "name": "Fátima",
+    "lat": 39.63,
+    "lng": -8.67,
+    "region": "Estremadura",
+    "modernCountry": "Portugal"
+  },
+  {
+    "id": "lourdes",
+    "name": "Lourdes",
+    "lat": 43.10,
+    "lng": -0.05,
+    "region": "Hautes-Pyrénées",
+    "modernCountry": "France"
+  },
+  {
+    "id": "laval",
+    "name": "Laval",
+    "lat": 48.07,
+    "lng": -0.77,
+    "region": "Mayenne",
+    "modernCountry": "France"
+  },
+  {
+    "id": "beauraing",
+    "name": "Beauraing",
+    "lat": 50.11,
+    "lng": 4.96,
+    "region": "Namur",
+    "modernCountry": "Belgium"
+  },
+  {
+    "id": "banneux",
+    "name": "Banneux",
+    "lat": 50.54,
+    "lng": 5.74,
+    "region": "Liège",
+    "modernCountry": "Belgium"
+  },
+  {
+    "id": "quito",
+    "name": "Quito",
+    "lat": -0.18,
+    "lng": -78.47,
+    "region": "Ecuador",
+    "modernCountry": "Ecuador"
+  },
+  {
+    "id": "walsingham",
+    "name": "Walsingham",
+    "lat": 52.89,
+    "lng": 0.87,
+    "region": "Norfolk",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "cambridge",
+    "name": "Cambridge",
+    "lat": 52.21,
+    "lng": 0.12,
+    "region": "Cambridgeshire",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "czestochowa",
+    "name": "Częstochowa",
+    "lat": 50.81,
+    "lng": 19.12,
+    "region": "Silesia",
+    "modernCountry": "Poland"
+  },
+  {
+    "id": "zaragoza",
+    "name": "Zaragoza",
+    "lat": 41.65,
+    "lng": -0.88,
+    "region": "Aragon",
+    "modernCountry": "Spain"
+  },
+  {
+    "id": "loreto",
+    "name": "Loreto",
+    "lat": 43.44,
+    "lng": 13.61,
+    "region": "Marche",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "laus",
+    "name": "Laus",
+    "lat": 44.50,
+    "lng": 6.17,
+    "region": "Hautes-Alpes",
+    "modernCountry": "France"
+  },
+  {
+    "id": "aparecida",
+    "name": "Aparecida",
+    "lat": -22.85,
+    "lng": -45.23,
+    "region": "São Paulo",
+    "modernCountry": "Brazil"
+  },
+  {
+    "id": "akita",
+    "name": "Akita",
+    "lat": 39.72,
+    "lng": 140.10,
+    "region": "Akita Prefecture",
+    "modernCountry": "Japan"
+  },
+  {
+    "id": "cairo",
+    "name": "Cairo",
+    "lat": 30.04,
+    "lng": 31.24,
+    "region": "Egypt",
+    "modernCountry": "Egypt"
+  },
+  {
+    "id": "kibeho",
+    "name": "Kibeho",
+    "lat": -2.50,
+    "lng": 29.57,
+    "region": "Southern Province",
+    "modernCountry": "Rwanda"
+  },
+  {
+    "id": "champion",
+    "name": "Champion",
+    "lat": 44.50,
+    "lng": -87.75,
+    "region": "Wisconsin",
+    "modernCountry": "United States"
+  },
+  {
+    "id": "medjugorje",
+    "name": "Medjugorje",
+    "lat": 43.20,
+    "lng": 17.68,
+    "region": "Herzegovina",
+    "modernCountry": "Bosnia and Herzegovina"
+  },
+  {
+    "id": "uganda",
+    "name": "Uganda",
+    "lat": 1.37,
+    "lng": 32.29,
+    "region": "East Africa",
+    "modernCountry": "Uganda"
+  },
+  {
+    "id": "alaska",
+    "name": "Alaska",
+    "lat": 64.20,
+    "lng": -149.49,
+    "region": "North America",
+    "modernCountry": "United States"
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "lat": -14.24,
+    "lng": -51.93,
+    "region": "South America",
+    "modernCountry": "Brazil"
+  },
+  {
+    "id": "peru",
+    "name": "Peru",
+    "lat": -9.19,
+    "lng": -75.02,
+    "region": "South America",
+    "modernCountry": "Peru"
+  },
+  {
+    "id": "chile",
+    "name": "Chile",
+    "lat": -33.45,
+    "lng": -70.67,
+    "region": "South America",
+    "modernCountry": "Chile"
+  },
+  {
+    "id": "sudan",
+    "name": "Sudan",
+    "lat": 15.50,
+    "lng": 32.56,
+    "region": "East Africa",
+    "modernCountry": "Sudan"
+  },
+  {
+    "id": "russia",
+    "name": "Russia",
+    "lat": 55.76,
+    "lng": 37.62,
+    "region": "Eastern Europe",
+    "modernCountry": "Russia"
+  },
+  {
+    "id": "vietnam",
+    "name": "Vietnam",
+    "lat": 21.03,
+    "lng": 105.85,
+    "region": "Southeast Asia",
+    "modernCountry": "Vietnam"
+  },
+  {
+    "id": "colombia",
+    "name": "Colombia",
+    "lat": 4.71,
+    "lng": -74.07,
+    "region": "South America",
+    "modernCountry": "Colombia"
+  },
+  {
+    "id": "italy",
+    "name": "Italy",
+    "lat": 41.90,
+    "lng": 12.50,
+    "region": "Europe",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "norwich",
+    "name": "Norwich",
+    "lat": 52.63,
+    "lng": 1.30,
+    "region": "East Anglia",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "scotland",
+    "name": "Scotland",
+    "lat": 55.95,
+    "lng": -3.19,
+    "region": "Scotland",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "wales",
+    "name": "Wales",
+    "lat": 51.48,
+    "lng": -3.18,
+    "region": "Wales",
+    "modernCountry": "United Kingdom"
+  },
+  {
+    "id": "canada",
+    "name": "Canada",
+    "lat": 45.50,
+    "lng": -73.57,
+    "region": "North America",
+    "modernCountry": "Canada"
+  },
+  {
+    "id": "belgium",
+    "name": "Belgium",
+    "lat": 50.85,
+    "lng": 4.35,
+    "region": "Europe",
+    "modernCountry": "Belgium"
+  },
+  {
+    "id": "philadelphia",
+    "name": "Philadelphia",
+    "lat": 39.95,
+    "lng": -75.16,
+    "region": "Pennsylvania",
+    "modernCountry": "United States"
+  },
+  {
+    "id": "lucca",
+    "name": "Lucca",
+    "lat": 43.84,
+    "lng": 10.50,
+    "region": "Tuscany",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "nettuno",
+    "name": "Nettuno",
+    "lat": 41.46,
+    "lng": 12.66,
+    "region": "Latium",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "viterbo",
+    "name": "Viterbo",
+    "lat": 42.42,
+    "lng": 12.11,
+    "region": "Latium",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "genoa",
+    "name": "Genoa",
+    "lat": 44.41,
+    "lng": 8.93,
+    "region": "Liguria",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "granada",
+    "name": "Granada",
+    "lat": 37.18,
+    "lng": -3.60,
+    "region": "Andalusia",
+    "modernCountry": "Spain"
+  },
+  {
+    "id": "porto",
+    "name": "Porto",
+    "lat": 41.16,
+    "lng": -8.63,
+    "region": "Portugal",
+    "modernCountry": "Portugal"
+  },
+  {
+    "id": "budapest",
+    "name": "Budapest",
+    "lat": 47.50,
+    "lng": 19.04,
+    "region": "Hungary",
+    "modernCountry": "Hungary"
+  },
+  {
+    "id": "magdeburg",
+    "name": "Magdeburg",
+    "lat": 52.13,
+    "lng": 11.62,
+    "region": "Saxony-Anhalt",
+    "modernCountry": "Germany"
+  },
+  {
+    "id": "dijon",
+    "name": "Dijon",
+    "lat": 47.32,
+    "lng": 5.04,
+    "region": "Burgundy",
+    "modernCountry": "France"
+  },
+  {
+    "id": "florence",
+    "name": "Florence",
+    "lat": 43.77,
+    "lng": 11.26,
+    "region": "Tuscany",
+    "modernCountry": "Italy"
+  },
+  {
+    "id": "paray-le-monial",
+    "name": "Paray-le-Monial",
+    "lat": 46.45,
+    "lng": 4.12,
+    "region": "Burgundy",
+    "modernCountry": "France"
+  },
+  {
+    "id": "sweden",
+    "name": "Sweden",
+    "lat": 59.33,
+    "lng": 18.07,
+    "region": "Scandinavia",
+    "modernCountry": "Sweden"
+  },
+  {
+    "id": "portugal",
+    "name": "Portugal",
+    "lat": 39.50,
+    "lng": -8.00,
+    "region": "Iberia",
+    "modernCountry": "Portugal"
+  },
+  {
+    "id": "hungary",
+    "name": "Hungary",
+    "lat": 47.50,
+    "lng": 19.04,
+    "region": "Central Europe",
+    "modernCountry": "Hungary"
+  },
+  {
+    "id": "hawaii",
+    "name": "Hawaii",
+    "lat": 21.31,
+    "lng": -157.86,
+    "region": "Oceania",
+    "modernCountry": "United States"
+  },
+  {
+    "id": "algeria",
+    "name": "Algeria",
+    "lat": 28.03,
+    "lng": 1.66,
+    "region": "Africa",
+    "modernCountry": "Algeria"
+  },
+  {
+    "id": "argentina",
+    "name": "Argentina",
+    "lat": -34.60,
+    "lng": -58.38,
+    "region": "South America",
+    "modernCountry": "Argentina"
+  },
+  {
+    "id": "sri-lanka",
+    "name": "Sri Lanka",
+    "lat": 6.93,
+    "lng": 79.85,
+    "region": "Asia",
+    "modernCountry": "Sri Lanka"
+  },
+  {
+    "id": "malta",
+    "name": "Malta",
+    "lat": 35.90,
+    "lng": 14.51,
+    "region": "Europe",
+    "modernCountry": "Malta"
   }
 ]

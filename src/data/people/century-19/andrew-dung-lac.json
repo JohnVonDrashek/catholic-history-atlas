@@ -1,0 +1,26 @@
+{
+  "id": "andrew-dung-lac",
+  "name": "St. Andrew Dung-Lac",
+  "birthYear": 1795,
+  "deathYear": 1839,
+  "feastDay": "November 24",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "vietnam",
+      "description": "Vietnamese priest, one of the Martyrs of Vietnam"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Andrew_Dung-Lac",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Saint_Paul_Catholic_Church_%28Westerville%2C_Ohio%29_-_Saint_Andrew_Dung_Lac.jpg/330px-Saint_Paul_Catholic_Church_%28Westerville%2C_Ohio%29_-_Saint_Andrew_Dung_Lac.jpg",
+  "summary": "Andrew Dung-Lac was a Vietnamese Catholic priest and one of the 117 Martyrs of Vietnam. Born Dang An Tran, he took the name Andrew at baptism and later Andrew Dung-Lac. He worked as a catechist and priest during a period of intense persecution of Christians in Vietnam. He was arrested multiple times, tortured, and eventually beheaded for refusing to renounce his faith. He represents the many Vietnamese martyrs who gave their lives for Christ.",
+  "keyQuotes": []
+}
+

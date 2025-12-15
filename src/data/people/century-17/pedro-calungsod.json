@@ -1,0 +1,29 @@
+{
+  "id": "pedro-calungsod",
+  "name": "St. Pedro Calungsod",
+  "birthYear": 1654,
+  "deathYear": 1672,
+  "feastDay": "April 2",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr",
+    "catechist"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "philippines",
+      "description": "Filipino martyr, catechist and missionary"
+    },
+    {
+      "placeId": "guam",
+      "description": "Martyred in Guam with Blessed Diego Luis de San Vitores"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pedro_Calungsod",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11170a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pedro_Calungsod_2012_stamp_%28cropped%29.jpg/330px-Pedro_Calungsod_2012_stamp_%28cropped%29.jpg",
+  "summary": "Pedro Calungsod was a Filipino catechist and martyr who worked as a missionary in the Mariana Islands. He was martyred in Guam at the age of 17 along with Blessed Diego Luis de San Vitores. He is the second Filipino to be canonized (after St. Lorenzo Ruiz) and is the patron saint of Filipino youth, altar servers, and catechists. His canonization in 2012 was a significant event for the Catholic Church in the Philippines.",
+  "keyQuotes": []
+}

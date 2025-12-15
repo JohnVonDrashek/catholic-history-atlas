@@ -1,0 +1,1160 @@
+[
+  {
+    "id": "hagia-sophia",
+    "name": "Hagia Sophia",
+    "placeId": "constantinople",
+    "type": "patriarchal-basilica",
+    "startYear": 537,
+    "endYear": 1453,
+    "description": "The Great Church of Constantinople, built by Emperor Justinian I. The largest cathedral in the world for nearly a thousand years. Converted to a mosque in 1453 after the fall of Constantinople.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Hagia_Sophia",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/1200px-Hagia_Sophia_%28228968325%29.jpeg"
+  },
+  {
+    "id": "st-peters-basilica",
+    "name": "St. Peter's Basilica",
+    "placeId": "rome",
+    "type": "major-basilica",
+    "startYear": 1506,
+    "description": "One of the four major basilicas of Rome, built over the tomb of St. Peter. The current basilica was constructed in the 16th-17th centuries, replacing the original Constantinian basilica.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Peter%27s_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/1200px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg"
+  },
+  {
+    "id": "st-john-lateran",
+    "name": "Archbasilica of St. John Lateran",
+    "placeId": "rome",
+    "type": "major-basilica",
+    "startYear": 324,
+    "description": "The cathedral of the Diocese of Rome and the official ecclesiastical seat of the Pope. One of the four major basilicas of Rome, originally built by Constantine the Great.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Archbasilica_of_Saint_John_Lateran",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/San_Giovanni_in_Laterano_2021.jpg/1200px-San_Giovanni_in_Laterano_2021.jpg"
+  },
+  {
+    "id": "st-paul-outside-walls",
+    "name": "Basilica of St. Paul Outside the Walls",
+    "placeId": "rome",
+    "type": "major-basilica",
+    "startYear": 324,
+    "description": "One of the four major basilicas of Rome, built over the tomb of St. Paul the Apostle. Originally constructed by Constantine the Great.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint_Paul_Outside_the_Walls",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/StPaul.jpg/1200px-StPaul.jpg"
+  },
+  {
+    "id": "st-mary-major",
+    "name": "Basilica of St. Mary Major",
+    "placeId": "rome",
+    "type": "major-basilica",
+    "startYear": 432,
+    "description": "One of the four major basilicas of Rome, dedicated to the Blessed Virgin Mary. Built by Pope Sixtus III after the Council of Ephesus.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santa_Maria_Maggiore",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg/1200px-Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg"
+  },
+  {
+    "id": "holy-sepulchre",
+    "name": "Church of the Holy Sepulchre",
+    "placeId": "jerusalem",
+    "type": "historic-basilica",
+    "startYear": 335,
+    "description": "The most important church in Christianity, built over the sites of Christ's crucifixion and resurrection. Constructed by Constantine the Great and his mother St. Helena.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Sepulchre",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Church_of_the_Holy_Sepulchre_by_Gerd_Eichmann_%28cropped%29.jpg/1200px-Church_of_the_Holy_Sepulchre_by_Gerd_Eichmann_%28cropped%29.jpg"
+  },
+  {
+    "id": "basilica-nativity",
+    "name": "Basilica of the Nativity",
+    "placeId": "bethlehem",
+    "type": "historic-basilica",
+    "startYear": 327,
+    "description": "Built over the traditional site of the Nativity of Jesus Christ. Constructed by Constantine the Great and his mother St. Helena.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Church_of_the_Nativity",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Church_of_the_Nativity_%287703592746%29.jpg/1200px-Church_of_the_Nativity_%287703592746%29.jpg"
+  },
+  {
+    "id": "san-vitale",
+    "name": "Basilica of San Vitale",
+    "placeId": "ravenna",
+    "type": "historic-basilica",
+    "startYear": 526,
+    "description": "One of the most important examples of early Christian Byzantine art and architecture in Western Europe. Built during the reign of Justinian I, famous for its mosaics.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_San_Vitale",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Basilica_of_San_Vitale.jpg/1200px-Basilica_of_San_Vitale.jpg"
+  },
+  {
+    "id": "sant-apollinare-nuovo",
+    "name": "Basilica of Sant'Apollinare Nuovo",
+    "placeId": "ravenna",
+    "type": "historic-basilica",
+    "startYear": 504,
+    "description": "Built by the Ostrogothic King Theodoric the Great as his palace chapel. Contains some of the finest Byzantine mosaics in Western Europe.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sant%27Apollinare_Nuovo",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ravenna%2C_sant%27apollinare_nuovo%2C_ext._01.JPG/1200px-Ravenna%2C_sant%27apollinare_nuovo%2C_ext._01.JPG"
+  },
+  {
+    "id": "st-ambrose",
+    "name": "Basilica of St. Ambrose",
+    "placeId": "milan",
+    "type": "historic-basilica",
+    "startYear": 379,
+    "description": "One of the oldest churches in Milan, built by St. Ambrose, Bishop of Milan. A masterpiece of Lombard Romanesque architecture.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Sant%27Ambrogio",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/San_Ambrosio_00.jpg/1200px-San_Ambrosio_00.jpg"
+  },
+  {
+    "id": "st-lawrence-outside-walls",
+    "name": "Basilica of St. Lawrence Outside the Walls",
+    "placeId": "rome",
+    "type": "papal-basilica",
+    "startYear": 330,
+    "description": "One of the seven pilgrimage churches of Rome, built over the tomb of St. Lawrence, one of the first seven deacons of Rome. Originally constructed by Constantine the Great.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/San_Lorenzo_fuori_le_Mura",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Basilica_of_Saint_Lawrence_outside_the_Walls.jpg/1200px-Basilica_of_Saint_Lawrence_outside_the_Walls.jpg"
+  },
+  {
+    "id": "st-clement",
+    "name": "Basilica of St. Clement",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 385,
+    "description": "Dedicated to Pope Clement I, the third successor of St. Peter. Built over an earlier church and Roman buildings, with remarkable archaeological layers.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/San_Clemente_al_Laterano",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg/1064px-Basilica_di_San_Clemente_al_Laterano_-_esterno.jpg"
+  },
+  {
+    "id": "st-denis",
+    "name": "Basilica of St. Denis",
+    "placeId": "paris",
+    "type": "historic-basilica",
+    "startYear": 1135,
+    "description": "The first major structure built in the Gothic style. The burial place of French kings and the traditional burial site of St. Denis, the patron saint of France.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint-Denis",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Saint-Denis_-_Fa%C3%A7ade.jpg/960px-Saint-Denis_-_Fa%C3%A7ade.jpg"
+  },
+  {
+    "id": "canterbury-cathedral",
+    "name": "Canterbury Cathedral",
+    "placeId": "canterbury",
+    "type": "historic-basilica",
+    "startYear": 597,
+    "description": "The cathedral of the Archbishop of Canterbury, leader of the Church of England. Founded by St. Augustine of Canterbury, site of the martyrdom of St. Thomas Becket.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Canterbury_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Canterbury-cathedral-wyrdlight.jpg"
+  },
+  {
+    "id": "st-francis-assisi",
+    "name": "Basilica of St. Francis of Assisi",
+    "placeId": "assisi",
+    "type": "papal-basilica",
+    "startYear": 1228,
+    "description": "The mother church of the Roman Catholic Order of Friars Minor Conventual. Built over the tomb of St. Francis of Assisi, contains important frescoes by Giotto.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint_Francis_of_Assisi",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Assisi_San_Francesco_BW_2.JPG/1200px-Assisi_San_Francesco_BW_2.JPG"
+  },
+  {
+    "id": "aachen-cathedral",
+    "name": "Aachen Cathedral",
+    "placeId": "aachen",
+    "type": "historic-basilica",
+    "startYear": 796,
+    "description": "The oldest cathedral in northern Europe, built by Charlemagne as his palatine chapel. The coronation church for German kings for 600 years.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Aachen_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Aachen_Germany_Imperial-Cathedral-01.jpg/1200px-Aachen_Germany_Imperial-Cathedral-01.jpg"
+  },
+  {
+    "id": "holy-apostles-constantinople",
+    "name": "Church of the Holy Apostles",
+    "placeId": "constantinople",
+    "type": "patriarchal-basilica",
+    "startYear": 337,
+    "endYear": 1461,
+    "description": "The second-most important church in Constantinople after Hagia Sophia. Built by Constantine the Great to house relics of the Apostles. Destroyed after the Ottoman conquest.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Apostles",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/The_Homilies_of_James_Kokkinobaphos_%28Paris_Biblioth%C3%A8que_nationale_de_France_Grec_1208%2C_fol._3v%29.jpg/960px-The_Homilies_of_James_Kokkinobaphos_%28Paris_Biblioth%C3%A8que_nationale_de_France_Grec_1208%2C_fol._3v%29.jpg"
+  },
+  {
+    "id": "st-sophia-kiev",
+    "name": "Cathedral of St. Sophia",
+    "placeId": "kiev",
+    "type": "patriarchal-basilica",
+    "startYear": 1037,
+    "description": "The first site in Ukraine to be inscribed on the UNESCO World Heritage List. Built by Yaroslav the Wise, it remains the main cathedral of the Ukrainian Orthodox Church.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Sophia%27s_Cathedral,_Kyiv",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/80-391-0151_Kyiv_St.Sophia%27s_Cathedral_RB_18_2_%28cropped%29.jpg/1200px-80-391-0151_Kyiv_St.Sophia%27s_Cathedral_RB_18_2_%28cropped%29.jpg"
+  },
+  {
+    "id": "st-sebastian",
+    "name": "Basilica of St. Sebastian Outside the Walls",
+    "placeId": "rome",
+    "type": "papal-basilica",
+    "startYear": 340,
+    "description": "One of the seven pilgrimage churches of Rome, built over the catacombs where St. Sebastian was buried. Originally constructed by Constantine the Great.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/San_Sebastiano_fuori_le_mura",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/San_Sebastiano_fuori_le_mura_%28Rome%29.jpg/1085px-San_Sebastiano_fuori_le_mura_%28Rome%29.jpg"
+  },
+  {
+    "id": "st-croce-gerusalemme",
+    "name": "Basilica of the Holy Cross in Jerusalem",
+    "placeId": "rome",
+    "type": "papal-basilica",
+    "startYear": 320,
+    "description": "One of the seven pilgrimage churches of Rome, built to house relics of the True Cross brought from Jerusalem by St. Helena, mother of Constantine the Great.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santa_Croce_in_Gerusalemme",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Santa_croce_di_gerusalemme_at_Night.jpg/1200px-Santa_croce_di_gerusalemme_at_Night.jpg"
+  },
+  {
+    "id": "st-peter-old-basilica",
+    "name": "Old St. Peter's Basilica",
+    "placeId": "rome",
+    "type": "major-basilica",
+    "startYear": 326,
+    "endYear": 1506,
+    "description": "The original basilica built by Constantine the Great over the tomb of St. Peter. Demolished in the 16th century to make way for the current St. Peter's Basilica.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Old_St._Peter%27s_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Old_St_Peter%27s_Basilica%2C_Rome%2C_about_the_year_1450_restored_from_ancient_authorities.jpg"
+  },
+  {
+    "id": "st-praxedes",
+    "name": "Basilica of St. Praxedes",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 780,
+    "description": "Built by Pope Paschal I to house relics of early Christian martyrs. Contains magnificent 9th-century mosaics, including the famous mosaic of Pope Paschal I.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santa_Prassede",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Santa_Prassede_Fa%C3%A7ade.jpg/1200px-Santa_Prassede_Fa%C3%A7ade.jpg"
+  },
+  {
+    "id": "st-maria-trastevere",
+    "name": "Basilica of St. Mary in Trastevere",
+    "placeId": "rome",
+    "type": "papal-basilica",
+    "startYear": 340,
+    "description": "One of the oldest churches in Rome, possibly the first church where Mass was openly celebrated. Contains important 12th-century mosaics.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santa_Maria_in_Trastevere",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Roma_-_Basilica_di_Santa_Maria_in_Trastevere_20231228-02.jpg/960px-Roma_-_Basilica_di_Santa_Maria_in_Trastevere_20231228-02.jpg"
+  },
+  {
+    "id": "st-pudenziana",
+    "name": "Basilica of St. Pudenziana",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 384,
+    "description": "One of the oldest places of Christian worship in Rome, built over a 2nd-century Roman house. Contains the oldest apse mosaic in Rome.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santa_Pudenziana",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Santa_Pudenziana_%28Rome%29.jpg/1200px-Santa_Pudenziana_%28Rome%29.jpg"
+  },
+  {
+    "id": "st-sabina",
+    "name": "Basilica of St. Sabina",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 422,
+    "description": "An early Christian basilica on the Aventine Hill, one of the best-preserved examples of early Christian architecture. Famous for its 5th-century carved wooden doors.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santa_Sabina",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Santa_Sabina_%28Rome%29_-_Esterno.jpg/1200px-Santa_Sabina_%28Rome%29_-_Esterno.jpg"
+  },
+  {
+    "id": "monte-cassino-abbey",
+    "name": "Abbey of Monte Cassino",
+    "placeId": "monte-cassino",
+    "type": "historic-basilica",
+    "startYear": 529,
+    "description": "The first Benedictine monastery, founded by St. Benedict of Nursia. The birthplace of Western monasticism, destroyed and rebuilt several times throughout history.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Monte_Cassino",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/MonteCassino_Abbey.jpg/1200px-MonteCassino_Abbey.jpg"
+  },
+  {
+    "id": "st-martin-tours",
+    "name": "Basilica of St. Martin",
+    "placeId": "tours",
+    "type": "historic-basilica",
+    "startYear": 470,
+    "description": "Built over the tomb of St. Martin of Tours, one of the most popular saints in medieval Europe. A major pilgrimage destination for centuries.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint-Martin,_Tours",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Weingarten_Orgel-20130516-RM-140424.jpg/960px-Weingarten_Orgel-20130516-RM-140424.jpg"
+  },
+  {
+    "id": "st-sernin-toulouse",
+    "name": "Basilica of St. Sernin",
+    "placeId": "toulouse",
+    "type": "historic-basilica",
+    "startYear": 1080,
+    "description": "The largest remaining Romanesque building in Europe, a major stop on the Way of St. James pilgrimage route. Built to house relics of St. Saturninus.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint-Sernin,_Toulouse",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Basilique_Saint-Sernin_de_Toulouse_-_exposition_ouest-1-.jpg/1200px-Basilique_Saint-Sernin_de_Toulouse_-_exposition_ouest-1-.jpg"
+  },
+  {
+    "id": "cologne-cathedral",
+    "name": "Cologne Cathedral",
+    "placeId": "cologne",
+    "type": "historic-basilica",
+    "startYear": 1248,
+    "description": "A masterpiece of Gothic architecture, one of the largest cathedrals in Europe. Built to house the relics of the Three Magi, it took over 600 years to complete.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cologne_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/K%C3%B6lner_Dom_-_Westfassade_2022_ohne_Ger%C3%BCst-0968_b.jpg/960px-K%C3%B6lner_Dom_-_Westfassade_2022_ohne_Ger%C3%BCst-0968_b.jpg"
+  },
+  {
+    "id": "st-anthony-padua",
+    "name": "Basilica of St. Anthony of Padua",
+    "placeId": "padua",
+    "type": "papal-basilica",
+    "startYear": 1232,
+    "description": "One of the eight international shrines recognized by the Holy See. Built to house the tomb of St. Anthony of Padua, one of the most popular saints.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint_Anthony_of_Padua",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Veneto_Padova1_tango7174.jpg"
+  },
+  {
+    "id": "st-mary-seville",
+    "name": "Cathedral of St. Mary of the See",
+    "placeId": "seville",
+    "type": "historic-basilica",
+    "startYear": 1401,
+    "description": "The largest Gothic cathedral in the world and the third-largest church overall. Built on the site of a former mosque after the Reconquista.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Seville_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sevilla_Cathedral_-_Southeast.jpg/1200px-Sevilla_Cathedral_-_Southeast.jpg"
+  },
+  {
+    "id": "st-john-ephesus",
+    "name": "Basilica of St. John",
+    "placeId": "ephesus",
+    "type": "historic-basilica",
+    "startYear": 536,
+    "endYear": 1402,
+    "description": "Built by Emperor Justinian I over the traditional tomb of St. John the Apostle. One of the largest churches of the Byzantine Empire, destroyed by Tamerlane.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_St._John",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Saint-John_in_Ephesus_%286%29.JPG/1200px-Saint-John_in_Ephesus_%286%29.JPG"
+  },
+  {
+    "id": "st-demetrius-thessalonica",
+    "name": "Basilica of St. Demetrius",
+    "placeId": "thessalonica",
+    "type": "historic-basilica",
+    "startYear": 412,
+    "description": "The main sanctuary dedicated to St. Demetrius, the patron saint of Thessalonica. One of the most important pilgrimage sites in the Byzantine Empire.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Hagios_Demetrios",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/%CE%9D%CE%B1%CF%8C%CF%82_%CE%91%CE%B3%CE%AF%CE%BF%CF%85_%CE%94%CE%B7%CE%BC%CE%B7%CF%84%CF%81%CE%AF%CE%BF%CF%85%2C_%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7_3785.jpg/1200px-%CE%9D%CE%B1%CF%8C%CF%82_%CE%91%CE%B3%CE%AF%CE%BF%CF%85_%CE%94%CE%B7%CE%BC%CE%B7%CF%84%CF%81%CE%AF%CE%BF%CF%85%2C_%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7_3785.jpg"
+  },
+  {
+    "id": "st-mark-venice",
+    "name": "Basilica of St. Mark",
+    "placeId": "padua",
+    "type": "historic-basilica",
+    "startYear": 828,
+    "description": "The cathedral church of the Roman Catholic Archdiocese of Venice. Famous for its opulent design, gilded mosaics, and status as a symbol of Venetian wealth and power. Located in Venice, near Padua.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St_Mark%27s_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Venezia_Basilica_di_San_Marco_Fassade_2.jpg/1200px-Venezia_Basilica_di_San_Marco_Fassade_2.jpg"
+  },
+  {
+    "id": "st-mary-arles",
+    "name": "Church of St. Trophimus",
+    "placeId": "arles",
+    "type": "historic-basilica",
+    "startYear": 1152,
+    "description": "A Romanesque church and former cathedral, famous for its elaborate portal sculptures. Part of the Arles, Roman and Romanesque Monuments UNESCO site.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Church_of_St._Trophime",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Arles_kirche_st_trophime_fassade.jpg/960px-Arles_kirche_st_trophime_fassade.jpg"
+  },
+  {
+    "id": "st-mary-lyons",
+    "name": "Primatial Basilica of St. John",
+    "placeId": "lyons",
+    "type": "historic-basilica",
+    "startYear": 1180,
+    "description": "The cathedral of the Archdiocese of Lyon, seat of the Primate of Gaul. A masterpiece of Gothic architecture, built over several centuries.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Lyon_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/007._Photo_prise_depuis_les_toits_de_la_Basilique_Notre-Dame_de_Fourvi%C3%A8re.JPG/960px-007._Photo_prise_depuis_les_toits_de_la_Basilique_Notre-Dame_de_Fourvi%C3%A8re.JPG"
+  },
+  {
+    "id": "st-mary-fulda",
+    "name": "Fulda Cathedral",
+    "placeId": "fulda",
+    "type": "historic-basilica",
+    "startYear": 744,
+    "description": "The abbey church of Fulda Abbey, one of the most important monasteries in medieval Germany. Contains the tomb of St. Boniface, the Apostle of Germany.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Fulda_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Fuldaer_Dom_028a.jpg"
+  },
+  {
+    "id": "st-vitus-prague",
+    "name": "St. Vitus Cathedral",
+    "placeId": "prague",
+    "type": "historic-basilica",
+    "startYear": 1344,
+    "description": "The metropolitan cathedral of Prague, a prominent example of Gothic architecture. The spiritual symbol of the Czech state and burial place of Bohemian kings.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Vitus_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/PragueCathedral03.jpg/1200px-PragueCathedral03.jpg"
+  },
+  {
+    "id": "st-stephen-vienna",
+    "name": "St. Stephen's Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1137,
+    "description": "The mother church of the Roman Catholic Archdiocese of Vienna and the seat of the Archbishop. A symbol of Vienna and one of the most important Gothic structures in Austria.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Stephen%27s_Cathedral,_Vienna",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wien_-_Stephansdom_%281%29.JPG/960px-Wien_-_Stephansdom_%281%29.JPG"
+  },
+  {
+    "id": "bom-jesus-goa",
+    "name": "Basilica of Bom Jesus",
+    "placeId": "goa",
+    "type": "historic-basilica",
+    "startYear": 1594,
+    "description": "A Jesuit church and UNESCO World Heritage Site. Contains the mortal remains of St. Francis Xavier, one of the greatest missionaries in Church history.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Bom_Jesus",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Front_Elevation_of_Basilica_of_Bom_Jesus.jpg/1200px-Front_Elevation_of_Basilica_of_Bom_Jesus.jpg"
+  },
+  {
+    "id": "st-nicholas-bari",
+    "name": "Basilica of St. Nicholas",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 1087,
+    "description": "Built in Bari to house the relics of St. Nicholas of Myra (Santa Claus), brought from Myra in 1087. An important pilgrimage site for both Catholics and Orthodox Christians. Located in Bari, southern Italy.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint_Nicholas",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Trnava_-_St._Nicholas_Church.jpg/960px-Trnava_-_St._Nicholas_Church.jpg"
+  },
+  {
+    "id": "st-peter-old-constantinople",
+    "name": "Church of the Holy Apostles (Old)",
+    "placeId": "constantinople",
+    "type": "patriarchal-basilica",
+    "startYear": 330,
+    "endYear": 536,
+    "description": "The original Church of the Holy Apostles built by Constantine the Great. Replaced by Justinian's larger church in 536. Contained the relics of the Apostles and served as the imperial mausoleum.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Church_of_the_Holy_Apostles",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/The_Homilies_of_James_Kokkinobaphos_%28Paris_Biblioth%C3%A8que_nationale_de_France_Grec_1208%2C_fol._3v%29.jpg/960px-The_Homilies_of_James_Kokkinobaphos_%28Paris_Biblioth%C3%A8que_nationale_de_France_Grec_1208%2C_fol._3v%29.jpg"
+  },
+  {
+    "id": "st-mary-ad-coelum",
+    "name": "Basilica of St. Mary in Cosmedin",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 772,
+    "description": "A medieval church famous for the Bocca della Verità (Mouth of Truth) in its portico. Originally built in the 6th century, rebuilt in the 8th century. Known for its beautiful Cosmatesque floor.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santa_Maria_in_Cosmedin",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Santa_Maria_in_Cosmedin%2C_August_2015.jpg/960px-Santa_Maria_in_Cosmedin%2C_August_2015.jpg"
+  },
+  {
+    "id": "st-cosmas-damian",
+    "name": "Basilica of Santi Cosma e Damiano",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 527,
+    "description": "Built by Pope Felix IV in the Forum of Peace, incorporating a Roman temple. Famous for its 6th-century apse mosaic, one of the finest examples of early Christian art in Rome.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santi_Cosma_e_Damiano",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Rome_%28IT%29%2C_Santi_Cosma_e_Damiano_--_2013_--_3426.jpg/960px-Rome_%28IT%29%2C_Santi_Cosma_e_Damiano_--_2013_--_3426.jpg"
+  },
+  {
+    "id": "st-caecilia",
+    "name": "Basilica of St. Cecilia",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 820,
+    "description": "Built over the house of St. Cecilia, the patron saint of music. Contains the famous statue of St. Cecilia by Stefano Maderno and important 9th-century mosaics.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santa_Cecilia_in_Trastevere",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Roma_-_Basilica_di_Santa_Cecilia_in_Trastevere_-_2023-09-10_22-00-42_001.JPG/1200px-Roma_-_Basilica_di_Santa_Cecilia_in_Trastevere_-_2023-09-10_22-00-42_001.JPG"
+  },
+  {
+    "id": "st-agnes",
+    "name": "Basilica of St. Agnes Outside the Walls",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 324,
+    "description": "One of the seven pilgrimage churches of Rome, built over the catacombs of St. Agnes. Originally constructed by Constantine the Great, rebuilt in the 7th century. Contains the relics of St. Agnes.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sant%27Agnese_fuori_le_mura",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Sant%27Agnese_fuori_le_mura_-_esterno.jpg/1125px-Sant%27Agnese_fuori_le_mura_-_esterno.jpg"
+  },
+  {
+    "id": "st-pancras",
+    "name": "Basilica of St. Pancras",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 314,
+    "description": "One of the oldest churches in Rome, built by Constantine the Great over the tomb of St. Pancras, a 14-year-old martyr. Located on the Via Aurelia.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/San_Pancrazio",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Q12_Gianicolense_-_S._Pancrazio_1.JPG/1200px-Q12_Gianicolense_-_S._Pancrazio_1.JPG"
+  },
+  {
+    "id": "st-mary-antioch",
+    "name": "Cathedral of St. Peter",
+    "placeId": "antioch",
+    "type": "patriarchal-basilica",
+    "startYear": 30,
+    "description": "The ancient cathedral of Antioch, traditionally the first place where followers of Jesus were called 'Christians' (Acts 11:26). The See of Antioch, one of the five patriarchates.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Patriarchate_of_Antioch",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Trier_Dom_Seitenportal_Ostkrypta.jpg/960px-Trier_Dom_Seitenportal_Ostkrypta.jpg"
+  },
+  {
+    "id": "st-mark-alexandria",
+    "name": "Cathedral of St. Mark",
+    "placeId": "alexandria",
+    "type": "patriarchal-basilica",
+    "startYear": 42,
+    "description": "The ancient cathedral of Alexandria, traditionally founded by St. Mark the Evangelist. The See of Alexandria, one of the five patriarchates of the Pentarchy.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Patriarchate_of_Alexandria",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/StMarkcoptic.jpg"
+  },
+  {
+    "id": "st-john-ephesus-cathedral",
+    "name": "Cathedral of St. John the Theologian",
+    "placeId": "ephesus",
+    "type": "historic-basilica",
+    "startYear": 100,
+    "endYear": 536,
+    "description": "The early Christian cathedral of Ephesus, where St. John the Evangelist is said to have lived and written his Gospel. Replaced by the larger Justinianic basilica in 536.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ephesus",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Ephesus_Celsus_Library_Fa%C3%A7ade.jpg/1200px-Ephesus_Celsus_Library_Fa%C3%A7ade.jpg"
+  },
+  {
+    "id": "st-mary-ephesus",
+    "name": "House of the Virgin Mary",
+    "placeId": "ephesus",
+    "type": "historic-basilica",
+    "startYear": 431,
+    "description": "A shrine built after the Council of Ephesus (431) which declared Mary the Theotokos (Mother of God). Located near Ephesus, traditionally believed to be where the Virgin Mary spent her last years.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/House_of_the_Virgin_Mary",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/House_of_the_Virgin_Mary_%2813951299641%29_%28cropped%29.jpg/1200px-House_of_the_Virgin_Mary_%2813951299641%29_%28cropped%29.jpg"
+  },
+  {
+    "id": "st-denis-old",
+    "name": "Basilica of St. Denis (Original)",
+    "placeId": "paris",
+    "type": "historic-basilica",
+    "startYear": 475,
+    "endYear": 1135,
+    "description": "The original Merovingian basilica built over the tomb of St. Denis, the patron saint of France. Replaced by the current Gothic basilica in the 12th century.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint-Denis",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Saint-Denis_-_Fa%C3%A7ade.jpg/960px-Saint-Denis_-_Fa%C3%A7ade.jpg"
+  },
+  {
+    "id": "st-martin-old-tours",
+    "name": "Basilica of St. Martin (Original)",
+    "placeId": "tours",
+    "type": "historic-basilica",
+    "startYear": 470,
+    "endYear": 903,
+    "description": "The original basilica built over the tomb of St. Martin of Tours. One of the most important pilgrimage destinations in medieval Europe. Destroyed during the French Revolution.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint-Martin,_Tours",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Basilica_of_St._Martin_de_Tours.jpg/960px-Basilica_of_St._Martin_de_Tours.jpg"
+  },
+  {
+    "id": "st-remi-reims",
+    "name": "Basilica of St. Remigius",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 1009,
+    "description": "A Romanesque basilica in Reims, built to house the relics of St. Remigius, who baptized Clovis, the first Christian king of the Franks. The coronation church of French kings.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint-Remi",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/West_Fa%C3%A7ade_of_Basilique_Saint-R%C3%A9mi%2C_Reims_140306_1.jpg/960px-West_Fa%C3%A7ade_of_Basilique_Saint-R%C3%A9mi%2C_Reims_140306_1.jpg"
+  },
+  {
+    "id": "st-mary-chartres",
+    "name": "Chartres Cathedral",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 1194,
+    "description": "A masterpiece of French Gothic architecture, famous for its stained glass windows and labyrinth. Built to house the Sancta Camisia, the tunic of the Virgin Mary.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Chartres_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Notre_Dame_de_Chartres.jpg/1200px-Notre_Dame_de_Chartres.jpg"
+  },
+  {
+    "id": "st-mary-reims",
+    "name": "Reims Cathedral",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 1211,
+    "description": "The coronation cathedral of France, where most French kings were crowned. A masterpiece of High Gothic architecture, famous for its sculptures and stained glass.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Reims_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Reims_Kathedrale.jpg/960px-Reims_Kathedrale.jpg"
+  },
+  {
+    "id": "st-mary-notre-dame",
+    "name": "Notre-Dame de Paris",
+    "placeId": "paris",
+    "type": "historic-basilica",
+    "startYear": 1163,
+    "description": "One of the finest examples of French Gothic architecture. The cathedral of the Archdiocese of Paris, famous for its rose windows, flying buttresses, and gargoyles.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/1200px-Notre-Dame_de_Paris%2C_4_October_2017.jpg"
+  },
+  {
+    "id": "st-mary-salisbury",
+    "name": "Salisbury Cathedral",
+    "placeId": "canterbury",
+    "type": "historic-basilica",
+    "startYear": 1220,
+    "description": "A masterpiece of Early English Gothic architecture. Houses the best-preserved of the four surviving copies of the Magna Carta. Has the tallest church spire in the United Kingdom.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Salisbury_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7f/SalisburyCathedral-wyrdlight-EastExt.jpg"
+  },
+  {
+    "id": "st-mary-york",
+    "name": "York Minster",
+    "placeId": "york",
+    "type": "historic-basilica",
+    "startYear": 1220,
+    "description": "One of the largest Gothic cathedrals in Northern Europe. The seat of the Archbishop of York, second only to Canterbury in the Church of England hierarchy.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/York_Minster",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/York_Minster_from_M%26S.JPG/1200px-York_Minster_from_M%26S.JPG"
+  },
+  {
+    "id": "st-mary-lincoln",
+    "name": "Lincoln Cathedral",
+    "placeId": "canterbury",
+    "type": "historic-basilica",
+    "startYear": 1072,
+    "description": "Once the tallest building in the world (until 1549). A masterpiece of English Gothic architecture, famous for its three towers and the Lincoln Imp.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Lincoln_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Lincoln_Cathedral_viewed_from_Lincoln_Castle.jpg/1200px-Lincoln_Cathedral_viewed_from_Lincoln_Castle.jpg"
+  },
+  {
+    "id": "st-mary-durham",
+    "name": "Durham Cathedral",
+    "placeId": "canterbury",
+    "type": "historic-basilica",
+    "startYear": 1093,
+    "description": "A masterpiece of Norman architecture and the first building in the world to use a stone rib vault. Houses the shrine of St. Cuthbert and the tomb of the Venerable Bede.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Durham_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Durham_MMB_02_Cathedral.jpg/1200px-Durham_MMB_02_Cathedral.jpg"
+  },
+  {
+    "id": "st-mary-wells",
+    "name": "Wells Cathedral",
+    "placeId": "canterbury",
+    "type": "historic-basilica",
+    "startYear": 1175,
+    "description": "The first cathedral in England to be built in the Gothic style. Famous for its West Front with 300 medieval statues and its unique scissor arches.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Wells_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wells_Cathedral_West_Front_Exterior%2C_UK_-_Diliff.jpg/1200px-Wells_Cathedral_West_Front_Exterior%2C_UK_-_Diliff.jpg"
+  },
+  {
+    "id": "st-mary-speyer",
+    "name": "Speyer Cathedral",
+    "placeId": "augsburg",
+    "type": "historic-basilica",
+    "startYear": 1030,
+    "description": "A UNESCO World Heritage Site and the largest Romanesque church in the world. The burial place of eight German emperors and kings. A symbol of imperial power.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Speyer_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Speyer_dom_11.jpg/1200px-Speyer_dom_11.jpg"
+  },
+  {
+    "id": "st-mary-worms",
+    "name": "Worms Cathedral",
+    "placeId": "augsburg",
+    "type": "historic-basilica",
+    "startYear": 1018,
+    "description": "One of the finest examples of Romanesque architecture in Germany. The site of the Diet of Worms (1521) where Martin Luther was called to account for his teachings.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Worms_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Worms_Dom_Ostfassade_Vierung2005-05-27a.jpg/960px-Worms_Dom_Ostfassade_Vierung2005-05-27a.jpg"
+  },
+  {
+    "id": "st-mary-mainz",
+    "name": "Mainz Cathedral",
+    "placeId": "augsburg",
+    "type": "historic-basilica",
+    "startYear": 975,
+    "description": "The cathedral of the Archdiocese of Mainz, one of the most important archbishoprics in the Holy Roman Empire. A Romanesque cathedral with later Gothic additions.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Mainz_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/53/Mainzer_Dom_nw.jpg"
+  },
+  {
+    "id": "st-mary-trier",
+    "name": "Trier Cathedral",
+    "placeId": "cologne",
+    "type": "historic-basilica",
+    "startYear": 340,
+    "description": "The oldest cathedral in Germany, built by Constantine the Great. Houses the Holy Tunic, believed to be the seamless garment of Christ. A UNESCO World Heritage Site.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Trier_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Trier_Dom_BW_1.JPG/1200px-Trier_Dom_BW_1.JPG"
+  },
+  {
+    "id": "st-mary-bamberg",
+    "name": "Bamberg Cathedral",
+    "placeId": "augsburg",
+    "type": "historic-basilica",
+    "startYear": 1012,
+    "description": "A Romanesque cathedral and UNESCO World Heritage Site. Contains the tomb of Pope Clement II, the only pope buried north of the Alps. Famous for the Bamberg Rider statue.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Bamberg_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Bamberger_Dom_BW_6.JPG/1200px-Bamberger_Dom_BW_6.JPG"
+  },
+  {
+    "id": "st-mary-naumburg",
+    "name": "Naumburg Cathedral",
+    "placeId": "augsburg",
+    "type": "historic-basilica",
+    "startYear": 1028,
+    "description": "A UNESCO World Heritage Site, famous for its 13th-century sculptures by the Naumburg Master, particularly the statues of Uta and Ekkehard. A masterpiece of Gothic art.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Naumburg_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Naumburg_Dom.jpg/1200px-Naumburg_Dom.jpg"
+  },
+  {
+    "id": "st-mary-magdeburg",
+    "name": "Magdeburg Cathedral",
+    "placeId": "augsburg",
+    "type": "historic-basilica",
+    "startYear": 1209,
+    "description": "The first Gothic cathedral in Germany, built over the tomb of St. Maurice. The burial place of Otto I, Holy Roman Emperor. Contains important medieval sculptures.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Magdeburg_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Magdeburger_Dom_Luftbild.jpg/1200px-Magdeburger_Dom_Luftbild.jpg"
+  },
+  {
+    "id": "st-mary-ulm",
+    "name": "Ulm Minster",
+    "placeId": "augsburg",
+    "type": "historic-basilica",
+    "startYear": 1377,
+    "description": "The tallest church in the world (161.5m). A masterpiece of Gothic architecture, built by the citizens of Ulm as a symbol of their wealth and independence.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ulm_Minster",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Landappbw_526530_1820_Ulmer_M%C3%BCnster_Luftaufnahme_Ulmer_M%C3%BCnster_%28cropped%29.jpg/960px-Landappbw_526530_1820_Ulmer_M%C3%BCnster_Luftaufnahme_Ulmer_M%C3%BCnster_%28cropped%29.jpg"
+  },
+  {
+    "id": "st-mary-regensburg",
+    "name": "Regensburg Cathedral",
+    "placeId": "augsburg",
+    "type": "historic-basilica",
+    "startYear": 1273,
+    "description": "The only Gothic cathedral in Bavaria. A masterpiece of High Gothic architecture, famous for its stained glass windows and the Laughing Angel sculpture.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Regensburg_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Dom_Regensburg.JPG/1200px-Dom_Regensburg.JPG"
+  },
+  {
+    "id": "st-mary-freiburg",
+    "name": "Freiburg Minster",
+    "placeId": "augsburg",
+    "type": "historic-basilica",
+    "startYear": 1200,
+    "description": "A masterpiece of Gothic architecture, famous for its 116-meter tower and beautiful stained glass windows. The only major Gothic cathedral completed in the Middle Ages.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Freiburg_Minster",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Freiburger_M%C3%BCnster_-_S%C3%BCdansicht_%282025%29.jpg/1200px-Freiburger_M%C3%BCnster_-_S%C3%BCdansicht_%282025%29.jpg"
+  },
+  {
+    "id": "st-mary-santiago",
+    "name": "Cathedral of Santiago de Compostela",
+    "placeId": "seville",
+    "type": "historic-basilica",
+    "startYear": 1075,
+    "description": "The destination of the Way of St. James, one of the most important Christian pilgrimages. Built over the tomb of St. James the Apostle. A UNESCO World Heritage Site.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santiago_de_Compostela_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Santiago_cathedral_2021.jpg/960px-Santiago_cathedral_2021.jpg"
+  },
+  {
+    "id": "st-mary-toledo",
+    "name": "Toledo Cathedral",
+    "placeId": "seville",
+    "type": "historic-basilica",
+    "startYear": 1226,
+    "description": "The primate cathedral of Spain, a masterpiece of Gothic architecture. Contains important works by El Greco and houses the largest collection of relics in Spain.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Toledo_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/FP_Toledo_Cathedral_2025_-_West_fa%C3%A7ade.jpg/960px-FP_Toledo_Cathedral_2025_-_West_fa%C3%A7ade.jpg"
+  },
+  {
+    "id": "st-mary-burgos",
+    "name": "Burgos Cathedral",
+    "placeId": "seville",
+    "type": "historic-basilica",
+    "startYear": 1221,
+    "description": "A UNESCO World Heritage Site and masterpiece of Spanish Gothic architecture. The burial place of El Cid and his wife. Famous for its ornate spires and star-vaulted ceiling.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Burgos_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Escaleras_a_la_Catedral_--_2023_--_Burgos%2C_Castilla_y_Le%C3%B3n%2C_Espa%C3%B1a.jpg/960px-Escaleras_a_la_Catedral_--_2023_--_Burgos%2C_Castilla_y_Le%C3%B3n%2C_Espa%C3%B1a.jpg"
+  },
+  {
+    "id": "st-mary-leon",
+    "name": "León Cathedral",
+    "placeId": "seville",
+    "type": "historic-basilica",
+    "startYear": 1205,
+    "description": "Known as the 'House of Light' for its extensive stained glass windows, covering 1,800 square meters. A masterpiece of French-style Gothic architecture in Spain.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Le%C3%B3n_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Catedral_G%C3%B3tica_de_Le%C3%B3n.jpg"
+  },
+  {
+    "id": "st-mary-zaragoza",
+    "name": "Basilica of Our Lady of the Pillar",
+    "placeId": "seville",
+    "type": "historic-basilica",
+    "startYear": 1681,
+    "description": "The first church dedicated to the Virgin Mary, built on the site where she is said to have appeared to St. James the Apostle. One of the most important Marian shrines in Spain.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_the_Pillar",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/WLM_-_2020_-_Catedral-bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Pilar_-_02.jpg/1103px-WLM_-_2020_-_Catedral-bas%C3%ADlica_de_Nuestra_Se%C3%B1ora_del_Pilar_-_02.jpg"
+  },
+  {
+    "id": "st-mary-montserrat",
+    "name": "Santa Maria de Montserrat",
+    "placeId": "seville",
+    "type": "historic-basilica",
+    "startYear": 1025,
+    "description": "A Benedictine abbey and one of Spain's most important pilgrimage sites. Houses the Black Madonna of Montserrat, the patron saint of Catalonia.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Montserrat_%28mountain%29",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Montserrat_des_de_Manresa.JPG"
+  },
+  {
+    "id": "st-mary-florence",
+    "name": "Florence Cathedral",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 1296,
+    "description": "A masterpiece of Italian Gothic and Renaissance architecture. Famous for Brunelleschi's dome, Giotto's bell tower, and its polychrome marble facade.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Florence_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg/1200px-Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg"
+  },
+  {
+    "id": "st-mary-siena",
+    "name": "Siena Cathedral",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 1215,
+    "description": "A masterpiece of Italian Romanesque-Gothic architecture. Famous for its black and white striped marble, Piccolomini Library, and the works of Donatello and Michelangelo.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Siena_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Duomo_di_Siena-9635.jpg/1200px-Duomo_di_Siena-9635.jpg"
+  },
+  {
+    "id": "st-mary-pisa",
+    "name": "Pisa Cathedral",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 1063,
+    "description": "Part of the Piazza dei Miracoli UNESCO World Heritage Site. A masterpiece of Pisan Romanesque architecture, famous for its bronze doors and pulpit by Giovanni Pisano.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pisa_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Pisa_-_Cattedrale_da_Battistero_02.jpg/1200px-Pisa_-_Cattedrale_da_Battistero_02.jpg"
+  },
+  {
+    "id": "st-mary-orvieto",
+    "name": "Orvieto Cathedral",
+    "placeId": "rome",
+    "type": "historic-basilica",
+    "startYear": 1290,
+    "description": "A masterpiece of Italian Gothic architecture, famous for its polychrome facade and Signorelli's frescoes of the Last Judgment. Built to house the Corporal of Bolsena.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Orvieto_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Orvieto_-_Duomo_di_Orvieto_-_2023-10-01_01-15-01_001.JPG/1063px-Orvieto_-_Duomo_di_Orvieto_-_2023-10-01_01-15-01_001.JPG"
+  },
+  {
+    "id": "st-mary-assisi-upper",
+    "name": "Basilica of St. Mary of the Angels",
+    "placeId": "assisi",
+    "type": "papal-basilica",
+    "startYear": 1569,
+    "description": "Built to enclose the Porziuncola, the small chapel where St. Francis received his calling. Also contains the Cappella del Transito where St. Francis died.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santa_Maria_degli_Angeli",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Basilica_of_St._Mary_of_the_Angels_-_Olean_01_ShiftN.jpg/960px-Basilica_of_St._Mary_of_the_Angels_-_Olean_01_ShiftN.jpg"
+  },
+  {
+    "id": "st-mary-loreto",
+    "name": "Basilica of the Holy House",
+    "placeId": "rome",
+    "type": "papal-basilica",
+    "startYear": 1468,
+    "description": "Built to house the Holy House of Nazareth, believed to be the house where the Virgin Mary lived and where the Annunciation occurred. One of the most important Marian shrines.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sanctuary_of_Our_Lady_of_Loreto",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Loreto_-_Basilica_della_Santa_Casa_di_Loreto_-_Santa_Casa%2C_dettaglio_-_Il_Profeta_David_di_Girolamo_Lombardo_%281588%29_-_2025-09-21_00-39-01_001.jpg/960px-Loreto_-_Basilica_della_Santa_Casa_di_Loreto_-_Santa_Casa%2C_dettaglio_-_Il_Profeta_David_di_Girolamo_Lombardo_%281588%29_-_2025-09-21_00-39-01_001.jpg"
+  },
+  {
+    "id": "st-mary-czestochowa",
+    "name": "Jasna Góra Monastery",
+    "placeId": "prague",
+    "type": "historic-basilica",
+    "startYear": 1382,
+    "description": "The most important Catholic pilgrimage site in Poland. Houses the Black Madonna of Częstochowa, the Queen of Poland. A symbol of Polish national identity and faith.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Jasna_G%C3%B3ra_Monastery",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Cz%C4%99stochowa_klasztor_Jasna_G%C3%B3ra-2162.jpg/1200px-Cz%C4%99stochowa_klasztor_Jasna_G%C3%B3ra-2162.jpg"
+  },
+  {
+    "id": "st-mary-czestochowa-image",
+    "name": "Basilica of Our Lady of Częstochowa",
+    "placeId": "prague",
+    "type": "historic-basilica",
+    "startYear": 1906,
+    "description": "The main church of the Jasna Góra Monastery complex, built to accommodate the millions of pilgrims who visit the Black Madonna icon.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Jasna_G%C3%B3ra_Monastery",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Cz%C4%99stochowa_klasztor_Jasna_G%C3%B3ra-2162.jpg/1200px-Cz%C4%99stochowa_klasztor_Jasna_G%C3%B3ra-2162.jpg"
+  },
+  {
+    "id": "st-mary-wawel",
+    "name": "Wawel Cathedral",
+    "placeId": "prague",
+    "type": "historic-basilica",
+    "startYear": 1000,
+    "description": "The coronation and burial site of Polish kings. Houses the relics of St. Stanislaus, the patron saint of Poland. A symbol of Polish statehood and Catholicism.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Wawel_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wawel_katedra2.jpg/1200px-Wawel_katedra2.jpg"
+  },
+  {
+    "id": "st-mary-gniezno",
+    "name": "Gniezno Cathedral",
+    "placeId": "prague",
+    "type": "historic-basilica",
+    "startYear": 970,
+    "description": "The first capital of Poland and the seat of the Primate of Poland. Contains the relics of St. Adalbert, the first patron saint of Poland. The coronation church of Polish kings.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Gniezno_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Catedral_de_Gniezno%2C_Gniezno%2C_Polonia%2C_2014-09-20%2C_DD_45-47_HDR.jpg/960px-Catedral_de_Gniezno%2C_Gniezno%2C_Polonia%2C_2014-09-20%2C_DD_45-47_HDR.jpg"
+  },
+  {
+    "id": "st-mary-esztergom",
+    "name": "Esztergom Basilica",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1822,
+    "description": "The largest church in Hungary and the seat of the Primate of Hungary. Built on the site of the first Hungarian cathedral. Contains the Bakócz Chapel, a masterpiece of Renaissance art.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Esztergom_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Basilica_in_Esztergom%2C_Hungary_01.jpg/1200px-Basilica_in_Esztergom%2C_Hungary_01.jpg"
+  },
+  {
+    "id": "st-mary-budapest",
+    "name": "St. Stephen's Basilica",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1851,
+    "description": "The largest church in Budapest, dedicated to St. Stephen, the first king of Hungary. Houses the Holy Right, the mummified right hand of St. Stephen.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Stephen%27s_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Budapest_Szent_Istvan_Bazilika_R01.jpg/1200px-Budapest_Szent_Istvan_Bazilika_R01.jpg"
+  },
+  {
+    "id": "st-mary-varad",
+    "name": "Cathedral of the Assumption",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1100,
+    "description": "The cathedral of Oradea, Romania. A masterpiece of Baroque architecture, built on the site of an earlier Romanesque cathedral. An important center of Catholicism in Transylvania.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Oradea",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/2025-05-03_Oradea_detail_02.jpg/1200px-2025-05-03_Oradea_detail_02.jpg"
+  },
+  {
+    "id": "st-mary-ljubljana",
+    "name": "Ljubljana Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1701,
+    "description": "The cathedral of the Archdiocese of Ljubljana, Slovenia. A Baroque masterpiece with beautiful frescoes and the famous bronze doors commemorating Slovenian history.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ljubljana_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/StNicholas-Ljubljana.JPG"
+  },
+  {
+    "id": "st-mary-zagreb",
+    "name": "Zagreb Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1094,
+    "description": "The cathedral of the Archdiocese of Zagreb, Croatia. A Gothic cathedral with Neo-Gothic additions. The tallest building in Croatia and a symbol of Croatian Catholicism.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Zagreb_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Zagreb_Cathedral_02.jpg/960px-Zagreb_Cathedral_02.jpg"
+  },
+  {
+    "id": "st-mary-split",
+    "name": "Cathedral of St. Domnius",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 305,
+    "description": "The oldest Catholic cathedral in the world still in use in its original structure. Built as the mausoleum of Emperor Diocletian, converted to a cathedral in the 7th century.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cathedral_of_Saint_Domnius",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Krstionica_Viseslav.PNG"
+  },
+  {
+    "id": "st-mary-dubrovnik",
+    "name": "Dubrovnik Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1713,
+    "description": "A Baroque cathedral built on the site of earlier churches. Houses relics of St. Blaise, the patron saint of Dubrovnik. Part of the UNESCO World Heritage Site of Dubrovnik.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Dubrovnik_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cattedrale_di_dubrovnik%2C_ext._01.JPG/960px-Cattedrale_di_dubrovnik%2C_ext._01.JPG"
+  },
+  {
+    "id": "st-mary-bucharest",
+    "name": "Roman Catholic Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1873,
+    "description": "The cathedral of the Roman Catholic Archdiocese of Bucharest, Romania. A Neo-Romanesque church, one of the few Catholic cathedrals in predominantly Orthodox Romania.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Joseph%27s_Cathedral,_Bucharest",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/View_of_the_Roman_Catholic_Cathedral_from_the_garden_of_the_Orthodox_Cathedral%2C_Alba_Iulia%2C_2017.jpg/960px-View_of_the_Roman_Catholic_Cathedral_from_the_garden_of_the_Orthodox_Cathedral%2C_Alba_Iulia%2C_2017.jpg"
+  },
+  {
+    "id": "st-mary-riga",
+    "name": "Riga Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1211,
+    "description": "The cathedral of the Evangelical Lutheran Church of Latvia. Originally Catholic, it became Lutheran during the Reformation. One of the largest medieval churches in the Baltic states.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Riga_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Riga_Petrikirche_Blick_vom_Turm_zum_Dom_3.JPG/960px-Riga_Petrikirche_Blick_vom_Turm_zum_Dom_3.JPG"
+  },
+  {
+    "id": "st-mary-vilnius",
+    "name": "Vilnius Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1251,
+    "description": "The main Catholic cathedral of Lithuania. The coronation church of the Grand Dukes of Lithuania. Contains the tomb of St. Casimir, the patron saint of Lithuania.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Vilnius_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Vilnius_Cathedral_20.jpg/1200px-Vilnius_Cathedral_20.jpg"
+  },
+  {
+    "id": "st-mary-warsaw",
+    "name": "St. John's Archcathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1390,
+    "description": "The oldest church in Warsaw and the coronation church of Polish kings. Destroyed and rebuilt multiple times, most recently after World War II. A symbol of Polish resilience.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._John%27s_Archcathedral,_Warsaw",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Katedra_p.w._%C5%9Bw._Jana.jpg/960px-Katedra_p.w._%C5%9Bw._Jana.jpg"
+  },
+  {
+    "id": "st-mary-krakow",
+    "name": "Wawel Cathedral (Kraków)",
+    "placeId": "prague",
+    "type": "historic-basilica",
+    "startYear": 1000,
+    "description": "The coronation and burial site of Polish kings. Houses the relics of St. Stanislaus and St. Hedwig. A symbol of Polish statehood and Catholicism.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Wawel_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wawel_katedra2.jpg/1200px-Wawel_katedra2.jpg"
+  },
+  {
+    "id": "st-mary-gdansk",
+    "name": "St. Mary's Church",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1343,
+    "description": "The largest brick church in the world. A masterpiece of Brick Gothic architecture. The main church of Gdańsk, Poland, and a symbol of the Hanseatic League.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Mary%27s_Church,_Gda%C5%84sk",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bazylika_Mariacka_DSC01870.jpg/1200px-Bazylika_Mariacka_DSC01870.jpg"
+  },
+  {
+    "id": "st-mary-helsinki",
+    "name": "Helsinki Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1852,
+    "description": "The cathedral of the Evangelical Lutheran Church of Finland. Originally Catholic, it became Lutheran during the Reformation. A Neoclassical masterpiece dominating Helsinki's skyline.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Helsinki_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Helsinki_July_2013-27a.jpg/1200px-Helsinki_July_2013-27a.jpg"
+  },
+  {
+    "id": "st-mary-stockholm",
+    "name": "Stockholm Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1279,
+    "description": "The oldest church in Stockholm, originally Catholic, now Lutheran. The coronation and wedding church of Swedish monarchs. Contains the famous St. George and the Dragon sculpture.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Stockholm_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Storkyrkan_2025_01.jpg/1200px-Storkyrkan_2025_01.jpg"
+  },
+  {
+    "id": "st-mary-oslo",
+    "name": "Oslo Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1697,
+    "description": "The main church of the Church of Norway (Lutheran). Originally Catholic, it became Lutheran during the Reformation. The coronation church of Norwegian kings.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Oslo_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Oslo_Cathedral.jpg/960px-Oslo_Cathedral.jpg"
+  },
+  {
+    "id": "st-mary-copenhagen",
+    "name": "Church of Our Lady",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1209,
+    "description": "The cathedral of Copenhagen, originally Catholic, now Lutheran. The coronation church of Danish kings. Contains the famous statues of Christ and the Apostles by Thorvaldsen.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Church_of_Our_Lady_%28Copenhagen%29",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/VorFrueKirke%2C_K%C3%B6penhamn_juni_2010.jpg/848px-VorFrueKirke%2C_K%C3%B6penhamn_juni_2010.jpg"
+  },
+  {
+    "id": "st-mary-uppsala",
+    "name": "Uppsala Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1273,
+    "description": "The largest cathedral in Scandinavia. Originally Catholic, it became Lutheran during the Reformation. The coronation church of Swedish kings and the burial place of Swedish monarchs.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Uppsala_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Uppsala_cathedral_from_southwest_02.jpg/960px-Uppsala_cathedral_from_southwest_02.jpg"
+  },
+  {
+    "id": "st-mary-turku",
+    "name": "Turku Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1300,
+    "description": "The cathedral of the Evangelical Lutheran Church of Finland. Originally Catholic, it became Lutheran during the Reformation. The mother church of the Finnish Lutheran Church.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Turku_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Turun_tuomiokirkko.jpg/960px-Turun_tuomiokirkko.jpg"
+  },
+  {
+    "id": "st-mary-riga-catholic",
+    "name": "St. James's Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1225,
+    "description": "The cathedral of the Roman Catholic Archdiocese of Riga, Latvia. A Brick Gothic masterpiece. One of the few Catholic cathedrals in the Baltic states.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._James%27s_Cathedral,_Riga",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Vecr%C4%ABga%2C_Central_District%2C_Riga%2C_LV-1050%2C_Latvia_-_panoramio_%28227%29.jpg/960px-Vecr%C4%ABga%2C_Central_District%2C_Riga%2C_LV-1050%2C_Latvia_-_panoramio_%28227%29.jpg"
+  },
+  {
+    "id": "st-mary-tallinn",
+    "name": "St. Mary's Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1240,
+    "description": "The cathedral of the Evangelical Lutheran Church of Estonia. Originally Catholic, it became Lutheran during the Reformation. The oldest church in Tallinn.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Mary%27s_Cathedral,_Tallinn",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Catedral_de_Santa_Mar%C3%ADa_%28Toomkirik%29%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_09.JPG/960px-Catedral_de_Santa_Mar%C3%ADa_%28Toomkirik%29%2C_Tallin%2C_Estonia%2C_2012-08-05%2C_DD_09.JPG"
+  },
+  {
+    "id": "st-mary-helsinki-catholic",
+    "name": "St. Henry's Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1860,
+    "description": "The cathedral of the Roman Catholic Diocese of Helsinki, Finland. A Neo-Gothic church, one of the few Catholic cathedrals in predominantly Lutheran Finland.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Henry%27s_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Pyh%C3%A4n_Henrikin_kirkko.jpg/960px-Pyh%C3%A4n_Henrikin_kirkko.jpg"
+  },
+  {
+    "id": "st-mary-stockholm-catholic",
+    "name": "St. Eric's Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1892,
+    "description": "The cathedral of the Roman Catholic Diocese of Stockholm, Sweden. A Neo-Gothic church, one of the few Catholic cathedrals in predominantly Lutheran Sweden.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Erik%27s_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Sankt_Eriks_katolska_domkyrka_exteri%C3%B6r.jpg/960px-Sankt_Eriks_katolska_domkyrka_exteri%C3%B6r.jpg"
+  },
+  {
+    "id": "st-mary-oslo-catholic",
+    "name": "St. Olav's Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1856,
+    "description": "The cathedral of the Roman Catholic Diocese of Oslo, Norway. A Neo-Gothic church, one of the few Catholic cathedrals in predominantly Lutheran Norway.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Olav%27s_Cathedral,_Oslo",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/StOlavsOsloFeb2009.jpg/960px-StOlavsOsloFeb2009.jpg"
+  },
+  {
+    "id": "st-mary-copenhagen-catholic",
+    "name": "St. Ansgar's Cathedral",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1842,
+    "description": "The cathedral of the Roman Catholic Diocese of Copenhagen, Denmark. A Neo-Gothic church, one of the few Catholic cathedrals in predominantly Lutheran Denmark.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Ansgar%27s_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/SanktAnsgar01.jpg/960px-SanktAnsgar01.jpg"
+  },
+  {
+    "id": "st-mary-uppsala-catholic",
+    "name": "Uppsala Catholic Church",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1860,
+    "description": "A Catholic church in Uppsala, Sweden. One of the few Catholic churches in predominantly Lutheran Sweden, serving the small Catholic community.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Uppsala",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Uppsala.jpg/960px-Uppsala.jpg"
+  },
+  {
+    "id": "st-mary-turku-catholic",
+    "name": "Turku Catholic Church",
+    "placeId": "vienna",
+    "type": "historic-basilica",
+    "startYear": 1860,
+    "description": "A Catholic church in Turku, Finland. One of the few Catholic churches in predominantly Lutheran Finland, serving the small Catholic community.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Turku",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/View_from_Turku_Cathedral_tower.jpg/1200px-View_from_Turku_Cathedral_tower.jpg"
+  }
+]

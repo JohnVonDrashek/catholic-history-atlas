@@ -5,6 +5,7 @@ export type EventType =
   | 'reform'
   | 'heresy'
   | 'war'
+  | 'apparition'
   | 'other';
 
 export interface Event {

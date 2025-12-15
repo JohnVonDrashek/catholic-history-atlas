@@ -1,0 +1,30 @@
+{
+  "id": "francis-solanus",
+  "name": "St. Francis Solanus",
+  "birthYear": 1549,
+  "deathYear": 1610,
+  "feastDay": "July 14",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "spain",
+      "description": "Born in Spain"
+    },
+    {
+      "placeId": "argentina",
+      "description": "Missionary in South America (Argentina, Paraguay, Peru)"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_Solanus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06217a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/St._Francis_Solanus_Mission.jpg/330px-St._Francis_Solanus_Mission.jpg",
+  "summary": "Francis Solanus was a Spanish Franciscan missionary known as the 'Wonder Worker of the New World.' He worked extensively in South America, particularly in Argentina, Paraguay, and Peru, evangelizing indigenous peoples. He was known for his holiness, miracles, and dedication to the poor.",
+  "keyQuotes": [],
+  "writings": []
+}

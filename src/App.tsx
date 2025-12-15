@@ -1,94 +1,52 @@
-import { useState } from 'react';
-import { HashRouter } from 'react-router-dom';
-import { YearSelector } from './components/YearSelector';
-import { Timeline } from './components/Timeline';
-import { MapView } from './components/MapView';
-import { DetailsModal } from './components/DetailsModal';
-import { FrameLegend } from './components/FrameLegend';
-import type { Person, Event } from './types';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
+import { AtlasView } from './components/AtlasView';
+import { About } from './components/About';
 import initialData from './data';
 import './styles/main.css';
 
-function App() {
-  const [currentYear, setCurrentYear] = useState(325); // Start at Nicaea
-  const [selectedItem, setSelectedItem] = useState<Person | Event | null>(null);
-  const [view, setView] = useState<'timeline' | 'map'>('timeline');
+function Navigation() {
+  return (
+    <nav
+      style={{
+        backgroundColor: '#1a1a1a',
+        padding: '1rem 2rem',
+        borderBottom: '1px solid #333',
+        display: 'flex',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+      }}
+    >
+      <Link
+        to="/"
+        style={{
+          fontSize: '1.25rem',
+          fontWeight: 'bold',
+          color: '#fff',
+          textDecoration: 'none',
+        }}
+      >
+        Catholic History Atlas
+      </Link>
+    </nav>
+  );
+}
 
+function App() {
   const data = initialData as {
-    people: Person[];
-    events: Event[];
+    people: import('./types').Person[];
+    events: import('./types').Event[];
     places: import('./types').Place[];
     sees: import('./types').See[];
+    basilicas: import('./types').Basilica[];
   };
 
   return (
     <HashRouter>
-      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-        <YearSelector
-          year={currentYear}
-          onYearChange={setCurrentYear}
-          minYear={30}
-          maxYear={2100}
-          step={10}
-        />
-
-        <div style={{ display: 'flex', gap: '1rem', padding: '1rem' }}>
-          <button
-            onClick={() => setView('timeline')}
-            style={{
-              padding: '0.5rem 1rem',
-              backgroundColor: view === 'timeline' ? '#4a9eff' : '#333',
-              color: '#fff',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer',
-            }}
-          >
-            Timeline
-          </button>
-          <button
-            onClick={() => setView('map')}
-            style={{
-              padding: '0.5rem 1rem',
-              backgroundColor: view === 'map' ? '#4a9eff' : '#333',
-              color: '#fff',
-              border: 'none',
-              borderRadius: '4px',
-              cursor: 'pointer',
-            }}
-          >
-            Map
-          </button>
-        </div>
-
-        <div style={{ flex: 1, overflow: 'hidden', position: 'relative' }}>
-          {view === 'timeline' ? (
-            <Timeline
-              people={data.people}
-              events={data.events}
-              currentYear={currentYear}
-              onItemClick={setSelectedItem}
-              onYearChange={setCurrentYear}
-            />
-          ) : (
-            <MapView
-              people={data.people}
-              events={data.events}
-              places={data.places}
-              sees={data.sees}
-              currentYear={currentYear}
-              onItemClick={setSelectedItem}
-            />
-          )}
-        </div>
-
-        <DetailsModal
-          item={selectedItem}
-          onClose={() => setSelectedItem(null)}
-        />
-
-        <FrameLegend />
-      </div>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<AtlasView data={data} />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </HashRouter>
   );
 }

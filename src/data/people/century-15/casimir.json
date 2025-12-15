@@ -1,0 +1,24 @@
+{
+  "id": "casimir",
+  "name": "St. Casimir",
+  "birthYear": 1458,
+  "deathYear": 1484,
+  "feastDay": "March 4",
+  "primaryTradition": "Latin",
+  "roles": [
+    "prince"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "krakow",
+      "description": "Prince of Poland and Lithuania, patron of Poland and Lithuania"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Casimir_IV_Jagiellon",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03406a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/St._Casimir_Vilnius.JPG/330px-St._Casimir_Vilnius.JPG",
+  "summary": "Casimir was a prince of the Kingdom of Poland and Grand Duchy of Lithuania, known for his piety, chastity, and devotion to the poor. Despite being heir to the throne, he chose a life of prayer and service. He is the patron saint of Poland and Lithuania, and is invoked for chastity and youth.",
+  "keyQuotes": []
+}

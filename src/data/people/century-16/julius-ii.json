@@ -1,0 +1,24 @@
+{
+  "id": "julius-ii",
+  "name": "Pope Julius II",
+  "birthYear": 1443,
+  "deathYear": 1513,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1503 to 1513"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Julius_II",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08562a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Pope_Julius_II.jpg/330px-Pope_Julius_II.jpg",
+  "summary": "Julius II, born Giuliano della Rovere, was Pope from 1503 to 1513. Known as the 'Warrior Pope,' he expanded the Papal States through military campaigns. He was a great patron of the arts, commissioning Michelangelo to paint the Sistine Chapel ceiling and Raphael to decorate the Vatican apartments. He laid the cornerstone for the new St. Peter's Basilica and convened the Fifth Lateran Council. His papacy marked a period of renewed papal authority and artistic achievement.",
+  "keyQuotes": []
+}
+

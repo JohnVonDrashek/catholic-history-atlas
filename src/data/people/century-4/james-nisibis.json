@@ -1,0 +1,25 @@
+{
+  "id": "james-nisibis",
+  "name": "St. James of Nisibis",
+  "birthYear": null,
+  "deathYear": 338,
+  "feastDay": "July 15",
+  "primaryTradition": "Syriac",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "nisibis",
+      "description": "Bishop of Nisibis, attended First Council of Nicaea"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/James_of_Nisibis",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08273a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Hymnal%2C_St._James_of_Nisibis%2C_the_Patriarch%2C_Walters_Manuscript_W.547%2C_fol._216v.jpg/330px-Hymnal%2C_St._James_of_Nisibis%2C_the_Patriarch%2C_Walters_Manuscript_W.547%2C_fol._216v.jpg",
+  "summary": "James of Nisibis was the Bishop of Nisibis (modern Nusaybin, Turkey) and attended the First Council of Nicaea in 325. He was a prominent figure in the Syriac Christian tradition and is known for his defense of orthodoxy. He is credited with building the first cathedral in Nisibis and was known for his asceticism and miracles. He is venerated as a saint in both Eastern and Oriental Orthodox traditions.",
+  "keyQuotes": []
+}
+

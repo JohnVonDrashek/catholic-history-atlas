@@ -1,0 +1,24 @@
+{
+  "id": "marianne-cope",
+  "name": "St. Marianne Cope",
+  "birthYear": 1838,
+  "deathYear": 1918,
+  "feastDay": "January 23",
+  "primaryTradition": "Latin",
+  "roles": [
+    "religious sister"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "hawaii",
+      "description": "Served leprosy patients in Hawaii, continuing the work of St. Damien of Molokai"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Marianne_Cope",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09464a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Grave_of_St_Marianne_Cope_at_Kalaupapa.jpg/330px-Grave_of_St_Marianne_Cope_at_Kalaupapa.jpg",
+  "summary": "Marianne Cope was a German-born American religious sister who dedicated her life to serving leprosy patients in Hawaii. She arrived in 1883 to help St. Damien of Molokai and continued his work after his death, establishing hospitals and care facilities. She is the first Franciscan woman from North America to be canonized.",
+  "keyQuotes": []
+}

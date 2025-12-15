@@ -1,0 +1,25 @@
+{
+  "id": "francis-solano",
+  "name": "St. Francis Solano",
+  "birthYear": 1549,
+  "deathYear": 1610,
+  "feastDay": "July 14",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "peru",
+      "description": "Franciscan missionary in Peru and Argentina"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_Solano",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06134a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/St._Francis_Solano.png/330px-St._Francis_Solano.png",
+  "summary": "Francis Solano was a Spanish Franciscan priest and missionary known as the 'Wonder Worker of the New World.' He worked extensively in Peru and Argentina, learning native languages and converting thousands. He was known for his miracles, his ability to communicate with animals, and his deep love for the poor. He is the patron saint of Argentina, Bolivia, Chile, Paraguay, and Peru.",
+  "keyQuotes": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "edmund-arrowsmith",
+  "name": "St. Edmund Arrowsmith",
+  "birthYear": 1585,
+  "deathYear": 1628,
+  "feastDay": "August 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "britain",
+      "description": "Jesuit priest martyred in Lancaster, England"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Edmund_Arrowsmith",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01745a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/St_Oswald%27s_church%2C_Ashton-in-Makerfield_1.jpg/330px-St_Oswald%27s_church%2C_Ashton-in-Makerfield_1.jpg",
+  "summary": "Edmund Arrowsmith was an English Jesuit priest and martyr who was executed during the reign of Charles I. He was ordained in Spain and returned to England to minister secretly to Catholics in Lancashire. He was arrested, tried, and executed at Lancaster. He is one of the Forty Martyrs of England and Wales and is remembered for his dedication to serving the Catholic faithful in northern England.",
+  "keyQuotes": []
+}

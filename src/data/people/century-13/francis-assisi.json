@@ -19,13 +19,15 @@
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Francis_of_Assisi",
   "newAdventUrl": "https://www.newadvent.org/cathen/06221a.htm",
-  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Philip_Fruytiers_-_St._Francis_of_Assisi.jpg",
-  "summary": "Francis of Assisi was an Italian Catholic friar, deacon, and mystic. He founded the Franciscan Order and is one of the most venerated religious figures in Christianity. He is known for his devotion to poverty, his love of nature, and for receiving the stigmata. He is the patron saint of Italy, animals, and the environment.",
-  "keyQuotes": [],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Iglesia_de_San_Francisco_de_As%C3%ADs%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-03%2C_DD_02-04_HDR.jpg/330px-Iglesia_de_San_Francisco_de_As%C3%ADs%2C_Praga%2C_Rep%C3%BAblica_Checa%2C_2022-07-03%2C_DD_02-04_HDR.jpg",
+  "summary": "Francis of Assisi was an Italian friar who founded the Franciscan Order. He is known for his devotion to poverty, his love of nature, and his stigmata. He received the stigmata in 1224, becoming the first person in Christian history to bear the wounds of Christ. He is the patron saint of Italy, animals, and the environment. His Canticle of the Sun is one of the first works of Italian literature.",
+  "keyQuotes": [
+    "Lord, make me an instrument of your peace."
+  ],
   "writings": [
     {
       "title": "Canticle of the Sun",
-      "url": "https://www.ccel.org/ccel/francis/writings.html"
+      "url": "https://www.ccel.org/ccel/francis/works.html"
     }
   ]
 }

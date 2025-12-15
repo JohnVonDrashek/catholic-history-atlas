@@ -1,0 +1,26 @@
+{
+  "id": "padre-pio",
+  "name": "St. Pio of Pietrelcina",
+  "birthYear": 1887,
+  "deathYear": 1968,
+  "feastDay": "September 23",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "mystic"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Capuchin friar, served in San Giovanni Rotondo, Italy"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pio_of_Pietrelcina",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Padre_Pio_portrait.jpg/330px-Padre_Pio_portrait.jpg",
+  "summary": "Pio of Pietrelcina, commonly known as Padre Pio, was an Italian Capuchin friar, priest, and mystic. He is famous for bearing the stigmata (wounds of Christ) for 50 years, which were investigated by Church authorities. He was known for his spiritual gifts including bilocation, prophecy, and the ability to read souls in confession. He founded a hospital in San Giovanni Rotondo and is one of the most popular saints of the 20th century.",
+  "keyQuotes": []
+}
+

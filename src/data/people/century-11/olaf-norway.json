@@ -1,0 +1,25 @@
+{
+  "id": "olaf-norway",
+  "name": "St. Olaf",
+  "birthYear": 995,
+  "deathYear": 1030,
+  "feastDay": "July 29",
+  "primaryTradition": "Latin",
+  "roles": [
+    "king",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "norway",
+      "description": "King of Norway, patron saint of Norway"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Olaf_II_of_Norway",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11229a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/St._Olaf_Auditorium.jpg/330px-St._Olaf_Auditorium.jpg",
+  "summary": "Olaf II Haraldsson, also known as St. Olaf, was King of Norway from 1015 to 1028. He is credited with completing the Christianization of Norway, which had begun under earlier kings. He was killed in battle at Stiklestad in 1030 while fighting against pagan forces. He was canonized a year after his death and became the patron saint of Norway. His cult spread throughout Scandinavia and he is one of the most important saints in Norwegian history.",
+  "keyQuotes": []
+}

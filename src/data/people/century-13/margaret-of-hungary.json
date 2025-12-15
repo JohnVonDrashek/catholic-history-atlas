@@ -1,0 +1,24 @@
+{
+  "id": "margaret-of-hungary",
+  "name": "St. Margaret of Hungary",
+  "birthYear": 1242,
+  "deathYear": 1270,
+  "feastDay": "January 18",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "budapest",
+      "description": "Dominican nun in Hungary, daughter of King Béla IV, known for her extreme penances"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Margaret_of_Hungary",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09655a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Church_of_St._Margaret_of_Hungary_-_2015.11.13.JPG/330px-Church_of_St._Margaret_of_Hungary_-_2015.11.13.JPG",
+  "summary": "Margaret of Hungary was a Dominican nun and princess, daughter of King Béla IV of Hungary. Despite her royal birth, she chose a life of extreme penance and prayer in the convent. She is known for her humility, charity, and devotion to the poor. She is venerated as a saint in Hungary.",
+  "keyQuotes": []
+}

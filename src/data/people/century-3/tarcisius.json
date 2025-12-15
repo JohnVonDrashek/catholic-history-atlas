@@ -1,0 +1,25 @@
+{
+  "id": "tarcisius",
+  "name": "St. Tarcisius",
+  "birthYear": null,
+  "deathYear": 257,
+  "feastDay": "August 15",
+  "primaryTradition": "Latin",
+  "roles": [
+    "acolyte",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Young acolyte martyred in Rome while carrying the Eucharist to imprisoned Christians"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Tarcisius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14452a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Church_of_St_Tarcisius%2C_Camberley.jpg/330px-Church_of_St_Tarcisius%2C_Camberley.jpg",
+  "summary": "Tarcisius was a young acolyte in Rome who was martyred during the persecution of Valerian. According to tradition, he was carrying the Eucharist to Christians imprisoned in the catacombs when he was accosted by a group of pagans. Rather than surrender the Blessed Sacrament, he chose to be beaten to death, protecting the Eucharist with his body. He is the patron saint of altar servers and first communicants, and is invoked for protection of the Eucharist.",
+  "keyQuotes": []
+}

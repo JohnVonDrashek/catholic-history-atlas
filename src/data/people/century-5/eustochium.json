@@ -1,0 +1,25 @@
+{
+  "id": "eustochium",
+  "name": "St. Eustochium",
+  "birthYear": 368,
+  "deathYear": 419,
+  "feastDay": "September 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "virgin"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "bethlehem",
+      "description": "Abbess in Bethlehem, daughter of St. Paula"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Eustochium",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05630a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Juan_de_Vald%C3%A9s_Leal_%281622-1690%29_-_St_Eustochium_-_B.M.10_-_Bowes_Museum.jpg/330px-Juan_de_Vald%C3%A9s_Leal_%281622-1690%29_-_St_Eustochium_-_B.M.10_-_Bowes_Museum.jpg",
+  "summary": "Eustochium was the daughter of St. Paula and a close companion of St. Jerome. She consecrated herself to virginity at a young age and followed her mother to Bethlehem, where she became the abbess of the monastery for women. She was highly educated and assisted Jerome in his biblical translation work. Jerome dedicated several of his works to her, including his commentary on Isaiah. She is venerated as a saint and is an example of the important role of women in early monasticism.",
+  "keyQuotes": []
+}

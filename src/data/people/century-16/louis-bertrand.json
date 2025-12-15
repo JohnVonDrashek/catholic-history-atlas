@@ -1,0 +1,30 @@
+{
+  "id": "louis-bertrand",
+  "name": "St. Louis Bertrand",
+  "birthYear": 1526,
+  "deathYear": 1581,
+  "feastDay": "October 9",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "spain",
+      "description": "Born in Valencia, Spain"
+    },
+    {
+      "placeId": "colombia",
+      "description": "Missionary in Colombia and South America"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Louis_Bertrand_(saint)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02520a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Louis_Bertrand.jpg/330px-Louis_Bertrand.jpg",
+  "summary": "Louis Bertrand was a Spanish Dominican friar and missionary known as the 'Apostle of South America.' He preached extensively in Colombia and other parts of South America, converting thousands of indigenous people. He was known for his powerful preaching, miracles, and deep devotion to the Rosary. He returned to Spain where he continued his missionary work and helped reform the Dominican Order.",
+  "keyQuotes": []
+}
+

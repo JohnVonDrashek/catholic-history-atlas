@@ -2,8 +2,9 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { useEffect, useState } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { FaScroll, FaCrown } from 'react-icons/fa';
-import type { Person, Event, Place, OrthodoxyStatus } from '../types';
+import type { Person, Event, Place, OrthodoxyStatus, Basilica } from '../types';
 import type { EventType } from '../types/event';
+import type { BasilicaType } from '../types/basilica';
 import { getActivePeople, getActiveEvents } from '../utils/filters';
 import { getCachedImageUrl } from '../utils/imageCache';
 import { getEventColor } from '../utils/eventColors';
@@ -354,9 +355,50 @@ const createEventIcon = (eventType: EventType, imageUrl?: string) => {
                  eventType === 'persecution' ? '✟' :
                  eventType === 'reform' ? '♻' :
                  eventType === 'heresy' ? '⚠' :
-                 eventType === 'war' ? '⚔' : '●';
+                 eventType === 'war' ? '⚔' :
+                 eventType === 'apparition' ? '✨' : '●';
   const isDiamond = eventType === 'council';
+  const isApparition = eventType === 'apparition';
   
+  // For apparitions without images, create a special glowing effect
+  if (isApparition && !imageUrl) {
+    return L.divIcon({
+      className: 'custom-marker',
+      html: `
+        <div style="
+          position: relative;
+          width: ${size}px;
+          height: ${size}px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        ">
+          <div style="
+            width: ${size}px;
+            height: ${size}px;
+            border-radius: 50%;
+            background: radial-gradient(circle, ${color.fill} 0%, ${color.stroke} 100%);
+            border: 3px solid ${color.fill};
+            box-shadow: 0 0 12px ${color.fill}80, 0 0 20px ${color.fill}60, 0 2px 6px rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          ">
+            <div style="
+              color: white;
+              font-size: 24px;
+              font-weight: bold;
+              line-height: 1;
+              text-shadow: 0 0 8px rgba(255,255,255,0.8), 0 0 12px rgba(255,255,255,0.6);
+            ">${symbol}</div>
+          </div>
+        </div>
+      `,
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+    });
+  }
+
   // For events without images, show the colored symbol on a white circular background
   if (!imageUrl) {
     return L.divIcon({
@@ -423,6 +465,41 @@ const createEventIcon = (eventType: EventType, imageUrl?: string) => {
             font-size: 18px;
             font-weight: bold;
             text-shadow: 0 0 4px rgba(0,0,0,0.8);
+          ">${symbol}</div>
+        </div>
+      `,
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+    });
+  }
+
+  // For apparitions with images, add glowing effect
+  if (isApparition) {
+    return L.divIcon({
+      className: 'custom-marker',
+      html: `
+        <div style="
+          position: relative;
+          width: ${size}px;
+          height: ${size}px;
+          border-radius: 50%;
+          border: 3px solid ${color.fill};
+          box-shadow: 0 0 12px ${color.fill}80, 0 0 20px ${color.fill}60, 0 2px 6px rgba(0,0,0,0.4);
+          overflow: hidden;
+          background-color: ${color.fill};
+          background-image: url('${imageUrl}');
+          background-size: cover;
+          background-position: center;
+        ">
+          <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(255,255,255,0.8), 0 0 12px rgba(255,255,255,0.6), 0 0 4px rgba(0,0,0,0.8);
           ">${symbol}</div>
         </div>
       `,
@@ -508,6 +585,117 @@ const createImportantSeeIcon = () => {
   });
 };
 
+// Get color scheme for basilica type
+export const getBasilicaColor = (type: BasilicaType): { fill: string; stroke: string; glow: string } => {
+  switch (type) {
+    case 'major-basilica':
+      return { fill: '#8B4CBF', stroke: '#6B2A9F', glow: 'rgba(139, 76, 191, 0.6)' }; // Purple
+    case 'papal-basilica':
+      return { fill: '#D4AF37', stroke: '#B8941F', glow: 'rgba(212, 175, 55, 0.6)' }; // Gold
+    case 'patriarchal-basilica':
+      return { fill: '#4A90E2', stroke: '#2E6BB8', glow: 'rgba(74, 144, 226, 0.6)' }; // Blue
+    case 'historic-basilica':
+    default:
+      return { fill: '#CD7F32', stroke: '#A06628', glow: 'rgba(205, 127, 50, 0.6)' }; // Bronze
+  }
+};
+
+const createBasilicaIcon = (type: BasilicaType, imageUrl?: string) => {
+  const size = 48; // Slightly larger than sees to show importance
+  const colors = getBasilicaColor(type);
+  
+  // More ornate basilica icon SVG - larger, more detailed church with dome
+  const basilicaIconSvg = `
+    <svg width="${size - 8}" height="${size - 8}" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+      <!-- Main building -->
+      <path d="M12 2L4 6V20H20V6L12 2Z" fill="${colors.fill}" stroke="${colors.stroke}" stroke-width="1.2"/>
+      <!-- Dome -->
+      <ellipse cx="12" cy="6" rx="4" ry="2" fill="${colors.fill}" stroke="${colors.stroke}" stroke-width="1"/>
+      <!-- Door -->
+      <rect x="9" y="14" width="6" height="6" fill="${colors.stroke}" rx="1"/>
+      <!-- Windows -->
+      <rect x="6" y="10" width="2.5" height="2.5" fill="#fff" rx="0.5"/>
+      <rect x="15.5" y="10" width="2.5" height="2.5" fill="#fff" rx="0.5"/>
+      <!-- Central window -->
+      <rect x="10.5" y="8" width="3" height="3" fill="#fff" rx="0.5"/>
+      <!-- Cross on top -->
+      <path d="M12 2L12 0M9 2L12 2M15 2L12 2" stroke="${colors.stroke}" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="12" cy="2" r="1.5" fill="${colors.stroke}"/>
+    </svg>
+  `;
+
+  // If there's an image, use it as background with the icon overlay
+  if (imageUrl) {
+    return L.divIcon({
+      className: 'custom-marker',
+      html: `
+        <div style="
+          position: relative;
+          width: ${size}px;
+          height: ${size}px;
+          border-radius: 50%;
+          border: 3px solid ${colors.fill};
+          box-shadow: 0 2px 6px rgba(0,0,0,0.4), 0 0 8px ${colors.glow};
+          background-image: url('${imageUrl}');
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 4px;
+          box-sizing: border-box;
+        ">
+          <div style="
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid ${colors.stroke};
+          ">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L4 6V20H20V6L12 2Z" fill="${colors.fill}" stroke="${colors.stroke}" stroke-width="0.8"/>
+              <ellipse cx="12" cy="6" rx="3" ry="1.5" fill="${colors.fill}" stroke="${colors.stroke}" stroke-width="0.8"/>
+            </svg>
+          </div>
+        </div>
+      `,
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+    });
+  }
+
+  // Without image, show the full icon
+  return L.divIcon({
+    className: 'custom-marker',
+    html: `
+      <div style="
+        position: relative;
+        width: ${size}px;
+        height: ${size}px;
+        border-radius: 50%;
+        border: 3px solid ${colors.fill};
+        box-shadow: 0 2px 6px rgba(0,0,0,0.4), 0 0 8px ${colors.glow};
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        box-sizing: border-box;
+      ">
+        ${basilicaIconSvg}
+      </div>
+    `,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+  });
+};
+
 import type { See } from '../types';
 
 interface MapViewProps {
@@ -515,8 +703,9 @@ interface MapViewProps {
   events: Event[];
   places: Place[];
   sees: See[];
+  basilicas: Basilica[];
   currentYear: number;
-  onItemClick: (item: Person | Event) => void;
+  onItemClick: (item: Person | Event | Basilica) => void;
 }
 
 // Component to display zoom level
@@ -564,10 +753,10 @@ function ZoomAwareMarkers({
   onItemClick,
   currentYear,
 }: {
-  itemsByPlace: Map<string, Array<{ type: 'person'; data: Person } | { type: 'event'; data: Event }>>;
+  itemsByPlace: Map<string, Array<{ type: 'person'; data: Person } | { type: 'event'; data: Event } | { type: 'basilica'; data: Basilica }>>;
   placeMap: Map<string, Place>;
   activeSees: See[];
-  onItemClick: (item: Person | Event) => void;
+  onItemClick: (item: Person | Event | Basilica) => void;
   currentYear: number;
 }) {
   const map = useMap();
@@ -676,7 +865,7 @@ function ZoomAwareMarkers({
         );
       })}
 
-      {/* Render people and events */}
+      {/* Render people, events, and basilicas */}
       {Array.from(itemsByPlace.entries()).map(([placeId, items]) => {
         const place = placeMap.get(placeId);
         if (!place) return null;
@@ -727,6 +916,19 @@ function ZoomAwareMarkers({
 
             // Events get colored icons based on type
             icon = createEventIcon(event.type, cachedImageUrl);
+          } else if (item.type === 'basilica') {
+            const basilica = item.data;
+            itemName = basilica.name;
+            imageUrl = basilica.imageUrl;
+            if (imageUrl) {
+              aspectRatio = imageAspectRatios.get(imageUrl) || 1;
+            }
+
+            // Get cached image URL for map context (80px max)
+            const cachedImageUrl = getCachedImageUrl(imageUrl, 'map', 80);
+
+            // Basilicas get their special icons
+            icon = createBasilicaIcon(basilica.type, cachedImageUrl);
           } else {
             const person = item.data;
             itemName = person.name;
@@ -757,7 +959,7 @@ function ZoomAwareMarkers({
                     onClick={() => onItemClick(item.data)}
                     style={{
                       cursor: 'pointer',
-                      color: '#4a9eff',
+                      color: item.type === 'basilica' ? getBasilicaColor(item.data.type).fill : '#4a9eff',
                       fontWeight: 'bold',
                       fontSize: '14px',
                       marginBottom: '0.25rem',
@@ -778,6 +980,51 @@ function ZoomAwareMarkers({
                       {getEventColor(item.data.type).label}
                     </div>
                   )}
+                  {item.type === 'basilica' && (
+                    <>
+                      <div style={{ 
+                        fontSize: '11px', 
+                        color: getBasilicaColor(item.data.type).fill,
+                        fontStyle: 'italic',
+                        fontWeight: 'bold',
+                        marginBottom: '0.5rem'
+                      }}>
+                        {item.data.type === 'major-basilica' ? 'Major Basilica' :
+                         item.data.type === 'papal-basilica' ? 'Papal Basilica' :
+                         item.data.type === 'patriarchal-basilica' ? 'Patriarchal Basilica' :
+                         'Historic Basilica'}
+                      </div>
+                      {item.data.description && (
+                        <div style={{ fontSize: '11px', color: '#ccc', lineHeight: '1.4', marginBottom: '0.5rem' }}>
+                          {item.data.description.substring(0, 150)}{item.data.description.length > 150 ? '...' : ''}
+                        </div>
+                      )}
+                      {item.data.startYear && (
+                        <div style={{ fontSize: '10px', color: '#aaa', fontStyle: 'italic', marginBottom: '0.5rem' }}>
+                          {item.data.endYear ? `Built ${item.data.startYear} - ${item.data.endYear}` : `Built ${item.data.startYear}`}
+                        </div>
+                      )}
+                      <div
+                        onClick={() => onItemClick(item.data)}
+                        style={{
+                          fontSize: '10px',
+                          color: '#4a9eff',
+                          fontStyle: 'italic',
+                          marginTop: '0.5rem',
+                          cursor: 'pointer',
+                          textDecoration: 'underline',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.color = '#6bb3ff';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = '#4a9eff';
+                        }}
+                      >
+                        Click for details →
+                      </div>
+                    </>
+                  )}
                 </div>
               </Popup>
             </Marker>
@@ -788,12 +1035,20 @@ function ZoomAwareMarkers({
   );
 }
 
-export function MapView({ people, events, places, sees, currentYear, onItemClick }: MapViewProps) {
+export function MapView({ people, events, places, sees, basilicas, currentYear, onItemClick }: MapViewProps) {
+  const [isLegendCollapsed, setIsLegendCollapsed] = useState(false);
   const activePeople = getActivePeople(people, currentYear);
   const activeEvents = getActiveEvents(events, currentYear);
 
+  // Filter basilicas that are active in the current year
+  const activeBasilicas = basilicas.filter(basilica => {
+    const start = basilica.startYear ?? -Infinity;
+    const end = basilica.endYear ?? Infinity;
+    return currentYear >= start && currentYear <= end;
+  });
+
   // Create a map of placeId -> items at that place for offset calculation
-  type MapItem = { type: 'person'; data: Person } | { type: 'event'; data: Event };
+  type MapItem = { type: 'person'; data: Person } | { type: 'event'; data: Event } | { type: 'basilica'; data: Basilica };
   const itemsByPlace = new Map<string, MapItem[]>();
 
   // Group people by place
@@ -814,6 +1069,14 @@ export function MapView({ people, events, places, sees, currentYear, onItemClick
       }
       itemsByPlace.get(event.locationId)!.push({ type: 'event', data: event });
     }
+  });
+
+  // Group basilicas by place
+  activeBasilicas.forEach(basilica => {
+    if (!itemsByPlace.has(basilica.placeId)) {
+      itemsByPlace.set(basilica.placeId, []);
+    }
+    itemsByPlace.get(basilica.placeId)!.push({ type: 'basilica', data: basilica });
   });
 
   // Create a lookup map for places
@@ -845,32 +1108,69 @@ export function MapView({ people, events, places, sees, currentYear, onItemClick
         color: '#fff',
         fontSize: '14px',
         boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+        minWidth: isLegendCollapsed ? 'auto' : '240px',
       }}>
-        <div style={{ fontWeight: 'bold', marginBottom: '0.75rem', fontSize: '16px' }}>Map Legend</div>
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center',
+          marginBottom: isLegendCollapsed ? '0' : '0.75rem',
+        }}>
+          <div style={{ fontWeight: 'bold', fontSize: '16px' }}>Map Legend</div>
+          <button
+            onClick={() => setIsLegendCollapsed(!isLegendCollapsed)}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: '#fff',
+              cursor: 'pointer',
+              fontSize: '18px',
+              padding: '0.25rem 0.5rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderRadius: '4px',
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = 'transparent';
+            }}
+            title={isLegendCollapsed ? 'Expand legend' : 'Collapse legend'}
+          >
+            {isLegendCollapsed ? '▼' : '▲'}
+          </button>
+        </div>
+        {!isLegendCollapsed && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
           {/* Event Types */}
           <div>
             <div style={{ fontSize: '12px', color: '#aaa', marginBottom: '0.5rem', fontWeight: 'bold' }}>Events</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-              {(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other'] as EventType[]).map(type => {
+              {(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'apparition', 'other'] as EventType[]).map(type => {
                 const color = getEventColor(type);
                 const symbol = type === 'council' ? '★' : 
                                type === 'schism' ? '⚡' :
                                type === 'persecution' ? '✟' :
                                type === 'reform' ? '♻' :
                                type === 'heresy' ? '⚠' :
-                               type === 'war' ? '⚔' : '●';
+                               type === 'war' ? '⚔' :
+                               type === 'apparition' ? '✨' : '●';
                 const isDiamond = type === 'council';
+                const isApparition = type === 'apparition';
                 return (
                   <div key={type} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <div style={{
-                      backgroundColor: color.fill,
+                      background: isApparition ? `radial-gradient(circle, ${color.fill} 0%, ${color.stroke} 100%)` : color.fill,
                       width: '18px',
                       height: '18px',
                       borderRadius: isDiamond ? '0' : '50%',
                       transform: isDiamond ? 'rotate(45deg)' : 'none',
                       border: `2px solid ${color.stroke}`,
-                      boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
+                      boxShadow: isApparition 
+                        ? `0 0 8px ${color.fill}80, 0 0 12px ${color.fill}60, 0 2px 4px rgba(0,0,0,0.3)`
+                        : '0 2px 4px rgba(0,0,0,0.3)',
                       position: 'relative',
                       flexShrink: 0,
                     }}>
@@ -879,9 +1179,12 @@ export function MapView({ people, events, places, sees, currentYear, onItemClick
                         top: '50%',
                         left: '50%',
                         transform: `translate(-50%, -50%) ${isDiamond ? 'rotate(-45deg)' : 'none'}`,
-                        color: color.textColor,
+                        color: isApparition ? 'white' : color.textColor,
                         fontSize: '11px',
                         fontWeight: 'bold',
+                        textShadow: isApparition 
+                          ? `0 0 4px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)`
+                          : 'none',
                       }}>{symbol}</div>
                     </div>
                     <span style={{ fontSize: '12px' }}>{color.label}</span>
@@ -921,6 +1224,42 @@ export function MapView({ people, events, places, sees, currentYear, onItemClick
                 </div>
                 <span style={{ fontSize: '13px' }}>Important See</span>
               </div>
+            </div>
+          </div>
+
+          {/* Basilicas */}
+          <div>
+            <div style={{ fontSize: '12px', color: '#aaa', marginBottom: '0.5rem', fontWeight: 'bold' }}>Basilicas</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              {(['major-basilica', 'papal-basilica', 'patriarchal-basilica', 'historic-basilica'] as BasilicaType[]).map(type => {
+                const colors = getBasilicaColor(type);
+                const label = type === 'major-basilica' ? 'Major Basilica' :
+                             type === 'papal-basilica' ? 'Papal Basilica' :
+                             type === 'patriarchal-basilica' ? 'Patriarchal Basilica' :
+                             'Historic Basilica';
+                return (
+                  <div key={type} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <div style={{
+                      width: '24px',
+                      height: '24px',
+                      borderRadius: '50%',
+                      border: `3px solid ${colors.fill}`,
+                      boxShadow: `0 2px 4px rgba(0,0,0,0.3), 0 0 6px ${colors.glow}`,
+                      backgroundColor: '#fff',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      padding: '2px',
+                    }}>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L4 6V20H20V6L12 2Z" fill={colors.fill} stroke={colors.stroke} strokeWidth="0.8"/>
+                        <ellipse cx="12" cy="6" rx="3" ry="1.5" fill={colors.fill} stroke={colors.stroke} strokeWidth="0.8"/>
+                      </svg>
+                    </div>
+                    <span style={{ fontSize: '13px' }}>{label}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
@@ -1014,6 +1353,7 @@ export function MapView({ people, events, places, sees, currentYear, onItemClick
             </div>
           </div>
         </div>
+        )}
       </div>
 
       <MapContainer

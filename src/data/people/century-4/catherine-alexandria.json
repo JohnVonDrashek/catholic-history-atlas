@@ -1,0 +1,25 @@
+{
+  "id": "catherine-alexandria",
+  "name": "St. Catherine of Alexandria",
+  "birthYear": null,
+  "deathYear": 305,
+  "feastDay": "November 25",
+  "primaryTradition": "Greek",
+  "roles": [
+    "martyr",
+    "virgin"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Martyred in Alexandria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_of_Alexandria",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03445a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Frari_%28Venice%29_nave_right_-_Altar_of_St_Catherine_of_Alexandria.jpg/330px-Frari_%28Venice%29_nave_right_-_Altar_of_St_Catherine_of_Alexandria.jpg",
+  "summary": "Catherine of Alexandria was a Christian martyr who, according to tradition, was a learned princess who converted to Christianity and debated pagan philosophers. She was martyred by being broken on a wheel (though the wheel broke, so she was beheaded instead). She is one of the Fourteen Holy Helpers and is the patron saint of philosophers, students, librarians, and wheelwrights. Her cult was extremely popular in the Middle Ages.",
+  "keyQuotes": []
+}

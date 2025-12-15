@@ -1,0 +1,26 @@
+{
+  "id": "rita-cascia",
+  "name": "St. Rita of Cascia",
+  "birthYear": 1381,
+  "deathYear": 1457,
+  "feastDay": "May 22",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "mystic"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Augustinian nun in Cascia, Italy"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Rita_of_Cascia",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13064a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/St._Rita_of_Cascia%2C_Pampanga%2C_Aug_2025.jpg/330px-St._Rita_of_Cascia%2C_Pampanga%2C_Aug_2025.jpg",
+  "summary": "Rita of Cascia was an Italian widow and Augustinian nun known as the 'Saint of the Impossible.' After her abusive husband was murdered, she forgave his killers and entered religious life. She is known for receiving a stigmata-like wound on her forehead from a thorn from Christ's crown. She is invoked for impossible causes and difficult situations, and is particularly popular among those seeking reconciliation and peace.",
+  "keyQuotes": []
+}
+

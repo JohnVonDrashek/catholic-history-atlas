@@ -1,0 +1,24 @@
+{
+  "id": "claude-de-la-colombiere",
+  "name": "St. Claude de la Colombière",
+  "birthYear": 1641,
+  "deathYear": 1682,
+  "feastDay": "February 15",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paray-le-monial",
+      "description": "Jesuit priest and spiritual director of St. Margaret Mary Alacoque, promoter of the Sacred Heart devotion"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Claude_de_la_Colombi%C3%A8re",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04060a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/ClaudedelaColombiere.jpg/330px-ClaudedelaColombiere.jpg",
+  "summary": "Claude de la Colombière was a French Jesuit priest who served as the spiritual director of St. Margaret Mary Alacoque and played a crucial role in promoting devotion to the Sacred Heart of Jesus. He was exiled to England during anti-Catholic persecution but continued his ministry. He is known for his deep faith and support of the Sacred Heart revelations.",
+  "keyQuotes": []
+}

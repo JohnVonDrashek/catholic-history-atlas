@@ -1,4 +1,7 @@
 import albigensian_crusade from './albigensian-crusade.json';
+import apparitions_loreto from './apparitions-loreto.json';
+import apparitions_mount_carmel from './apparitions-mount-carmel.json';
+import apparitions_rosary from './apparitions-rosary.json';
 import council_lateran_iv from './council-lateran-iv.json';
 import fifth_crusade from './fifth-crusade.json';
 import fourth_crusade from './fourth-crusade.json';
@@ -9,6 +12,9 @@ import sixth_crusade from './sixth-crusade.json';
 
 export default [
   albigensian_crusade,
+  apparitions_loreto,
+  apparitions_mount_carmel,
+  apparitions_rosary,
   council_lateran_iv,
   fifth_crusade,
   fourth_crusade,

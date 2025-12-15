@@ -1,0 +1,24 @@
+{
+  "id": "alban",
+  "name": "St. Alban",
+  "birthYear": null,
+  "deathYear": 304,
+  "feastDay": "June 22",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "britain",
+      "description": "First Christian martyr of Britain, martyred in Verulamium"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Alban",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01253a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/K%C3%B6ln%2C_Ruine_-Alt_St._Alban-_--_2014_--_1904-5.jpg/330px-K%C3%B6ln%2C_Ruine_-Alt_St._Alban-_--_2014_--_1904-5.jpg",
+  "summary": "Alban was the first Christian martyr in Britain. According to tradition, he was a Roman soldier who sheltered a Christian priest during the Diocletian persecution. When soldiers came to arrest the priest, Alban exchanged clothes with him and was arrested instead. He refused to renounce his faith and was beheaded. The city of St. Albans in England is named after him, and he is considered the protomartyr of Britain.",
+  "keyQuotes": []
+}

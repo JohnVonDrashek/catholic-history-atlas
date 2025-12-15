@@ -1,0 +1,25 @@
+{
+  "id": "catherine-of-sweden",
+  "name": "St. Catherine of Sweden",
+  "birthYear": 1331,
+  "deathYear": 1381,
+  "feastDay": "March 24",
+  "primaryTradition": "Latin",
+  "roles": [
+    "nun",
+    "abbess"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "sweden",
+      "description": "Daughter of St. Bridget of Sweden, abbess of Vadstena Abbey, co-founder of the Bridgettine Order"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_of_Sweden",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03446a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Catherine_Church.JPG/330px-St_Catherine_Church.JPG",
+  "summary": "Catherine of Sweden was the daughter of St. Bridget of Sweden and became the first abbess of Vadstena Abbey. She helped her mother establish the Bridgettine Order and was known for her piety, charity, and leadership. She is venerated as a saint in Sweden and the Bridgettine Order.",
+  "keyQuotes": []
+}

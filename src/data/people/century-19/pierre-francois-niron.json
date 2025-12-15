@@ -1,0 +1,27 @@
+{
+  "id": "pierre-francois-niron",
+  "name": "St. Pierre-François Néron",
+  "birthYear": 1818,
+  "deathYear": 1860,
+  "feastDay": "November 3",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "vietnam",
+      "description": "French missionary priest martyred in Vietnam"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pierre-Fran%C3%A7ois_N%C3%A9ron",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10753a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Maison_Neron_exterieur.jpg/330px-Maison_Neron_exterieur.jpg",
+  "summary": "Pierre-François Néron was a French priest of the Paris Foreign Missions Society who was martyred in Vietnam. He worked as a missionary in Tonkin and was arrested, tortured, and beheaded during the persecution of Christians. He is one of the Martyrs of Vietnam canonized in 1988.",
+  "keyQuotes": [],
+  "writings": []
+}

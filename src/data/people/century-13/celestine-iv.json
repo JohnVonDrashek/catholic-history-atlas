@@ -1,0 +1,24 @@
+{
+  "id": "celestine-iv",
+  "name": "Pope Celestine IV",
+  "birthYear": null,
+  "deathYear": 1241,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in 1241"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Celestine_IV",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03475c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/23/179-Celestine_IV.jpg",
+  "summary": "Celestine IV, born Goffredo da Castiglione, was Pope for only about 17 days in 1241. He was elected during a period of intense conflict between the papacy and Holy Roman Emperor Frederick II. His extremely brief pontificate prevented him from taking any significant actions. He died before being consecrated as bishop of Rome, making his papacy one of the shortest in history. His election and death reflect the turbulent politics of the 13th century papacy.",
+  "keyQuotes": []
+}
+

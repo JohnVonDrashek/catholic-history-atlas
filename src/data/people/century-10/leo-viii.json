@@ -1,0 +1,24 @@
+{
+  "id": "leo-viii",
+  "name": "Pope Leo VIII",
+  "birthYear": null,
+  "deathYear": 965,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 963 to 965"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Leo_VIII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09160a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/046CupolaSPietro.jpg/330px-046CupolaSPietro.jpg",
+  "summary": "Leo VIII was Pope from 963 to 965. His election was controversial - he was installed by Holy Roman Emperor Otto I after the deposition of Pope John XII. Some consider him an antipope, while others recognize him as a legitimate pope. His pontificate reflects the political manipulation of the papacy by secular rulers during the 10th century. He worked under the influence of the emperor and his brief reign was marked by imperial control.",
+  "keyQuotes": []
+}
+

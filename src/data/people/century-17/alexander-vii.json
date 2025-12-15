@@ -1,0 +1,23 @@
+{
+  "id": "alexander-vii",
+  "name": "Pope Alexander VII",
+  "birthYear": 1599,
+  "deathYear": 1667,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1655 to 1667"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Alexander_VII",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01286b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Portrait_of_Pope_Alexander_VII_Chigi_%28by_Giovanni_Battista_Gaulli_-_Baciccio%29.jpg/330px-Portrait_of_Pope_Alexander_VII_Chigi_%28by_Giovanni_Battista_Gaulli_-_Baciccio%29.jpg",
+  "summary": "Alexander VII, born Fabio Chigi, was Pope from 1655 to 1667. He was a great patron of the arts, commissioning works by Bernini including the colonnade of St. Peter's Square and the Chair of St. Peter. He condemned Jansenism more strongly than his predecessor. He had conflicts with French King Louis XIV over the right of asylum in embassies. He worked to beautify Rome and was known for his support of the arts and architecture. His pontificate marked the height of Baroque Rome.",
+  "keyQuotes": []
+}

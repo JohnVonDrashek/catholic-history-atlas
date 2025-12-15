@@ -1,0 +1,25 @@
+{
+  "id": "laura-montoya",
+  "name": "St. Laura Montoya",
+  "birthYear": 1874,
+  "deathYear": 1949,
+  "feastDay": "May 21",
+  "primaryTradition": "Latin",
+  "roles": [
+    "religious sister",
+    "foundress"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "colombia",
+      "description": "Colombian nun who founded the Missionary Sisters of Mary Immaculate and St. Catherine of Siena"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Laura_Montoya",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09062a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Beata_Madre_Laura.JPG",
+  "summary": "Laura Montoya was a Colombian nun who founded the Missionary Sisters of Mary Immaculate and St. Catherine of Siena, dedicated to serving indigenous peoples in Colombia. She was the first Colombian to be canonized. Her work focused on education and evangelization among marginalized indigenous communities, and she is known for her deep love for the poor and her commitment to social justice.",
+  "keyQuotes": []
+}

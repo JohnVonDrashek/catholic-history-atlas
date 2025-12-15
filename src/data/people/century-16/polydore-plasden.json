@@ -1,0 +1,25 @@
+{
+  "id": "polydore-plasden",
+  "name": "St. Polydore Plasden",
+  "birthYear": 1563,
+  "deathYear": 1591,
+  "feastDay": "December 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "london",
+      "description": "Priest martyred in London, England"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Polydore_Plasden",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12167a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Saint-polydore-plasden-and-companions.png",
+  "summary": "Polydore Plasden was an English Catholic priest and martyr who was executed during the reign of Elizabeth I. He was ordained in Rome and returned to England to minister secretly to Catholics. He was arrested while saying Mass and was hanged, drawn, and quartered at Tyburn along with other priests. He is one of the Forty Martyrs of England and Wales and is remembered for his faithfulness to the Catholic Church despite the danger.",
+  "keyQuotes": []
+}

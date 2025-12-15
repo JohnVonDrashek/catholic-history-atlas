@@ -1,0 +1,26 @@
+{
+  "id": "nina-of-georgia",
+  "name": "St. Nina of Georgia",
+  "birthYear": 280,
+  "deathYear": 332,
+  "feastDay": "January 14",
+  "primaryTradition": "Greek",
+  "roles": [
+    "missionary",
+    "nun"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "georgia",
+      "description": "Evangelizer of Georgia, equal to the Apostles"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Nino",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11078a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/2025-01-10._%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA_DSC_6073.jpg/330px-2025-01-10._%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA_DSC_6073.jpg",
+  "summary": "Nina of Georgia (also known as St. Nino) was a Christian missionary who is credited with converting Georgia (Iberia) to Christianity in the early 4th century. She is honored as 'Equal to the Apostles' and is the patron saint of Georgia. Her cross, made of grapevines tied with her own hair, is a symbol of the Georgian Church.",
+  "keyQuotes": [],
+  "writings": []
+}

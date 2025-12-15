@@ -1,0 +1,27 @@
+{
+  "id": "nerses-the-gracious",
+  "name": "St. Nerses the Gracious",
+  "birthYear": 1102,
+  "deathYear": 1173,
+  "feastDay": "August 13",
+  "primaryTradition": "Armenian",
+  "roles": [
+    "bishop",
+    "poet",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "armenia",
+      "description": "Armenian Catholicos (Patriarch) and theologian"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Nerses_IV_the_Gracious",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10748a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Aram_A_-_St_Nerses_the_Gracious_and_Church_Unity.png",
+  "summary": "Nerses the Gracious (Nerses IV) was an Armenian Catholicos (Patriarch) known for his theological writings, poetry, and efforts to reform the Armenian Church. He wrote extensively on liturgy, theology, and spirituality. His epithet 'the Gracious' reflects his gentle and compassionate nature.",
+  "keyQuotes": [],
+  "writings": []
+}

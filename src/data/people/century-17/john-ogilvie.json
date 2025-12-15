@@ -1,0 +1,25 @@
+{
+  "id": "john-ogilvie",
+  "name": "St. John Ogilvie",
+  "birthYear": 1579,
+  "deathYear": 1615,
+  "feastDay": "March 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "scotland",
+      "description": "Jesuit priest martyred in Glasgow, Scotland"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Ogilvie_(saint)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11220a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/John_Ogilvie_martyr.jpg",
+  "summary": "John Ogilvie was a Scottish Jesuit priest and martyr who was executed during the reign of James VI and I. He converted to Catholicism, entered the Jesuits, and returned to Scotland to minister secretly to Catholics. He was arrested, tortured, and hanged for refusing to acknowledge the king's spiritual supremacy. He is the only post-Reformation Scottish saint and is remembered for his courage in serving the Catholic faithful in Scotland.",
+  "keyQuotes": []
+}

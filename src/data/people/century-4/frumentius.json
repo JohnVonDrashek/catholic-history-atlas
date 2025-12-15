@@ -1,0 +1,26 @@
+{
+  "id": "frumentius",
+  "name": "St. Frumentius",
+  "birthYear": null,
+  "deathYear": 383,
+  "feastDay": "October 27",
+  "primaryTradition": "Ethiopian",
+  "roles": [
+    "bishop",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "ethiopia",
+      "description": "Apostle to Ethiopia, first Bishop of Axum"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Frumentius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06308a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/St_Frumentius.jpg",
+  "summary": "Frumentius was a Syrian Christian who became the first Bishop of Axum and is credited with bringing Christianity to the Kingdom of Aksum (Ethiopia). According to tradition, he and his brother Aedesius were shipwrecked in Ethiopia, where they became tutors to the royal family. Frumentius later traveled to Alexandria, where he was consecrated as bishop by St. Athanasius. He returned to Ethiopia and established the Ethiopian Orthodox Church. He is known as Abba Salama (Father of Peace) in Ethiopia.",
+  "keyQuotes": []
+}
+

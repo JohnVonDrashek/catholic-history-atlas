@@ -1,0 +1,25 @@
+{
+  "id": "albert-chmielowski",
+  "name": "St. Albert Chmielowski",
+  "birthYear": 1845,
+  "deathYear": 1916,
+  "feastDay": "June 17",
+  "primaryTradition": "Latin",
+  "roles": [
+    "religious brother",
+    "founder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "krakow",
+      "description": "Polish artist who became a religious brother, founder of the Albertine Brothers and Sisters, served the poor in Krakow"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Albert_Chmielowski",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01266a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Dom_Modlitwy_b%C5%82._B._Jab%C5%82o%C5%84skiej_w_Pizunach_%C5%9Bw._Albert_Chmielowski%2C_b%C5%82._Bernardyna_Jab%C5%82o%C5%84ska.jpg/330px-Dom_Modlitwy_b%C5%82._B._Jab%C5%82o%C5%84skiej_w_Pizunach_%C5%9Bw._Albert_Chmielowski%2C_b%C5%82._Bernardyna_Jab%C5%82o%C5%84ska.jpg",
+  "summary": "Albert Chmielowski was a Polish artist and patriot who, after a conversion experience, gave up his artistic career to serve the poor. He founded the Albertine Brothers and Sisters, dedicating his life to caring for the homeless and destitute in Krakow. He is known as the 'Brother of Our God' and is a patron of artists.",
+  "keyQuotes": []
+}

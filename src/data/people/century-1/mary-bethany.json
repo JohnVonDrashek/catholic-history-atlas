@@ -1,0 +1,24 @@
+{
+  "id": "mary-bethany",
+  "name": "St. Mary of Bethany",
+  "birthYear": null,
+  "deathYear": 80,
+  "feastDay": "July 29",
+  "primaryTradition": "Latin",
+  "roles": [
+    "disciple"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "bethany",
+      "description": "Sister of Lazarus and Martha, friend of Jesus in Bethany"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Mary_of_Bethany",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09764a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/St_Mary_of_Bethany%27s_Church%2C_Mount_Hermon_Road%2C_Woking_%28June_2015%29_%283%29.JPG/330px-St_Mary_of_Bethany%27s_Church%2C_Mount_Hermon_Road%2C_Woking_%28June_2015%29_%283%29.JPG",
+  "summary": "Mary of Bethany was the sister of Lazarus and Martha, and a close friend of Jesus. She is known for sitting at Jesus' feet to listen to his teaching, choosing 'the better part' over busy service. She is also the one who anointed Jesus' feet with expensive perfume and wiped them with her hair, an act of profound love and devotion. Jesus praised her choice to listen to his word, saying that it would not be taken away from her. She exemplifies the contemplative life and devotion to Christ.",
+  "keyQuotes": []
+}

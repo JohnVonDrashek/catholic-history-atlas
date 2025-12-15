@@ -1,0 +1,26 @@
+{
+  "id": "macrina-elder",
+  "name": "St. Macrina the Elder",
+  "birthYear": null,
+  "deathYear": 340,
+  "feastDay": "January 14",
+  "primaryTradition": "Greek",
+  "roles": [
+    "confessor"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "caesarea-cappadocia",
+      "description": "Grandmother of Basil the Great and Gregory of Nyssa"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Macrina_the_Elder",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09500a.htm",
+  "imageUrl": null,
+  "summary": "Macrina the Elder was the grandmother of Basil the Great, Gregory of Nyssa, and Macrina the Younger. She was a disciple of Gregory Thaumaturgus and suffered during the persecution of Diocletian, though she survived. She is credited with passing on the Christian faith to her famous grandchildren, who became some of the most important Church Fathers. She is venerated as a saint and is an example of the important role of women in preserving and transmitting the faith.",
+  "keyQuotes": []
+}
+
+

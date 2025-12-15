@@ -1,0 +1,26 @@
+{
+  "id": "john-de-britto",
+  "name": "St. John de Britto",
+  "birthYear": 1647,
+  "deathYear": 1693,
+  "feastDay": "February 4",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "india",
+      "description": "Jesuit missionary in India, martyred in Tamil Nadu"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_de_Britto",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02711a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/St._John_De_Britto.jpg/330px-St._John_De_Britto.jpg",
+  "summary": "John de Britto was a Portuguese Jesuit missionary and martyr who worked in India. He adopted Indian customs and dress to better evangelize, living as a sannyasi (Hindu ascetic). He was highly successful in converting many to Christianity, including members of the royal family. He was arrested, tortured, and beheaded for his missionary work. He is known as the 'Portuguese St. Francis Xavier' and is the patron saint of Portugal.",
+  "keyQuotes": []
+}

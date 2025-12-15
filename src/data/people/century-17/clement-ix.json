@@ -1,0 +1,24 @@
+{
+  "id": "clement-ix",
+  "name": "Pope Clement IX",
+  "birthYear": 1600,
+  "deathYear": 1669,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 1667 to 1669"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Clement_IX",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04028a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Carlo_Maratta_-_Portrait_of_Pope_Clement_IX.jpg/330px-Carlo_Maratta_-_Portrait_of_Pope_Clement_IX.jpg",
+  "summary": "Clement IX, born Giulio Rospigliosi, was Pope from 1667 to 1669. He was known for his moderation and attempts to ease tensions over Jansenism. He worked to improve relations with France and tried to resolve the Jansenist controversy through a compromise formula. He was a patron of the arts and had been a poet and librettist before becoming pope. He supported missions to China and worked to help Christians persecuted in the Ottoman Empire. His brief pontificate was marked by his efforts at reconciliation.",
+  "keyQuotes": []
+}
+

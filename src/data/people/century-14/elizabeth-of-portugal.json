@@ -1,0 +1,24 @@
+{
+  "id": "elizabeth-of-portugal",
+  "name": "St. Elizabeth of Portugal",
+  "birthYear": 1271,
+  "deathYear": 1336,
+  "feastDay": "July 4",
+  "primaryTradition": "Latin",
+  "roles": [
+    "queen"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "portugal",
+      "description": "Queen of Portugal, known as the 'Peacemaker' for her role in resolving conflicts, patron saint of Portugal"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Elizabeth_of_Portugal",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05390a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Richmond_St_Elizabeth_of_Portugal_RC_Church_001.jpg/330px-Richmond_St_Elizabeth_of_Portugal_RC_Church_001.jpg",
+  "summary": "Elizabeth of Portugal was a queen of Portugal known as the 'Peacemaker' for her successful efforts in mediating conflicts between her husband, son, and other rulers. She was deeply devoted to the poor, founded hospitals and monasteries, and lived a life of prayer and penance. She is the patron saint of Portugal.",
+  "keyQuotes": []
+}

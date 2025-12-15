@@ -1,0 +1,25 @@
+{
+  "id": "alexander-briant",
+  "name": "St. Alexander Briant",
+  "birthYear": 1556,
+  "deathYear": 1581,
+  "feastDay": "December 1",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "london",
+      "description": "Priest martyred in London, England"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Alexander_Briant",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02779a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Alexander_Briant.jpg/330px-Alexander_Briant.jpg",
+  "summary": "Alexander Briant was an English Catholic priest and martyr who was executed during the reign of Elizabeth I. He was ordained in Rheims and returned to England to minister secretly. He was arrested, tortured extensively in the Tower of London, and executed at Tyburn along with Edmund Campion and Ralph Sherwin. He is one of the Forty Martyrs of England and Wales and is remembered for his youth (he was only 25 when martyred) and his courage under torture.",
+  "keyQuotes": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "theodosius-i",
+  "name": "Theodosius I",
+  "birthYear": 347,
+  "deathYear": 395,
+  "feastDay": null,
+  "primaryTradition": "Greek",
+  "roles": [
+    "emperor"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "constantinople",
+      "description": "Emperor, made Christianity the state religion"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Theodosius_I",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14573a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Missorium_of_Theodosius_I_%28detail%29.png/330px-Missorium_of_Theodosius_I_%28detail%29.png",
+  "summary": "Theodosius I, also known as Theodosius the Great, was a Roman emperor who made Nicene Christianity the official state religion of the Roman Empire. He issued the Edict of Thessalonica in 380, which declared Nicene Christianity as the only legitimate religion. He called the First Council of Constantinople in 381, which completed the Nicene Creed. He is considered an important figure in the establishment of orthodox Christianity as the dominant faith of the Roman Empire.",
+  "keyQuotes": []
+}
+

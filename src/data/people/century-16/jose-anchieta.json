@@ -1,0 +1,26 @@
+{
+  "id": "jose-anchieta",
+  "name": "St. José de Anchieta",
+  "birthYear": 1534,
+  "deathYear": 1597,
+  "feastDay": "June 9",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "missionary"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "brazil",
+      "description": "Jesuit missionary in Brazil, co-founder of São Paulo"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jos%C3%A9_de_Anchieta",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/0000_Anchieta_batisma_Indio_Diogo.JPG/330px-0000_Anchieta_batisma_Indio_Diogo.JPG",
+  "summary": "José de Anchieta was a Spanish Jesuit missionary, writer, and linguist who worked in Brazil during the colonial period. He co-founded the city of São Paulo and was instrumental in the evangelization of Brazil. He learned the Tupi language and wrote the first grammar of it, as well as plays and poetry. Known as the 'Apostle of Brazil,' he worked tirelessly to protect and evangelize the indigenous peoples.",
+  "keyQuotes": []
+}
+

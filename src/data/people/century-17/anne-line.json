@@ -1,0 +1,24 @@
+{
+  "id": "anne-line",
+  "name": "St. Anne Line",
+  "birthYear": 1563,
+  "deathYear": 1601,
+  "feastDay": "February 27",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "london",
+      "description": "Martyred in London, England"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Anne_Line",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09260a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/St_Anne_Line.jpg",
+  "summary": "Anne Line was an English Catholic martyr who was executed for harboring priests during the Elizabethan persecution. After her husband was exiled for his faith, she managed a safe house for priests in London. She was arrested when authorities discovered a Mass being celebrated in her home. She was hanged at Tyburn for her role in protecting Catholic priests. She is one of the Forty Martyrs of England and Wales.",
+  "keyQuotes": []
+}

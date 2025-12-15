@@ -1,0 +1,25 @@
+{
+  "id": "veronica",
+  "name": "St. Veronica",
+  "birthYear": null,
+  "deathYear": 1,
+  "feastDay": "July 12",
+  "primaryTradition": "Latin",
+  "roles": [
+    "confessor"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "jerusalem",
+      "description": "Wiped the face of Jesus on the way to Calvary"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Veronica",
+  "newAdventUrl": "https://www.newadvent.org/cathen/15362a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Hans_Memling_026.jpg/330px-Hans_Memling_026.jpg",
+  "summary": "Veronica is a legendary figure from the Passion of Christ who, according to tradition, wiped the face of Jesus with her veil as he carried the cross to Calvary. The image of Christ's face was miraculously imprinted on the cloth, which became known as the Veil of Veronica. While the historicity of Veronica is uncertain, she has been venerated as a saint and is one of the Stations of the Cross. Her name is said to mean 'true image' (vera icon).",
+  "keyQuotes": []
+}
+

@@ -1,0 +1,40 @@
+{
+  "id": "john-cassian",
+  "name": "St. John Cassian",
+  "birthYear": 360,
+  "deathYear": 435,
+  "feastDay": "July 23",
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "marseille",
+      "description": "Founded monasteries in Marseille"
+    },
+    {
+      "placeId": "bethlehem",
+      "description": "Monk in Bethlehem"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Cassian",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03404a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/John_Cassian.jpeg/330px-John_Cassian.jpeg",
+  "summary": "John Cassian was a monk and theologian who brought Eastern monasticism to the West. He spent time in Egypt and Palestine learning from the Desert Fathers, then founded monasteries in Marseille. His 'Institutes' and 'Conferences' are foundational texts for Western monasticism and influenced Benedict of Nursia. He is considered a saint in both East and West, though his views on grace and free will were controversial.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Institutes of the Coenobia",
+      "url": "https://www.ccel.org/ccel/cassian/institutes.html"
+    },
+    {
+      "title": "Conferences",
+      "url": "https://www.ccel.org/ccel/cassian/conferences.html"
+    }
+  ]
+}
+

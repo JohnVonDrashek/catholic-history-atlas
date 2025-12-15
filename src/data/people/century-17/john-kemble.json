@@ -1,0 +1,25 @@
+{
+  "id": "john-kemble",
+  "name": "St. John Kemble",
+  "birthYear": 1599,
+  "deathYear": 1679,
+  "feastDay": "August 22",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "britain",
+      "description": "Priest martyred in Hereford, England"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Kemble_(martyr)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08615a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/St_John_Kemble_Church_-_geograph.org.uk_-_835615.jpg/330px-St_John_Kemble_Church_-_geograph.org.uk_-_835615.jpg",
+  "summary": "John Kemble was an English Catholic priest and martyr who was executed during the reign of Charles II. He was ordained in Douai and returned to England, where he ministered for over 50 years in Herefordshire. At the age of 80, he was arrested, tried, and executed at Widemarsh Common. He is one of the Forty Martyrs of England and Wales and is remembered for his long and faithful service despite the danger.",
+  "keyQuotes": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "abraham-kashkar",
+  "name": "St. Abraham of Kashkar",
+  "birthYear": 491,
+  "deathYear": 586,
+  "feastDay": "February 15",
+  "primaryTradition": "Syriac",
+  "roles": [
+    "monk",
+    "abbot"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "mount-izla",
+      "description": "Founded Great Monastery on Mount Izla, Mesopotamia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Abraham_of_Kashkar",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01051a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Introduction_to_the_Assyrian_church.djvu/page1-330px-Introduction_to_the_Assyrian_church.djvu.jpg",
+  "summary": "Abraham of Kashkar was a Syriac monk who founded the Great Monastery on Mount Izla in Mesopotamia. He was a key figure in the revival of East Syriac monasticism in the 6th century. His monastery became a major center of learning and spirituality for the Church of the East. He established strict monastic rules and his influence spread throughout the Persian Empire.",
+  "keyQuotes": []
+}
+

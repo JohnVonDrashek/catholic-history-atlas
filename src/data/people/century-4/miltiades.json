@@ -1,0 +1,25 @@
+{
+  "id": "miltiades",
+  "name": "Pope St. Miltiades",
+  "birthYear": null,
+  "deathYear": 314,
+  "feastDay": "December 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 311 to 314"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Miltiades",
+  "newAdventUrl": "https://www.newadvent.org/cathen/10312a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Pope_miltiades.jpg/330px-Pope_miltiades.jpg",
+  "summary": "Miltiades (also known as Melchiades) was Pope from 311 to 314. His pontificate marked a significant turning point in Church history as it began after the Edict of Milan (313), which granted religious tolerance to Christians throughout the Roman Empire. He was the first pope to serve after the end of the Diocletianic Persecution. He presided over a synod in Rome that dealt with the Donatist controversy in Africa. He received the Lateran Palace as a gift from Emperor Constantine, which became the papal residence.",
+  "keyQuotes": []
+}
+

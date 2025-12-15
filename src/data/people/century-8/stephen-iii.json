@@ -1,0 +1,24 @@
+{
+  "id": "stephen-iii",
+  "name": "Pope Stephen III (IV)",
+  "birthYear": 720,
+  "deathYear": 772,
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "orthodox",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 768 to 772"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Stephen_III",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14290a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/Stephen_II_%28III%29.jpg",
+  "summary": "Stephen III (also numbered as Stephen IV) was Pope from 768 to 772. His election was marked by violence and conflict among competing factions in Rome. He worked to strengthen the papacy's relationship with the Frankish kings, particularly Charlemagne and Carloman. He condemned iconoclasm at a Lateran synod in 769. His pontificate was marked by political instability in Italy and the growing power of the Carolingians.",
+  "keyQuotes": []
+}
+

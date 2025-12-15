@@ -1,0 +1,33 @@
+{
+  "id": "isaac-niniveh",
+  "name": "St. Isaac of Nineveh",
+  "birthYear": 613,
+  "deathYear": 700,
+  "feastDay": "January 28",
+  "primaryTradition": "Syriac",
+  "roles": [
+    "bishop",
+    "monk",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "nineveh",
+      "description": "Bishop of Nineveh, later hermit in Mesopotamia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Isaac_of_Nineveh",
+  "newAdventUrl": "https://www.newadvent.org/cathen/08175a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Manuscript_of_Isaac_the_Syrian%27s_Ascetical_Homilies%2C_Greek_translation%2C_Saint_Catherine%27s_Monastery_Sinai%2C_14th-century.png/330px-Manuscript_of_Isaac_the_Syrian%27s_Ascetical_Homilies%2C_Greek_translation%2C_Saint_Catherine%27s_Monastery_Sinai%2C_14th-century.png",
+  "summary": "Isaac of Nineveh, also known as Isaac the Syrian, was a 7th-century bishop and ascetic writer. He was briefly Bishop of Nineveh but resigned to become a hermit in the mountains of Huzistan. His extensive writings on asceticism, prayer, and the spiritual life are highly regarded in both Eastern and Oriental Orthodox traditions. His works were translated into Greek and influenced Byzantine spirituality.",
+  "keyQuotes": [],
+  "writings": [
+    {
+      "title": "Ascetical Homilies",
+      "url": "https://www.ccel.org/ccel/isaac_nineveh/homilies.html"
+    }
+  ]
+}
+

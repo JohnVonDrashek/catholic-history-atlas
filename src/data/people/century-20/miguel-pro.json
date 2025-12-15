@@ -1,0 +1,28 @@
+{
+  "id": "miguel-pro",
+  "name": "St. Miguel Pro",
+  "birthYear": 1891,
+  "deathYear": 1927,
+  "feastDay": "November 23",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "mexico",
+      "description": "Jesuit priest martyred during the Cristero War in Mexico"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Miguel_Pro",
+  "newAdventUrl": null,
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Iglesia_de_San_Miguel%2C_Manila%2C_Filipinas%2C_2023-08-27%2C_DD_29-31_HDR.jpg/330px-Iglesia_de_San_Miguel%2C_Manila%2C_Filipinas%2C_2023-08-27%2C_DD_29-31_HDR.jpg",
+  "summary": "Miguel Pro was a Mexican Jesuit priest who was executed during the Cristero War, a period of intense persecution of the Catholic Church in Mexico. Despite the ban on public worship, he continued to minister secretly, celebrating Mass and administering sacraments in disguise. He was arrested and executed by firing squad, famously shouting 'Viva Cristo Rey!' (Long live Christ the King!) before his death. His martyrdom became a symbol of resistance to religious persecution.",
+  "keyQuotes": [
+    "Viva Cristo Rey!"
+  ]
+}
+

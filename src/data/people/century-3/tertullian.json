@@ -1,0 +1,48 @@
+{
+  "id": "tertullian",
+  "name": "Tertullian",
+  "birthYear": 155,
+  "deathYear": 240,
+  "feastDay": null,
+  "primaryTradition": "Latin",
+  "roles": [
+    "apologist",
+    "theologian",
+    "writer"
+  ],
+  "orthodoxyStatus": "heretic",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "carthage",
+      "description": "Lived and wrote in Carthage"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Tertullian",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14520c.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Tertullian2.png/330px-Tertullian2.png",
+  "summary": "Tertullian was a prolific early Christian author from Carthage in the Roman province of Africa. He was the first Christian author to produce an extensive corpus of Latin Christian literature. He is known for his apologetic works, theological treatises, and his later association with Montanism. His writings had a profound influence on Western Christianity, and he coined many theological terms including 'Trinity' (Trinitas).",
+  "keyQuotes": [
+    "The blood of the martyrs is the seed of the Church.",
+    "What has Athens to do with Jerusalem? What has the Academy to do with the Church?"
+  ],
+  "writings": [
+    {
+      "title": "Apology",
+      "url": "https://www.ccel.org/ccel/schaff/anf03.iv.iv.html"
+    },
+    {
+      "title": "On Prescription Against Heretics",
+      "url": "https://www.ccel.org/ccel/schaff/anf03.iv.xi.html"
+    },
+    {
+      "title": "Against Praxeas",
+      "url": "https://www.ccel.org/ccel/schaff/anf03.iv.xvii.html"
+    }
+  ]
+}
+
+
+
+
+

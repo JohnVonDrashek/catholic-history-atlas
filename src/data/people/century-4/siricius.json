@@ -1,0 +1,25 @@
+{
+  "id": "siricius",
+  "name": "Pope St. Siricius",
+  "birthYear": 334,
+  "deathYear": 399,
+  "feastDay": "November 26",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope from 384 to 399"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Siricius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14026a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Vatikan_384-398_Siricius_Medaille_Zinn_MD00015.jpg/330px-Vatikan_384-398_Siricius_Medaille_Zinn_MD00015.jpg",
+  "summary": "Siricius was Pope from 384 to 399 and is considered the first pope to issue decretals (papal letters with the force of law) that have been preserved. He strengthened papal authority by asserting the Bishop of Rome's primacy over other bishops. He condemned the Priscillianist heresy and worked to maintain orthodoxy. He also opposed the bishop of Milan, who was attempting to assert authority in Italy. His pontificate helped establish the papal role as the supreme authority in matters of faith and discipline.",
+  "keyQuotes": []
+}
+

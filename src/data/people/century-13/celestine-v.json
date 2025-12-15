@@ -1,0 +1,26 @@
+{
+  "id": "celestine-v",
+  "name": "Pope St. Celestine V",
+  "birthYear": 1215,
+  "deathYear": 1296,
+  "feastDay": "May 19",
+  "primaryTradition": "Latin",
+  "roles": [
+    "pope",
+    "monk"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Pope in 1294, resigned"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pope_Celestine_V",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03479b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Celestine_V_Castel_Nuovo_Napoli_n02.jpg/330px-Celestine_V_Castel_Nuovo_Napoli_n02.jpg",
+  "summary": "Celestine V, born Pietro Angelerio (Peter of Morrone), was Pope from July to December 1294. He was a Benedictine hermit who reluctantly accepted the papacy after a two-year vacancy. Feeling unfit for the office, he issued a decree allowing a pope to resign, then became the first pope to abdicate voluntarily. He was succeeded by Boniface VIII, who had him imprisoned. He died in captivity in 1296 and was canonized in 1313. Dante placed him in Hell's antechamber in the Divine Comedy, though this may refer to his supposed cowardice rather than sin.",
+  "keyQuotes": []
+}
+

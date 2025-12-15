@@ -1,0 +1,25 @@
+{
+  "id": "toribio-mogrovejo",
+  "name": "St. Toribio de Mogrovejo",
+  "birthYear": 1538,
+  "deathYear": 1606,
+  "feastDay": "March 23",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "peru",
+      "description": "Archbishop of Lima, Peru"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Toribio_de_Mogrovejo",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14778a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Turibius_de_Mongrovejo.jpg",
+  "summary": "Toribio de Mogrovejo was a Spanish archbishop of Lima, Peru, who worked tirelessly to reform the Church in the Americas and protect the rights of indigenous peoples. He learned Quechua and other native languages to better serve his flock. He convened the Third Council of Lima, which established important guidelines for the Church in South America. He traveled extensively throughout his vast archdiocese, often on foot, to visit and care for his people.",
+  "keyQuotes": []
+}
+

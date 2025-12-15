@@ -1,0 +1,26 @@
+{
+  "id": "nino",
+  "name": "St. Nino",
+  "birthYear": 296,
+  "deathYear": 340,
+  "feastDay": "January 14",
+  "primaryTradition": "Georgian",
+  "roles": [
+    "missionary",
+    "virgin"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "georgia",
+      "description": "Apostle to Georgia, converted Georgia to Christianity"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Nino",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11087a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Santa_Nina.jpg",
+  "summary": "Nino was a Christian missionary who is credited with converting Georgia (Iberia) to Christianity. According to tradition, she was a captive from Cappadocia who performed miracles and converted Queen Nana and then King Mirian III of Iberia. Her preaching led to the Christianization of Georgia in 337 AD, making it one of the earliest Christian nations. She is venerated as the patron saint of Georgia and is also known as Equal-to-the-Apostles.",
+  "keyQuotes": []
+}
+

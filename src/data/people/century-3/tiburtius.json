@@ -1,0 +1,25 @@
+{
+  "id": "tiburtius",
+  "name": "St. Tiburtius",
+  "birthYear": null,
+  "deathYear": 229,
+  "feastDay": "April 14",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Martyred in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Valerian_and_Tiburtius",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14720a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Steinach-M%C3%BCnster-Kirche-Sankt-Tiburtius.jpg/330px-Steinach-M%C3%BCnster-Kirche-Sankt-Tiburtius.jpg",
+  "summary": "Tiburtius was a Roman and Christian martyr who died in Rome. According to tradition, he was the brother of Valerian, who was married to St. Cecilia. He was converted to Christianity along with his brother and was martyred for his faith. He is venerated as a saint and is often depicted with his brother Valerian and sister-in-law Cecilia.",
+  "keyQuotes": []
+}
+
