@@ -1,0 +1,24 @@
+{
+  "id": "theodotus-tanner",
+  "name": "Theodotus the Tanner",
+  "birthYear": null,
+  "deathYear": 200,
+  "primaryTradition": "Greek",
+  "roles": [
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Taught in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Theodotus_of_Byzantium",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Theodotus_the_Cobbler.png/330px-Theodotus_the_Cobbler.png",
+  "summary": "Theodotus the Tanner was a 2nd-century Adoptionist heretic who taught in Rome. He was the leader of the Theodotians, who taught that Jesus was a mere man who was adopted as the Son of God at his baptism. This form of Adoptionism denied the pre-existence and divinity of Christ. Theodotus was excommunicated by Pope Victor I around 190. His teachings were opposed by Hippolytus of Rome and other early Church Fathers. The Adoptionist heresy would later resurface in Spain in the 8th century.",
+  "keyQuotes": [],
+  "writings": []
+}
+

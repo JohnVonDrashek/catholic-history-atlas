@@ -1,0 +1,26 @@
+{
+  "id": "raymond-nonnatus",
+  "name": "St. Raymond Nonnatus",
+  "birthYear": 1204,
+  "deathYear": 1240,
+  "feastDay": "August 31",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "cardinal"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "cardona",
+      "description": "Born and raised in Cardona, Catalonia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Raymond_Nonnatus",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cathedral_of_St._Raymond_Nonnatus_-_Joliet_01.JPG/330px-Cathedral_of_St._Raymond_Nonnatus_-_Joliet_01.JPG",
+  "summary": "Raymond Nonnatus was a Spanish priest and cardinal of the Catholic Church, known for his work in redeeming Christian captives from Muslim hands and his dedication to the Mercedarian order. He was canonized in 1657.",
+  "keyQuotes": [],
+  "writings": [],
+  "newAdventUrl": "https://www.newadvent.org/cathen/12671b.htm"
+}

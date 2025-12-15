@@ -1,0 +1,24 @@
+{
+  "id": "michael-los-santos",
+  "name": "St. Michael de los Santos",
+  "birthYear": 1591,
+  "deathYear": 1625,
+  "feastDay": "September 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "valladolid",
+      "description": "Trinitarian priest in Valladolid"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Michael_dos_Santos",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ru%C3%ADnas_de_S%C3%A3o_Miguel_-_St._Michael_of_the_Missions_-_Rio_Grande_do_Sul_-_Brazil_08.jpg/330px-Ru%C3%ADnas_de_S%C3%A3o_Miguel_-_St._Michael_of_the_Missions_-_Rio_Grande_do_Sul_-_Brazil_08.jpg",
+  "summary": "Michael de los Santos was a Spanish Trinitarian priest known for his piety, work with the poor, and miraculous intercession. He was canonized in 1862 and is invoked for help with various needs.",
+  "keyQuotes": [],
+  "writings": []
+}

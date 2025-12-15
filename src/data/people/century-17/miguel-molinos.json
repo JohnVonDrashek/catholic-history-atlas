@@ -1,0 +1,26 @@
+{
+  "id": "miguel-molinos",
+  "name": "Miguel de Molinos",
+  "birthYear": 1628,
+  "deathYear": 1696,
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "mystic",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Priest and mystic in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Miguel_de_Molinos",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Miguel_de_Molinos_1687.jpg/330px-Miguel_de_Molinos_1687.jpg",
+  "summary": "Miguel de Molinos was a Spanish priest and mystic who founded Quietism, a form of Christian mysticism. He taught that the highest form of prayer was passive contemplation, in which the soul should remain quiet and let God work. He also taught that once the soul had achieved perfect union with God, it no longer needed to resist temptation or perform good works. His book 'The Spiritual Guide' was widely read but was condemned by the Inquisition in 1687. He was imprisoned in Rome and died in prison. Quietism was condemned as heretical by Pope Innocent XI.",
+  "keyQuotes": [],
+  "writings": []
+}
+

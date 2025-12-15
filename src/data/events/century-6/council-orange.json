@@ -1,0 +1,16 @@
+{
+  "id": "council-orange",
+  "name": "Council of Orange",
+  "startYear": 529,
+  "endYear": 529,
+  "type": "council",
+  "locationId": "orange",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Orange",
+  "newAdventUrl": "https://www.newadvent.org/cathen/11284a.htm",
+  "summary": "The Council of Orange in 529 AD, under Caesarius of Arles, addressed Semi-Pelagianism and affirmed Augustinian theology on grace and free will. It condemned the idea that humans can take the first step toward salvation without divine grace, establishing orthodox teaching on the relationship between grace and human freedom.",
+  "keyDocuments": [
+    "Canons on Grace",
+    "Condemnation of Semi-Pelagianism"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/An_orange_tree_in_April_season.jpg/330px-An_orange_tree_in_April_season.jpg"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "peter-mongus",
+  "name": "Peter Mongus",
+  "birthYear": null,
+  "deathYear": 490,
+  "primaryTradition": "Greek",
+  "roles": [
+    "patriarch",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Patriarch of Alexandria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_III_of_Alexandria",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mongu_District%2C_Zambia_2022.png/330px-Mongu_District%2C_Zambia_2022.png",
+  "summary": "Peter Mongus (the Hoarse) was Patriarch of Alexandria from 477 to 490 and a leading Monophysite. He succeeded Timothy Aelurus and continued to oppose the Council of Chalcedon. He was excommunicated by Pope Felix III for his Monophysite views and for accepting the Henoticon, an attempt to reconcile Chalcedonians and non-Chalcedonians. He played a key role in the Acacian Schism between Rome and Constantinople. His support for Monophysitism contributed to the permanent schism between the Chalcedonian and non-Chalcedonian churches.",
+  "keyQuotes": [],
+  "writings": []
+}
+

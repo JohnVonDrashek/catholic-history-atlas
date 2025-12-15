@@ -1,0 +1,25 @@
+{
+  "id": "bogomil",
+  "name": "Bogomil",
+  "birthYear": null,
+  "deathYear": 950,
+  "primaryTradition": "Greek",
+  "roles": [
+    "priest",
+    "founder"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "bulgaria",
+      "description": "Founded Bogomilism in Bulgaria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Bogomilism",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Bogomil_Petkov_%2847NS%29.png/330px-Bogomil_Petkov_%2847NS%29.png",
+  "summary": "Bogomil was a 10th-century Bulgarian priest who founded Bogomilism, a dualistic Christian sect that combined elements of Paulicianism and Manichaeism. He taught that the material world was created by Satan, not God, and that Christ was a purely spiritual being who only appeared to have a body. The Bogomils rejected the Old Testament, the cross, icons, and the Church hierarchy. The movement spread throughout the Balkans and influenced the Cathars in Western Europe. Bogomilism was condemned by both the Eastern Orthodox and Catholic Churches and was eventually suppressed.",
+  "keyQuotes": [],
+  "writings": []
+}
+

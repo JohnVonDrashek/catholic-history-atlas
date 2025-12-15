@@ -1,0 +1,28 @@
+{
+  "id": "praxeas",
+  "name": "Praxeas",
+  "birthYear": null,
+  "deathYear": 220,
+  "primaryTradition": "Latin",
+  "roles": [
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Taught in Rome"
+    },
+    {
+      "placeId": "carthage",
+      "description": "Taught in Carthage"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Praxeas",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/%D0%9F%D1%80%D0%BE%D1%82%D0%B8%D0%B2_%D0%9F%D1%80%D0%B0%D0%BA%D1%81%D0%B5%D1%8F.PNG/330px-%D0%9F%D1%80%D0%BE%D1%82%D0%B8%D0%B2_%D0%9F%D1%80%D0%B0%D0%BA%D1%81%D0%B5%D1%8F.PNG",
+  "summary": "Praxeas was a 2nd-3rd century Modalist heretic who taught Patripassianism in Rome and Carthage. He denied the distinction between the Father and Son, teaching that they were the same person and that the Father suffered on the cross. Tertullian wrote 'Against Praxeas,' one of the most important early works on the Trinity, in response to his teachings. Praxeas' teachings were condemned as heretical because they denied the real distinction between the persons of the Trinity and implied that the Father suffered (Patripassianism).",
+  "keyQuotes": [],
+  "writings": []
+}
+

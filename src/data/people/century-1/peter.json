@@ -23,7 +23,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Peter",
-  "newAdventUrl": "https://www.newadvent.org/cathen/11744a.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Saint_Peter-Sinai_%286th_Century%29_Crop.jpg/330px-Saint_Peter-Sinai_%286th_Century%29_Crop.jpg",
   "summary": "Simon Peter, also known as Cephas, was one of the Twelve Apostles of Jesus Christ and the first Bishop of Rome (Pope). He is traditionally considered the leader of the apostles and the foundation of the Church. According to tradition, he was martyred in Rome by crucifixion, upside down at his own request.",
   "keyQuotes": [
@@ -39,5 +38,6 @@
       "title": "Second Letter of Peter",
       "url": "https://bible.usccb.org/bible/2peter/0"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/../cathen/03551e.htm"
 }

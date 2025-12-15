@@ -1,4 +1,5 @@
 import angela_foligno from './angela-foligno.json';
+import barlaam from './barlaam.json';
 import benedict_xii from './benedict-xii.json';
 import boniface_viii from './boniface-viii.json';
 import bridget_sweden from './bridget-sweden.json';
@@ -15,6 +16,7 @@ import john_nepomucene from './john-nepomucene.json';
 import john_nepomuk from './john-nepomuk.json';
 import john_tauler from './john-tauler.json';
 import john_wycliffe from './john-wycliffe.json';
+import marguerite_porete from './marguerite-porete.json';
 import marsilius_padua from './marsilius-padua.json';
 import meister_eckhart from './meister-eckhart.json';
 import urban_v from './urban-v.json';
@@ -23,6 +25,7 @@ import william_ockham from './william-ockham.json';
 
 export default [
   angela_foligno,
+  barlaam,
   benedict_xii,
   boniface_viii,
   bridget_sweden,
@@ -39,6 +42,7 @@ export default [
   john_nepomuk,
   john_tauler,
   john_wycliffe,
+  marguerite_porete,
   marsilius_padua,
   meister_eckhart,
   urban_v,

@@ -1,0 +1,16 @@
+{
+  "id": "council-toledo-i",
+  "name": "First Council of Toledo",
+  "startYear": 400,
+  "endYear": 400,
+  "type": "council",
+  "locationId": "toledo",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Toledo",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14746a.htm",
+  "summary": "The First Council of Toledo in 400 AD was the first national council of the Visigothic Kingdom in Spain. It addressed church discipline, clerical marriage, and the relationship between church and state. The council marked the beginning of the long series of Councils of Toledo that shaped Spanish Christianity.",
+  "keyDocuments": [
+    "Canons of Toledo I",
+    "Regulations for Clergy"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/The_National_Union%2C_Toledo_Council_No._50_-_DPLA_-_5b8c72573fef37b29be84e9d435a0363_%28page_1%29.jpg/330px-The_National_Union%2C_Toledo_Council_No._50_-_DPLA_-_5b8c72573fef37b29be84e9d435a0363_%28page_1%29.jpg"
+}

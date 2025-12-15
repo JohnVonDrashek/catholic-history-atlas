@@ -18,7 +18,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Cyril_of_Alexandria",
-  "newAdventUrl": "https://www.newadvent.org/cathen/04592b.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Chora-Kirche_2013-03-21zh_%28cropped%29.jpg/330px-Chora-Kirche_2013-03-21zh_%28cropped%29.jpg",
   "summary": "Cyril of Alexandria was a bishop and theologian who played a central role in the Council of Ephesus (431), where he defended the title 'Theotokos' (God-bearer) for the Virgin Mary and opposed Nestorianism. He is considered a Doctor of the Church and is known for his extensive theological writings.",
   "keyQuotes": [
@@ -37,5 +36,6 @@
       "title": "Letters",
       "url": "https://www.ccel.org/ccel/schaff/npnf214.viii.html"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/04592b.htm"
 }

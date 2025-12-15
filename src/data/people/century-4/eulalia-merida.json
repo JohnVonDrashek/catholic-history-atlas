@@ -1,0 +1,24 @@
+{
+  "id": "eulalia-merida",
+  "name": "St. Eulalia of Mérida",
+  "birthYear": 290,
+  "deathYear": 304,
+  "feastDay": "December 10",
+  "primaryTradition": "Latin",
+  "roles": [
+    "virgin"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "merida",
+      "description": "Martyred in Mérida during the Diocletianic Persecution"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Eulalia_of_M%C3%A9rida",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Bas%C3%ADlica_de_Santa_Eulalia_edited.jpg/330px-Bas%C3%ADlica_de_Santa_Eulalia_edited.jpg",
+  "summary": "Eulalia of Mérida was a young Christian virgin who suffered martyrdom during the Diocletianic Persecution in Roman Hispania. According to tradition, she was only 12 years old when she died for her faith.",
+  "keyQuotes": [],
+  "writings": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "peter-bruys",
+  "name": "Peter of Bruys",
+  "birthYear": null,
+  "deathYear": 1131,
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "preacher"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "toulouse",
+      "description": "Preached in southern France"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_of_Bruys",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Pierre_de_Bruys_burned%2C_c._1131.jpg/330px-Pierre_de_Bruys_burned%2C_c._1131.jpg",
+  "summary": "Peter of Bruys was a 12th-century French priest who founded the Petrobrusian movement. He rejected infant baptism, the veneration of the cross, prayers for the dead, the Real Presence in the Eucharist, and the authority of the Church hierarchy. He and his followers burned crosses and destroyed churches. His teachings influenced later anti-clerical movements including the Cathars. He was killed by an angry mob in 1131 while attempting to burn crosses. St. Peter the Venerable wrote 'Against the Petrobrusians' in response to his teachings.",
+  "keyQuotes": [],
+  "writings": []
+}
+

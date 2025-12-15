@@ -3,6 +3,8 @@ import apparitions_loreto from './apparitions-loreto.json';
 import apparitions_mount_carmel from './apparitions-mount-carmel.json';
 import apparitions_rosary from './apparitions-rosary.json';
 import council_lateran_iv from './council-lateran-iv.json';
+import council_lyon_i from './council-lyon-i.json';
+import council_lyon_ii from './council-lyon-ii.json';
 import fifth_crusade from './fifth-crusade.json';
 import fourth_crusade from './fourth-crusade.json';
 import inquisition_established from './inquisition-established.json';
@@ -16,6 +18,8 @@ export default [
   apparitions_mount_carmel,
   apparitions_rosary,
   council_lateran_iv,
+  council_lyon_i,
+  council_lyon_ii,
   fifth_crusade,
   fourth_crusade,
   inquisition_established,

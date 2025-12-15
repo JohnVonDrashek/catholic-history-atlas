@@ -42,7 +42,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Paul_the_Apostle",
-  "newAdventUrl": "https://www.newadvent.org/cathen/11567b.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Fresco_of_Saint_Paul_at_Ephesus.jpg/330px-Fresco_of_Saint_Paul_at_Ephesus.jpg",
   "summary": "Paul the Apostle, originally known as Saul of Tarsus, was a major figure in the spread of Christianity throughout the Roman Empire. After his dramatic conversion on the road to Damascus, he became the 'Apostle to the Gentiles' and wrote many of the New Testament epistles. He was martyred in Rome by beheading.",
   "keyQuotes": [
@@ -102,5 +101,6 @@
       "title": "Letter to Philemon",
       "url": "https://bible.usccb.org/bible/philemon/0"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/../cathen/11577a.htm"
 }

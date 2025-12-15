@@ -1,0 +1,16 @@
+{
+  "id": "council-arles",
+  "name": "Council of Arles",
+  "startYear": 314,
+  "endYear": 314,
+  "type": "council",
+  "locationId": "arles",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Arles",
+  "newAdventUrl": "https://www.newadvent.org/cathen/01731b.htm",
+  "summary": "The Council of Arles was the first council called by Emperor Constantine the Great, held in 314 AD. It addressed the Donatist schism in North Africa and established canons for church discipline. The council marked an important step in the relationship between Church and state in the Roman Empire.",
+  "keyDocuments": [
+    "Canons of Arles",
+    "Condemnation of Donatism"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/P1370723_Arles_eglise_St-Trophime_concile_eveques_detail_Contumeliosus_rwk.jpg/330px-P1370723_Arles_eglise_St-Trophime_concile_eveques_detail_Contumeliosus_rwk.jpg"
+}

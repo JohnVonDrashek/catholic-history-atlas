@@ -1,0 +1,27 @@
+{
+  "id": "eutyches",
+  "name": "Eutyches",
+  "birthYear": 378,
+  "deathYear": 454,
+  "primaryTradition": "Greek",
+  "roles": [
+    "archimandrite",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "constantinople",
+      "description": "Archimandrite of Constantinople"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Eutyches",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05647a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Italian_-_Pendant_with_an_Intaglio_of_Pallas_Athena_-_Walters_421028.jpg/330px-Italian_-_Pendant_with_an_Intaglio_of_Pallas_Athena_-_Walters_421028.jpg",
+  "summary": "Eutyches was an archimandrite of a monastery near Constantinople who taught an extreme form of Monophysitism. He denied that Christ had two natures after the Incarnation, teaching instead that Christ had only one nature, with the human nature being absorbed into the divine. His teachings were condemned at the Council of Chalcedon in 451, which affirmed the doctrine of two natures in one person. Eutyches' position led to the formation of the non-Chalcedonian churches, including the Coptic, Syriac, and Armenian churches.",
+  "keyQuotes": [
+    "I confess that our Lord was of two natures before the union, but after the union I confess one nature."
+  ],
+  "writings": []
+}

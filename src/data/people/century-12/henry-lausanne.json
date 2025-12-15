@@ -1,0 +1,24 @@
+{
+  "id": "henry-lausanne",
+  "name": "Henry of Lausanne",
+  "birthYear": null,
+  "deathYear": 1148,
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "preacher"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lyons",
+      "description": "Preached in Lausanne and southern France"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Henry_of_Lausanne",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/IARU-Congr%C3%A8s1953-Lausanne-p2-sign.jpg/330px-IARU-Congr%C3%A8s1953-Lausanne-p2-sign.jpg",
+  "summary": "Henry of Lausanne was a 12th-century wandering preacher who was condemned as a heretic. He preached against clerical corruption, simony, and the wealth of the Church. He rejected infant baptism, the Eucharist, and the authority of the clergy. His teachings influenced the Cathar movement and other anti-clerical movements of the time. He was condemned at the Council of Pisa in 1135 and again at the Council of Reims in 1148. St. Bernard of Clairvaux preached against him and his followers. He was eventually captured and imprisoned, where he died.",
+  "keyQuotes": [],
+  "writings": []
+}

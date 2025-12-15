@@ -1,0 +1,24 @@
+{
+  "id": "froilan",
+  "name": "St. Froilan",
+  "birthYear": 832,
+  "deathYear": 905,
+  "feastDay": "October 5",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "leon",
+      "description": "Bishop of León and founder of monasteries"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Froilan",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Portada_de_San_Froil%C3%A1n%2C_Catedral_de_Le%C3%B3n.jpg/330px-Portada_de_San_Froil%C3%A1n%2C_Catedral_de_Le%C3%B3n.jpg",
+  "summary": "Froilan was a Spanish bishop of León during the 9th century, known for his piety, founding of monasteries, and work during the Moorish occupation of Spain. He is considered one of the great figures of the Spanish Church during that period.",
+  "keyQuotes": [],
+  "writings": []
+}

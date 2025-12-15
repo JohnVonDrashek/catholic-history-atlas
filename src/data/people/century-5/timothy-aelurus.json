@@ -1,0 +1,25 @@
+{
+  "id": "timothy-aelurus",
+  "name": "Timothy Aelurus",
+  "birthYear": null,
+  "deathYear": 477,
+  "primaryTradition": "Greek",
+  "roles": [
+    "patriarch",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Patriarch of Alexandria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Timothy_Aelurus",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Timotheos_Hygieia.jpg/330px-Timotheos_Hygieia.jpg",
+  "summary": "Timothy Aelurus (the Cat) was Patriarch of Alexandria from 457 to 477 and a leading Monophysite theologian. He strongly opposed the Council of Chalcedon and the Tome of Leo, teaching that Christ had one nature after the Incarnation. He was deposed by the Byzantine emperor Leo I but was later restored. He played a key role in establishing the non-Chalcedonian (Coptic) church in Egypt. His writings were influential in the development of Monophysite theology. The Coptic Orthodox Church considers him a saint.",
+  "keyQuotes": [],
+  "writings": []
+}
+

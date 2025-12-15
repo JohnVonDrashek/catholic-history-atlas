@@ -1,0 +1,24 @@
+{
+  "id": "peter-fuller",
+  "name": "Peter the Fuller",
+  "birthYear": null,
+  "deathYear": 488,
+  "primaryTradition": "Greek",
+  "roles": [
+    "patriarch",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "antioch",
+      "description": "Patriarch of Antioch"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_the_Fuller",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/AKVIS_LC_-_US_Army_BG_Peter_N._Fuller%28.png%29.jpg",
+  "summary": "Peter the Fuller was Patriarch of Antioch multiple times in the late 5th century who supported Monophysitism. He is best known for adding the phrase 'who was crucified for us' to the Trisagion hymn, which became a point of controversy. This addition was seen as implying that the divine nature suffered on the cross (Theopassianism), which was problematic for Chalcedonian orthodoxy. He was deposed and reinstated several times due to the political and theological conflicts of the time. His support for Monophysitism contributed to the schism between the Chalcedonian and non-Chalcedonian churches.",
+  "keyQuotes": [],
+  "writings": []
+}

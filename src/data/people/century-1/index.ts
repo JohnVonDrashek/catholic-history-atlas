@@ -42,6 +42,7 @@ import philip from './philip.json';
 import phoebe from './phoebe.json';
 import priscilla from './priscilla.json';
 import silas from './silas.json';
+import simon_magus from './simon-magus.json';
 import simon_zealot from './simon-zealot.json';
 import stephen from './stephen.json';
 import thomas from './thomas.json';
@@ -94,6 +95,7 @@ export default [
   phoebe,
   priscilla,
   silas,
+  simon_magus,
   simon_zealot,
   stephen,
   thomas,

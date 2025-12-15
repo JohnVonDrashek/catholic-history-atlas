@@ -1,0 +1,24 @@
+{
+  "id": "marcellus-ancyra",
+  "name": "Marcellus of Ancyra",
+  "birthYear": null,
+  "deathYear": 374,
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "ancyra",
+      "description": "Bishop of Ancyra"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Marcellus_of_Ancyra",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/History_of_the_First_Council_of_Nice.djvu/page1-330px-History_of_the_First_Council_of_Nice.djvu.jpg",
+  "summary": "Marcellus of Ancyra was Bishop of Ancyra who was accused of Sabellianism (Modalism). He strongly opposed Arianism and was deposed by Arian synods, but his own teachings were problematic. He taught that the Word was an eternal power of God that became a person only at the Incarnation, and that after the Ascension, the Word would return to being a mere power. This teaching was seen as denying the eternal personality of the Son and was condemned at the Council of Constantinople in 336. He was later rehabilitated but his teachings remained controversial.",
+  "keyQuotes": [],
+  "writings": []
+}

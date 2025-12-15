@@ -12,6 +12,7 @@ import clement_viii from './clement-viii.json';
 import clement_x from './clement-x.json';
 import david_lewis from './david-lewis.json';
 import edmund_arrowsmith from './edmund-arrowsmith.json';
+import faustus_socinus from './faustus-socinus.json';
 import francis_de_sales from './francis-de-sales.json';
 import francis_solano from './francis-solano.json';
 import francis_solanus from './francis-solanus.json';
@@ -21,6 +22,7 @@ import innocent_x from './innocent-x.json';
 import innocent_xi from './innocent-xi.json';
 import innocent_xii from './innocent-xii.json';
 import isaac_jogues from './isaac-jogues.json';
+import jacobus_arminius from './jacobus-arminius.json';
 import jacques_marquette from './jacques-marquette.json';
 import jane_frances_de_chantal from './jane-frances-de-chantal.json';
 import jean_de_brebeuf from './jean-de-brebeuf.json';
@@ -43,6 +45,8 @@ import marie_of_the_incarnation from './marie-of-the-incarnation.json';
 import martin_de_porres from './martin-de-porres.json';
 import mary_magdalene_de_pazzi from './mary-magdalene-de-pazzi.json';
 import matteo_ricci from './matteo-ricci.json';
+import michael_los_santos from './michael-los-santos.json';
+import miguel_molinos from './miguel-molinos.json';
 import nicholas_owen from './nicholas-owen.json';
 import noel_chabanel from './noel-chabanel.json';
 import pedro_calungsod from './pedro-calungsod.json';
@@ -69,6 +73,7 @@ export default [
   clement_x,
   david_lewis,
   edmund_arrowsmith,
+  faustus_socinus,
   francis_de_sales,
   francis_solano,
   francis_solanus,
@@ -78,6 +83,7 @@ export default [
   innocent_xi,
   innocent_xii,
   isaac_jogues,
+  jacobus_arminius,
   jacques_marquette,
   jane_frances_de_chantal,
   jean_de_brebeuf,
@@ -100,6 +106,8 @@ export default [
   martin_de_porres,
   mary_magdalene_de_pazzi,
   matteo_ricci,
+  michael_los_santos,
+  miguel_molinos,
   nicholas_owen,
   noel_chabanel,
   pedro_calungsod,

@@ -1,0 +1,24 @@
+{
+  "id": "joseph-oriol",
+  "name": "St. Joseph Oriol",
+  "birthYear": 1650,
+  "deathYear": 1702,
+  "feastDay": "September 9",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "barcelona",
+      "description": "Priest and confessor in Barcelona"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Joseph_Oriol",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Gozos_en_alabanza_del_beato_doctor_Joseph_Oriol_para_cantarse_en_la_iglesia_parroquail_de_San_Jayme_de_Barcelona_en_la_primera_festiva_ostension_de_la_sagrada_reliquia_del_mismo_beato_con_que_enriquecio_a_esta..._-_btv1b10660733d.jpg/330px-thumbnail.jpg",
+  "summary": "Joseph Oriol was a Spanish priest known for his piety, miraculous healings, and work as a confessor in Barcelona during the late 17th and early 18th centuries. He was canonized in 1909.",
+  "keyQuotes": [],
+  "writings": []
+}

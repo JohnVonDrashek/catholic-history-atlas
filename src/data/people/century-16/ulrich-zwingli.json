@@ -1,0 +1,26 @@
+{
+  "id": "ulrich-zwingli",
+  "name": "Ulrich Zwingli",
+  "birthYear": 1484,
+  "deathYear": 1531,
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "theologian",
+    "reformer"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "zurich",
+      "description": "Reformer in Zurich"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Huldrych_Zwingli",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Z%C3%BCrich_Switzerland-Monument-to-Ulrich-Zwingli-01.jpg/330px-Z%C3%BCrich_Switzerland-Monument-to-Ulrich-Zwingli-01.jpg",
+  "summary": "Ulrich Zwingli was a Swiss priest and reformer who led the Reformation in Zurich. He rejected many Catholic doctrines including the Real Presence in the Eucharist, which he saw as merely symbolic. He also rejected images, fasting, clerical celibacy, and monasticism. His teachings differed from Luther's on the Eucharist, leading to the Marburg Colloquy in 1529 where they failed to reach agreement. He was killed in battle during the Second War of Kappel in 1531. His teachings influenced the Reformed tradition and the Anabaptist movement.",
+  "keyQuotes": [],
+  "writings": []
+}
+

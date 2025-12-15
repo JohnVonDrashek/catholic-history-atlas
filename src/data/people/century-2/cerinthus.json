@@ -1,0 +1,25 @@
+{
+  "id": "cerinthus",
+  "name": "Cerinthus",
+  "birthYear": null,
+  "deathYear": 200,
+  "primaryTradition": "Greek",
+  "roles": [
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "ephesus",
+      "description": "Taught in Ephesus"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Cerinthus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03539a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Cerinthus_%288175679762%29.jpg/330px-Cerinthus_%288175679762%29.jpg",
+  "summary": "Cerinthus was an early Christian heretic active in Asia Minor around the end of the 1st century. He taught a form of Gnosticism that combined Jewish and Christian elements. He denied the divinity of Christ, teaching that Jesus was merely a man upon whom the Christ descended at baptism and departed before the crucifixion. He also taught a form of millenarianism, believing in a literal thousand-year reign of Christ on earth. His teachings were opposed by St. John the Evangelist and early Church Fathers.",
+  "keyQuotes": [],
+  "writings": []
+}
+

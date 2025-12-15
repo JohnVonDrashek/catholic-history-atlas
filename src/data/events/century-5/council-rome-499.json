@@ -1,0 +1,16 @@
+{
+  "id": "council-rome-499",
+  "name": "Council of Rome",
+  "startYear": 499,
+  "endYear": 499,
+  "type": "council",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Symmachus_(pope)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14323a.htm",
+  "summary": "The Council of Rome in 499 AD, under Pope Symmachus, addressed the Laurentian schism and papal authority. It affirmed the supremacy of the Roman See and established procedures for electing popes. The council was significant in the development of papal primacy during a period of political instability.",
+  "keyDocuments": [
+    "Decree on Papal Authority",
+    "Election Procedures"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Friedrich_Hottenroth_-_Emperor_Otto_at_the_Council_of_Rome%2C_963.jpg/330px-Friedrich_Hottenroth_-_Emperor_Otto_at_the_Council_of_Rome%2C_963.jpg"
+}

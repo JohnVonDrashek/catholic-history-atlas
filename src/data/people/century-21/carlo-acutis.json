@@ -5,7 +5,9 @@
   "deathYear": 2006,
   "feastDay": "October 12",
   "primaryTradition": "Latin",
-  "roles": ["layperson"],
+  "roles": [
+    "layperson"
+  ],
   "orthodoxyStatus": "blessed",
   "isMartyr": false,
   "locations": [
@@ -20,5 +22,3 @@
   "summary": "Carlo Acutis was an Italian teenager who died of leukemia at age 15. Known as the 'patron saint of the Internet,' he used his computer skills to create websites documenting Eucharistic miracles and Marian apparitions. He was known for his deep devotion to the Eucharist, daily Mass attendance, and care for the poor. He is the first millennial to be beatified and is a model for young Catholics in the digital age.",
   "keyQuotes": []
 }
-
-

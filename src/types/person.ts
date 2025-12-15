@@ -19,6 +19,8 @@ export interface Person {
   locations: PersonLocation[];
   wikipediaUrl?: string;
   newAdventUrl?: string;
+  myCatholicLifeUrl?: string;
+  myCatholicLifeNote?: string;
   imageUrl?: string; // From Wikipedia/Wikidata
   summary: string; // Curated text
   keyQuotes?: string[]; // Short quotations or paraphrases

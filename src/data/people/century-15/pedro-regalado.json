@@ -1,0 +1,24 @@
+{
+  "id": "pedro-regalado",
+  "name": "St. Pedro Regalado",
+  "birthYear": 1390,
+  "deathYear": 1456,
+  "feastDay": "May 30",
+  "primaryTradition": "Latin",
+  "roles": [
+    "religious"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "valladolid",
+      "description": "Franciscan friar and reformer in Valladolid"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pedro_Regalado",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Estatua_San_Pedro_Regalado.jpg/330px-Estatua_San_Pedro_Regalado.jpg",
+  "summary": "Pedro Regalado was a Spanish Franciscan friar known for his austerity, miraculous gifts, and work in reforming religious communities. He was canonized in 1685.",
+  "keyQuotes": [],
+  "writings": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "millan",
+  "name": "St. Millán",
+  "birthYear": 473,
+  "deathYear": 574,
+  "feastDay": "June 12",
+  "primaryTradition": "Latin",
+  "roles": [
+    "hermit"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rioja",
+      "description": "Hermit and wonder-worker in La Rioja region"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Santi_Mill%C3%A1n",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/St._Mill%C3%A1n_-_Iglesia_del_Salvador_-_Seville.JPG/330px-St._Mill%C3%A1n_-_Iglesia_del_Salvador_-_Seville.JPG",
+  "summary": "Millán, also known as Aemilianus, was a Spanish hermit and wonder-worker who lived as a solitary in the mountains of La Rioja. He is credited with numerous miracles and is the patron saint of La Rioja.",
+  "keyQuotes": [],
+  "writings": []
+}

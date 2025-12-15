@@ -20,7 +20,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Bernard_of_Clairvaux",
-  "newAdventUrl": "https://www.newadvent.org/cathen/02498d.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Bernard_of_Clairvaux_13th_century.jpg/330px-Bernard_of_Clairvaux_13th_century.jpg",
   "summary": "Bernard of Clairvaux was a French Cistercian monk, abbot, and theologian who became one of the most influential churchmen of the 12th century. He founded the Abbey of Clairvaux and was a key figure in the Cistercian reform movement. He played a crucial role in the Second Crusade, the resolution of papal schisms, and the condemnation of Peter Abelard. He is venerated as a Doctor of the Church and is known for his mystical writings, particularly on the love of God.",
   "keyQuotes": [
@@ -35,5 +34,6 @@
       "title": "Sermons on the Song of Songs",
       "url": "https://www.ccel.org/ccel/bernard/song_of_songs.html"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/02496a.htm"
 }

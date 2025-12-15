@@ -22,7 +22,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Ignatius_of_Loyola",
-  "newAdventUrl": "https://www.newadvent.org/cathen/07639c.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Triumph_of_St._Ignatius_of_Loyola%2C_ceiling_fresco_by_Andrea_Pozzo.jpg/330px-Triumph_of_St._Ignatius_of_Loyola%2C_ceiling_fresco_by_Andrea_Pozzo.jpg",
   "summary": "Ignatius of Loyola was a Spanish priest and theologian who founded the Society of Jesus (Jesuits) in 1540. After being wounded in battle, he underwent a spiritual conversion and wrote the Spiritual Exercises, one of the most influential works on Christian spirituality. The Jesuits became one of the most important religious orders in the Catholic Church, known for their work in education, missions, and scholarship. He is the patron saint of soldiers and the Society of Jesus.",
   "keyQuotes": [],
@@ -31,5 +30,6 @@
       "title": "Spiritual Exercises",
       "url": "https://www.ccel.org/ccel/ignatius/exercises.html"
     }
-  ]
+  ],
+  "myCatholicLifeUrl": "https://mycatholic.life/saints/saints-of-the-liturgical-year/july-31---saint-ignatius-of-loyola-priest"
 }

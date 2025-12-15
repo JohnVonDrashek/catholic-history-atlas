@@ -19,7 +19,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Catherine_of_Bologna",
-  "newAdventUrl": "https://www.newadvent.org/cathen/03448a.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Caterina-bologna.jpg/330px-Caterina-bologna.jpg",
   "summary": "Catherine of Bologna was a Poor Clare nun, mystic, and artist. She was known for her visions, her writings on the spiritual life, and her artistic talents. She helped found a monastery in Bologna and served as its abbess. Her body was found incorrupt after death, and she is venerated as a saint and patron of artists.",
   "keyQuotes": [],
@@ -28,5 +27,6 @@
       "title": "The Seven Spiritual Weapons",
       "url": "https://www.ccel.org/ccel/catherine_bologna/weapons"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/03446a.htm"
 }

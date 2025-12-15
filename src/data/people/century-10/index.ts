@@ -4,8 +4,10 @@ import agapetus_ii from './agapetus-ii.json';
 import benedict_v from './benedict-v.json';
 import benedict_vi from './benedict-vi.json';
 import benedict_vii from './benedict-vii.json';
+import bogomil from './bogomil.json';
 import boris_bulgaria from './boris-bulgaria.json';
 import dunstan from './dunstan.json';
+import froilan from './froilan.json';
 import gregory_v from './gregory-v.json';
 import john_x from './john-x.json';
 import john_xi from './john-xi.json';
@@ -17,6 +19,7 @@ import leo_viii from './leo-viii.json';
 import odo_cluny from './odo-cluny.json';
 import olga_kiev from './olga-kiev.json';
 import oswald_worcester from './oswald-worcester.json';
+import rudesind from './rudesind.json';
 import wenceslaus from './wenceslaus.json';
 
 export default [
@@ -26,8 +29,10 @@ export default [
   benedict_v,
   benedict_vi,
   benedict_vii,
+  bogomil,
   boris_bulgaria,
   dunstan,
+  froilan,
   gregory_v,
   john_x,
   john_xi,
@@ -39,5 +44,6 @@ export default [
   odo_cluny,
   olga_kiev,
   oswald_worcester,
+  rudesind,
   wenceslaus,
 ];

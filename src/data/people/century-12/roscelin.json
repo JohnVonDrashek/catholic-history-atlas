@@ -1,0 +1,24 @@
+{
+  "id": "roscelin",
+  "name": "Roscelin",
+  "birthYear": 1050,
+  "deathYear": 1125,
+  "primaryTradition": "Latin",
+  "roles": [
+    "philosopher",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "compiegne",
+      "description": "Taught in Compiègne and other French cities"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Roscellinus",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Norman_Conquests_copy_%281%29.jpg/330px-Norman_Conquests_copy_%281%29.jpg",
+  "summary": "Roscelin was an 11th-12th century French philosopher and theologian who is considered the founder of Nominalism. He taught that universals (like 'humanity' or 'whiteness') were merely words or names, not real entities. This led him to problematic views on the Trinity, teaching that the three persons were three separate substances, which was condemned as tritheism at the Council of Soissons in 1092. He was forced to recant but continued to teach his nominalist philosophy. His student Peter Abelard developed his ideas further. Roscelin's nominalism influenced later medieval philosophy.",
+  "keyQuotes": [],
+  "writings": []
+}

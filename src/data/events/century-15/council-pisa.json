@@ -1,0 +1,15 @@
+{
+  "id": "council-pisa",
+  "name": "Council of Pisa",
+  "startYear": 1409,
+  "endYear": 1409,
+  "type": "council",
+  "locationId": "pisa",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Pisa",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12134a.htm",
+  "summary": "The Council of Pisa was convened to end the Western Schism between rival papal claimants. The council deposed both Gregory XII and Benedict XIII and elected Alexander V, but this only resulted in three competing popes rather than resolving the schism.",
+  "keyDocuments": [
+    "Acts of the Council of Pisa"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Council-of-pisa-1409-allegory-woodcut-AG1BJE.jpg/330px-Council-of-pisa-1409-allegory-woodcut-AG1BJE.jpg"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "eunomius",
+  "name": "Eunomius",
+  "birthYear": 335,
+  "deathYear": 394,
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "cyzicus",
+      "description": "Bishop of Cyzicus"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Eunomius_of_Cyzicus",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Eunomius_from_Nuremberg_Chronicle.jpg",
+  "summary": "Eunomius was a 4th-century Arian bishop and theologian who taught an extreme form of Arianism known as Anomoeanism. He taught that the Son was unlike (anomoios) the Father in essence, going further than Arius by claiming that the Son was completely different from the Father. He also taught that the Holy Spirit was a creature created by the Son. His teachings were condemned at the First Council of Constantinople in 381. St. Basil the Great wrote 'Against Eunomius' in defense of orthodox Trinitarian doctrine. Eunomianism was one of the most radical forms of Arianism.",
+  "keyQuotes": [],
+  "writings": []
+}
+

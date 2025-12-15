@@ -1,0 +1,16 @@
+{
+  "id": "council-hippo",
+  "name": "Council of Hippo",
+  "startYear": 393,
+  "endYear": 393,
+  "type": "council",
+  "locationId": "hippo",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Councils_of_Carthage#Council_of_Hippo",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03437a.htm",
+  "summary": "The Council of Hippo was a regional council held in North Africa under the leadership of Augustine of Hippo. It established an early list of the biblical canon and set important disciplinary regulations for the African Church.",
+  "keyDocuments": [
+    "Canon of Scripture",
+    "Disciplinary Canons"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/9588Knights_of_Columbus_Hall_Augustine_Council_No._4317_Parish_Hall_Baliuag_Bulacan_43.jpg/330px-9588Knights_of_Columbus_Hall_Augustine_Council_No._4317_Parish_Hall_Baliuag_Bulacan_43.jpg"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "hermenegild",
+  "name": "St. Hermenegild",
+  "birthYear": 564,
+  "deathYear": 585,
+  "feastDay": "April 13",
+  "primaryTradition": "Latin",
+  "roles": [
+    "king"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "seville",
+      "description": "Visigothic prince martyred in Seville"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Hermenegild",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/St._Hermenegild_-_Iglesia_del_Salvador_-_Seville.jpg/330px-St._Hermenegild_-_Iglesia_del_Salvador_-_Seville.jpg",
+  "summary": "Hermenegild was a Visigothic prince who converted to Catholicism and was martyred by his Arian father for refusing to renounce his faith. He is considered the first martyr of the Spanish Church.",
+  "keyQuotes": [],
+  "writings": []
+}

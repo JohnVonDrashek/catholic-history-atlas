@@ -1,0 +1,16 @@
+{
+  "id": "council-kebab-case-name",
+  "name": "Full Council Name",
+  "startYear": 0,
+  "endYear": 0,
+  "type": "council",
+  "locationId": "place-id-from-places-json",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/...",
+  "newAdventUrl": "https://www.newadvent.org/cathen/...",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/...",
+  "summary": "2-3 sentence description of the council, its purpose, and significance.",
+  "keyDocuments": [
+    "Document Name 1",
+    "Document Name 2"
+  ]
+}

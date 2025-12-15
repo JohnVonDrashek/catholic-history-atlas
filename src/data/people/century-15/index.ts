@@ -13,6 +13,7 @@ import julian_norwich from './julian-norwich.json';
 import martin_v from './martin-v.json';
 import nicholas_cusa from './nicholas-cusa.json';
 import nicolas_v from './nicolas-v.json';
+import pedro_regalado from './pedro-regalado.json';
 import pius_ii from './pius-ii.json';
 import rita_cascia from './rita-cascia.json';
 import savonarola from './savonarola.json';
@@ -36,6 +37,7 @@ export default [
   martin_v,
   nicholas_cusa,
   nicolas_v,
+  pedro_regalado,
   pius_ii,
   rita_cascia,
   savonarola,

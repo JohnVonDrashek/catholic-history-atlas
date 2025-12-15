@@ -1,0 +1,28 @@
+{
+  "id": "martin-luther",
+  "name": "Martin Luther",
+  "birthYear": 1483,
+  "deathYear": 1546,
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "theologian",
+    "reformer"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "wittenberg",
+      "description": "Professor and reformer in Wittenberg"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Martin_Luther",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/330px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg",
+  "summary": "Martin Luther was a German priest, theologian, and professor who initiated the Protestant Reformation. In 1517, he published his Ninety-Five Theses criticizing the sale of indulgences and other practices of the Catholic Church. He taught justification by faith alone, the priesthood of all believers, and the authority of Scripture alone. His teachings were condemned by Pope Leo X in the bull Exsurge Domine (1520) and at the Diet of Worms (1521), where he was declared an outlaw. Luther's break with Rome led to the formation of Lutheranism and inspired other Protestant reformers. His translation of the Bible into German had a profound impact on German language and culture.",
+  "keyQuotes": [
+    "Here I stand; I can do no other."
+  ],
+  "writings": []
+}
+

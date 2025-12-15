@@ -1,0 +1,24 @@
+{
+  "id": "macedonius",
+  "name": "Macedonius",
+  "birthYear": null,
+  "deathYear": 362,
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "constantinople",
+      "description": "Bishop of Constantinople"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Macedonius_I_of_Constantinople",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/St._Macedonius_and_St._Theodolus_Met_DP891114.jpg/330px-St._Macedonius_and_St._Theodolus_Met_DP891114.jpg",
+  "summary": "Macedonius was Bishop of Constantinople from 342 to 346 and again from 351 to 360. He taught that the Holy Spirit was a creature, not God, denying the divinity of the Third Person of the Trinity. This teaching, known as Macedonianism or Pneumatomachianism (Spirit-fighting), was condemned at the First Council of Constantinople in 381, which added to the Nicene Creed the statement that the Holy Spirit 'proceeds from the Father' and 'is worshipped and glorified together with the Father and the Son.' St. Basil the Great and St. Gregory of Nazianzus opposed his teachings.",
+  "keyQuotes": [],
+  "writings": []
+}

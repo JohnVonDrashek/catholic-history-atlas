@@ -1,0 +1,16 @@
+{
+  "id": "council-ferrara",
+  "name": "Council of Ferrara",
+  "startYear": 1438,
+  "endYear": 1439,
+  "type": "council",
+  "locationId": "ferrara",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Florence",
+  "newAdventUrl": "https://www.newadvent.org/cathen/06011a.htm",
+  "summary": "The Council of Ferrara was convened as a continuation of the Council of Basel, later transferred to Florence. It aimed to achieve reunion between the Eastern and Western Churches and temporarily succeeded in 1439 with the decree Laetentur Coeli.",
+  "keyDocuments": [
+    "Acts of Union",
+    "Laetentur Coeli"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Council-Florence.png/330px-Council-Florence.png"
+}

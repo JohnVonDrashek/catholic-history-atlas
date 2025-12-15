@@ -1,0 +1,29 @@
+{
+  "id": "valentinus",
+  "name": "Valentinus",
+  "birthYear": 100,
+  "deathYear": 160,
+  "primaryTradition": "Greek",
+  "roles": [
+    "theologian",
+    "teacher"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Studied in Alexandria"
+    },
+    {
+      "placeId": "rome",
+      "description": "Taught in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Valentinus_(Gnostic)",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Anacyclus_valentinus_kz07.jpg/330px-Anacyclus_valentinus_kz07.jpg",
+  "summary": "Valentinus was a 2nd-century Gnostic teacher who founded the Valentinian school, one of the most influential Gnostic sects. He taught a complex system of emanations from the ultimate God, involving a series of aeons and the fall of Sophia (Wisdom), which led to the creation of the material world. He distinguished between the spiritual, psychical, and material classes of humanity, with only the spiritual being capable of full salvation. His teachings were condemned by early Church Fathers such as Irenaeus and Tertullian, who wrote extensively against Gnosticism.",
+  "keyQuotes": [],
+  "writings": [],
+  "newAdventUrl": "https://www.newadvent.org/cathen/15256a.htm"
+}

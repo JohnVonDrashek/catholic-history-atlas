@@ -1,0 +1,25 @@
+{
+  "id": "ibas-edessa",
+  "name": "Ibas of Edessa",
+  "birthYear": null,
+  "deathYear": 457,
+  "primaryTradition": "Syriac",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "edessa",
+      "description": "Bishop of Edessa"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ibas_of_Edessa",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Urfacastle.jpg/330px-Urfacastle.jpg",
+  "summary": "Ibas was Bishop of Edessa and a leading figure in the Antiochene school of theology. He was a teacher at the School of Edessa and translated works of Theodore of Mopsuestia into Syriac. His letter to Maris, which criticized Cyril of Alexandria and seemed to support Nestorian views, became controversial. He was condemned at the Second Council of Constantinople in 553 as part of the Three Chapters controversy, over a century after his death. His writings were seen as supporting Nestorianism, though he was rehabilitated at the Council of Chalcedon during his lifetime.",
+  "keyQuotes": [],
+  "writings": []
+}
+

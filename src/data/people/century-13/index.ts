@@ -1,11 +1,13 @@
 import adrian_v from './adrian-v.json';
 import albert_great from './albert-great.json';
 import alexander_iv from './alexander-iv.json';
+import amalric_bena from './amalric-bena.json';
 import anthony_padua from './anthony-padua.json';
 import bonaventure from './bonaventure.json';
 import celestine_iv from './celestine-iv.json';
 import celestine_v from './celestine-v.json';
 import clare_assisi from './clare-assisi.json';
+import david_dinant from './david-dinant.json';
 import dominic from './dominic.json';
 import elizabeth_hungary from './elizabeth-hungary.json';
 import felix_of_valois from './felix-of-valois.json';
@@ -19,6 +21,7 @@ import innocent_iii from './innocent-iii.json';
 import innocent_iv from './innocent-iv.json';
 import innocent_v from './innocent-v.json';
 import joachim_fiore from './joachim-fiore.json';
+import john_lugio from './john-lugio.json';
 import john_of_matha from './john-of-matha.json';
 import john_xxi from './john-xxi.json';
 import louis_ix from './louis-ix.json';
@@ -28,7 +31,10 @@ import mechthild_magdeburg from './mechthild-magdeburg.json';
 import mechtilde_of_magdeburg from './mechtilde-of-magdeburg.json';
 import nicholas_iii from './nicholas-iii.json';
 import nicholas_iv from './nicholas-iv.json';
+import ortlieb from './ortlieb.json';
 import peter_verona from './peter-verona.json';
+import peter_waldo from './peter-waldo.json';
+import raymond_nonnatus from './raymond-nonnatus.json';
 import raymond_penyafort from './raymond-penyafort.json';
 import robert_grosseteste from './robert-grosseteste.json';
 import roger_bacon from './roger-bacon.json';
@@ -41,11 +47,13 @@ export default [
   adrian_v,
   albert_great,
   alexander_iv,
+  amalric_bena,
   anthony_padua,
   bonaventure,
   celestine_iv,
   celestine_v,
   clare_assisi,
+  david_dinant,
   dominic,
   elizabeth_hungary,
   felix_of_valois,
@@ -59,6 +67,7 @@ export default [
   innocent_iv,
   innocent_v,
   joachim_fiore,
+  john_lugio,
   john_of_matha,
   john_xxi,
   louis_ix,
@@ -68,7 +77,10 @@ export default [
   mechtilde_of_magdeburg,
   nicholas_iii,
   nicholas_iv,
+  ortlieb,
   peter_verona,
+  peter_waldo,
+  raymond_nonnatus,
   raymond_penyafort,
   robert_grosseteste,
   roger_bacon,

@@ -1,0 +1,16 @@
+{
+  "id": "council-braga",
+  "name": "Council of Braga",
+  "startYear": 561,
+  "endYear": 561,
+  "type": "council",
+  "locationId": "braga",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Council_of_Braga",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02752b.htm",
+  "summary": "The Council of Braga in 561 AD condemned Priscillianism, a heretical movement in Spain that combined Gnostic and Manichaean elements. The council affirmed orthodox Christology and established canons against various heresies. It was significant in the religious unification of the Suebic Kingdom under Catholic orthodoxy.",
+  "keyDocuments": [
+    "Anathemas against Priscillianism",
+    "Canons on Heresy"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Braga_Town_Council_2025.svg/330px-Braga_Town_Council_2025.svg.png"
+}

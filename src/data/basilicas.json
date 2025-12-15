@@ -336,10 +336,10 @@
   {
     "id": "st-mark-venice",
     "name": "Basilica of St. Mark",
-    "placeId": "padua",
-    "type": "historic-basilica",
+    "placeId": "venice",
+    "type": "papal-basilica",
     "startYear": 828,
-    "description": "The cathedral church of the Roman Catholic Archdiocese of Venice. Famous for its opulent design, gilded mosaics, and status as a symbol of Venetian wealth and power. Located in Venice, near Padua.",
+    "description": "The cathedral church of the Roman Catholic Archdiocese of Venice. Famous for its opulent design, gilded mosaics, and status as a symbol of Venetian wealth and power. Built to house the relics of St. Mark the Evangelist.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/St_Mark%27s_Basilica",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Venezia_Basilica_di_San_Marco_Fassade_2.jpg/1200px-Venezia_Basilica_di_San_Marco_Fassade_2.jpg"
   },
@@ -406,10 +406,10 @@
   {
     "id": "st-nicholas-bari",
     "name": "Basilica of St. Nicholas",
-    "placeId": "rome",
-    "type": "historic-basilica",
+    "placeId": "bari",
+    "type": "papal-basilica",
     "startYear": 1087,
-    "description": "Built in Bari to house the relics of St. Nicholas of Myra (Santa Claus), brought from Myra in 1087. An important pilgrimage site for both Catholics and Orthodox Christians. Located in Bari, southern Italy.",
+    "description": "Built in Bari to house the relics of St. Nicholas of Myra (Santa Claus), brought from Myra in 1087. An important pilgrimage site for both Catholics and Orthodox Christians. The crypt contains the saint's relics.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint_Nicholas",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Trnava_-_St._Nicholas_Church.jpg/960px-Trnava_-_St._Nicholas_Church.jpg"
   },
@@ -730,10 +730,10 @@
   {
     "id": "st-mary-santiago",
     "name": "Cathedral of Santiago de Compostela",
-    "placeId": "seville",
+    "placeId": "santiago-compostela",
     "type": "historic-basilica",
     "startYear": 1075,
-    "description": "The destination of the Way of St. James, one of the most important Christian pilgrimages. Built over the tomb of St. James the Apostle. A UNESCO World Heritage Site.",
+    "description": "The destination of the Way of St. James, one of the most important Christian pilgrimages. Built over the tomb of St. James the Apostle. A UNESCO World Heritage Site and masterpiece of Romanesque architecture.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Santiago_de_Compostela_Cathedral",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Santiago_cathedral_2021.jpg/960px-Santiago_cathedral_2021.jpg"
   },
@@ -1008,16 +1008,6 @@
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wawel_katedra2.jpg/1200px-Wawel_katedra2.jpg"
   },
   {
-    "id": "st-mary-gdansk",
-    "name": "St. Mary's Church",
-    "placeId": "vienna",
-    "type": "historic-basilica",
-    "startYear": 1343,
-    "description": "The largest brick church in the world. A masterpiece of Brick Gothic architecture. The main church of Gdańsk, Poland, and a symbol of the Hanseatic League.",
-    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Mary%27s_Church,_Gda%C5%84sk",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bazylika_Mariacka_DSC01870.jpg/1200px-Bazylika_Mariacka_DSC01870.jpg"
-  },
-  {
     "id": "st-mary-helsinki",
     "name": "Helsinki Cathedral",
     "placeId": "vienna",
@@ -1156,5 +1146,805 @@
     "description": "A Catholic church in Turku, Finland. One of the few Catholic churches in predominantly Lutheran Finland, serving the small Catholic community.",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Turku",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/View_from_Turku_Cathedral_tower.jpg/1200px-View_from_Turku_Cathedral_tower.jpg"
+  },
+  {
+    "id": "our-lady-guadalupe",
+    "name": "Basilica of Our Lady of Guadalupe",
+    "placeId": "mexico-city",
+    "type": "papal-basilica",
+    "startYear": 1531,
+    "description": "The most visited Catholic pilgrimage site in the Americas. Built on the site where Our Lady of Guadalupe appeared to St. Juan Diego. The new basilica was completed in 1976 to accommodate millions of pilgrims.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_Guadalupe",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Bas%C3%ADlica_de_Guadalupe_desde_el_aire_6.jpg/1200px-Bas%C3%ADlica_de_Guadalupe_desde_el_aire_6.jpg"
+  },
+  {
+    "id": "our-lady-aparecida",
+    "name": "Basilica of Our Lady of Aparecida",
+    "placeId": "aparecida",
+    "type": "papal-basilica",
+    "startYear": 1717,
+    "description": "The largest Marian shrine in the world and the second-largest basilica after St. Peter's. Built to house the image of Our Lady of Aparecida, the patroness of Brazil. Receives millions of pilgrims annually.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_the_National_Shrine_of_Our_Lady_of_Aparecida",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Basilica_of_the_National_Shrine_of_Our_Lady_of_Aparecida%2C_2007.jpg/1200px-Basilica_of_the_National_Shrine_of_Our_Lady_of_Aparecida%2C_2007.jpg"
+  },
+  {
+    "id": "our-lady-fatima",
+    "name": "Basilica of Our Lady of Fatima",
+    "placeId": "fatima",
+    "type": "papal-basilica",
+    "startYear": 1928,
+    "description": "One of the most important Marian shrines in the world, built on the site where Our Lady appeared to three shepherd children in 1917. A major pilgrimage destination, receiving millions of visitors annually.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sanctuary_of_F%C3%A1tima",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fatima_BW_2018-10-07_10-36-14.jpg/1200px-Fatima_BW_2018-10-07_10-36-14.jpg"
+  },
+  {
+    "id": "our-lady-lourdes",
+    "name": "Basilica of Our Lady of Lourdes",
+    "placeId": "lourdes",
+    "type": "papal-basilica",
+    "startYear": 1871,
+    "description": "One of the most important Marian pilgrimage sites in the world. Built on the site where Our Lady appeared to St. Bernadette Soubirous in 1858. The grotto and healing spring attract millions of pilgrims seeking physical and spiritual healing.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sanctuary_of_Our_Lady_of_Lourdes",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Lourdes_basilique_vue_depuis_ch%C3%A2teau_%283%29.JPG/1200px-Lourdes_basilique_vue_depuis_ch%C3%A2teau_%283%29.JPG"
+  },
+  {
+    "id": "annunciation-nazareth",
+    "name": "Basilica of the Annunciation",
+    "placeId": "nazareth",
+    "type": "papal-basilica",
+    "startYear": 1969,
+    "description": "Built over the traditional site of the Annunciation, where the Angel Gabriel announced to Mary that she would bear the Son of God. The largest Christian church in the Middle East, incorporating earlier churches dating back to the 4th century.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Church_of_the_Annunciation",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Pu%C5%82tusk_dzwonnica_2012.jpg/960px-Pu%C5%82tusk_dzwonnica_2012.jpg"
+  },
+  {
+    "id": "immaculate-conception-washington",
+    "name": "Basilica of the National Shrine of the Immaculate Conception",
+    "placeId": "washington",
+    "type": "papal-basilica",
+    "startYear": 1920,
+    "description": "The largest Catholic church in North America and one of the ten largest churches in the world. The national shrine of the United States, dedicated to the Blessed Virgin Mary under her title of the Immaculate Conception.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_the_National_Shrine_of_the_Immaculate_Conception",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Basilica_of_the_National_Shrine_of_the_Immaculate_Conception%2C_Washington.jpg/1130px-Basilica_of_the_National_Shrine_of_the_Immaculate_Conception%2C_Washington.jpg"
+  },
+  {
+    "id": "st-mary-minneapolis",
+    "name": "Basilica of St. Mary",
+    "placeId": "minneapolis",
+    "type": "papal-basilica",
+    "startYear": 1914,
+    "description": "The first basilica in the United States, designated in 1926. A masterpiece of Beaux-Arts architecture, it serves as the co-cathedral of the Archdiocese of St. Paul and Minneapolis.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Saint_Mary_%28Minneapolis%29",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/St._Mary%27s_Basilica_from_Walker_Art_Center_2016-07-14.jpg/960px-St._Mary%27s_Basilica_from_Walker_Art_Center_2016-07-14.jpg"
+  },
+  {
+    "id": "st-louis-cathedral",
+    "name": "Cathedral Basilica of St. Louis",
+    "placeId": "st-louis",
+    "type": "papal-basilica",
+    "startYear": 1914,
+    "description": "The mother church of the Archdiocese of St. Louis. Famous for its extensive collection of mosaics, one of the largest in the Western Hemisphere, covering over 83,000 square feet.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cathedral_Basilica_of_Saint_Louis_%28St._Louis%29",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Cathedral_Basilica_of_Saint_Louis_%28St._Louis%2C_MO%29_-_exterior%2C_quarter_view_2.jpg/1200px-Cathedral_Basilica_of_Saint_Louis_%28St._Louis%2C_MO%29_-_exterior%2C_quarter_view_2.jpg"
+  },
+  {
+    "id": "our-lady-manaoag",
+    "name": "Basilica of Our Lady of the Rosary of Manaoag",
+    "placeId": "manaoag",
+    "type": "papal-basilica",
+    "startYear": 1600,
+    "description": "One of the most important Marian shrines in the Philippines. The image of Our Lady of Manaoag is believed to be miraculous and draws millions of pilgrims annually. The basilica was elevated to minor basilica status in 2015.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Our_Lady_of_the_Rosary_of_Manaoag",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Antique_ivory_replica_of_Our_Lady_of_Man%C3%A1oag_exhibited_in_the_basilica_museum.jpg/960px-Antique_ivory_replica_of_Our_Lady_of_Man%C3%A1oag_exhibited_in_the_basilica_museum.jpg"
+  },
+  {
+    "id": "our-lady-africa",
+    "name": "Basilica of Our Lady of Africa",
+    "placeId": "algiers",
+    "type": "papal-basilica",
+    "startYear": 1872,
+    "description": "A Neo-Byzantine basilica overlooking the Bay of Algiers. Built by French colonists, it is one of the most important Catholic churches in North Africa. The basilica houses a black Madonna statue, mirroring Our Lady of Africa.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Notre_Dame_d%27Afrique",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Alger-Notre-Dame-D%27Afrique_Basilique.jpg/1200px-Alger-Notre-Dame-D%27Afrique_Basilique.jpg"
+  },
+  {
+    "id": "sacred-heart-brussels",
+    "name": "Basilica of the Sacred Heart",
+    "placeId": "brussels",
+    "type": "papal-basilica",
+    "startYear": 1905,
+    "description": "A massive Art Deco basilica, one of the largest churches in the world by volume. Built to commemorate the 75th anniversary of Belgian independence. The National Basilica of Belgium.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/National_Basilica_of_the_Sacred_Heart_in_Brussels",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Basilica_of_the_Sacred_Heart.jpg/960px-Basilica_of_the_Sacred_Heart.jpg"
+  },
+  {
+    "id": "our-lady-knock",
+    "name": "Basilica of Our Lady of Knock",
+    "placeId": "knock",
+    "type": "papal-basilica",
+    "startYear": 1976,
+    "description": "Built on the site where Our Lady, St. Joseph, and St. John the Evangelist appeared to villagers in 1879. One of the most important Marian shrines in Ireland, attracting over a million pilgrims annually.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Knock_Shrine",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Knock_Shrine.jpg/960px-Knock_Shrine.jpg"
+  },
+  {
+    "id": "sacred-heart-montreal",
+    "name": "Basilica of the Sacred Heart",
+    "placeId": "montreal",
+    "type": "papal-basilica",
+    "startYear": 1904,
+    "description": "A Romanesque-Byzantine basilica, one of the largest churches in Canada. Built by the Congregation of Holy Cross, it serves as a shrine and a place of pilgrimage. Known for its beautiful dome and mosaics.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Joseph%27s_Oratory",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Oratoire_Saint-Joseph_du_Mont-Royal_-_Montreal.jpg/1000px-Oratoire_Saint-Joseph_du_Mont-Royal_-_Montreal.jpg"
+  },
+  {
+    "id": "our-lady-peace-yamoussoukro",
+    "name": "Basilica of Our Lady of Peace",
+    "placeId": "yamoussoukro",
+    "type": "papal-basilica",
+    "startYear": 1990,
+    "description": "The largest church in the world by area. Built by President Félix Houphouët-Boigny of Ivory Coast, it is modeled after St. Peter's Basilica in Rome. A symbol of peace and unity in Africa.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_Peace",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Cathedral_of_Our_Lady_of_Peace_screen.jpg/960px-Cathedral_of_Our_Lady_of_Peace_screen.jpg"
+  },
+  {
+    "id": "st-mary-zion-axum",
+    "name": "Church of St. Mary of Zion",
+    "placeId": "axum",
+    "type": "historic-basilica",
+    "startYear": 372,
+    "description": "The most important church in Ethiopia, believed to house the Ark of the Covenant. The original 4th-century church was rebuilt in the 17th century. A central site of Ethiopian Orthodox Christianity.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Church_of_Our_Lady_Mary_of_Zion",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/ET_Axum_asv2018-01_img31_StMary_of_Zion_Church.jpg/1200px-ET_Axum_asv2018-01_img31_StMary_of_Zion_Church.jpg"
+  },
+  {
+    "id": "our-lady-lebanon",
+    "name": "Basilica of Our Lady of Lebanon",
+    "placeId": "harissa",
+    "type": "papal-basilica",
+    "startYear": 1908,
+    "description": "A Maronite Catholic basilica and major pilgrimage site in Lebanon. The shrine features a large bronze statue of the Virgin Mary overlooking the Mediterranean Sea. A symbol of Lebanese Christianity and unity.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Our_Lady_of_Lebanon",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ladylebanon.JPG/960px-Ladylebanon.JPG"
+  },
+  {
+    "id": "our-lady-help-christians-shanghai",
+    "name": "Basilica of Our Lady Help of Christians",
+    "placeId": "shanghai",
+    "type": "papal-basilica",
+    "startYear": 1863,
+    "description": "Also known as Sheshan Basilica, the most important Catholic pilgrimage site in China. Built on Sheshan Hill, it houses a statue of Our Lady of Sheshan, the patroness of China. A symbol of Chinese Catholicism.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sheshan_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/She_Shan_Basilica_1.jpg"
+  },
+  {
+    "id": "twenty-six-martyrs-nagasaki",
+    "name": "Basilica of the Twenty-Six Holy Martyrs",
+    "placeId": "nagasaki",
+    "type": "papal-basilica",
+    "startYear": 1864,
+    "description": "Built on the site where 26 Christians were martyred in 1597, including St. Paul Miki. Commemorates the persecution of Christians in Japan. The church was destroyed by the atomic bomb in 1945 and rebuilt.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Twenty-six_Martyrs_Museum_and_Monument",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Oura_Cathedral_20180623.jpg/960px-Oura_Cathedral_20180623.jpg"
+  },
+  {
+    "id": "st-josaphat-milwaukee",
+    "name": "Basilica of St. Josaphat",
+    "placeId": "milwaukee",
+    "type": "papal-basilica",
+    "startYear": 1901,
+    "description": "A stunning example of Polish Cathedral style architecture, built by Polish immigrants. One of the most beautiful churches in the United States, modeled after St. Peter's Basilica in Rome.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Josaphat%27s_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Milwaukee_Cathedral_3.jpg/1200px-Milwaukee_Cathedral_3.jpg"
+  },
+  {
+    "id": "st-stanislaus-kostka-chicago",
+    "name": "Basilica of St. Stanislaus Kostka",
+    "placeId": "chicago",
+    "type": "papal-basilica",
+    "startYear": 1877,
+    "description": "The first Polish parish in Chicago and one of the largest Polish churches in the United States. A masterpiece of Polish Cathedral style architecture, serving the Polish-American community.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Stanislaus_Kostka_Church",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Basilica_of_St_Stanislaus_Kostka_NW.jpg/960px-Basilica_of_St_Stanislaus_Kostka_NW.jpg"
+  },
+  {
+    "id": "our-lady-perpetual-help-boston",
+    "name": "Basilica of Our Lady of Perpetual Help",
+    "placeId": "boston",
+    "type": "papal-basilica",
+    "startYear": 1878,
+    "description": "Also known as the Mission Church, a Redemptorist church famous for its healing ministry. One of the most visited Catholic shrines in the United States, attracting thousands of pilgrims seeking healing.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Our_Lady_of_Perpetual_Help_%28Boston%29",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Basilica_of_Our_Lady_of_Perpetual_Help%2C_St._Mary_Magdalene_and_St._Stanislaus_the_Bishop%2C_Pozna%C5%84%2C_Poland.jpg/960px-Basilica_of_Our_Lady_of_Perpetual_Help%2C_St._Mary_Magdalene_and_St._Stanislaus_the_Bishop%2C_Pozna%C5%84%2C_Poland.jpg"
+  },
+  {
+    "id": "st-joseph-detroit",
+    "name": "Basilica of St. Joseph",
+    "placeId": "detroit",
+    "type": "papal-basilica",
+    "startYear": 1873,
+    "description": "A historic German Catholic church in Detroit, known for its beautiful architecture and rich history. Serves as a symbol of the German immigrant community in the city.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Joseph%27s_Church_%28Detroit%29",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/St._Joseph%27s_Basilica_%28Alameda%2C_CA%29.JPG/960px-St._Joseph%27s_Basilica_%28Alameda%2C_CA%29.JPG"
+  },
+  {
+    "id": "st-anne-de-beaupre",
+    "name": "Basilica of St. Anne de Beaupré",
+    "placeId": "sainte-anne-de-beaupre",
+    "type": "papal-basilica",
+    "startYear": 1658,
+    "description": "One of the oldest and most important pilgrimage sites in North America. Built on the site where St. Anne is said to have appeared. Receives over a million pilgrims annually, many seeking healing.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sainte-Anne-de-Beaupr%C3%A9_Shrine",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Sainte-Anne-de-Beaupr%C3%A9_-Chapelle_d%C3%A9di%C3%A9e_Cyrille_d%27Alexandrie_et_Jean_de_Damas.JPG/960px-Sainte-Anne-de-Beaupr%C3%A9_-Chapelle_d%C3%A9di%C3%A9e_Cyrille_d%27Alexandrie_et_Jean_de_Damas.JPG"
+  },
+  {
+    "id": "st-patrick-old-cathedral",
+    "name": "Basilica of St. Patrick's Old Cathedral",
+    "placeId": "new-york",
+    "type": "papal-basilica",
+    "startYear": 1815,
+    "description": "The first Catholic cathedral in New York City, built when anti-Catholic sentiment was strong. A symbol of Irish Catholic presence in America and a historic landmark in Lower Manhattan.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Patrick%27s_Old_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Saint_Pats_Old_Cathedral_Manh_jeh.JPG/960px-Saint_Pats_Old_Cathedral_Manh_jeh.JPG"
+  },
+  {
+    "id": "st-michael-munich",
+    "name": "Basilica of St. Michael",
+    "placeId": "munich",
+    "type": "papal-basilica",
+    "startYear": 1583,
+    "description": "The largest Renaissance church north of the Alps. Built by the Jesuits as a symbol of the Counter-Reformation. Contains the crypt of the Wittelsbach dynasty and is a masterpiece of German Renaissance architecture.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Michael%27s_Church,_Munich",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/20060416-Michaelskirche_Muenchen.jpg/960px-20060416-Michaelskirche_Muenchen.jpg"
+  },
+  {
+    "id": "st-thomas-chennai",
+    "name": "Basilica of St. Thomas",
+    "placeId": "chennai",
+    "type": "papal-basilica",
+    "startYear": 1523,
+    "description": "Built over the traditional tomb of St. Thomas the Apostle, who is said to have brought Christianity to India. One of the most important pilgrimage sites in India, attracting Christians from around the world.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/San_Thome_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Santhome_Basilica.jpg/1039px-Santhome_Basilica.jpg"
+  },
+  {
+    "id": "st-andrew-patras",
+    "name": "Basilica of St. Andrew",
+    "placeId": "patras",
+    "type": "papal-basilica",
+    "startYear": 1974,
+    "description": "The largest church in Greece and one of the largest in the Balkans. Built to house the relics of St. Andrew the Apostle, the patron saint of Greece. A modern architectural masterpiece.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Church_of_St._Andrew,_Patras",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Stained_glass_with_St._Andrew_in_Pazzi_Chapel._Basilica_Santa_Croce_in_Florence%2C_Italy.jpg/960px-Stained_glass_with_St._Andrew_in_Pazzi_Chapel._Basilica_Santa_Croce_in_Florence%2C_Italy.jpg"
+  },
+  {
+    "id": "st-peter-cologne",
+    "name": "Basilica of St. Peter",
+    "placeId": "cologne",
+    "type": "papal-basilica",
+    "startYear": 1513,
+    "description": "A Gothic church in Cologne, originally built as a collegiate church. Known for its beautiful architecture and as the burial place of St. Peter of Alcantara. Part of Cologne's rich ecclesiastical heritage.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Peter%27s_Church,_Cologne",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/St._Peter_K%C3%B6ln_-_S%C3%BCdseite-6422.jpg/1200px-St._Peter_K%C3%B6ln_-_S%C3%BCdseite-6422.jpg"
+  },
+  {
+    "id": "st-matthew-washington",
+    "name": "Cathedral Basilica of St. Matthew the Apostle",
+    "placeId": "washington",
+    "type": "papal-basilica",
+    "startYear": 1913,
+    "description": "The cathedral of the Archdiocese of Washington and the site of many important Catholic ceremonies, including the funeral Mass of President John F. Kennedy. A prominent landmark in the nation's capital.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cathedral_of_St._Matthew_the_Apostle",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/2013_Cathedral_of_St._Matthew_the_Apostle.JPG/1200px-2013_Cathedral_of_St._Matthew_the_Apostle.JPG"
+  },
+  {
+    "id": "st-luke-padua",
+    "name": "Basilica of St. Luke",
+    "placeId": "padua",
+    "type": "papal-basilica",
+    "startYear": 1117,
+    "description": "A Romanesque basilica in Padua, originally built to house the relics of St. Luke the Evangelist. Known for its beautiful frescoes and as an important pilgrimage site in northern Italy.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santa_Giustina,_Padua",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Santa_Giustina_%28Padua%29_-_Chapel_of_Saint_Luke_-_Tomb_of_Luke_the_Evangelist_%28front%29.jpg/960px-Santa_Giustina_%28Padua%29_-_Chapel_of_Saint_Luke_-_Tomb_of_Luke_the_Evangelist_%28front%29.jpg"
+  },
+  {
+    "id": "st-bartholomew-rome",
+    "name": "Basilica of St. Bartholomew on the Island",
+    "placeId": "rome",
+    "type": "papal-basilica",
+    "startYear": 1000,
+    "description": "Built on Tiber Island, one of Rome's most historic locations. Houses relics of St. Bartholomew the Apostle and serves as a memorial to modern martyrs. A symbol of ecumenical dialogue.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/San_Bartolomeo_all%27Isola",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/San_Bartolomeo_all%27isola_September_2015-1.jpg/1200px-San_Bartolomeo_all%27isola_September_2015-1.jpg"
+  },
+  {
+    "id": "st-philip-neri-rome",
+    "name": "Basilica of St. Philip Neri",
+    "placeId": "rome",
+    "type": "papal-basilica",
+    "startYear": 1626,
+    "description": "Also known as the Chiesa Nuova, built for St. Philip Neri's Oratorians. A masterpiece of Baroque architecture, containing important works of art and the tomb of St. Philip Neri, the Apostle of Rome.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Santa_Maria_in_Vallicella",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Roma_Chiesa_Nuova_GS_112-1225_IMGc.JPG/960px-Roma_Chiesa_Nuova_GS_112-1225_IMGc.JPG"
+  },
+  {
+    "id": "our-lady-ta-pinu",
+    "name": "Basilica of Our Lady of Ta' Pinu",
+    "placeId": "gozo",
+    "type": "papal-basilica",
+    "startYear": 1920,
+    "description": "The national shrine of Malta, built on the site where Our Lady appeared to a Maltese woman in 1883. One of the most important Marian shrines in the Mediterranean, attracting pilgrims from around the world.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Ta%27_Pinu",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ta%E2%80%99_Pinu_National_Shrine.jpg/1200px-Ta%E2%80%99_Pinu_National_Shrine.jpg"
+  },
+  {
+    "id": "our-lady-good-health-velankanni",
+    "name": "Basilica of Our Lady of Good Health",
+    "placeId": "velankanni",
+    "type": "papal-basilica",
+    "startYear": 1771,
+    "description": "Also known as the Lourdes of the East, one of the most important Marian shrines in India. Built on the site where Our Lady appeared to a Hindu boy and a Portuguese sailor. Attracts millions of pilgrims annually.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Velankanni_Church",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Basilica_of_Our_Lady_of_Good_Health_3.jpg/960px-Basilica_of_Our_Lady_of_Good_Health_3.jpg"
+  },
+  {
+    "id": "our-lady-la-vang",
+    "name": "Basilica of Our Lady of La Vang",
+    "placeId": "la-vang",
+    "type": "papal-basilica",
+    "startYear": 1886,
+    "description": "The most important Marian shrine in Vietnam, built on the site where Our Lady appeared to persecuted Vietnamese Catholics in 1798. A symbol of Vietnamese Catholicism and resilience under persecution.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/La_Vang_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Our_Lady_of_La_Vang_chapel_%28Washington_Basilica%29.JPG/960px-Our_Lady_of_La_Vang_chapel_%28Washington_Basilica%29.JPG"
+  },
+  {
+    "id": "assumption-baltimore",
+    "name": "Basilica of the National Shrine of the Assumption of the Blessed Virgin Mary",
+    "placeId": "baltimore",
+    "type": "papal-basilica",
+    "startYear": 1821,
+    "description": "The first Catholic cathedral built in the United States after the nation's founding. Designed by Benjamin Henry Latrobe, it is a masterpiece of Neoclassical architecture and a symbol of religious freedom in America.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_the_National_Shrine_of_the_Assumption_of_the_Blessed_Virgin_Mary",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/BasilicaExterior.jpg"
+  },
+  {
+    "id": "saints-peter-paul-philadelphia",
+    "name": "Cathedral Basilica of Saints Peter and Paul",
+    "placeId": "philadelphia",
+    "type": "papal-basilica",
+    "startYear": 1864,
+    "description": "The largest Catholic church in Pennsylvania and the principal church of the Archdiocese of Philadelphia. A masterpiece of Roman-Corinthian architecture, built during the height of the Catholic population growth in America.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cathedral_Basilica_of_Saints_Peter_and_Paul_%28Philadelphia%29",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/2013_Cathedral_Basilica_of_Saints_Peter_and_Paul_from_across_the_Benjamin_Franklin_Parkway_2.jpg/1200px-2013_Cathedral_Basilica_of_Saints_Peter_and_Paul_from_across_the_Benjamin_Franklin_Parkway_2.jpg"
+  },
+  {
+    "id": "st-francis-xavier-dyersville",
+    "name": "Basilica of St. Francis Xavier",
+    "placeId": "dyersville",
+    "type": "papal-basilica",
+    "startYear": 1888,
+    "description": "A beautiful Gothic Revival basilica in rural Iowa, built by German immigrants. Known for its stunning architecture and as the site of the famous Field of Dreams movie location. A testament to immigrant faith and perseverance.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Francis_Xavier_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Basilica_of_St._Francis_Xavier.jpg"
+  },
+  {
+    "id": "our-lady-lujan",
+    "name": "Basilica of Our Lady of Luján",
+    "placeId": "lujan",
+    "type": "papal-basilica",
+    "startYear": 1890,
+    "description": "The most important Marian shrine in Argentina and one of the most visited in South America. Built to house the image of Our Lady of Luján, the patroness of Argentina. Receives millions of pilgrims annually.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_Luj%C3%A1n",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Frente_de_la_Bas%C3%ADlica_de_Luj%C3%A1n.JPG/960px-Frente_de_la_Bas%C3%ADlica_de_Luj%C3%A1n.JPG"
+  },
+  {
+    "id": "our-lady-chiquinquira",
+    "name": "Basilica of Our Lady of Chiquinquirá",
+    "placeId": "chiquinquira",
+    "type": "papal-basilica",
+    "startYear": 1796,
+    "description": "The most important Marian shrine in Colombia, built to house the miraculous image of Our Lady of Chiquinquirá, the patroness of Colombia. A major pilgrimage destination and symbol of Colombian Catholicism.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_the_Rosary_of_Chiquinquir%C3%A1",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Bas%C3%ADlica_Nuestra_Se%C3%B1ora_del_Rosario_de_Chiquinquir%C3%A1_%28Exterior_1%29.jpg/960px-Bas%C3%ADlica_Nuestra_Se%C3%B1ora_del_Rosario_de_Chiquinquir%C3%A1_%28Exterior_1%29.jpg"
+  },
+  {
+    "id": "our-lady-copacabana",
+    "name": "Basilica of Our Lady of Copacabana",
+    "placeId": "copacabana",
+    "type": "papal-basilica",
+    "startYear": 1619,
+    "description": "The most important Marian shrine in Bolivia, built on the shores of Lake Titicaca. Houses the image of Our Lady of Copacabana, the patroness of Bolivia. A major pilgrimage site combining Catholic and indigenous traditions.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Our_Lady_of_Copacabana",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Flickr_-_archer10_%28Dennis%29_-_Bolivia-113.jpg/960px-Flickr_-_archer10_%28Dennis%29_-_Bolivia-113.jpg"
+  },
+  {
+    "id": "st-paul-melbourne",
+    "name": "Cathedral Basilica of St. Paul",
+    "placeId": "melbourne",
+    "type": "papal-basilica",
+    "startYear": 1891,
+    "description": "The cathedral of the Archdiocese of Melbourne, Australia. A masterpiece of Gothic Revival architecture, built during the gold rush era. The largest church in Australia and a symbol of Irish Catholic presence.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St_Patrick%27s_Cathedral,_Melbourne",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/St_Patrick%27s_Cathedral-Gothic_Revival_Style_%28East_Side%29.jpg/1200px-St_Patrick%27s_Cathedral-Gothic_Revival_Style_%28East_Side%29.jpg"
+  },
+  {
+    "id": "st-mary-sydney",
+    "name": "St. Mary's Cathedral",
+    "placeId": "sydney",
+    "type": "papal-basilica",
+    "startYear": 1868,
+    "description": "The cathedral of the Archdiocese of Sydney and the seat of the Archbishop of Sydney. A masterpiece of Gothic Revival architecture, the largest church in Australia. Built by Irish Catholic immigrants.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St_Mary%27s_Cathedral,_Sydney",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/St_Mary%27s_Cathedral%2C_Sydney_HDR_b.jpg/960px-St_Mary%27s_Cathedral%2C_Sydney_HDR_b.jpg"
+  },
+  {
+    "id": "myeongdong-cathedral-seoul",
+    "name": "Myeongdong Cathedral",
+    "placeId": "seoul",
+    "type": "papal-basilica",
+    "startYear": 1898,
+    "description": "The cathedral of the Archdiocese of Seoul and the first Gothic church in Korea. A symbol of Korean Catholicism and a site of historical significance during the Korean War. The mother church of Korean Catholicism.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Myeongdong_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Myeongdong_Cathedral_01_%28cropped%29.jpg/1200px-Myeongdong_Cathedral_01_%28cropped%29.jpg"
+  },
+  {
+    "id": "assumption-cathedral-bangkok",
+    "name": "Assumption Cathedral",
+    "placeId": "bangkok",
+    "type": "papal-basilica",
+    "startYear": 1821,
+    "description": "The cathedral of the Archdiocese of Bangkok and the principal church of Catholicism in Thailand. Built by French missionaries, it serves the small but vibrant Catholic community in predominantly Buddhist Thailand.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Assumption_Cathedral,_Bangkok",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Assumption_Cathedral_Bangkok_2023-10_%E0%B8%AD%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%8A%E0%B8%B1%E0%B8%8D.jpg/960px-Assumption_Cathedral_Bangkok_2023-10_%E0%B8%AD%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%8A%E0%B8%B1%E0%B8%8D.jpg"
+  },
+  {
+    "id": "regina-mundi-johannesburg",
+    "name": "Regina Mundi Catholic Church",
+    "placeId": "johannesburg",
+    "type": "papal-basilica",
+    "startYear": 1962,
+    "description": "The largest Catholic church in South Africa, known as the 'People's Church' for its role in the anti-apartheid struggle. A symbol of resistance and hope, where many anti-apartheid meetings were held.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Regina_Mundi_Catholic_Church",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Regina_mundi_church%2C_soweto.JPG/960px-Regina_mundi_church%2C_soweto.JPG"
+  },
+  {
+    "id": "st-mary-cape-town",
+    "name": "St. Mary's Cathedral",
+    "placeId": "cape-town",
+    "type": "papal-basilica",
+    "startYear": 1851,
+    "description": "The cathedral of the Archdiocese of Cape Town, the oldest Catholic cathedral in South Africa. Built during the British colonial period, it serves as the mother church of South African Catholicism.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St_Mary%27s_Cathedral,_Cape_Town",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/St_Marys_Cathedral_Nave_Edinburgh.jpg/960px-St_Marys_Cathedral_Nave_Edinburgh.jpg"
+  },
+  {
+    "id": "holy-family-nairobi",
+    "name": "Holy Family Basilica",
+    "placeId": "nairobi",
+    "type": "papal-basilica",
+    "startYear": 1904,
+    "description": "The cathedral of the Archdiocese of Nairobi and the largest Catholic church in Kenya. Built by the Holy Ghost Fathers, it serves as the mother church of East African Catholicism and a symbol of the growing Church in Africa.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Holy_Family_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Holy_Family_Basilica_%28Nairobi%2C_Kenya%29_02.JPG/960px-Holy_Family_Basilica_%28Nairobi%2C_Kenya%29_02.JPG"
+  },
+  {
+    "id": "sacred-heart-warsaw",
+    "name": "Basilica of the Sacred Heart of Jesus",
+    "placeId": "warsaw",
+    "type": "papal-basilica",
+    "startYear": 1923,
+    "description": "A modern basilica in Warsaw, built in the interwar period. A symbol of Polish Catholicism and resilience, heavily damaged during World War II and rebuilt. Serves as a parish church and pilgrimage site.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_the_Sacred_Heart_of_Jesus,_Warsaw",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Bell_tower_of_Basilica_of_the_Sacred_Heart_of_Jesus%2C_Pondicherry.jpg/960px-Bell_tower_of_Basilica_of_the_Sacred_Heart_of_Jesus%2C_Pondicherry.jpg"
+  },
+  {
+    "id": "st-joseph-bucharest",
+    "name": "St. Joseph's Cathedral",
+    "placeId": "bucharest",
+    "type": "papal-basilica",
+    "startYear": 1884,
+    "description": "The cathedral of the Roman Catholic Archdiocese of Bucharest, Romania. A Neo-Gothic church built during the Austro-Hungarian period, serving the small but significant Catholic community in predominantly Orthodox Romania.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Joseph%27s_Cathedral,_Bucharest",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/St._Joseph_Cathedral%2C_Sioux_Falls.jpg/960px-St._Joseph_Cathedral%2C_Sioux_Falls.jpg"
+  },
+  {
+    "id": "our-lady-sorrows-chicago",
+    "name": "Basilica of Our Lady of Sorrows",
+    "placeId": "chicago",
+    "type": "papal-basilica",
+    "startYear": 1890,
+    "description": "A Servite basilica in Chicago, known for its beautiful architecture and devotion to Our Lady of Sorrows. A major pilgrimage site, especially during Holy Week, attracting thousands of faithful.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Our_Lady_of_Sorrows_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Our_Lady_of_Sorrows_080202_feedback.jpg/1200px-Our_Lady_of_Sorrows_080202_feedback.jpg"
+  },
+  {
+    "id": "st-adalbert-essen",
+    "name": "Basilica of St. Adalbert",
+    "placeId": "essen",
+    "type": "papal-basilica",
+    "startYear": 1275,
+    "description": "A historic basilica in Essen, Germany, originally built as a collegiate church. Known for its Romanesque architecture and as the burial place of St. Adalbert of Prague. Part of Essen's rich ecclesiastical heritage.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Essen_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Essen_2011_66-2.jpg/1200px-Essen_2011_66-2.jpg"
+  },
+  {
+    "id": "st-wenceslas-olomouc",
+    "name": "Basilica of St. Wenceslas",
+    "placeId": "olomouc",
+    "type": "papal-basilica",
+    "startYear": 1107,
+    "description": "The cathedral of the Archdiocese of Olomouc, Czech Republic. Originally built as a Romanesque basilica, rebuilt in Gothic style. Houses the remains of St. Wenceslas and is a symbol of Czech Catholicism.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Wenceslas_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Olomouc_Katedrala_Sv._Vaclava.jpg/960px-Olomouc_Katedrala_Sv._Vaclava.jpg"
+  },
+  {
+    "id": "st-george-prague",
+    "name": "Basilica of St. George",
+    "placeId": "prague",
+    "type": "historic-basilica",
+    "startYear": 920,
+    "description": "The oldest surviving church building in Prague Castle complex. A Romanesque basilica dedicated to St. George, containing important medieval frescoes and the tombs of early Bohemian rulers.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._George%27s_Basilica_%28Prague%29",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Czech-03809_-_St._George%27s_Basilica_%2832204970373%29.jpg/960px-Czech-03809_-_St._George%27s_Basilica_%2832204970373%29.jpg"
+  },
+  {
+    "id": "st-stephen-budapest",
+    "name": "St. Stephen's Basilica",
+    "placeId": "budapest",
+    "type": "papal-basilica",
+    "startYear": 1851,
+    "description": "The largest church in Budapest, dedicated to St. Stephen, the first king of Hungary. Houses the Holy Right, the mummified right hand of St. Stephen. A masterpiece of Neoclassical architecture and symbol of Hungarian Catholicism.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Stephen%27s_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Budapest_Szent_Istvan_Bazilika_R01.jpg/1200px-Budapest_Szent_Istvan_Bazilika_R01.jpg"
+  },
+  {
+    "id": "st-mary-cracow",
+    "name": "St. Mary's Basilica",
+    "placeId": "krakow",
+    "type": "papal-basilica",
+    "startYear": 1222,
+    "description": "A Brick Gothic basilica in Kraków's Main Square, famous for its wooden altarpiece by Veit Stoss and the hourly trumpet call from its tower. One of Poland's most important churches and a symbol of Polish national identity.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Mary%27s_Basilica,_Krak%C3%B3w",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Church_of_Our_Lady_Assumed_into_Heaven%2C_5_Mariacki_square%2C_Old_Town%2C_Krak%C3%B3w%2C_Poland.jpg/1200px-Church_of_Our_Lady_Assumed_into_Heaven%2C_5_Mariacki_square%2C_Old_Town%2C_Krak%C3%B3w%2C_Poland.jpg"
+  },
+  {
+    "id": "st-mary-gdansk",
+    "name": "St. Mary's Church",
+    "placeId": "gdansk",
+    "type": "historic-basilica",
+    "startYear": 1343,
+    "description": "The largest brick church in the world. A masterpiece of Brick Gothic architecture, built by the Hanseatic League. The main church of Gdańsk, Poland, and a symbol of the city's medieval prosperity.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Mary%27s_Church,_Gda%C3%B4sk",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bazylika_Mariacka_DSC01870.jpg/1200px-Bazylika_Mariacka_DSC01870.jpg"
+  },
+  {
+    "id": "st-peter-trier",
+    "name": "Trier Cathedral",
+    "placeId": "trier",
+    "type": "historic-basilica",
+    "startYear": 340,
+    "description": "The oldest cathedral in Germany, built by Constantine the Great. Houses the Holy Tunic, believed to be the seamless garment of Christ. A UNESCO World Heritage Site and symbol of early Christianity in Germany.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Trier_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Trier_Dom_BW_1.JPG/1200px-Trier_Dom_BW_1.JPG"
+  },
+  {
+    "id": "st-mary-star-sea-melbourne",
+    "name": "Basilica of St. Mary Star of the Sea",
+    "placeId": "melbourne",
+    "type": "papal-basilica",
+    "startYear": 1848,
+    "description": "The oldest Catholic church in Melbourne, Australia. Built by Irish immigrants during the gold rush, it serves as a symbol of the early Catholic presence in Australia and the Irish diaspora.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St_Mary%27s_Star_of_the_Sea_Church",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Basilica_of_St._Mary_Star_of_The_Sea%2C_Key_West_IMG00348-20120402-1534_02.jpg/960px-Basilica_of_St._Mary_Star_of_The_Sea%2C_Key_West_IMG00348-20120402-1534_02.jpg"
+  },
+  {
+    "id": "our-lady-rosary-lima",
+    "name": "Basilica of Our Lady of the Rosary",
+    "placeId": "lima",
+    "type": "papal-basilica",
+    "startYear": 1590,
+    "description": "Also known as the Church of Santo Domingo, one of the most important churches in Lima, Peru. Houses the remains of St. Rose of Lima, the first saint of the Americas. A masterpiece of colonial architecture.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Convent_of_Santo_Domingo,_Lima",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Chapel_of_our_Lady_of_the_Rosary_of_Santi_Giovanni_e_Paolo_%28Venice%29_-_Lady_of_the_Rosary.jpg/960px-Chapel_of_our_Lady_of_the_Rosary_of_Santi_Giovanni_e_Paolo_%28Venice%29_-_Lady_of_the_Rosary.jpg"
+  },
+  {
+    "id": "our-lady-charity-cobre",
+    "name": "Basilica of Our Lady of Charity",
+    "placeId": "el-cobre",
+    "type": "papal-basilica",
+    "startYear": 1927,
+    "description": "The national shrine of Cuba, built to house the image of Our Lady of Charity of El Cobre, the patroness of Cuba. A symbol of Cuban Catholicism and national identity, attracting pilgrims from around the world.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_Charity",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Basilica_of_Our_Lady_of_Charity_historical_marker.jpg/960px-Basilica_of_Our_Lady_of_Charity_historical_marker.jpg"
+  },
+  {
+    "id": "st-joseph-oratory-montreal",
+    "name": "St. Joseph's Oratory",
+    "placeId": "montreal",
+    "type": "papal-basilica",
+    "startYear": 1904,
+    "description": "The largest church in Canada and one of the largest in the world. Built by St. Brother André, it is a major pilgrimage site dedicated to St. Joseph. The dome is the third-largest of its kind in the world.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Saint_Joseph%27s_Oratory",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Oratoire_Saint-Joseph_du_Mont-Royal_-_Montreal.jpg/1000px-Oratoire_Saint-Joseph_du_Mont-Royal_-_Montreal.jpg"
+  },
+  {
+    "id": "st-patrick-auckland",
+    "name": "St. Patrick's Cathedral",
+    "placeId": "auckland",
+    "type": "papal-basilica",
+    "startYear": 1848,
+    "description": "The cathedral of the Diocese of Auckland, New Zealand. Built by Irish Catholic immigrants, it is the oldest Catholic church in New Zealand and a symbol of the early Catholic presence in the country.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St_Patrick%27s_Cathedral,_Auckland",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Cathedral_of_Saint_Patrick_and_Saint_Joseph-2.jpg/1149px-Cathedral_of_Saint_Patrick_and_Saint_Joseph-2.jpg"
+  },
+  {
+    "id": "sacred-heart-wellington",
+    "name": "Sacred Heart Cathedral",
+    "placeId": "wellington",
+    "type": "papal-basilica",
+    "startYear": 1901,
+    "description": "The cathedral of the Archdiocese of Wellington, New Zealand. A beautiful Gothic Revival church, serving as the mother church of New Zealand Catholicism and the seat of the Archbishop.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sacred_Heart_Cathedral,_Wellington",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Wellington_Catholic_Cathedral_%284485154200%29.jpg/1200px-Wellington_Catholic_Cathedral_%284485154200%29.jpg"
+  },
+  {
+    "id": "st-joseph-dunedin",
+    "name": "St. Joseph's Cathedral",
+    "placeId": "dunedin",
+    "type": "papal-basilica",
+    "startYear": 1886,
+    "description": "The cathedral of the Diocese of Dunedin, New Zealand. A Gothic Revival church built by Scottish and Irish immigrants, representing the Catholic presence in the South Island of New Zealand.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St_Joseph%27s_Cathedral,_Dunedin",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Dunedin_Catholic_Cathedral.JPG/1200px-Dunedin_Catholic_Cathedral.JPG"
+  },
+  {
+    "id": "st-mary-perth",
+    "name": "St. Mary's Cathedral",
+    "placeId": "perth",
+    "type": "papal-basilica",
+    "startYear": 1865,
+    "description": "The cathedral of the Archdiocese of Perth, Australia. A Gothic Revival church built during the gold rush era, serving as the mother church of Western Australia and a symbol of Irish Catholic presence.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St_Mary%27s_Cathedral,_Perth",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/StMarysCathedral_b.jpg"
+  },
+  {
+    "id": "st-francis-xavier-adelaide",
+    "name": "St. Francis Xavier's Cathedral",
+    "placeId": "adelaide",
+    "type": "papal-basilica",
+    "startYear": 1858,
+    "description": "The cathedral of the Archdiocese of Adelaide, Australia. A Gothic Revival church built by German and Irish immigrants, serving as the mother church of South Australia.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St_Francis_Xavier%27s_Cathedral,_Adelaide",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/St_Francis_Xavier%27s_Cathedral%2C_Adelaide%2C_SA.jpg/1200px-St_Francis_Xavier%27s_Cathedral%2C_Adelaide%2C_SA.jpg"
+  },
+  {
+    "id": "st-stephen-brisbane",
+    "name": "St. Stephen's Cathedral",
+    "placeId": "brisbane",
+    "type": "papal-basilica",
+    "startYear": 1874,
+    "description": "The cathedral of the Archdiocese of Brisbane, Australia. A Gothic Revival church built during Queensland's early settlement, serving as the mother church of Queensland Catholicism.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St_Stephen%27s_Cathedral,_Brisbane",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Saint_Stephen%27s_Cathedral%2C_Brisbane_in_Jan_2020%2C_03.jpg/960px-Saint_Stephen%27s_Cathedral%2C_Brisbane_in_Jan_2020%2C_03.jpg"
+  },
+  {
+    "id": "good-shepherd-singapore",
+    "name": "Cathedral of the Good Shepherd",
+    "placeId": "singapore",
+    "type": "papal-basilica",
+    "startYear": 1847,
+    "description": "The oldest Catholic church in Singapore and the cathedral of the Archdiocese of Singapore. Built by French missionaries, it serves the diverse Catholic community in this multicultural city-state.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cathedral_of_the_Good_Shepherd",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Cathedral_of_the_Good_Shepherd%2C_Singapore_%282023%29_-_img_01.jpg/1200px-Cathedral_of_the_Good_Shepherd%2C_Singapore_%282023%29_-_img_01.jpg"
+  },
+  {
+    "id": "jakarta-cathedral",
+    "name": "Jakarta Cathedral",
+    "placeId": "jakarta",
+    "type": "papal-basilica",
+    "startYear": 1901,
+    "description": "The cathedral of the Archdiocese of Jakarta, Indonesia. Also known as the Church of Our Lady of the Assumption, it is the seat of the Archbishop of Jakarta and serves the Catholic community in predominantly Muslim Indonesia.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Jakarta_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Katedral_Jakarta.jpg/960px-Katedral_Jakarta.jpg"
+  },
+  {
+    "id": "manila-cathedral",
+    "name": "Manila Cathedral",
+    "placeId": "manila",
+    "type": "papal-basilica",
+    "startYear": 1581,
+    "description": "The cathedral of the Archdiocese of Manila, Philippines. Also known as the Minor Basilica of the Immaculate Conception, it has been rebuilt eight times due to earthquakes and wars. The mother church of the Philippines.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Manila_Cathedral",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Catedral_de_la_Inmaculada_Concepci%C3%B3n%2C_Manila%2C_Filipinas%2C_2023-08-26%2C_DD_21.jpg/1200px-Catedral_de_la_Inmaculada_Concepci%C3%B3n%2C_Manila%2C_Filipinas%2C_2023-08-26%2C_DD_21.jpg"
+  },
+  {
+    "id": "our-lady-rosary-pompeii",
+    "name": "Basilica of Our Lady of the Rosary of Pompeii",
+    "placeId": "pompeii",
+    "type": "papal-basilica",
+    "startYear": 1876,
+    "description": "A major Marian shrine in Italy, built near the ruins of ancient Pompeii. Founded by Blessed Bartolo Longo, it houses the famous image of Our Lady of the Rosary and attracts millions of pilgrims annually.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sanctuary_of_Our_Lady_of_the_Rosary_of_Pompeii",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Our_Lady_Star_of_the_Sea%2C_Seaforth_1.jpg/960px-Our_Lady_Star_of_the_Sea%2C_Seaforth_1.jpg"
+  },
+  {
+    "id": "holy-cross-lagos",
+    "name": "Holy Cross Cathedral",
+    "placeId": "lagos",
+    "type": "papal-basilica",
+    "startYear": 1877,
+    "description": "The cathedral of the Archdiocese of Lagos, Nigeria. Built during the British colonial period, it serves as the mother church of Nigerian Catholicism and a symbol of the growing Church in West Africa.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Holy_Cross_Cathedral,_Lagos",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Holy_Cross_Cathedral_Lagos.jpg/1200px-Holy_Cross_Cathedral_Lagos.jpg"
+  },
+  {
+    "id": "notre-dame-congo-kinshasa",
+    "name": "Notre-Dame du Congo",
+    "placeId": "kinshasa",
+    "type": "papal-basilica",
+    "startYear": 1949,
+    "description": "The cathedral of the Archdiocese of Kinshasa, Democratic Republic of the Congo. A modern basilica serving as the mother church of Congolese Catholicism and a symbol of the vibrant Church in Central Africa.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Notre-Dame_du_Congo",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Kisangani_cath%C3%A9drale_Notre_Dame_du_Tr%C3%A8s_Saint_Rosaire.jpg/960px-Kisangani_cath%C3%A9drale_Notre_Dame_du_Tr%C3%A8s_Saint_Rosaire.jpg"
+  },
+  {
+    "id": "holy-spirit-accra",
+    "name": "Holy Spirit Cathedral",
+    "placeId": "accra",
+    "type": "papal-basilica",
+    "startYear": 1957,
+    "description": "The cathedral of the Archdiocese of Accra, Ghana. A modern church built after Ghana's independence, serving as the mother church of Ghanaian Catholicism and a symbol of the growing Church in West Africa.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Holy_Spirit_Cathedral,_Accra",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Holy_Spirit_Cathedral_Tower.jpg/960px-Holy_Spirit_Cathedral_Tower.jpg"
+  },
+  {
+    "id": "our-lady-victories-dakar",
+    "name": "Cathedral of Our Lady of Victories",
+    "placeId": "dakar",
+    "type": "papal-basilica",
+    "startYear": 1936,
+    "description": "The cathedral of the Archdiocese of Dakar, Senegal. Built during the French colonial period, it serves as the mother church of Senegalese Catholicism and a symbol of the Catholic presence in predominantly Muslim West Africa.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cathedral_of_Our_Lady_of_Victories,_Dakar",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Roman_Catholic_Archdiocese_of_Maseru.jpg/960px-Roman_Catholic_Archdiocese_of_Maseru.jpg"
+  },
+  {
+    "id": "st-vincent-paul-tunis",
+    "name": "Cathedral of St. Vincent de Paul",
+    "placeId": "tunis",
+    "type": "papal-basilica",
+    "startYear": 1897,
+    "description": "The cathedral of the Archdiocese of Tunis, Tunisia. Built during the French colonial period, it serves the small Catholic community in predominantly Muslim Tunisia and is a symbol of interfaith dialogue.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cathedral_of_St._Vincent_de_Paul,_Tunis",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/St_Vincent_de_Paul_from_54_St_James_Street.jpg/960px-St_Vincent_de_Paul_from_54_St_James_Street.jpg"
+  },
+  {
+    "id": "sacred-heart-casablanca",
+    "name": "Sacred Heart Cathedral",
+    "placeId": "casablanca",
+    "type": "papal-basilica",
+    "startYear": 1930,
+    "description": "The cathedral of the Archdiocese of Rabat (located in Casablanca), Morocco. A masterpiece of Art Deco architecture, built during the French protectorate. Now serves as a cultural center, symbolizing the Catholic presence in predominantly Muslim Morocco.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sacred_Heart_Cathedral,_Casablanca",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Front_Sacred_Heart_Cathedral_Ooty_Mar25_A7CR_05528.jpg/960px-Front_Sacred_Heart_Cathedral_Ooty_Mar25_A7CR_05528.jpg"
+  },
+  {
+    "id": "our-lady-egypt-cairo",
+    "name": "Cathedral of Our Lady of Egypt",
+    "placeId": "cairo",
+    "type": "papal-basilica",
+    "startYear": 1904,
+    "description": "The cathedral of the Coptic Catholic Church in Cairo, Egypt. Also known as the Cathedral of the Nativity, it serves the Coptic Catholic community and is a symbol of the ancient Christian presence in Egypt.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Cathedral_of_Our_Lady_of_Egypt",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Cathedral_of_Our_Lady_of_Egypt.jpg"
+  },
+  {
+    "id": "st-michael-cathedral-toronto",
+    "name": "St. Michael's Cathedral",
+    "placeId": "toronto",
+    "type": "papal-basilica",
+    "startYear": 1848,
+    "description": "The cathedral of the Archdiocese of Toronto, Canada. A Gothic Revival church built by Irish immigrants, serving as the mother church of Ontario Catholicism and a symbol of the Irish Catholic presence in Canada.",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/St._Michael%27s_Cathedral_Basilica",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Cathedral_Sunset_%28II%29.jpg/1200px-Cathedral_Sunset_%28II%29.jpg"
   }
 ]

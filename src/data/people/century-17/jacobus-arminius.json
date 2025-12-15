@@ -1,0 +1,25 @@
+{
+  "id": "jacobus-arminius",
+  "name": "Jacobus Arminius",
+  "birthYear": 1560,
+  "deathYear": 1609,
+  "primaryTradition": "Latin",
+  "roles": [
+    "theologian",
+    "pastor"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "amsterdam",
+      "description": "Theologian and pastor in Amsterdam"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jacobus_Arminius",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Jacobus_Arminius2.jpg/330px-Jacobus_Arminius2.jpg",
+  "summary": "Jacobus Arminius was a Dutch theologian who opposed the Calvinist doctrine of predestination. He taught that God's predestination was based on his foreknowledge of who would accept or reject faith, rather than being unconditional. He also taught that humans had free will and that grace could be resisted. His teachings, known as Arminianism, were condemned at the Synod of Dort (1618-1619), which affirmed Calvinist predestination. Arminianism influenced later Protestant theology, including Methodism. His followers were known as Remonstrants.",
+  "keyQuotes": [],
+  "writings": []
+}
+

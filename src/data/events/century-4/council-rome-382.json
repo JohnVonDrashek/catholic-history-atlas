@@ -1,0 +1,16 @@
+{
+  "id": "council-rome-382",
+  "name": "Council of Rome",
+  "startYear": 382,
+  "endYear": 382,
+  "type": "council",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Rome_(382)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13144a.htm",
+  "summary": "The Council of Rome in 382 AD, presided over by Pope Damasus I, was instrumental in establishing the canon of Scripture for the Western Church. It distinguished between canonical books and apocryphal writings, providing the basis for the biblical canon used in Western Christianity.",
+  "keyDocuments": [
+    "Decree of Damasus",
+    "Roman Canon of Scripture"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Friedrich_Hottenroth_-_Emperor_Otto_at_the_Council_of_Rome%2C_963.jpg/330px-Friedrich_Hottenroth_-_Emperor_Otto_at_the_Council_of_Rome%2C_963.jpg"
+}

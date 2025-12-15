@@ -1,0 +1,27 @@
+{
+  "id": "john-calvin",
+  "name": "John Calvin",
+  "birthYear": 1509,
+  "deathYear": 1564,
+  "primaryTradition": "Latin",
+  "roles": [
+    "theologian",
+    "reformer",
+    "pastor"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "geneva",
+      "description": "Reformer and pastor in Geneva"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_Calvin",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/John_Calvin_Museum_Catharijneconvent_RMCC_s84_cropped.png/330px-John_Calvin_Museum_Catharijneconvent_RMCC_s84_cropped.png",
+  "summary": "John Calvin was a French theologian and reformer who was a key figure in the Protestant Reformation. He developed the theological system known as Calvinism, which emphasized predestination, the sovereignty of God, and the authority of Scripture. His 'Institutes of the Christian Religion' became one of the most influential works of Protestant theology. He established a theocratic government in Geneva and his teachings spread throughout Europe, influencing the Reformed churches. His teachings were condemned by the Catholic Church, particularly his views on predestination and the Eucharist.",
+  "keyQuotes": [
+    "The human mind is a perpetual forge of idols."
+  ],
+  "writings": []
+}

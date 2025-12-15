@@ -1,0 +1,25 @@
+{
+  "id": "acacius-caesarea",
+  "name": "Acacius of Caesarea",
+  "birthYear": null,
+  "deathYear": 366,
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "caesarea-palestina",
+      "description": "Bishop of Caesarea"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Acacius_of_Caesarea",
+  "imageUrl": "",
+  "summary": "Acacius was Bishop of Caesarea and a leading Arian theologian. He was a student of Eusebius of Caesarea and became a prominent figure in the Arian party. He taught a moderate form of Arianism, known as Homoeanism, which taught that the Son was 'like' (homoios) the Father but not of the same substance. He was deposed by the Council of Seleucia in 359 but was later restored. He played a key role in the Arian controversy and was one of the most influential Arian bishops of his time.",
+  "keyQuotes": [],
+  "writings": []
+}
+

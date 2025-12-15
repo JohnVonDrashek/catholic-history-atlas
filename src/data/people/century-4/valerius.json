@@ -1,0 +1,24 @@
+{
+  "id": "valerius",
+  "name": "St. Valerius",
+  "birthYear": null,
+  "deathYear": 304,
+  "feastDay": "January 28",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "zaragoza",
+      "description": "Martyred in Zaragoza during Roman persecution"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Valerius_of_Zaragoza",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Trier-Weismark%2C_Kirche_St._Valerius_20161201.jpg/330px-Trier-Weismark%2C_Kirche_St._Valerius_20161201.jpg",
+  "summary": "Valerius was a Christian martyr who died for his faith during the persecutions of Diocletian in Roman Spain. He is venerated as one of the early martyrs of Zaragoza.",
+  "keyQuotes": [],
+  "writings": []
+}

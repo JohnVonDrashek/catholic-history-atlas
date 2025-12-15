@@ -19,7 +19,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Canisius",
-  "newAdventUrl": "https://www.newadvent.org/cathen/11732c.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Saint_Petrus_Canisius.jpg/330px-Saint_Petrus_Canisius.jpg",
   "summary": "Peter Canisius was a Dutch Jesuit priest and theologian who was a key figure in the Counter-Reformation in Germany and Austria. He wrote three catechisms that became standard texts for teaching the Catholic faith. He founded colleges and universities throughout Central Europe and was known for his preaching and pastoral work. He is one of the 36 Doctors of the Church and is the patron saint of Germany.",
   "keyQuotes": [],
@@ -28,5 +27,6 @@
       "title": "Catechism of Peter Canisius",
       "url": "https://www.ccel.org/ccel/canisius/catechism.html"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/11756c.htm"
 }

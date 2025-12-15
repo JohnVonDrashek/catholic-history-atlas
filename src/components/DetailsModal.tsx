@@ -364,7 +364,7 @@ function PersonDetails({ person }: { person: Person }) {
               href={person.wikipediaUrl}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ 
+              style={{
                 color: '#4a9eff',
                 textDecoration: 'none',
                 fontSize: '0.95rem',
@@ -376,6 +376,26 @@ function PersonDetails({ person }: { person: Person }) {
               onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
             >
               Wikipedia
+              <span style={{ fontSize: '0.85rem' }}>→</span>
+            </a>
+          )}
+          {person.myCatholicLifeUrl && (
+            <a
+              href={person.myCatholicLifeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: '#d4af37',
+                textDecoration: 'none',
+                fontSize: '0.95rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+              onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
+            >
+              My Catholic Life
               <span style={{ fontSize: '0.85rem' }}>→</span>
             </a>
           )}

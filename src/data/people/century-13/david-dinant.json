@@ -1,0 +1,25 @@
+{
+  "id": "david-dinant",
+  "name": "David of Dinant",
+  "birthYear": null,
+  "deathYear": 1217,
+  "primaryTradition": "Latin",
+  "roles": [
+    "philosopher",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "Taught at University of Paris"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/David_of_Dinant",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Dinant_Meuse_R01.jpg/330px-Dinant_Meuse_R01.jpg",
+  "summary": "David of Dinant was a 13th-century Belgian philosopher who taught a form of pantheism. He taught that God, matter, and mind were one and the same substance, leading to pantheistic conclusions. His writings were condemned at the Council of Paris in 1210 along with those of Amalric of Bena, and his books were burned. He was forced to flee Paris. His pantheistic teachings were seen as denying the distinction between God and creation. St. Thomas Aquinas criticized his teachings in the Summa Theologica.",
+  "keyQuotes": [],
+  "writings": [],
+  "newAdventUrl": "https://www.newadvent.org/cathen/04640b.htm"
+}

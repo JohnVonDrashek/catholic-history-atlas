@@ -1,0 +1,16 @@
+{
+  "id": "council-basel",
+  "name": "Council of Basel",
+  "startYear": 1431,
+  "endYear": 1449,
+  "type": "council",
+  "locationId": "basel",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Basel",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02330a.htm",
+  "summary": "The Council of Basel was convened to address church reform and reunification with the Eastern Churches. It became embroiled in conflict with Pope Eugene IV over conciliarism, leading to its eventual transfer to Ferrara and Florence.",
+  "keyDocuments": [
+    "Decrees of Basel",
+    "Compactata of Basel"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Recueil_des_textes_produits_pendant_le_concile_de_B%C3%A2le-M%C3%A9diath%C3%A8que_protestante_de_Strasbourg.jpg/330px-Recueil_des_textes_produits_pendant_le_concile_de_B%C3%A2le-M%C3%A9diath%C3%A8que_protestante_de_Strasbourg.jpg"
+}

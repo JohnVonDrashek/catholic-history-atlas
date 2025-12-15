@@ -7,6 +7,7 @@ import clement_xiv from './clement-xiv.json';
 import gerard_majella from './gerard-majella.json';
 import innocent_xiii from './innocent-xiii.json';
 import john_baptist_de_la_salle from './john-baptist-de-la-salle.json';
+import joseph_oriol from './joseph-oriol.json';
 import joseph_vaz from './joseph-vaz.json';
 import junipero_serra from './junipero-serra.json';
 import junípero_serra from './junípero-serra.json';
@@ -32,6 +33,7 @@ export default [
   gerard_majella,
   innocent_xiii,
   john_baptist_de_la_salle,
+  joseph_oriol,
   joseph_vaz,
   junipero_serra,
   junípero_serra,

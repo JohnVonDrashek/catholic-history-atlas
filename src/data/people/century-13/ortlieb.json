@@ -1,0 +1,24 @@
+{
+  "id": "ortlieb",
+  "name": "Ortlieb of Strassburg",
+  "birthYear": null,
+  "deathYear": 1215,
+  "primaryTradition": "Latin",
+  "roles": [
+    "preacher",
+    "founder"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "strasbourg",
+      "description": "Founded Ortliebians in Strasbourg"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ortlieb_of_Strasbourg",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Wappenbuch_R%C3%B6sch_csg-1084_010.jpg/330px-Wappenbuch_R%C3%B6sch_csg-1084_010.jpg",
+  "summary": "Ortlieb of Strassburg was a 13th-century preacher who founded the Ortliebians, a sect related to the Free Spirit movement. The Ortliebians taught that the Holy Spirit had been given directly to them, bypassing the need for the Church and sacraments. They rejected the authority of the clergy and taught that those who had received the Spirit were above moral law. The sect was condemned as heretical and was suppressed by the Inquisition. Ortlieb's teachings influenced other Free Spirit groups and were part of the broader anti-clerical and mystical movements of the time.",
+  "keyQuotes": [],
+  "writings": []
+}

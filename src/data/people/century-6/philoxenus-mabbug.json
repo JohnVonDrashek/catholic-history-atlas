@@ -1,0 +1,25 @@
+{
+  "id": "philoxenus-mabbug",
+  "name": "Philoxenus of Mabbug",
+  "birthYear": 440,
+  "deathYear": 523,
+  "primaryTradition": "Syriac",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "mabbug",
+      "description": "Bishop of Mabbug"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Philoxenus_of_Mabbug",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/St._Philoxenus_of_Mabbug.jpg/330px-St._Philoxenus_of_Mabbug.jpg",
+  "summary": "Philoxenus was Bishop of Mabbug (Hierapolis) and a leading Monophysite theologian. He strongly opposed the Council of Chalcedon and the Tome of Leo, teaching that Christ had one nature after the Incarnation. He was a prolific writer in Syriac and played a key role in the revision of the Syriac Bible translation (the Peshitta). He was exiled by the Byzantine emperor Justin I in 519 and died in exile. His writings were influential in the Syriac Orthodox Church. He was martyred during the persecution of Monophysites under Justin I.",
+  "keyQuotes": [],
+  "writings": []
+}
+

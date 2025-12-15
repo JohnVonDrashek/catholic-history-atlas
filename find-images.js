@@ -21,6 +21,39 @@ const colors = {
   magenta: '\x1b[35m',
 };
 
+// Cache configuration
+const CACHE_FILE = path.join(__dirname, '.image-cache.json');
+const CACHE_MAX_AGE = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
+
+// Load cache from file
+function loadCache() {
+  try {
+    if (fs.existsSync(CACHE_FILE)) {
+      const cacheData = fs.readFileSync(CACHE_FILE, 'utf8');
+      return JSON.parse(cacheData);
+    }
+  } catch (error) {
+    // Silently fail if cache can't be loaded
+  }
+  return {};
+}
+
+// Save cache to file
+function saveCache(cache) {
+  try {
+    fs.writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2), 'utf8');
+  } catch (error) {
+    // Silently fail if cache can't be saved
+  }
+}
+
+// Check if cache entry is still valid
+function isCacheValid(entry) {
+  if (!entry || !entry.timestamp) return false;
+  const age = Date.now() - entry.timestamp;
+  return age < CACHE_MAX_AGE;
+}
+
 /**
  * Make an HTTP/HTTPS request
  */
@@ -67,9 +100,20 @@ function makeRequest(url, options = {}) {
 }
 
 /**
- * Check if an image URL is valid
+ * Check if an image URL is valid (with caching)
  */
-async function checkImageUrl(url) {
+async function checkImageUrl(url, cache) {
+  // Check cache first
+  const cacheEntry = cache[url];
+  if (isCacheValid(cacheEntry)) {
+    return {
+      valid: cacheEntry.valid,
+      statusCode: cacheEntry.statusCode,
+      contentType: cacheEntry.contentType,
+      cached: true,
+    };
+  }
+
   try {
     const parsedUrl = new URL(url);
     const client = parsedUrl.protocol === 'https:' ? https : http;
@@ -92,35 +136,76 @@ async function checkImageUrl(url) {
         const isImage = contentType.startsWith('image/');
         const isOk = statusCode >= 200 && statusCode < 300;
         
-        resolve({
+        const result = {
           valid: isOk && isImage,
           statusCode,
           contentType,
-        });
+          cached: false,
+        };
+
+        // Update cache
+        cache[url] = {
+          valid: result.valid,
+          statusCode: result.statusCode,
+          contentType: result.contentType,
+          timestamp: Date.now(),
+        };
+        
+        resolve(result);
         
         res.destroy();
       });
 
       req.on('error', () => {
-        resolve({ valid: false, statusCode: null, contentType: null });
+        const result = { valid: false, statusCode: null, contentType: null, cached: false };
+        
+        // Cache errors too
+        cache[url] = {
+          valid: false,
+          statusCode: null,
+          contentType: null,
+          timestamp: Date.now(),
+        };
+        
+        resolve(result);
       });
 
       req.on('timeout', () => {
         req.destroy();
-        resolve({ valid: false, statusCode: null, contentType: null });
+        const result = { valid: false, statusCode: null, contentType: null, cached: false };
+        
+        // Cache timeout errors
+        cache[url] = {
+          valid: false,
+          statusCode: null,
+          contentType: null,
+          timestamp: Date.now(),
+        };
+        
+        resolve(result);
       });
 
       req.end();
     });
   } catch (error) {
-    return { valid: false, statusCode: null, contentType: null };
+    const result = { valid: false, statusCode: null, contentType: null, cached: false };
+    
+    // Cache invalid URL errors
+    cache[url] = {
+      valid: false,
+      statusCode: null,
+      contentType: null,
+      timestamp: Date.now(),
+    };
+    
+    return result;
   }
 }
 
 /**
  * Search Wikimedia Commons API for images
  */
-async function searchWikimediaCommons(searchTerm) {
+async function searchWikimediaCommons(searchTerm, cache) {
   try {
     const apiUrl = 'https://commons.wikimedia.org/w/api.php?' + new URLSearchParams({
       action: 'query',
@@ -179,7 +264,7 @@ async function searchWikimediaCommons(searchTerm) {
         }
 
         // Validate the image
-        const validation = await checkImageUrl(imageUrl);
+        const validation = await checkImageUrl(imageUrl, cache);
         if (!validation.valid) {
           return null;
         }
@@ -206,7 +291,7 @@ async function searchWikimediaCommons(searchTerm) {
 /**
  * Search Wikipedia page for images
  */
-async function searchWikipediaPage(wikipediaUrl) {
+async function searchWikipediaPage(wikipediaUrl, cache) {
   if (!wikipediaUrl) return [];
 
   try {
@@ -249,7 +334,7 @@ async function searchWikipediaPage(wikipediaUrl) {
             if (imageInfo) {
               const imageUrl = imageInfo.thumburl || imageInfo.url;
               if (imageUrl) {
-                const validation = await checkImageUrl(imageUrl);
+                const validation = await checkImageUrl(imageUrl, cache);
                 if (validation.valid) {
                   imageUrls.push({
                     fileName,
@@ -273,40 +358,84 @@ async function searchWikipediaPage(wikipediaUrl) {
 }
 
 /**
- * Find images for a person
+ * Find images for a person or event
  */
-async function findImagesForPerson(person) {
+async function findImagesForEntity(entity, cache, entityType = 'person') {
   const results = [];
-  
+
   // Try Wikipedia page first if available
-  if (person.wikipediaUrl) {
+  if (entity.wikipediaUrl) {
     console.log(`  ${colors.cyan}Checking Wikipedia page...${colors.reset}`);
-    const wikiImages = await searchWikipediaPage(person.wikipediaUrl);
+    const wikiImages = await searchWikipediaPage(entity.wikipediaUrl, cache);
     results.push(...wikiImages);
     await new Promise(resolve => setTimeout(resolve, 500)); // Rate limiting
   }
 
-  // Search Wikimedia Commons by name
-  console.log(`  ${colors.cyan}Searching Wikimedia Commons for "${person.name}"...${colors.reset}`);
-  const commonsResults = await searchWikimediaCommons(person.name);
-  results.push(...commonsResults.map(r => ({ ...r, source: 'commons-search' })));
-  await new Promise(resolve => setTimeout(resolve, 500)); // Rate limiting
+  // Search Wikimedia Commons by name - use more specific search terms
+  const searchTerms = [entity.name];
+
+  // If name has multiple words, also try with quotes for exact match
+  if (entity.name.split(' ').length > 1) {
+    searchTerms.push(`"${entity.name}"`); // Exact phrase match
+  }
 
   // Try variations of the name
   const nameVariations = [];
-  if (person.name.includes('St.')) {
-    nameVariations.push(person.name.replace('St.', 'Saint'));
-    nameVariations.push(person.name.replace('St.', '').trim());
+  if (entity.name.includes('St.')) {
+    nameVariations.push(entity.name.replace('St.', 'Saint'));
+    nameVariations.push(entity.name.replace('St.', '').trim());
   }
-  if (person.name.includes('Saint')) {
-    nameVariations.push(person.name.replace('Saint', 'St.'));
+  if (entity.name.includes('Saint')) {
+    nameVariations.push(entity.name.replace('Saint', 'St.'));
   }
 
-  for (const variation of nameVariations.slice(0, 2)) {
-    console.log(`  ${colors.cyan}Searching for "${variation}"...${colors.reset}`);
-    const variationResults = await searchWikimediaCommons(variation);
-    results.push(...variationResults.map(r => ({ ...r, source: 'commons-search-variation' })));
+  // Add variations to search terms
+  searchTerms.push(...nameVariations.slice(0, 2));
+  
+  // Search with each term, prioritizing exact matches
+  for (const searchTerm of searchTerms.slice(0, 3)) {
+    console.log(`  ${colors.cyan}Searching Wikimedia Commons for "${searchTerm}"...${colors.reset}`);
+    const commonsResults = await searchWikimediaCommons(searchTerm, cache);
+
+    // Score results: prioritize those where filename contains the full name
+    const scoredResults = commonsResults.map(r => {
+      const fileNameLower = r.fileName.toLowerCase();
+      const nameLower = entity.name.toLowerCase();
+      let score = 0;
+
+      // Higher score if filename contains full name
+      if (fileNameLower.includes(nameLower)) {
+        score += 10;
+      }
+
+      // Even higher if it's an exact match in filename
+      if (fileNameLower.includes(nameLower.replace(/\s+/g, '_')) ||
+          fileNameLower.includes(nameLower.replace(/\s+/g, '-'))) {
+        score += 5;
+      }
+
+      // Lower score if filename contains common false matches
+      const falseMatches = ['coolidge', 'klein', 'hobbes', 'valentine', 'firefly', 'language'];
+      if (entityType === 'person' && falseMatches.some(fm => fileNameLower.includes(fm))) {
+        score -= 20;
+      }
+
+      return { ...r, score, source: 'commons-search' };
+    });
+    
+    // Sort by score (highest first) and take top results
+    scoredResults.sort((a, b) => b.score - a.score);
+    results.push(...scoredResults.slice(0, 3).map(r => {
+      const { score, ...rest } = r;
+      return rest;
+    }));
+    
     await new Promise(resolve => setTimeout(resolve, 500)); // Rate limiting
+    
+    // If we found good results, break early
+    if (scoredResults.length > 0 && scoredResults[0].score > 0) {
+      break;
+    }
   }
 
   // Remove duplicates based on URL
@@ -343,19 +472,19 @@ function findJsonFiles(dir, fileList = []) {
 }
 
 /**
- * Update a person's JSON file with a new image URL
+ * Update an entity's JSON file with a new image URL
  */
-function updatePersonImage(filePath, imageUrl) {
+function updateEntityImage(filePath, imageUrl) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
-    const person = JSON.parse(content);
-    
-    person.imageUrl = imageUrl;
-    
+    const entity = JSON.parse(content);
+
+    entity.imageUrl = imageUrl;
+
     // Write back with proper formatting
-    const updatedContent = JSON.stringify(person, null, 2) + '\n';
+    const updatedContent = JSON.stringify(entity, null, 2) + '\n';
     fs.writeFileSync(filePath, updatedContent, 'utf8');
-    
+
     return true;
   } catch (error) {
     console.error(`${colors.red}Error updating file: ${error.message}${colors.reset}`);
@@ -369,44 +498,68 @@ function updatePersonImage(filePath, imageUrl) {
 async function main() {
   const args = process.argv.slice(2);
   const command = args[0];
-  
+
   if (!command || (command !== 'find' && command !== 'fix' && command !== 'interactive')) {
     console.log(`${colors.blue}Usage:${colors.reset}`);
-    console.log(`  node find-images.js find <person-id>     - Find images for a specific person`);
-    console.log(`  node find-images.js fix                  - Automatically fix all broken/missing images`);
-    console.log(`  node find-images.js interactive          - Interactive mode to fix images one by one`);
+    console.log(`  node find-images.js find <id> [--type=people|events]   - Find images for a specific entity`);
+    console.log(`  node find-images.js fix [--type=people|events]         - Automatically fix all broken/missing images`);
+    console.log(`  node find-images.js interactive [--type=people|events] - Interactive mode to fix images one by one`);
+    console.log(``);
+    console.log(`${colors.cyan}Options:${colors.reset}`);
+    console.log(`  --type=people  - Work with people/saints (default)`);
+    console.log(`  --type=events  - Work with events/councils`);
     process.exit(1);
   }
 
-  const peopleDir = path.join(__dirname, 'src', 'data', 'people');
-  
-  if (!fs.existsSync(peopleDir)) {
-    console.error(`${colors.red}Error: ${peopleDir} not found${colors.reset}`);
+  // Parse type flag
+  const typeFlag = args.find(arg => arg.startsWith('--type='));
+  const dataType = typeFlag ? typeFlag.split('=')[1] : 'people';
+
+  if (dataType !== 'people' && dataType !== 'events') {
+    console.error(`${colors.red}Error: Invalid type "${dataType}". Must be "people" or "events"${colors.reset}`);
+    process.exit(1);
+  }
+
+  const entityType = dataType === 'events' ? 'event' : 'person';
+  const entityTypePlural = dataType;
+
+  // Load cache
+  const cache = loadCache();
+  const cacheSize = Object.keys(cache).length;
+  if (cacheSize > 0) {
+    console.log(`${colors.cyan}Loaded ${cacheSize} cached image verification results${colors.reset}\n`);
+  }
+
+  const dataDir = path.join(__dirname, 'src', 'data', dataType);
+
+  if (!fs.existsSync(dataDir)) {
+    console.error(`${colors.red}Error: ${dataDir} not found${colors.reset}`);
     process.exit(1);
   }
 
   if (command === 'find') {
-    // Find images for a specific person
-    const personId = args[1];
-    if (!personId) {
-      console.error(`${colors.red}Error: Please provide a person ID${colors.reset}`);
+    // Find images for a specific entity
+    const nonFlagArgs = args.filter(arg => !arg.startsWith('--'));
+    const entityId = nonFlagArgs[1]; // First is command, second is the ID
+    if (!entityId) {
+      console.error(`${colors.red}Error: Please provide an ${entityType} ID${colors.reset}`);
       process.exit(1);
     }
 
-    const jsonFiles = findJsonFiles(peopleDir);
-    const personFile = jsonFiles.find(f => path.basename(f, '.json') === personId);
-    
-    if (!personFile) {
-      console.error(`${colors.red}Error: Person with ID "${personId}" not found${colors.reset}`);
+    const jsonFiles = findJsonFiles(dataDir);
+    const entityFile = jsonFiles.find(f => path.basename(f, '.json') === entityId);
+
+    if (!entityFile) {
+      console.error(`${colors.red}Error: ${entityType} with ID "${entityId}" not found${colors.reset}`);
       process.exit(1);
     }
 
-    const content = fs.readFileSync(personFile, 'utf8');
-    const person = JSON.parse(content);
+    const content = fs.readFileSync(entityFile, 'utf8');
+    const entity = JSON.parse(content);
 
-    console.log(`${colors.blue}Finding images for: ${person.name} (${person.id})${colors.reset}\n`);
+    console.log(`${colors.blue}Finding images for: ${entity.name} (${entity.id})${colors.reset}\n`);
 
-    const images = await findImagesForPerson(person);
+    const images = await findImagesForEntity(entity, cache, entityType);
     
     if (images.length === 0) {
       console.log(`${colors.yellow}No images found${colors.reset}`);
@@ -424,9 +577,9 @@ async function main() {
     }
   } else if (command === 'fix') {
     // Automatically fix all broken/missing images
-    console.log(`${colors.blue}Finding all person JSON files...${colors.reset}`);
-    const jsonFiles = findJsonFiles(peopleDir);
-    console.log(`Found ${jsonFiles.length} person files\n`);
+    console.log(`${colors.blue}Finding all ${entityType} JSON files...${colors.reset}`);
+    const jsonFiles = findJsonFiles(dataDir);
+    console.log(`Found ${jsonFiles.length} ${entityType} files\n`);
 
     let fixed = 0;
     let skipped = 0;
@@ -434,28 +587,28 @@ async function main() {
 
     for (const file of jsonFiles) {
       const content = fs.readFileSync(file, 'utf8');
-      const person = JSON.parse(content);
+      const entity = JSON.parse(content);
       const relativePath = path.relative(__dirname, file);
 
       // Skip if already has a valid image
-      if (person.imageUrl) {
-        const validation = await checkImageUrl(person.imageUrl);
+      if (entity.imageUrl) {
+        const validation = await checkImageUrl(entity.imageUrl, cache);
         if (validation.valid) {
           skipped++;
           continue;
         }
       }
 
-      console.log(`${colors.blue}Processing: ${person.name} (${person.id})${colors.reset}`);
+      console.log(`${colors.blue}Processing: ${entity.name} (${entity.id})${colors.reset}`);
       console.log(`  File: ${relativePath}`);
 
-      const images = await findImagesForPerson(person);
-      
+      const images = await findImagesForEntity(entity, cache, entityType);
+
       if (images.length > 0) {
         const bestImage = images[0]; // Use first result
         console.log(`  ${colors.green}Found image: ${bestImage.url}${colors.reset}`);
-        
-        if (updatePersonImage(file, bestImage.url)) {
+
+        if (updateEntityImage(file, bestImage.url)) {
           console.log(`  ${colors.green}✓ Updated${colors.reset}\n`);
           fixed++;
         } else {
@@ -479,23 +632,23 @@ async function main() {
     }
   } else if (command === 'interactive') {
     // Interactive mode
-    console.log(`${colors.blue}Finding all person JSON files...${colors.reset}`);
-    const jsonFiles = findJsonFiles(peopleDir);
-    console.log(`Found ${jsonFiles.length} person files\n`);
+    console.log(`${colors.blue}Finding all ${entityType} JSON files...${colors.reset}`);
+    const jsonFiles = findJsonFiles(dataDir);
+    console.log(`Found ${jsonFiles.length} ${entityType} files\n`);
 
     // First, identify files that need fixing
     const needsFixing = [];
-    
+
     for (const file of jsonFiles) {
       const content = fs.readFileSync(file, 'utf8');
-      const person = JSON.parse(content);
-      
-      if (!person.imageUrl || person.imageUrl === null) {
-        needsFixing.push({ file, person, reason: 'missing' });
+      const entity = JSON.parse(content);
+
+      if (!entity.imageUrl || entity.imageUrl === null) {
+        needsFixing.push({ file, entity, reason: 'missing' });
       } else {
-        const validation = await checkImageUrl(person.imageUrl);
+        const validation = await checkImageUrl(entity.imageUrl, cache);
         if (!validation.valid) {
-          needsFixing.push({ file, person, reason: 'broken', currentUrl: person.imageUrl });
+          needsFixing.push({ file, entity, reason: 'broken', currentUrl: entity.imageUrl });
         }
       }
     }
@@ -505,11 +658,11 @@ async function main() {
       process.exit(0);
     }
 
-    console.log(`${colors.yellow}Found ${needsFixing.length} person(s) needing image fixes${colors.reset}\n`);
+    console.log(`${colors.yellow}Found ${needsFixing.length} ${entityType}(s) needing image fixes${colors.reset}\n`);
 
-    for (const { file, person, reason, currentUrl } of needsFixing) {
+    for (const { file, entity, reason, currentUrl } of needsFixing) {
       const relativePath = path.relative(__dirname, file);
-      console.log(`\n${colors.blue}=== ${person.name} (${person.id}) ===${colors.reset}`);
+      console.log(`\n${colors.blue}=== ${entity.name} (${entity.id}) ===${colors.reset}`);
       console.log(`File: ${relativePath}`);
       if (reason === 'broken') {
         console.log(`Current URL: ${currentUrl} ${colors.red}(broken)${colors.reset}`);
@@ -518,7 +671,7 @@ async function main() {
       }
       console.log('');
 
-      const images = await findImagesForPerson(person);
+      const images = await findImagesForEntity(entity, cache, entityType);
       
       if (images.length === 0) {
         console.log(`${colors.yellow}No images found. Skipping...${colors.reset}\n`);
@@ -540,8 +693,8 @@ async function main() {
       // (In a real interactive mode, you'd use readline to ask the user)
       const bestImage = images[0];
       console.log(`${colors.blue}Using first result: ${bestImage.url}${colors.reset}`);
-      
-      if (updatePersonImage(file, bestImage.url)) {
+
+      if (updateEntityImage(file, bestImage.url)) {
         console.log(`${colors.green}✓ Updated${colors.reset}\n`);
       } else {
         console.log(`${colors.red}✗ Failed to update${colors.reset}\n`);
@@ -550,6 +703,13 @@ async function main() {
       // Rate limiting
       await new Promise(resolve => setTimeout(resolve, 1000));
     }
+  }
+
+  // Save cache at the end
+  saveCache(cache);
+  const finalCacheSize = Object.keys(cache).length;
+  if (finalCacheSize > cacheSize) {
+    console.log(`\n${colors.cyan}Cache updated: ${finalCacheSize} entries${colors.reset}`);
   }
 }
 

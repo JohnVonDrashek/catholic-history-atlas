@@ -1,0 +1,25 @@
+{
+  "id": "faustus-socinus",
+  "name": "Faustus Socinus",
+  "birthYear": 1539,
+  "deathYear": 1604,
+  "primaryTradition": "Latin",
+  "roles": [
+    "theologian",
+    "reformer"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "poland",
+      "description": "Founded Socinianism in Poland"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Faustus_Socinus",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Tomb_of_Faustus_Socinus_in_Lus%C5%82awice.PNG/330px-Tomb_of_Faustus_Socinus_in_Lus%C5%82awice.PNG",
+  "summary": "Faustus Socinus was an Italian theologian who developed Socinianism, an anti-Trinitarian movement. He denied the Trinity, the pre-existence of Christ, and the divinity of the Holy Spirit. He taught that Jesus was a mere man who was raised to divine status after his resurrection. Socinianism spread to Poland, where it became influential among the Polish Brethren. His teachings were condemned by both Catholics and mainstream Protestants. Socinianism influenced later Unitarian movements. He wrote extensively on theology and biblical interpretation, emphasizing reason over tradition.",
+  "keyQuotes": [],
+  "writings": []
+}
+

@@ -1,0 +1,26 @@
+{
+  "id": "arnold-brescia",
+  "name": "Arnold of Brescia",
+  "birthYear": 1090,
+  "deathYear": 1155,
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "preacher",
+    "reformer"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Preached in Rome against papal temporal power"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Arnold_of_Brescia",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Campo_Marzio_-_busti_del_Pincio_-_Arnaldo_da_Brescia_1000464.JPG/330px-Campo_Marzio_-_busti_del_Pincio_-_Arnaldo_da_Brescia_1000464.JPG",
+  "summary": "Arnold of Brescia was a 12th-century Italian monk and reformer who preached against the temporal power and wealth of the papacy. He called for the Church to return to apostolic poverty and for the clergy to renounce their wealth. He led a popular revolt in Rome that established a commune and expelled Pope Eugene III. His teachings influenced later reform movements. He was condemned by the Second Lateran Council in 1139 and excommunicated. After the commune was suppressed, he was captured, hanged, and burned by the papal authorities in 1155.",
+  "keyQuotes": [],
+  "writings": []
+}
+

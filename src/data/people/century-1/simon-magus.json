@@ -1,0 +1,29 @@
+{
+  "id": "simon-magus",
+  "name": "Simon Magus",
+  "birthYear": null,
+  "deathYear": 65,
+  "primaryTradition": "Greek",
+  "roles": [
+    "magician",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "samaria",
+      "description": "Magician in Samaria"
+    },
+    {
+      "placeId": "rome",
+      "description": "Taught in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Simon_Magus",
+  "newAdventUrl": "https://www.newadvent.org/cathen/13797a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Basilica_Saint-Sernin_-_Simon_Magus.jpg/330px-Basilica_Saint-Sernin_-_Simon_Magus.jpg",
+  "summary": "Simon Magus was a Samaritan magician mentioned in the Acts of the Apostles who attempted to purchase the power of the Holy Spirit from the apostles, giving rise to the term 'simony.' According to early Christian sources, he founded the Simonian sect, one of the earliest Gnostic movements. He claimed to be divine and taught that he was the Father, Son, and Holy Spirit. The Church Fathers, including Irenaeus and Justin Martyr, wrote extensively against him. His followers, the Simonians, persisted for several centuries.",
+  "keyQuotes": [],
+  "writings": []
+}

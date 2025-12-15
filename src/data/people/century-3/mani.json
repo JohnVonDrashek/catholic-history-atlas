@@ -1,0 +1,25 @@
+{
+  "id": "mani",
+  "name": "Mani",
+  "birthYear": 216,
+  "deathYear": 274,
+  "primaryTradition": "Syriac",
+  "roles": [
+    "prophet",
+    "founder"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "persia",
+      "description": "Founder of Manichaeism in Persia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Mani_(prophet)",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Mani%2C_the_prophet.jpg/330px-Mani%2C_the_prophet.jpg",
+  "summary": "Mani was a Persian prophet and founder of Manichaeism, a dualistic religion that combined elements of Zoroastrianism, Christianity, and Buddhism. He taught that the universe was divided between the forces of light (good) and darkness (evil), and that the material world was created by the evil principle. Manichaeism spread throughout the Roman Empire and beyond, attracting notable converts including St. Augustine before his conversion. Mani was executed by the Persian king Bahram I. The religion was condemned by both Christian and Zoroastrian authorities and eventually died out, though it influenced later dualistic movements.",
+  "keyQuotes": [],
+  "writings": [],
+  "newAdventUrl": "https://www.newadvent.org/cathen/09597b.htm"
+}

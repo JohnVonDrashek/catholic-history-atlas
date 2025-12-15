@@ -1,0 +1,25 @@
+{
+  "id": "ildefonsus-toledo",
+  "name": "St. Ildefonsus of Toledo",
+  "birthYear": 607,
+  "deathYear": 667,
+  "feastDay": "January 23",
+  "primaryTradition": "Latin",
+  "roles": [
+    "archbishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "toledo",
+      "description": "Archbishop of Toledo and defender of Mary's perpetual virginity"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ildefonsus_of_Toledo",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Juan_de_Vald%C3%A9s_Leal_%2C_Miracle_of_St_Ildefonsus_01.jpg/330px-Juan_de_Vald%C3%A9s_Leal_%2C_Miracle_of_St_Ildefonsus_01.jpg",
+  "summary": "Ildefonsus of Toledo was a Visigothic archbishop and theologian, best known for his defense of the doctrine of Mary's perpetual virginity and his writings on Mariology. He succeeded St. Eugene II as archbishop of Toledo.",
+  "keyQuotes": [],
+  "writings": []
+}

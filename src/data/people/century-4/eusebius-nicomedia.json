@@ -1,0 +1,30 @@
+{
+  "id": "eusebius-nicomedia",
+  "name": "Eusebius of Nicomedia",
+  "birthYear": null,
+  "deathYear": 341,
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "nicomedia",
+      "description": "Bishop of Nicomedia, later Patriarch of Constantinople"
+    },
+    {
+      "placeId": "constantinople",
+      "description": "Patriarch of Constantinople"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Eusebius_of_Nicomedia",
+  "newAdventUrl": "https://www.newadvent.org/cathen/05615b.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Basus%2C_Eusebius%2C_Eutichius%2C_and_Basilides_at_Nicomedia_%28Menologion_of_Basil_II%29.jpg/330px-Basus%2C_Eusebius%2C_Eutichius%2C_and_Basilides_at_Nicomedia_%28Menologion_of_Basil_II%29.jpg",
+  "summary": "Eusebius of Nicomedia was a leading Arian bishop who became Patriarch of Constantinople. He was a cousin of the emperor Constantine and used his influence to promote Arianism. He baptized Constantine on his deathbed and supported Arius throughout the Arian controversy. He was deposed and exiled after the First Council of Nicaea but was later restored. He consecrated many Arian bishops and played a key role in spreading Arianism throughout the Eastern Roman Empire. His influence extended to the imperial court, making him one of the most powerful Arian leaders.",
+  "keyQuotes": [],
+  "writings": []
+}
+

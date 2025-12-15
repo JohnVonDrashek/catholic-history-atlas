@@ -1,0 +1,25 @@
+{
+  "id": "thomas-muntzer",
+  "name": "Thomas Müntzer",
+  "birthYear": 1489,
+  "deathYear": 1525,
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "reformer",
+    "revolutionary"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "germany",
+      "description": "Radical reformer and leader of Peasants' War"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Thomas_M%C3%BCntzer",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Geburtshaus_Thomas_M%C3%BCntzer_20210915_HOF06201.jpg/330px-Geburtshaus_Thomas_M%C3%BCntzer_20210915_HOF06201.jpg",
+  "summary": "Thomas Müntzer was a German radical reformer and Anabaptist who led the Peasants' War of 1524-1525. He rejected infant baptism, taught that the end times were near, and called for the establishment of a theocratic kingdom on earth. He was more radical than Luther, calling for social revolution and the overthrow of the existing order. He was captured after the Battle of Frankenhausen and executed. His teachings combined religious reform with social revolution, making him a controversial figure. Both Catholics and Lutherans condemned him.",
+  "keyQuotes": [],
+  "writings": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "donatus",
+  "name": "Donatus",
+  "birthYear": null,
+  "deathYear": 355,
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "carthage",
+      "description": "Bishop of Carthage, leader of Donatist schism"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Donatus_Magnus",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Church_of_Saint_Donatus%2C_Zadar_-_September_2017.jpg/330px-Church_of_Saint_Donatus%2C_Zadar_-_September_2017.jpg",
+  "summary": "Donatus was a bishop of Carthage who led the Donatist schism in North Africa. The Donatists believed that the validity of sacraments depended on the moral character of the minister, and they refused to accept bishops who had surrendered sacred books during the Diocletian persecution. They also rejected the authority of bishops who had been consecrated by traditores (those who had handed over the Scriptures). The schism persisted for centuries despite numerous attempts at reconciliation, including the efforts of St. Augustine of Hippo. The Donatist church was eventually suppressed after the Muslim conquest of North Africa.",
+  "keyQuotes": [],
+  "writings": []
+}

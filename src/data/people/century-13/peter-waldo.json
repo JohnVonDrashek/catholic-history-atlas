@@ -1,0 +1,25 @@
+{
+  "id": "peter-waldo",
+  "name": "Peter Waldo",
+  "birthYear": 1140,
+  "deathYear": 1205,
+  "primaryTradition": "Latin",
+  "roles": [
+    "merchant",
+    "preacher",
+    "founder"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "lyons",
+      "description": "Merchant and preacher in Lyons"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Peter_Waldo",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/WaldoAtLutherDenkmal.JPG/330px-WaldoAtLutherDenkmal.JPG",
+  "summary": "Peter Waldo was a wealthy merchant from Lyons who gave away his possessions and began preaching around 1173. He and his followers, the Waldensians, translated the Bible into the vernacular and preached in the streets. They rejected oaths, purgatory, prayers for the dead, and the authority of the clergy. They were condemned at the Third Lateran Council in 1179 and excommunicated at the Council of Verona in 1184. The Waldensian movement spread throughout Europe and persisted despite persecution. Modern Waldensians are now in communion with Protestant churches.",
+  "keyQuotes": [],
+  "writings": []
+}

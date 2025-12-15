@@ -1,0 +1,25 @@
+{
+  "id": "theodore-mopsuestia",
+  "name": "Theodore of Mopsuestia",
+  "birthYear": 350,
+  "deathYear": 428,
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "mopsuestia",
+      "description": "Bishop of Mopsuestia"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Theodore_of_Mopsuestia",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Theodore-of-mopsuestia.jpg/330px-Theodore-of-mopsuestia.jpg",
+  "summary": "Theodore of Mopsuestia was Bishop of Mopsuestia and a leading figure in the Antiochene school of theology. He was a teacher of Nestorius and his Christological teachings influenced Nestorianism. He emphasized the distinction between the divine and human natures of Christ, teaching that they were united in one person but remained distinct. His writings were condemned at the Second Council of Constantinople in 553, over a century after his death, as part of the Three Chapters controversy. He was one of the most important biblical exegetes of the Antiochene school.",
+  "keyQuotes": [],
+  "writings": [],
+  "newAdventUrl": "https://www.newadvent.org/cathen/14571b.htm"
+}

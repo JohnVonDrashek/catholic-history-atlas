@@ -19,7 +19,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Hugh_of_Saint_Victor",
-  "newAdventUrl": "https://www.newadvent.org/cathen/07521c.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Hugostv.jpg/330px-Hugostv.jpg",
   "summary": "Hugh of Saint Victor was a German canon regular, theologian, and mystic who spent most of his life at the Abbey of Saint Victor in Paris. He was a leading figure in the 12th-century renaissance of learning and is known for his synthesis of theology, philosophy, and mysticism. His works on education, particularly 'Didascalicon,' were influential in medieval education. He emphasized the importance of both reason and mystical experience in the spiritual life.",
   "keyQuotes": [],
@@ -32,5 +31,6 @@
       "title": "On the Sacraments of the Christian Faith",
       "url": "https://www.newadvent.org/cathen/07521c.htm"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/07515b.htm"
 }

@@ -1,0 +1,25 @@
+{
+  "id": "domingo-calzada",
+  "name": "St. Domingo de la Calzada",
+  "birthYear": 1019,
+  "deathYear": 1109,
+  "feastDay": "May 12",
+  "primaryTradition": "Latin",
+  "roles": [
+    "priest",
+    "builder"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rioja",
+      "description": "Priest and road builder in La Rioja region"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Domingo_de_la_Calzada",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/St_Domingo_Calzada_St.jpg/330px-St_Domingo_Calzada_St.jpg",
+  "summary": "Domingo de la Calzada was a Spanish priest and builder who constructed roads, bridges, and the cathedral of Santo Domingo de la Calzada. He is the patron saint of road builders and is known for the miracle of the hanged innocent man.",
+  "keyQuotes": [],
+  "writings": []
+}

@@ -1,0 +1,380 @@
+{
+  "index_extract_https://www.newadvent.org/cathen/a.htm": {
+    "saints": {
+      "achilleus and nereus, domitilla and pancratius, saints": {
+        "url": "https://www.newadvent.org/cathen/10751a.htm",
+        "linkText": "Achilleus and Nereus, Domitilla and Pancratius, Saints"
+      },
+      "acts of the martyrs": {
+        "url": "https://www.newadvent.org/cathen/09742b.htm",
+        "linkText": "Acts of the Martyrs"
+      },
+      "adalbert, saint": {
+        "url": "https://www.newadvent.org/cathen/01127b.htm",
+        "linkText": "Adalbert, Saint"
+      },
+      "adelaide, saint": {
+        "url": "https://www.newadvent.org/cathen/01140c.htm",
+        "linkText": "Adelaide, Saint"
+      },
+      "adeodatus i, pope saint": {
+        "url": "https://www.newadvent.org/cathen/04760a.htm",
+        "linkText": "Adeodatus I, Pope Saint"
+      },
+      "adeodatus (ii), pope saint": {
+        "url": "https://www.newadvent.org/cathen/01142a.htm",
+        "linkText": "Adeodatus (II), Pope Saint"
+      },
+      "adrian i, pope": {
+        "url": "https://www.newadvent.org/cathen/01155b.htm",
+        "linkText": "Adrian I, Pope"
+      },
+      "adrian ii, pope": {
+        "url": "https://www.newadvent.org/cathen/01156a.htm",
+        "linkText": "Adrian II, Pope"
+      },
+      "adrian iii, pope saint": {
+        "url": "https://www.newadvent.org/cathen/01156b.htm",
+        "linkText": "Adrian III, Pope Saint"
+      },
+      "adrian iv, pope": {
+        "url": "https://www.newadvent.org/cathen/01156c.htm",
+        "linkText": "Adrian IV, Pope"
+      },
+      "adrian v, pope": {
+        "url": "https://www.newadvent.org/cathen/01159a.htm",
+        "linkText": "Adrian V, Pope"
+      },
+      "adrian vi, pope": {
+        "url": "https://www.newadvent.org/cathen/01159b.htm",
+        "linkText": "Adrian VI, Pope"
+      },
+      "adrian of canterbury, saint": {
+        "url": "https://www.newadvent.org/cathen/01160a.htm",
+        "linkText": "Adrian of Canterbury, Saint"
+      },
+      "aelred, saint": {
+        "url": "https://www.newadvent.org/cathen/01172b.htm",
+        "linkText": "Aelred, Saint"
+      },
+      "agapetus i, pope saint": {
+        "url": "https://www.newadvent.org/cathen/01202c.htm",
+        "linkText": "Agapetus I, Pope Saint"
+      },
+      "agapetus ii, pope": {
+        "url": "https://www.newadvent.org/cathen/01203a.htm",
+        "linkText": "Agapetus II, Pope"
+      },
+      "agatha, saint": {
+        "url": "https://www.newadvent.org/cathen/01203c.htm",
+        "linkText": "Agatha, Saint"
+      },
+      "agatho, pope saint": {
+        "url": "https://www.newadvent.org/cathen/01204c.htm",
+        "linkText": "Agatho, Pope Saint"
+      },
+      "agnes of assisi, saint": {
+        "url": "https://www.newadvent.org/cathen/01213a.htm",
+        "linkText": "Agnes of Assisi, Saint"
+      },
+      "agnes of bohemia, blessed": {
+        "url": "https://www.newadvent.org/cathen/01213b.htm",
+        "linkText": "Agnes of Bohemia, Blessed"
+      },
+      "agnes of prague, blessed": {
+        "url": "https://www.newadvent.org/cathen/01213b.htm",
+        "linkText": "Agnes of Prague, Blessed"
+      },
+      "agnes of rome, saint and martyr": {
+        "url": "https://www.newadvent.org/cathen/01214a.htm",
+        "linkText": "Agnes of Rome, Saint and Martyr"
+      },
+      "aidan of lindisfarne, saint": {
+        "url": "https://www.newadvent.org/cathen/01233d.htm",
+        "linkText": "Aidan of Lindisfarne, Saint"
+      },
+      "alban, saint": {
+        "url": "https://www.newadvent.org/cathen/01252b.htm",
+        "linkText": "Alban, Saint"
+      },
+      "albert the great, saint": {
+        "url": "https://www.newadvent.org/cathen/01264a.htm",
+        "linkText": "Albert the Great, Saint"
+      },
+      "alexander i, pope saint": {
+        "url": "https://www.newadvent.org/cathen/01285c.htm",
+        "linkText": "Alexander I, Pope Saint"
+      },
+      "alexander ii, pope": {
+        "url": "https://www.newadvent.org/cathen/01286a.htm",
+        "linkText": "Alexander II, Pope"
+      },
+      "alexander iii, pope": {
+        "url": "https://www.newadvent.org/cathen/01287a.htm",
+        "linkText": "Alexander III, Pope"
+      },
+      "alexander iv, pope": {
+        "url": "https://www.newadvent.org/cathen/01287b.htm",
+        "linkText": "Alexander IV, Pope"
+      },
+      "alexander vii, pope": {
+        "url": "https://www.newadvent.org/cathen/01294a.htm",
+        "linkText": "Alexander VII, Pope"
+      },
+      "alexander viii, pope": {
+        "url": "https://www.newadvent.org/cathen/01295a.htm",
+        "linkText": "Alexander VIII, Pope"
+      },
+      "alexander, saint (bishop of comana)": {
+        "url": "https://www.newadvent.org/cathen/01295c.htm",
+        "linkText": "Alexander, Saint (Bishop of Comana)"
+      },
+      "alexander, saint (patriarch of alexandria)": {
+        "url": "https://www.newadvent.org/cathen/01296a.htm",
+        "linkText": "Alexander, Saint (Patriarch of Alexandria)"
+      },
+      "alexius, saint": {
+        "url": "https://www.newadvent.org/cathen/01307b.htm",
+        "linkText": "Alexius, Saint"
+      },
+      "aloysius gonzaga, saint": {
+        "url": "https://www.newadvent.org/cathen/01331c.htm",
+        "linkText": "Aloysius Gonzaga, Saint"
+      },
+      "alphonsus liguori, saint": {
+        "url": "https://www.newadvent.org/cathen/01334a.htm",
+        "linkText": "Alphonsus Liguori, Saint"
+      },
+      "alphonsus rodriguez, saint": {
+        "url": "https://www.newadvent.org/cathen/01341a.htm",
+        "linkText": "Alphonsus Rodriguez, Saint"
+      },
+      "alypius, saint": {
+        "url": "https://www.newadvent.org/cathen/01374c.htm",
+        "linkText": "Alypius, Saint"
+      },
+      "anacletus, pope saint": {
+        "url": "https://www.newadvent.org/cathen/01446a.htm",
+        "linkText": "Anacletus, Pope Saint"
+      },
+      "anastasia, saint": {
+        "url": "https://www.newadvent.org/cathen/01453a.htm",
+        "linkText": "Anastasia, Saint"
+      },
+      "anastasius i, pope saint": {
+        "url": "https://www.newadvent.org/cathen/01454c.htm",
+        "linkText": "Anastasius I, Pope Saint"
+      },
+      "anastasius ii, pope": {
+        "url": "https://www.newadvent.org/cathen/01454d.htm",
+        "linkText": "Anastasius II, Pope"
+      },
+      "anastasius iii, pope": {
+        "url": "https://www.newadvent.org/cathen/01455a.htm",
+        "linkText": "Anastasius III, Pope"
+      },
+      "anastasius iv, pope": {
+        "url": "https://www.newadvent.org/cathen/01455b.htm",
+        "linkText": "Anastasius IV, Pope"
+      },
+      "anastasius, saint": {
+        "url": "https://www.newadvent.org/cathen/01455c.htm",
+        "linkText": "Anastasius, Saint"
+      },
+      "andreas, saint": {
+        "url": "https://www.newadvent.org/cathen/01473b.htm",
+        "linkText": "Andreas, Saint"
+      },
+      "andrew bobola, saint": {
+        "url": "https://www.newadvent.org/cathen/01472c.htm",
+        "linkText": "Andrew Bobola, Saint"
+      },
+      "andrew corsini, saint": {
+        "url": "https://www.newadvent.org/cathen/01472d.htm",
+        "linkText": "Andrew Corsini, Saint"
+      },
+      "andrew of crete, saint": {
+        "url": "https://www.newadvent.org/cathen/01473b.htm",
+        "linkText": "Andrew of Crete, Saint"
+      },
+      "andrew the scot, saint": {
+        "url": "https://www.newadvent.org/cathen/01474c.htm",
+        "linkText": "Andrew the Scot, Saint"
+      },
+      "angela merici, saint": {
+        "url": "https://www.newadvent.org/cathen/01481a.htm",
+        "linkText": "Angela Merici, Saint"
+      },
+      "angela of foligno, blessed": {
+        "url": "https://www.newadvent.org/cathen/01482a.htm",
+        "linkText": "Angela of Foligno, Blessed"
+      },
+      "anicetus, pope saint": {
+        "url": "https://www.newadvent.org/cathen/01514a.htm",
+        "linkText": "Anicetus, Pope Saint"
+      },
+      "anne d'auray, sainte": {
+        "url": "https://www.newadvent.org/cathen/01539a.htm",
+        "linkText": "Anne d'Auray, Sainte"
+      },
+      "anne de beaupr&eacute;, sainte": {
+        "url": "https://www.newadvent.org/cathen/01539b.htm",
+        "linkText": "Anne de Beaupr&eacute;, Sainte"
+      },
+      "anne line, saint": {
+        "url": "https://www.newadvent.org/cathen/09270b.htm",
+        "linkText": "Anne Line, Saint"
+      },
+      "annunciation of the blessed virgin mary, the feast of the": {
+        "url": "https://www.newadvent.org/cathen/01542a.htm",
+        "linkText": "Annunciation of the Blessed Virgin Mary, The Feast of the"
+      },
+      "anterus, pope saint": {
+        "url": "https://www.newadvent.org/cathen/01553a.htm",
+        "linkText": "Anterus, Pope Saint"
+      },
+      "antonio maria zaccaria, saint": {
+        "url": "https://www.newadvent.org/cathen/01588a.htm",
+        "linkText": "Antonio Maria Zaccaria, Saint"
+      },
+      "apollonia, saint": {
+        "url": "https://www.newadvent.org/cathen/01617c.htm",
+        "linkText": "Apollonia, Saint"
+      },
+      "apostle spoons": {
+        "url": "https://www.newadvent.org/cathen/01626b.htm",
+        "linkText": "Apostle Spoons"
+      },
+      "apostles, portraits of the": {
+        "url": "https://www.newadvent.org/cathen/12294b.htm",
+        "linkText": "Apostles, Portraits of the"
+      },
+      "apostles of erin, the twelve": {
+        "url": "https://www.newadvent.org/cathen/01632a.htm",
+        "linkText": "Apostles of Erin, The Twelve"
+      },
+      "apostleship of prayer, the": {
+        "url": "https://www.newadvent.org/cathen/01633a.htm",
+        "linkText": "Apostleship of Prayer, The"
+      },
+      "apostolic fathers, the": {
+        "url": "https://www.newadvent.org/cathen/01637a.htm",
+        "linkText": "Apostolic Fathers, The"
+      },
+      "archbishop": {
+        "url": "https://www.newadvent.org/cathen/01691a.htm",
+        "linkText": "Archbishop"
+      },
+      "arnulf of metz, saint": {
+        "url": "https://www.newadvent.org/cathen/01752b.htm",
+        "linkText": "Arnulf of Metz, Saint"
+      },
+      "augustine, rule of saint": {
+        "url": "https://www.newadvent.org/cathen/02079b.htm",
+        "linkText": "Augustine, Rule of Saint"
+      },
+      "augustine of canterbury, saint": {
+        "url": "https://www.newadvent.org/cathen/02081a.htm",
+        "linkText": "Augustine of Canterbury, Saint"
+      },
+      "auxiliary bishop": {
+        "url": "https://www.newadvent.org/cathen/02145b.htm",
+        "linkText": "Auxiliary Bishop"
+      }
+    },
+    "timestamp": 1765842986103
+  },
+  "index_extract_https://www.newadvent.org/cathen/h.htm": {
+    "saints": {
+      "haraldson, saint olaf": {
+        "url": "https://www.newadvent.org/cathen/11234a.htm",
+        "linkText": "Haraldson, Saint Olaf"
+      },
+      "hedwig, saint": {
+        "url": "https://www.newadvent.org/cathen/07189a.htm",
+        "linkText": "Hedwig, Saint"
+      },
+      "helen of sk&ouml;fde, saint": {
+        "url": "https://www.newadvent.org/cathen/07203b.htm",
+        "linkText": "Helen of Sk&ouml;fde, Saint"
+      },
+      "henry ii, saint": {
+        "url": "https://www.newadvent.org/cathen/07227a.htm",
+        "linkText": "Henry II, Saint"
+      },
+      "henry suso, blessed": {
+        "url": "https://www.newadvent.org/cathen/07238c.htm",
+        "linkText": "Henry Suso, Blessed"
+      },
+      "hermits of st. augustine": {
+        "url": "https://www.newadvent.org/cathen/07281a.htm",
+        "linkText": "Hermits of St. Augustine"
+      },
+      "hilarius, pope saint": {
+        "url": "https://www.newadvent.org/cathen/07348b.htm",
+        "linkText": "Hilarius, Pope Saint"
+      },
+      "hilarus, pope saint": {
+        "url": "https://www.newadvent.org/cathen/07348b.htm",
+        "linkText": "Hilarus, Pope Saint"
+      },
+      "hilary of poitiers, saint": {
+        "url": "https://www.newadvent.org/cathen/07349b.htm",
+        "linkText": "Hilary of Poitiers, Saint"
+      },
+      "hilda, saint": {
+        "url": "https://www.newadvent.org/cathen/07350a.htm",
+        "linkText": "Hilda, Saint"
+      },
+      "honorius i, pope": {
+        "url": "https://www.newadvent.org/cathen/07452b.htm",
+        "linkText": "Honorius I, Pope"
+      },
+      "honorius ii, pope": {
+        "url": "https://www.newadvent.org/cathen/07456a.htm",
+        "linkText": "Honorius II, Pope"
+      },
+      "honorius iii, pope": {
+        "url": "https://www.newadvent.org/cathen/07457a.htm",
+        "linkText": "Honorius III, Pope"
+      },
+      "honorius iv, pope": {
+        "url": "https://www.newadvent.org/cathen/07459a.htm",
+        "linkText": "Honorius IV, Pope"
+      },
+      "hormisdas, pope saint": {
+        "url": "https://www.newadvent.org/cathen/07470a.htm",
+        "linkText": "Hormisdas, Pope Saint"
+      },
+      "hubert, saint": {
+        "url": "https://www.newadvent.org/cathen/07507a.htm",
+        "linkText": "Hubert, Saint"
+      },
+      "hugh, saint": {
+        "url": "https://www.newadvent.org/cathen/07515b.htm",
+        "linkText": "Hugh, Saint"
+      },
+      "hugh of lincoln, saint": {
+        "url": "https://www.newadvent.org/cathen/07519c.htm",
+        "linkText": "Hugh of Lincoln, Saint"
+      },
+      "hugh of st. victor": {
+        "url": "https://www.newadvent.org/cathen/07521c.htm",
+        "linkText": "Hugh of St. Victor"
+      },
+      "hugh the great, saint": {
+        "url": "https://www.newadvent.org/cathen/07524a.htm",
+        "linkText": "Hugh the Great, Saint"
+      },
+      "hyacinth, saint": {
+        "url": "https://www.newadvent.org/cathen/07591b.htm",
+        "linkText": "Hyacinth, Saint"
+      },
+      "hyginus, pope saint": {
+        "url": "https://www.newadvent.org/cathen/07593a.htm",
+        "linkText": "Hyginus, Pope Saint"
+      }
+    },
+    "timestamp": 1765842986351
+  }
+}

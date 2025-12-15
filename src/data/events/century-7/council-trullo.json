@@ -1,0 +1,15 @@
+{
+  "id": "council-trullo",
+  "name": "Council of Trullo",
+  "startYear": 692,
+  "endYear": 692,
+  "type": "council",
+  "locationId": "constantinople",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Quinisext_Council",
+  "newAdventUrl": "https://www.newadvent.org/cathen/12564a.htm",
+  "summary": "The Council of Trullo, also known as the Quinisext Council, was convened to complete the work of the Fifth and Sixth Ecumenical Councils by enacting disciplinary canons. Its canons were accepted in the East but rejected by Rome, contributing to growing tensions between East and West.",
+  "keyDocuments": [
+    "Canons of the Quinisext Council"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Facial_Chronicle_-_b.13%2C_p.443_-_Council_in_Trullo.gif/330px-Facial_Chronicle_-_b.13%2C_p.443_-_Council_in_Trullo.gif"
+}

@@ -17,7 +17,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Boethius",
-  "newAdventUrl": "https://www.newadvent.org/cathen/02610b.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Boethius.jpeg",
   "summary": "Boethius was a Roman philosopher, theologian, and statesman who served as consul under Theodoric the Great. He is best known for his work 'The Consolation of Philosophy,' written while imprisoned before his execution. His translations of Aristotle and other Greek works helped preserve classical learning in the West, and his theological works influenced medieval scholasticism.",
   "keyQuotes": [
@@ -28,5 +27,6 @@
       "title": "The Consolation of Philosophy",
       "url": "https://www.ccel.org/ccel/boethius/consolation.html"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/02610b.htm"
 }

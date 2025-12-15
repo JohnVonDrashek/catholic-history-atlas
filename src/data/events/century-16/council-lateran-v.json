@@ -1,0 +1,16 @@
+{
+  "id": "council-lateran-v",
+  "name": "Fifth Lateran Council",
+  "startYear": 1512,
+  "endYear": 1517,
+  "type": "council",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Fifth_Council_of_the_Lateran",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09020a.htm",
+  "summary": "The Fifth Lateran Council was the eighteenth ecumenical council convened by Pope Julius II and concluded under Pope Leo X. It addressed church reform, condemned conciliarism, and dealt with issues such as indulgences and clerical discipline on the eve of the Protestant Reformation.",
+  "keyDocuments": [
+    "Pastor Aeternus",
+    "Apostolici Regiminis"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Lateran-council-5.jpg/330px-Lateran-council-5.jpg"
+}

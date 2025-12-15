@@ -1,0 +1,24 @@
+{
+  "id": "rudesind",
+  "name": "St. Rudesind",
+  "birthYear": 907,
+  "deathYear": 977,
+  "feastDay": "March 1",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "mondoñedo",
+      "description": "Bishop of Mondoñedo and monastic founder"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Rudesind",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Estatua_no_frontal_do_Mosteiro_de_San_Salvador_de_Celanova_-_Galiza.jpg/330px-Estatua_no_frontal_do_Mosteiro_de_San_Salvador_de_Celanova_-_Galiza.jpg",
+  "summary": "Rudesind was a Spanish bishop of Mondoñedo during the 10th century, known for his monastic reforms and establishment of religious communities. He played an important role in the Christianization of Galicia.",
+  "keyQuotes": [],
+  "writings": []
+}

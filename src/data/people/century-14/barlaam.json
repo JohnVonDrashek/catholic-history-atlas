@@ -1,0 +1,25 @@
+{
+  "id": "barlaam",
+  "name": "Barlaam of Calabria",
+  "birthYear": 1290,
+  "deathYear": 1348,
+  "primaryTradition": "Greek",
+  "roles": [
+    "monk",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "constantinople",
+      "description": "Opposed Hesychasm in Constantinople"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Barlaam_of_Calabria",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Barlaam%2C_Carrying_a_Should.jpg/330px-Barlaam%2C_Carrying_a_Should.jpg",
+  "summary": "Barlaam was a 14th-century Greek monk and theologian from Calabria who opposed Hesychasm, the Eastern Orthodox practice of contemplative prayer. He criticized the Hesychast claim that practitioners could see the uncreated light of God, arguing that this was impossible since God's essence is unknowable. He engaged in a famous controversy with St. Gregory Palamas, who defended Hesychasm. Barlaam's views were condemned at several councils, and he eventually converted to Catholicism and moved to Italy. The Hesychast controversy was one of the most important theological debates in 14th-century Eastern Orthodoxy.",
+  "keyQuotes": [],
+  "writings": []
+}
+

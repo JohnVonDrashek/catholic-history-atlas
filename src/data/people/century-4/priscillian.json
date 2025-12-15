@@ -1,0 +1,25 @@
+{
+  "id": "priscillian",
+  "name": "Priscillian",
+  "birthYear": 340,
+  "deathYear": 385,
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "spain",
+      "description": "Bishop in Spain, leader of Priscillianism"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Priscillian",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Anatomical_Man.jpg/330px-Anatomical_Man.jpg",
+  "summary": "Priscillian was a bishop in Spain who founded the Priscillianist movement, which combined elements of Gnosticism, Manichaeism, and asceticism. His followers practiced strict asceticism, rejected marriage, and held secret meetings. They were accused of sorcery and immorality, though modern scholarship questions the accuracy of these accusations. Priscillian was tried and executed by the Roman authorities in Trier in 385, making him the first person executed for heresy by a Christian state. His execution was condemned by St. Martin of Tours and St. Ambrose of Milan. The Priscillianist movement persisted in Spain and Gaul for several centuries.",
+  "keyQuotes": [],
+  "writings": [],
+  "newAdventUrl": "https://www.newadvent.org/cathen/12429b.htm"
+}

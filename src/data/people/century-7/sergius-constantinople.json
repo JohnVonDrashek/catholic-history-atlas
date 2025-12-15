@@ -1,0 +1,24 @@
+{
+  "id": "sergius-constantinople",
+  "name": "Sergius of Constantinople",
+  "birthYear": null,
+  "deathYear": 638,
+  "primaryTradition": "Greek",
+  "roles": [
+    "patriarch",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "constantinople",
+      "description": "Patriarch of Constantinople"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Patriarch_Sergius_I_of_Constantinople",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sergius_and_Bacchus.jpg/330px-Sergius_and_Bacchus.jpg",
+  "summary": "Sergius was Patriarch of Constantinople from 610 to 638 who promoted Monothelitism, the doctrine that Christ had two natures but only one will. He issued the Ecthesis in 638, an imperial edict that attempted to reconcile Monophysites and Chalcedonians by teaching one will in Christ. This teaching was condemned at the Third Council of Constantinople (680-681), which affirmed that Christ had both a divine and a human will. Pope Honorius I was also condemned for supporting Monothelitism in his correspondence with Sergius. The doctrine was an attempt to find middle ground between Chalcedonian and non-Chalcedonian positions.",
+  "keyQuotes": [],
+  "writings": []
+}

@@ -18,7 +18,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Augustine_of_Hippo",
-  "newAdventUrl": "https://www.newadvent.org/cathen/02084a.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Saint_Augustine_by_Philippe_de_Champaigne.jpg/330px-Saint_Augustine_by_Philippe_de_Champaigne.jpg",
   "summary": "Augustine of Hippo, also known as Saint Augustine, was a theologian and philosopher of Berber origin and the bishop of Hippo Regius in Numidia, Roman North Africa. His writings influenced the development of Western philosophy and Western Christianity.",
   "keyQuotes": [
@@ -42,5 +41,6 @@
       "title": "On Christian Doctrine",
       "url": "https://www.ccel.org/ccel/schaff/npnf102.iv.html"
     }
-  ]
+  ],
+  "myCatholicLifeUrl": "https://mycatholic.life/saints/saints-of-the-liturgical-year/august-28st-augustine-of-hippo"
 }

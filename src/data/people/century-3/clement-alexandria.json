@@ -18,7 +18,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Clement_of_Alexandria",
-  "newAdventUrl": "https://www.newadvent.org/cathen/04045a.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Clement_alexandrin.jpg/330px-Clement_alexandrin.jpg",
   "summary": "Clement of Alexandria was a Christian theologian and teacher who headed the Catechetical School of Alexandria. He sought to reconcile Christian faith with Greek philosophy and wrote extensively on Christian ethics, education, and the relationship between faith and reason. His works influenced later Christian thinkers including Origen.",
   "keyQuotes": [
@@ -37,5 +36,6 @@
       "title": "Who is the Rich Man That Shall Be Saved?",
       "url": "https://www.ccel.org/ccel/schaff/anf02.vi.iv.html"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/04045a.htm"
 }

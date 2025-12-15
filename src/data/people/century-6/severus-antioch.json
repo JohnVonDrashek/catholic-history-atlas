@@ -1,0 +1,25 @@
+{
+  "id": "severus-antioch",
+  "name": "Severus of Antioch",
+  "birthYear": 465,
+  "deathYear": 538,
+  "primaryTradition": "Greek",
+  "roles": [
+    "patriarch",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "antioch",
+      "description": "Patriarch of Antioch"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Severus_of_Antioch",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Severus_of_Antioch_%28Coptic_icon%29.jpg",
+  "summary": "Severus was Patriarch of Antioch from 512 to 518 and the most important theologian of the non-Chalcedonian (Monophysite) churches. He rejected the Council of Chalcedon and taught that Christ had one nature (mia physis) after the Incarnation. He was deposed by the Byzantine emperor Justin I in 518 and went into exile in Egypt. His writings became foundational for the Syriac Orthodox, Coptic Orthodox, and Armenian Apostolic Churches. He was condemned by the Second Council of Constantinople in 553. The non-Chalcedonian churches consider him a saint and one of their greatest theologians.",
+  "keyQuotes": [],
+  "writings": []
+}
+

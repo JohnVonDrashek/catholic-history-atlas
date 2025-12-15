@@ -1,0 +1,16 @@
+{
+  "id": "council-lyon-ii",
+  "name": "Second Council of Lyon",
+  "startYear": 1274,
+  "endYear": 1274,
+  "type": "council",
+  "locationId": "lyons",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Second_Council_of_Lyon",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09438b.htm",
+  "summary": "The Second Council of Lyon was the fourteenth ecumenical council convened by Pope Gregory X. It temporarily reunited the Eastern and Western Churches, enacted electoral reforms for papal elections, and approved the Franciscan and Dominican orders.",
+  "keyDocuments": [
+    "Union with the Greek Church",
+    "Constitution on Papal Elections"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Vita_D._Thomae_Aquinatis_25_Thomas_dying_while_on_his_way_to_the_Second_Council_of_Lyon_%281274%29_PK-P-120.502%2C_PK-P-121.753.tiff/lossy-page1-330px-Vita_D._Thomae_Aquinatis_25_Thomas_dying_while_on_his_way_to_the_Second_Council_of_Lyon_%281274%29_PK-P-120.502%2C_PK-P-121.753.tiff.jpg"
+}

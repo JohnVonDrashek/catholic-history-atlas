@@ -1,0 +1,24 @@
+{
+  "id": "marguerite-porete",
+  "name": "Marguerite Porete",
+  "birthYear": null,
+  "deathYear": 1310,
+  "primaryTradition": "Latin",
+  "roles": [
+    "mystic",
+    "writer"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "Burned at the stake in Paris"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Marguerite_Porete",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Place_Marguerite_Porete_-_Paris_IV_%28FR75%29_-_2024-05-15_-_3.jpg/330px-Place_Marguerite_Porete_-_Paris_IV_%28FR75%29_-_2024-05-15_-_3.jpg",
+  "summary": "Marguerite Porete was a French mystic and writer who was burned at the stake for heresy in 1310. She wrote 'The Mirror of Simple Souls,' a mystical work that described the soul's union with God. Her teachings were seen as supporting the Free Spirit heresy, which taught that those who had achieved union with God were above moral law and the authority of the Church. She refused to recant her views and was executed. Her book was influential in later mystical circles, though it was condemned by Church authorities.",
+  "keyQuotes": [],
+  "writings": []
+}

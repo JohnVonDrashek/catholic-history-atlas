@@ -1,0 +1,24 @@
+{
+  "id": "oria",
+  "name": "St. Oria",
+  "birthYear": null,
+  "deathYear": 304,
+  "feastDay": "April 15",
+  "primaryTradition": "Latin",
+  "roles": [
+    "virgin"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "cartagena",
+      "description": "Martyred in Cartagena during Roman persecution"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Oria%2C_Spain",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Santa_Oria.jpg/330px-Santa_Oria.jpg",
+  "summary": "Oria was a Christian virgin martyred during the persecutions of Diocletian in Roman Spain. She is venerated as one of the early martyrs of Cartagena and is often associated with visions and mystical experiences.",
+  "keyQuotes": [],
+  "writings": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "paul-samosata",
+  "name": "Paul of Samosata",
+  "birthYear": 200,
+  "deathYear": 275,
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "antioch",
+      "description": "Bishop of Antioch"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Paul_of_Samosata",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/PaulusVanSamosataLuyken.jpg/330px-PaulusVanSamosataLuyken.jpg",
+  "summary": "Paul of Samosata was Bishop of Antioch from 260 to 268 who taught a form of Adoptionism. He denied the pre-existence and divinity of Christ, teaching that Jesus was a mere man who was adopted as the Son of God. He also denied the distinct personality of the Holy Spirit, teaching that it was merely an attribute of God. He was condemned and deposed by synods in Antioch in 264 and 268, though he refused to step down and was only removed with the help of the Roman emperor Aurelian. His teachings influenced later Adoptionist movements.",
+  "keyQuotes": [],
+  "writings": []
+}
+

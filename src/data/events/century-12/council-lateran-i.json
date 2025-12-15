@@ -1,0 +1,16 @@
+{
+  "id": "council-lateran-i",
+  "name": "First Lateran Council",
+  "startYear": 1123,
+  "endYear": 1123,
+  "type": "council",
+  "locationId": "rome",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Council_of_the_Lateran",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09018a.htm",
+  "summary": "The First Lateran Council was the ninth ecumenical council convened by Pope Callixtus II. It ratified the Concordat of Worms, ending the Investiture Controversy, and enacted disciplinary reforms including clerical celibacy and simony prohibitions.",
+  "keyDocuments": [
+    "Canons of the First Lateran Council",
+    "Concordat of Worms"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Waldo_at_third_lateran_council.jpg/330px-Waldo_at_third_lateran_council.jpg"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "apollinaris-laodicea",
+  "name": "Apollinaris of Laodicea",
+  "birthYear": 310,
+  "deathYear": 390,
+  "primaryTradition": "Greek",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "laodicea",
+      "description": "Bishop of Laodicea"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Apollinaris_of_Laodicea",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Apollinaris_Mineralwasserflasche.jpg/330px-Apollinaris_Mineralwasserflasche.jpg",
+  "summary": "Apollinaris of Laodicea was a bishop and theologian who taught that Christ had a human body and a human soul, but that the divine Logos took the place of the human mind or spirit. This teaching, known as Apollinarianism, was condemned as heretical because it denied the full humanity of Christ. The First Council of Constantinople in 381 condemned his teachings, affirming that Christ had both a fully human and fully divine nature. Despite the condemnation, Apollinarianism influenced later Christological controversies and was opposed by theologians such as St. Gregory of Nazianzus.",
+  "keyQuotes": [],
+  "writings": []
+}

@@ -18,7 +18,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Gregory_of_Tours",
-  "newAdventUrl": "https://www.newadvent.org/cathen/07018b.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Saint_Gr%C3%A9goire_Sacramentaire_de_Marmoutier_%C3%A0_l%27usage_d%27Autun.jpg/330px-Saint_Gr%C3%A9goire_Sacramentaire_de_Marmoutier_%C3%A0_l%27usage_d%27Autun.jpg",
   "summary": "Gregory of Tours was a bishop and historian who wrote the History of the Franks, one of the most important sources for the history of Merovingian Gaul. As bishop of Tours, he was a key figure in the Frankish Church and worked to maintain orthodoxy and Church discipline. His writings provide invaluable insight into the transition from Roman to medieval society in Western Europe.",
   "keyQuotes": [],
@@ -27,5 +26,6 @@
       "title": "History of the Franks",
       "url": "https://www.ccel.org/ccel/schaff/npnf211.iv.html"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/07018b.htm"
 }

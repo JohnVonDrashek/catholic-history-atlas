@@ -1,0 +1,16 @@
+{
+  "id": "council-toledo-iii",
+  "name": "Third Council of Toledo",
+  "startYear": 589,
+  "endYear": 589,
+  "type": "council",
+  "locationId": "toledo",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Third_Council_of_Toledo",
+  "newAdventUrl": "https://www.newadvent.org/cathen/14746a.htm",
+  "summary": "The Third Council of Toledo in 589 AD marked the conversion of the Visigothic Kingdom from Arianism to Catholicism. Under King Reccared I, the council affirmed the Nicene Creed and condemned Arianism. It was a pivotal moment in the religious unification of Spain and the establishment of Catholic orthodoxy in the Iberian Peninsula.",
+  "keyDocuments": [
+    "Abjuration of Arianism",
+    "Affirmation of Nicene Faith"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/III_Concilio_de_Toledo_%28Jos%C3%A9_Mart%C3%AD_y_Mons%C3%B3%29.jpg/330px-III_Concilio_de_Toledo_%28Jos%C3%A9_Mart%C3%AD_y_Mons%C3%B3%29.jpg"
+}

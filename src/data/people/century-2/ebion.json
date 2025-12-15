@@ -1,0 +1,24 @@
+{
+  "id": "ebion",
+  "name": "Ebion",
+  "birthYear": null,
+  "deathYear": 150,
+  "primaryTradition": "Greek",
+  "roles": [
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "jerusalem",
+      "description": "Founded Ebionite sect"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Ebionites",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Schildhof_Ebion_seite.jpg/330px-Schildhof_Ebion_seite.jpg",
+  "summary": "Ebion was the traditional founder of the Ebionites, a Jewish-Christian sect that existed from the 1st to the 4th centuries. The Ebionites rejected the divinity of Christ, teaching that Jesus was a mere man who was adopted as the Son of God at his baptism. They observed Jewish law, rejected Paul's letters, and used only a modified version of the Gospel of Matthew. The name 'Ebionite' comes from the Hebrew word for 'poor,' reflecting their emphasis on poverty. Their teachings were condemned by early Church Fathers including Irenaeus and Epiphanius.",
+  "keyQuotes": [],
+  "writings": [],
+  "newAdventUrl": "https://www.newadvent.org/cathen/05242c.htm"
+}

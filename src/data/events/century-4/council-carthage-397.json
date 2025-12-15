@@ -1,0 +1,16 @@
+{
+  "id": "council-carthage-397",
+  "name": "Council of Carthage",
+  "startYear": 397,
+  "endYear": 397,
+  "type": "council",
+  "locationId": "carthage",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Council_of_Carthage_(397)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/03422a.htm",
+  "summary": "The Council of Carthage in 397 AD, presided over by Augustine of Hippo, confirmed the canon of Scripture established at Rome in 382. It played a crucial role in the development of North African Christianity and the establishment of orthodox doctrine against various heresies.",
+  "keyDocuments": [
+    "Carthaginian Canon",
+    "Confirmation of Scripture Canon"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Facial_Chronicle_-_b.13%2C_p.454_-_Carthage_coun%D1%81il.gif/330px-Facial_Chronicle_-_b.13%2C_p.454_-_Carthage_coun%D1%81il.gif"
+}

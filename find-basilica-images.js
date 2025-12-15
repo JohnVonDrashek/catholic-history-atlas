@@ -21,6 +21,39 @@ const colors = {
   magenta: '\x1b[35m',
 };
 
+// Cache configuration
+const CACHE_FILE = path.join(__dirname, '.image-cache.json');
+const CACHE_MAX_AGE = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
+
+// Load cache from file
+function loadCache() {
+  try {
+    if (fs.existsSync(CACHE_FILE)) {
+      const cacheData = fs.readFileSync(CACHE_FILE, 'utf8');
+      return JSON.parse(cacheData);
+    }
+  } catch (error) {
+    // Silently fail if cache can't be loaded
+  }
+  return {};
+}
+
+// Save cache to file
+function saveCache(cache) {
+  try {
+    fs.writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2), 'utf8');
+  } catch (error) {
+    // Silently fail if cache can't be saved
+  }
+}
+
+// Check if cache entry is still valid
+function isCacheValid(entry) {
+  if (!entry || !entry.timestamp) return false;
+  const age = Date.now() - entry.timestamp;
+  return age < CACHE_MAX_AGE;
+}
+
 /**
  * Make an HTTP/HTTPS request
  */
@@ -67,9 +100,20 @@ function makeRequest(url, options = {}) {
 }
 
 /**
- * Check if an image URL is valid
+ * Check if an image URL is valid (with caching)
  */
-async function checkImageUrl(url) {
+async function checkImageUrl(url, cache) {
+  // Check cache first
+  const cacheEntry = cache[url];
+  if (isCacheValid(cacheEntry)) {
+    return {
+      valid: cacheEntry.valid,
+      statusCode: cacheEntry.statusCode,
+      contentType: cacheEntry.contentType,
+      cached: true,
+    };
+  }
+
   try {
     const parsedUrl = new URL(url);
     const client = parsedUrl.protocol === 'https:' ? https : http;
@@ -92,35 +136,76 @@ async function checkImageUrl(url) {
         const isImage = contentType.startsWith('image/');
         const isOk = statusCode >= 200 && statusCode < 300;
         
-        resolve({
+        const result = {
           valid: isOk && isImage,
           statusCode,
           contentType,
-        });
+          cached: false,
+        };
+
+        // Update cache
+        cache[url] = {
+          valid: result.valid,
+          statusCode: result.statusCode,
+          contentType: result.contentType,
+          timestamp: Date.now(),
+        };
+        
+        resolve(result);
         
         res.destroy();
       });
 
       req.on('error', () => {
-        resolve({ valid: false, statusCode: null, contentType: null });
+        const result = { valid: false, statusCode: null, contentType: null, cached: false };
+        
+        // Cache errors too
+        cache[url] = {
+          valid: false,
+          statusCode: null,
+          contentType: null,
+          timestamp: Date.now(),
+        };
+        
+        resolve(result);
       });
 
       req.on('timeout', () => {
         req.destroy();
-        resolve({ valid: false, statusCode: null, contentType: null });
+        const result = { valid: false, statusCode: null, contentType: null, cached: false };
+        
+        // Cache timeout errors
+        cache[url] = {
+          valid: false,
+          statusCode: null,
+          contentType: null,
+          timestamp: Date.now(),
+        };
+        
+        resolve(result);
       });
 
       req.end();
     });
   } catch (error) {
-    return { valid: false, statusCode: null, contentType: null };
+    const result = { valid: false, statusCode: null, contentType: null, cached: false };
+    
+    // Cache invalid URL errors
+    cache[url] = {
+      valid: false,
+      statusCode: null,
+      contentType: null,
+      timestamp: Date.now(),
+    };
+    
+    return result;
   }
 }
 
 /**
  * Search Wikipedia page for images
  */
-async function searchWikipediaPage(wikipediaUrl) {
+async function searchWikipediaPage(wikipediaUrl, cache) {
   if (!wikipediaUrl) return [];
 
   try {
@@ -164,7 +249,7 @@ async function searchWikipediaPage(wikipediaUrl) {
               // Prefer thumbnail URL if available, otherwise full URL
               const imageUrl = imageInfo.thumburl || imageInfo.url;
               if (imageUrl) {
-                const validation = await checkImageUrl(imageUrl);
+                const validation = await checkImageUrl(imageUrl, cache);
                 if (validation.valid) {
                   imageUrls.push({
                     fileName,
@@ -191,7 +276,7 @@ async function searchWikipediaPage(wikipediaUrl) {
       const imageUrl = uploadMatch[1];
       // Skip if already found
       if (!imageUrls.some(img => img.url === imageUrl)) {
-        const validation = await checkImageUrl(imageUrl);
+        const validation = await checkImageUrl(imageUrl, cache);
         if (validation.valid) {
           imageUrls.push({
             fileName: path.basename(imageUrl),
@@ -211,7 +296,7 @@ async function searchWikipediaPage(wikipediaUrl) {
 /**
  * Search Wikimedia Commons API for images
  */
-async function searchWikimediaCommons(searchTerm) {
+async function searchWikimediaCommons(searchTerm, cache) {
   try {
     const apiUrl = 'https://commons.wikimedia.org/w/api.php?' + new URLSearchParams({
       action: 'query',
@@ -269,11 +354,15 @@ async function searchWikimediaCommons(searchTerm) {
           return null;
         }
 
-        // Validate the image
-        const validation = await checkImageUrl(imageUrl);
-        if (!validation.valid) {
-          return null;
-        }
+        // Validate the image (cache is passed through closure)
+        // Note: cache needs to be passed, but we'll handle this in the calling function
+        return {
+          fileName,
+          url: imageUrl,
+          width: imageInfo.thumbwidth || imageInfo.width,
+          height: imageInfo.thumbheight || imageInfo.height,
+          needsValidation: true,
+        };
 
         return {
           fileName,
@@ -287,7 +376,24 @@ async function searchWikimediaCommons(searchTerm) {
     });
 
     const results = await Promise.all(imageInfoPromises);
-    return results.filter(r => r !== null);
+    const validResults = [];
+    
+    // Validate images and filter
+    for (const result of results) {
+      if (!result) continue;
+      
+      if (result.needsValidation) {
+        const validation = await checkImageUrl(result.url, cache);
+        if (validation.valid) {
+          delete result.needsValidation;
+          validResults.push(result);
+        }
+      } else {
+        validResults.push(result);
+      }
+    }
+    
+    return validResults;
   } catch (error) {
     console.error(`${colors.red}Error searching Wikimedia Commons: ${error.message}${colors.reset}`);
     return [];
@@ -297,20 +403,20 @@ async function searchWikimediaCommons(searchTerm) {
 /**
  * Find images for a basilica
  */
-async function findImagesForBasilica(basilica) {
+async function findImagesForBasilica(basilica, cache) {
   const results = [];
   
   // Try Wikipedia page first if available
   if (basilica.wikipediaUrl) {
     console.log(`  ${colors.cyan}Checking Wikipedia page...${colors.reset}`);
-    const wikiImages = await searchWikipediaPage(basilica.wikipediaUrl);
+    const wikiImages = await searchWikipediaPage(basilica.wikipediaUrl, cache);
     results.push(...wikiImages);
     await new Promise(resolve => setTimeout(resolve, 500)); // Rate limiting
   }
 
   // Search Wikimedia Commons by name
   console.log(`  ${colors.cyan}Searching Wikimedia Commons for "${basilica.name}"...${colors.reset}`);
-  const commonsResults = await searchWikimediaCommons(basilica.name);
+  const commonsResults = await searchWikimediaCommons(basilica.name, cache);
   results.push(...commonsResults.map(r => ({ ...r, source: 'commons-search' })));
   await new Promise(resolve => setTimeout(resolve, 500)); // Rate limiting
 
@@ -329,7 +435,7 @@ async function findImagesForBasilica(basilica) {
 
   for (const variation of nameVariations.slice(0, 2)) {
     console.log(`  ${colors.cyan}Searching for "${variation}"...${colors.reset}`);
-    const variationResults = await searchWikimediaCommons(variation);
+    const variationResults = await searchWikimediaCommons(variation, cache);
     results.push(...variationResults.map(r => ({ ...r, source: 'commons-search-variation' })));
     await new Promise(resolve => setTimeout(resolve, 500)); // Rate limiting
   }
@@ -362,6 +468,13 @@ async function main() {
     process.exit(1);
   }
 
+  // Load cache
+  const cache = loadCache();
+  const cacheSize = Object.keys(cache).length;
+  if (cacheSize > 0) {
+    console.log(`${colors.cyan}Loaded ${cacheSize} cached image verification results${colors.reset}\n`);
+  }
+
   const basilicasFile = path.join(__dirname, 'src', 'data', 'basilicas.json');
   
   if (!fs.existsSync(basilicasFile)) {
@@ -389,7 +502,7 @@ async function main() {
 
     console.log(`${colors.blue}Finding images for: ${basilica.name} (${basilica.id})${colors.reset}\n`);
 
-    const images = await findImagesForBasilica(basilica);
+    const images = await findImagesForBasilica(basilica, cache);
     
     if (images.length === 0) {
       console.log(`${colors.yellow}No images found${colors.reset}`);
@@ -419,9 +532,10 @@ async function main() {
 
       // Skip if already has a valid image
       if (basilica.imageUrl) {
-        const validation = await checkImageUrl(basilica.imageUrl);
+        const validation = await checkImageUrl(basilica.imageUrl, cache);
         if (validation.valid) {
-          console.log(`  ${colors.yellow}Already has valid image, skipping...${colors.reset}\n`);
+          const cacheStatus = validation.cached ? ' (cached)' : '';
+          console.log(`  ${colors.yellow}Already has valid image, skipping...${cacheStatus}${colors.reset}\n`);
           skipped++;
           continue;
         } else {
@@ -429,7 +543,7 @@ async function main() {
         }
       }
 
-      const images = await findImagesForBasilica(basilica);
+      const images = await findImagesForBasilica(basilica, cache);
       
       if (images.length > 0) {
         const bestImage = images[0]; // Use first result
@@ -471,7 +585,7 @@ async function main() {
       if (!basilica.imageUrl || basilica.imageUrl === null) {
         needsFixing.push({ basilica, reason: 'missing' });
       } else {
-        const validation = await checkImageUrl(basilica.imageUrl);
+        const validation = await checkImageUrl(basilica.imageUrl, cache);
         if (!validation.valid) {
           needsFixing.push({ basilica, reason: 'broken', currentUrl: basilica.imageUrl });
         }
@@ -495,7 +609,7 @@ async function main() {
       }
       console.log('');
 
-      const images = await findImagesForBasilica(basilica);
+      const images = await findImagesForBasilica(basilica, cache);
       
       if (images.length === 0) {
         console.log(`${colors.yellow}No images found. Skipping...${colors.reset}\n`);
@@ -528,6 +642,13 @@ async function main() {
     const updatedContent = JSON.stringify(basilicas, null, 2) + '\n';
     fs.writeFileSync(basilicasFile, updatedContent, 'utf8');
     console.log(`${colors.green}✓ Updated ${basilicasFile}${colors.reset}\n`);
+  }
+
+  // Save cache at the end
+  saveCache(cache);
+  const finalCacheSize = Object.keys(cache).length;
+  if (finalCacheSize > cacheSize) {
+    console.log(`${colors.cyan}Cache updated: ${finalCacheSize} entries${colors.reset}`);
   }
 }
 

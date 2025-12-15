@@ -1,0 +1,24 @@
+{
+  "id": "sabellius",
+  "name": "Sabellius",
+  "birthYear": null,
+  "deathYear": 220,
+  "primaryTradition": "Greek",
+  "roles": [
+    "theologian",
+    "priest"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Taught in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Sabellianism",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/The_Creeds_of_Athanasius%2C_Sabellius_and_Swedenborg_Examined_and_Compared_with_Each_Other.djvu/page1-330px-The_Creeds_of_Athanasius%2C_Sabellius_and_Swedenborg_Examined_and_Compared_with_Each_Other.djvu.jpg",
+  "summary": "Sabellius was a 3rd-century theologian who taught a form of Modalism, also known as Sabellianism or Patripassianism. He denied the distinct persons of the Trinity, teaching instead that the Father, Son, and Holy Spirit were merely different modes or aspects of the one God, rather than three distinct persons. This teaching was condemned as heretical because it denied the real distinction between the persons of the Trinity and implied that the Father suffered on the cross (Patripassianism). Sabellius was excommunicated by Pope Callixtus I around 220. His teachings were opposed by theologians such as Tertullian and Hippolytus of Rome.",
+  "keyQuotes": [],
+  "writings": []
+}

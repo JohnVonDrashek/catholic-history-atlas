@@ -1,0 +1,24 @@
+{
+  "id": "john-lugio",
+  "name": "John of Lugio",
+  "birthYear": null,
+  "deathYear": 1230,
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "italy",
+      "description": "Cathar bishop in Italy"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/John_of_Lusignan",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/The_Journal_of_Classical_and_Sacred_Philology%2C_Volume_2%2C_1855.djvu/page1-330px-The_Journal_of_Classical_and_Sacred_Philology%2C_Volume_2%2C_1855.djvu.jpg",
+  "summary": "John of Lugio was a 13th-century Cathar bishop and theologian who developed a more sophisticated form of Cathar dualism. He wrote 'The Book of Two Principles,' which presented a systematic dualistic theology. He taught that there were two eternal principles: good (God) and evil (Satan), and that the material world was created by the evil principle. His teachings represented a more philosophical form of Catharism compared to the simpler dualism of earlier Cathars. He was active during the Albigensian Crusade and his writings influenced later Cathar thought.",
+  "keyQuotes": [],
+  "writings": []
+}

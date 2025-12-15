@@ -1,0 +1,24 @@
+{
+  "id": "facundus",
+  "name": "St. Facundus",
+  "birthYear": null,
+  "deathYear": 304,
+  "feastDay": "June 27",
+  "primaryTradition": "Latin",
+  "roles": [
+    "martyr"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "sahagun",
+      "description": "Martyred in Sahagún during Roman persecution"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Facundus_and_Primitivus",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Santos_Facundo_y_Primitivo.jpg/330px-Santos_Facundo_y_Primitivo.jpg",
+  "summary": "Facundus was a Christian martyr who suffered death for his faith during the Roman persecutions in Spain. He is often venerated together with his companion Primitivus.",
+  "keyQuotes": [],
+  "writings": []
+}

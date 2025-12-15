@@ -1,0 +1,25 @@
+{
+  "id": "baradaeus",
+  "name": "Jacob Baradaeus",
+  "birthYear": 500,
+  "deathYear": 578,
+  "primaryTradition": "Syriac",
+  "roles": [
+    "bishop",
+    "monk"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "edessa",
+      "description": "Bishop and organizer of Syriac Orthodox Church"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jacob_Baradaeus",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Patriarchal_Emblem_of_Syriac_Orthodox_Church.svg/330px-Patriarchal_Emblem_of_Syriac_Orthodox_Church.svg.png",
+  "summary": "Jacob Baradaeus was a 6th-century Monophysite bishop who organized the Syriac Orthodox Church (also known as the Jacobite Church, named after him). He traveled throughout the Middle East consecrating Monophysite bishops and priests, often disguised in ragged clothing (baradaeus means 'ragged' or 'patched'). He established a separate Monophysite hierarchy that survived despite persecution by the Byzantine authorities. His work ensured the survival of the non-Chalcedonian churches in Syria and Mesopotamia. The Syriac Orthodox Church considers him a saint and one of its most important founders.",
+  "keyQuotes": [],
+  "writings": []
+}
+

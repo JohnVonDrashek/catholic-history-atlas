@@ -1,6 +1,7 @@
 import bede from './bede.json';
 import boniface from './boniface.json';
 import chrodegang_metz from './chrodegang-metz.json';
+import felix_urgel from './felix-urgel.json';
 import germanus_constantinople from './germanus-constantinople.json';
 import gregory_ii from './gregory-ii.json';
 import gregory_iii from './gregory-iii.json';
@@ -23,6 +24,7 @@ export default [
   bede,
   boniface,
   chrodegang_metz,
+  felix_urgel,
   germanus_constantinople,
   gregory_ii,
   gregory_iii,

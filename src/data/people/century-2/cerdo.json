@@ -1,0 +1,23 @@
+{
+  "id": "cerdo",
+  "name": "Cerdo",
+  "birthYear": null,
+  "deathYear": 140,
+  "primaryTradition": "Greek",
+  "roles": [
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Taught in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Cerdo_(gnostic)",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cerambyx_cerdo_%28couple%29.jpg/330px-Cerambyx_cerdo_%28couple%29.jpg",
+  "summary": "Cerdo was a 2nd-century Gnostic teacher who taught in Rome around 140. He was a predecessor of Marcion and influenced Marcionite teachings. He taught that there were two gods: the just God of the Old Testament and the good God of the New Testament. He rejected the Old Testament and parts of the New Testament, creating his own canon. He was excommunicated by Pope Hyginus. His teachings influenced Marcion, who developed a more systematic form of this dualistic theology. Irenaeus wrote against Cerdo's teachings.",
+  "keyQuotes": [],
+  "writings": []
+}

@@ -4,7 +4,11 @@ import anicetus from './anicetus.json';
 import apollonius from './apollonius.json';
 import athenagoras_athens from './athenagoras-athens.json';
 import attalus from './attalus.json';
+import basilides from './basilides.json';
 import blandina from './blandina.json';
+import cerdo from './cerdo.json';
+import cerinthus from './cerinthus.json';
+import ebion from './ebion.json';
 import eleutherius from './eleutherius.json';
 import evaristus from './evaristus.json';
 import hegesippus from './hegesippus.json';
@@ -27,7 +31,9 @@ import sanctus from './sanctus.json';
 import soter from './soter.json';
 import tatian from './tatian.json';
 import telesphorus from './telesphorus.json';
+import theodotus_tanner from './theodotus-tanner.json';
 import theophilus_antioch from './theophilus-antioch.json';
+import valentinus from './valentinus.json';
 import victor_i from './victor-i.json';
 import xystus_i from './xystus-i.json';
 
@@ -38,7 +44,11 @@ export default [
   apollonius,
   athenagoras_athens,
   attalus,
+  basilides,
   blandina,
+  cerdo,
+  cerinthus,
+  ebion,
   eleutherius,
   evaristus,
   hegesippus,
@@ -61,7 +71,9 @@ export default [
   soter,
   tatian,
   telesphorus,
+  theodotus_tanner,
   theophilus_antioch,
+  valentinus,
   victor_i,
   xystus_i,
 ];

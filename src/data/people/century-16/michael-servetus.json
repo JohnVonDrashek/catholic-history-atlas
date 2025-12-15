@@ -1,0 +1,25 @@
+{
+  "id": "michael-servetus",
+  "name": "Michael Servetus",
+  "birthYear": 1511,
+  "deathYear": 1553,
+  "primaryTradition": "Latin",
+  "roles": [
+    "theologian",
+    "physician"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "geneva",
+      "description": "Executed in Geneva"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Michael_Servetus",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Michael_Servetus.jpg/330px-Michael_Servetus.jpg",
+  "summary": "Michael Servetus was a Spanish theologian and physician who rejected the doctrine of the Trinity. He taught that the Father, Son, and Holy Spirit were not three distinct persons but three modes or aspects of the one God. He also denied the pre-existence of Christ and the divinity of the Holy Spirit. His book 'On the Errors of the Trinity' was condemned by both Catholics and Protestants. He was arrested in Geneva at the instigation of John Calvin and burned at the stake for heresy in 1553. His execution highlighted the intolerance of both Catholic and Protestant authorities toward anti-Trinitarian views.",
+  "keyQuotes": [],
+  "writings": []
+}
+

@@ -149,6 +149,15 @@ npm run lint:duplicates
 
 # Verify all image URLs are valid
 npm run lint:images
+
+# Verify all Wikipedia URLs are valid
+npm run fix:wikipedia
+
+# Verify all New Advent URLs are valid
+npm run lint:newadvent
+
+# Verify all My Catholic Life links are valid
+npm run integrate:mycatholic
 ```
 
 **If errors are found:**
@@ -156,6 +165,8 @@ npm run lint:images
 - Remove duplicate entries
 - Fix any syntax errors in index files
 - Fix broken images using: `npm run fix:images` (see "Verify and Fix Images" section below)
+- Fix broken Wikipedia URLs using: `npm run fix:wikipedia` (see "Verify and Fix Wikipedia URLs" section below)
+- Fix broken New Advent URLs using: `npm run lint:newadvent:fix` (see "Verify New Advent URLs" section below)
 
 ### 7. **Build and Verify**
 
@@ -183,6 +194,10 @@ Before considering a saint addition complete:
 - [ ] Ran `npm run lint:centuries` - no errors
 - [ ] Ran `npm run lint:duplicates` - no errors
 - [ ] Ran `npm run lint:images` - all images valid (or fixed with `npm run fix:images`)
+- [ ] Ran `npm run fix:wikipedia` - all Wikipedia URLs valid (or fixed)
+- [ ] Ran `npm run lint:newadvent` - all New Advent URLs valid (or fixed)
+- [ ] Ran `npm run find:newadvent` - added missing New Advent URLs where available
+- [ ] Ran `npm run integrate:mycatholic` - My Catholic Life links added where available
 - [ ] Ran `npm run build` - successful
 
 ## Common Mistakes to Avoid
@@ -206,6 +221,10 @@ When adding multiple saints:
    - `npm run lint:centuries`
    - `npm run lint:duplicates`
    - `npm run lint:images` (fix any issues with `npm run fix:images`)
+   - `npm run fix:wikipedia` (fix any broken Wikipedia URLs)
+   - `npm run lint:newadvent` (check New Advent URLs)
+   - `npm run find:newadvent` (add missing New Advent URLs)
+   - `npm run integrate:mycatholic` (add My Catholic Life links where available)
 6. Build and verify
 
 ## Automated Tools
@@ -267,4 +286,126 @@ This will:
    - Re-run `npm run lint:images` to verify the fix
 
 **Note:** The image verification script checks that URLs return valid image content types. Broken links, 404 errors, or non-image content will be flagged. Always verify images after adding new saints to ensure they display correctly in the application.
+
+### Verify and Fix Wikipedia URLs
+
+After adding saints, verify that all Wikipedia URLs are valid and point to correct articles:
+
+```bash
+npm run fix:wikipedia
+```
+
+This will:
+- Check all person JSON files for `wikipediaUrl` fields
+- Verify that each URL resolves to a valid Wikipedia article
+- Automatically search for and fix broken or incorrect URLs
+- **Use cached results** for previously verified URLs (cache expires after 30 days)
+
+**Note:** The first run will be slower as it verifies all URLs. Subsequent runs will be much faster as results are cached in `.wikipedia-cache.json`. The cache file is automatically created and ignored by git.
+
+**If URLs need fixing:**
+
+1. **Automatic fix (recommended):**
+   ```bash
+   npm run fix:wikipedia saint-id-1 saint-id-2
+   ```
+   This will automatically search Wikipedia and update URLs for specific saints.
+
+2. **Check all saints:**
+   ```bash
+   npm run fix:wikipedia
+   ```
+   This processes all saints in the database.
+
+3. **Manual fix:**
+   - Review the URLs in the saint's JSON file
+   - Search Wikipedia directly for the correct article
+   - Update the `wikipediaUrl` field manually
+   - Re-run `npm run fix:wikipedia` to verify the fix
+
+**Note:** The Wikipedia verification script ensures URLs point to actual saint articles, not disambiguation pages or unrelated content. Always verify Wikipedia URLs after adding new saints to ensure they link to the correct biographical information.
+
+### Integrate My Catholic Life! Data
+
+Add links to comprehensive biographical information from [My Catholic Life!](https://mycatholic.life/saints/), a rich resource with detailed saint biographies:
+
+```bash
+npm run integrate:mycatholic
+```
+
+This will:
+- Search for individual liturgical calendar pages for each saint
+- Add `myCatholicLifeUrl` field linking directly to detailed saint biographies
+- **Use cached results** for previously processed saints (cache expires after 30 days)
+
+**Enhanced JSON structure:**
+```json
+{
+  "id": "francis-xavier",
+  "name": "St. Francis Xavier",
+  // ... existing fields ...
+  "myCatholicLifeUrl": "https://mycatholic.life/saints/saints-of-the-liturgical-year/december-3---saint-francis-xavier-priest--memorial"
+}
+```
+
+**Note:** My Catholic Life! provides extensive biographical content and high-quality images for many saints. Links go directly to individual saint pages in their liturgical calendar, offering comprehensive biographies with historical context and spiritual insights. Use `npm run integrate:mycatholic:cleanup` to remove all My Catholic Life links if needed.
+
+### Verify New Advent URLs
+
+Check if existing New Advent Catholic Encyclopedia links are still valid:
+
+```bash
+npm run lint:newadvent
+```
+
+This will:
+- Check all person JSON files for `newAdventUrl` fields
+- Verify that each URL resolves to a valid page (not 404)
+- Check that page content matches the saint's name
+- Cross-reference with alphabetical index pages (a.htm, b.htm, etc.)
+- Report saints with broken, invalid, or incorrect New Advent links
+- **Use cached results** for previously verified URLs (cache expires after 30 days)
+
+**Example output:**
+```
+Valid URLs: 18
+Missing URLs: 744
+Invalid URLs: 0
+Wrong Saint URLs: 0
+```
+
+**Validation Types:**
+- **Valid URLs**: Links that work and point to Catholic Encyclopedia pages
+- **Missing URLs**: Saints without any New Advent links (acceptable)
+- **Invalid URLs**: Broken/missing web pages
+- **Wrong Saint URLs**: Links that work but point to different saints (rare, usually removed)
+
+**If invalid URLs are found:**
+
+1. **Automatic cleanup (recommended):**
+   ```bash
+   npm run lint:newadvent:fix
+   ```
+   This will automatically remove invalid and incorrect New Advent URLs from saint records.
+
+2. **Add missing URLs:**
+   ```bash
+   npm run find:newadvent
+   ```
+   This will scan New Advent's alphabetical index pages and add valid URLs for saints that have encyclopedia entries. Only verified, correct URLs are added.
+
+2. **Manual fix:**
+   - Review the invalid URLs listed by `npm run lint:newadvent`
+   - Search New Advent for the correct article
+   - Update the `newAdventUrl` field manually
+   - Re-run `npm run lint:newadvent` to verify the fix
+
+**Note:** The script performs comprehensive validation:
+- **URL Accessibility**: Checks if links return valid HTTP responses
+- **Content Matching**: Verifies the page actually describes the correct saint
+- **Index Validation**: Cross-references with New Advent's alphabetical index pages (informational only)
+
+**Important:** Valid Catholic Encyclopedia URLs are trusted even if not found on index pages, as the index parsing may be incomplete. Only clearly wrong or broken URLs are removed.
+
+New Advent URLs can become invalid over time as the site evolves. This enhanced linting ensures all external links remain both functional and accurate. The Catholic Encyclopedia content is valuable for historical and theological context.
 

@@ -1,0 +1,24 @@
+{
+  "id": "florentina",
+  "name": "St. Florentina",
+  "birthYear": null,
+  "deathYear": 304,
+  "feastDay": "February 1",
+  "primaryTradition": "Latin",
+  "roles": [
+    "virgin"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "cartagena",
+      "description": "Martyred in Cartagena during Roman persecution"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Florentina",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Santa_Florentina.jpg/330px-Santa_Florentina.jpg",
+  "summary": "Florentina was a Christian virgin martyred during the persecutions of Diocletian in Roman Spain. She is venerated as one of the early martyrs of Cartagena.",
+  "keyQuotes": [],
+  "writings": []
+}

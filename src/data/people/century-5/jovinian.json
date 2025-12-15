@@ -1,0 +1,24 @@
+{
+  "id": "jovinian",
+  "name": "Jovinian",
+  "birthYear": null,
+  "deathYear": 405,
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Monk and theologian in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Jovinian",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Jovinianus.jpg",
+  "summary": "Jovinian was a 4th-century monk and theologian who opposed the growing asceticism and monasticism of his time. He taught that virginity, marriage, and widowhood were of equal merit, that fasting and feasting were equally meritorious, and that all who are baptized and remain in the faith will receive equal rewards in heaven. He also denied the perpetual virginity of Mary. His teachings were condemned by synods in Rome (390) and Milan (391), and he was excommunicated. St. Jerome wrote extensively against him in his work 'Against Jovinian,' defending the superiority of virginity and ascetic practices.",
+  "keyQuotes": [],
+  "writings": []
+}

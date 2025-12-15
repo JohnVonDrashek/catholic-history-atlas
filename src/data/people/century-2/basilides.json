@@ -1,0 +1,26 @@
+{
+  "id": "basilides",
+  "name": "Basilides",
+  "birthYear": null,
+  "deathYear": 140,
+  "primaryTradition": "Greek",
+  "roles": [
+    "theologian",
+    "teacher"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "alexandria",
+      "description": "Taught in Alexandria"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Basilides",
+  "newAdventUrl": "https://www.newadvent.org/cathen/02325a.htm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Basilides_M%C3%A1ria.jpg/330px-Basilides_M%C3%A1ria.jpg",
+  "summary": "Basilides was a 2nd-century Gnostic teacher in Alexandria who founded the Basilidean school. He taught a complex system of 365 heavens, each ruled by an archon, with the highest being ruled by Abraxas. He denied the divinity of Christ, teaching that Simon of Cyrene was crucified in place of Jesus, who ascended to heaven. His system incorporated elements of Greek philosophy, Egyptian religion, and Christianity. His teachings were condemned by early Church Fathers including Irenaeus and Hippolytus.",
+  "keyQuotes": [],
+  "writings": []
+}
+

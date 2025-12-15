@@ -1,0 +1,15 @@
+{
+  "id": "council-lyon-i",
+  "name": "First Council of Lyon",
+  "startYear": 1245,
+  "endYear": 1245,
+  "type": "council",
+  "locationId": "lyons",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/First_Council_of_Lyon",
+  "newAdventUrl": "https://www.newadvent.org/cathen/09438b.htm",
+  "summary": "The First Council of Lyon was the thirteenth ecumenical council convened by Pope Innocent IV. It addressed the deposition of Emperor Frederick II, the Mongol invasion threat, and proposed aid for the Latin Empire of Constantinople.",
+  "keyDocuments": [
+    "Constitutions of the First Council of Lyon"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Matthew_Paris%2C_First_Council_of_Lyon.jpg/330px-Matthew_Paris%2C_First_Council_of_Lyon.jpg"
+}

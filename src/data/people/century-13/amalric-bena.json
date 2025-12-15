@@ -1,0 +1,25 @@
+{
+  "id": "amalric-bena",
+  "name": "Amalric of Bena",
+  "birthYear": null,
+  "deathYear": 1206,
+  "primaryTradition": "Latin",
+  "roles": [
+    "theologian",
+    "philosopher"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "paris",
+      "description": "Taught at University of Paris"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Amalric_of_Bena",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Amalric_of_Bena_%28Clean%29.jpg",
+  "summary": "Amalric of Bena was a 12th-13th century French theologian and philosopher who taught a form of pantheism. He taught that God was identical with all things and that all things were God, leading to the conclusion that sin did not exist since everything was divine. His teachings were condemned at the Council of Paris in 1210, and his body was exhumed and burned. His followers, the Amalricians, were persecuted and many were burned at the stake. His pantheistic teachings influenced later mystical movements but were condemned as heretical by the Church.",
+  "keyQuotes": [],
+  "writings": []
+}
+

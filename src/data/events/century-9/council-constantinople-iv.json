@@ -1,0 +1,16 @@
+{
+  "id": "council-constantinople-iv",
+  "name": "Fourth Council of Constantinople",
+  "startYear": 869,
+  "endYear": 870,
+  "type": "council",
+  "locationId": "constantinople",
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Fourth_Council_of_Constantinople_(Catholic_Church)",
+  "newAdventUrl": "https://www.newadvent.org/cathen/04308a.htm",
+  "summary": "The Fourth Council of Constantinople was the eighth ecumenical council recognized by the Catholic Church. It condemned Photius, temporarily restored unity between Rome and Constantinople, and reaffirmed papal authority over disputed territories.",
+  "keyDocuments": [
+    "Canons of Constantinople IV",
+    "Condemnation of Photius"
+  ],
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Cesare_Nebbia_%E2%80%93_Fourth_Council_of_Constantinople.jpg/330px-Cesare_Nebbia_%E2%80%93_Fourth_Council_of_Constantinople.jpg"
+}

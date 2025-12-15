@@ -19,7 +19,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Alphonsus_Liguori",
-  "newAdventUrl": "https://www.newadvent.org/cathen/01334a.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/AlphonsusLiguori.jpg/330px-AlphonsusLiguori.jpg",
   "summary": "Alphonsus Liguori was an Italian Catholic bishop, spiritual writer, composer, musician, artist, poet, lawyer, scholastic philosopher, and theologian. He founded the Congregation of the Most Holy Redeemer (Redemptorists) in 1732. He is best known for his moral theology, particularly his work on casuistry and probabilism. He was declared a Doctor of the Church in 1871 and is the patron saint of confessors, moral theologians, and vocations.",
   "keyQuotes": [
@@ -39,5 +38,6 @@
       "title": "Uniformity with God's Will",
       "url": "https://www.ccel.org/ccel/liguori/uniformity.html"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/01334a.htm"
 }

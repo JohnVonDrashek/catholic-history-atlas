@@ -1,0 +1,24 @@
+{
+  "id": "leocadia",
+  "name": "St. Leocadia",
+  "birthYear": null,
+  "deathYear": 304,
+  "feastDay": "December 9",
+  "primaryTradition": "Latin",
+  "roles": [
+    "virgin"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "toledo",
+      "description": "Martyred in Toledo during Roman persecution"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Leocadia",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Santa_Leocadia.jpg/330px-Santa_Leocadia.jpg",
+  "summary": "Leocadia was a Christian virgin martyred in Toledo during the persecution of Christians under Roman rule. She is venerated as one of the patron saints of Toledo.",
+  "keyQuotes": [],
+  "writings": []
+}

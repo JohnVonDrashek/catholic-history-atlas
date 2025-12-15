@@ -7,6 +7,7 @@ import charles_borromeo from './charles-borromeo.json';
 import clement_vii from './clement-vii.json';
 import edmund_campion from './edmund-campion.json';
 import eustace_white from './eustace-white.json';
+import faustus_socinus from './faustus-socinus.json';
 import francis_borgia from './francis-borgia.json';
 import francis_paola from './francis-paola.json';
 import francis_xavier from './francis-xavier.json';
@@ -16,6 +17,7 @@ import henry_walpole from './henry-walpole.json';
 import ignatius_loyola from './ignatius-loyola.json';
 import isabella_castile from './isabella-castile.json';
 import japanese_martyrs from './japanese-martyrs.json';
+import john_calvin from './john-calvin.json';
 import john_cross from './john-cross.json';
 import john_fisher from './john-fisher.json';
 import john_of_avila from './john-of-avila.json';
@@ -32,6 +34,9 @@ import luke_kirby from './luke-kirby.json';
 import margaret_clitherow from './margaret-clitherow.json';
 import margaret_pole from './margaret-pole.json';
 import margaret_ward from './margaret-ward.json';
+import martin_luther from './martin-luther.json';
+import michael_servetus from './michael-servetus.json';
+import paschal_baylon from './paschal-baylon.json';
 import paul_iii from './paul-iii.json';
 import paul_iv from './paul-iv.json';
 import paul_miki from './paul-miki.json';
@@ -48,6 +53,8 @@ import stanislaus_kostka from './stanislaus-kostka.json';
 import swithun_wells from './swithun-wells.json';
 import teresa_avila from './teresa-avila.json';
 import thomas_more from './thomas-more.json';
+import thomas_muntzer from './thomas-muntzer.json';
+import ulrich_zwingli from './ulrich-zwingli.json';
 
 export default [
   adrian_vi,
@@ -59,6 +66,7 @@ export default [
   clement_vii,
   edmund_campion,
   eustace_white,
+  faustus_socinus,
   francis_borgia,
   francis_paola,
   francis_xavier,
@@ -68,6 +76,7 @@ export default [
   ignatius_loyola,
   isabella_castile,
   japanese_martyrs,
+  john_calvin,
   john_cross,
   john_fisher,
   john_of_avila,
@@ -84,6 +93,9 @@ export default [
   margaret_clitherow,
   margaret_pole,
   margaret_ward,
+  martin_luther,
+  michael_servetus,
+  paschal_baylon,
   paul_iii,
   paul_iv,
   paul_miki,
@@ -100,4 +112,6 @@ export default [
   swithun_wells,
   teresa_avila,
   thomas_more,
+  thomas_muntzer,
+  ulrich_zwingli,
 ];

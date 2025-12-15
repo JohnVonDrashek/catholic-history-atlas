@@ -1,0 +1,25 @@
+{
+  "id": "tanchelm",
+  "name": "Tanchelm",
+  "birthYear": null,
+  "deathYear": 1115,
+  "primaryTradition": "Latin",
+  "roles": [
+    "preacher",
+    "heretic"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": true,
+  "locations": [
+    {
+      "placeId": "antwerp",
+      "description": "Preached in Antwerp and surrounding regions"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Tanchelm",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/%27St._Norbert_Overcoming_Tanchelm%27_by_Peter_Paul_Rubens.jpg/330px-%27St._Norbert_Overcoming_Tanchelm%27_by_Peter_Paul_Rubens.jpg",
+  "summary": "Tanchelm was a 12th-century Flemish preacher who was condemned as a heretic. He rejected the authority of the clergy, denied the Real Presence in the Eucharist, and taught that the sacraments were invalid if administered by unworthy priests. He gained a large following in Antwerp and the surrounding regions, where he was seen as a reformer. He was eventually killed by a priest in 1115. His teachings influenced later anti-clerical movements. St. Norbert of Xanten preached against his followers and helped restore orthodoxy in the region.",
+  "keyQuotes": [],
+  "writings": []
+}
+

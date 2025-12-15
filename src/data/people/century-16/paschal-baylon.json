@@ -1,0 +1,25 @@
+{
+  "id": "paschal-baylon",
+  "name": "St. Paschal Baylon",
+  "birthYear": 1540,
+  "deathYear": 1592,
+  "feastDay": "May 17",
+  "primaryTradition": "Latin",
+  "roles": [
+    "religious",
+    "mystic"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "aragon",
+      "description": "Franciscan lay brother from Aragon"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Paschal_Bayl%C3%B3n",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/78Saint_Paschal_Baylon_Parish_Church_of_San_Quintin_47.jpg/330px-78Saint_Paschal_Baylon_Parish_Church_of_San_Quintin_47.jpg",
+  "summary": "Paschal Baylon was a Spanish Franciscan lay brother and mystic known for his devotion to the Eucharist and his simple, prayerful life. He was canonized in 1690 and is the patron saint of Eucharistic congresses and associations.",
+  "keyQuotes": [],
+  "writings": []
+}

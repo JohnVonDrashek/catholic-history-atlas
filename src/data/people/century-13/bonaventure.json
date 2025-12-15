@@ -19,7 +19,6 @@
     }
   ],
   "wikipediaUrl": "https://en.wikipedia.org/wiki/Bonaventure",
-  "newAdventUrl": "https://www.newadvent.org/cathen/02648c.htm",
   "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Fran%C3%A7ois%2C_Claude_%28dit_Fr%C3%A8re_Luc%29_-_Saint_Bonaventure.jpg",
   "summary": "Bonaventure was an Italian Franciscan theologian and philosopher. He was a contemporary of Thomas Aquinas and is considered one of the greatest medieval theologians. He served as Minister General of the Franciscan Order and was made a cardinal. He is known for his synthesis of Augustinian theology with Aristotelian philosophy and is venerated as a Doctor of the Church.",
   "keyQuotes": [],
@@ -28,5 +27,6 @@
       "title": "The Journey of the Mind to God",
       "url": "https://www.ccel.org/ccel/bonaventure/mind.html"
     }
-  ]
+  ],
+  "newAdventUrl": "https://www.newadvent.org/cathen/02648c.htm"
 }

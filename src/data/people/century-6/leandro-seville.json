@@ -1,0 +1,25 @@
+{
+  "id": "leandro-seville",
+  "name": "St. Leandro of Seville",
+  "birthYear": 534,
+  "deathYear": 600,
+  "feastDay": "March 13",
+  "primaryTradition": "Latin",
+  "roles": [
+    "bishop",
+    "theologian"
+  ],
+  "orthodoxyStatus": "canonized",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "seville",
+      "description": "Bishop of Seville and leader of Visigothic Church"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Leander_of_Seville",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/San_Leandro_y_San_Buenaventura%2C_Bartolom%C3%A9_Esteban_Murillo.jpg/330px-San_Leandro_y_San_Buenaventura%2C_Bartolom%C3%A9_Esteban_Murillo.jpg",
+  "summary": "Leandro of Seville was a Visigothic bishop and theologian who played a key role in the conversion of the Visigoths to Catholicism and the education of his siblings, including St. Isidore. He presided over the Third Council of Toledo.",
+  "keyQuotes": [],
+  "writings": []
+}

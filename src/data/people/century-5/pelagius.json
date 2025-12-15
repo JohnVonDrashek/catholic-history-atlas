@@ -1,0 +1,27 @@
+{
+  "id": "pelagius",
+  "name": "Pelagius",
+  "birthYear": 354,
+  "deathYear": 418,
+  "primaryTradition": "Latin",
+  "roles": [
+    "monk",
+    "theologian"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "rome",
+      "description": "Monk and theologian in Rome"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Pelagius",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Pelagius_from_Nuremberg_Chronicle.jpg",
+  "summary": "Pelagius was a British or Irish monk and theologian who taught that human beings have the natural ability to choose good and avoid sin without divine grace. He denied original sin and the necessity of grace for salvation, teaching instead that humans are born morally neutral and can achieve perfection through their own efforts. His teachings were condemned at the Council of Carthage in 418 and the Council of Ephesus in 431. St. Augustine of Hippo was his primary opponent, defending the necessity of grace and the reality of original sin.",
+  "keyQuotes": [
+    "If I ought, I can."
+  ],
+  "writings": [],
+  "newAdventUrl": "https://www.newadvent.org/cathen/11602a.htm"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "noetus",
+  "name": "Noetus",
+  "birthYear": null,
+  "deathYear": 220,
+  "primaryTradition": "Greek",
+  "roles": [
+    "theologian",
+    "priest"
+  ],
+  "orthodoxyStatus": "heresiarch",
+  "isMartyr": false,
+  "locations": [
+    {
+      "placeId": "smyrna",
+      "description": "Priest in Smyrna"
+    }
+  ],
+  "wikipediaUrl": "https://en.wikipedia.org/wiki/Noetus",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/William_Campbell-Taylor_alias_William_Taylor.jpg/330px-William_Campbell-Taylor_alias_William_Taylor.jpg",
+  "summary": "Noetus was a 2nd-3rd century Modalist heretic from Smyrna who taught Patripassianism. He denied the distinction between the persons of the Trinity, teaching that the Father and Son were the same person, and that the Father suffered on the cross. This teaching was condemned as heretical because it denied the real distinction between the persons of the Trinity. Noetus was excommunicated by a synod in Smyrna. His teachings influenced Sabellius and were opposed by Hippolytus of Rome, who wrote 'Against Noetus.'",
+  "keyQuotes": [],
+  "writings": []
+}
