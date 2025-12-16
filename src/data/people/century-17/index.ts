@@ -12,7 +12,6 @@ import clement_viii from './clement-viii.json';
 import clement_x from './clement-x.json';
 import david_lewis from './david-lewis.json';
 import edmund_arrowsmith from './edmund-arrowsmith.json';
-import faustus_socinus from './faustus-socinus.json';
 import francis_de_sales from './francis-de-sales.json';
 import francis_solano from './francis-solano.json';
 import francis_solanus from './francis-solanus.json';
@@ -73,7 +72,6 @@ export default [
   clement_x,
   david_lewis,
   edmund_arrowsmith,
-  faustus_socinus,
   francis_de_sales,
   francis_solano,
   francis_solanus,

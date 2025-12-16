@@ -9,7 +9,6 @@ import charlemagne from './charlemagne.json';
 import charles_bald from './charles-bald.json';
 import cyril_methodius from './cyril-methodius.json';
 import eugenius_ii from './eugenius-ii.json';
-import felix_urgel from './felix-urgel.json';
 import formosus from './formosus.json';
 import gottschalk from './gottschalk.json';
 import hincmar_reims from './hincmar-reims.json';
@@ -43,7 +42,6 @@ export default [
   charles_bald,
   cyril_methodius,
   eugenius_ii,
-  felix_urgel,
   formosus,
   gottschalk,
   hincmar_reims,
