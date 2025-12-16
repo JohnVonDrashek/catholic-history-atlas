@@ -110,7 +110,7 @@ function main() {
     process.exit(0);
   }
 
-  const peopleDir = path.join(__dirname, 'src', 'data', 'people');
+  const peopleDir = path.join(__dirname, '../..', 'src', 'data', 'people');
 
   if (!fs.existsSync(peopleDir)) {
     console.error(`${colors.red}Error: ${peopleDir} not found${colors.reset}`);

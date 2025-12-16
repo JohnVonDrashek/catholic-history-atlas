@@ -22,7 +22,7 @@ const colors = {
 };
 
 // Cache configuration
-const CACHE_FILE = path.join(__dirname, '.wikipedia-cache.json');
+const CACHE_FILE = path.join(__dirname, '../../.cache/wikipedia-cache.json');
 const CACHE_MAX_AGE = 30 * 24 * 60 * 60 * 1000; // 30 days in milliseconds
 
 // Load cache from file
@@ -183,7 +183,7 @@ async function findBestWikipediaUrl(saintName, currentUrl, cache) {
 async function processAllSaints() {
   console.log(`${colors.blue}Finding all person JSON files...${colors.reset}`);
 
-  const peopleDir = path.join(__dirname, 'src', 'data', 'people');
+  const peopleDir = path.join(__dirname, '../..', 'src', 'data', 'people');
   const personFiles = [];
 
   // Find all person JSON files
@@ -262,7 +262,7 @@ async function processAllSaints() {
 async function processSpecificSaints(saintIds) {
   console.log(`${colors.blue}Processing specific saints...${colors.reset}`);
 
-  const peopleDir = path.join(__dirname, 'src', 'data', 'people');
+  const peopleDir = path.join(__dirname, '../..', 'src', 'data', 'people');
   const cache = loadCache();
   let fixed = 0;
   let skipped = 0;

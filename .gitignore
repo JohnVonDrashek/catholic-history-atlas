@@ -1,11 +1,13 @@
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+image-fetch.log
+pope-image-fix.log
 
 node_modules
 dist
@@ -13,7 +15,13 @@ dist-ssr
 *.local
 
 # Cache files
+.cache/
+*.json.cache
 .image-cache.json
+.mycatholic-cache.json
+.newadvent-cache.json
+.newadvent-find-cache.json
+.wikipedia-cache.json
 
 # Editor directories and files
 .vscode/*

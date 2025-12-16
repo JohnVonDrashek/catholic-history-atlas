@@ -108,7 +108,7 @@ function kebabCase(str) {
 }
 
 function loadPlaces() {
-  const placesPath = path.join(__dirname, 'src', 'data', 'places.json');
+  const placesPath = path.join(__dirname, '../..', 'src', 'data', 'places.json');
   return JSON.parse(fs.readFileSync(placesPath, 'utf8'));
 }
 
@@ -150,7 +150,7 @@ async function promptForPlace(locationName) {
       places.push(newPlace);
       places.sort((a, b) => a.id.localeCompare(b.id));
 
-      const placesPath = path.join(__dirname, 'src', 'data', 'places.json');
+      const placesPath = path.join(__dirname, '../..', 'src', 'data', 'places.json');
       fs.writeFileSync(placesPath, JSON.stringify(places, null, 2) + '\n', 'utf8');
       console.log(`${colors.green}✓ Added "${locationName}" to places.json${colors.reset}\n`);
 
@@ -183,7 +183,7 @@ async function main() {
   const councilName = await question(`${colors.cyan}Council name:${colors.reset} `);
 
   console.log(`\n${colors.blue}Checking for existing councils...${colors.reset}`);
-  const eventsDir = path.join(__dirname, 'src', 'data', 'events');
+  const eventsDir = path.join(__dirname, '../..', 'src', 'data', 'events');
   const eventFiles = findJsonFiles(eventsDir);
   const events = eventFiles.map(loadEventFile).filter(e => e !== null);
   const matches = findMatches(councilName, events);
@@ -269,7 +269,7 @@ async function main() {
   }
 
   // Step 10: Write the file
-  const centuryDir = path.join(__dirname, 'src', 'data', 'events', `century-${century}`);
+  const centuryDir = path.join(__dirname, '../..', 'src', 'data', 'events', `century-${century}`);
   if (!fs.existsSync(centuryDir)) {
     fs.mkdirSync(centuryDir, { recursive: true });
   }

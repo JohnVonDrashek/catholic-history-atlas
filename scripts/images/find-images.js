@@ -22,7 +22,7 @@ const colors = {
 };
 
 // Cache configuration
-const CACHE_FILE = path.join(__dirname, '.image-cache.json');
+const CACHE_FILE = path.join(__dirname, '../../.cache/image-cache.json');
 const CACHE_MAX_AGE = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
 
 // Load cache from file
@@ -203,97 +203,6 @@ async function checkImageUrl(url, cache) {
 }
 
 /**
- * Search Wikipedia page for images
- */
-async function searchWikipediaPage(wikipediaUrl, cache) {
-  if (!wikipediaUrl) return [];
-
-  try {
-    const response = await makeRequest(wikipediaUrl);
-    if (response.statusCode !== 200) {
-      return [];
-    }
-
-    const html = response.data;
-    const imageUrls = [];
-
-    // Look for image URLs in the HTML
-    // Pattern: /media/File:filename.jpg
-    const mediaFilePattern = /\/media\/File:([^"'\s]+\.(jpg|jpeg|png|gif|webp))/gi;
-    let match;
-    while ((match = mediaFilePattern.exec(html)) !== null) {
-      const fileName = match[1];
-      // Convert to Wikimedia Commons URL
-      const commonsUrl = `https://commons.wikimedia.org/wiki/File:${fileName}`;
-      
-      // Get the actual image URL from Commons API
-      try {
-        const apiUrl = 'https://commons.wikimedia.org/w/api.php?' + new URLSearchParams({
-          action: 'query',
-          format: 'json',
-          titles: `File:${fileName}`,
-          prop: 'imageinfo',
-          iiprop: 'url',
-          iiurlwidth: 800, // Higher resolution for basilicas
-          origin: '*',
-        });
-
-        const apiResponse = await makeRequest(apiUrl);
-        if (apiResponse.statusCode === 200) {
-          const apiData = JSON.parse(apiResponse.data);
-          const pages = apiData.query?.pages;
-          if (pages) {
-            const page = Object.values(pages)[0];
-            const imageInfo = page.imageinfo?.[0];
-            if (imageInfo) {
-              // Prefer thumbnail URL if available, otherwise full URL
-              const imageUrl = imageInfo.thumburl || imageInfo.url;
-              if (imageUrl) {
-                const validation = await checkImageUrl(imageUrl, cache);
-                if (validation.valid) {
-                  imageUrls.push({
-                    fileName,
-                    url: imageUrl,
-                    source: 'wikipedia-page',
-                    width: imageInfo.thumbwidth || imageInfo.width,
-                    height: imageInfo.thumbheight || imageInfo.height,
-                  });
-                }
-              }
-            }
-          }
-        }
-      } catch (error) {
-        // Skip this image
-      }
-    }
-
-    // Also try to find images via the infobox or main image
-    // Look for data-src or src attributes with upload.wikimedia.org
-    const uploadPattern = /(https?:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/[^"'\s]+\.(jpg|jpeg|png|gif|webp))/gi;
-    let uploadMatch;
-    while ((uploadMatch = uploadPattern.exec(html)) !== null) {
-      const imageUrl = uploadMatch[1];
-      // Skip if already found
-      if (!imageUrls.some(img => img.url === imageUrl)) {
-        const validation = await checkImageUrl(imageUrl, cache);
-        if (validation.valid) {
-          imageUrls.push({
-            fileName: path.basename(imageUrl),
-            url: imageUrl,
-            source: 'wikipedia-upload',
-          });
-        }
-      }
-    }
-
-    return imageUrls;
-  } catch (error) {
-    return [];
-  }
-}
-
-/**
  * Search Wikimedia Commons API for images
  */
 async function searchWikimediaCommons(searchTerm, cache) {
@@ -329,7 +238,7 @@ async function searchWikimediaCommons(searchTerm, cache) {
           titles: `File:${fileName}`,
           prop: 'imageinfo',
           iiprop: 'url|size|mime',
-          iiurlwidth: 800,
+          iiurlwidth: 330,
           origin: '*',
         });
 
@@ -354,15 +263,11 @@ async function searchWikimediaCommons(searchTerm, cache) {
           return null;
         }
 
-        // Validate the image (cache is passed through closure)
-        // Note: cache needs to be passed, but we'll handle this in the calling function
-        return {
-          fileName,
-          url: imageUrl,
-          width: imageInfo.thumbwidth || imageInfo.width,
-          height: imageInfo.thumbheight || imageInfo.height,
-          needsValidation: true,
-        };
+        // Validate the image
+        const validation = await checkImageUrl(imageUrl, cache);
+        if (!validation.valid) {
+          return null;
+        }
 
         return {
           fileName,
@@ -376,24 +281,7 @@ async function searchWikimediaCommons(searchTerm, cache) {
     });
 
     const results = await Promise.all(imageInfoPromises);
-    const validResults = [];
-    
-    // Validate images and filter
-    for (const result of results) {
-      if (!result) continue;
-      
-      if (result.needsValidation) {
-        const validation = await checkImageUrl(result.url, cache);
-        if (validation.valid) {
-          delete result.needsValidation;
-          validResults.push(result);
-        }
-      } else {
-        validResults.push(result);
-      }
-    }
-    
-    return validResults;
+    return results.filter(r => r !== null);
   } catch (error) {
     console.error(`${colors.red}Error searching Wikimedia Commons: ${error.message}${colors.reset}`);
     return [];
@@ -401,43 +289,153 @@ async function searchWikimediaCommons(searchTerm, cache) {
 }
 
 /**
- * Find images for a basilica
+ * Search Wikipedia page for images
  */
-async function findImagesForBasilica(basilica, cache) {
+async function searchWikipediaPage(wikipediaUrl, cache) {
+  if (!wikipediaUrl) return [];
+
+  try {
+    const response = await makeRequest(wikipediaUrl);
+    if (response.statusCode !== 200) {
+      return [];
+    }
+
+    const html = response.data;
+    const imageUrls = [];
+
+    // Look for image URLs in the HTML
+    // Pattern: /media/File:filename.jpg
+    const mediaFilePattern = /\/media\/File:([^"'\s]+\.(jpg|jpeg|png|gif|webp))/gi;
+    let match;
+    while ((match = mediaFilePattern.exec(html)) !== null) {
+      const fileName = match[1];
+      // Convert to Wikimedia Commons URL
+      const commonsUrl = `https://commons.wikimedia.org/wiki/File:${fileName}`;
+      
+      // Get the actual image URL from Commons API
+      try {
+        const apiUrl = 'https://commons.wikimedia.org/w/api.php?' + new URLSearchParams({
+          action: 'query',
+          format: 'json',
+          titles: `File:${fileName}`,
+          prop: 'imageinfo',
+          iiprop: 'url',
+          iiurlwidth: 330,
+          origin: '*',
+        });
+
+        const apiResponse = await makeRequest(apiUrl);
+        if (apiResponse.statusCode === 200) {
+          const apiData = JSON.parse(apiResponse.data);
+          const pages = apiData.query?.pages;
+          if (pages) {
+            const page = Object.values(pages)[0];
+            const imageInfo = page.imageinfo?.[0];
+            if (imageInfo) {
+              const imageUrl = imageInfo.thumburl || imageInfo.url;
+              if (imageUrl) {
+                const validation = await checkImageUrl(imageUrl, cache);
+                if (validation.valid) {
+                  imageUrls.push({
+                    fileName,
+                    url: imageUrl,
+                    source: 'wikipedia-page',
+                  });
+                }
+              }
+            }
+          }
+        }
+      } catch (error) {
+        // Skip this image
+      }
+    }
+
+    return imageUrls;
+  } catch (error) {
+    return [];
+  }
+}
+
+/**
+ * Find images for a person or event
+ */
+async function findImagesForEntity(entity, cache, entityType = 'person') {
   const results = [];
-  
+
   // Try Wikipedia page first if available
-  if (basilica.wikipediaUrl) {
+  if (entity.wikipediaUrl) {
     console.log(`  ${colors.cyan}Checking Wikipedia page...${colors.reset}`);
-    const wikiImages = await searchWikipediaPage(basilica.wikipediaUrl, cache);
+    const wikiImages = await searchWikipediaPage(entity.wikipediaUrl, cache);
     results.push(...wikiImages);
     await new Promise(resolve => setTimeout(resolve, 500)); // Rate limiting
   }
 
-  // Search Wikimedia Commons by name
-  console.log(`  ${colors.cyan}Searching Wikimedia Commons for "${basilica.name}"...${colors.reset}`);
-  const commonsResults = await searchWikimediaCommons(basilica.name, cache);
-  results.push(...commonsResults.map(r => ({ ...r, source: 'commons-search' })));
-  await new Promise(resolve => setTimeout(resolve, 500)); // Rate limiting
+  // Search Wikimedia Commons by name - use more specific search terms
+  const searchTerms = [entity.name];
+
+  // If name has multiple words, also try with quotes for exact match
+  if (entity.name.split(' ').length > 1) {
+    searchTerms.push(`"${entity.name}"`); // Exact phrase match
+  }
 
   // Try variations of the name
   const nameVariations = [];
-  if (basilica.name.includes('Basilica of ')) {
-    nameVariations.push(basilica.name.replace('Basilica of ', ''));
-    nameVariations.push(basilica.name.replace('Basilica of ', 'Basilica '));
+  if (entity.name.includes('St.')) {
+    nameVariations.push(entity.name.replace('St.', 'Saint'));
+    nameVariations.push(entity.name.replace('St.', '').trim());
   }
-  if (basilica.name.includes('St. ')) {
-    nameVariations.push(basilica.name.replace('St. ', 'Saint '));
-  }
-  if (basilica.name.includes('Saint ')) {
-    nameVariations.push(basilica.name.replace('Saint ', 'St. '));
+  if (entity.name.includes('Saint')) {
+    nameVariations.push(entity.name.replace('Saint', 'St.'));
   }
 
-  for (const variation of nameVariations.slice(0, 2)) {
-    console.log(`  ${colors.cyan}Searching for "${variation}"...${colors.reset}`);
-    const variationResults = await searchWikimediaCommons(variation, cache);
-    results.push(...variationResults.map(r => ({ ...r, source: 'commons-search-variation' })));
+  // Add variations to search terms
+  searchTerms.push(...nameVariations.slice(0, 2));
+  
+  // Search with each term, prioritizing exact matches
+  for (const searchTerm of searchTerms.slice(0, 3)) {
+    console.log(`  ${colors.cyan}Searching Wikimedia Commons for "${searchTerm}"...${colors.reset}`);
+    const commonsResults = await searchWikimediaCommons(searchTerm, cache);
+
+    // Score results: prioritize those where filename contains the full name
+    const scoredResults = commonsResults.map(r => {
+      const fileNameLower = r.fileName.toLowerCase();
+      const nameLower = entity.name.toLowerCase();
+      let score = 0;
+
+      // Higher score if filename contains full name
+      if (fileNameLower.includes(nameLower)) {
+        score += 10;
+      }
+
+      // Even higher if it's an exact match in filename
+      if (fileNameLower.includes(nameLower.replace(/\s+/g, '_')) ||
+          fileNameLower.includes(nameLower.replace(/\s+/g, '-'))) {
+        score += 5;
+      }
+
+      // Lower score if filename contains common false matches
+      const falseMatches = ['coolidge', 'klein', 'hobbes', 'valentine', 'firefly', 'language'];
+      if (entityType === 'person' && falseMatches.some(fm => fileNameLower.includes(fm))) {
+        score -= 20;
+      }
+
+      return { ...r, score, source: 'commons-search' };
+    });
+    
+    // Sort by score (highest first) and take top results
+    scoredResults.sort((a, b) => b.score - a.score);
+    results.push(...scoredResults.slice(0, 3).map(r => {
+      const { score, ...rest } = r;
+      return rest;
+    }));
+    
     await new Promise(resolve => setTimeout(resolve, 500)); // Rate limiting
+    
+    // If we found good results, break early
+    if (scoredResults.length > 0 && scoredResults[0].score > 0) {
+      break;
+    }
   }
 
   // Remove duplicates based on URL
@@ -454,19 +452,76 @@ async function findImagesForBasilica(basilica, cache) {
 }
 
 /**
+ * Find all JSON files
+ */
+function findJsonFiles(dir, fileList = []) {
+  const files = fs.readdirSync(dir);
+  
+  files.forEach(file => {
+    const filePath = path.join(dir, file);
+    const stat = fs.statSync(filePath);
+    
+    if (stat.isDirectory()) {
+      findJsonFiles(filePath, fileList);
+    } else if (file.endsWith('.json') && !file.includes('index')) {
+      fileList.push(filePath);
+    }
+  });
+  
+  return fileList;
+}
+
+/**
+ * Update an entity's JSON file with a new image URL
+ */
+function updateEntityImage(filePath, imageUrl) {
+  try {
+    const content = fs.readFileSync(filePath, 'utf8');
+    const entity = JSON.parse(content);
+
+    entity.imageUrl = imageUrl;
+
+    // Write back with proper formatting
+    const updatedContent = JSON.stringify(entity, null, 2) + '\n';
+    fs.writeFileSync(filePath, updatedContent, 'utf8');
+
+    return true;
+  } catch (error) {
+    console.error(`${colors.red}Error updating file: ${error.message}${colors.reset}`);
+    return false;
+  }
+}
+
+/**
  * Main function
  */
 async function main() {
   const args = process.argv.slice(2);
-  const command = args[0] || 'fix';
-  
-  if (command !== 'find' && command !== 'fix' && command !== 'interactive') {
+  const command = args[0];
+
+  if (!command || (command !== 'find' && command !== 'fix' && command !== 'interactive')) {
     console.log(`${colors.blue}Usage:${colors.reset}`);
-    console.log(`  node find-basilica-images.js find <basilica-id>  - Find images for a specific basilica`);
-    console.log(`  node find-basilica-images.js fix                 - Automatically fix all broken/missing images`);
-    console.log(`  node find-basilica-images.js interactive         - Interactive mode to fix images one by one`);
+    console.log(`  node find-images.js find <id> [--type=people|events]   - Find images for a specific entity`);
+    console.log(`  node find-images.js fix [--type=people|events]         - Automatically fix all broken/missing images`);
+    console.log(`  node find-images.js interactive [--type=people|events] - Interactive mode to fix images one by one`);
+    console.log(``);
+    console.log(`${colors.cyan}Options:${colors.reset}`);
+    console.log(`  --type=people  - Work with people/saints (default)`);
+    console.log(`  --type=events  - Work with events/councils`);
     process.exit(1);
   }
+
+  // Parse type flag
+  const typeFlag = args.find(arg => arg.startsWith('--type='));
+  const dataType = typeFlag ? typeFlag.split('=')[1] : 'people';
+
+  if (dataType !== 'people' && dataType !== 'events') {
+    console.error(`${colors.red}Error: Invalid type "${dataType}". Must be "people" or "events"${colors.reset}`);
+    process.exit(1);
+  }
+
+  const entityType = dataType === 'events' ? 'event' : 'person';
+  const entityTypePlural = dataType;
 
   // Load cache
   const cache = loadCache();
@@ -475,34 +530,36 @@ async function main() {
     console.log(`${colors.cyan}Loaded ${cacheSize} cached image verification results${colors.reset}\n`);
   }
 
-  const basilicasFile = path.join(__dirname, 'src', 'data', 'basilicas.json');
-  
-  if (!fs.existsSync(basilicasFile)) {
-    console.error(`${colors.red}Error: ${basilicasFile} not found${colors.reset}`);
+  const dataDir = path.join(__dirname, '../..', 'src', 'data', dataType);
+
+  if (!fs.existsSync(dataDir)) {
+    console.error(`${colors.red}Error: ${dataDir} not found${colors.reset}`);
     process.exit(1);
   }
 
-  const content = fs.readFileSync(basilicasFile, 'utf8');
-  const basilicas = JSON.parse(content);
-
   if (command === 'find') {
-    // Find images for a specific basilica
-    const basilicaId = args[1];
-    if (!basilicaId) {
-      console.error(`${colors.red}Error: Please provide a basilica ID${colors.reset}`);
+    // Find images for a specific entity
+    const nonFlagArgs = args.filter(arg => !arg.startsWith('--'));
+    const entityId = nonFlagArgs[1]; // First is command, second is the ID
+    if (!entityId) {
+      console.error(`${colors.red}Error: Please provide an ${entityType} ID${colors.reset}`);
       process.exit(1);
     }
 
-    const basilica = basilicas.find(b => b.id === basilicaId);
-    
-    if (!basilica) {
-      console.error(`${colors.red}Error: Basilica with ID "${basilicaId}" not found${colors.reset}`);
+    const jsonFiles = findJsonFiles(dataDir);
+    const entityFile = jsonFiles.find(f => path.basename(f, '.json') === entityId);
+
+    if (!entityFile) {
+      console.error(`${colors.red}Error: ${entityType} with ID "${entityId}" not found${colors.reset}`);
       process.exit(1);
     }
 
-    console.log(`${colors.blue}Finding images for: ${basilica.name} (${basilica.id})${colors.reset}\n`);
+    const content = fs.readFileSync(entityFile, 'utf8');
+    const entity = JSON.parse(content);
 
-    const images = await findImagesForBasilica(basilica, cache);
+    console.log(`${colors.blue}Finding images for: ${entity.name} (${entity.id})${colors.reset}\n`);
+
+    const images = await findImagesForEntity(entity, cache, entityType);
     
     if (images.length === 0) {
       console.log(`${colors.yellow}No images found${colors.reset}`);
@@ -520,38 +577,44 @@ async function main() {
     }
   } else if (command === 'fix') {
     // Automatically fix all broken/missing images
-    console.log(`${colors.blue}Processing ${basilicas.length} basilicas...${colors.reset}\n`);
+    console.log(`${colors.blue}Finding all ${entityType} JSON files...${colors.reset}`);
+    const jsonFiles = findJsonFiles(dataDir);
+    console.log(`Found ${jsonFiles.length} ${entityType} files\n`);
 
     let fixed = 0;
     let skipped = 0;
     let failed = 0;
 
-    for (let i = 0; i < basilicas.length; i++) {
-      const basilica = basilicas[i];
-      console.log(`${colors.blue}[${i + 1}/${basilicas.length}] Processing: ${basilica.name} (${basilica.id})${colors.reset}`);
+    for (const file of jsonFiles) {
+      const content = fs.readFileSync(file, 'utf8');
+      const entity = JSON.parse(content);
+      const relativePath = path.relative(__dirname, file);
 
       // Skip if already has a valid image
-      if (basilica.imageUrl) {
-        const validation = await checkImageUrl(basilica.imageUrl, cache);
+      if (entity.imageUrl) {
+        const validation = await checkImageUrl(entity.imageUrl, cache);
         if (validation.valid) {
-          const cacheStatus = validation.cached ? ' (cached)' : '';
-          console.log(`  ${colors.yellow}Already has valid image, skipping...${cacheStatus}${colors.reset}\n`);
           skipped++;
           continue;
-        } else {
-          console.log(`  ${colors.yellow}Current image is broken, searching for replacement...${colors.reset}`);
         }
       }
 
-      const images = await findImagesForBasilica(basilica, cache);
-      
+      console.log(`${colors.blue}Processing: ${entity.name} (${entity.id})${colors.reset}`);
+      console.log(`  File: ${relativePath}`);
+
+      const images = await findImagesForEntity(entity, cache, entityType);
+
       if (images.length > 0) {
         const bestImage = images[0]; // Use first result
         console.log(`  ${colors.green}Found image: ${bestImage.url}${colors.reset}`);
-        
-        basilica.imageUrl = bestImage.url;
-        fixed++;
-        console.log(`  ${colors.green}✓ Will update${colors.reset}\n`);
+
+        if (updateEntityImage(file, bestImage.url)) {
+          console.log(`  ${colors.green}✓ Updated${colors.reset}\n`);
+          fixed++;
+        } else {
+          console.log(`  ${colors.red}✗ Failed to update${colors.reset}\n`);
+          failed++;
+        }
       } else {
         console.log(`  ${colors.yellow}No images found${colors.reset}\n`);
         skipped++;
@@ -561,14 +624,7 @@ async function main() {
       await new Promise(resolve => setTimeout(resolve, 1000));
     }
 
-    // Write updated basilicas back to file
-    if (fixed > 0) {
-      const updatedContent = JSON.stringify(basilicas, null, 2) + '\n';
-      fs.writeFileSync(basilicasFile, updatedContent, 'utf8');
-      console.log(`${colors.green}✓ Updated ${basilicasFile}${colors.reset}\n`);
-    }
-
-    console.log(`${colors.blue}=== SUMMARY ===${colors.reset}`);
+    console.log(`\n${colors.blue}=== SUMMARY ===${colors.reset}`);
     console.log(`${colors.green}Fixed: ${fixed}${colors.reset}`);
     console.log(`${colors.yellow}Skipped: ${skipped}${colors.reset}`);
     if (failed > 0) {
@@ -576,18 +632,23 @@ async function main() {
     }
   } else if (command === 'interactive') {
     // Interactive mode
-    console.log(`${colors.blue}Processing ${basilicas.length} basilicas...${colors.reset}\n`);
+    console.log(`${colors.blue}Finding all ${entityType} JSON files...${colors.reset}`);
+    const jsonFiles = findJsonFiles(dataDir);
+    console.log(`Found ${jsonFiles.length} ${entityType} files\n`);
 
-    // First, identify basilicas that need fixing
+    // First, identify files that need fixing
     const needsFixing = [];
-    
-    for (const basilica of basilicas) {
-      if (!basilica.imageUrl || basilica.imageUrl === null) {
-        needsFixing.push({ basilica, reason: 'missing' });
+
+    for (const file of jsonFiles) {
+      const content = fs.readFileSync(file, 'utf8');
+      const entity = JSON.parse(content);
+
+      if (!entity.imageUrl || entity.imageUrl === null) {
+        needsFixing.push({ file, entity, reason: 'missing' });
       } else {
-        const validation = await checkImageUrl(basilica.imageUrl, cache);
+        const validation = await checkImageUrl(entity.imageUrl, cache);
         if (!validation.valid) {
-          needsFixing.push({ basilica, reason: 'broken', currentUrl: basilica.imageUrl });
+          needsFixing.push({ file, entity, reason: 'broken', currentUrl: entity.imageUrl });
         }
       }
     }
@@ -597,11 +658,12 @@ async function main() {
       process.exit(0);
     }
 
-    console.log(`${colors.yellow}Found ${needsFixing.length} basilica(s) needing image fixes${colors.reset}\n`);
+    console.log(`${colors.yellow}Found ${needsFixing.length} ${entityType}(s) needing image fixes${colors.reset}\n`);
 
-    for (let i = 0; i < needsFixing.length; i++) {
-      const { basilica, reason, currentUrl } = needsFixing[i];
-      console.log(`\n${colors.blue}=== [${i + 1}/${needsFixing.length}] ${basilica.name} (${basilica.id}) ===${colors.reset}`);
+    for (const { file, entity, reason, currentUrl } of needsFixing) {
+      const relativePath = path.relative(__dirname, file);
+      console.log(`\n${colors.blue}=== ${entity.name} (${entity.id}) ===${colors.reset}`);
+      console.log(`File: ${relativePath}`);
       if (reason === 'broken') {
         console.log(`Current URL: ${currentUrl} ${colors.red}(broken)${colors.reset}`);
       } else {
@@ -609,7 +671,7 @@ async function main() {
       }
       console.log('');
 
-      const images = await findImagesForBasilica(basilica, cache);
+      const images = await findImagesForEntity(entity, cache, entityType);
       
       if (images.length === 0) {
         console.log(`${colors.yellow}No images found. Skipping...${colors.reset}\n`);
@@ -627,31 +689,28 @@ async function main() {
         console.log('');
       });
 
-      // Use the first result automatically
+      // In interactive mode, we'll use the first result automatically
+      // (In a real interactive mode, you'd use readline to ask the user)
       const bestImage = images[0];
       console.log(`${colors.blue}Using first result: ${bestImage.url}${colors.reset}`);
-      
-      basilica.imageUrl = bestImage.url;
-      console.log(`${colors.green}✓ Will update${colors.reset}\n`);
+
+      if (updateEntityImage(file, bestImage.url)) {
+        console.log(`${colors.green}✓ Updated${colors.reset}\n`);
+      } else {
+        console.log(`${colors.red}✗ Failed to update${colors.reset}\n`);
+      }
 
       // Rate limiting
       await new Promise(resolve => setTimeout(resolve, 1000));
     }
-
-    // Write updated basilicas back to file
-    const updatedContent = JSON.stringify(basilicas, null, 2) + '\n';
-    fs.writeFileSync(basilicasFile, updatedContent, 'utf8');
-    console.log(`${colors.green}✓ Updated ${basilicasFile}${colors.reset}\n`);
   }
 
   // Save cache at the end
   saveCache(cache);
   const finalCacheSize = Object.keys(cache).length;
   if (finalCacheSize > cacheSize) {
-    console.log(`${colors.cyan}Cache updated: ${finalCacheSize} entries${colors.reset}`);
+    console.log(`\n${colors.cyan}Cache updated: ${finalCacheSize} entries${colors.reset}`);
   }
 }
 
 main().catch(console.error);
-
-

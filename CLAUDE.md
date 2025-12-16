@@ -22,6 +22,29 @@ npm run preview
 npm run lint
 ```
 
+## Project Structure
+
+The project follows a clean organizational structure:
+
+```
+catholic-history-atlas/
+├── scripts/                    # Utility scripts
+│   ├── validation/            # Data validation scripts
+│   ├── images/                # Image processing scripts
+│   └── data/                  # Data integration scripts
+├── .cache/                     # Cache files (gitignored)
+├── logs/                       # Log files (gitignored)
+├── src/                        # Application source code
+├── public/                     # Static assets
+└── docs/                       # Documentation
+```
+
+All utility scripts are organized in the `scripts/` folder by their purpose:
+
+- **validation/** - Scripts for checking data integrity (duplicates, century placement, etc.)
+- **images/** - Scripts for finding, fixing, and verifying image URLs
+- **data/** - Scripts for data integration and index generation
+
 ## Data Management Scripts
 
 The project includes numerous Node.js scripts for managing historical data:

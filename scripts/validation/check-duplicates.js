@@ -99,8 +99,8 @@ function findDuplicates(items, type) {
 }
 
 function main() {
-  const peopleDir = path.join(__dirname, 'src', 'data', 'people');
-  const eventsDir = path.join(__dirname, 'src', 'data', 'events');
+  const peopleDir = path.join(__dirname, '../..', 'src', 'data', 'people');
+  const eventsDir = path.join(__dirname, '../..', 'src', 'data', 'events');
   
   if (!fs.existsSync(peopleDir)) {
     console.error(`${colors.red}Error: ${peopleDir} not found${colors.reset}`);

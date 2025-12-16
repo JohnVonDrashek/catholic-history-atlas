@@ -21,7 +21,7 @@ const colors = {
 };
 
 // Cache configuration
-const CACHE_FILE = path.join(__dirname, '.image-cache.json');
+const CACHE_FILE = path.join(__dirname, '../../.cache/image-cache.json');
 const CACHE_MAX_AGE = 7 * 24 * 60 * 60 * 1000; // 7 days in milliseconds
 
 // Load cache from file
@@ -239,7 +239,7 @@ async function verifyPersonFile(filePath, cache) {
 }
 
 async function main() {
-  const peopleDir = path.join(__dirname, 'src', 'data', 'people');
+  const peopleDir = path.join(__dirname, '../..', 'src', 'data', 'people');
   
   if (!fs.existsSync(peopleDir)) {
     console.error(`${colors.red}Error: ${peopleDir} not found${colors.reset}`);

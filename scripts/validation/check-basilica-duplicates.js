@@ -17,7 +17,7 @@ const colors = {
 };
 
 function loadBasilicas() {
-  const basilicasPath = path.join(__dirname, 'src', 'data', 'basilicas.json');
+  const basilicasPath = path.join(__dirname, '../..', 'src', 'data', 'basilicas.json');
   
   if (!fs.existsSync(basilicasPath)) {
     console.error(`${colors.red}Error: ${basilicasPath} not found${colors.reset}`);
@@ -34,7 +34,7 @@ function loadBasilicas() {
 }
 
 function loadPlaces() {
-  const placesPath = path.join(__dirname, 'src', 'data', 'places.json');
+  const placesPath = path.join(__dirname, '../..', 'src', 'data', 'places.json');
   
   if (!fs.existsSync(placesPath)) {
     console.error(`${colors.red}Error: ${placesPath} not found${colors.reset}`);

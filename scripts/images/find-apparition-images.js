@@ -403,7 +403,7 @@ async function main() {
     process.exit(1);
   }
 
-  const eventsDir = path.join(__dirname, 'src', 'data', 'events');
+  const eventsDir = path.join(__dirname, '../..', 'src', 'data', 'events');
   
   if (!fs.existsSync(eventsDir)) {
     console.error(`${colors.red}Error: ${eventsDir} not found${colors.reset}`);

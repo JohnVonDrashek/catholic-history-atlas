@@ -17,7 +17,7 @@ const colors = {
 };
 
 function loadBasilicas() {
-  const basilicasPath = path.join(__dirname, 'src', 'data', 'basilicas.json');
+  const basilicasPath = path.join(__dirname, '../..', 'src', 'data', 'basilicas.json');
   
   if (!fs.existsSync(basilicasPath)) {
     console.error(`${colors.red}Error: ${basilicasPath} not found${colors.reset}`);

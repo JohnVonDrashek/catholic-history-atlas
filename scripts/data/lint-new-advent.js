@@ -22,7 +22,7 @@ const colors = {
 };
 
 // Cache configuration
-const CACHE_FILE = path.join(__dirname, '.newadvent-cache.json');
+const CACHE_FILE = path.join(__dirname, '../../.cache/newadvent-cache.json');
 const CACHE_MAX_AGE = 30 * 24 * 60 * 60 * 1000; // 30 days in milliseconds
 
 // Load cache from file
@@ -272,7 +272,7 @@ async function checkSaintOnIndexPage(saintName, cache) {
 async function processAllSaints() {
   console.log(`${colors.blue}Checking New Advent URLs for all saints...${colors.reset}`);
 
-  const peopleDir = path.join(__dirname, 'src', 'data', 'people');
+  const peopleDir = path.join(__dirname, '../..', 'src', 'data', 'people');
   const personFiles = [];
 
   // Find all person JSON files
@@ -391,7 +391,7 @@ async function processAllSaints() {
 async function processSpecificSaints(saintIds) {
   console.log(`${colors.blue}Checking New Advent URLs for specific saints...${colors.reset}`);
 
-  const peopleDir = path.join(__dirname, 'src', 'data', 'people');
+  const peopleDir = path.join(__dirname, '../..', 'src', 'data', 'people');
   const cache = loadCache();
   let valid = 0;
   let invalid = 0;
@@ -526,7 +526,7 @@ async function removeInvalidUrls() {
 async function addMissingUrls() {
   console.log(`${colors.blue}Finding and adding missing New Advent URLs...${colors.reset}`);
 
-  const peopleDir = path.join(__dirname, 'src', 'data', 'people');
+  const peopleDir = path.join(__dirname, '../..', 'src', 'data', 'people');
   const personFiles = [];
 
   // Find all person JSON files

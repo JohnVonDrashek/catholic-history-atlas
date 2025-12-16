@@ -30,11 +30,13 @@ An interactive Catholic history atlas that allows you to explore the Christian w
 
 1. Clone the repository
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Start the development server:
+
    ```bash
    npm run dev
    ```
@@ -46,7 +48,7 @@ An interactive Catholic history atlas that allows you to explore the Christian w
 
 ## Deployment
 
-This project is configured for GitHub Pages deployment via GitHub Actions. 
+This project is configured for GitHub Pages deployment via GitHub Actions.
 
 1. Push your code to a GitHub repository
 2. In your repository settings, go to Pages and set the source to "GitHub Actions"
@@ -55,6 +57,7 @@ This project is configured for GitHub Pages deployment via GitHub Actions.
 ### Custom Domain
 
 To use a custom domain:
+
 1. Buy a domain from any registrar
 2. In GitHub Pages settings, add your custom domain
 3. Configure DNS records as instructed by GitHub
@@ -63,17 +66,27 @@ To use a custom domain:
 ## Project Structure
 
 ```
-src/
-├── components/      # React components
-├── data/          # JSON data files
-├── types/         # TypeScript type definitions
-├── utils/         # Utility functions
-└── styles/        # CSS files
+catholic-history-atlas/
+├── scripts/         # Utility scripts
+│   ├── validation/  # Data validation scripts
+│   ├── images/      # Image processing scripts
+│   └── data/        # Data integration scripts
+├── src/
+│   ├── components/  # React components
+│   ├── data/        # JSON data files
+│   ├── types/       # TypeScript type definitions
+│   ├── utils/       # Utility functions
+│   └── styles/      # CSS files
+├── .cache/          # Cache files (gitignored)
+└── logs/            # Log files (gitignored)
 ```
+
+For detailed information about data management scripts and development workflows, see [CLAUDE.md](CLAUDE.md).
 
 ## Data Model
 
 The project uses a simple JSON structure for data:
+
 - **People**: Saints, theologians, popes, bishops with orthodoxy status
 - **Events**: Councils, schisms, persecutions, reforms
 - **Places**: Locations with coordinates

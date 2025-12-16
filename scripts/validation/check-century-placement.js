@@ -12,7 +12,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const PEOPLE_DIR = join(__dirname, 'src/data/people');
+const PEOPLE_DIR = join(__dirname, '../../src/data/people');
 
 function getCenturyFromYear(year) {
   if (year === null || year === undefined) {
