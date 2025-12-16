@@ -11,5 +11,5 @@ export default [
   council_orange,
   council_toledo_iii,
   justinian_code,
-  plague_justinian
+  plague_justinian,
 ];

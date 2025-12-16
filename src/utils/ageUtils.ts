@@ -6,7 +6,7 @@ export type LifeStage = 'young' | 'prime' | 'elder';
  * Calculate a person's age at a given year
  */
 export function calculateAge(person: Person, year: number): number | null {
-  const birth = person.birthYear ?? (person.deathYear - 80);
+  const birth = person.birthYear ?? person.deathYear - 80;
   if (year < birth || year > person.deathYear) {
     return null; // Person wasn't alive at this year
   }
@@ -62,10 +62,3 @@ export function getBorderWidthForLifeStage(
       return baseBorderWidth; // 2px
   }
 }
-
-
-
-
-
-
-

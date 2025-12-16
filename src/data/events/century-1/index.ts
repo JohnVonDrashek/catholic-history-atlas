@@ -17,5 +17,5 @@ export default [
   martyrdom_peter_paul,
   martyrdom_stephen,
   nero_persecution,
-  trajan_persecution
+  trajan_persecution,
 ];

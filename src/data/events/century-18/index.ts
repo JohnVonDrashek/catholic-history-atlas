@@ -15,5 +15,5 @@ export default [
   jansenism_controversy,
   mission_expansion,
   papal_states_invasion,
-  suppression_jesuits
+  suppression_jesuits,
 ];

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+coverage
+
+# Data files (JSON should remain untouched for now)
+*.json
+
+# Generated files
+.husky/_
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+
+# Logs
+*.log

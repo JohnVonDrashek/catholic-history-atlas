@@ -25,5 +25,5 @@ export default [
   inquisition_established,
   sack_constantinople_1204,
   seventh_crusade,
-  sixth_crusade
+  sixth_crusade,
 ];

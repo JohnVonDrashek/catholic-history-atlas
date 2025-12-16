@@ -15,5 +15,5 @@ export default [
   edict_nantes_revocation,
   jansenism_rise,
   north_american_martyrs,
-  thirty_years_war
+  thirty_years_war,
 ];

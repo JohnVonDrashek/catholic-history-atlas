@@ -7,5 +7,5 @@ export default [
   decian_persecution,
   novatian_schism,
   septimius_severus_persecution,
-  valerian_persecution
+  valerian_persecution,
 ];

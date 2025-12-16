@@ -9,11 +9,13 @@ import { getActivePeople, getActiveEvents } from '../utils/filters';
 import { getCachedImageUrl } from '../utils/imageCache';
 import { getEventColor } from '../utils/eventColors';
 import { calculateAge, getLifeStage, getSizeForLifeStage } from '../utils/ageUtils';
+import { getBasilicaColor } from '../utils/basilicaColors';
+import { calculateOffsetPosition, getPersonBorderStyle } from './map/mapHelpers';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
 // Fix for default marker icons in React Leaflet
-delete (L.Icon.Default.prototype as any)._getIconUrl;
+delete (L.Icon.Default.prototype as unknown as { _getIconUrl?: unknown })._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png',
   iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png',
@@ -21,136 +23,6 @@ L.Icon.Default.mergeOptions({
 });
 
 // Note: Important sees are now defined in sees.json data file
-
-// Calculate offset position for markers at the same location
-// Arranges markers in a circle around the base position
-// Zoom-aware: larger offsets at lower zoom levels to prevent overlap
-function calculateOffsetPosition(
-  baseLat: number,
-  baseLng: number,
-  index: number,
-  totalCount: number,
-  zoom: number
-): [number, number] {
-  if (totalCount === 1) {
-    return [baseLat, baseLng];
-  }
-
-  // Base radius in degrees - scales inversely with zoom
-  // Much larger offsets at lower zoom levels to prevent overlap
-  // Adjusted to provide more spacing at lower zoom levels (zoom 6 and below)
-  // At zoom 2: ~1.8 degrees (~200km)
-  // At zoom 4: ~0.8 degrees (~89km)
-  // At zoom 6: ~0.35 degrees (~39km) - increased from ~0.2
-  // At zoom 7: ~0.18 degrees (~20km) - fine as is
-  // At zoom 8: ~0.08 degrees (~8.8km)
-  // At zoom 10: ~0.032 degrees (~3.5km)
-  // At zoom 12: ~0.013 degrees (~1.4km)
-  // Formula: baseRadius decreases exponentially as zoom increases
-  // Increased base multiplier and adjusted exponent for better spacing at lower zooms
-  const baseRadius = 0.7 / Math.pow(1.5, zoom - 4);
-  
-  // Scale radius based on total count to prevent overlap
-  // More aggressive scaling for larger groups, especially at lower zoom levels
-  const countMultiplier = zoom <= 6 ? Math.min(1 + totalCount * 0.4, 4.0) : Math.min(1 + totalCount * 0.3, 3.5);
-  const radius = baseRadius * countMultiplier;
-
-  // Calculate angle in radians
-  const angle = (index * 2 * Math.PI) / totalCount;
-
-  // Calculate offset (latitude and longitude)
-  // For latitude: 1 degree ≈ 111 km
-  // For longitude: depends on latitude, but we'll use a simple approximation
-  const latOffset = radius * Math.cos(angle);
-  const lngOffset = radius * Math.sin(angle) / Math.cos(baseLat * Math.PI / 180);
-
-  return [baseLat + latOffset, baseLng + lngOffset];
-}
-
-// Get border style based on orthodoxy status and martyr status
-// Matches the portrait frame system
-// borderWidthOverride: if provided, overrides the default border width
-function getPersonBorderStyle(
-  orthodoxyStatus: OrthodoxyStatus,
-  isMartyr?: boolean,
-  borderWidthOverride?: number
-): {
-  border: string;
-  borderWidth: string;
-  boxShadow: string;
-  background?: string;
-} {
-  // Helper to get border width with override
-  const getBorderWidth = (defaultWidth: number): number => {
-    return borderWidthOverride ?? defaultWidth;
-  };
-
-  if (isMartyr && (orthodoxyStatus === 'canonized' || orthodoxyStatus === 'blessed')) {
-    // Martyr: gold + red stripes
-    const borderWidth = getBorderWidth(3);
-    return {
-      border: `${borderWidth}px solid transparent`,
-      borderWidth: `${borderWidth}px`,
-      boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
-      background: `repeating-linear-gradient(45deg, #d4af37, #d4af37 4px, #a11b1b 4px, #a11b1b 8px)`,
-    };
-  }
-
-  switch (orthodoxyStatus) {
-    case 'canonized':
-      // Canonized saint: solid gold
-      const canonizedWidth = getBorderWidth(3);
-      return {
-        border: `${canonizedWidth}px solid #d4af37`,
-        borderWidth: `${canonizedWidth}px`,
-        boxShadow: '0 0 6px rgba(212, 175, 55, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
-      };
-    case 'blessed':
-      // Blessed: softer gold / silver
-      const blessedWidth = getBorderWidth(2);
-      return {
-        border: `${blessedWidth}px solid #c0c0c0`,
-        borderWidth: `${blessedWidth}px`,
-        boxShadow: '0 0 4px rgba(192, 192, 192, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
-      };
-    case 'orthodox':
-      // Orthodox-but-not-saint: stone/gray
-      const orthodoxWidth = getBorderWidth(2);
-      return {
-        border: `${orthodoxWidth}px solid #777`,
-        borderWidth: `${orthodoxWidth}px`,
-        boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
-        background: '#f7f7f7',
-      };
-    case 'schismatic':
-      // Schismatic: black and neon red diagonal stripes
-      const schismaticWidth = getBorderWidth(3);
-      return {
-        border: `${schismaticWidth}px solid transparent`,
-        borderWidth: `${schismaticWidth}px`,
-        background: 'repeating-linear-gradient(45deg, #000000 0px, #000000 6px, #ff073a 6px, #ff073a 12px)',
-        boxShadow: '0 0 4px rgba(255, 7, 58, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
-      };
-    case 'heresiarch':
-      // Heresiarch: black and neon green diagonal stripes
-      const heresiarchWidth = getBorderWidth(3);
-      return {
-        border: `${heresiarchWidth}px solid transparent`,
-        borderWidth: `${heresiarchWidth}px`,
-        background: 'repeating-linear-gradient(45deg, #000000 0px, #000000 6px, #39ff14 6px, #39ff14 12px)',
-        boxShadow: '0 0 4px rgba(57, 255, 20, 0.6), 0 2px 6px rgba(0,0,0,0.4)',
-      };
-    case 'secular':
-    default:
-      // Secular: thin neutral border
-      const secularWidth = getBorderWidth(1);
-      return {
-        border: `${secularWidth}px solid #bbb`,
-        borderWidth: `${secularWidth}px`,
-        boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
-      };
-  }
-}
 
 // Create custom icons with images and frame colors matching portrait frames
 // Now supports aspect ratio for rectangular images and age-based sizing
@@ -169,29 +41,42 @@ const createPersonIcon = (
   const lifeStage = getLifeStage(age);
   const baseSize = 40;
   const maxSize = getSizeForLifeStage(lifeStage, baseSize); // Adjust size based on life stage
-  
+
   // Determine border width based on life stage and orthodoxy status
   // Prime age (30-60) gets thicker borders to indicate they're in their most active years
-  const getBorderWidthForStatus = (status: OrthodoxyStatus | undefined, martyr: boolean | undefined): number => {
+  const getBorderWidthForStatus = (
+    status: OrthodoxyStatus | undefined,
+    martyr: boolean | undefined
+  ): number => {
     const isPrime = lifeStage === 'prime';
-    
+
     if (martyr && (status === 'canonized' || status === 'blessed')) {
       return isPrime ? 4 : 3;
     }
-    
+
     switch (status) {
-      case 'canonized': return isPrime ? 4 : 3;
-      case 'blessed': return isPrime ? 3 : 2;
-      case 'orthodox': return isPrime ? 3 : 2;
-      case 'schismatic': return isPrime ? 4 : 3;
-      case 'heresiarch': return isPrime ? 4 : 3;
+      case 'canonized':
+        return isPrime ? 4 : 3;
+      case 'blessed':
+        return isPrime ? 3 : 2;
+      case 'orthodox':
+        return isPrime ? 3 : 2;
+      case 'schismatic':
+        return isPrime ? 4 : 3;
+      case 'heresiarch':
+        return isPrime ? 4 : 3;
       case 'secular':
-      default: return isPrime ? 2 : 1;
+      default:
+        return isPrime ? 2 : 1;
     }
   };
-  
-  const borderWidthOverride = orthodoxyStatus ? getBorderWidthForStatus(orthodoxyStatus, isMartyr) : (lifeStage === 'prime' ? 2 : 1);
-  
+
+  const borderWidthOverride = orthodoxyStatus
+    ? getBorderWidthForStatus(orthodoxyStatus, isMartyr)
+    : lifeStage === 'prime'
+      ? 2
+      : 1;
+
   const borderStyle = orthodoxyStatus
     ? getPersonBorderStyle(orthodoxyStatus, isMartyr, borderWidthOverride)
     : {
@@ -200,12 +85,18 @@ const createPersonIcon = (
         boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
       };
 
-  const fallbackColor = orthodoxyStatus === 'canonized' ? '#d4af37' :
-                        orthodoxyStatus === 'blessed' ? '#c0c0c0' :
-                        orthodoxyStatus === 'orthodox' ? '#777' :
-                        orthodoxyStatus === 'schismatic' ? '#000000' :
-                        orthodoxyStatus === 'heresiarch' ? '#000000' :
-                        '#4a9eff';
+  const fallbackColor =
+    orthodoxyStatus === 'canonized'
+      ? '#d4af37'
+      : orthodoxyStatus === 'blessed'
+        ? '#c0c0c0'
+        : orthodoxyStatus === 'orthodox'
+          ? '#777'
+          : orthodoxyStatus === 'schismatic'
+            ? '#000000'
+            : orthodoxyStatus === 'heresiarch'
+              ? '#000000'
+              : '#4a9eff';
 
   // Calculate dimensions based on aspect ratio
   let width = maxSize;
@@ -219,59 +110,73 @@ const createPersonIcon = (
   }
 
   const borderRadius = 4; // Small rounded corners instead of circle
-  const framePadding = (orthodoxyStatus === 'canonized' && !isMartyr) ? 2 : 4;
+  const framePadding = orthodoxyStatus === 'canonized' && !isMartyr ? 2 : 4;
   const frameWidth = width + framePadding * 2;
   const frameHeight = height + framePadding * 2;
-  
+
   // Add translucency for young people - apply to entire marker
   const markerOpacity = lifeStage === 'young' ? 0.6 : 1.0;
 
   // Crown icon HTML (if person is pope) - using react-icons component
-  const crownIconHtml = isPope ? renderToStaticMarkup(
-    <div style={{
-      position: 'absolute',
-      top: `${framePadding}px`,
-      left: `${framePadding}px`,
-      width: '14px',
-      height: '14px',
-      zIndex: 10,
-      filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.8))',
-    }}>
-      <FaCrown style={{ 
-        color: '#FFD700', 
-        fontSize: '14px',
-        filter: 'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
-        stroke: '#000',
-        strokeWidth: '0.5px',
-        paintOrder: 'stroke fill'
-      }} />
-    </div>
-  ) : '';
+  const crownIconHtml = isPope
+    ? renderToStaticMarkup(
+        <div
+          style={{
+            position: 'absolute',
+            top: `${framePadding}px`,
+            left: `${framePadding}px`,
+            width: '14px',
+            height: '14px',
+            zIndex: 10,
+            filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.8))',
+          }}
+        >
+          <FaCrown
+            style={{
+              color: '#FFD700',
+              fontSize: '14px',
+              filter:
+                'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
+              stroke: '#000',
+              strokeWidth: '0.5px',
+              paintOrder: 'stroke fill',
+            }}
+          />
+        </div>
+      )
+    : '';
 
   // Scroll icon HTML (if person has writings) - using react-icons component
-  const scrollIconHtml = hasWritings ? renderToStaticMarkup(
-    <div style={{
-      position: 'absolute',
-      top: `${framePadding}px`,
-      right: `${framePadding}px`,
-      width: '14px',
-      height: '14px',
-      zIndex: 10,
-      filter: 'drop-shadow(0 0 2px rgba(0, 217, 255, 0.8))',
-    }}>
-      <FaScroll style={{ 
-        color: '#00D9FF', 
-        fontSize: '14px',
-        filter: 'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
-        stroke: '#000',
-        strokeWidth: '0.5px',
-        paintOrder: 'stroke fill'
-      }} />
-    </div>
-  ) : '';
+  const scrollIconHtml = hasWritings
+    ? renderToStaticMarkup(
+        <div
+          style={{
+            position: 'absolute',
+            top: `${framePadding}px`,
+            right: `${framePadding}px`,
+            width: '14px',
+            height: '14px',
+            zIndex: 10,
+            filter: 'drop-shadow(0 0 2px rgba(0, 217, 255, 0.8))',
+          }}
+        >
+          <FaScroll
+            style={{
+              color: '#00D9FF',
+              fontSize: '14px',
+              filter:
+                'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
+              stroke: '#000',
+              strokeWidth: '0.5px',
+              paintOrder: 'stroke fill',
+            }}
+          />
+        </div>
+      )
+    : '';
 
   const fallbackHtml = `<div style="position: relative; background-color: ${fallbackColor}; width: ${frameWidth}px; height: ${frameHeight}px; border-radius: ${borderRadius}px; ${borderStyle.border}; box-shadow: ${borderStyle.boxShadow}; opacity: ${markerOpacity};">${crownIconHtml}${scrollIconHtml}</div>`;
-  
+
   if (!imageUrl) {
     return L.divIcon({
       className: 'custom-marker',
@@ -350,16 +255,25 @@ const createPersonIcon = (
 const createEventIcon = (eventType: EventType, imageUrl?: string) => {
   const size = 40;
   const color = getEventColor(eventType);
-  const symbol = eventType === 'council' ? '★' : 
-                 eventType === 'schism' ? '⚡' :
-                 eventType === 'persecution' ? '✟' :
-                 eventType === 'reform' ? '♻' :
-                 eventType === 'heresy' ? '⚠' :
-                 eventType === 'war' ? '⚔' :
-                 eventType === 'apparition' ? '✨' : '●';
+  const symbol =
+    eventType === 'council'
+      ? '★'
+      : eventType === 'schism'
+        ? '⚡'
+        : eventType === 'persecution'
+          ? '✟'
+          : eventType === 'reform'
+            ? '♻'
+            : eventType === 'heresy'
+              ? '⚠'
+              : eventType === 'war'
+                ? '⚔'
+                : eventType === 'apparition'
+                  ? '✨'
+                  : '●';
   const isDiamond = eventType === 'council';
   const isApparition = eventType === 'apparition';
-  
+
   // For apparitions without images, create a special glowing effect
   if (isApparition && !imageUrl) {
     return L.divIcon({
@@ -585,25 +499,10 @@ const createImportantSeeIcon = () => {
   });
 };
 
-// Get color scheme for basilica type
-export const getBasilicaColor = (type: BasilicaType): { fill: string; stroke: string; glow: string } => {
-  switch (type) {
-    case 'major-basilica':
-      return { fill: '#8B4CBF', stroke: '#6B2A9F', glow: 'rgba(139, 76, 191, 0.6)' }; // Purple
-    case 'papal-basilica':
-      return { fill: '#D4AF37', stroke: '#B8941F', glow: 'rgba(212, 175, 55, 0.6)' }; // Gold
-    case 'patriarchal-basilica':
-      return { fill: '#4A90E2', stroke: '#2E6BB8', glow: 'rgba(74, 144, 226, 0.6)' }; // Blue
-    case 'historic-basilica':
-    default:
-      return { fill: '#CD7F32', stroke: '#A06628', glow: 'rgba(205, 127, 50, 0.6)' }; // Bronze
-  }
-};
-
 const createBasilicaIcon = (type: BasilicaType, imageUrl?: string) => {
   const size = 48; // Slightly larger than sees to show importance
   const colors = getBasilicaColor(type);
-  
+
   // More ornate basilica icon SVG - larger, more detailed church with dome
   const basilicaIconSvg = `
     <svg width="${size - 8}" height="${size - 8}" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: block;">
@@ -727,19 +626,21 @@ function ZoomDisplay() {
   }, [map]);
 
   return (
-    <div style={{
-      position: 'absolute',
-      bottom: '10px',
-      left: '10px',
-      backgroundColor: 'rgba(26, 26, 26, 0.9)',
-      padding: '0.5rem 0.75rem',
-      borderRadius: '8px',
-      zIndex: 1000,
-      color: '#fff',
-      fontSize: '14px',
-      boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
-      fontFamily: 'monospace',
-    }}>
+    <div
+      style={{
+        position: 'absolute',
+        bottom: '10px',
+        left: '10px',
+        backgroundColor: 'rgba(26, 26, 26, 0.9)',
+        padding: '0.5rem 0.75rem',
+        borderRadius: '8px',
+        zIndex: 1000,
+        color: '#fff',
+        fontSize: '14px',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+        fontFamily: 'monospace',
+      }}
+    >
       Zoom: {zoom.toFixed(1)}
     </div>
   );
@@ -753,7 +654,14 @@ function ZoomAwareMarkers({
   onItemClick,
   currentYear,
 }: {
-  itemsByPlace: Map<string, Array<{ type: 'person'; data: Person } | { type: 'event'; data: Event } | { type: 'basilica'; data: Basilica }>>;
+  itemsByPlace: Map<
+    string,
+    Array<
+      | { type: 'person'; data: Person }
+      | { type: 'event'; data: Event }
+      | { type: 'basilica'; data: Basilica }
+    >
+  >;
   placeMap: Map<string, Place>;
   activeSees: See[];
   onItemClick: (item: Person | Event | Basilica) => void;
@@ -784,14 +692,16 @@ function ZoomAwareMarkers({
 
       // Collect all unique image URLs
       const imageUrls = new Set<string>();
-      Array.from(itemsByPlace.values()).flat().forEach(item => {
-        if (item.data.imageUrl) {
-          imageUrls.add(item.data.imageUrl);
-        }
-      });
+      Array.from(itemsByPlace.values())
+        .flat()
+        .forEach((item) => {
+          if (item.data.imageUrl) {
+            imageUrls.add(item.data.imageUrl);
+          }
+        });
 
       // Load aspect ratios for images we don't have yet
-      imageUrls.forEach(imageUrl => {
+      imageUrls.forEach((imageUrl) => {
         if (!imageAspectRatios.has(imageUrl)) {
           const promise = new Promise<void>((resolve) => {
             const img = new Image();
@@ -812,9 +722,9 @@ function ZoomAwareMarkers({
       });
 
       await Promise.all(promises);
-      
+
       if (newRatios.size > 0) {
-        setImageAspectRatios(prev => {
+        setImageAspectRatios((prev) => {
           const merged = new Map(prev);
           newRatios.forEach((ratio, url) => merged.set(url, ratio));
           return merged;
@@ -829,7 +739,7 @@ function ZoomAwareMarkers({
   return (
     <>
       {/* Render sees as independent markers - always centered */}
-      {activeSees.map(see => {
+      {activeSees.map((see) => {
         const place = placeMap.get(see.placeId);
         if (!place) return null;
 
@@ -837,21 +747,38 @@ function ZoomAwareMarkers({
         const lat = place.lat;
         const lng = place.lng;
 
-        const seeTypeLabel = see.type === 'patriarchate' ? 'Patriarchate' : 
-                            see.type === 'major-see' ? 'Major See' : 
-                            'Apostolic See';
+        const seeTypeLabel =
+          see.type === 'patriarchate'
+            ? 'Patriarchate'
+            : see.type === 'major-see'
+              ? 'Major See'
+              : 'Apostolic See';
 
         return (
           <Marker key={`see-${see.id}`} position={[lat, lng]} icon={createImportantSeeIcon()}>
             <Popup>
               <div>
-                <div style={{ fontWeight: 'bold', fontSize: '14px', marginBottom: '0.25rem', color: '#4a9eff' }}>
+                <div
+                  style={{
+                    fontWeight: 'bold',
+                    fontSize: '14px',
+                    marginBottom: '0.25rem',
+                    color: '#4a9eff',
+                  }}
+                >
                   {see.name}
                 </div>
                 <div style={{ fontSize: '12px', color: '#888', marginBottom: '0.25rem' }}>
                   {place.name}
                 </div>
-                <div style={{ fontSize: '11px', color: '#aaa', fontStyle: 'italic', marginBottom: '0.5rem' }}>
+                <div
+                  style={{
+                    fontSize: '11px',
+                    color: '#aaa',
+                    fontStyle: 'italic',
+                    marginBottom: '0.5rem',
+                  }}
+                >
                   {seeTypeLabel}
                 </div>
                 {see.description && (
@@ -866,194 +793,244 @@ function ZoomAwareMarkers({
       })}
 
       {/* Render people, events, and basilicas */}
-      {Array.from(itemsByPlace.entries()).map(([placeId, items]) => {
-        const place = placeMap.get(placeId);
-        if (!place) return null;
+      {Array.from(itemsByPlace.entries())
+        .map(([placeId, items]) => {
+          const place = placeMap.get(placeId);
+          if (!place) return null;
 
-        return items.map((item, index) => {
-          // Calculate phantom positions to ensure well-formed circle
-          // Pattern: 1 real → 3 phantoms, 2 real → 2 phantoms, 3 real → 1 phantom, 4+ real → 0 phantoms
-          // This ensures at least 4 positions on the circle for better visual distribution
-          const realCount = items.length;
-          let phantomCount = 0;
-          if (realCount === 1) {
-            phantomCount = 3; // 1 real + 3 phantoms = 4 total
-          } else if (realCount === 2) {
-            phantomCount = 2; // 2 real + 2 phantoms = 4 total
-          } else if (realCount === 3) {
-            phantomCount = 1; // 3 real + 1 phantom = 4 total
-          }
-          // 4+ real markers: no phantoms needed
-          
-          // For places with sees, the see is at the center, so we don't count it in the circle positions
-          // Total positions on the circle = real markers + phantom positions
-          const totalCount = realCount + phantomCount;
-          
-          const [lat, lng] = calculateOffsetPosition(
-            place.lat,
-            place.lng,
-            index,
-            totalCount,
-            zoom
-          );
+          return items.map((item, index) => {
+            // Calculate phantom positions to ensure well-formed circle
+            // Pattern: 1 real → 3 phantoms, 2 real → 2 phantoms, 3 real → 1 phantom, 4+ real → 0 phantoms
+            // This ensures at least 4 positions on the circle for better visual distribution
+            const realCount = items.length;
+            let phantomCount = 0;
+            if (realCount === 1) {
+              phantomCount = 3; // 1 real + 3 phantoms = 4 total
+            } else if (realCount === 2) {
+              phantomCount = 2; // 2 real + 2 phantoms = 4 total
+            } else if (realCount === 3) {
+              phantomCount = 1; // 3 real + 1 phantom = 4 total
+            }
+            // 4+ real markers: no phantoms needed
 
-          // Determine icon type and image URL
-          let icon;
-          let imageUrl: string | undefined;
-          let itemName: string;
-          let aspectRatio = 1; // Default to square
+            // For places with sees, the see is at the center, so we don't count it in the circle positions
+            // Total positions on the circle = real markers + phantom positions
+            const totalCount = realCount + phantomCount;
 
-          if (item.type === 'event') {
-            const event = item.data;
-            itemName = event.name;
-            imageUrl = event.imageUrl;
-            if (imageUrl) {
-              aspectRatio = imageAspectRatios.get(imageUrl) || 1;
+            const [lat, lng] = calculateOffsetPosition(
+              place.lat,
+              place.lng,
+              index,
+              totalCount,
+              zoom
+            );
+
+            // Determine icon type and image URL
+            let icon;
+            let imageUrl: string | undefined;
+            let itemName: string;
+            let aspectRatio = 1; // Default to square
+
+            if (item.type === 'event') {
+              const event = item.data;
+              itemName = event.name;
+              imageUrl = event.imageUrl;
+              if (imageUrl) {
+                aspectRatio = imageAspectRatios.get(imageUrl) || 1;
+              }
+
+              // Get cached image URL for map context (80px max)
+              const cachedImageUrl = getCachedImageUrl(imageUrl, 'map', 80);
+
+              // Events get colored icons based on type
+              icon = createEventIcon(event.type, cachedImageUrl);
+            } else if (item.type === 'basilica') {
+              const basilica = item.data;
+              itemName = basilica.name;
+              imageUrl = basilica.imageUrl;
+              if (imageUrl) {
+                aspectRatio = imageAspectRatios.get(imageUrl) || 1;
+              }
+
+              // Get cached image URL for map context (80px max)
+              const cachedImageUrl = getCachedImageUrl(imageUrl, 'map', 80);
+
+              // Basilicas get their special icons
+              icon = createBasilicaIcon(basilica.type, cachedImageUrl);
+            } else {
+              const person = item.data;
+              itemName = person.name;
+              imageUrl = person.imageUrl;
+              if (imageUrl) {
+                aspectRatio = imageAspectRatios.get(imageUrl) || 1;
+              }
+
+              const hasWritings = !!(person.writings && person.writings.length > 0);
+
+              // Get cached image URL for map context (80px max)
+              const cachedImageUrl = getCachedImageUrl(imageUrl, 'map', 80);
+
+              // Always use frame colors based on orthodoxy status and martyr status
+              // Important sees will be shown as separate independent markers
+              const isPope = person.roles?.includes('pope') || false;
+              icon = createPersonIcon(
+                cachedImageUrl,
+                person.orthodoxyStatus,
+                person.isMartyr,
+                aspectRatio,
+                hasWritings,
+                isPope,
+                person,
+                currentYear
+              );
             }
 
-            // Get cached image URL for map context (80px max)
-            const cachedImageUrl = getCachedImageUrl(imageUrl, 'map', 80);
+            // Create unique key combining place, type, and item id
+            const markerKey = `${placeId}-${item.type}-${item.data.id}-${index}`;
 
-            // Events get colored icons based on type
-            icon = createEventIcon(event.type, cachedImageUrl);
-          } else if (item.type === 'basilica') {
-            const basilica = item.data;
-            itemName = basilica.name;
-            imageUrl = basilica.imageUrl;
-            if (imageUrl) {
-              aspectRatio = imageAspectRatios.get(imageUrl) || 1;
-            }
-
-            // Get cached image URL for map context (80px max)
-            const cachedImageUrl = getCachedImageUrl(imageUrl, 'map', 80);
-
-            // Basilicas get their special icons
-            icon = createBasilicaIcon(basilica.type, cachedImageUrl);
-          } else {
-            const person = item.data;
-            itemName = person.name;
-            imageUrl = person.imageUrl;
-            if (imageUrl) {
-              aspectRatio = imageAspectRatios.get(imageUrl) || 1;
-            }
-
-            const hasWritings = !!(person.writings && person.writings.length > 0);
-
-            // Get cached image URL for map context (80px max)
-            const cachedImageUrl = getCachedImageUrl(imageUrl, 'map', 80);
-
-            // Always use frame colors based on orthodoxy status and martyr status
-            // Important sees will be shown as separate independent markers
-            const isPope = person.roles?.includes('pope') || false;
-            icon = createPersonIcon(cachedImageUrl, person.orthodoxyStatus, person.isMartyr, aspectRatio, hasWritings, isPope, person, currentYear);
-          }
-
-          // Create unique key combining place, type, and item id
-          const markerKey = `${placeId}-${item.type}-${item.data.id}-${index}`;
-
-          return (
-            <Marker key={markerKey} position={[lat, lng]} icon={icon}>
-              <Popup>
-                <div>
-                  <div
-                    onClick={() => onItemClick(item.data)}
-                    style={{
-                      cursor: 'pointer',
-                      color: item.type === 'basilica' ? getBasilicaColor(item.data.type).fill : '#4a9eff',
-                      fontWeight: 'bold',
-                      fontSize: '14px',
-                      marginBottom: '0.25rem',
-                    }}
-                  >
-                    {itemName}
-                  </div>
-                  <div style={{ fontSize: '12px', color: '#888', marginBottom: '0.25rem' }}>
-                    {place.name}
-                  </div>
-                  {item.type === 'event' && (
-                    <div style={{ 
-                      fontSize: '11px', 
-                      color: getEventColor(item.data.type).fill,
-                      fontStyle: 'italic',
-                      fontWeight: 'bold'
-                    }}>
-                      {getEventColor(item.data.type).label}
-                    </div>
-                  )}
-                  {item.type === 'basilica' && (
-                    <>
-                      <div style={{ 
-                        fontSize: '11px', 
-                        color: getBasilicaColor(item.data.type).fill,
-                        fontStyle: 'italic',
+            return (
+              <Marker key={markerKey} position={[lat, lng]} icon={icon}>
+                <Popup>
+                  <div>
+                    <div
+                      onClick={() => onItemClick(item.data)}
+                      style={{
+                        cursor: 'pointer',
+                        color:
+                          item.type === 'basilica'
+                            ? getBasilicaColor(item.data.type).fill
+                            : '#4a9eff',
                         fontWeight: 'bold',
-                        marginBottom: '0.5rem'
-                      }}>
-                        {item.data.type === 'major-basilica' ? 'Major Basilica' :
-                         item.data.type === 'papal-basilica' ? 'Papal Basilica' :
-                         item.data.type === 'patriarchal-basilica' ? 'Patriarchal Basilica' :
-                         'Historic Basilica'}
-                      </div>
-                      {item.data.description && (
-                        <div style={{ fontSize: '11px', color: '#ccc', lineHeight: '1.4', marginBottom: '0.5rem' }}>
-                          {item.data.description.substring(0, 150)}{item.data.description.length > 150 ? '...' : ''}
-                        </div>
-                      )}
-                      {item.data.startYear && (
-                        <div style={{ fontSize: '10px', color: '#aaa', fontStyle: 'italic', marginBottom: '0.5rem' }}>
-                          {item.data.endYear ? `Built ${item.data.startYear} - ${item.data.endYear}` : `Built ${item.data.startYear}`}
-                        </div>
-                      )}
+                        fontSize: '14px',
+                        marginBottom: '0.25rem',
+                      }}
+                    >
+                      {itemName}
+                    </div>
+                    <div style={{ fontSize: '12px', color: '#888', marginBottom: '0.25rem' }}>
+                      {place.name}
+                    </div>
+                    {item.type === 'event' && (
                       <div
-                        onClick={() => onItemClick(item.data)}
                         style={{
-                          fontSize: '10px',
-                          color: '#4a9eff',
+                          fontSize: '11px',
+                          color: getEventColor(item.data.type).fill,
                           fontStyle: 'italic',
-                          marginTop: '0.5rem',
-                          cursor: 'pointer',
-                          textDecoration: 'underline',
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.color = '#6bb3ff';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.color = '#4a9eff';
+                          fontWeight: 'bold',
                         }}
                       >
-                        Click for details →
+                        {getEventColor(item.data.type).label}
                       </div>
-                    </>
-                  )}
-                </div>
-              </Popup>
-            </Marker>
-          );
-        });
-      }).flat().filter(Boolean)}
+                    )}
+                    {item.type === 'basilica' && (
+                      <>
+                        <div
+                          style={{
+                            fontSize: '11px',
+                            color: getBasilicaColor(item.data.type).fill,
+                            fontStyle: 'italic',
+                            fontWeight: 'bold',
+                            marginBottom: '0.5rem',
+                          }}
+                        >
+                          {item.data.type === 'major-basilica'
+                            ? 'Major Basilica'
+                            : item.data.type === 'papal-basilica'
+                              ? 'Papal Basilica'
+                              : item.data.type === 'patriarchal-basilica'
+                                ? 'Patriarchal Basilica'
+                                : 'Historic Basilica'}
+                        </div>
+                        {item.data.description && (
+                          <div
+                            style={{
+                              fontSize: '11px',
+                              color: '#ccc',
+                              lineHeight: '1.4',
+                              marginBottom: '0.5rem',
+                            }}
+                          >
+                            {item.data.description.substring(0, 150)}
+                            {item.data.description.length > 150 ? '...' : ''}
+                          </div>
+                        )}
+                        {item.data.startYear && (
+                          <div
+                            style={{
+                              fontSize: '10px',
+                              color: '#aaa',
+                              fontStyle: 'italic',
+                              marginBottom: '0.5rem',
+                            }}
+                          >
+                            {item.data.endYear
+                              ? `Built ${item.data.startYear} - ${item.data.endYear}`
+                              : `Built ${item.data.startYear}`}
+                          </div>
+                        )}
+                        <div
+                          onClick={() => onItemClick(item.data)}
+                          style={{
+                            fontSize: '10px',
+                            color: '#4a9eff',
+                            fontStyle: 'italic',
+                            marginTop: '0.5rem',
+                            cursor: 'pointer',
+                            textDecoration: 'underline',
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.color = '#6bb3ff';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.color = '#4a9eff';
+                          }}
+                        >
+                          Click for details →
+                        </div>
+                      </>
+                    )}
+                  </div>
+                </Popup>
+              </Marker>
+            );
+          });
+        })
+        .flat()
+        .filter(Boolean)}
     </>
   );
 }
 
-export function MapView({ people, events, places, sees, basilicas, currentYear, onItemClick }: MapViewProps) {
+export function MapView({
+  people,
+  events,
+  places,
+  sees,
+  basilicas,
+  currentYear,
+  onItemClick,
+}: MapViewProps) {
   const [isLegendCollapsed, setIsLegendCollapsed] = useState(false);
   const activePeople = getActivePeople(people, currentYear);
   const activeEvents = getActiveEvents(events, currentYear);
 
   // Filter basilicas that are active in the current year
-  const activeBasilicas = basilicas.filter(basilica => {
+  const activeBasilicas = basilicas.filter((basilica) => {
     const start = basilica.startYear ?? -Infinity;
     const end = basilica.endYear ?? Infinity;
     return currentYear >= start && currentYear <= end;
   });
 
   // Create a map of placeId -> items at that place for offset calculation
-  type MapItem = { type: 'person'; data: Person } | { type: 'event'; data: Event } | { type: 'basilica'; data: Basilica };
+  type MapItem =
+    | { type: 'person'; data: Person }
+    | { type: 'event'; data: Event }
+    | { type: 'basilica'; data: Basilica };
   const itemsByPlace = new Map<string, MapItem[]>();
 
   // Group people by place
-  activePeople.forEach(person => {
-    person.locations.forEach(loc => {
+  activePeople.forEach((person) => {
+    person.locations.forEach((loc) => {
       if (!itemsByPlace.has(loc.placeId)) {
         itemsByPlace.set(loc.placeId, []);
       }
@@ -1062,7 +1039,7 @@ export function MapView({ people, events, places, sees, basilicas, currentYear, 
   });
 
   // Group events by place
-  activeEvents.forEach(event => {
+  activeEvents.forEach((event) => {
     if (event.locationId) {
       if (!itemsByPlace.has(event.locationId)) {
         itemsByPlace.set(event.locationId, []);
@@ -1072,7 +1049,7 @@ export function MapView({ people, events, places, sees, basilicas, currentYear, 
   });
 
   // Group basilicas by place
-  activeBasilicas.forEach(basilica => {
+  activeBasilicas.forEach((basilica) => {
     if (!itemsByPlace.has(basilica.placeId)) {
       itemsByPlace.set(basilica.placeId, []);
     }
@@ -1081,10 +1058,10 @@ export function MapView({ people, events, places, sees, basilicas, currentYear, 
 
   // Create a lookup map for places
   const placeMap = new Map<string, Place>();
-  places.forEach(place => placeMap.set(place.id, place));
+  places.forEach((place) => placeMap.set(place.id, place));
 
   // Filter sees that are active in the current year
-  const activeSees = sees.filter(see => {
+  const activeSees = sees.filter((see) => {
     const start = see.startYear ?? -Infinity;
     const end = see.endYear ?? Infinity;
     return currentYear >= start && currentYear <= end;
@@ -1097,25 +1074,29 @@ export function MapView({ people, events, places, sees, basilicas, currentYear, 
   return (
     <div style={{ width: '100%', height: '100%', minHeight: '400px', position: 'relative' }}>
       {/* Legend */}
-      <div style={{
-        position: 'absolute',
-        top: '10px',
-        right: '10px',
-        backgroundColor: 'rgba(26, 26, 26, 0.9)',
-        padding: '1rem',
-        borderRadius: '8px',
-        zIndex: 1000,
-        color: '#fff',
-        fontSize: '14px',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
-        minWidth: isLegendCollapsed ? 'auto' : '240px',
-      }}>
-        <div style={{ 
-          display: 'flex', 
-          justifyContent: 'space-between', 
-          alignItems: 'center',
-          marginBottom: isLegendCollapsed ? '0' : '0.75rem',
-        }}>
+      <div
+        style={{
+          position: 'absolute',
+          top: '10px',
+          right: '10px',
+          backgroundColor: 'rgba(26, 26, 26, 0.9)',
+          padding: '1rem',
+          borderRadius: '8px',
+          zIndex: 1000,
+          color: '#fff',
+          fontSize: '14px',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+          minWidth: isLegendCollapsed ? 'auto' : '240px',
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginBottom: isLegendCollapsed ? '0' : '0.75rem',
+          }}
+        >
           <div style={{ fontWeight: 'bold', fontSize: '16px' }}>Map Legend</div>
           <button
             onClick={() => setIsLegendCollapsed(!isLegendCollapsed)}
@@ -1143,224 +1124,346 @@ export function MapView({ people, events, places, sees, basilicas, currentYear, 
           </button>
         </div>
         {!isLegendCollapsed && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-          {/* Event Types */}
-          <div>
-            <div style={{ fontSize: '12px', color: '#aaa', marginBottom: '0.5rem', fontWeight: 'bold' }}>Events</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-              {(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'apparition', 'other'] as EventType[]).map(type => {
-                const color = getEventColor(type);
-                const symbol = type === 'council' ? '★' : 
-                               type === 'schism' ? '⚡' :
-                               type === 'persecution' ? '✟' :
-                               type === 'reform' ? '♻' :
-                               type === 'heresy' ? '⚠' :
-                               type === 'war' ? '⚔' :
-                               type === 'apparition' ? '✨' : '●';
-                const isDiamond = type === 'council';
-                const isApparition = type === 'apparition';
-                return (
-                  <div key={type} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <div style={{
-                      background: isApparition ? `radial-gradient(circle, ${color.fill} 0%, ${color.stroke} 100%)` : color.fill,
-                      width: '18px',
-                      height: '18px',
-                      borderRadius: isDiamond ? '0' : '50%',
-                      transform: isDiamond ? 'rotate(45deg)' : 'none',
-                      border: `2px solid ${color.stroke}`,
-                      boxShadow: isApparition 
-                        ? `0 0 8px ${color.fill}80, 0 0 12px ${color.fill}60, 0 2px 4px rgba(0,0,0,0.3)`
-                        : '0 2px 4px rgba(0,0,0,0.3)',
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {/* Event Types */}
+            <div>
+              <div
+                style={{
+                  fontSize: '12px',
+                  color: '#aaa',
+                  marginBottom: '0.5rem',
+                  fontWeight: 'bold',
+                }}
+              >
+                Events
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                {(
+                  [
+                    'council',
+                    'schism',
+                    'persecution',
+                    'reform',
+                    'heresy',
+                    'war',
+                    'apparition',
+                    'other',
+                  ] as EventType[]
+                ).map((type) => {
+                  const color = getEventColor(type);
+                  const symbol =
+                    type === 'council'
+                      ? '★'
+                      : type === 'schism'
+                        ? '⚡'
+                        : type === 'persecution'
+                          ? '✟'
+                          : type === 'reform'
+                            ? '♻'
+                            : type === 'heresy'
+                              ? '⚠'
+                              : type === 'war'
+                                ? '⚔'
+                                : type === 'apparition'
+                                  ? '✨'
+                                  : '●';
+                  const isDiamond = type === 'council';
+                  const isApparition = type === 'apparition';
+                  return (
+                    <div
+                      key={type}
+                      style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+                    >
+                      <div
+                        style={{
+                          background: isApparition
+                            ? `radial-gradient(circle, ${color.fill} 0%, ${color.stroke} 100%)`
+                            : color.fill,
+                          width: '18px',
+                          height: '18px',
+                          borderRadius: isDiamond ? '0' : '50%',
+                          transform: isDiamond ? 'rotate(45deg)' : 'none',
+                          border: `2px solid ${color.stroke}`,
+                          boxShadow: isApparition
+                            ? `0 0 8px ${color.fill}80, 0 0 12px ${color.fill}60, 0 2px 4px rgba(0,0,0,0.3)`
+                            : '0 2px 4px rgba(0,0,0,0.3)',
+                          position: 'relative',
+                          flexShrink: 0,
+                        }}
+                      >
+                        <div
+                          style={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: `translate(-50%, -50%) ${isDiamond ? 'rotate(-45deg)' : 'none'}`,
+                            color: isApparition ? 'white' : color.textColor,
+                            fontSize: '11px',
+                            fontWeight: 'bold',
+                            textShadow: isApparition
+                              ? `0 0 4px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)`
+                              : 'none',
+                          }}
+                        >
+                          {symbol}
+                        </div>
+                      </div>
+                      <span style={{ fontSize: '12px' }}>{color.label}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Special Locations */}
+            <div>
+              <div
+                style={{
+                  fontSize: '12px',
+                  color: '#aaa',
+                  marginBottom: '0.5rem',
+                  fontWeight: 'bold',
+                }}
+              >
+                Locations
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div
+                    style={{
                       position: 'relative',
-                      flexShrink: 0,
-                    }}>
-                      <div style={{
+                    }}
+                  >
+                    <div
+                      style={{
+                        backgroundColor: '#d4af37',
+                        width: '24px',
+                        height: '24px',
+                        borderRadius: '50%',
+                        border: '3px solid white',
+                        boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
+                      }}
+                    ></div>
+                    <div
+                      style={{
                         position: 'absolute',
                         top: '50%',
                         left: '50%',
-                        transform: `translate(-50%, -50%) ${isDiamond ? 'rotate(-45deg)' : 'none'}`,
-                        color: isApparition ? 'white' : color.textColor,
-                        fontSize: '11px',
-                        fontWeight: 'bold',
-                        textShadow: isApparition 
-                          ? `0 0 4px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)`
-                          : 'none',
-                      }}>{symbol}</div>
-                    </div>
-                    <span style={{ fontSize: '12px' }}>{color.label}</span>
+                        transform: 'translate(-50%, -50%)',
+                        width: '16px',
+                        height: '16px',
+                        borderRadius: '50%',
+                        border: '2px solid white',
+                        backgroundColor: 'transparent',
+                      }}
+                    ></div>
                   </div>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Special Locations */}
-          <div>
-            <div style={{ fontSize: '12px', color: '#aaa', marginBottom: '0.5rem', fontWeight: 'bold' }}>Locations</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <div style={{
-                  position: 'relative',
-                }}>
-                  <div style={{
-                    backgroundColor: '#d4af37',
-                    width: '24px',
-                    height: '24px',
-                    borderRadius: '50%',
-                    border: '3px solid white',
-                    boxShadow: '0 2px 4px rgba(0,0,0,0.3)',
-                  }}></div>
-                  <div style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    width: '16px',
-                    height: '16px',
-                    borderRadius: '50%',
-                    border: '2px solid white',
-                    backgroundColor: 'transparent',
-                  }}></div>
+                  <span style={{ fontSize: '13px' }}>Important See</span>
                 </div>
-                <span style={{ fontSize: '13px' }}>Important See</span>
               </div>
             </div>
-          </div>
 
-          {/* Basilicas */}
-          <div>
-            <div style={{ fontSize: '12px', color: '#aaa', marginBottom: '0.5rem', fontWeight: 'bold' }}>Basilicas</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              {(['major-basilica', 'papal-basilica', 'patriarchal-basilica', 'historic-basilica'] as BasilicaType[]).map(type => {
-                const colors = getBasilicaColor(type);
-                const label = type === 'major-basilica' ? 'Major Basilica' :
-                             type === 'papal-basilica' ? 'Papal Basilica' :
-                             type === 'patriarchal-basilica' ? 'Patriarchal Basilica' :
-                             'Historic Basilica';
-                return (
-                  <div key={type} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    <div style={{
-                      width: '24px',
-                      height: '24px',
+            {/* Basilicas */}
+            <div>
+              <div
+                style={{
+                  fontSize: '12px',
+                  color: '#aaa',
+                  marginBottom: '0.5rem',
+                  fontWeight: 'bold',
+                }}
+              >
+                Basilicas
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                {(
+                  [
+                    'major-basilica',
+                    'papal-basilica',
+                    'patriarchal-basilica',
+                    'historic-basilica',
+                  ] as BasilicaType[]
+                ).map((type) => {
+                  const colors = getBasilicaColor(type);
+                  const label =
+                    type === 'major-basilica'
+                      ? 'Major Basilica'
+                      : type === 'papal-basilica'
+                        ? 'Papal Basilica'
+                        : type === 'patriarchal-basilica'
+                          ? 'Patriarchal Basilica'
+                          : 'Historic Basilica';
+                  return (
+                    <div
+                      key={type}
+                      style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+                    >
+                      <div
+                        style={{
+                          width: '24px',
+                          height: '24px',
+                          borderRadius: '50%',
+                          border: `3px solid ${colors.fill}`,
+                          boxShadow: `0 2px 4px rgba(0,0,0,0.3), 0 0 6px ${colors.glow}`,
+                          backgroundColor: '#fff',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          padding: '2px',
+                        }}
+                      >
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 2L4 6V20H20V6L12 2Z"
+                            fill={colors.fill}
+                            stroke={colors.stroke}
+                            strokeWidth="0.8"
+                          />
+                          <ellipse
+                            cx="12"
+                            cy="6"
+                            rx="3"
+                            ry="1.5"
+                            fill={colors.fill}
+                            stroke={colors.stroke}
+                            strokeWidth="0.8"
+                          />
+                        </svg>
+                      </div>
+                      <span style={{ fontSize: '13px' }}>{label}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* People Frame Types */}
+            <div>
+              <div
+                style={{
+                  fontSize: '12px',
+                  color: '#aaa',
+                  marginBottom: '0.5rem',
+                  fontWeight: 'bold',
+                }}
+              >
+                People
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div
+                    style={{
+                      width: '20px',
+                      height: '20px',
                       borderRadius: '50%',
-                      border: `3px solid ${colors.fill}`,
-                      boxShadow: `0 2px 4px rgba(0,0,0,0.3), 0 0 6px ${colors.glow}`,
-                      backgroundColor: '#fff',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '2px',
-                    }}>
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L4 6V20H20V6L12 2Z" fill={colors.fill} stroke={colors.stroke} strokeWidth="0.8"/>
-                        <ellipse cx="12" cy="6" rx="3" ry="1.5" fill={colors.fill} stroke={colors.stroke} strokeWidth="0.8"/>
-                      </svg>
-                    </div>
-                    <span style={{ fontSize: '13px' }}>{label}</span>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* People Frame Types */}
-          <div>
-            <div style={{ fontSize: '12px', color: '#aaa', marginBottom: '0.5rem', fontWeight: 'bold' }}>People</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <div style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '50%',
-                  border: '3px solid #d4af37',
-                  boxShadow: '0 0 6px rgba(212, 175, 55, 0.6)',
-                  backgroundColor: '#333',
-                }}></div>
-                <span style={{ fontSize: '13px' }}>Canonized Saint</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <div style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '50%',
-                  border: '3px solid transparent',
-                  background: 'repeating-linear-gradient(45deg, #d4af37, #d4af37 3px, #a11b1b 3px, #a11b1b 6px)',
-                  padding: '2px',
-                }}>
-                  <div style={{
-                    width: '100%',
-                    height: '100%',
-                    borderRadius: '50%',
-                    backgroundColor: '#333',
-                    border: '1px solid white',
-                  }}></div>
+                      border: '3px solid #d4af37',
+                      boxShadow: '0 0 6px rgba(212, 175, 55, 0.6)',
+                      backgroundColor: '#333',
+                    }}
+                  ></div>
+                  <span style={{ fontSize: '13px' }}>Canonized Saint</span>
                 </div>
-                <span style={{ fontSize: '13px' }}>Martyr</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <div style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '50%',
-                  border: '2px solid #c0c0c0',
-                  boxShadow: '0 0 4px rgba(192, 192, 192, 0.6)',
-                  backgroundColor: '#333',
-                }}></div>
-                <span style={{ fontSize: '13px' }}>Blessed</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <div style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '50%',
-                  border: '2px solid #777',
-                  backgroundColor: '#f7f7f7',
-                }}></div>
-                <span style={{ fontSize: '13px' }}>Orthodox Figure</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <div style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '50%',
-                  border: '3px solid transparent',
-                  background: 'linear-gradient(to right, #777 0%, #777 50%, #b03a2e 50%, #b03a2e 100%)',
-                  backgroundColor: '#333',
-                }}></div>
-                <span style={{ fontSize: '13px' }}>Schismatic</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <div style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '50%',
-                  border: '3px solid #5b1a1a',
-                  boxShadow: '0 0 4px rgba(91, 26, 26, 0.8)',
-                  backgroundColor: '#333',
-                }}></div>
-                <span style={{ fontSize: '13px' }}>Heresiarch</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <div style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '50%',
-                  border: '1px solid #bbb',
-                  backgroundColor: '#333',
-                }}></div>
-                <span style={{ fontSize: '13px' }}>Secular Figure</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div
+                    style={{
+                      width: '20px',
+                      height: '20px',
+                      borderRadius: '50%',
+                      border: '3px solid transparent',
+                      background:
+                        'repeating-linear-gradient(45deg, #d4af37, #d4af37 3px, #a11b1b 3px, #a11b1b 6px)',
+                      padding: '2px',
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        borderRadius: '50%',
+                        backgroundColor: '#333',
+                        border: '1px solid white',
+                      }}
+                    ></div>
+                  </div>
+                  <span style={{ fontSize: '13px' }}>Martyr</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div
+                    style={{
+                      width: '20px',
+                      height: '20px',
+                      borderRadius: '50%',
+                      border: '2px solid #c0c0c0',
+                      boxShadow: '0 0 4px rgba(192, 192, 192, 0.6)',
+                      backgroundColor: '#333',
+                    }}
+                  ></div>
+                  <span style={{ fontSize: '13px' }}>Blessed</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div
+                    style={{
+                      width: '20px',
+                      height: '20px',
+                      borderRadius: '50%',
+                      border: '2px solid #777',
+                      backgroundColor: '#f7f7f7',
+                    }}
+                  ></div>
+                  <span style={{ fontSize: '13px' }}>Orthodox Figure</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div
+                    style={{
+                      width: '20px',
+                      height: '20px',
+                      borderRadius: '50%',
+                      border: '3px solid transparent',
+                      background:
+                        'linear-gradient(to right, #777 0%, #777 50%, #b03a2e 50%, #b03a2e 100%)',
+                      backgroundColor: '#333',
+                    }}
+                  ></div>
+                  <span style={{ fontSize: '13px' }}>Schismatic</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div
+                    style={{
+                      width: '20px',
+                      height: '20px',
+                      borderRadius: '50%',
+                      border: '3px solid #5b1a1a',
+                      boxShadow: '0 0 4px rgba(91, 26, 26, 0.8)',
+                      backgroundColor: '#333',
+                    }}
+                  ></div>
+                  <span style={{ fontSize: '13px' }}>Heresiarch</span>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <div
+                    style={{
+                      width: '20px',
+                      height: '20px',
+                      borderRadius: '50%',
+                      border: '1px solid #bbb',
+                      backgroundColor: '#333',
+                    }}
+                  ></div>
+                  <span style={{ fontSize: '13px' }}>Secular Figure</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         )}
       </div>
 
-      <MapContainer
-        center={center}
-        zoom={zoom}
-        style={{ height: '100%', width: '100%' }}
-      >
+      <MapContainer center={center} zoom={zoom} style={{ height: '100%', width: '100%' }}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

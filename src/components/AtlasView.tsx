@@ -18,19 +18,19 @@ interface AtlasViewProps {
 
 export function AtlasView({ data }: AtlasViewProps) {
   const [searchParams, setSearchParams] = useSearchParams();
-  
+
   const minYear = 30;
   const maxYear = 2100;
-  
+
   // Read initial values from URL params or use defaults, with validation
   const yearParam = searchParams.get('year');
-  const initialYear = yearParam 
+  const initialYear = yearParam
     ? Math.max(minYear, Math.min(maxYear, parseInt(yearParam, 10) || 325))
     : 325;
-  
+
   const viewParam = searchParams.get('view');
   const initialView = (viewParam === 'map' ? 'map' : 'timeline') as 'timeline' | 'map';
-  
+
   const [currentYear, setCurrentYear] = useState(initialYear);
   const [selectedItem, setSelectedItem] = useState<Person | Event | Basilica | null>(null);
   const [view, setView] = useState<'timeline' | 'map'>(initialView);
@@ -104,21 +104,25 @@ export function AtlasView({ data }: AtlasViewProps) {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: '1rem',
-        backgroundColor: '#1a1a1a',
-        borderBottom: '1px solid #333',
-        gap: '2rem',
-      }}>
-        {/* Year Selector */}
-        <div style={{
+      <div
+        style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '1rem',
-        }}>
+          justifyContent: 'space-between',
+          padding: '1rem',
+          backgroundColor: '#1a1a1a',
+          borderBottom: '1px solid #333',
+          gap: '2rem',
+        }}
+      >
+        {/* Year Selector */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1rem',
+          }}
+        >
           <button
             onClick={handleDecrement}
             disabled={currentYear <= minYear}
@@ -256,13 +260,9 @@ export function AtlasView({ data }: AtlasViewProps) {
         )}
       </div>
 
-      <DetailsModal
-        item={selectedItem}
-        onClose={() => setSelectedItem(null)}
-      />
+      <DetailsModal item={selectedItem} onClose={() => setSelectedItem(null)} />
 
       <FrameLegend />
     </div>
   );
 }
-

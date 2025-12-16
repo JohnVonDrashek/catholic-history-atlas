@@ -1,6 +1,6 @@
-export type SeeType = 
+export type SeeType =
   | 'patriarchate' // One of the five patriarchates (Pentarchy)
-  | 'major-see'    // Important archbishopric/metropolitan see
+  | 'major-see' // Important archbishopric/metropolitan see
   | 'apostolic-see'; // See founded by an apostle
 
 export interface See {

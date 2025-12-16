@@ -3,7 +3,9 @@ import { FigurePortrait } from './FigurePortrait';
 import type { OrthodoxyStatus } from '../types';
 
 export function About() {
-  const placeholderImage = 'data:image/svg+xml,' + encodeURIComponent(`
+  const placeholderImage =
+    'data:image/svg+xml,' +
+    encodeURIComponent(`
     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
       <rect width="100" height="100" fill="#666"/>
       <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial" font-size="24">👤</text>
@@ -68,22 +70,24 @@ export function About() {
       example: 'Roman officials, philosophers',
     },
   ];
-  
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
       {/* Toolbar matching AtlasView */}
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: '1rem',
-        backgroundColor: '#1a1a1a',
-        borderBottom: '1px solid #333',
-        gap: '2rem',
-      }}>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          padding: '1rem',
+          backgroundColor: '#1a1a1a',
+          borderBottom: '1px solid #333',
+          gap: '2rem',
+        }}
+      >
         {/* Empty space on left to match AtlasView layout */}
         <div style={{ flex: 1 }}></div>
-        
+
         {/* View Switcher */}
         <div style={{ display: 'flex', gap: '1rem' }}>
           <Link
@@ -133,161 +137,213 @@ export function About() {
           Catholic History Atlas
         </h1>
 
-      <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ddd', marginBottom: '2rem' }}>
-        An interactive Catholic history atlas that allows you to explore the Christian world through time, 
-        with timeline and map views showing saints, councils, and major events. Navigate through centuries 
-        to discover how the Church spread across the Mediterranean and beyond, from the early Church fathers 
-        to the modern era. Visualize the geographical distribution of saints and events, explore detailed 
-        biographies with images from Wikipedia, and trace the development of Christian doctrine through 
-        councils and key historical moments.
-      </p>
-
-      <section style={{ marginBottom: '3rem' }}>
-        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff', borderBottom: '2px solid #4a9eff', paddingBottom: '0.5rem' }}>
-          How to Use
-        </h2>
-
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-          <div>
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem', color: '#4a9eff' }}>
-              Year Navigation
-            </h3>
-            <p style={{ lineHeight: '1.8', color: '#ddd' }}>
-              Navigate through history using the year selector at the top. Use the left/right controls 
-              to move through time, or click the year display to jump to a specific date. The default 
-              starting point is the Council of Nicaea (325 AD).
-            </p>
-          </div>
-
-          <div>
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem', color: '#4a9eff' }}>
-              Timeline View
-            </h3>
-            <p style={{ lineHeight: '1.8', color: '#ddd' }}>
-              See all people and events active in a given year laid out chronologically. This view helps 
-              you understand what was happening simultaneously in different parts of the Christian world.
-            </p>
-          </div>
-
-          <div>
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem', color: '#4a9eff' }}>
-              Map View
-            </h3>
-            <p style={{ lineHeight: '1.8', color: '#ddd' }}>
-              Visualize the geographical distribution of saints, events, basilicas, and ecclesiastical sees. 
-              Explore how Christianity spread across the Mediterranean and beyond, and see the locations 
-              of major historical events.
-            </p>
-          </div>
-
-          <div>
-            <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem', color: '#4a9eff' }}>
-              Detail Modals
-            </h3>
-            <p style={{ lineHeight: '1.8', color: '#ddd' }}>
-              Click on any person or event to see detailed information, including images from Wikipedia, 
-              links to New Advent and Wikipedia, and curated summaries with key quotes. Each entry provides 
-              historical context and significance.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section style={{ marginBottom: '3rem' }}>
-        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff', borderBottom: '2px solid #4a9eff', paddingBottom: '0.5rem' }}>
-          Visual Categorization
-        </h2>
-        <p style={{ lineHeight: '1.8', color: '#ddd', marginBottom: '1.5rem' }}>
-          The frames around portraits indicate a person's status in relation to the Catholic Church. 
-          This visual system helps you quickly identify different types of historical figures.
+        <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#ddd', marginBottom: '2rem' }}>
+          An interactive Catholic history atlas that allows you to explore the Christian world
+          through time, with timeline and map views showing saints, councils, and major events.
+          Navigate through centuries to discover how the Church spread across the Mediterranean and
+          beyond, from the early Church fathers to the modern era. Visualize the geographical
+          distribution of saints and events, explore detailed biographies with images from
+          Wikipedia, and trace the development of Christian doctrine through councils and key
+          historical moments.
         </p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-          {legendItems.map((item) => (
-            <div
-              key={item.frame}
-              style={{
-                display: 'flex',
-                gap: '1.5rem',
-                alignItems: 'flex-start',
-                padding: '1rem',
-                backgroundColor: '#2a2a2a',
-                borderRadius: '8px',
-              }}
-            >
-              <div style={{ flexShrink: 0 }}>
-                <FigurePortrait
-                  name={item.title}
-                  imageUrl={placeholderImage}
-                  orthodoxyStatus={item.orthodoxyStatus}
-                  isMartyr={item.isMartyr}
-                  size="medium"
-                />
-              </div>
-              <div style={{ flex: 1 }}>
-                <h3 style={{ margin: 0, marginBottom: '0.5rem', color: '#fff', fontSize: '1.1rem' }}>
-                  {item.title}
-                </h3>
-                <p style={{ margin: 0, marginBottom: '0.5rem', color: '#ddd', lineHeight: '1.6' }}>
-                  {item.description}
-                </p>
-                <p style={{ margin: 0, color: '#888', fontSize: '0.9rem', fontStyle: 'italic' }}>
-                  Examples: {item.example}
-                </p>
-              </div>
+
+        <section style={{ marginBottom: '3rem' }}>
+          <h2
+            style={{
+              fontSize: '1.8rem',
+              marginBottom: '1rem',
+              color: '#fff',
+              borderBottom: '2px solid #4a9eff',
+              paddingBottom: '0.5rem',
+            }}
+          >
+            How to Use
+          </h2>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            <div>
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem', color: '#4a9eff' }}>
+                Year Navigation
+              </h3>
+              <p style={{ lineHeight: '1.8', color: '#ddd' }}>
+                Navigate through history using the year selector at the top. Use the left/right
+                controls to move through time, or click the year display to jump to a specific date.
+                The default starting point is the Council of Nicaea (325 AD).
+              </p>
             </div>
-          ))}
-        </div>
-      </section>
 
-      <section style={{ marginBottom: '3rem' }}>
-        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff', borderBottom: '2px solid #4a9eff', paddingBottom: '0.5rem' }}>
-          Data Sources
-        </h2>
-        <p style={{ lineHeight: '1.8', color: '#ddd', marginBottom: '1rem' }}>
-          This atlas draws from a variety of historical sources:
-        </p>
-        <ul style={{ lineHeight: '2', color: '#ddd', paddingLeft: '1.5rem' }}>
-          <li><strong>Wikipedia</strong> - Images and biographical information</li>
-          <li><strong>New Advent Catholic Encyclopedia</strong> - Historical context and theological significance</li>
-          <li><strong>Historical records</strong> - Dates, locations, and key events from scholarly sources</li>
-        </ul>
-      </section>
+            <div>
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem', color: '#4a9eff' }}>
+                Timeline View
+              </h3>
+              <p style={{ lineHeight: '1.8', color: '#ddd' }}>
+                See all people and events active in a given year laid out chronologically. This view
+                helps you understand what was happening simultaneously in different parts of the
+                Christian world.
+              </p>
+            </div>
 
-      <section style={{ marginBottom: '3rem' }}>
-        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', color: '#fff', borderBottom: '2px solid #4a9eff', paddingBottom: '0.5rem' }}>
-          Resources
-        </h2>
-        <ul style={{ lineHeight: '2', color: '#ddd', paddingLeft: '1.5rem' }}>
-          <li>
-            <a 
-              href="https://www.newadvent.org/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              style={{ color: '#4a9eff', textDecoration: 'none' }}
-            >
-              New Advent Catholic Encyclopedia
-            </a>
-          </li>
-          <li>
-            <a 
-              href="https://en.wikipedia.org/wiki/Catholic_Church" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              style={{ color: '#4a9eff', textDecoration: 'none' }}
-            >
-              Wikipedia - Catholic Church
-            </a>
-          </li>
-        </ul>
-      </section>
+            <div>
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem', color: '#4a9eff' }}>
+                Map View
+              </h3>
+              <p style={{ lineHeight: '1.8', color: '#ddd' }}>
+                Visualize the geographical distribution of saints, events, basilicas, and
+                ecclesiastical sees. Explore how Christianity spread across the Mediterranean and
+                beyond, and see the locations of major historical events.
+              </p>
+            </div>
 
-      <footer style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid #333', color: '#888', textAlign: 'center' }}>
-        <p style={{ margin: 0 }}>
-          Catholic History Atlas © {new Date().getFullYear()}
-        </p>
-      </footer>
+            <div>
+              <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem', color: '#4a9eff' }}>
+                Detail Modals
+              </h3>
+              <p style={{ lineHeight: '1.8', color: '#ddd' }}>
+                Click on any person or event to see detailed information, including images from
+                Wikipedia, links to New Advent and Wikipedia, and curated summaries with key quotes.
+                Each entry provides historical context and significance.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section style={{ marginBottom: '3rem' }}>
+          <h2
+            style={{
+              fontSize: '1.8rem',
+              marginBottom: '1rem',
+              color: '#fff',
+              borderBottom: '2px solid #4a9eff',
+              paddingBottom: '0.5rem',
+            }}
+          >
+            Visual Categorization
+          </h2>
+          <p style={{ lineHeight: '1.8', color: '#ddd', marginBottom: '1.5rem' }}>
+            The frames around portraits indicate a person's status in relation to the Catholic
+            Church. This visual system helps you quickly identify different types of historical
+            figures.
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            {legendItems.map((item) => (
+              <div
+                key={item.frame}
+                style={{
+                  display: 'flex',
+                  gap: '1.5rem',
+                  alignItems: 'flex-start',
+                  padding: '1rem',
+                  backgroundColor: '#2a2a2a',
+                  borderRadius: '8px',
+                }}
+              >
+                <div style={{ flexShrink: 0 }}>
+                  <FigurePortrait
+                    name={item.title}
+                    imageUrl={placeholderImage}
+                    orthodoxyStatus={item.orthodoxyStatus}
+                    isMartyr={item.isMartyr}
+                    size="medium"
+                  />
+                </div>
+                <div style={{ flex: 1 }}>
+                  <h3
+                    style={{ margin: 0, marginBottom: '0.5rem', color: '#fff', fontSize: '1.1rem' }}
+                  >
+                    {item.title}
+                  </h3>
+                  <p
+                    style={{ margin: 0, marginBottom: '0.5rem', color: '#ddd', lineHeight: '1.6' }}
+                  >
+                    {item.description}
+                  </p>
+                  <p style={{ margin: 0, color: '#888', fontSize: '0.9rem', fontStyle: 'italic' }}>
+                    Examples: {item.example}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section style={{ marginBottom: '3rem' }}>
+          <h2
+            style={{
+              fontSize: '1.8rem',
+              marginBottom: '1rem',
+              color: '#fff',
+              borderBottom: '2px solid #4a9eff',
+              paddingBottom: '0.5rem',
+            }}
+          >
+            Data Sources
+          </h2>
+          <p style={{ lineHeight: '1.8', color: '#ddd', marginBottom: '1rem' }}>
+            This atlas draws from a variety of historical sources:
+          </p>
+          <ul style={{ lineHeight: '2', color: '#ddd', paddingLeft: '1.5rem' }}>
+            <li>
+              <strong>Wikipedia</strong> - Images and biographical information
+            </li>
+            <li>
+              <strong>New Advent Catholic Encyclopedia</strong> - Historical context and theological
+              significance
+            </li>
+            <li>
+              <strong>Historical records</strong> - Dates, locations, and key events from scholarly
+              sources
+            </li>
+          </ul>
+        </section>
+
+        <section style={{ marginBottom: '3rem' }}>
+          <h2
+            style={{
+              fontSize: '1.8rem',
+              marginBottom: '1rem',
+              color: '#fff',
+              borderBottom: '2px solid #4a9eff',
+              paddingBottom: '0.5rem',
+            }}
+          >
+            Resources
+          </h2>
+          <ul style={{ lineHeight: '2', color: '#ddd', paddingLeft: '1.5rem' }}>
+            <li>
+              <a
+                href="https://www.newadvent.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#4a9eff', textDecoration: 'none' }}
+              >
+                New Advent Catholic Encyclopedia
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Catholic_Church"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#4a9eff', textDecoration: 'none' }}
+              >
+                Wikipedia - Catholic Church
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <footer
+          style={{
+            marginTop: '3rem',
+            paddingTop: '2rem',
+            borderTop: '1px solid #333',
+            color: '#888',
+            textAlign: 'center',
+          }}
+        >
+          <p style={{ margin: 0 }}>Catholic History Atlas © {new Date().getFullYear()}</p>
+        </footer>
       </div>
     </div>
   );
 }
-

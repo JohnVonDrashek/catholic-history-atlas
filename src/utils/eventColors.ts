@@ -61,8 +61,3 @@ export const eventTypeColors: Record<EventType, EventColorScheme> = {
 export function getEventColor(type: EventType): EventColorScheme {
   return eventTypeColors[type];
 }
-
-
-
-
-

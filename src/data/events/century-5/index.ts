@@ -15,5 +15,5 @@ export default [
   fall_western_empire,
   monophysitism,
   nestorianism,
-  sack_rome_410
+  sack_rome_410,
 ];

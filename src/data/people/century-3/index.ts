@@ -17,9 +17,7 @@ import elizabeth_rome from './elizabeth-rome.json';
 import emiliana from './emiliana.json';
 import fabian from './fabian.json';
 import fabius_antioch from './fabius-antioch.json';
-import facundus from './facundus.json';
 import felicity from './felicity.json';
-import florentina from './florentina.json';
 import fructuosus from './fructuosus.json';
 import gregory_thaumaturgus from './gregory-thaumaturgus.json';
 import hippolytus_rome from './hippolytus-rome.json';
@@ -28,14 +26,12 @@ import irenaeus from './irenaeus.json';
 import irmgard from './irmgard.json';
 import julius_africanus from './julius-africanus.json';
 import lawrence from './lawrence.json';
-import leocadia from './leocadia.json';
 import mani from './mani.json';
 import marius from './marius.json';
 import maurice_theban from './maurice-theban.json';
 import narcissus_jerusalem from './narcissus-jerusalem.json';
 import noetus from './noetus.json';
 import novatian from './novatian.json';
-import oria from './oria.json';
 import origen from './origen.json';
 import paul_samosata from './paul-samosata.json';
 import perpetua_felicity from './perpetua-felicity.json';
@@ -54,7 +50,6 @@ import tertullian from './tertullian.json';
 import tiburtius from './tiburtius.json';
 import urban_i from './urban-i.json';
 import valerian from './valerian.json';
-import valerius from './valerius.json';
 import zephyrinus from './zephyrinus.json';
 
 export default [
@@ -77,9 +72,7 @@ export default [
   emiliana,
   fabian,
   fabius_antioch,
-  facundus,
   felicity,
-  florentina,
   fructuosus,
   gregory_thaumaturgus,
   hippolytus_rome,
@@ -88,14 +81,12 @@ export default [
   irmgard,
   julius_africanus,
   lawrence,
-  leocadia,
   mani,
   marius,
   maurice_theban,
   narcissus_jerusalem,
   noetus,
   novatian,
-  oria,
   origen,
   paul_samosata,
   perpetua_felicity,
@@ -114,6 +105,5 @@ export default [
   tiburtius,
   urban_i,
   valerian,
-  valerius,
   zephyrinus,
 ];

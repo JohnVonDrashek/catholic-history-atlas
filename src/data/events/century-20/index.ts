@@ -41,5 +41,5 @@ export default [
   munificentissimus_deus,
   pacem_in_terris,
   quadragesimo_anno,
-  vatican_ii
+  vatican_ii,
 ];

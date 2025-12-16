@@ -15,5 +15,5 @@ export default [
   dissolution_templars,
   hundred_years_war,
   unam_sanctam,
-  western_schism
+  western_schism,
 ];

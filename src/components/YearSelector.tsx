@@ -75,15 +75,17 @@ export function YearSelector({
   };
 
   return (
-    <div style={{
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: '1rem',
-      padding: '1rem',
-      backgroundColor: '#1a1a1a',
-      borderBottom: '1px solid #333',
-    }}>
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '1rem',
+        padding: '1rem',
+        backgroundColor: '#1a1a1a',
+        borderBottom: '1px solid #333',
+      }}
+    >
       <button
         onClick={handleDecrement}
         disabled={year <= minYear}

@@ -29,5 +29,5 @@ export default [
   martyrdom_thomas_more,
   protestant_reformation,
   roman_catechism,
-  st_bartholomew_massacre
+  st_bartholomew_massacre,
 ];

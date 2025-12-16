@@ -21,7 +21,5 @@ export default [
   founding_premonstratensians,
   murder_thomas_becket,
   second_crusade,
-  third_crusade
+  third_crusade,
 ];
-
-

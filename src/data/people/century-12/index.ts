@@ -31,6 +31,7 @@ import peter_bruys from './peter-bruys.json';
 import peter_lombard from './peter-lombard.json';
 import ralph_flambard from './ralph-flambard.json';
 import robert_molesme from './robert-molesme.json';
+import roscelin from './roscelin.json';
 import tanchelm from './tanchelm.json';
 import thomas_becket from './thomas-becket.json';
 import urban_iii from './urban-iii.json';
@@ -69,6 +70,7 @@ export default [
   peter_lombard,
   ralph_flambard,
   robert_molesme,
+  roscelin,
   tanchelm,
   thomas_becket,
   urban_iii,

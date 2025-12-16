@@ -4,6 +4,18 @@ import { Person, Event } from '../types';
 import type { OrthodoxyStatus } from '../types/person';
 import type { EventType } from '../types/event';
 import { getEventColor } from '../utils/eventColors';
+import { storage } from '../utils/storage';
+import {
+  type TimelineFilters,
+  type TimelineItem,
+  type SerializedTimelineFilters,
+  STORAGE_KEY,
+  serializeFilters,
+  deserializeFilters,
+} from './timeline/timelineTypes';
+import { filterPeople, filterEvents } from './timeline/filterUtils';
+import { TimelineFiltersPanel } from './timeline/TimelineFilters';
+import { TimelineControls } from './timeline/TimelineControls';
 
 interface TimelineProps {
   people: Person[];
@@ -13,77 +25,13 @@ interface TimelineProps {
   onYearChange: (year: number) => void;
 }
 
-interface TimelineFilters {
-  showPeople: boolean;
-  showEvents: boolean;
-  orthodoxyStatus: Set<OrthodoxyStatus>;
-  showMartyrs: boolean | null; // null = show all, true = only martyrs, false = only non-martyrs
-  roles: Set<string>;
-  primaryTradition: Set<string>;
-  eventTypes: Set<EventType>;
-  showPopes: boolean | null; // null = show all, true = only popes, false = exclude popes
-  showWithWritings: boolean | null; // null = show all, true = only with writings, false = only without writings
-}
-
-interface TimelineItem {
-  id: string;
-  name: string;
-  startYear: number;
-  endYear: number;
-  type: 'person' | 'event';
-  data: Person | Event;
-  icon?: string;
-}
-
-// Helper type for serialized filters (Sets converted to arrays)
-interface SerializedTimelineFilters {
-  showPeople: boolean;
-  showEvents: boolean;
-  orthodoxyStatus: OrthodoxyStatus[];
-  showMartyrs: boolean | null;
-  roles: string[];
-  primaryTradition: string[];
-  eventTypes: EventType[];
-  showPopes: boolean | null;
-  showWithWritings: boolean | null;
-}
-
-const STORAGE_KEY = 'catholic-history-atlas-filters';
-
-// Helper functions to serialize/deserialize filters
-const serializeFilters = (filters: TimelineFilters): SerializedTimelineFilters => {
-  return {
-    showPeople: filters.showPeople,
-    showEvents: filters.showEvents,
-    orthodoxyStatus: Array.from(filters.orthodoxyStatus),
-    showMartyrs: filters.showMartyrs,
-    roles: Array.from(filters.roles),
-    primaryTradition: Array.from(filters.primaryTradition),
-    eventTypes: Array.from(filters.eventTypes),
-    showPopes: filters.showPopes,
-    showWithWritings: filters.showWithWritings,
-  };
-};
-
-const deserializeFilters = (
-  serialized: SerializedTimelineFilters,
-  defaultRoles: Set<string>,
-  defaultTraditions: Set<string>
-): TimelineFilters => {
-  return {
-    showPeople: serialized.showPeople ?? true,
-    showEvents: serialized.showEvents ?? true,
-    orthodoxyStatus: new Set(serialized.orthodoxyStatus || ['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular']),
-    showMartyrs: serialized.showMartyrs ?? null,
-    roles: new Set(serialized.roles || Array.from(defaultRoles)),
-    primaryTradition: new Set(serialized.primaryTradition || Array.from(defaultTraditions)),
-    eventTypes: new Set(serialized.eventTypes || ['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other']),
-    showPopes: serialized.showPopes ?? null,
-    showWithWritings: serialized.showWithWritings ?? null,
-  };
-};
-
-export function Timeline({ people, events, currentYear, onItemClick, onYearChange }: TimelineProps) {
+export function Timeline({
+  people,
+  events,
+  currentYear,
+  onItemClick,
+  onYearChange,
+}: TimelineProps) {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [imageAspectRatios, setImageAspectRatios] = useState<Map<string, number>>(new Map());
   const [zoomLevel, setZoomLevel] = useState(0); // 0 = full range, higher = more zoomed in
@@ -96,13 +44,13 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
   // Collect all unique roles and traditions from people (needed for defaults)
   const allRoles = useMemo(() => {
     const roles = new Set<string>();
-    people.forEach(p => p.roles?.forEach(r => roles.add(r)));
+    people.forEach((p) => p.roles?.forEach((r) => roles.add(r)));
     return roles;
   }, [people]);
 
   const allTraditions = useMemo(() => {
     const traditions = new Set<string>();
-    people.forEach(p => {
+    people.forEach((p) => {
       if (p.primaryTradition) traditions.add(p.primaryTradition);
     });
     return traditions;
@@ -113,31 +61,41 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     // Collect all unique roles and traditions from people
     const defaultRoles = new Set<string>();
     const defaultTraditions = new Set<string>();
-    people.forEach(p => {
-      p.roles?.forEach(r => defaultRoles.add(r));
+    people.forEach((p) => {
+      p.roles?.forEach((r) => defaultRoles.add(r));
       if (p.primaryTradition) defaultTraditions.add(p.primaryTradition);
     });
 
-    // Try to load from localStorage
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored) {
-        const parsed = JSON.parse(stored) as SerializedTimelineFilters;
-        return deserializeFilters(parsed, defaultRoles, defaultTraditions);
-      }
-    } catch (error) {
-      console.warn('Failed to load filters from localStorage:', error);
+    // Try to load from localStorage using safe storage wrapper
+    const stored = storage.getItem<SerializedTimelineFilters | null>(STORAGE_KEY, null);
+    if (stored) {
+      return deserializeFilters(stored, defaultRoles, defaultTraditions);
     }
 
-    // Return defaults if nothing stored or error occurred
+    // Return defaults if nothing stored
     return {
       showPeople: true,
       showEvents: true,
-      orthodoxyStatus: new Set<OrthodoxyStatus>(['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular']),
+      orthodoxyStatus: new Set<OrthodoxyStatus>([
+        'canonized',
+        'blessed',
+        'orthodox',
+        'schismatic',
+        'heresiarch',
+        'secular',
+      ]),
       showMartyrs: null, // null = show all
       roles: defaultRoles,
       primaryTradition: defaultTraditions,
-      eventTypes: new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other']),
+      eventTypes: new Set<EventType>([
+        'council',
+        'schism',
+        'persecution',
+        'reform',
+        'heresy',
+        'war',
+        'other',
+      ]),
       showPopes: null, // null = show all
       showWithWritings: null, // null = show all
     };
@@ -145,69 +103,13 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
 
   // Save filters to localStorage whenever they change
   useEffect(() => {
-    try {
-      const serialized = serializeFilters(filters);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(serialized));
-    } catch (error) {
-      console.warn('Failed to save filters to localStorage:', error);
-    }
+    const serialized = serializeFilters(filters);
+    storage.setItem(STORAGE_KEY, serialized);
   }, [filters]);
 
-  // Filter people based on filter criteria
-  const filteredPeople = useMemo(() => {
-    if (!filters.showPeople) return [];
-    
-    return people.filter((person) => {
-      // Filter by orthodoxy status
-      if (!filters.orthodoxyStatus.has(person.orthodoxyStatus)) {
-        return false;
-      }
-      
-      // Filter by martyr status
-      if (filters.showMartyrs !== null) {
-        if (filters.showMartyrs && !person.isMartyr) return false;
-        if (!filters.showMartyrs && person.isMartyr) return false;
-      }
-      
-      // Filter by roles (if roles filter is set, person must have at least one selected role)
-      if (filters.roles.size > 0) {
-        if (!person.roles || person.roles.length === 0) return false;
-        const hasSelectedRole = person.roles.some(role => filters.roles.has(role));
-        if (!hasSelectedRole) return false;
-      }
-      
-      // Filter by primary tradition (if tradition filter is set, person must have a selected tradition)
-      if (filters.primaryTradition.size > 0) {
-        if (!person.primaryTradition) return false;
-        if (!filters.primaryTradition.has(person.primaryTradition)) return false;
-      }
-      
-      // Filter by pope status
-      if (filters.showPopes !== null) {
-        const isPope = person.roles?.includes('pope') ?? false;
-        if (filters.showPopes && !isPope) return false;
-        if (!filters.showPopes && isPope) return false;
-      }
-      
-      // Filter by writings
-      if (filters.showWithWritings !== null) {
-        const hasWritings = person.writings && person.writings.length > 0;
-        if (filters.showWithWritings && !hasWritings) return false;
-        if (!filters.showWithWritings && hasWritings) return false;
-      }
-      
-      return true;
-    });
-  }, [people, filters]);
-
-  // Filter events based on filter criteria
-  const filteredEvents = useMemo(() => {
-    if (!filters.showEvents) return [];
-    
-    return events.filter((event) => {
-      return filters.eventTypes.has(event.type);
-    });
-  }, [events, filters]);
+  // Filter people and events based on filter criteria
+  const filteredPeople = useMemo(() => filterPeople(people, filters), [people, filters]);
+  const filteredEvents = useMemo(() => filterEvents(events, filters), [events, filters]);
 
   // Calculate the time range for the timeline
   const { minYear, maxYear, items } = useMemo(() => {
@@ -217,7 +119,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     filteredPeople.forEach((person) => {
       const start = person.birthYear ?? person.deathYear - 80; // Estimate if no birth year
       const end = person.deathYear;
-      
+
       // Determine icon based on roles
       let icon = 'person';
       if (person.isMartyr) {
@@ -253,10 +155,10 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
       });
     });
 
-    const minYear = Math.min(...allItems.map(item => item.startYear));
-    const calculatedMaxYear = Math.max(...allItems.map(item => item.endYear));
+    const minYear = Math.min(...allItems.map((item) => item.startYear));
+    const calculatedMaxYear = Math.max(...allItems.map((item) => item.endYear));
     const maxYear = Math.max(calculatedMaxYear, 2100); // Extend timeline to 2100
-    
+
     return { minYear, maxYear, items: allItems };
   }, [filteredPeople, filteredEvents]);
 
@@ -327,19 +229,19 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
   const visibleRange = useMemo(() => {
     const fullRange = maxYear - minYear;
     if (fullRange === 0) return { start: minYear, end: maxYear };
-    
+
     // Zoom factor: 1 = full range, 0.5 = half range, 0.25 = quarter range, etc.
     const zoomFactor = Math.pow(0.5, zoomLevel);
     const visibleSpan = fullRange * zoomFactor;
-    
+
     // Center the view on current year or viewCenter, defaulting to currentYear
     const center = viewCenter ?? currentYear;
     const start = Math.max(minYear, center - visibleSpan / 2);
     const end = Math.min(maxYear, start + visibleSpan);
-    
+
     // Adjust start if we hit the max boundary
     const adjustedStart = Math.max(minYear, end - visibleSpan);
-    
+
     return { start: adjustedStart, end };
   }, [minYear, maxYear, zoomLevel, viewCenter, currentYear]);
 
@@ -366,14 +268,16 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
       const delta = e.deltaY > 0 ? -0.2 : 0.2;
       const newZoom = Math.max(0, Math.min(5, zoomLevel + delta));
       setZoomLevel(newZoom);
-      
+
       // Calculate year from mouse position
       const rect = svgElement.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const range = visibleRange.end - visibleRange.start;
       const relativeX = x - padding;
-      const year = Math.round(visibleRange.start + (relativeX / (timelineWidth - 2 * padding)) * range);
-      
+      const year = Math.round(
+        visibleRange.start + (relativeX / (timelineWidth - 2 * padding)) * range
+      );
+
       if (viewCenter === null && newZoom > 0) {
         // Center zoom on the mouse position
         setViewCenter(year);
@@ -496,12 +400,14 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
 
   const handleMouseMove = (e: React.MouseEvent<SVGSVGElement>) => {
     if (!isDragging || !dragStart || zoomLevel === 0) return;
-    
+
     const deltaX = Math.abs(e.nativeEvent.offsetX - dragStart.x);
     // Only consider it a drag if mouse moved more than 5 pixels
     if (deltaX > 5) {
       setHasDragged(true);
-      const deltaYears = ((e.nativeEvent.offsetX - dragStart.x) / (timelineWidth - 2 * padding)) * (visibleRange.end - visibleRange.start);
+      const deltaYears =
+        ((e.nativeEvent.offsetX - dragStart.x) / (timelineWidth - 2 * padding)) *
+        (visibleRange.end - visibleRange.start);
       const newYear = dragStart.year - deltaYears;
       const visibleSpan = visibleRange.end - visibleRange.start;
       const newCenter = Math.max(
@@ -516,7 +422,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     const wasDragging = isDragging;
     setIsDragging(false);
     setDragStart(null);
-    
+
     // If we were dragging, prevent the click handler from firing
     if (wasDragging && hasDragged) {
       e.preventDefault();
@@ -550,88 +456,26 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     onYearChange(year);
   };
 
-  // Get all unique roles and traditions for filter options (as arrays for UI)
-  const allRolesArray = useMemo(() => {
-    return Array.from(allRoles).sort();
-  }, [allRoles]);
-
-  const allTraditionsArray = useMemo(() => {
-    return Array.from(allTraditions).sort();
-  }, [allTraditions]);
-
-  const toggleOrthodoxyStatus = (status: OrthodoxyStatus) => {
-    setFilters(prev => {
-      const newSet = new Set(prev.orthodoxyStatus);
-      if (newSet.has(status)) {
-        newSet.delete(status);
-      } else {
-        newSet.add(status);
-      }
-      return { ...prev, orthodoxyStatus: newSet };
-    });
-  };
-
-  const toggleRole = (role: string) => {
-    setFilters(prev => {
-      const newSet = new Set(prev.roles);
-      if (newSet.has(role)) {
-        newSet.delete(role);
-      } else {
-        newSet.add(role);
-      }
-      return { ...prev, roles: newSet };
-    });
-  };
-
-  const toggleTradition = (tradition: string) => {
-    setFilters(prev => {
-      const newSet = new Set(prev.primaryTradition);
-      if (newSet.has(tradition)) {
-        newSet.delete(tradition);
-      } else {
-        newSet.add(tradition);
-      }
-      return { ...prev, primaryTradition: newSet };
-    });
-  };
-
-  const toggleEventType = (type: EventType) => {
-    setFilters(prev => {
-      const newSet = new Set(prev.eventTypes);
-      if (newSet.has(type)) {
-        newSet.delete(type);
-      } else {
-        newSet.add(type);
-      }
-      return { ...prev, eventTypes: newSet };
-    });
-  };
-
-  const resetFilters = () => {
-    setFilters({
-      showPeople: true,
-      showEvents: true,
-      orthodoxyStatus: new Set<OrthodoxyStatus>(['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular']),
-      showMartyrs: null,
-      roles: new Set(allRoles),
-      primaryTradition: new Set(allTraditions),
-      eventTypes: new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other']),
-      showPopes: null,
-      showWithWritings: null,
-    });
-    // Clear localStorage when resetting
-    try {
-      localStorage.removeItem(STORAGE_KEY);
-    } catch (error) {
-      console.warn('Failed to clear filters from localStorage:', error);
-    }
-  };
-
   // Calculate number of active filters (filters that differ from defaults)
   const activeFilterCount = useMemo(() => {
     let count = 0;
-    const defaultOrthodoxyStatus = new Set<OrthodoxyStatus>(['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular']);
-    const defaultEventTypes = new Set<EventType>(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other']);
+    const defaultOrthodoxyStatus = new Set<OrthodoxyStatus>([
+      'canonized',
+      'blessed',
+      'orthodox',
+      'schismatic',
+      'heresiarch',
+      'secular',
+    ]);
+    const defaultEventTypes = new Set<EventType>([
+      'council',
+      'schism',
+      'persecution',
+      'reform',
+      'heresy',
+      'war',
+      'other',
+    ]);
 
     // Check showPeople
     if (!filters.showPeople) count++;
@@ -640,8 +484,10 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     if (!filters.showEvents) count++;
 
     // Check orthodoxyStatus (if not all 6 are selected)
-    if (filters.orthodoxyStatus.size !== defaultOrthodoxyStatus.size ||
-        !Array.from(defaultOrthodoxyStatus).every(s => filters.orthodoxyStatus.has(s))) {
+    if (
+      filters.orthodoxyStatus.size !== defaultOrthodoxyStatus.size ||
+      !Array.from(defaultOrthodoxyStatus).every((s) => filters.orthodoxyStatus.has(s))
+    ) {
       count++;
     }
 
@@ -649,20 +495,26 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
     if (filters.showMartyrs !== null) count++;
 
     // Check roles (if not all roles are selected)
-    if (filters.roles.size !== allRoles.size ||
-        !Array.from(allRoles).every(r => filters.roles.has(r))) {
+    if (
+      filters.roles.size !== allRoles.size ||
+      !Array.from(allRoles).every((r) => filters.roles.has(r))
+    ) {
       count++;
     }
 
     // Check primaryTradition (if not all traditions are selected)
-    if (filters.primaryTradition.size !== allTraditions.size ||
-        !Array.from(allTraditions).every(t => filters.primaryTradition.has(t))) {
+    if (
+      filters.primaryTradition.size !== allTraditions.size ||
+      !Array.from(allTraditions).every((t) => filters.primaryTradition.has(t))
+    ) {
       count++;
     }
 
     // Check eventTypes (if not all 7 are selected)
-    if (filters.eventTypes.size !== defaultEventTypes.size ||
-        !Array.from(defaultEventTypes).every(t => filters.eventTypes.has(t))) {
+    if (
+      filters.eventTypes.size !== defaultEventTypes.size ||
+      !Array.from(defaultEventTypes).every((t) => filters.eventTypes.has(t))
+    ) {
       count++;
     }
 
@@ -676,154 +528,32 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
   }, [filters, allRoles, allTraditions]);
 
   return (
-    <div 
+    <div
       ref={containerRef}
-      style={{ 
-        width: '100%', 
-        height: '100%', 
-        minHeight: '400px', 
+      style={{
+        width: '100%',
+        height: '100%',
+        minHeight: '400px',
         position: 'relative',
         backgroundColor: '#1a1a1a',
         overflow: 'hidden',
       }}
     >
-      {/* Zoom/Pan Controls Overlay - Top Left */}
-      <div style={{
-        position: 'absolute',
-        top: '10px',
-        left: '10px',
-        backgroundColor: 'rgba(26, 26, 26, 0.9)',
-        padding: '0.75rem',
-        borderRadius: '8px',
-        zIndex: 1000,
-        display: 'flex',
-        gap: '0.5rem',
-        alignItems: 'center',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
-      }}>
-        {/* Pan controls (always visible, disabled at 100%) */}
-        <button
-          onClick={handlePanLeft}
-          disabled={zoomLevel === 0}
-          style={{
-            padding: '0.5rem 0.75rem',
-            backgroundColor: zoomLevel === 0 ? '#444' : '#4a9eff',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
-            fontSize: '14px',
-            opacity: zoomLevel === 0 ? 0.5 : 1,
-          }}
-          title="Pan left (earlier)"
-        >
-          ←
-        </button>
-        <button
-          onClick={handlePanRight}
-          disabled={zoomLevel === 0}
-          style={{
-            padding: '0.5rem 0.75rem',
-            backgroundColor: zoomLevel === 0 ? '#444' : '#4a9eff',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
-            fontSize: '14px',
-            opacity: zoomLevel === 0 ? 0.5 : 1,
-          }}
-          title="Pan right (later)"
-        >
-          →
-        </button>
-        <div style={{ width: '1px', height: '20px', backgroundColor: '#666', margin: '0 0.25rem' }}></div>
-        <button
-          onClick={handleZoomOut}
-          disabled={zoomLevel === 0}
-          style={{
-            padding: '0.5rem 0.75rem',
-            backgroundColor: zoomLevel === 0 ? '#444' : '#4a9eff',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
-            fontSize: '14px',
-          }}
-          title="Zoom out"
-        >
-          −
-        </button>
-        {isEditingZoom ? (
-          <input
-            type="number"
-            value={zoomInputValue}
-            onChange={handleZoomInputChange}
-            onBlur={handleZoomInputBlur}
-            onKeyDown={handleZoomInputKeyDown}
-            min={100}
-            max={3200}
-            style={{
-              fontSize: '14px',
-              textAlign: 'center',
-              width: '60px',
-              backgroundColor: '#2a2a2a',
-              color: '#fff',
-              border: '2px solid #4a9eff',
-              borderRadius: '4px',
-              padding: '0.25rem',
-            }}
-            autoFocus
-          />
-        ) : (
-          <span
-            onClick={handleZoomInputClick}
-            style={{
-              color: '#aaa',
-              fontSize: '14px',
-              minWidth: '60px',
-              textAlign: 'center',
-              cursor: 'pointer',
-            }}
-            title="Click to enter a specific zoom level (100-3200%)"
-          >
-            {Math.round(Math.pow(2, zoomLevel) * 100)}%
-          </span>
-        )}
-        <button
-          onClick={handleZoomIn}
-          disabled={zoomLevel >= 5}
-          style={{
-            padding: '0.5rem 0.75rem',
-            backgroundColor: zoomLevel >= 5 ? '#444' : '#4a9eff',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: zoomLevel >= 5 ? 'not-allowed' : 'pointer',
-            fontSize: '14px',
-          }}
-          title="Zoom in"
-        >
-          +
-        </button>
-        <button
-          onClick={handleZoomReset}
-          disabled={zoomLevel === 0}
-          style={{
-            padding: '0.5rem 0.75rem',
-            backgroundColor: zoomLevel === 0 ? '#444' : '#666',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: zoomLevel === 0 ? 'not-allowed' : 'pointer',
-            fontSize: '12px',
-            marginLeft: '0.25rem',
-            opacity: zoomLevel === 0 ? 0.5 : 1,
-          }}
-          title="Reset zoom"
-        >
-          Reset
-        </button>
-      </div>
+      {/* Zoom/Pan Controls */}
+      <TimelineControls
+        zoomLevel={zoomLevel}
+        isEditingZoom={isEditingZoom}
+        zoomInputValue={zoomInputValue}
+        handlePanLeft={handlePanLeft}
+        handlePanRight={handlePanRight}
+        handleZoomOut={handleZoomOut}
+        handleZoomIn={handleZoomIn}
+        handleZoomReset={handleZoomReset}
+        handleZoomInputClick={handleZoomInputClick}
+        handleZoomInputChange={handleZoomInputChange}
+        handleZoomInputBlur={handleZoomInputBlur}
+        handleZoomInputKeyDown={handleZoomInputKeyDown}
+      />
 
       {/* Filter Toggle Button - Top Right */}
       <div
@@ -875,277 +605,51 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
         )}
       </div>
 
-      {/* Filter Panel Overlay - Top Right (when open) */}
-      {showFilters && (
-        <div style={{
-          position: 'absolute',
-          top: '50px',
-          right: '10px',
-          width: '400px',
-          maxHeight: 'calc(100vh - 100px)',
-          padding: '1.5rem',
-          backgroundColor: 'rgba(26, 26, 26, 0.95)',
-          borderRadius: '8px',
-          zIndex: 1000,
-          color: '#fff',
-          fontSize: '14px',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.5)',
-          overflowY: 'auto',
-        }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-            <h3 style={{ margin: 0, color: '#fff', fontSize: '16px' }}>Filters</h3>
-            <button
-              onClick={resetFilters}
-              style={{
-                padding: '0.4rem 0.8rem',
-                backgroundColor: '#666',
-                color: '#fff',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                fontSize: '12px',
-              }}
-            >
-              Reset All
-            </button>
-          </div>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            {/* Show/Hide Toggles */}
-            <div>
-              <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Show/Hide</div>
-              <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                <input
-                  type="checkbox"
-                  checked={filters.showPeople}
-                  onChange={(e) => setFilters(prev => ({ ...prev, showPeople: e.target.checked }))}
-                />
-                <span>People</span>
-              </label>
-              <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
-                <input
-                  type="checkbox"
-                  checked={filters.showEvents}
-                  onChange={(e) => setFilters(prev => ({ ...prev, showEvents: e.target.checked }))}
-                />
-                <span>Events</span>
-              </label>
-            </div>
-
-            {/* Orthodoxy Status */}
-            {filters.showPeople && (
-              <div>
-                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Orthodoxy Status</div>
-                {(['canonized', 'blessed', 'orthodox', 'schismatic', 'heresiarch', 'secular'] as OrthodoxyStatus[]).map(status => (
-                  <label key={status} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                    <input
-                      type="checkbox"
-                      checked={filters.orthodoxyStatus.has(status)}
-                      onChange={() => toggleOrthodoxyStatus(status)}
-                    />
-                    <span style={{ textTransform: 'capitalize' }}>{status}</span>
-                  </label>
-                ))}
-              </div>
-            )}
-
-            {/* Martyr Filter */}
-            {filters.showPeople && (
-              <div>
-                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Martyr Status</div>
-                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                  <input
-                    type="radio"
-                    name="martyr"
-                    checked={filters.showMartyrs === null}
-                    onChange={() => setFilters(prev => ({ ...prev, showMartyrs: null }))}
-                  />
-                  <span>All</span>
-                </label>
-                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                  <input
-                    type="radio"
-                    name="martyr"
-                    checked={filters.showMartyrs === true}
-                    onChange={() => setFilters(prev => ({ ...prev, showMartyrs: true }))}
-                  />
-                  <span>Martyrs Only</span>
-                </label>
-                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
-                  <input
-                    type="radio"
-                    name="martyr"
-                    checked={filters.showMartyrs === false}
-                    onChange={() => setFilters(prev => ({ ...prev, showMartyrs: false }))}
-                  />
-                  <span>Non-Martyrs Only</span>
-                </label>
-              </div>
-            )}
-
-            {/* Pope Filter */}
-            {filters.showPeople && (
-              <div>
-                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Popes</div>
-                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                  <input
-                    type="radio"
-                    name="popes"
-                    checked={filters.showPopes === null}
-                    onChange={() => setFilters(prev => ({ ...prev, showPopes: null }))}
-                  />
-                  <span>All</span>
-                </label>
-                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                  <input
-                    type="radio"
-                    name="popes"
-                    checked={filters.showPopes === true}
-                    onChange={() => setFilters(prev => ({ ...prev, showPopes: true }))}
-                  />
-                  <span>Popes Only</span>
-                </label>
-                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
-                  <input
-                    type="radio"
-                    name="popes"
-                    checked={filters.showPopes === false}
-                    onChange={() => setFilters(prev => ({ ...prev, showPopes: false }))}
-                  />
-                  <span>Exclude Popes</span>
-                </label>
-              </div>
-            )}
-
-            {/* Writings Filter */}
-            {filters.showPeople && (
-              <div>
-                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Extant Writings</div>
-                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                  <input
-                    type="radio"
-                    name="writings"
-                    checked={filters.showWithWritings === null}
-                    onChange={() => setFilters(prev => ({ ...prev, showWithWritings: null }))}
-                  />
-                  <span>All</span>
-                </label>
-                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                  <input
-                    type="radio"
-                    name="writings"
-                    checked={filters.showWithWritings === true}
-                    onChange={() => setFilters(prev => ({ ...prev, showWithWritings: true }))}
-                  />
-                  <span>With Writings Only</span>
-                </label>
-                <label style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
-                  <input
-                    type="radio"
-                    name="writings"
-                    checked={filters.showWithWritings === false}
-                    onChange={() => setFilters(prev => ({ ...prev, showWithWritings: false }))}
-                  />
-                  <span>Without Writings Only</span>
-                </label>
-              </div>
-            )}
-
-            {/* Roles */}
-            {filters.showPeople && allRolesArray.length > 0 && (
-              <div>
-                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Roles</div>
-                <div style={{ maxHeight: '150px', overflowY: 'auto' }}>
-                  {allRolesArray.map(role => (
-                    <label key={role} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                      <input
-                        type="checkbox"
-                        checked={filters.roles.has(role)}
-                        onChange={() => toggleRole(role)}
-                      />
-                      <span>{role}</span>
-                    </label>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Primary Tradition */}
-            {filters.showPeople && allTraditionsArray.length > 0 && (
-              <div>
-                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Primary Tradition</div>
-                {allTraditionsArray.map(tradition => (
-                  <label key={tradition} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                    <input
-                      type="checkbox"
-                      checked={filters.primaryTradition.has(tradition)}
-                      onChange={() => toggleTradition(tradition)}
-                    />
-                    <span>{tradition}</span>
-                  </label>
-                ))}
-              </div>
-            )}
-
-            {/* Event Types */}
-            {filters.showEvents && (
-              <div>
-                <div style={{ marginBottom: '0.75rem', fontWeight: 'bold', fontSize: '14px' }}>Event Types</div>
-                {(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other'] as EventType[]).map(type => {
-                  const color = getEventColor(type);
-                  return (
-                    <label key={type} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem', cursor: 'pointer' }}>
-                      <input
-                        type="checkbox"
-                        checked={filters.eventTypes.has(type)}
-                        onChange={() => toggleEventType(type)}
-                      />
-                      <div
-                        style={{
-                          width: '16px',
-                          height: '16px',
-                          backgroundColor: color.fill,
-                          border: `1px solid ${color.stroke}`,
-                          borderRadius: '3px',
-                          flexShrink: 0,
-                        }}
-                        title={color.label}
-                      />
-                      <span style={{ textTransform: 'capitalize' }}>{type}</span>
-                    </label>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-
-          {/* Active Filter Summary */}
-          <div style={{ marginTop: '1rem', paddingTop: '1rem', borderTop: '1px solid #444', fontSize: '12px', color: '#aaa' }}>
-            Showing: {filteredPeople.length} people, {filteredEvents.length} events
-          </div>
-        </div>
-      )}
+      {/* Filter Panel */}
+      <TimelineFiltersPanel
+        filters={filters}
+        setFilters={setFilters}
+        showFilters={showFilters}
+        filteredPeople={filteredPeople}
+        filteredEvents={filteredEvents}
+        allRoles={allRoles}
+        allTraditions={allTraditions}
+      />
 
       {/* Event Type Legend - Bottom Right */}
       {filters.showEvents && (
-        <div style={{
-          position: 'absolute',
-          bottom: '10px',
-          right: '10px',
-          padding: '0.75rem',
-          backgroundColor: 'rgba(26, 26, 26, 0.95)',
-          borderRadius: '8px',
-          color: '#fff',
-          fontSize: '12px',
-          zIndex: 1000,
-          boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
-          border: '1px solid #444',
-        }}>
-          <div style={{ marginBottom: '0.5rem', fontWeight: 'bold', fontSize: '13px', color: '#fff' }}>
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '10px',
+            right: '10px',
+            padding: '0.75rem',
+            backgroundColor: 'rgba(26, 26, 26, 0.95)',
+            borderRadius: '8px',
+            color: '#fff',
+            fontSize: '12px',
+            zIndex: 1000,
+            boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+            border: '1px solid #444',
+          }}
+        >
+          <div
+            style={{ marginBottom: '0.5rem', fontWeight: 'bold', fontSize: '13px', color: '#fff' }}
+          >
             Event Types
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-            {(['council', 'schism', 'persecution', 'reform', 'heresy', 'war', 'other'] as EventType[]).map(type => {
+            {(
+              [
+                'council',
+                'schism',
+                'persecution',
+                'reform',
+                'heresy',
+                'war',
+                'other',
+              ] as EventType[]
+            ).map((type) => {
               const color = getEventColor(type);
               return (
                 <div key={type} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -1159,7 +663,9 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                       flexShrink: 0,
                     }}
                   />
-                  <span style={{ textTransform: 'capitalize', fontSize: '11px' }}>{color.label}</span>
+                  <span style={{ textTransform: 'capitalize', fontSize: '11px' }}>
+                    {color.label}
+                  </span>
                 </div>
               );
             })}
@@ -1169,43 +675,49 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
 
       {/* View Range Indicator - Bottom Left (when zoomed) */}
       {zoomLevel > 0 && (
-        <div style={{
-          position: 'absolute',
-          bottom: '10px',
-          left: '10px',
-          padding: '0.75rem',
-          backgroundColor: 'rgba(26, 26, 26, 0.9)',
-          borderRadius: '8px',
-          color: '#aaa',
-          fontSize: '14px',
-          zIndex: 1000,
-          boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
-        }}>
-          Viewing: {(() => {
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '10px',
+            left: '10px',
+            padding: '0.75rem',
+            backgroundColor: 'rgba(26, 26, 26, 0.9)',
+            borderRadius: '8px',
+            color: '#aaa',
+            fontSize: '14px',
+            zIndex: 1000,
+            boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+          }}
+        >
+          Viewing:{' '}
+          {(() => {
             const start = Math.round(visibleRange.start);
             const end = Math.round(visibleRange.end);
-            const formatYear = (y: number) => y < 0 ? `${Math.abs(y)} BC` : y === 0 ? '1 BC' : `${y} AD`;
+            const formatYear = (y: number) =>
+              y < 0 ? `${Math.abs(y)} BC` : y === 0 ? '1 BC' : `${y} AD`;
             return `${formatYear(start)} – ${formatYear(end)}`;
           })()}
           ({Math.round(visibleRange.end - visibleRange.start)} years)
         </div>
       )}
-      
+
       {/* Timeline SVG Container */}
-      <div style={{ 
-        width: '100%',
-        height: '100%',
-        position: 'relative',
-      }}>
+      <div
+        style={{
+          width: '100%',
+          height: '100%',
+          position: 'relative',
+        }}
+      >
         <svg
           ref={svgRef}
           width="100%"
           height="100%"
           viewBox={`0 0 ${timelineWidth} ${timelineHeight}`}
           preserveAspectRatio="xMidYMid meet"
-          style={{ 
+          style={{
             display: 'block',
-            cursor: isDragging ? 'grabbing' : zoomLevel > 0 ? 'grab' : 'pointer'
+            cursor: isDragging ? 'grabbing' : zoomLevel > 0 ? 'grab' : 'pointer',
           }}
           onClick={handleTimelineClick}
           onWheel={handleWheel}
@@ -1220,17 +732,35 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
           {/* Definitions for patterns and gradients */}
           <defs>
             {/* Martyr pattern: gold and red diagonal stripes */}
-            <pattern id="martyrPattern" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(45)">
+            <pattern
+              id="martyrPattern"
+              patternUnits="userSpaceOnUse"
+              width="12"
+              height="12"
+              patternTransform="rotate(45)"
+            >
               <rect width="6" height="12" fill="#d4af37" />
               <rect x="6" width="6" height="12" fill="#a11b1b" />
             </pattern>
             {/* Schismatic pattern: black and neon red diagonal stripes */}
-            <pattern id="schismaticPattern" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(45)">
+            <pattern
+              id="schismaticPattern"
+              patternUnits="userSpaceOnUse"
+              width="12"
+              height="12"
+              patternTransform="rotate(45)"
+            >
               <rect width="6" height="12" fill="#000000" />
               <rect x="6" width="6" height="12" fill="#ff073a" />
             </pattern>
             {/* Heresiarch pattern: black and neon green diagonal stripes */}
-            <pattern id="heresiarchPattern" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(45)">
+            <pattern
+              id="heresiarchPattern"
+              patternUnits="userSpaceOnUse"
+              width="12"
+              height="12"
+              patternTransform="rotate(45)"
+            >
               <rect width="6" height="12" fill="#000000" />
               <rect x="6" width="6" height="12" fill="#39ff14" />
             </pattern>
@@ -1255,12 +785,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             stroke="#4a9eff"
             strokeWidth="3"
           />
-          <circle
-            cx={getXPosition(currentYear)}
-            cy={timelineHeight / 2}
-            r="8"
-            fill="#4a9eff"
-          />
+          <circle cx={getXPosition(currentYear)} cy={timelineHeight / 2} r="8" fill="#4a9eff" />
           <text
             x={getXPosition(currentYear)}
             y={timelineHeight / 2 - 30}
@@ -1269,7 +794,11 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             fontSize="14"
             fontWeight="bold"
           >
-            {currentYear < 0 ? `${Math.abs(currentYear)} BC` : currentYear === 0 ? '1 BC' : `${currentYear} AD`}
+            {currentYear < 0
+              ? `${Math.abs(currentYear)} BC`
+              : currentYear === 0
+                ? '1 BC'
+                : `${currentYear} AD`}
           </text>
 
           {/* Year markers */}
@@ -1318,70 +847,73 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
 
             // Calculate vertical positions to avoid overlaps
             const itemPositions = new Map<string, number>();
-            
+
             // Separate popes, events, and other people
-            const popes = sortedItems.filter(item => 
-              item.type === 'person' && (item.data as Person).roles?.includes('pope')
+            const popes = sortedItems.filter(
+              (item) => item.type === 'person' && (item.data as Person).roles?.includes('pope')
             );
-            const events = sortedItems.filter(item => item.type === 'event');
-            const otherPeople = sortedItems.filter(item => 
-              item.type === 'person' && !(item.data as Person).roles?.includes('pope')
+            const events = sortedItems.filter((item) => item.type === 'event');
+            const otherPeople = sortedItems.filter(
+              (item) => item.type === 'person' && !(item.data as Person).roles?.includes('pope')
             );
-            
+
             // Define 3 rows above timeline (including pope row) and 3 below (including events row)
             const timelineCenter = timelineHeight / 2;
-            
+
             // 3 rows above timeline: closest, middle, furthest (popes on top)
-            const row1Above = timelineCenter - 50;  // Row 1 above (closest to timeline)
+            const row1Above = timelineCenter - 50; // Row 1 above (closest to timeline)
             const row2Above = timelineCenter - 100; // Row 2 above (middle)
             const row3Above = timelineCenter - 150; // Row 3 above (furthest) - popes go here
-            
+
             // 3 rows below timeline: closest, middle, furthest (events on bottom)
-            const row1Below = timelineCenter + 50;  // Row 1 below (closest to timeline)
+            const row1Below = timelineCenter + 50; // Row 1 below (closest to timeline)
             const row2Below = timelineCenter + 100; // Row 2 below (middle)
             const row3Below = timelineCenter + 150; // Row 3 below (furthest) - events go here
-            
+
             // Place all popes on row 3 above (furthest row above timeline - top)
             popes.forEach((item) => {
               itemPositions.set(item.id, row3Above);
             });
-            
+
             // Place all events on row 3 below (furthest row below timeline - bottom)
             events.forEach((item) => {
               itemPositions.set(item.id, row3Below);
             });
-            
+
             // For other people, use the remaining 4 rows (2 above, 2 below)
             const availableRows = [
-              row1Above,  // Row 1 above
-              row2Above,  // Row 2 above (middle)
-              row1Below,  // Row 1 below
-              row2Below,  // Row 2 below (middle)
+              row1Above, // Row 1 above
+              row2Above, // Row 2 above (middle)
+              row1Below, // Row 1 below
+              row2Below, // Row 2 below (middle)
             ];
             const allRows = availableRows;
-            
+
             // Sort items by start year for consistent assignment
             const sortedOtherPeople = [...otherPeople].sort((a, b) => a.startYear - b.startYear);
-            
+
             // Track which items are assigned to which row
-            const rowAssignments = new Map<number, Array<{ item: TimelineItem; startX: number; endX: number }>>();
-            allRows.forEach(rowY => rowAssignments.set(rowY, []));
-            
+            const rowAssignments = new Map<
+              number,
+              Array<{ item: TimelineItem; startX: number; endX: number }>
+            >();
+            allRows.forEach((rowY) => rowAssignments.set(rowY, []));
+
             // Assign items to rows, avoiding horizontal overlaps
             sortedOtherPeople.forEach((item) => {
               const startX = getXPosition(item.startYear);
               const endX = getXPosition(item.endYear);
-              
+
               // Find the best row that doesn't have overlapping items
               let bestRow: number | null = null;
               let minOverlaps = Infinity;
-              
+
               for (const rowY of allRows) {
                 // No need to skip - we've already excluded pope and event rows from allRows
-                
+
                 const itemsInRow = rowAssignments.get(rowY)!;
                 let overlapCount = 0;
-                
+
                 // Check for horizontal overlaps with items already in this row
                 for (const existing of itemsInRow) {
                   const horizontalOverlap = !(endX < existing.startX || startX > existing.endX);
@@ -1389,14 +921,19 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                     overlapCount++;
                   }
                 }
-                
+
                 // Prefer rows with fewer overlaps, and prefer rows closer to timeline center
-                if (overlapCount < minOverlaps || (overlapCount === minOverlaps && (bestRow === null || Math.abs(rowY - timelineCenter) < Math.abs(bestRow - timelineCenter)))) {
+                if (
+                  overlapCount < minOverlaps ||
+                  (overlapCount === minOverlaps &&
+                    (bestRow === null ||
+                      Math.abs(rowY - timelineCenter) < Math.abs(bestRow - timelineCenter)))
+                ) {
                   minOverlaps = overlapCount;
                   bestRow = rowY;
                 }
               }
-              
+
               // Assign to best row (or first available if all have overlaps)
               if (bestRow !== null) {
                 rowAssignments.get(bestRow)!.push({ item, startX, endX });
@@ -1410,7 +947,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             });
 
             // Filter items to only show those in the visible range
-            const visibleItems = sortedItems.filter(item => {
+            const visibleItems = sortedItems.filter((item) => {
               return !(item.endYear < visibleRange.start || item.startYear > visibleRange.end);
             });
 
@@ -1423,43 +960,260 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
               const isActive = currentYear >= item.startYear && currentYear <= item.endYear;
               const y = itemPositions.get(item.id) || timelineHeight / 2;
 
-            if (item.type === 'event') {
-              const event = item.data as Event;
-              
-              // Render councils with images like people
-              if (event.type === 'council' && event.imageUrl) {
+              if (item.type === 'event') {
+                const event = item.data as Event;
+
+                // Render councils with images like people
+                if (event.type === 'council' && event.imageUrl) {
+                  const baseImageSize = isActive ? portraitSize + 4 : portraitSize;
+                  const aspectRatio = imageAspectRatios.get(item.id) || 1;
+
+                  // Calculate image dimensions based on aspect ratio
+                  let imageWidth = baseImageSize;
+                  let imageHeight = baseImageSize;
+                  if (aspectRatio > 1) {
+                    imageHeight = baseImageSize / aspectRatio;
+                  } else if (aspectRatio < 1) {
+                    imageWidth = baseImageSize * aspectRatio;
+                  }
+
+                  const framePadding = 6;
+                  const frameWidth = imageWidth + framePadding * 2;
+                  const frameHeight = imageHeight + framePadding * 2;
+
+                  return (
+                    <g key={item.id}>
+                      {/* Line connecting to timeline - events use center */}
+                      <line
+                        x1={centerX}
+                        y1={timelineHeight / 2}
+                        x2={centerX}
+                        y2={y}
+                        stroke={isActive ? '#4a9eff' : '#666'}
+                        strokeWidth={isActive ? 2 : 1}
+                        strokeDasharray={isActive ? '0' : '3,3'}
+                      />
+
+                      {/* Council portrait with frame */}
+                      <g
+                        transform={`translate(${centerX}, ${y})`}
+                        onClick={() => handleItemClick(item)}
+                        onMouseEnter={() => setHoveredItem(item.id)}
+                        onMouseLeave={() => setHoveredItem(null)}
+                        style={{ cursor: 'pointer' }}
+                      >
+                        {/* Define clip path for this item */}
+                        <defs>
+                          <clipPath id={`clip-event-${item.id}`}>
+                            <rect
+                              x={-imageWidth / 2}
+                              y={-imageHeight / 2}
+                              width={imageWidth}
+                              height={imageHeight}
+                              rx="4"
+                            />
+                          </clipPath>
+                        </defs>
+
+                        {/* Frame border - color based on event type */}
+                        <rect
+                          x={-frameWidth / 2}
+                          y={-frameHeight / 2}
+                          width={frameWidth}
+                          height={frameHeight}
+                          rx="8"
+                          fill="none"
+                          stroke={getEventColor(event.type).fill}
+                          strokeWidth="3"
+                          style={{
+                            filter: `drop-shadow(0 0 6px ${getEventColor(event.type).fill}80)`,
+                          }}
+                        />
+
+                        {/* Council image with clipping */}
+                        <g clipPath={`url(#clip-event-${item.id})`}>
+                          <image
+                            href={event.imageUrl}
+                            x={-imageWidth / 2}
+                            y={-imageHeight / 2}
+                            width={imageWidth}
+                            height={imageHeight}
+                            onLoad={() => {
+                              // Calculate aspect ratio when image loads
+                              const tempImg = new Image();
+                              tempImg.onload = () => {
+                                const ratio = tempImg.naturalWidth / tempImg.naturalHeight;
+                                setImageAspectRatios((prev) => {
+                                  const newMap = new Map(prev);
+                                  newMap.set(item.id, ratio);
+                                  return newMap;
+                                });
+                              };
+                              tempImg.src = event.imageUrl || '';
+                            }}
+                            onError={(e) => {
+                              // Fallback to placeholder if image fails
+                              const target = e.target as SVGImageElement;
+                              const initials = event.name
+                                .split(' ')
+                                .map((n) => n[0])
+                                .filter(Boolean)
+                                .slice(-2)
+                                .join('');
+                              target.href.baseVal = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="${baseImageSize}" height="${baseImageSize}"><rect width="${baseImageSize}" height="${baseImageSize}" fill="#ffd700"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#000" font-family="Arial" font-size="${baseImageSize / 2}">${initials}</text></svg>`)}`;
+                            }}
+                          />
+                        </g>
+
+                        {/* Star overlay for council */}
+                        <text
+                          x="0"
+                          y="0"
+                          textAnchor="middle"
+                          dominantBaseline="middle"
+                          fill="#fff"
+                          fontSize={frameWidth / 2}
+                          fontWeight="bold"
+                          style={{
+                            textShadow: '0 0 4px rgba(0,0,0,0.8)',
+                            pointerEvents: 'none',
+                          }}
+                        >
+                          ★
+                        </text>
+
+                        {/* Active indicator - use ellipse for non-square frames */}
+                        {isActive && (
+                          <ellipse
+                            cx="0"
+                            cy="0"
+                            rx={frameWidth / 2 + 2}
+                            ry={frameHeight / 2 + 2}
+                            fill="none"
+                            stroke="#4a9eff"
+                            strokeWidth="2"
+                            opacity="0.6"
+                          />
+                        )}
+                      </g>
+
+                      {hoveredItem === item.id && (
+                        <g>
+                          <rect
+                            x={connectX - 80}
+                            y={y - 50}
+                            width="160"
+                            height="35"
+                            fill="#000"
+                            fillOpacity="0.9"
+                            rx="4"
+                          />
+                          <text
+                            x={connectX}
+                            y={y - 30}
+                            textAnchor="middle"
+                            fill="#fff"
+                            fontSize="12"
+                            fontWeight="bold"
+                          >
+                            {item.name}
+                          </text>
+                          <text
+                            x={connectX}
+                            y={y - 15}
+                            textAnchor="middle"
+                            fill="#aaa"
+                            fontSize="11"
+                          >
+                            {item.startYear}–{item.endYear}
+                          </text>
+                        </g>
+                      )}
+                    </g>
+                  );
+                }
+
+                // Render other events as bars
+                const width = Math.max(20, endX - startX);
+                const eventColor = getEventColor(event.type);
+
+                return (
+                  <g key={item.id}>
+                    <rect
+                      x={startX}
+                      y={y - 10}
+                      width={width}
+                      height="20"
+                      fill={eventColor.fill}
+                      stroke={isActive ? '#4a9eff' : eventColor.stroke}
+                      strokeWidth={isActive ? 2 : 1}
+                      rx="4"
+                      onClick={() => handleItemClick(item)}
+                      onMouseEnter={() => setHoveredItem(item.id)}
+                      onMouseLeave={() => setHoveredItem(null)}
+                      style={{ cursor: 'pointer' }}
+                    />
+                    {hoveredItem === item.id && (
+                      <g>
+                        <rect
+                          x={centerX - 60}
+                          y={y - 40}
+                          width="120"
+                          height="25"
+                          fill="#000"
+                          fillOpacity="0.8"
+                          rx="4"
+                        />
+                        <text x={centerX} y={y - 22} textAnchor="middle" fill="#fff" fontSize="12">
+                          {item.name} ({item.startYear})
+                        </text>
+                      </g>
+                    )}
+                  </g>
+                );
+              } else {
+                // Render person as portrait with frame
+                const person = item.data as Person;
                 const baseImageSize = isActive ? portraitSize + 4 : portraitSize;
+
+                // Get aspect ratio for this image (default to 1:1 if not loaded yet)
                 const aspectRatio = imageAspectRatios.get(item.id) || 1;
-                
+
                 // Calculate image dimensions based on aspect ratio
+                // Keep the larger dimension at baseImageSize
                 let imageWidth = baseImageSize;
                 let imageHeight = baseImageSize;
                 if (aspectRatio > 1) {
+                  // Wider than tall
                   imageHeight = baseImageSize / aspectRatio;
                 } else if (aspectRatio < 1) {
+                  // Taller than wide
                   imageWidth = baseImageSize * aspectRatio;
                 }
-                
-                const framePadding = 6;
+
+                // Use tighter padding for canonized saints (non-martyrs) to make gold border fit closer
+                const framePadding =
+                  person.orthodoxyStatus === 'canonized' && !person.isMartyr ? 2 : 6;
                 const frameWidth = imageWidth + framePadding * 2;
                 const frameHeight = imageHeight + framePadding * 2;
-                
+                const frameStyle = getFrameStyle(person.orthodoxyStatus, person.isMartyr);
+
                 return (
                   <g key={item.id}>
-                    {/* Line connecting to timeline - events use center */}
+                    {/* Line connecting to timeline */}
                     <line
-                      x1={centerX}
+                      x1={connectX}
                       y1={timelineHeight / 2}
-                      x2={centerX}
+                      x2={connectX}
                       y2={y}
                       stroke={isActive ? '#4a9eff' : '#666'}
                       strokeWidth={isActive ? 2 : 1}
                       strokeDasharray={isActive ? '0' : '3,3'}
                     />
-                    
-                    {/* Council portrait with frame */}
+
+                    {/* Portrait with frame */}
                     <g
-                      transform={`translate(${centerX}, ${y})`}
+                      transform={`translate(${connectX}, ${y})`}
                       onClick={() => handleItemClick(item)}
                       onMouseEnter={() => setHoveredItem(item.id)}
                       onMouseLeave={() => setHoveredItem(null)}
@@ -1467,7 +1221,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                     >
                       {/* Define clip path for this item */}
                       <defs>
-                        <clipPath id={`clip-event-${item.id}`}>
+                        <clipPath id={`clip-${item.id}`}>
                           <rect
                             x={-imageWidth / 2}
                             y={-imageHeight / 2}
@@ -1477,72 +1231,81 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                           />
                         </clipPath>
                       </defs>
-                      
-                      {/* Frame border - color based on event type */}
+
+                      {/* Frame border/background */}
                       <rect
                         x={-frameWidth / 2}
                         y={-frameHeight / 2}
                         width={frameWidth}
                         height={frameHeight}
                         rx="8"
-                        fill="none"
-                        stroke={getEventColor(event.type).fill}
-                        strokeWidth="3"
-                        style={{ filter: `drop-shadow(0 0 6px ${getEventColor(event.type).fill}80)` }}
+                        {...frameStyle}
                       />
-                      
-                      {/* Council image with clipping */}
-                      <g clipPath={`url(#clip-event-${item.id})`}>
-                        <image
-                          href={event.imageUrl}
-                          x={-imageWidth / 2}
-                          y={-imageHeight / 2}
-                          width={imageWidth}
-                          height={imageHeight}
-                          onLoad={() => {
-                            // Calculate aspect ratio when image loads
-                            const tempImg = new Image();
-                            tempImg.onload = () => {
-                              const ratio = tempImg.naturalWidth / tempImg.naturalHeight;
-                              setImageAspectRatios(prev => {
-                                const newMap = new Map(prev);
-                                newMap.set(item.id, ratio);
-                                return newMap;
-                              });
-                            };
-                            tempImg.src = event.imageUrl || '';
-                          }}
-                          onError={(e) => {
-                            // Fallback to placeholder if image fails
-                            const target = e.target as SVGImageElement;
-                            const initials = event.name
-                              .split(' ')
-                              .map(n => n[0])
-                              .filter(Boolean)
-                              .slice(-2)
-                              .join('');
-                            target.href.baseVal = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="${baseImageSize}" height="${baseImageSize}"><rect width="${baseImageSize}" height="${baseImageSize}" fill="#ffd700"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#000" font-family="Arial" font-size="${baseImageSize / 2}">${initials}</text></svg>`)}`;
-                          }}
-                        />
+
+                      {/* White inner border for martyrs only */}
+                      {person.isMartyr &&
+                        (person.orthodoxyStatus === 'canonized' ||
+                          person.orthodoxyStatus === 'blessed') && (
+                          <rect
+                            x={-imageWidth / 2 - 2}
+                            y={-imageHeight / 2 - 2}
+                            width={imageWidth + 4}
+                            height={imageHeight + 4}
+                            rx="6"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="2"
+                          />
+                        )}
+
+                      {/* Person image with clipping */}
+                      <g clipPath={`url(#clip-${item.id})`}>
+                        {person.imageUrl ? (
+                          <image
+                            href={person.imageUrl}
+                            x={-imageWidth / 2}
+                            y={-imageHeight / 2}
+                            width={imageWidth}
+                            height={imageHeight}
+                            onLoad={() => {
+                              // Calculate aspect ratio when image loads
+                              // Use a temporary HTML image to get natural dimensions
+                              const tempImg = new Image();
+                              tempImg.onload = () => {
+                                const ratio = tempImg.naturalWidth / tempImg.naturalHeight;
+                                setImageAspectRatios((prev) => {
+                                  const newMap = new Map(prev);
+                                  newMap.set(item.id, ratio);
+                                  return newMap;
+                                });
+                              };
+                              tempImg.src = person.imageUrl || '';
+                            }}
+                            onError={(e) => {
+                              // Fallback to placeholder if image fails
+                              const target = e.target as SVGImageElement;
+                              const initials = person.name
+                                .split(' ')
+                                .map((n) => n[0])
+                                .filter(Boolean)
+                                .slice(-2)
+                                .join('');
+                              target.href.baseVal = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="${baseImageSize}" height="${baseImageSize}"><rect width="${baseImageSize}" height="${baseImageSize}" fill="#333"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ccc" font-family="Arial" font-size="${baseImageSize / 2}">${initials}</text></svg>`)}`;
+                            }}
+                          />
+                        ) : (
+                          // Fallback placeholder
+                          <rect
+                            x={-imageWidth / 2}
+                            y={-imageHeight / 2}
+                            width={imageWidth}
+                            height={imageHeight}
+                            rx="4"
+                            fill="#333"
+                          />
+                        )}
                       </g>
-                      
-                      {/* Star overlay for council */}
-                      <text
-                        x="0"
-                        y="0"
-                        textAnchor="middle"
-                        dominantBaseline="middle"
-                        fill="#fff"
-                        fontSize={frameWidth / 2}
-                        fontWeight="bold"
-                        style={{ 
-                          textShadow: '0 0 4px rgba(0,0,0,0.8)',
-                          pointerEvents: 'none',
-                        }}
-                      >
-                        ★
-                      </text>
-                      
+
                       {/* Active indicator - use ellipse for non-square frames */}
                       {isActive && (
                         <ellipse
@@ -1556,12 +1319,82 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                           opacity="0.6"
                         />
                       )}
+
+                      {/* Crown icon for popes - top left */}
+                      {person.roles?.includes('pope') && (
+                        <foreignObject
+                          x={-frameWidth / 2 + framePadding}
+                          y={-frameHeight / 2 + framePadding}
+                          width="14"
+                          height="14"
+                          style={{ overflow: 'visible' }}
+                        >
+                          <div
+                            style={{
+                              width: '14px',
+                              height: '14px',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.8))',
+                            }}
+                          >
+                            <FaCrown
+                              style={{
+                                color: '#FFD700',
+                                fontSize: '14px',
+                                display: 'block',
+                                filter:
+                                  'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
+                                stroke: '#000',
+                                strokeWidth: '0.5px',
+                                paintOrder: 'stroke fill',
+                              }}
+                            />
+                          </div>
+                        </foreignObject>
+                      )}
+
+                      {/* Scroll icon for saints with writings - top right */}
+                      {person.writings && person.writings.length > 0 && (
+                        <foreignObject
+                          x={frameWidth / 2 - 14 - framePadding}
+                          y={-frameHeight / 2 + framePadding}
+                          width="14"
+                          height="14"
+                          style={{ overflow: 'visible' }}
+                        >
+                          <div
+                            style={{
+                              width: '14px',
+                              height: '14px',
+                              display: 'flex',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              filter: 'drop-shadow(0 0 2px rgba(0, 217, 255, 0.8))',
+                            }}
+                          >
+                            <FaScroll
+                              style={{
+                                color: '#00D9FF',
+                                fontSize: '14px',
+                                display: 'block',
+                                filter:
+                                  'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
+                                stroke: '#000',
+                                strokeWidth: '0.5px',
+                                paintOrder: 'stroke fill',
+                              }}
+                            />
+                          </div>
+                        </foreignObject>
+                      )}
                     </g>
-                    
+
                     {hoveredItem === item.id && (
                       <g>
                         <rect
-                          x={connectX - 80}
+                          x={centerX - 80}
                           y={y - 50}
                           width="160"
                           height="35"
@@ -1570,7 +1403,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                           rx="4"
                         />
                         <text
-                          x={connectX}
+                          x={centerX}
                           y={y - 30}
                           textAnchor="middle"
                           fill="#fff"
@@ -1579,13 +1412,7 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                         >
                           {item.name}
                         </text>
-                        <text
-                          x={connectX}
-                          y={y - 15}
-                          textAnchor="middle"
-                          fill="#aaa"
-                          fontSize="11"
-                        >
+                        <text x={centerX} y={y - 15} textAnchor="middle" fill="#aaa" fontSize="11">
                           {item.startYear}–{item.endYear}
                         </text>
                       </g>
@@ -1593,313 +1420,32 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
                   </g>
                 );
               }
-              
-              // Render other events as bars
-              const width = Math.max(20, endX - startX);
-              const eventColor = getEventColor(event.type);
-              
-              return (
-                <g key={item.id}>
-                  <rect
-                    x={startX}
-                    y={y - 10}
-                    width={width}
-                    height="20"
-                    fill={eventColor.fill}
-                    stroke={isActive ? '#4a9eff' : eventColor.stroke}
-                    strokeWidth={isActive ? 2 : 1}
-                    rx="4"
-                    onClick={() => handleItemClick(item)}
-                    onMouseEnter={() => setHoveredItem(item.id)}
-                    onMouseLeave={() => setHoveredItem(null)}
-                    style={{ cursor: 'pointer' }}
-                  />
-                  {hoveredItem === item.id && (
-                    <g>
-                      <rect
-                        x={centerX - 60}
-                        y={y - 40}
-                        width="120"
-                        height="25"
-                        fill="#000"
-                        fillOpacity="0.8"
-                        rx="4"
-                      />
-                      <text
-                        x={centerX}
-                        y={y - 22}
-                        textAnchor="middle"
-                        fill="#fff"
-                        fontSize="12"
-                      >
-                        {item.name} ({item.startYear})
-                      </text>
-                    </g>
-                  )}
-                </g>
-              );
-            } else {
-              // Render person as portrait with frame
-              const person = item.data as Person;
-              const baseImageSize = isActive ? portraitSize + 4 : portraitSize;
-              
-              // Get aspect ratio for this image (default to 1:1 if not loaded yet)
-              const aspectRatio = imageAspectRatios.get(item.id) || 1;
-              
-              // Calculate image dimensions based on aspect ratio
-              // Keep the larger dimension at baseImageSize
-              let imageWidth = baseImageSize;
-              let imageHeight = baseImageSize;
-              if (aspectRatio > 1) {
-                // Wider than tall
-                imageHeight = baseImageSize / aspectRatio;
-              } else if (aspectRatio < 1) {
-                // Taller than wide
-                imageWidth = baseImageSize * aspectRatio;
-              }
-              
-              // Use tighter padding for canonized saints (non-martyrs) to make gold border fit closer
-              const framePadding = (person.orthodoxyStatus === 'canonized' && !person.isMartyr) ? 2 : 6;
-              const frameWidth = imageWidth + framePadding * 2;
-              const frameHeight = imageHeight + framePadding * 2;
-              const frameStyle = getFrameStyle(person.orthodoxyStatus, person.isMartyr);
-              
-              return (
-                <g key={item.id}>
-                  {/* Line connecting to timeline */}
-                  <line
-                    x1={connectX}
-                    y1={timelineHeight / 2}
-                    x2={connectX}
-                    y2={y}
-                    stroke={isActive ? '#4a9eff' : '#666'}
-                    strokeWidth={isActive ? 2 : 1}
-                    strokeDasharray={isActive ? '0' : '3,3'}
-                  />
-                  
-                  {/* Portrait with frame */}
-                  <g
-                    transform={`translate(${connectX}, ${y})`}
-                    onClick={() => handleItemClick(item)}
-                    onMouseEnter={() => setHoveredItem(item.id)}
-                    onMouseLeave={() => setHoveredItem(null)}
-                    style={{ cursor: 'pointer' }}
-                  >
-                    {/* Define clip path for this item */}
-                    <defs>
-                      <clipPath id={`clip-${item.id}`}>
-                        <rect
-                          x={-imageWidth / 2}
-                          y={-imageHeight / 2}
-                          width={imageWidth}
-                          height={imageHeight}
-                          rx="4"
-                        />
-                      </clipPath>
-                    </defs>
-                    
-                    {/* Frame border/background */}
-                    <rect
-                      x={-frameWidth / 2}
-                      y={-frameHeight / 2}
-                      width={frameWidth}
-                      height={frameHeight}
-                      rx="8"
-                      {...frameStyle}
-                    />
-                    
-                    {/* White inner border for martyrs only */}
-                    {(person.isMartyr && (person.orthodoxyStatus === 'canonized' || person.orthodoxyStatus === 'blessed')) && (
-                      <rect
-                        x={-imageWidth / 2 - 2}
-                        y={-imageHeight / 2 - 2}
-                        width={imageWidth + 4}
-                        height={imageHeight + 4}
-                        rx="6"
-                        fill="none"
-                        stroke="white"
-                        strokeWidth="2"
-                      />
-                    )}
-                    
-                    {/* Person image with clipping */}
-                    <g clipPath={`url(#clip-${item.id})`}>
-                      {person.imageUrl ? (
-                        <image
-                          href={person.imageUrl}
-                          x={-imageWidth / 2}
-                          y={-imageHeight / 2}
-                          width={imageWidth}
-                          height={imageHeight}
-                          onLoad={() => {
-                            // Calculate aspect ratio when image loads
-                            // Use a temporary HTML image to get natural dimensions
-                            const tempImg = new Image();
-                            tempImg.onload = () => {
-                              const ratio = tempImg.naturalWidth / tempImg.naturalHeight;
-                              setImageAspectRatios(prev => {
-                                const newMap = new Map(prev);
-                                newMap.set(item.id, ratio);
-                                return newMap;
-                              });
-                            };
-                            tempImg.src = person.imageUrl || '';
-                          }}
-                          onError={(e) => {
-                            // Fallback to placeholder if image fails
-                            const target = e.target as SVGImageElement;
-                            const initials = person.name
-                              .split(' ')
-                              .map(n => n[0])
-                              .filter(Boolean)
-                              .slice(-2)
-                              .join('');
-                            target.href.baseVal = `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="${baseImageSize}" height="${baseImageSize}"><rect width="${baseImageSize}" height="${baseImageSize}" fill="#333"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ccc" font-family="Arial" font-size="${baseImageSize / 2}">${initials}</text></svg>`)}`;
-                          }}
-                        />
-                      ) : (
-                        // Fallback placeholder
-                        <rect
-                          x={-imageWidth / 2}
-                          y={-imageHeight / 2}
-                          width={imageWidth}
-                          height={imageHeight}
-                          rx="4"
-                          fill="#333"
-                        />
-                      )}
-                    </g>
-                    
-                    {/* Active indicator - use ellipse for non-square frames */}
-                    {isActive && (
-                      <ellipse
-                        cx="0"
-                        cy="0"
-                        rx={frameWidth / 2 + 2}
-                        ry={frameHeight / 2 + 2}
-                        fill="none"
-                        stroke="#4a9eff"
-                        strokeWidth="2"
-                        opacity="0.6"
-                      />
-                    )}
-                    
-                    {/* Crown icon for popes - top left */}
-                    {person.roles?.includes('pope') && (
-                      <foreignObject 
-                        x={-frameWidth / 2 + framePadding} 
-                        y={-frameHeight / 2 + framePadding} 
-                        width="14" 
-                        height="14"
-                        style={{ overflow: 'visible' }}
-                      >
-                        <div style={{ 
-                          width: '14px', 
-                          height: '14px',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.8))'
-                        }}>
-                          <FaCrown style={{ 
-                            color: '#FFD700', 
-                            fontSize: '14px', 
-                            display: 'block',
-                            filter: 'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
-                            stroke: '#000',
-                            strokeWidth: '0.5px',
-                            paintOrder: 'stroke fill'
-                          }} />
-                        </div>
-                      </foreignObject>
-                    )}
-                    
-                    {/* Scroll icon for saints with writings - top right */}
-                    {person.writings && person.writings.length > 0 && (
-                      <foreignObject 
-                        x={frameWidth / 2 - 14 - framePadding} 
-                        y={-frameHeight / 2 + framePadding} 
-                        width="14" 
-                        height="14"
-                        style={{ overflow: 'visible' }}
-                      >
-                        <div style={{ 
-                          width: '14px', 
-                          height: '14px',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          filter: 'drop-shadow(0 0 2px rgba(0, 217, 255, 0.8))'
-                        }}>
-                          <FaScroll style={{ 
-                            color: '#00D9FF', 
-                            fontSize: '14px', 
-                            display: 'block',
-                            filter: 'drop-shadow(-1px -1px 0 #000) drop-shadow(1px -1px 0 #000) drop-shadow(-1px 1px 0 #000) drop-shadow(1px 1px 0 #000)',
-                            stroke: '#000',
-                            strokeWidth: '0.5px',
-                            paintOrder: 'stroke fill'
-                          }} />
-                        </div>
-                      </foreignObject>
-                    )}
-                  </g>
-                  
-                  {hoveredItem === item.id && (
-                    <g>
-                      <rect
-                        x={centerX - 80}
-                        y={y - 50}
-                        width="160"
-                        height="35"
-                        fill="#000"
-                        fillOpacity="0.9"
-                        rx="4"
-                      />
-                      <text
-                        x={centerX}
-                        y={y - 30}
-                        textAnchor="middle"
-                        fill="#fff"
-                        fontSize="12"
-                        fontWeight="bold"
-                      >
-                        {item.name}
-                      </text>
-                      <text
-                        x={centerX}
-                        y={y - 15}
-                        textAnchor="middle"
-                        fill="#aaa"
-                        fontSize="11"
-                      >
-                        {item.startYear}–{item.endYear}
-                      </text>
-                    </g>
-                  )}
-                </g>
-              );
-            }
             });
           })()}
         </svg>
       </div>
 
       {/* Legend Overlay - Bottom Right */}
-      <div style={{
-        position: 'absolute',
-        bottom: '10px',
-        right: '10px',
-        padding: '1rem',
-        backgroundColor: 'rgba(26, 26, 26, 0.9)',
-        borderRadius: '8px',
-        zIndex: 1000,
-        color: '#aaa',
-        fontSize: '12px',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
-        maxWidth: '300px',
-      }}>
-        <div style={{ fontWeight: 'bold', marginBottom: '0.75rem', fontSize: '14px', color: '#fff' }}>Legend</div>
+      <div
+        style={{
+          position: 'absolute',
+          bottom: '10px',
+          right: '10px',
+          padding: '1rem',
+          backgroundColor: 'rgba(26, 26, 26, 0.9)',
+          borderRadius: '8px',
+          zIndex: 1000,
+          color: '#aaa',
+          fontSize: '12px',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+          maxWidth: '300px',
+        }}
+      >
+        <div
+          style={{ fontWeight: 'bold', marginBottom: '0.75rem', fontSize: '14px', color: '#fff' }}
+        >
+          Legend
+        </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <FaCrown style={{ color: '#FFD700', fontSize: '14px' }} />
@@ -1910,11 +1456,25 @@ export function Timeline({ people, events, currentYear, onItemClick, onYearChang
             <span>Writings</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <div style={{ width: '20px', height: '12px', backgroundColor: '#ffd700', borderRadius: '4px' }}></div>
+            <div
+              style={{
+                width: '20px',
+                height: '12px',
+                backgroundColor: '#ffd700',
+                borderRadius: '4px',
+              }}
+            ></div>
             <span>Council</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <div style={{ width: '20px', height: '12px', backgroundColor: '#ff6b6b', borderRadius: '4px' }}></div>
+            <div
+              style={{
+                width: '20px',
+                height: '12px',
+                backgroundColor: '#ff6b6b',
+                borderRadius: '4px',
+              }}
+            ></div>
             <span>Other Event</span>
           </div>
         </div>

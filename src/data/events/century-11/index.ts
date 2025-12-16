@@ -11,5 +11,5 @@ export default [
   first_crusade,
   great_schism,
   investiture_controversy,
-  penance_canossa
+  penance_canossa,
 ];

@@ -1,8 +1,16 @@
+import { lazy, Suspense } from 'react';
 import { HashRouter, Routes, Route, Link } from 'react-router-dom';
-import { AtlasView } from './components/AtlasView';
-import { About } from './components/About';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import initialData from './data';
 import './styles/main.css';
+
+// Lazy load route components for code splitting
+const AtlasView = lazy(() =>
+  import('./components/AtlasView').then((module) => ({ default: module.AtlasView }))
+);
+const About = lazy(() =>
+  import('./components/About').then((module) => ({ default: module.About }))
+);
 
 function Navigation() {
   return (
@@ -41,13 +49,40 @@ function App() {
   };
 
   return (
-    <HashRouter>
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<AtlasView data={data} />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </HashRouter>
+    <ErrorBoundary>
+      <HashRouter>
+        <Navigation />
+        <Suspense
+          fallback={
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                height: 'calc(100vh - 60px)',
+                backgroundColor: '#1a1a1a',
+                color: '#fff',
+                fontSize: '1.2rem',
+              }}
+            >
+              Loading...
+            </div>
+          }
+        >
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <ErrorBoundary>
+                  <AtlasView data={data} />
+                </ErrorBoundary>
+              }
+            />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </Suspense>
+      </HashRouter>
+    </ErrorBoundary>
   );
 }
 

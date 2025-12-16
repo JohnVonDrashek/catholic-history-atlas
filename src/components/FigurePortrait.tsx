@@ -76,11 +76,13 @@ export function FigurePortrait({
       // Use a placeholder with the person's name
       const initials = name
         .split(' ')
-        .map(n => n[0])
+        .map((n) => n[0])
         .filter(Boolean)
         .slice(-2)
         .join('');
-      setImgSrc(`data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="#333"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ccc" font-family="Arial" font-size="48">${initials}</text></svg>`)}`);
+      setImgSrc(
+        `data:image/svg+xml,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"><rect width="200" height="200" fill="#333"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ccc" font-family="Arial" font-size="48">${initials}</text></svg>`)}`
+      );
     }
   };
 
@@ -90,12 +92,7 @@ export function FigurePortrait({
       aria-label={tooltip}
       title={tooltip}
     >
-      <img 
-        src={imgSrc} 
-        alt={name} 
-        className="portrait-frame__image"
-        onError={handleImageError}
-      />
+      <img src={imgSrc} alt={name} className="portrait-frame__image" onError={handleImageError} />
     </div>
   );
 }

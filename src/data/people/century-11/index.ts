@@ -14,7 +14,6 @@ import olaf_norway from './olaf-norway.json';
 import osmund_salisbury from './osmund-salisbury.json';
 import peter_damian from './peter-damian.json';
 import romuald from './romuald.json';
-import roscelin from './roscelin.json';
 import stanislaus_krakow from './stanislaus-krakow.json';
 import stephen_hungary from './stephen-hungary.json';
 import sylvester_ii from './sylvester-ii.json';
@@ -42,7 +41,6 @@ export default [
   osmund_salisbury,
   peter_damian,
   romuald,
-  roscelin,
   stanislaus_krakow,
   stephen_hungary,
   sylvester_ii,

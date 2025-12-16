@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm run lint:duplicates
+# Run lint-staged for formatting and linting
+npx lint-staged
+
+# Run data validation checks
+npm run lint:duplicates || exit 1
+
+echo "✓ All pre-commit checks passed!"

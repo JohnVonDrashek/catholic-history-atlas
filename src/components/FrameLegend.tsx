@@ -8,7 +8,9 @@ interface FrameLegendProps {
 export function FrameLegend({ onClose }: FrameLegendProps) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const placeholderImage = 'data:image/svg+xml,' + encodeURIComponent(`
+  const placeholderImage =
+    'data:image/svg+xml,' +
+    encodeURIComponent(`
     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
       <rect width="100" height="100" fill="#666"/>
       <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial" font-size="24">👤</text>
@@ -194,8 +196,9 @@ export function FrameLegend({ onClose }: FrameLegendProps) {
               Portrait Frame Legend
             </h2>
             <p style={{ margin: 0, marginBottom: '2rem', color: '#aaa', lineHeight: '1.6' }}>
-              The frames around portraits indicate the person's status in relation to the Catholic Church. 
-              This visual system helps you quickly identify different types of historical figures.
+              The frames around portraits indicate the person's status in relation to the Catholic
+              Church. This visual system helps you quickly identify different types of historical
+              figures.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -221,13 +224,29 @@ export function FrameLegend({ onClose }: FrameLegendProps) {
                     />
                   </div>
                   <div style={{ flex: 1 }}>
-                    <h3 style={{ margin: 0, marginBottom: '0.5rem', color: '#fff', fontSize: '1.1rem' }}>
+                    <h3
+                      style={{
+                        margin: 0,
+                        marginBottom: '0.5rem',
+                        color: '#fff',
+                        fontSize: '1.1rem',
+                      }}
+                    >
                       {item.title}
                     </h3>
-                    <p style={{ margin: 0, marginBottom: '0.5rem', color: '#ddd', lineHeight: '1.6' }}>
+                    <p
+                      style={{
+                        margin: 0,
+                        marginBottom: '0.5rem',
+                        color: '#ddd',
+                        lineHeight: '1.6',
+                      }}
+                    >
                       {item.description}
                     </p>
-                    <p style={{ margin: 0, color: '#888', fontSize: '0.9rem', fontStyle: 'italic' }}>
+                    <p
+                      style={{ margin: 0, color: '#888', fontSize: '0.9rem', fontStyle: 'italic' }}
+                    >
                       Examples: {item.example}
                     </p>
                   </div>

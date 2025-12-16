@@ -7,7 +7,6 @@ import charles_borromeo from './charles-borromeo.json';
 import clement_vii from './clement-vii.json';
 import edmund_campion from './edmund-campion.json';
 import eustace_white from './eustace-white.json';
-import faustus_socinus from './faustus-socinus.json';
 import francis_borgia from './francis-borgia.json';
 import francis_paola from './francis-paola.json';
 import francis_xavier from './francis-xavier.json';
@@ -66,7 +65,6 @@ export default [
   clement_vii,
   edmund_campion,
   eustace_white,
-  faustus_socinus,
   francis_borgia,
   francis_paola,
   francis_xavier,

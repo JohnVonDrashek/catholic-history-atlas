@@ -25,5 +25,5 @@ export default [
   printing_press,
   reconquista_completion,
   savonarola_florence,
-  spanish_inquisition
+  spanish_inquisition,
 ];

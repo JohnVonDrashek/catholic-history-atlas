@@ -25,5 +25,5 @@ export default [
   first_vatican_council,
   kulturkampf,
   rerum_novarum,
-  restoration_jesuits
+  restoration_jesuits,
 ];

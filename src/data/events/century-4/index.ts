@@ -25,5 +25,5 @@ export default [
   diocletianic_persecution,
   donatism,
   edict_milan,
-  nicaea_i
+  nicaea_i,
 ];

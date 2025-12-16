@@ -9,5 +9,5 @@ export default [
   coronation_charlemagne,
   council_nicaea_ii,
   donation_pepin,
-  iconoclasm_controversy
+  iconoclasm_controversy,
 ];
